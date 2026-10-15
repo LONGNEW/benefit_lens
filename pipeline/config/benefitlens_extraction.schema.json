@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "record_index": {"type": "integer", "minimum": 0},
+          "field_kind": {
+            "type": "string",
+            "enum": ["benefit", "eligibility", "required_document", "application_prompt"]
+          },
+          "proposed_value": {"type": "string"},
+          "source_index": {"type": "integer", "minimum": 0},
+          "source_quote": {"type": "string"},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "character_limit": {"type": "integer", "minimum": 0}
+        },
+        "required": [
+          "record_index",
+          "field_kind",
+          "proposed_value",
+          "source_index",
+          "source_quote",
+          "confidence",
+          "character_limit"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["candidates"],
+  "additionalProperties": false
+}

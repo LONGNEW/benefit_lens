@@ -1,0 +1,46 @@
+{
+  "run_id":"experience-search-2026-10-15",
+  "scope":"NVIDIA, Google and Gates Cambridge public examples; returned search batches only",
+  "provider":"OpenAI web search, assistant-orchestrated",
+  "waves":[
+    {
+      "wave":1,
+      "queries":[
+        {"q":"\"Google PhD Fellowship\" \"successful\" \"proposal\""},
+        {"q":"\"NVIDIA Graduate Fellowship\" \"application statement\""},
+        {"q":"\"Gates Cambridge\" \"sample essay\" interview"}
+      ],
+      "response_file":"search-wave-1.response.json",
+      "result_urls":["https://www.morgan-klaus.com/fellowships.html","https://rohany.github.io/","https://sampurnabuffalo.wordpress.com/2017/11/16/gates-cambridge-scholarship-sample-essay-interview-and-life-after/","https://courses.ems.psu.edu/writingpersonalstatementsonline/book/export/html/1796"],
+      "accepted_terms":[
+        {"term":"Impact Statement","program_id":"google-phd-fellowship","source_id":"morgan-index","anchor":"Impact Statement"},
+        {"term":"Leadership Statement","program_id":"google-phd-fellowship","source_id":"morgan-index","anchor":"Leadership Statement"},
+        {"term":"application statement","program_id":"nvidia-graduate-fellowship","source_id":"rohan-index","anchor":"application statement"}
+      ],
+      "case_ids_found":["G4","N1","C1"],
+      "new_people_vs_previous_review":0,
+      "status":"확장 표현 발견, 다음 검색 진행",
+      "frontier_complete":false
+    },
+    {
+      "wave":2,
+      "queries":[
+        {"q":"\"Google PhD Fellowship\" \"impact statement\" \"leadership statement\""},
+        {"q":"\"Google\" \"fellowship materials\" Hyeon research statement"},
+        {"q":"\"Google PhD Fellowship\" proposal Julia Mendelsohn Anjalie Field"},
+        {"q":"\"Gates Cambridge\" \"sample excerpts\" application essays"}
+      ],
+      "response_file":"search-wave-2.response.json",
+      "result_urls":["https://www.morgan-klaus.com/fellowships.html","https://juliamendelsohn.github.io/resources/","https://anjalief.github.io/statements.html","https://courses.ems.psu.edu/writingpersonalstatementsonline/book/export/html/1796"],
+      "accepted_terms":[
+        {"term":"Fellowship Applications","program_id":"google-phd-fellowship","source_id":"julia-index","anchor":"Fellowship Applications"},
+        {"term":"sample excerpts","program_id":"gates-cambridge","source_id":"psu-gates-index","anchor":"sample excerpts"}
+      ],
+      "case_ids_found":["G2","G3","G4"],
+      "new_people_vs_previous_review":0,
+      "status":"새 표현과 추가 원문 링크 발견, 포화 종료 미도달",
+      "frontier_complete":false,
+      "pending_or_failed_sources":["sampurna-outcome","psu-gates-samples"]
+    }
+  ]
+}

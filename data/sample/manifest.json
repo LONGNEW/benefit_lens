@@ -1,0 +1,11 @@
+{
+  "format": "benefitlens-public-sample-v1",
+  "file": "programs.json",
+  "bytes": 64406,
+  "sha256": "35b9ba9058cfb1277c5c1ef1668b07058801d2b526eb5bf6fbe554cb37d1d605",
+  "opportunities": 10,
+  "program_knowledge": 3,
+  "experience_summaries": 9,
+  "raw_documents": 0,
+  "private_profiles": 0
+}

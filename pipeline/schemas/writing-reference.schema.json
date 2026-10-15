@@ -1,0 +1,1504 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BenefitLens writing reference (draft 0.1.0)",
+  "description": "설계 제안. 공식 문항·양식과 수기·개인 후기를 분리하고, 회차·계수 규칙·정책·권리 확인 범위·근거를 보존한다. 실제 학생 합격글은 수집하지 않는다.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "records"
+  ],
+  "$defs": {
+    "notice": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "notice_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "organizer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        }
+      },
+      "required": [
+        "notice_id",
+        "title"
+      ]
+    },
+    "round": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "round_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "academic_path": {
+          "enum": [
+            "undergraduate_enrolled",
+            "undergraduate_exchange",
+            "graduate_new",
+            "graduate_enrolled",
+            "undergraduate",
+            "graduate",
+            "unknown"
+          ]
+        },
+        "announced_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "발행일 미확인은 null. 정밀도를 높이기 위해 시각을 만들어 넣지 않는다."
+        },
+        "application_status": {
+          "enum": [
+            "open",
+            "closed",
+            "not_opened",
+            "unknown"
+          ]
+        },
+        "as_of": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "발행일 미확인은 null. 정밀도를 높이기 위해 시각을 만들어 넣지 않는다."
+        }
+      },
+      "required": [
+        "round_id",
+        "label",
+        "academic_path"
+      ],
+      "description": "지원 회차와 학적 경로를 분리해 보존한다. 접수 상태는 기록 기준일의 사실이며 자격·선정 결과를 나타내지 않는다."
+    },
+    "collectionPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "real_student_accepted_essay_collection": {
+          "const": "excluded"
+        },
+        "full_self_essay_storage": {
+          "const": "not_retained"
+        },
+        "unofficial_sources_use": {
+          "const": "context_only"
+        }
+      },
+      "required": [
+        "real_student_accepted_essay_collection",
+        "full_self_essay_storage",
+        "unofficial_sources_use"
+      ],
+      "description": "이 데모의 수집 범위. 기본값 자동 주입 없이 레코드가 세 정책을 명시해야 한다."
+    },
+    "rightsBasis": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "explicit_license",
+            "publisher_permission",
+            "legal_review"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "checked_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "scope_note": {
+          "type": "string",
+          "minLength": 1,
+          "description": "명시적으로 확인한 이용 범위와 조건. 공개 접근 가능성만을 권리 근거로 쓰지 않는다."
+        }
+      },
+      "required": [
+        "kind",
+        "url",
+        "checked_at",
+        "scope_note"
+      ]
+    },
+    "rightsReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "unknown",
+            "verified_scope"
+          ]
+        },
+        "verified_range": {
+          "enum": [
+            "unknown",
+            "link_only",
+            "metadata_only",
+            "short_quote",
+            "official_form_reuse",
+            "internal_document_copy",
+            "redistribution"
+          ]
+        },
+        "public_url_is_permission": {
+          "const": false
+        },
+        "basis": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/rightsBasis"
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "verified_range",
+        "public_url_is_permission",
+        "basis"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "unknown"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "verified_range": {
+                "const": "unknown"
+              },
+              "basis": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified_scope"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "verified_range": {
+                "not": {
+                  "const": "unknown"
+                }
+              },
+              "basis": {
+                "$ref": "#/$defs/rightsBasis"
+              }
+            }
+          }
+        }
+      ],
+      "description": "권리 확인은 확인된 범위까지만 기록한다. status unknown에는 허용된 이용 범위가 없으며, verified_scope도 모든 행위를 허용한다는 뜻이 아니다."
+    },
+    "officialSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "source_kind": {
+          "enum": [
+            "official_notice",
+            "official_form",
+            "official_faq",
+            "official_policy",
+            "official_manual"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "published_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "발행일 미확인은 null. 정밀도를 높이기 위해 시각을 만들어 넣지 않는다."
+        },
+        "checked_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "document_version": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "verification_scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "읽은 쪽·항목, 적용 회차, 미확인 부분을 포함하는 확인 범위."
+        },
+        "rights_review": {
+          "$ref": "#/$defs/rightsReview"
+        },
+        "local_file": {
+          "type": "string",
+          "minLength": 1,
+          "description": "공식 원문·양식 보존본 경로. 상대 경로는 이 레코드를 담은 데이터 JSON 파일의 디렉터리를 기준으로 해석한다. 학생 답변 전문 경로를 넣지 않는다."
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "pages_reviewed": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "uniqueItems": true
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "작성자가 근거에 기반해 새로 쓴 짧은 요약. 원문 또는 학생 답변의 복제 필드가 아니다."
+        },
+        "page_count": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "보존한 공식 문서의 실제 페이지 수. pages_reviewed는 별도의 확인 범위다."
+        }
+      },
+      "required": [
+        "id",
+        "source_kind",
+        "title",
+        "url",
+        "published_at",
+        "checked_at",
+        "document_version",
+        "verification_scope",
+        "rights_review"
+      ],
+      "description": "주최·운영기관 공식 공고, 양식 또는 공개 규정. official은 출처 역할이며 완독·권리·자격 검증 완료 표시가 아니다.",
+      "dependentRequired": {
+        "local_file": [
+          "sha256"
+        ],
+        "sha256": [
+          "local_file"
+        ]
+      }
+    },
+    "unofficialSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "source_kind": {
+          "enum": [
+            "success_account",
+            "personal_review",
+            "third_party_manual"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "published_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "발행일 미확인은 null. 정밀도를 높이기 위해 시각을 만들어 넣지 않는다."
+        },
+        "checked_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "document_version": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "verification_scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "읽은 쪽·항목, 적용 회차, 미확인 부분을 포함하는 확인 범위."
+        },
+        "rights_review": {
+          "$ref": "#/$defs/rightsReview"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "작성자가 근거에 기반해 새로 쓴 짧은 요약. 원문 또는 학생 답변의 복제 필드가 아니다."
+        },
+        "capture_mode": {
+          "const": "metadata_only"
+        },
+        "automatic_eligibility_evidence": {
+          "const": false
+        },
+        "use_scope": {
+          "const": "context_only"
+        },
+        "scope_alignment": {
+          "enum": [
+            "same_round",
+            "different_round",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "source_kind",
+        "title",
+        "url",
+        "published_at",
+        "checked_at",
+        "document_version",
+        "verification_scope",
+        "rights_review",
+        "capture_mode",
+        "automatic_eligibility_evidence",
+        "use_scope",
+        "scope_alignment"
+      ],
+      "description": "수기(success_account), 개인 후기, 제삼자 안내. 공개 메타데이터와 독자 요약만 보존하며 학생 자기소개서·합격답변 본문은 수집하지 않는다. 회차가 같아도 자동 자격 근거로 사용하지 않는다."
+    },
+    "excerpt": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "short_quote"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "description": "공식 문구의 필요한 최소 인용만 기록한다. 전문·학생 답변을 넣지 않는다."
+            }
+          },
+          "required": [
+            "kind",
+            "text"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "content_ref"
+            },
+            "ref": {
+              "type": "string",
+              "minLength": 1,
+              "description": "공식 문서의 보존본·문서 항목 참조. 내용 자체를 인라인 복제하지 않는다."
+            },
+            "media_type": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "kind",
+            "ref",
+            "media_type"
+          ]
+        }
+      ],
+      "description": "선택적 근거 보존. short_quote와 content_ref는 동시에 기록할 수 없다. 존재 자체가 인용·복제·배포 권리 확인을 뜻하지 않는다."
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "description": "PDF 등에 표시되는 쪽 번호. HTML 또는 미확인은 null이며 location에 위치를 적는다."
+        },
+        "round": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1,
+          "description": "문항 번호, 항목명, 문단 또는 HTML 제목 등 조건 위치."
+        },
+        "excerpt": {
+          "$ref": "#/$defs/excerpt"
+        },
+        "checked_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "source_id",
+        "url",
+        "page",
+        "round",
+        "location"
+      ],
+      "description": "정규화 규칙·정책의 공식 근거. source_id는 official_sources만 가리켜야 하며 회차 일치는 별도 검사한다."
+    },
+    "lengthLimit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "known",
+            "unknown",
+            "not_stated",
+            "not_applicable"
+          ]
+        },
+        "unit": {
+          "enum": [
+            "characters",
+            "bytes",
+            "words",
+            "unknown"
+          ]
+        },
+        "whitespace_included": {
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        "min": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "max": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "exact": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+          },
+          "uniqueItems": true
+        },
+        "counting_method": {
+          "enum": [
+            "organizer_counter",
+            "unicode_code_points",
+            "user_perceived_characters",
+            "utf16_code_units",
+            "encoded_bytes",
+            "whitespace_separated_words",
+            "unknown"
+          ]
+        },
+        "encoding": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "status",
+        "unit",
+        "whitespace_included",
+        "min",
+        "max",
+        "exact",
+        "evidence_refs"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "known"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "unit": {
+                "enum": [
+                  "characters",
+                  "bytes",
+                  "words"
+                ]
+              },
+              "evidence_refs": {
+                "minItems": 1
+              }
+            },
+            "anyOf": [
+              {
+                "properties": {
+                  "min": {
+                    "type": "integer"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "max": {
+                    "type": "integer"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "exact": {
+                    "type": "integer"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "unknown",
+                  "not_stated",
+                  "not_applicable"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "unit": {
+                "const": "unknown"
+              },
+              "min": {
+                "type": "null"
+              },
+              "max": {
+                "type": "null"
+              },
+              "exact": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "not_stated"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "evidence_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "exact": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "exact"
+            ]
+          },
+          "then": {
+            "properties": {
+              "min": {
+                "type": "null"
+              },
+              "max": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "not_applicable"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "evidence_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "unit": {
+                "const": "characters"
+              }
+            },
+            "required": [
+              "unit"
+            ]
+          },
+          "then": {
+            "properties": {
+              "counting_method": {
+                "enum": [
+                  "organizer_counter",
+                  "unicode_code_points",
+                  "user_perceived_characters",
+                  "utf16_code_units",
+                  "unknown"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "unit": {
+                "const": "bytes"
+              }
+            },
+            "required": [
+              "unit"
+            ]
+          },
+          "then": {
+            "properties": {
+              "counting_method": {
+                "enum": [
+                  "organizer_counter",
+                  "encoded_bytes",
+                  "unknown"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "unit": {
+                "const": "words"
+              }
+            },
+            "required": [
+              "unit"
+            ]
+          },
+          "then": {
+            "properties": {
+              "counting_method": {
+                "enum": [
+                  "organizer_counter",
+                  "whitespace_separated_words",
+                  "unknown"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "unit": {
+                "const": "unknown"
+              }
+            },
+            "required": [
+              "unit"
+            ]
+          },
+          "then": {
+            "properties": {
+              "counting_method": {
+                "enum": [
+                  "organizer_counter",
+                  "unknown"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "description": "한도 값은 해당 공식 공고에서만 채운다. 스키마에는 장학 기준·실제 학생 답변 길이를 고정하지 않는다. 숫자 자체가 알려져도 공백·계수 방식이 unknown이면 엄격한 길이 통과를 확정하지 않는다."
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "wording_status": {
+          "enum": [
+            "verified_summary",
+            "unknown"
+          ]
+        },
+        "length_limit": {
+          "$ref": "#/$defs/lengthLimit"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+          },
+          "uniqueItems": true
+        },
+        "fact_slots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "placeholder": {
+                "type": "string",
+                "minLength": 1,
+                "description": "실제 학생 값 대신 입력할 정보의 종류를 설명하는 빈칸 안내."
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "placeholder"
+            ]
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "text",
+        "wording_status",
+        "length_limit",
+        "evidence_refs",
+        "fact_slots"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "wording_status": {
+                "const": "verified_summary"
+              }
+            },
+            "required": [
+              "wording_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "wording_status": {
+                "const": "unknown"
+              }
+            },
+            "required": [
+              "wording_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "text": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ],
+      "description": "공식 문항의 독자 요약 또는 명시적 미확인 상태. 일반 준비용 시스템 질문을 공식 questions 배열에 넣지 않는다. 실제 답변 본문 필드는 없다."
+    },
+    "officialForm": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "form_kind": {
+          "enum": [
+            "self_introduction",
+            "study_plan",
+            "not_required"
+          ]
+        },
+        "availability": {
+          "enum": [
+            "verified",
+            "existence_only",
+            "not_required"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+          },
+          "uniqueItems": true
+        },
+        "question_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+          },
+          "uniqueItems": true
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "form_kind",
+        "availability",
+        "source_ids",
+        "question_ids",
+        "note"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "availability": {
+                "enum": [
+                  "verified",
+                  "existence_only"
+                ]
+              }
+            },
+            "required": [
+              "availability"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_ids": {
+                "minItems": 1
+              },
+              "form_kind": {
+                "enum": [
+                  "self_introduction",
+                  "study_plan"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "availability": {
+                "const": "not_required"
+              }
+            },
+            "required": [
+              "availability"
+            ]
+          },
+          "then": {
+            "properties": {
+              "form_kind": {
+                "const": "not_required"
+              },
+              "source_ids": {
+                "minItems": 1
+              },
+              "question_ids": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      ],
+      "description": "공식 양식 확인과 양식 존재 언급을 구별한다. existence_only는 문항·한도를 확인했다는 뜻이 아니다. not_required도 공식 근거가 필요하다."
+    },
+    "policySource": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "description": "PDF 등에 표시되는 쪽 번호. HTML 또는 미확인은 null이며 location에 위치를 적는다."
+        },
+        "round": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        }
+      },
+      "required": [
+        "source_id",
+        "url",
+        "page",
+        "round"
+      ],
+      "description": "AI 작성 정책을 확인한 공식 출처와 해당 회차. not_stated에서도 어떤 범위를 읽었는지 보존한다."
+    },
+    "policyReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "not_reviewed",
+            "scoped_review",
+            "full_round_review"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "정책 확인 대상 문서·쪽·항목과 남은 미확인 영역."
+        },
+        "checked_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "scope",
+        "checked_at"
+      ]
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "레코드 안에서 유일한 식별자. 참조의 존재·중복은 별도 검증한다."
+        },
+        "notice": {
+          "$ref": "#/$defs/notice"
+        },
+        "round": {
+          "$ref": "#/$defs/round"
+        },
+        "collection_policy": {
+          "$ref": "#/$defs/collectionPolicy"
+        },
+        "official_sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/officialSource"
+          },
+          "minItems": 1
+        },
+        "unofficial_sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/unofficialSource"
+          },
+          "minItems": 0
+        },
+        "official_forms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/officialForm"
+          },
+          "minItems": 0
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/question"
+          },
+          "minItems": 0
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 0
+        },
+        "ai_writing_policy": {
+          "enum": [
+            "unknown",
+            "not_stated",
+            "allowed",
+            "penalty_possible",
+            "prohibited"
+          ],
+          "description": "unknown은 확인 부족, not_stated는 기록된 검토 범위에서 정책 언급을 찾지 못한 상태. 어느 것도 allowed로 해석하지 않는다."
+        },
+        "policy_source": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/policySource"
+          },
+          "minItems": 0
+        },
+        "policy_review": {
+          "$ref": "#/$defs/policyReview"
+        },
+        "automatic_eligibility_use": {
+          "const": false
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "writing_constraints": {
+          "$ref": "#/$defs/writingConstraints"
+        }
+      },
+      "required": [
+        "record_id",
+        "notice",
+        "round",
+        "collection_policy",
+        "official_sources",
+        "unofficial_sources",
+        "official_forms",
+        "questions",
+        "evidence",
+        "ai_writing_policy",
+        "policy_source",
+        "policy_review",
+        "automatic_eligibility_use"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "ai_writing_policy": {
+                "enum": [
+                  "not_stated",
+                  "allowed",
+                  "penalty_possible",
+                  "prohibited"
+                ]
+              }
+            },
+            "required": [
+              "ai_writing_policy"
+            ]
+          },
+          "then": {
+            "properties": {
+              "policy_source": {
+                "minItems": 1
+              },
+              "policy_review": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "scoped_review",
+                      "full_round_review"
+                    ]
+                  },
+                  "checked_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "ai_writing_policy": {
+                "const": "unknown"
+              }
+            },
+            "required": [
+              "ai_writing_policy"
+            ]
+          },
+          "then": {
+            "description": "미확인 상태 그대로 보존한다. 허용·면책을 추론하지 않는다."
+          }
+        }
+      ],
+      "description": "한 공고의 한 회차·학적 경로에 관한 신청 글 준비용 참조 레코드. 조건 비교 및 선발 판단의 자동 근거로 사용하지 않는다."
+    },
+    "writingConstraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "language": {
+          "enum": [
+            "ko",
+            "unknown"
+          ]
+        },
+        "proper_names_english_allowed": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "공식 예외를 확인한 경우만 true/false. 미확인은 null."
+        },
+        "source_overflow_behavior": {
+          "enum": [
+            "automatic_deletion",
+            "unknown"
+          ]
+        },
+        "demo_overflow_behavior": {
+          "const": "warn_without_deletion"
+        },
+        "school_identification_caution": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "language",
+        "proper_names_english_allowed",
+        "source_overflow_behavior",
+        "demo_overflow_behavior",
+        "school_identification_caution",
+        "evidence_refs"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "anyOf": [
+              {
+                "properties": {
+                  "language": {
+                    "const": "ko"
+                  }
+                },
+                "required": [
+                  "language"
+                ]
+              },
+              {
+                "properties": {
+                  "proper_names_english_allowed": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "proper_names_english_allowed"
+                ]
+              },
+              {
+                "properties": {
+                  "source_overflow_behavior": {
+                    "const": "automatic_deletion"
+                  }
+                },
+                "required": [
+                  "source_overflow_behavior"
+                ]
+              },
+              {
+                "properties": {
+                  "school_identification_caution": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "school_identification_caution"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "properties": {
+              "evidence_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ],
+      "description": "문항 공통의 언어·식별정보·원 서비스 초과처리 규칙. 데모의 초과 경고는 원 서비스 동작과 분리하며 실제 입력을 자동 삭제하지 않는다."
+    }
+  }
+}

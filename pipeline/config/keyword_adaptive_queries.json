@@ -1,0 +1,306 @@
+{
+  "schema_version": "adaptive-keywords-1",
+  "date": "2026-10-13",
+  "queries": [
+    {
+      "id": "q081",
+      "group": "observed_programs",
+      "group_label": "새 사업명과 지역 조건",
+      "q": "일운과학기술재단 대학원 장학생 선발 공고",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q012",
+        "source_url": "https://sungkyun.kr/skku/campus/skk_comm/notice01.do?articleNo=140108&mode=view",
+        "source_title": "공지사항 게시판읽기 ( ( 대학원 ) 2026년 하반기 일운과학기술재단 장학생 선발 안내 ) | 성균관대학교",
+        "citation_ref": "turn259search1",
+        "observed_term": "일운과학기술재단",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q082",
+      "group": "observed_programs",
+      "group_label": "새 사업명과 지역 조건",
+      "q": "용운장학재단 국내대학원 진학 장학생 선발 규정",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q012",
+        "source_url": "https://www.yongwoon.co.kr/wp-content/uploads/2024/04/%EA%B5%AD%EB%82%B4%EB%8C%80%ED%95%99%EC%9B%90-%EC%A7%84%ED%95%99-%EC%9E%A5%ED%95%99%EC%83%9D-%EC%84%A0%EB%B0%9C%EA%B7%9C%EC%A0%95.pdf",
+        "source_title": "국내대학장학생선발및장학금지급규정",
+        "citation_ref": "turn259search15",
+        "observed_term": "yongwoon",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q083",
+      "group": "observed_programs",
+      "group_label": "새 사업명과 지역 조건",
+      "q": "통일과나눔 통일북한 대학원 장학생 선발",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q011",
+        "source_url": "https://icd.gwnu.ac.kr/kr/7899/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa3IlMkYxNjE1JTJGMzI3OTA0JTJGYXJ0Y2xWaWV3LmRvJTNG",
+        "source_title": "장학정보",
+        "citation_ref": "turn249search0",
+        "observed_term": "통일과나눔",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q084",
+      "group": "observed_programs",
+      "group_label": "새 사업명과 지역 조건",
+      "q": "한국장학재단 박사우수장학금 선발 신청 요강",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q024",
+        "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962564",
+        "source_title": "이공계 박사과정생에 연 750만 원 지원…박사우수장학금 첫 시행 - 정책뉴스 | 뉴스 | 대한민국 정책브리핑",
+        "citation_ref": "turn271search2",
+        "observed_term": "박사우수장학금",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q085",
+      "group": "observed_programs",
+      "group_label": "새 사업명과 지역 조건",
+      "q": "이공계 연구 생활장려금 참여대학 지원 요건",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q024",
+        "source_url": "https://eiec.kdi.re.kr/policy/materialView.do?num=277462",
+        "source_title": "이공계 연구 생활장려금 참여대학 35→43개교 확대, 이공계 대학원생 연구 생활 안전망 본격 확산 | 경제정책자료 |KDI 경제교육, 정보센터",
+        "citation_ref": "turn271search8",
+        "observed_term": "연구 생활장려금",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q086",
+      "group": "observed_programs",
+      "group_label": "새 사업명과 지역 조건",
+      "q": "Qualcomm Innovation Fellowship South Korea 2026 application research proposal",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q038",
+        "source_url": "https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-south-korea",
+        "source_title": "Qualcomm Innovation Fellowship South Korea 2026 | Qualcomm",
+        "citation_ref": "turn288search4",
+        "observed_term": "Qualcomm Innovation Fellowship South Korea 2026",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q087",
+      "group": "observed_programs",
+      "group_label": "새 사업명과 지역 조건",
+      "q": "Apple Scholars in AIML nomination guidelines research proposal",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q036",
+        "source_url": "https://www.ucl.ac.uk/study/doctoral-school/opportunities/apple-scholars-aiml-phd-fellowship-programme",
+        "source_title": "Apple Scholars in AI/ML PhD Fellowship Programme | Study at UCL",
+        "citation_ref": "turn284search0",
+        "observed_term": "Apple Scholars in AI/ML",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q088",
+      "group": "observed_programs",
+      "group_label": "새 사업명과 지역 조건",
+      "q": "Adobe India AI Research Fellowship eligibility 2026",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q037",
+        "source_url": "https://research.adobe.com/careers/fulltime/",
+        "source_title": "Adobe Research » Careers",
+        "citation_ref": "turn283search0",
+        "observed_term": "Adobe India AI Research Fellowship",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q089",
+      "group": "observed_programs",
+      "group_label": "새 사업명과 지역 조건",
+      "q": "IBM Academic Awards PhD Fellowship Awards nomination",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q035",
+        "source_url": "https://research.ibm.com/labs/yorktown-heights/ibm-academic-awards-program",
+        "source_title": "IBM Academic Awards Program - IBM Research",
+        "citation_ref": "turn282search0",
+        "observed_term": "IBM PhD Fellowship",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q090",
+      "group": "observed_programs",
+      "group_label": "새 사업명과 지역 조건",
+      "q": "International Dissertation Research Fellowship SSRC eligibility",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q044",
+        "source_url": "https://www.ssrc.org/programs/idrf/",
+        "source_title": "International Dissertation Research Fellowship – Social Science Research Council (SSRC)",
+        "citation_ref": "turn291search3",
+        "observed_term": "International Dissertation Research Fellowship",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q091",
+      "group": "observed_documents",
+      "group_label": "새 표현과 작성 경험",
+      "q": "fellowship research statement statement of purpose official sample",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q057",
+        "source_url": "https://gradschool.cornell.edu/admissions/application-steps/personal-statements/",
+        "source_title": "Write a Personal Statement - Graduate School : Graduate School",
+        "citation_ref": "turn305search4",
+        "observed_term": "statement of purpose",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q092",
+      "group": "observed_documents",
+      "group_label": "새 표현과 작성 경험",
+      "q": "graduate scholarship motivation letter official requirements",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q080",
+        "source_url": "https://lunavannguyen.substack.com/p/my-journey-to-a-fully-funded-phd",
+        "source_title": "🌱My Journey to a Fully Funded PhD - by Academic Writer",
+        "citation_ref": "turn328search9",
+        "observed_term": "motivation letter",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q093",
+      "group": "observed_documents",
+      "group_label": "새 표현과 작성 경험",
+      "q": "dissertation completion fellowship external international eligibility",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q043",
+        "source_url": "https://gradschool.princeton.edu/financial-support/financial-support-model/dissertation-completion-funding",
+        "source_title": "Dissertation Completion Funding | Graduate School",
+        "citation_ref": "turn289search0",
+        "observed_term": "Dissertation Completion Funding",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q094",
+      "group": "observed_documents",
+      "group_label": "새 표현과 작성 경험",
+      "q": "doctoral research travel grant application reimbursement",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q048",
+        "source_url": "https://grad.ucla.edu/funding/financial-aid/funding-for-continuing-students/doctoral-student-travel-grants/",
+        "source_title": "UCLA Doctoral Student Travel Grants for Conferences, Professional Development and Off-Campus Research (DTG) | UCLA Graduate Programs",
+        "citation_ref": "turn295search2",
+        "observed_term": "reimbursement",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q095",
+      "group": "observed_documents",
+      "group_label": "새 표현과 작성 경험",
+      "q": "PhD bursary studentship nationality eligibility",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q042",
+        "source_url": "https://www.up.ac.za/funding-site/funding/2027-new-application-doctoral-research-bursary",
+        "source_title": "2027 NEW APPLICATION - UP DOCTORAL RESEARCH BURSARY | University Of Pretoria",
+        "citation_ref": "turn290search0",
+        "observed_term": "BURSARY",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q096",
+      "group": "observed_documents",
+      "group_label": "새 표현과 작성 경험",
+      "q": "Qualcomm Innovation Fellowship South Korea winners interview",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q038",
+        "source_url": "https://www.qualcomm.com/research/university-relations/innovation-fellowship/winners",
+        "source_title": "Qualcomm Innovation Fellowship Winners | Qualcomm",
+        "citation_ref": "turn288search1",
+        "observed_term": "Qualcomm Innovation Fellowship Winners",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q097",
+      "group": "observed_documents",
+      "group_label": "새 표현과 작성 경험",
+      "q": "Apple Scholars in AIML 2026 research profiles",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q036",
+        "source_url": "https://machinelearning.apple.com/updates/apple-scholars-aiml-2026",
+        "source_title": "Announcing the 2026 Apple Scholars in AIML - Apple Machine Learning Research",
+        "citation_ref": "turn284search5",
+        "observed_term": "Announcing the 2026 Apple Scholars",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q098",
+      "group": "observed_documents",
+      "group_label": "새 표현과 작성 경험",
+      "q": "일운과학기술재단 장학생 연구 경험 인터뷰",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q012",
+        "source_url": "https://sungkyun.kr/skku/campus/skk_comm/notice01.do?articleNo=140108&mode=view",
+        "source_title": "공지사항 게시판읽기 ( ( 대학원 ) 2026년 하반기 일운과학기술재단 장학생 선발 안내 ) | 성균관대학교",
+        "citation_ref": "turn259search1",
+        "observed_term": "일운과학기술재단",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q099",
+      "group": "observed_documents",
+      "group_label": "새 표현과 작성 경험",
+      "q": "통일과나눔 대학원 장학생 면접 후기",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q011",
+        "source_url": "https://icd.gwnu.ac.kr/kr/7899/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa3IlMkYxNjE1JTJGMzI3OTA0JTJGYXJ0Y2xWaWV3LmRvJTNG",
+        "source_title": "장학정보",
+        "citation_ref": "turn249search0",
+        "observed_term": "통일과나눔",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    },
+    {
+      "id": "q100",
+      "group": "observed_documents",
+      "group_label": "새 표현과 작성 경험",
+      "q": "fellowship rejection resubmission research proposal lessons",
+      "stage": "adaptive",
+      "derived_from": {
+        "source_query_id": "q076",
+        "source_url": "https://scholarlydream.com/advice/applications/after-a-scholarship-rejection/",
+        "source_title": "What to do after a scholarship rejection ,  Scholarly Dream",
+        "citation_ref": "turn324search1",
+        "observed_term": "rejection",
+        "evidence_scope": "search_result_label_or_excerpt"
+      }
+    }
+  ]
+}

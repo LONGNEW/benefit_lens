@@ -1,0 +1,860 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:benefitlens:academic-comparison:v1",
+  "title": "BenefitLens 성적·어학 국소 비교 규격 (설계 제안)",
+  "description": "공고별 설정과 부분 프로필. 구문 검증은 원문 정규화 승인이나 전체 지원 자격 확정이 아니다. 임의 환산과 유효기간 자동 적용은 하지 않는다.",
+  "$comment": "척도 버전·period·context, 문턱<=scale, 날짜순서, 근거 ID 해소는 TypeScript 모듈이 별도로 검사한다. 출처 추가 메타데이터는 보존한다.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/Profile"
+    },
+    {
+      "$ref": "#/$defs/RuleSet"
+    },
+    {
+      "$ref": "#/$defs/Notice"
+    },
+    {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Notice"
+      }
+    }
+  ],
+  "$defs": {
+    "Evidence": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "locator",
+        "quote"
+      ],
+      "additionalProperties": true
+    },
+    "Source": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "document_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "published_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "checked_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          }
+        }
+      },
+      "required": [
+        "source_id",
+        "title",
+        "url",
+        "document_version",
+        "published_at",
+        "evidence"
+      ],
+      "additionalProperties": true
+    },
+    "GradeFact": {
+      "type": "object",
+      "properties": {
+        "metric": {
+          "enum": [
+            "GPA",
+            "percentile"
+          ]
+        },
+        "score": {
+          "type": "number",
+          "minimum": 0
+        },
+        "scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "period": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "confirmed",
+            "unknown",
+            "invalid"
+          ]
+        }
+      },
+      "required": [
+        "metric",
+        "score",
+        "scale",
+        "period",
+        "context"
+      ],
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "const": "percentile"
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "scale": {
+                "const": 100
+              },
+              "score": {
+                "maximum": 100
+              }
+            }
+          }
+        }
+      ]
+    },
+    "EnglishFact": {
+      "type": "object",
+      "properties": {
+        "test_type": {
+          "enum": [
+            "TOEIC",
+            "TOEFL_iBT",
+            "IELTS",
+            "NEW_TEPS",
+            "TOEIC_SPEAKING",
+            "OPIc",
+            "TEPS_SPEAKING"
+          ]
+        },
+        "score": {
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "test_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "score_scale": {
+          "oneOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        },
+        "status": {
+          "enum": [
+            "confirmed",
+            "unknown",
+            "invalid"
+          ]
+        }
+      },
+      "required": [
+        "test_type",
+        "score",
+        "test_date"
+      ],
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "test_type": {
+                "const": "OPIc"
+              }
+            },
+            "required": [
+              "test_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "score": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "score": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Profile": {
+      "type": "object",
+      "properties": {
+        "education_path": {
+          "enum": [
+            "undergraduate",
+            "graduate"
+          ]
+        },
+        "source_path": {
+          "enum": [
+            "undergraduate_enrolled",
+            "graduate_new",
+            "graduate_enrolled",
+            "undergraduate",
+            "graduate"
+          ]
+        },
+        "grades": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/GradeFact"
+          }
+        },
+        "english": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/EnglishFact"
+          }
+        },
+        "english_inventory_complete": {
+          "type": "boolean"
+        }
+      },
+      "required": [],
+      "additionalProperties": false,
+      "description": "부분 프로필은 필드를 생략하여 미상을 남긴다. 값이 있으면 타입을 준수한다. 불완전한 폼 입력은 엔진이 별도로 unknown 처리한다."
+    },
+    "ScoreDomain": {
+      "type": "object",
+      "properties": {
+        "minimum": {
+          "type": "number",
+          "minimum": 0
+        },
+        "maximum": {
+          "type": "number",
+          "minimum": 0
+        },
+        "step": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "ExplicitDateWindow": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string",
+          "format": "date"
+        },
+        "to": {
+          "type": "string",
+          "format": "date"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "from",
+        "to",
+        "evidence_ids"
+      ],
+      "additionalProperties": true
+    },
+    "GradeAlternative": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metric": {
+          "enum": [
+            "GPA",
+            "percentile"
+          ]
+        },
+        "minimum_score": {
+          "type": "number",
+          "minimum": 0
+        },
+        "scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "period": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "supported": {
+          "type": "boolean"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "metric",
+        "minimum_score",
+        "scale",
+        "period",
+        "context",
+        "evidence_ids"
+      ],
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "const": "percentile"
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "scale": {
+                "const": 100
+              },
+              "minimum_score": {
+                "maximum": 100
+              }
+            }
+          }
+        }
+      ]
+    },
+    "EnglishAlternative": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "test_type": {
+          "enum": [
+            "TOEIC",
+            "TOEFL_iBT",
+            "IELTS",
+            "NEW_TEPS",
+            "TOEIC_SPEAKING",
+            "OPIc",
+            "TEPS_SPEAKING"
+          ]
+        },
+        "minimum_score": {
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "score_kind": {
+          "enum": [
+            "numeric",
+            "ordered_enum"
+          ]
+        },
+        "explicit_date_window": {
+          "$ref": "#/$defs/ExplicitDateWindow"
+        },
+        "score_domain": {
+          "$ref": "#/$defs/ScoreDomain"
+        },
+        "score_scale": {
+          "oneOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        },
+        "ordered_values": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "supported": {
+          "type": "boolean"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "test_type",
+        "minimum_score",
+        "score_kind",
+        "evidence_ids"
+      ],
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "score_kind": {
+                "const": "ordered_enum"
+              }
+            },
+            "required": [
+              "score_kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "test_type": {
+                "const": "OPIc"
+              },
+              "minimum_score": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "test_type": {
+                "not": {
+                  "const": "OPIc"
+                }
+              },
+              "minimum_score": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "GradeRequirement": {
+      "type": "object",
+      "properties": {
+        "applicability": {
+          "enum": [
+            "required",
+            "not_applicable",
+            "unknown"
+          ],
+          "default": "required"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/GradeAlternative"
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "alternatives"
+      ],
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "applicability": {
+                "const": "required"
+              }
+            },
+            "required": [
+              "applicability"
+            ]
+          },
+          "then": {
+            "properties": {
+              "alternatives": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "applicability": {
+                "const": "not_applicable"
+              }
+            },
+            "required": [
+              "applicability"
+            ]
+          },
+          "then": {
+            "properties": {
+              "alternatives": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "EnglishRequirement": {
+      "type": "object",
+      "properties": {
+        "applicability": {
+          "enum": [
+            "required",
+            "not_applicable",
+            "unknown"
+          ]
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/EnglishAlternative"
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "applicability",
+        "alternatives"
+      ],
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "applicability": {
+                "const": "required"
+              }
+            },
+            "required": [
+              "applicability"
+            ]
+          },
+          "then": {
+            "properties": {
+              "alternatives": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "applicability": {
+                "const": "not_applicable"
+              }
+            },
+            "required": [
+              "applicability"
+            ]
+          },
+          "then": {
+            "properties": {
+              "alternatives": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "UncomparedRequirement": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "role",
+        "evidence_ids"
+      ],
+      "additionalProperties": true
+    },
+    "PathRequirements": {
+      "type": "object",
+      "properties": {
+        "education_path": {
+          "enum": [
+            "undergraduate",
+            "graduate"
+          ]
+        },
+        "grade": {
+          "$ref": "#/$defs/GradeRequirement"
+        },
+        "english": {
+          "$ref": "#/$defs/EnglishRequirement"
+        },
+        "uncompared_requirements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/UncomparedRequirement"
+          }
+        }
+      },
+      "required": [
+        "education_path",
+        "grade",
+        "english",
+        "uncompared_requirements"
+      ],
+      "additionalProperties": true
+    },
+    "RuleSet": {
+      "type": "object",
+      "properties": {
+        "rule_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "paths": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": {
+            "enum": [
+              "undergraduate_enrolled",
+              "graduate_new",
+              "graduate_enrolled",
+              "undergraduate",
+              "graduate"
+            ]
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/PathRequirements"
+          }
+        },
+        "uncompared_requirements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/UncomparedRequirement"
+          }
+        },
+        "semantic_limits": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "rule_version",
+        "source",
+        "paths"
+      ],
+      "additionalProperties": true
+    },
+    "Notice": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string"
+        },
+        "admissionStatus": {
+          "enum": [
+            "closed",
+            "open",
+            "upcoming",
+            "unknown"
+          ]
+        },
+        "gradeContextLabels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "ruleSet": {
+          "$ref": "#/$defs/RuleSet"
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "ruleSet"
+      ],
+      "additionalProperties": true
+    }
+  }
+}

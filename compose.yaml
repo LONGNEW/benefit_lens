@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-unlock}
+      POSTGRES_USER: ${POSTGRES_USER:-unlock}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run make init first}
+    ports:
+      - "127.0.0.1:${BENEFITLENS_POSTGRES_PORT:-55433}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+volumes:
+  postgres_data:
+

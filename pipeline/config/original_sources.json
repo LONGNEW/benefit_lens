@@ -1,0 +1,40 @@
+{
+  "user_agent": "BenefitLens-course-original-collector/1.0 (+educational, internal research)",
+  "limits": {"workers": 4, "timeout_seconds": 25, "delay_seconds": 1.0, "max_body_bytes": null, "max_depth": 2, "max_links_per_page": 8, "max_nodes_per_candidate": 16, "max_requests_per_host": 160},
+  "access_policy": {"robots_mode": "observe", "follow_public_redirects": true, "robots_timeout_seconds": 10, "robots_attempts": 1, "authorization": "user_requested_public_source_retry_2026-10-14", "retain_https_validation": true, "retain_public_ip_validation": true},
+  "providers": [
+    {"host": "postech.ac.kr", "name": "POSTECH", "kind": "university"},
+    {"host": "kosaf.go.kr", "name": "한국장학재단", "kind": "public_agency"},
+    {"host": "qualcomm.com", "name": "Qualcomm", "kind": "company"},
+    {"host": "research.google", "name": "Google", "kind": "company"},
+    {"host": "research.nvidia.com", "name": "NVIDIA", "kind": "company"},
+    {"host": "research.adobe.com", "name": "Adobe", "kind": "company"},
+    {"host": "microsoft.com", "name": "Microsoft", "kind": "company"},
+    {"host": "research.ibm.com", "name": "IBM", "kind": "company"},
+    {"host": "ibm.com", "name": "IBM", "kind": "company"},
+    {"host": "research.facebook.com", "name": "Meta", "kind": "company"},
+    {"host": "researchatmeta.com", "name": "Meta", "kind": "company"},
+    {"host": "machinelearning.apple.com", "name": "Apple", "kind": "company"},
+    {"host": "ilun.or.kr", "name": "일운과학기술재단", "kind": "corporate_foundation"},
+    {"host": "yongwoon.co.kr", "name": "용운장학재단", "kind": "corporate_foundation"},
+    {"host": "iljufoundation.org", "name": "일주학술문화재단", "kind": "corporate_foundation"},
+    {"host": "ikef.or.kr", "name": "관정이종환교육재단", "kind": "corporate_foundation"},
+    {"host": "postf.org", "name": "포스코청암재단", "kind": "corporate_foundation"},
+    {"host": "foundation.miraeasset.com", "name": "미래에셋박현주재단", "kind": "corporate_foundation"},
+    {"host": "cmkfoundation-scholarship.org", "name": "현대차 정몽구 재단", "kind": "corporate_foundation"},
+    {"host": "ssrc.org", "name": "Social Science Research Council", "kind": "association_nonprofit"},
+    {"host": "nsf.gov", "name": "National Science Foundation", "kind": "public_agency"},
+    {"host": "grants.nih.gov", "name": "National Institutes of Health", "kind": "public_agency"}
+    ,{"host": "akf.org", "name": "Aga Khan Foundation", "kind": "association_nonprofit", "authority_basis": "https://akf.org/international-scholarship-programme/"}
+    ,{"host": "anso.org.cn", "name": "ANSO", "kind": "association_nonprofit", "authority_basis": "https://www.anso.org.cn/programmes/talent/scholarship/202510/t20251015_786021.html"}
+    ,{"host": "dfg.de", "name": "Deutsche Forschungsgemeinschaft", "kind": "association_nonprofit", "authority_basis": "https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/research-fellowships"}
+    ,{"host": "kf.or.kr", "name": "한국국제교류재단", "kind": "public_agency", "authority_basis": "https://www.kf.or.kr/kfEng/cm/cntnts/cntntsView.do?cntntsId=1638&mi=2219"}
+    ,{"host": "daad.de", "name": "DAAD", "kind": "association_nonprofit", "authority_basis": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?detail=57742130", "require_body_pattern": "•\\s*DAAD"}
+  ],
+  "resolution_hints": [
+    {"pattern": "Qualcomm.*(?:Korea|한국).*2026|Qualcomm.*2026.*Korea", "url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/zip-files/qifk-korea-2026-matters.zip", "label": "Qualcomm Innovation Fellowship Korea 2026 공식 제출 자료", "basis_url": "https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-south-korea", "method": "official_page_submission_attachment_link"},
+    {"pattern": "박사우수", "url": "https://www.kosaf.go.kr/ko/notice.do?mode=view&page=1&seqNo=20888", "label": "한국장학재단 2026년 박사우수장학금 업무처리기준", "basis_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962564", "method": "followup_search_verified_official_url"},
+    {"pattern": "박사우수", "url": "https://www.kosaf.go.kr/ko/scholar.do?naviParam=JH%2C04%2C09%2C01&pg=scholarship05_24_01&ttab1=1", "label": "한국장학재단 박사우수장학금 공식 안내", "basis_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962564", "method": "followup_search_verified_official_url"},
+    {"pattern": "일운", "url": "https://www.ilun.or.kr/", "label": "일운과학기술재단 공식 홈페이지", "basis_url": "https://student.snu.ac.kr/", "method": "foundation_domain_identified_in_official_university_notice"}
+  ]
+}

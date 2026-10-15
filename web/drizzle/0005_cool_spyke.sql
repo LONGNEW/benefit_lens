@@ -1,0 +1,2 @@
+ALTER TABLE `opportunity_registry` ADD `evidence_sources_json` text DEFAULT '[]' NOT NULL;--> statement-breakpoint
+ALTER TABLE `opportunity_registry_stage` ADD `evidence_sources_json` text DEFAULT '[]' NOT NULL;

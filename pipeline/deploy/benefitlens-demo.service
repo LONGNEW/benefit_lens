@@ -1,0 +1,18 @@
+[Unit]
+Description=BenefitLens read-only PostgreSQL demo
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens
+Environment="PYTHONPATH=/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/src"
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 -m data_platform.pipeline_demo --port 5179
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=yes
+PrivateTmp=yes
+UMask=0077
+
+[Install]
+WantedBy=default.target

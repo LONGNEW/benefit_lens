@@ -1,0 +1,28 @@
+{
+  "schema_version": "discovery-1",
+  "user_agent": "BenefitLens-course-demo/1.0 (+educational, limited crawl)",
+  "limits": {"max_depth": 2, "max_page_fetches": 32, "max_pages_per_host": 8, "delay_seconds": 1.0, "timeout_seconds": 15, "max_body_bytes": 8000000},
+  "allowed_hosts": ["www.data.go.kr", "www.ikef.or.kr", "ikef.or.kr", "www.iljufoundation.org", "research.nvidia.com", "apply.kf.or.kr"],
+  "catalog": {
+    "page_url": "https://www.data.go.kr/data/15028252/fileData.do",
+    "metadata_url": "https://www.data.go.kr/tcs/dss/selectFileDataDownload.do?fileDetailSn=1&publicDataPk=15028252",
+    "operators_to_visit": ["관정재단", "(재)일주학술문화재단"]
+  },
+  "search_batch": {
+    "provider": "OpenAI web search",
+    "selection": "selected_results_from_tool_not_full_search_results",
+    "searched_on": "2026-10-13",
+    "candidates": [
+      {"query": "PhD fellowship application guidelines NVIDIA graduate fellowship 2027 2028", "url": "https://research.nvidia.com/graduate-fellowships?ncid=em-anno-418307", "label": "NVIDIA Graduate Fellowship", "language": "en", "source_country": "US"},
+      {"query": "PhD fellowship application guidelines Korea foundation 2026", "url": "https://apply.kf.or.kr/main.nkf?lang=en_US", "label": "KF Application Portal", "language": "en", "source_country": "KR"},
+      {"query": "site.ikef.or.kr 2026 대학원 장학생 선발", "url": "https://ikef.or.kr/page.php?id=%2Fkj%2Fscholar_schedule_detail&page=1&wr_id=102", "label": "관정재단 국내장학생 선발 안내", "language": "ko", "source_country": "KR"},
+      {"query": "site:iljufoundation.org \"인터뷰\" \"34기\"", "url": "https://www.iljufoundation.org/html/stifFront01.do?contentTypeCode=FS", "label": "일주재단 해외박사 장학생 인터뷰 목록", "language": "ko", "source_country": "KR"},
+      {"query": "site.iljufoundation.org 2026 장학생 국내학사 박사", "url": "https://www.iljufoundation.org/download/34thGuide.pdf", "label": "일주재단 34기 국내학사 장학생 지원가이드", "language": "ko", "source_country": "KR"}
+    ]
+  },
+  "search_dictionary": {
+    "opportunity": ["장학금", "연구지원", "scholarship", "fellowship"],
+    "degree": ["대학원", "박사", "graduate", "PhD"],
+    "document": ["모집 공고", "신청 양식", "지원 후기", "application guidelines", "application experience"]
+  }
+}

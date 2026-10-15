@@ -1,0 +1,24 @@
+{
+  "schema_version": "broad-support-1",
+  "purpose": "High-recall public support discovery, independent of eligibility and issuer registry",
+  "countries_and_operators": "All countries, governments, companies, foundations and universities",
+  "scope_terms": ["scholarship", "fellowship", "studentship", "bursary", "tuition", "learning", "training", "living allowance", "housing support", "cash benefit", "research grant", "장학금", "학습 지원", "생계 지원", "교육비", "지원금"],
+  "rights_status": "review_required",
+  "local_only": true,
+  "sources": [
+    {"id": "kosaf", "url": "https://www.data.go.kr/data/15028252/fileData.do", "method": "declared CSV distribution", "country": "KR", "authority": "official_catalog"},
+    {"id": "youth", "url": "https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch", "method": "public frontend JSON search declared in HTML", "country": "KR", "authority": "official_catalog"},
+    {"id": "dreamspon", "url": "https://www.dreamspon.com/scholarship/list.html", "method": "public listing pagination", "country": "KR", "authority": "reference_catalog"},
+    {"id": "grants", "url": "https://www.grants.gov/xml-extract", "method": "declared daily XML ZIP export", "country": "US", "authority": "official_catalog", "note": "Historical grants to institutions and governments included; not an individual-scholarship count"},
+    {"id": "scholars4dev", "url": "https://www.scholars4dev.com/", "method": "advertised public WordPress API", "country": null, "authority": "reference_catalog"},
+    {"id": "opportunitydesk", "url": "https://opportunitydesk.org/", "method": "advertised public WordPress API", "country": null, "authority": "reference_catalog"},
+    {"id": "uq", "url": "https://scholarships.uq.edu.au/scholarships", "method": "official scholarship listing pagination", "country": "AU", "authority": "official_university"},
+    {"id": "unsw", "url": "https://www.scholarships.unsw.edu.au/scholarships/search", "method": "official scholarship listing", "country": "AU", "authority": "official_university"},
+    {"id": "jasso", "url": "https://www.studyinjapan.go.jp/en/search-for-scholarships/", "method": "official search form pagination", "country": "JP", "authority": "official_catalog"},
+    {"id": "ubc", "url": "https://www.grad.ubc.ca/scholarships-awards-funding/award-opportunities", "method": "official university listing pagination", "country": "CA", "authority": "official_catalog"},
+    {"id": "ukri", "url": "https://www.ukri.org/opportunity/", "method": "official funding finder pagination, open, closed and upcoming", "country": "GB", "authority": "official_catalog", "note": "Institutional research grants included"}
+  ],
+  "access_limits": {"https_validation": true, "public_ip_validation": true, "login_bypass": false, "captcha_bypass": false, "per_host_delay_seconds": 1, "robots_mode": "observe"},
+  "count_units": ["source_record", "source_url", "publication", "raw_response", "source_and_record_id_deduplication"],
+  "not_claimed": ["all countries exhaustively covered", "all source records are scholarships", "every publication is a distinct program", "currently eligible for this user"]
+}

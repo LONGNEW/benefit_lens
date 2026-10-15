@@ -1,0 +1,137 @@
+{
+  "schema_version": "keyword-plan-1",
+  "date": "2026-10-13",
+  "target": 100,
+  "initial_count": 80,
+  "adaptive_count": 20,
+  "groups": [
+    {
+      "id": "postech",
+      "label": "POSTECH 전체 학교와 학과",
+      "queries": [
+        "site:postech.ac.kr 대학원 장학금 모집",
+        "site:postech.ac.kr 박사과정 장학생 추천",
+        "site:postech.ac.kr 대학원 생활비 장학",
+        "site:postech.ac.kr 박사 연구장려금 지원",
+        "site:postech.ac.kr 대학원 학과 재정지원",
+        "site:postech.ac.kr 연구 학술대회 참가 지원 대학원",
+        "site:postech.ac.kr 대학원 장학금 신청서 자기소개서",
+        "site:postech.ac.kr 대학원 교외 재단 장학생",
+        "site:postech.ac.kr 융합대학원 장학금",
+        "site:postech.ac.kr 대학원 장학생 선발 공고 2026 2027"
+      ]
+    },
+    {
+      "id": "korean_scholarship",
+      "label": "국내 재단과 대학원 장학",
+      "queries": [
+        "대학원 박사 장학금 민간 재단 모집 공고",
+        "국내 대학원 장학생 재단 선발",
+        "박사과정 생활비 장학금 재단",
+        "대학원 연구 장학금 이공계 재단",
+        "대학원 등록금 장학금 재단 지원",
+        "박사과정 신입생 장학금 지원",
+        "국내 대학원 장학금 전일제 미취업",
+        "대학원 장학생 지역 재단 모집",
+        "학술 장학재단 박사과정 선발 연구계획서",
+        "대학원 장학사업 국내 재단 지원사업 2026 2027"
+      ]
+    },
+    {
+      "id": "public_research",
+      "label": "국가와 공공 연구지원",
+      "queries": [
+        "박사과정생 연구장려금 한국연구재단 공고",
+        "이공분야 학문후속세대 박사과정생 연구지원",
+        "인문사회 박사과정생 연구장려금 공고",
+        "우수 대학원생 연구장학금 과학기술정보통신부",
+        "대학원생 연구지원 사업 IRIS 공고",
+        "박사과정 연구비 지원 산학협력단",
+        "대학원생 학술활동 지원 공공기관",
+        "국가 연구장학금 박사 지원서 양식",
+        "대학원생 기초연구 지원 신진 연구인력",
+        "대학원생 국제공동연구 지원 사업 연구장려금"
+      ]
+    },
+    {
+      "id": "corporate_global",
+      "label": "해외 기업 학생 펠로십",
+      "queries": [
+        "Google PhD Fellowship application guidelines East Asia",
+        "Microsoft Research Fellowship PhD student Korea",
+        "NVIDIA Graduate Fellowship research proposal guidelines",
+        "Meta PhD Research Fellowship application",
+        "IBM PhD Fellowship nomination international",
+        "Apple Scholars AI ML PhD fellowship application",
+        "Adobe Research Fellowship PhD application",
+        "Qualcomm Innovation Fellowship PhD students",
+        "Tencent PhD fellowship scholarship application",
+        "Amazon PhD research fellowship scholarship students"
+      ]
+    },
+    {
+      "id": "funding_terms",
+      "label": "다른 이름의 박사 지원",
+      "queries": [
+        "doctoral studentship international external funding",
+        "PhD bursary current doctoral students",
+        "doctoral completion fellowship external funding",
+        "dissertation fellowship international applicants",
+        "predoctoral fellowship computer science research funding",
+        "graduate research fellowship private foundation international",
+        "doctoral research scholarship Asia foundation",
+        "PhD research travel grant international conference",
+        "graduate tuition stipend scholarship external funding",
+        "doctoral researcher grant personal application international"
+      ]
+    },
+    {
+      "id": "official_forms",
+      "label": "공식 문항과 작성 안내",
+      "queries": [
+        "대학원 장학금 신청서 자기소개서 양식",
+        "박사 장학금 연구계획서 작성 안내",
+        "대학원 장학 학업계획서 평가 기준",
+        "재단 장학생 선발 제출서류 지원가이드",
+        "장학금 자기소개서 문항 공식 재단",
+        "PhD fellowship application research proposal template",
+        "graduate scholarship personal statement official guidelines",
+        "doctoral fellowship selection criteria recommendation letters",
+        "fellowship statement of research word limit",
+        "scholarship application AI writing policy guidelines"
+      ]
+    },
+    {
+      "id": "experience_ko",
+      "label": "국내 준비 후기와 수기",
+      "queries": [
+        "대학원 장학금 지원 후기",
+        "박사과정 장학생 합격 인터뷰 재단",
+        "장학재단 장학생 연구 경험 수기",
+        "장학금 연구계획서 작성 경험 후기",
+        "대학원 장학금 면접 후기",
+        "장학금 지원 불합격 후기 준비",
+        "재단 장학생 선발 자기소개서 작성 팁",
+        "박사 장학금 선정자 준비 과정 인터뷰",
+        "이공계 장학생 연구지원 활동보고서 수기",
+        "대학원 장학재단 공식 장학생 인터뷰"
+      ]
+    },
+    {
+      "id": "experience_en",
+      "label": "해외 지원 경험과 사례",
+      "queries": [
+        "PhD fellowship application experience personal blog",
+        "Google PhD Fellowship recipient application advice",
+        "NVIDIA fellowship research proposal application experience",
+        "Microsoft Research Fellowship recipient interview",
+        "doctoral fellowship winning proposal public example",
+        "graduate scholarship application lessons rejection",
+        "research fellowship application tips official",
+        "PhD funding personal statement sample official",
+        "fellowship scholars interview research journey",
+        "doctoral scholarship alumni stories application preparation"
+      ]
+    }
+  ]
+}
