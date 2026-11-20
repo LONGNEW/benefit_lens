@@ -19,6 +19,8 @@ DB 포트는 55433, 기본 실행 화면은 5180이다. 현재 로컬 서비스 
 
 ## 단계별 실행 증거까지 다시 만들려면
 
+PDF를 다시 추출하려면 `pdftotext`가 필요하다. Ubuntu/Debian에서는 `sudo apt-get install -y poppler-utils`로 설치하고 `make doctor`에서 확인한다. 한글 보고서 생성과 전체 테스트는 `fonts-nanum`, `zstd` 시스템 패키지와 `make install`로 설치하는 보고서용 Python 라이브러리도 사용한다.
+
 기존 원문과 `.local/pattern-runs/` 캐시 및 Node가 있을 때 `make pipeline-replay`를 실행한다. 다른 경로의 수집 기록은 `COLLECTION="/private/path/collection.json"`으로 지정한다. 이 실행은 원문 29개의 해시와 경험 인용을 재검증하고 공고 10개를 두 번 적재한 뒤 임시 HTTP 서버로 11개 시나리오를 검사한다. 임시 서버는 검사 후 종료한다.
 
 성공 기록은 `.local/pipeline-replay/latest.json`과 `web/pipeline-demo/pipeline-run.json`이다. 실행 중인 데모의 `/assets/pipeline-run.html`에서 읽는다. 원문 다운로드, 신규 모델 호출과 광역 수집 재개는 하지 않는다. 원문이나 모델 캐시가 없으면 이 경로는 실패하며 기본 표본 데모는 그대로 사용할 수 있다.

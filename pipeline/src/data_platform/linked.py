@@ -112,7 +112,14 @@ def extract_document(body: bytes, kind: str) -> str:
         path.write_bytes(body)
         process_options = {}
         if kind == "pdf":
-            command = [shutil.which("pdftotext") or "pdftotext", "-layout", str(path), "-"]
+            binary = shutil.which("pdftotext")
+            if not binary:
+                raise RuntimeError(
+                    "PDF text converter unavailable (pdftotext); "
+                    "Ubuntu/Debian: sudo apt-get install -y poppler-utils; "
+                    "macOS: brew install poppler"
+                )
+            command = [binary, "-layout", str(path), "-"]
         elif kind == "hwp":
             binary = shutil.which("hwp5txt")
             if not binary:

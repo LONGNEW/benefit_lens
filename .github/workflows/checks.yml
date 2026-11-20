@@ -10,9 +10,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: sudo apt-get update && sudo apt-get install -y zstd
+      - name: Install PDF tools, Korean fonts and archive tools
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils fonts-nanum zstd
       - run: python -m pip install -r pipeline/requirements.lock -e pipeline
-      - run: python -m pytest pipeline/tests tools/tests -q
+      - run: make test
   schema:
     runs-on: ubuntu-latest
     steps:

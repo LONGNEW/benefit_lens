@@ -17,6 +17,7 @@ dependencies = [
 
 [project.optional-dependencies]
 test = ["pytest>=8,<10", "jsonschema>=4.10,<5"]
+reports = ["reportlab>=4.4,<5", "pypdf>=6,<7"]
 
 [project.scripts]
 benefitlens-pipeline = "data_platform.cli:entrypoint"

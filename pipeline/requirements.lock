@@ -17,3 +17,7 @@ Pygments==2.17.2
 jsonschema==4.10.3
 attrs==23.2.0
 pyrsistent==0.20.0
+# PDF report generation and verification used by the full test suite.
+reportlab==4.4.9
+pypdf==6.21.4
+pillow==12.2.0

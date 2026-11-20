@@ -110,6 +110,22 @@ def test_bad_pdf_does_not_discard_remaining_archive(tmp_path):
     assert spec['_held_members'][0]['reason']=='pdf_text_extraction_failed'
 
 
+def test_missing_pdf_converter_preserves_other_members_and_install_hint(tmp_path,monkeypatch):
+    def unavailable(command,**kwargs):
+        raise FileNotFoundError(2,'No such file or directory',command[0])
+    monkeypatch.setattr('collect_benefitlens_writing_foundations.subprocess.run',unavailable)
+    raw=archive({'repo/proposal.pdf':b'%PDF-unread', 'repo/README.md':'# Guidance\n'+('Readable guidance. '*8)})
+    spec={'id':'gsoc-test','include':['*.pdf','README.md'],'repo':'publisher/proposals','genre':'proposal',
+          'role':'application_text','scope':'test','_held_members':[]}
+    docs,_=archive_members(raw,spec,tmp_path,'fixed')
+    assert [doc['member'] for doc in docs]==['README.md']
+    held=spec['_held_members'][0]
+    assert held['member']=='proposal.pdf'
+    assert held['reason']=='pdf_text_converter_unavailable'
+    assert 'poppler-utils' in held['install_hint']
+    assert held['raw']['sha256']
+
+
 def test_same_site_native_ids_are_isolated_between_communities(tmp_path):
     class Reader:
         def read(self,url):

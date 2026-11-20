@@ -5,19 +5,11 @@ from collections import Counter,defaultdict
 from datetime import datetime
 from hashlib import sha256
 import json
-import os
 from pathlib import Path
-import sys
 from xml.sax.saxutils import escape
 from zoneinfo import ZoneInfo
 
-try:
-    from reportlab.lib import colors
-except ImportError:
-    runtime=Path('/home/longnew/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3')
-    if not runtime.exists() or Path(sys.executable).resolve()==runtime.resolve():raise
-    os.execv(str(runtime),[str(runtime),str(Path(__file__).resolve()),*sys.argv[1:]])
-
+from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics

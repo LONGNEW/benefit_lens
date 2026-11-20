@@ -170,6 +170,11 @@ def archive_members(raw,spec,root,revision):
                 else:
                     try:
                         extraction=subprocess.run(['pdftotext','-layout',str(p),'-'],capture_output=True,timeout=30)
+                    except FileNotFoundError:
+                        spec.get('_held_members',[]).append({
+                            'member':relative,'reason':'pdf_text_converter_unavailable','raw':original_ref,
+                            'install_hint':'Ubuntu/Debian: sudo apt-get install -y poppler-utils; macOS: brew install poppler'})
+                        continue
                     except subprocess.TimeoutExpired:
                         spec.get('_held_members',[]).append({'member':relative,'reason':'pdf_text_extraction_timeout','raw':original_ref})
                         continue

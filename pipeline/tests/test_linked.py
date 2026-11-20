@@ -179,6 +179,25 @@ def test_hwp_uses_installed_text_converter_and_fails_explicitly_if_unavailable(m
         extract_document(b"hwp bytes", "hwp")
 
 
+def test_missing_pdftotext_explains_system_package_without_starting_process(monkeypatch):
+    monkeypatch.setattr("data_platform.linked.shutil.which", lambda name: None)
+    monkeypatch.setattr("data_platform.linked.subprocess.run", lambda *a, **k: pytest.fail("missing converter was launched"))
+    with pytest.raises(RuntimeError, match="sudo apt-get install -y poppler-utils"):
+        extract_document(b"%PDF-unread", "pdf")
+
+
+def test_pdf_text_extraction_uses_real_poppler_converter():
+    from reportlab.pdfgen import canvas
+    stream = io.BytesIO()
+    pdf = canvas.Canvas(stream)
+    pdf.drawString(72, 720, "Applicants must be enrolled as full-time doctoral students.")
+    pdf.drawString(72, 700, "Submit a research proposal before the application deadline.")
+    pdf.save()
+    text = extract_document(stream.getvalue(), "pdf")
+    assert "full-time doctoral students" in text
+    assert "research proposal" in text
+
+
 def test_hwp_text_converter_is_invoked_without_shell(monkeypatch):
     from types import SimpleNamespace
     monkeypatch.setattr("data_platform.linked.shutil.which", lambda name: "/usr/bin/hwp5txt" if name == "hwp5txt" else None)
@@ -205,7 +224,7 @@ def test_ocr_local_config_is_validated_and_scoped_to_image_process(monkeypatch, 
     from types import SimpleNamespace
     import os
     monkeypatch.delenv("BENEFITLENS_OCR_COMMAND", raising=False)
-    monkeypatch.setattr("data_platform.linked.shutil.which", lambda name: "/usr/bin/hwp5txt" if name == "hwp5txt" else None)
+    monkeypatch.setattr("data_platform.linked.shutil.which", lambda name: "/usr/bin/" + name if name in {"hwp5txt", "pdftotext"} else None)
     runtime = tmp_path / "runtime"
     runtime.mkdir()
     binary = runtime / "tesseract"

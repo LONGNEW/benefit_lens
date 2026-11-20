@@ -18,6 +18,15 @@
 
 Python 3.11 이상, pip 22.3 이상, Docker Compose, Git과 Make가 필요하다. 기본 데모에는 Node, API 키, LLM 로그인과 대용량 데이터 다운로드가 필요 없다.
 
+PDF 원문 추출과 전체 테스트에는 시스템 도구 `pdftotext`, 한글 보고서용 Nanum 폰트, 백업 검사용 `zstd`도 필요하다. Ubuntu/Debian에서는 다음과 같이 설치한다.
+
+```bash
+sudo apt-get update
+sudo apt-get install -y poppler-utils fonts-nanum zstd
+```
+
+`pdftotext`는 `poppler-utils`에 포함되며 pip로 설치되지 않는다. 보고서용 Python 라이브러리 `reportlab`, `pypdf`, `pillow`는 아래 `make install`에서 함께 설치한다. `make doctor`로 시스템 도구가 실행 경로에 있는지 확인할 수 있다.
+
 ```bash
 git clone https://github.com/LONGNEW/benefit_lens.git
 cd benefit_lens
@@ -93,6 +102,6 @@ make smoke
 make test
 ```
 
-`make smoke`는 실제 PostgreSQL API를 검사하고 임시 서버를 종료한다. 전체 Python 테스트에는 선택적 백업 도구 검증용 `zstd`가 추가로 필요하다. CI는 빈 DB에 예제를 두 번 적재하고 API를 확인한다.
+`make smoke`는 실제 PostgreSQL API를 검사하고 임시 서버를 종료한다. CI는 같은 전체 Python 테스트를 실행하고, 빈 DB에 예제를 두 번 적재해 API를 확인한다.
 
 과거 수집 데이터는 로컬에 별도로 보관하며 활성 API는 선택한 학생 예제 10개만 조회한다. 기본 데모에는 전체 백업이 필요 없다. [재현과 백업](docs/REPRODUCING.md)에서 보관 경계를 설명한다.
