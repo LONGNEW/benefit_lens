@@ -1,32 +1,407 @@
 {
   "schema_version": "proposal-demo-1",
   "sources": [
-    {"id":"nvidia-official","program_id":"nvidia-graduate-fellowship","role":"official_notice","url":"https://research.nvidia.com/graduate-fellowships"},
-    {"id":"google-official","program_id":"google-phd-fellowship","role":"official_notice","url":"https://research.google/programs-and-events/phd-fellowship/"},
-    {"id":"ikef-official","program_id":"ikef-domestic-undergraduate","role":"official_notice","url":"https://www.ikef.or.kr/page.php?id=/kj/scholar_schedule_detail&page=1&wr_id=102"},
-    {"id":"gates-official","program_id":"gates-cambridge","role":"official_notice","url":"https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025"},
-    {"id":"nvidia-recipients","program_id":"nvidia-graduate-fellowship","role":"outcome_record","url":"https://research.nvidia.com/graduate-fellowships/2023"},
-    {"id":"google-recipients","program_id":"google-phd-fellowship","role":"outcome_record","url":"https://research.google/programs-and-events/phd-fellowship/recipients/"},
-    {"id":"rohan-index","program_id":"nvidia-graduate-fellowship","case_id":"N1","role":"experience_index","url":"https://rohany.github.io/"},
-    {"id":"rohan-proposal","program_id":"nvidia-graduate-fellowship","case_id":"N1","role":"application_statement","url":"https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf"},
-    {"id":"hyeon-index","program_id":"google-phd-fellowship","case_id":"G1","role":"experience_index","url":"https://hyeonword.com/google_fellowship_materials/"},
-    {"id":"hyeon-research","program_id":"google-phd-fellowship","case_id":"G1","role":"application_statement","url":"https://hyeonword.com/google_fellowship_materials/assets/research_statement_hj_googlefellowship.pdf"},
-    {"id":"hyeon-essay","program_id":"google-phd-fellowship","case_id":"G1","role":"application_statement","url":"https://hyeonword.com/google_fellowship_materials/assets/essay_hj_googlefellowship.pdf"},
-    {"id":"julia-index","program_id":"google-phd-fellowship","case_id":"G2","role":"experience_index","url":"https://juliamendelsohn.github.io/resources/"},
-    {"id":"julia-proposal","program_id":"google-phd-fellowship","case_id":"G2","role":"application_statement","url":"https://juliamendelsohn.github.io/assets/pdf/google_statement_2021.pdf"},
-    {"id":"anjalie-index","program_id":"google-phd-fellowship","case_id":"G3","role":"experience_index","url":"https://anjalief.github.io/statements.html"},
-    {"id":"anjalie-proposal","program_id":"google-phd-fellowship","case_id":"G3","role":"application_statement","url":"https://anjalief.github.io/docs/2019_Google_Fellowship_Proposals.pdf"},
-    {"id":"morgan-index","program_id":"google-phd-fellowship","case_id":"G4","role":"experience_index","url":"https://www.morgan-klaus.com/fellowships.html"},
-    {"id":"morgan-proposal","program_id":"google-phd-fellowship","case_id":"G4","role":"application_statement","url":"https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_Proposal.pdf"},
-    {"id":"morgan-impact","program_id":"google-phd-fellowship","case_id":"G4","role":"application_statement","url":"https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_ImpactStatement.pdf"},
-    {"id":"morgan-leadership","program_id":"google-phd-fellowship","case_id":"G4","role":"application_statement","url":"https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_LeadershipStatement.pdf"},
-    {"id":"sampurna-essay","program_id":"gates-cambridge","case_id":"C1","role":"application_statement","url":"https://sampurnabuffalo.wordpress.com/wp-content/uploads/2017/11/gatesessay.pdf"},
-    {"id":"sampurna-review","program_id":"gates-cambridge","case_id":"C1","role":"experience_review","url":"https://sampurnabuffalo.wordpress.com/2017/11/16/gates-cambridge-scholarship-sample-essay-interview-and-life-after/"},
-    {"id":"sampurna-outcome","program_id":"gates-cambridge","case_id":"C1","role":"outcome_record","url":"https://www.buffalo.edu/fellowships/news.host.html/content/shared/university/news/ub-reporter-articles/stories/2016/05/interest-in-india.detail.html"},
-    {"id":"moon-interview","program_id":"google-phd-fellowship","case_id":"G5","role":"official_interview","url":"https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-moon/"},
-    {"id":"yoo-interview","program_id":"google-phd-fellowship","case_id":"G6","role":"official_interview","url":"https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-yoo/"},
-    {"id":"oh-interview","program_id":"google-phd-fellowship","case_id":"G7","role":"official_interview","url":"https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-oh/"},
-    {"id":"psu-gates-index","program_id":"gates-cambridge","role":"writing_guide","url":"https://courses.ems.psu.edu/writingpersonalstatementsonline/book/export/html/1796"},
-    {"id":"psu-gates-samples","program_id":"gates-cambridge","role":"application_sample_excerpt","discovered_from":"psu-gates-index","url":"https://courses.ems.psu.edu/writingpersonalstatementsonline/sites/writingpersonalstatementsonline/files/file/Gates.pdf"}
-  ]
+    {
+      "id": "nvidia-official",
+      "program_id": "nvidia-graduate-fellowship",
+      "role": "official_notice",
+      "url": "https://research.nvidia.com/graduate-fellowships"
+    },
+    {
+      "id": "google-official",
+      "program_id": "google-phd-fellowship",
+      "role": "official_notice",
+      "url": "https://research.google/programs-and-events/phd-fellowship/"
+    },
+    {
+      "id": "ikef-official",
+      "program_id": "ikef-domestic-undergraduate",
+      "role": "official_notice",
+      "url": "https://www.ikef.or.kr/page.php?id=/kj/scholar_schedule_detail&page=1&wr_id=102"
+    },
+    {
+      "id": "gates-official",
+      "program_id": "gates-cambridge",
+      "role": "official_notice",
+      "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025"
+    },
+    {
+      "id": "nvidia-recipients",
+      "program_id": "nvidia-graduate-fellowship",
+      "role": "outcome_record",
+      "url": "https://research.nvidia.com/graduate-fellowships/2023"
+    },
+    {
+      "id": "google-recipients",
+      "program_id": "google-phd-fellowship",
+      "role": "outcome_record",
+      "url": "https://research.google/programs-and-events/phd-fellowship/recipients/"
+    },
+    {
+      "id": "rohan-index",
+      "program_id": "nvidia-graduate-fellowship",
+      "case_id": "N1",
+      "role": "experience_index",
+      "url": "https://rohany.github.io/",
+      "experience_case_ids": [
+        "N1"
+      ]
+    },
+    {
+      "id": "rohan-proposal",
+      "program_id": "nvidia-graduate-fellowship",
+      "case_id": "N1",
+      "role": "application_statement",
+      "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+      "experience_case_ids": [
+        "N1"
+      ]
+    },
+    {
+      "id": "hyeon-index",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G1",
+      "role": "experience_index",
+      "url": "https://hyeonword.com/google_fellowship_materials/",
+      "experience_case_ids": [
+        "G1"
+      ]
+    },
+    {
+      "id": "hyeon-research",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G1",
+      "role": "application_statement",
+      "url": "https://hyeonword.com/google_fellowship_materials/assets/research_statement_hj_googlefellowship.pdf",
+      "experience_case_ids": [
+        "G1"
+      ]
+    },
+    {
+      "id": "hyeon-essay",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G1",
+      "role": "application_statement",
+      "url": "https://hyeonword.com/google_fellowship_materials/assets/essay_hj_googlefellowship.pdf",
+      "experience_case_ids": [
+        "G1"
+      ]
+    },
+    {
+      "id": "julia-index",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G2",
+      "role": "experience_index",
+      "url": "https://juliamendelsohn.github.io/resources/",
+      "experience_case_ids": [
+        "G2"
+      ]
+    },
+    {
+      "id": "julia-proposal",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G2",
+      "role": "application_statement",
+      "url": "https://juliamendelsohn.github.io/assets/pdf/google_statement_2021.pdf",
+      "experience_case_ids": [
+        "G2"
+      ]
+    },
+    {
+      "id": "anjalie-index",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G3",
+      "role": "experience_index",
+      "url": "https://anjalief.github.io/statements.html",
+      "experience_case_ids": [
+        "G3"
+      ]
+    },
+    {
+      "id": "anjalie-proposal",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G3",
+      "role": "application_statement",
+      "url": "https://anjalief.github.io/docs/2019_Google_Fellowship_Proposals.pdf",
+      "experience_case_ids": [
+        "G3"
+      ]
+    },
+    {
+      "id": "morgan-index",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G4",
+      "role": "experience_index",
+      "url": "https://www.morgan-klaus.com/fellowships.html",
+      "experience_case_ids": [
+        "G4"
+      ]
+    },
+    {
+      "id": "morgan-proposal",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G4",
+      "role": "application_statement",
+      "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_Proposal.pdf",
+      "experience_case_ids": [
+        "G4"
+      ]
+    },
+    {
+      "id": "morgan-impact",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G4",
+      "role": "application_statement",
+      "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_ImpactStatement.pdf",
+      "experience_case_ids": [
+        "G4"
+      ]
+    },
+    {
+      "id": "morgan-leadership",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G4",
+      "role": "application_statement",
+      "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_LeadershipStatement.pdf",
+      "experience_case_ids": [
+        "G4"
+      ]
+    },
+    {
+      "id": "sampurna-essay",
+      "program_id": "gates-cambridge",
+      "case_id": "C1",
+      "role": "application_statement",
+      "url": "https://sampurnabuffalo.wordpress.com/wp-content/uploads/2017/11/gatesessay.pdf",
+      "experience_case_ids": [
+        "C1"
+      ]
+    },
+    {
+      "id": "sampurna-review",
+      "program_id": "gates-cambridge",
+      "case_id": "C1",
+      "role": "experience_review",
+      "url": "https://sampurnabuffalo.wordpress.com/2017/11/16/gates-cambridge-scholarship-sample-essay-interview-and-life-after/",
+      "experience_case_ids": [
+        "C1"
+      ]
+    },
+    {
+      "id": "sampurna-outcome",
+      "program_id": "gates-cambridge",
+      "case_id": "C1",
+      "role": "outcome_record",
+      "url": "https://www.buffalo.edu/fellowships/news.host.html/content/shared/university/news/ub-reporter-articles/stories/2016/05/interest-in-india.detail.html"
+    },
+    {
+      "id": "moon-interview",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G5",
+      "role": "official_interview",
+      "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-moon/",
+      "experience_case_ids": [
+        "G5"
+      ]
+    },
+    {
+      "id": "yoo-interview",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G6",
+      "role": "official_interview",
+      "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-yoo/",
+      "experience_case_ids": [
+        "G6"
+      ]
+    },
+    {
+      "id": "oh-interview",
+      "program_id": "google-phd-fellowship",
+      "case_id": "G7",
+      "role": "official_interview",
+      "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-oh/",
+      "experience_case_ids": [
+        "G7"
+      ]
+    },
+    {
+      "id": "psu-gates-index",
+      "program_id": "gates-cambridge",
+      "role": "writing_guide",
+      "url": "https://courses.ems.psu.edu/writingpersonalstatementsonline/book/export/html/1796"
+    },
+    {
+      "id": "psu-gates-samples",
+      "program_id": "gates-cambridge",
+      "role": "application_sample_excerpt",
+      "discovered_from": "psu-gates-index",
+      "url": "https://courses.ems.psu.edu/writingpersonalstatementsonline/sites/writingpersonalstatementsonline/files/file/Gates.pdf"
+    },
+    {
+      "id": "yuke-proposal",
+      "program_id": "nvidia-graduate-fellowship",
+      "case_id": "N2",
+      "experience_case_ids": [
+        "N2"
+      ],
+      "role": "application_statement",
+      "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf"
+    },
+    {
+      "id": "yuke-panel",
+      "program_id": "nvidia-graduate-fellowship",
+      "case_id": "N2",
+      "experience_case_ids": [
+        "N2"
+      ],
+      "role": "experience_review",
+      "url": "https://students-at-systems.org/pages/events/fellowship-panel.html"
+    },
+    {
+      "id": "ruth-proposal",
+      "program_id": "nvidia-graduate-fellowship",
+      "case_id": "N3",
+      "experience_case_ids": [
+        "N3"
+      ],
+      "role": "application_statement",
+      "url": "https://ruthcfong.github.io/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf"
+    },
+    {
+      "id": "naveen-essay",
+      "program_id": "gates-cambridge",
+      "case_id": "C2",
+      "experience_case_ids": [
+        "C2"
+      ],
+      "role": "application_statement",
+      "url": "https://naveenraman.com/assets/sop/gates_cambridge.pdf"
+    },
+    {
+      "id": "naveen-review",
+      "program_id": "gates-cambridge",
+      "case_id": "C2",
+      "experience_case_ids": [
+        "C2"
+      ],
+      "role": "experience_review",
+      "url": "https://naveenraman.com/writing/fellowships.html"
+    },
+    {
+      "id": "paul-review",
+      "program_id": "gates-cambridge",
+      "case_id": "C3",
+      "experience_case_ids": [
+        "C3"
+      ],
+      "role": "experience_review",
+      "url": "https://mattsosna.com/gates-i/"
+    },
+    {
+      "id": "onon-interview",
+      "program_id": "gates-cambridge",
+      "case_id": "C4",
+      "experience_case_ids": [
+        "C4"
+      ],
+      "role": "official_interview",
+      "url": "https://hobbyalumni.squarespace.com/interviews/ononbayasgalan"
+    }
+  ],
+  "evaluation_criteria": {
+    "nvidia-graduate-fellowship": [
+      {
+        "criterion_id": "student",
+        "label": "학업 및 연구 이력",
+        "source_id": "nvidia-official",
+        "quote": "Academic performance (GPA) and achievements",
+        "url": "https://research.nvidia.com/graduate-fellowships",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "research",
+        "label": "연구의 질과 결과",
+        "source_id": "nvidia-official",
+        "quote": "Results to date",
+        "url": "https://research.nvidia.com/graduate-fellowships",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "fit",
+        "label": "NVIDIA 기술과의 관련성",
+        "source_id": "nvidia-official",
+        "quote": "Potential influence on the design, performance, or use of future GPUs",
+        "url": "https://research.nvidia.com/graduate-fellowships",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      }
+    ],
+    "gates-cambridge": [
+      {
+        "criterion_id": "academic",
+        "label": "학업과 연구 역량",
+        "source_id": "gates-official",
+        "quote": "Academic excellence",
+        "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "course",
+        "label": "Cambridge 과정 선택의 이유",
+        "source_id": "gates-official",
+        "quote": "Reasons for choice of course",
+        "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "impact",
+        "label": "타인의 삶을 개선하는 기여",
+        "source_id": "gates-official",
+        "quote": "A commitment to improving the lives of others",
+        "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "leadership",
+        "label": "리더십",
+        "source_id": "gates-official",
+        "quote": "A capacity for leadership",
+        "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      }
+    ],
+    "google-phd-fellowship": [
+      {
+        "criterion_id": "research",
+        "label": "연구계획의 강점",
+        "source_id": "google-official",
+        "quote": "strength of the research proposal",
+        "url": "https://research.google/programs-and-events/phd-fellowship/",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "impact",
+        "label": "연구의 영향",
+        "source_id": "google-official",
+        "quote": "research impact",
+        "url": "https://research.google/programs-and-events/phd-fellowship/",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "academic",
+        "label": "학업 및 연구 성취",
+        "source_id": "google-official",
+        "quote": "student academic achievements",
+        "url": "https://research.google/programs-and-events/phd-fellowship/",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "leadership",
+        "label": "리더십 잠재력",
+        "source_id": "google-official",
+        "quote": "leadership potential",
+        "url": "https://research.google/programs-and-events/phd-fellowship/",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      }
+    ]
+  }
 }

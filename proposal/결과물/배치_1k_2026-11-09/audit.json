@@ -1,0 +1,21 @@
+{
+  "batch_id": "1b65aaf5e46e233baff64f7dc3873e0e3fe669875c152cfcb209e0b920825b2f",
+  "unchanged_baseline_rounds": 17,
+  "unchanged_cases": 7,
+  "unchanged_patterns": 6,
+  "catalog_counts": {
+    "source_backed": 1000,
+    "summary_only": 6
+  },
+  "source_backed_status": {
+    "open": 6,
+    "closed": 6,
+    "unknown": 3,
+    "upcoming": 1,
+    "historical": 984
+  },
+  "usajobs_exact_raw_positions_verified": 984,
+  "cern_distinct_open_postings": 5,
+  "sql_replay_unchanged": true,
+  "sql_contract_violation_rows": 0
+}

@@ -70,3 +70,28 @@ def test_dates_and_lifecycle():
 
 def test_hash_is_order_independent():
     assert digest({'a':1,'b':2})==digest({'b':2,'a':1})
+
+
+def test_redirected_author_site_gets_its_own_robots_check(monkeypatch, tmp_path):
+    import hashlib
+    from types import SimpleNamespace
+    from urllib.parse import urlsplit
+    import data_platform.proposal_pipeline as module
+    checked = []
+    class Client:
+        def __init__(self, *, allowed_hosts, **kwargs): self.hosts = allowed_hosts
+        def get(self, url, request_guard=None):
+            if url.endswith('/robots.txt'):
+                assert urlsplit(url).hostname in self.hosts
+                checked.append(url)
+                return SimpleNamespace(body=b'User-agent: *\nDisallow:\n')
+            request_guard(url)
+            target = 'https://new-author.example/statement'
+            request_guard(target)
+            body = b'<article>This public research statement describes a concrete project and its actual development results.</article>'
+            return SimpleNamespace(body=body, final_url=target, content_type='text/html',
+                                   sha256=hashlib.sha256(body).hexdigest())
+    monkeypatch.setattr(module, 'SafeHttpClient', Client)
+    item = module.SourceCollector(tmp_path).fetch({'id': 'author', 'url': 'https://old-author.example/statement'})
+    assert item['status'] == 'collected'
+    assert checked == ['https://old-author.example/robots.txt', 'https://new-author.example/robots.txt']

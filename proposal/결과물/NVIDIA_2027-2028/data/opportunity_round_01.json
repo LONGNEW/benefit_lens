@@ -1,0 +1,17 @@
+{
+  "opportunity_round": [
+    {
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "opportunity_id": "nvidia-2027-2028",
+      "notice_version": "nvidia-2027-2028-v1",
+      "status": "closed",
+      "official_url": "https://research.nvidia.com/graduate-fellowships",
+      "application_url": "https://webportalapp.com/sp/nvidia_grad_fellow_2027",
+      "opens_on": "2026-09-30",
+      "closes_on": "2026-10-30",
+      "announces_on": "2027-01-15",
+      "checked_on": "2026-11-09"
+    }
+  ]
+}

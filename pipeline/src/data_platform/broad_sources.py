@@ -411,6 +411,8 @@ def main():
     parser.add_argument("--max-pages",type=int,default=250)
     parser.add_argument("--workers",type=int,default=4)
     args=parser.parse_args()
+    from .demo_scope import require_collection_enabled
+    require_collection_enabled()
     store=Store(args.output)
     fetcher=PublicFetcher(store)
     with ThreadPoolExecutor(max_workers=args.workers) as executor:

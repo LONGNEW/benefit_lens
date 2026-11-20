@@ -1,0 +1,116 @@
+{
+  "kind": "pure_function_synthetic_checks",
+  "scope": "current browser evaluateEligibility only, no SQL/network/LLM",
+  "cases": [
+    {
+      "name": "missing_required_fact",
+      "expected": null,
+      "actual": {
+        "result": null,
+        "trace": [
+          {
+            "field": "education.degree",
+            "result": true,
+            "expected": "phd",
+            "at": "application"
+          },
+          {
+            "field": "education.status",
+            "result": null,
+            "expected": "enrolled",
+            "at": "application"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "alternative_branch_with_missing_fact",
+      "expected": null,
+      "actual": {
+        "result": null,
+        "trace": [
+          {
+            "field": "education.degree",
+            "result": false,
+            "expected": "phd",
+            "at": "application"
+          },
+          {
+            "field": "education.degree",
+            "result": true,
+            "expected": "masters",
+            "at": "application"
+          },
+          {
+            "field": "education.full_time",
+            "result": null,
+            "expected": true,
+            "at": "application"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "not_unknown",
+      "expected": null,
+      "actual": {
+        "result": null,
+        "trace": [
+          {
+            "field": "education.full_time",
+            "result": null,
+            "expected": true,
+            "at": "application"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "future_fact_not_current_fact",
+      "expected": null,
+      "actual": {
+        "result": null,
+        "trace": [
+          {
+            "field": "education.degree",
+            "result": true,
+            "expected": "phd",
+            "at": "application"
+          },
+          {
+            "field": "education.coursework_completed",
+            "result": null,
+            "expected": true,
+            "at": "award_start"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "satisfied_alternative",
+      "expected": true,
+      "actual": {
+        "result": true,
+        "trace": [
+          {
+            "field": "education.degree",
+            "result": false,
+            "expected": "phd",
+            "at": "application"
+          },
+          {
+            "field": "education.degree",
+            "result": true,
+            "expected": "masters",
+            "at": "application"
+          }
+        ]
+      },
+      "passed": true
+    }
+  ]
+}

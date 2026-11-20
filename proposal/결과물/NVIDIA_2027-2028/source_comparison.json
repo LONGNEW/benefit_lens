@@ -1,0 +1,72 @@
+[
+  {
+    "document_id": "OFFICIAL",
+    "prior_capture_at": "2026-10-14T17:44:00.978925+00:00",
+    "prior_raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/raw/63c3869bae8a40d88c736f299ee3f09da432cd707ff317b4e7ba951848b05bda.html",
+    "prior_text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/text/nvidia-official.txt",
+    "prior_raw_sha256": "63c3869bae8a40d88c736f299ee3f09da432cd707ff317b4e7ba951848b05bda",
+    "prior_text_sha256": "04b9b9d2edc87d2f702e3890175d82ee8e455aafbb13567b0e3cb8d81f9d435e",
+    "same_bytes": false,
+    "same_extracted_text": true
+  },
+  {
+    "document_id": "N1-STATEMENT",
+    "prior_capture_at": "2026-10-14T17:44:02.874586+00:00",
+    "prior_raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/raw/1292bfba8ff41323fbbddab2328785ecf679dec7562a7fb0fb72723168f7f374.pdf",
+    "prior_text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/text/rohan-proposal.txt",
+    "prior_raw_sha256": "1292bfba8ff41323fbbddab2328785ecf679dec7562a7fb0fb72723168f7f374",
+    "prior_text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963",
+    "same_bytes": true,
+    "same_extracted_text": true
+  },
+  {
+    "document_id": "N1-INDEX",
+    "prior_capture_at": "2026-10-14T17:44:02.839788+00:00",
+    "prior_raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/raw/abd695f019fd9a85e4b64d73e3517682233d477348acc1d0994500e3901c6990.html",
+    "prior_text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/text/rohan-index.txt",
+    "prior_raw_sha256": "abd695f019fd9a85e4b64d73e3517682233d477348acc1d0994500e3901c6990",
+    "prior_text_sha256": "55beb47c39a778a0ebb44127e61778357c0ff60f3ed45018a0e2e287d2fef0e6",
+    "same_bytes": true,
+    "same_extracted_text": true
+  },
+  {
+    "document_id": "N1-OUTCOME",
+    "prior_capture_at": "2026-10-14T17:44:02.196224+00:00",
+    "prior_raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/raw/169f48da72882a7f0d8b2f68c257893e517a7381019574cefb54f2d9477d7558.html",
+    "prior_text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/text/nvidia-recipients.txt",
+    "prior_raw_sha256": "169f48da72882a7f0d8b2f68c257893e517a7381019574cefb54f2d9477d7558",
+    "prior_text_sha256": "54e7c3c98b0a590693b8b5fbbc9e649f8b62d9f56314615f3eb6144e8b7e8e5f",
+    "same_bytes": false,
+    "same_extracted_text": true
+  },
+  {
+    "document_id": "N2-STATEMENT",
+    "prior_capture_at": "2026-10-15T09:39:04.899213+00:00",
+    "prior_raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/experience-originals/raw/d1cc2f892c3bae3931e57e2d9c54e8e14d7d3751bce515b0b659d83184f1bdb0.pdf",
+    "prior_text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/experience-originals/text/yuke-proposal.txt",
+    "prior_raw_sha256": "d1cc2f892c3bae3931e57e2d9c54e8e14d7d3751bce515b0b659d83184f1bdb0",
+    "prior_text_sha256": "4bac610f3574b02c61dc64992f4947682c6bf2579eee4dfbbf0c0fc494262dc3",
+    "same_bytes": true,
+    "same_extracted_text": true
+  },
+  {
+    "document_id": "N2-PANEL",
+    "prior_capture_at": "2026-10-15T09:39:05.184965+00:00",
+    "prior_raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/experience-originals/raw/651d999ce1040b17ef510c6a17854fa8970152df922a42a844c96bba0758e6a0.html",
+    "prior_text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/experience-originals/text/yuke-panel.txt",
+    "prior_raw_sha256": "651d999ce1040b17ef510c6a17854fa8970152df922a42a844c96bba0758e6a0",
+    "prior_text_sha256": "7cbaed9e278d0e4f31d9ddab47f6c21b7ed0fb2e0ce4ea2a9b22a7132790baa9",
+    "same_bytes": true,
+    "same_extracted_text": true
+  },
+  {
+    "document_id": "N3-STATEMENT",
+    "prior_capture_at": "2026-10-15T09:40:28.241240+00:00",
+    "prior_raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/experience-originals/raw/25ee765293861a712877b28173d0de9c7d997ba0f90af1957fb700e08fb28d18.pdf",
+    "prior_text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/experience-originals/text/ruth-proposal.txt",
+    "prior_raw_sha256": "25ee765293861a712877b28173d0de9c7d997ba0f90af1957fb700e08fb28d18",
+    "prior_text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae",
+    "same_bytes": true,
+    "same_extracted_text": true
+  }
+]

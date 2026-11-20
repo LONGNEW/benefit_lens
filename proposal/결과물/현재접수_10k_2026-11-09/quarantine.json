@@ -1,0 +1,137 @@
+[
+  {
+    "identity": [
+      "BoschGroup/SmartRecruiters",
+      "744000155097535"
+    ],
+    "official_url": "https://jobs.smartrecruiters.com/BoschGroup/744000155097535-purchasing-pue-intern-summer-2027",
+    "decision": "quarantine_past_fixed_cohort_or_conflicting_dates",
+    "input_sha256": "de0fe665508fc0e137eda62856ec683096d65f719ea391eba53a1076791c18de"
+  },
+  {
+    "identity": [
+      "Amazon.jobs",
+      "10564600"
+    ],
+    "official_url": "https://www.amazon.jobs/en/jobs/10564600/2027-applied-science-internship-united-states-phd-student-science-recruiting-frontier-ai-robotics-frontier-ai-robotics",
+    "decision": "ambiguousheld_title_2027_but_body_fixed_period_2026",
+    "input_sha256": "de0fe665508fc0e137eda62856ec683096d65f719ea391eba53a1076791c18de"
+  },
+  {
+    "identity": [
+      "Amazon.jobs",
+      "3127861"
+    ],
+    "official_url": "https://www.amazon.jobs/en/jobs/3127861/2026-applied-science-internship-united-states-phd-student-science-recruiting-frontier-ai-robotics",
+    "decision": "quarantine_past_fixed_cohort_or_conflicting_dates",
+    "input_sha256": "de0fe665508fc0e137eda62856ec683096d65f719ea391eba53a1076791c18de"
+  },
+  {
+    "identity": [
+      "Amazon.jobs",
+      "10564598"
+    ],
+    "official_url": "https://www.amazon.jobs/en/jobs/10564598/2027-applied-science-internship-recommender-systems-information-retrieval-machine-learning-united-states-phd-student-science-recruiting",
+    "decision": "ambiguousheld_title_2027_but_body_fixed_period_2026",
+    "input_sha256": "de0fe665508fc0e137eda62856ec683096d65f719ea391eba53a1076791c18de"
+  },
+  {
+    "identity": [
+      "Amazon.jobs",
+      "10378826"
+    ],
+    "official_url": "https://www.amazon.jobs/en/jobs/10378826/software-development-graduate-aws-2026-sydney",
+    "decision": "quarantine_past_fixed_cohort_or_conflicting_dates",
+    "input_sha256": "de0fe665508fc0e137eda62856ec683096d65f719ea391eba53a1076791c18de"
+  },
+  {
+    "identity": [
+      "workday/jj",
+      "R-104258"
+    ],
+    "official_url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Beerse-Antwerp-Belgium/Internship-Finance-Analyst_R-104258",
+    "decision": "quarantine_past_fixed_cohort_or_conflicting_dates",
+    "input_sha256": "4ded18239e5cec3e5967d7e926147d5e4259e1a65b6af973f785d947081f654c"
+  },
+  {
+    "identity": [
+      "workday/pwc",
+      "731241WD"
+    ],
+    "official_url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Kuala-Lumpur/Intern---Risk---Quality--June-July-2026-Intake-_731241WD",
+    "decision": "quarantine_past_fixed_cohort_or_conflicting_dates",
+    "input_sha256": "4ded18239e5cec3e5967d7e926147d5e4259e1a65b6af973f785d947081f654c"
+  },
+  {
+    "identity": [
+      "workday/amat",
+      "R2616095"
+    ],
+    "official_url": "https://amat.wd1.myworkdayjobs.com/External/job/Santa-ClaraCA/XMLNAME-2026-Summer-Intern---Physics---AI-modeling-Engineering_R2616095",
+    "decision": "quarantine_past_fixed_cohort_or_conflicting_dates",
+    "input_sha256": "f947ade5d2a55431d84cfe852cca88764056131f8b3604be3dcf7cfd95635e56"
+  },
+  {
+    "identity": [
+      "siemens",
+      "524091"
+    ],
+    "official_url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/524091",
+    "decision": "quarantine_past_fixed_cohort_or_conflicting_dates",
+    "input_sha256": "b9100d18499d60f16d7bbb5aba13e2b68ebd7a8c74e4f54bfa070b5276a4ea4a"
+  },
+  {
+    "identity": [
+      "FRAUNHOFER",
+      "84883"
+    ],
+    "official_url": "https://jobs.fraunhofer.de/job/Karlsruhe-Praktikum-im-Bereich-Python-Entwicklung-f%C3%BCr-ein-Deep-Learning-Annotationstool-76131/1408254133/",
+    "decision": "ambiguous_held:past_stated_start_window",
+    "input_sha256": "ff55678a52890a3f2ea348d2a39da71cc1ad513011d12bb24c1ef01c2a99ce4f"
+  },
+  {
+    "identity": [
+      "UNSW",
+      "2006-7355"
+    ],
+    "official_url": "https://www.scholarships.unsw.edu.au/scholarships/id/2006/7355",
+    "decision": "ambiguous_held:entry_cohort_disagreement",
+    "input_sha256": "d82a28f93c5db1e401cfaf0911fc840b08570db751fc57cd34099b65ea98a6f2"
+  },
+  {
+    "identity": [
+      "UNSW",
+      "1989-7245"
+    ],
+    "official_url": "https://www.scholarships.unsw.edu.au/scholarships/id/1989/7245",
+    "decision": "quarantine_past_fixed_cohort_or_conflicting_dates",
+    "input_sha256": "d82a28f93c5db1e401cfaf0911fc840b08570db751fc57cd34099b65ea98a6f2"
+  },
+  {
+    "identity": [
+      "UNSW",
+      "1985-7241"
+    ],
+    "official_url": "https://www.scholarships.unsw.edu.au/scholarships/id/1985/7241",
+    "decision": "ambiguous_held:entry_cohort_disagreement",
+    "input_sha256": "d82a28f93c5db1e401cfaf0911fc840b08570db751fc57cd34099b65ea98a6f2"
+  },
+  {
+    "identity": [
+      "IAESTE",
+      "FR-2027-002"
+    ],
+    "official_url": "https://iaeste.org/internships/fr-2027-002",
+    "decision": "ambiguous_held:latest_start_precedes_capture",
+    "input_sha256": "d82a28f93c5db1e401cfaf0911fc840b08570db751fc57cd34099b65ea98a6f2"
+  },
+  {
+    "identity": [
+      "EURAXESS-PHD",
+      "478472"
+    ],
+    "official_url": "https://euraxess.ec.europa.eu/jobs/478472",
+    "decision": "ambiguous_held:future_deadline_disagreement",
+    "input_sha256": "d82a28f93c5db1e401cfaf0911fc840b08570db751fc57cd34099b65ea98a6f2"
+  }
+]

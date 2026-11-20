@@ -1,0 +1,68 @@
+{
+  "case_document": [
+    {
+      "case_id": "N1",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_role": "application_statement",
+      "finality": "unknown",
+      "binding_evidence_id": "N1-LINK"
+    },
+    {
+      "case_id": "N1",
+      "document_id": "N1-INDEX-abd695f019fd",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_role": "application_index",
+      "finality": "not_applicable",
+      "binding_evidence_id": "N1-LINK"
+    },
+    {
+      "case_id": "N1",
+      "document_id": "N1-OUTCOME-23eb6b58ee64",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_role": "outcome_record",
+      "finality": "not_applicable",
+      "binding_evidence_id": "N1-RESULT"
+    },
+    {
+      "case_id": "N2",
+      "document_id": "N2-STATEMENT-d1cc2f892c3b",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_role": "application_statement",
+      "finality": "unknown",
+      "binding_evidence_id": "N2-LINK"
+    },
+    {
+      "case_id": "N2",
+      "document_id": "N2-PANEL-651d999ce104",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_role": "panel",
+      "finality": "not_applicable",
+      "binding_evidence_id": "N2-ADVICE"
+    },
+    {
+      "case_id": "N2",
+      "document_id": "N2-OUTCOME-714690c58604",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_role": "outcome_record",
+      "finality": "not_applicable",
+      "binding_evidence_id": "N2-RESULT"
+    },
+    {
+      "case_id": "N3",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_role": "application_statement",
+      "finality": "unknown",
+      "binding_evidence_id": "N3-RESULT"
+    },
+    {
+      "case_id": "N3",
+      "document_id": "N3-OUTCOME-web-b4c5d68e8618",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_role": "reflection",
+      "finality": "not_applicable",
+      "binding_evidence_id": "N3-RESULT"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+경험과 작성 계획 실행 계약 v1
+2026-11-19. 문단 계획을 만드는 결정적 코드와 입력 검증을 구현했다. 완성 지원서 생성, 전량 경험 분해, 의미 심사와 패턴 승인은 별도 작업이다.
+
+1. 고정 정책과 팀 경계
+pipeline/config/writing_execution_policy_v1.json이 사건 단위, 입력 사실과 작성 기준 및 평가 책임을 선언한다.
+T2의 경험 단위는 인물, 프로그램과 회차, experience_id다. 기회, 선택 이유, 본인 역할과 행동, 장애와 판단, 결과와 근거, 성찰과 향후 활용을 분해할 필드로 둔다. 관찰하지 못한 값은 비워 둔다. 같은 사건의 여러 문서를 경험 여러 건으로 더하지 않는다. 이 정책을 전체 약 3만 사례에 적용한 결과는 아직 없다.
+공식 문항의 명시 요구, 공식 안내, 작성자의 전략과 분석자의 관찰을 구분한다. 기존 semantic_answer_intents_v1.json과 writing-intent-observation.schema.json의 10문항 예제 중 원문 하나를 실행에 재사용했다.
+T3는 일반 원칙 8개, 진단 기준 9개와 장르 템플릿 3종을 관리한다. 사용자 스타일은 별도 프로필이다. 공식 형식, 장르 적합성, 사용자 선호의 순서로 충돌을 처리한다. T4는 이 계약을 받아 추가 질문과 초안 실행을 연결한다.
+T5는 독립 사람 판정, 2인 심사와 불일치 조정, 작성자와 프로그램 및 회차가 분리된 평가셋을 마련한다. 이미 분석한 PERSUADE test는 개발 자료로 다룬다. 합격 결과는 글쓰기 품질의 인과적 정답 라벨로 사용하지 않는다.
+
+2. 함수 인터페이스
+tools/benefitlens_writing_plan.py
+build_paragraph_plan(task_spec, confirmed_facts, template, style_profile) -> plan
+validate_plan(plan, task_spec, confirmed_facts) -> valid, errors, ready_for_drafting
+
+task_spec에는 task_id, subject_id, experience_id, question_text, genre, constraints, source_ref를 둔다. program_id와 round_id는 대상 지원기회의 맥락이며 미상 값은 보존한다. requirements의 basis는 literal, official_guidance, inference다. 명시적으로 required인 literal 항목에 verified_current 상태의 공식 출처가 연결된 경우에만 mandatory로 표시한다. 원문과 출처 상태를 실제 확인하는 책임은 상류 공고 계약과 공통 원문 검증기에 있다.
+intent_observations는 상류의 의미 관찰을 그대로 보존한다. 코드가 이를 승인하거나 공식 요건으로 올리지 않는다. 행정 통계와 단순 자료 입력 요청에는 설득 문단을 만들지 않고 not_applicable을 반환한다.
+template은 research_fit, execution_plan, experience_evidence 중 하나의 ID 또는 기존 형식의 문단 템플릿 객체다.
+
+confirmed_facts는 다음 필드의 목록이다.
+fact_id, subject_id, experience_id, field, value, status=confirmed,
+source={kind, owner_subject_id, evidence_id}
+허용 kind는 user_confirmation, user_document, synthetic_confirmed_fact다. 공개 타인 코퍼스, 다른 사람이나 다른 경험의 사실, 확인되지 않은 값과 소유자가 다른 문서는 슬롯에 사용하지 않는다. 사용자 문서 원문과 의미 확인은 상류 계약이 수행해야 한다.
+필드 이름이 템플릿 슬롯과 같으면 연결하고, 명시적인 task_spec.slot_bindings={슬롯명:fact_id}도 지원한다. 같은 슬롯에 상충하는 확인 값이 있으면 임의 선택하지 않고 질문으로 남긴다.
+
+3. 출력과 검사
+각 문단은 목적, 주장 의도와 연결된 확인 사실, 근거 fact_id, 첫 문장 기능, 끝 문장 기능, 이전과 다음 문단의 연결 슬롯을 갖는다. claim.statement_text는 null이며 실제 주장 문장을 생성한 것으로 표시하지 않는다. 연결 슬롯은 이웃 문단이 같은 재료를 받는 구조를 검증하고, 자연어 전개의 설득력 평가는 수행하지 않는다.
+재료가 없으면 need_info, 공식 제약과 템플릿이 충돌하면 needs_resolution을 반환한다. 현재 공식 문항이 확인되지 않으면 current_task_source 질문을 남긴다. 공식 한 문단 제한을 사용자 다문단 선호로 덮어쓰지 않는다.
+task_spec 또는 constraints의 unfilled_task_aspects는 템플릿 슬롯과 별도로 need_info에 노출한다. coverage_scope는 입력 선언으로 보존하며 전체 문항의 의미적 충족 여부는 추론하지 않는다.
+9개 quality_diagnostics의 score는 모두 null이고 state=not_evaluated다. 사실 보존, 내부 일관성, 제출 제약의 필수 검사 3개도 완성 초안에 대한 검사가 실행되기 전에는 평가값을 채우지 않는다.
+validate_plan은 근거의 사람과 경험 일치, 슬롯과 사실 ID 및 값의 연결, 누락 질문, 문단 경계와 연결, 제약 충돌, 미수행 점수나 승인 주입을 검사한다. valid는 계약 검증 결과다. ready_for_real_application은 항상 false이며 완성 초안과 품질 승인을 뜻하지 않는다.
+
+4. 실제 실행한 예제
+공유 캐시 경로:
+/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/team-execution-20261119/writing-plan
+원문은 기존 chevening-1 공식 안내 질문이다. 보존된 전문 해시와 문자 구간을 대조했다. 이 질문은 현재 지원폼 문항으로 확인한 것이 아니므로 source_ref.status=cached_original_verified로 보존하고 현재 공식 문항 확인을 요청한다.
+명시적 합성 학생 1명과 합성 경험 1개, 확인 상태로 선언한 합성 사실 10개로 문단 계획 2개를 만들었다. 입력과 결과는 input.json, paragraph-plan.json, validation.json, status.json에 있다. 실제 회차는 미상으로 유지했다.
+부분 입력 예제는 confirmed_result를 제거하고 타인의 합성 코퍼스 값을 섞었다. partial-plan.json은 그 값을 사용하지 않고 confirmed_result와 현재 문항을 질문한다. 원문 검증은 이 예제의 자료 계보 확인이며 의미 정확도나 초안 효과의 측정 결과는 아니다.
+이번 실행의 네트워크 요청, 모델 호출과 DB 쓰기는 각각 0회, 생성한 완성 초안과 승인 패턴은 각각 0개다. 기존 수집 서비스는 변경하지 않았다.
+
+5. 검증과 다음 게이트
+테스트 실행: /usr/bin/python3 -m pytest -q tools/tests/test_benefitlens_writing_plan.py
+확인 사실 선별, 타인과 다른 경험의 오염 차단, 상충 값, 명시 슬롯 연결, 공식 제한과 스타일 충돌, 해석의 요건 승격 차단, 행정 문항 처리, 근거와 연결 변조, 미수행 점수와 검사 주입, 합성 예제 표시를 검증한다.
+다음 단계는 T1의 실제 현재 task_spec, T2의 사건 사실과 근거, T4의 사용자 추가 답변을 연결하고 문단 계획을 검토하는 것이다. 문장 생성과 수정은 별도 실행 결과로 보존하고 T5가 사실 오류, 문항 누락, 눈가림 품질과 수정 시간을 평가해야 한다. 계획 파일 존재나 계약 테스트 통과를 좋은 글 또는 신청 증가의 입증으로 보고하지 않는다.

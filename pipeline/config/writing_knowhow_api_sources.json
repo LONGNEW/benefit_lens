@@ -1,0 +1,190 @@
+{
+  "schema": "writing-knowhow-api-registry-v1",
+  "audited_date_kst": "2026-11-17",
+  "purpose": "Discover writing advice, application know-how and authored reflections before deriving paragraph templates.",
+  "automatic_ingestion_enabled": false,
+  "evidence_root": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-knowhow-api-audit-v1",
+  "sources": [
+    {
+      "id": "academia-stackexchange",
+      "priority": 1,
+      "status": "live_fulltext_search_and_answers_verified",
+      "documentation": "https://api.stackexchange.com/docs/advanced-search",
+      "search": "https://api.stackexchange.com/2.3/search/advanced",
+      "search_params": {
+        "site": "academia",
+        "q": "statement of purpose",
+        "filter": "withbody",
+        "sort": "relevance",
+        "pagesize": 100
+      },
+      "answers": "https://api.stackexchange.com/2.3/questions/{semicolon_separated_ids}/answers?site=academia&filter=withbody&pagesize=100",
+      "authentication": "none_used_for_public_read",
+      "body_fields": [
+        "items[].body"
+      ],
+      "pagination": "page, pagesize, has_more",
+      "quota": "Read quota_remaining and backoff from every response; anonymous observed quota differs from registered-app defaults.",
+      "material_roles": [
+        "writing_guidance",
+        "application_advice",
+        "author_reflection_if_explicit"
+      ],
+      "quality_notes": [
+        "accepted answer describes community Q&A acceptance",
+        "answer score does not establish scholarship selection or truth",
+        "retain author, canonical answer link and content_license"
+      ]
+    },
+    {
+      "id": "hashnode-public-tag-posts",
+      "priority": 2,
+      "status": "live_public_tag_fulltext_verified",
+      "documentation": "https://github.com/Hashnode/gql-skill/blob/main/skills/gql-api/references/queries.md",
+      "endpoint": "https://gql-beta.hashnode.com/",
+      "method": "POST_graphql_query_only",
+      "query": "query WritingKnowhow { tag(slug: \"cover-letter\") { id name postsCount posts(first: 20) { edges { node { id title url author { username } content { markdown } } } pageInfo { hasNextPage endCursor } } } }",
+      "verified_tags": [
+        "outreachy",
+        "gsoc",
+        "scholarship",
+        "cover-letter",
+        "technical-writing"
+      ],
+      "authentication": "none_used_for_public_tag_posts",
+      "body_fields": [
+        "data.tag.posts.edges[].node.content.markdown"
+      ],
+      "pagination": "first, after, endCursor",
+      "quality_notes": [
+        "tag membership does not establish topic relevance",
+        "root publication and root post queries have separate Pro gates",
+        "initial filtered-feed query produced an internal server error; documented tag.posts route succeeded"
+      ]
+    },
+    {
+      "id": "forem-keyword-search",
+      "priority": 3,
+      "status": "live_keyword_search_and_fulltext_verified",
+      "documentation": "https://developers.forem.com/api/v1",
+      "search": "https://dev.to/api/articles/search",
+      "search_params": {
+        "q": "outreachy application",
+        "per_page": 100,
+        "page": 1
+      },
+      "detail": "https://dev.to/api/articles/{id}",
+      "authentication": "none_used_for_public_read",
+      "body_fields": [
+        "body_markdown",
+        "body_html"
+      ],
+      "pagination": "page, per_page",
+      "quality_notes": [
+        "existing collector previously relied on tags",
+        "keyword search produced unrelated technical posts as well as application accounts",
+        "retain AI disclosure when available",
+        "full text needs program and advice-role review"
+      ]
+    },
+    {
+      "id": "wordpress-publisher-search",
+      "priority": 2,
+      "status": "site_specific_fulltext_verified_fulbright_only",
+      "documentation": "https://developer.wordpress.org/rest-api/reference/posts/",
+      "example": "https://www.fulbright.or.kr/wp-json/wp/v2/posts?search=지원서&per_page=100&page=1",
+      "authentication": "none_used_for_Fulbright_public_posts",
+      "body_fields": [
+        "content.rendered"
+      ],
+      "pagination": "page, per_page, X-WP-TotalPages",
+      "quality_notes": [
+        "Chevening wp-json posts route returned HTTP 401 and was held",
+        "translations and hiring notices appeared in Fulbright search",
+        "API availability must be checked for each publisher",
+        "WordPress.com site-specific API is a separate existing adapter"
+      ]
+    },
+    {
+      "id": "naver-blog-discovery",
+      "status": "documentation_verified_credentials_required_not_live_tested",
+      "documentation": "https://developers.naver.com/docs/serviceapi/search/blog/blog.md",
+      "endpoint": "https://openapi.naver.com/v1/search/blog.json",
+      "authentication": "application_client_id_and_client_secret",
+      "fulltext": false,
+      "use": "Korean URL discovery; description is a summary and original-body acquisition remains separate."
+    },
+    {
+      "id": "reddit-data-api",
+      "status": "documentation_verified_access_request_and_oauth_required_not_live_tested",
+      "documentation": "https://support.reddithelp.com/hc/en-us/articles/16160319875092-Reddit-Data-API-Wiki",
+      "authentication": "approved_registered_OAuth_client",
+      "quality_notes": [
+        "potential first-person experience and discussion source",
+        "access approval and deletion compliance need implementation"
+      ]
+    },
+    {
+      "id": "tistory-open-api",
+      "status": "official_service_termination_notice",
+      "documentation": "https://notice.tistory.com/2664",
+      "use": "Do not build a new collector on the terminated Open API."
+    }
+  ],
+  "query_families": {
+    "writing_structure": [
+      "statement of purpose",
+      "personal statement",
+      "research proposal",
+      "cover letter"
+    ],
+    "process": [
+      "application tips",
+      "how I applied",
+      "proposal writing",
+      "지원서 작성",
+      "자기소개서",
+      "면접 준비"
+    ],
+    "reflection": [
+      "what I learned",
+      "not selected",
+      "rejected",
+      "합격 후기",
+      "탈락 후기"
+    ]
+  },
+  "promotion_requires": [
+    "document_role",
+    "original_body",
+    "author_attribution_level",
+    "program_binding_if_program_specific",
+    "round_and_prompt_scope",
+    "advice_span_and_paragraph_context",
+    "semantic_review"
+  ],
+  "collection_unit": "question_evidence",
+  "whole_application_required": false,
+  "known_selection_outcome_required": false,
+  "collection_program_binding_required": false,
+  "question_intents": [
+    "research_motivation",
+    "personal_contribution",
+    "program_fit",
+    "execution_plan",
+    "leadership_impact",
+    "challenge_reflection"
+  ],
+  "collection_contract": "pipeline/schemas/writing-question-evidence.schema.json",
+  "analysis_rubric": "pipeline/config/operational_writing_pattern_prompt_v5.txt",
+  "foundation_registry": "pipeline/config/writing_foundation_sources_v3.json",
+  "foundation_principles": "pipeline/config/writing_principles_v1.json",
+  "foundation_evidence_root": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-foundations-v1",
+  "foundation_collection": "tools/collect_benefitlens_writing_foundations.py",
+  "foundation_audit": "tools/audit_benefitlens_writing_foundations.py",
+  "foundation_report": "tools/report_benefitlens_writing_expansion.py",
+  "scored_ellipse_importer": "tools/import_benefitlens_ellipse.py",
+  "revision_pair_importer": "tools/import_benefitlens_writing_revisions.py",
+  "pattern_taxonomy": "pipeline/config/writing_pattern_taxonomy_v1.json",
+  "quality_rubric": "pipeline/config/writing_quality_rubric_v1.json"
+}

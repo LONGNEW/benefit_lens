@@ -1,0 +1,52 @@
+경험과 개인화의 실제 코퍼스 인계 명세 v2
+
+1. 처리 범위와 실행
+저장된 experience_discovery_case 전체를 REPEATABLE READ READ ONLY 트랜잭션으로 읽는다. legacy_case_id가 있는 예전 예제와 명시된 합성 자료는 성과 집계에서 제외한다. 새 크롤링, 모델 호출, 운영 DB 쓰기는 하지 않는다. 실행 시각과 고정된 DB 스냅샷 시각은 summary.json에 남긴다.
+
+실행 명령:
+/usr/bin/python3 tools/audit_benefitlens_experience_production.py --root /home/longnew/.cache/datasets/benefitlens/scale50k-20261109/team-production-20261119/experience --notice-root /home/longnew/.cache/datasets/benefitlens/scale50k-20261109/team-production-20261119/notice
+
+2. 확인된 실제 상태
+2026년 11월 19일 실행에서 DB 사례는 29,955개이며 legacy 14개를 제외한 29,941개를 처리했다. 비활성 또는 중복 병합 9개는 상태를 보존해 활성 사례 29,932개와 구분했다. 원문 문서 연결이 없는 사례는 없었다.
+
+연결 문서는 30,593개다. 원문과 추출문 저장 해시를 모두 통과한 문서는 30,591개이고 2개는 복구 대기다. HTML 27,763개, PDF 2,190개, JSON 638개, DOCX 1개, HWP 1개를 대상으로 기존 추출 텍스트의 위치를 보존했다. 생성한 구조 구간은 489,117개이며, HTML 문단 정렬 351,428개, 빈 줄 경계 후보 54,526개, 길이 제한 레이아웃 구간 83,163개다. 서로 겹치는 HTML 문단과 레이아웃 구간을 독립 경험 수로 세지 않는다.
+
+사례의 기존 case_scope는 참여 후기 26,743개, 지원 과정 2,931개, application_document 104개, public_application_document 5개 등이다. 이 분류는 원천 메타데이터다. 실제 제출문을 읽고 문서 역할을 승인한 결과와 구분한다. 연결 문서의 source_id에서 Higherin이 23,810개로 가장 크다.
+
+기존 experience_passages가 있는 사례는 130개이고 experience_profile은 118개다. 구조화된 사건 분해, 사례 의미 승인, 승인된 작성 패턴은 0개다. 모든 대상 사례의 의미 검토는 unreviewed다. 과거 24,095개 전체 텍스트 내보내기는 분석용 입력 생성 기록이며, 별도 10개 문항 의미 관찰도 미승인 상태다. PERSUADE 10,402개와 ELLIPSE 6,482개의 기술 통계는 글쓰기 자료 분석으로 기록한다.
+
+3. T2 경험 인계
+cases.jsonl.gz는 case_key, program_id, round_id, source_roles, input_documents, analysis_stages, existing_unreviewed_annotations, unresolved_fields, next_stage를 가진다. 이름이 확인된 행 수와 고유 인물 수를 구분하며, 다른 출처의 동일인 추정은 하지 않는다. outcome은 원천의 주장과 근거를 보존하고 작성 방식의 합격 인과 효과로 사용하지 않는다.
+
+documents.jsonl.gz에는 raw_ref, text_ref, 해시 검증 상태, 수집 시각, 원천 역할 메타데이터와 segments_ref를 기록한다. segments.jsonl.gz와 문서별 segment-inputs 패키지는 document_id, segment_id, char_start, char_end, line_start, line_end, segment_text_sha256를 제공한다. 위치는 변경하지 않은 저장 텍스트의 Python Unicode 코드 포인트 기준이다. char_end는 포함하지 않는다.
+
+후속 의미 추출기는 next-processing-queue.jsonl.gz의 inputs에서 text_ref와 segments_ref를 열고 두 해시를 확인한다. 본문 구간에서 사건, 지원 동기, 본인 행동, 결과, 성찰의 후보를 추출한 후 근거 위치와 대안 해석을 기록한다. 공식 요구, 공식 지침, 작성자 전략, 분석자 해석을 별도 관찰 층으로 남긴다. 기존 annotations도 unreviewed 상태로 전달한다. 비활성 사례는 skip_inactive_or_merged, 원문 보류는 repair_source_inputs, 나머지는 extract_event_candidates로 보낸다.
+
+공고와 경험의 production_notice_links는 아직 비어 있다. 프로그램 문자열과 회차를 공식 자료로 검토한 뒤 연결해야 한다. 새 의미 추출과 정본 승인은 이 구조 전처리기의 역할 밖이다.
+
+4. T4 개인화 입력 계약
+조건 필드와 입력 시점의 권한은 pipeline/config/shared_condition_catalog_v1.json에 있다. 개인화 코드는 catalog를 직접 읽으며 표현 사전이나 별도 조건을 만들지 않는다. T1의 notices.jsonl.gz에 들어간 각 조건 객체를 그대로 분배하고, conditions.jsonl.gz와 condition_id 및 전체 내용 해시를 대조한다.
+
+현재 catalog의 common_profile 7개 필드는 학위, 재학 상태, 전일제 여부, GPA, 전공군, 국적, 나이다. program_followup 10개 필드는 수료, 소속 기관, 거주, 취업 자격, 비자 지원, 경력, 언어, 기관 추천, 요구 문서, 프로그램 특화 조건이다. 마감과 혜택 금액은 not_applicant_input이다. 이 구분은 재사용 정보와 후속 질문의 시점 정책이며, 실제 공고의 요건은 근거 문맥과 논리를 검토해 확정한다.
+
+personalization-requirements.jsonl.gz는 실제 공고 후보마다 catalog_sha256, 원문 참조, 공고 처리 상태, 국가 또는 회차 대표 원문의 범위, 3개 input_channels, 미해결 필드, decision=unknown을 기록한다. 대표 원문의 조건은 다른 지역이나 회차로 확장하지 않는다. condition-demand-distribution.json은 공고 수, 언급 수, 필드별 공고 수, 입력 채널별 언급 수, 적용 시점과 미확정 이유를 집계한다. 미검출 필드는 무요건으로 바꾸지 않는다.
+
+이번 전량 인계는 공고 후보 36,856개, 조건 언급 후보 199,485개다. 입력 채널별 언급은 공통 정보 61,252개, 공고 후속 정보 112,274개, 비학생 입력 25,959개다. 학위 표현이 있는 공고는 8,557개, GPA는 961개, 수료는 18개, 취업 자격은 1,334개, 기관 추천은 73개다. 전부 원문 표현의 검출 수이며, 적용 시점이 미확정인 조건은 198,886개다. 공고 특화 표현 94,350개는 추가 의미 정규화가 필요한 후보로 남겼다.
+
+현재 전량 조건은 미검토 후보이므로 학생에게 자동 질문을 발행하거나 적격 판정을 내리지 않는다. 요건의 연산자, AND/OR 범위, 적용 시점과 공식 근거를 검토한 뒤 provenance가 있는 학생 사실과 비교한다. 이후 판정은 충족, 불충족, 정보 부족으로 나누고, 선택한 공고의 남은 조건만 질문한다. 합격 확률은 생성하지 않는다.
+
+5. 지원자 사실과 작성 경험
+재학증명서와 성적증명서에서 직접 읽은 사실은 문서 ID, 원문 위치, 기준일과 함께 후보로 저장하고 사용자 확인을 받는다. 학점으로 수료를 추론하거나 소속 국가로 국적을 추론하지 않는다. 공식 문서가 말하지 않는 비자 상태, 향후 일정, 기관 추천 가능성 등은 별도로 확인한다.
+
+글쓰기 채널은 검토된 공식 task_spec의 문항, 장르, 분량과 요구 내용을 먼저 받는다. 그때 필요한 지원자 경험을 요청한다. 기회 맥락, 선택 이유, 본인 역할과 행동, 어려움과 판단, 결과물, 성찰, 향후 활용은 선택 가능한 사건 슬롯이다. 문항이 없는 상태에서 이를 전부 필수 질문으로 요청하지 않는다.
+
+지원자 fact에는 subject_id, experience_id, 출처, 확인 상태가 필요하다. 공개 후기의 인물과 성과는 참고 근거로 사용한다. T3가 문항 의도와 문단 목적, 주장과 근거, 앞 문단 연결과 다음 문단 전환을 계획하고, T4가 확인된 지원자 사실을 해당 계획에 연결한다. 사실이 없는 슬롯은 추가 질문으로 남긴다.
+
+6. 완료 게이트와 다음 작업
+이번 완료 게이트는 전체 대상 행 인계, 원문 무결성 상태, 실제 문서 구간 입력, 공유 catalog의 조건 무변형 소비다. tools/tests/test_benefitlens_experience_production.py의 5개 경계 검사를 통과했다. UTF-8 위치, 긴 본문 무누락 구간화, 일부 문서 미연결 차단, 동적 catalog 소비, 예제 제외를 검증한다.
+
+독립 검증기 tools/tests/validate_benefitlens_experience_production.py로 실제 구간 489,117개의 원문 SHA와 위치, 검증 통과 문서 30,591개의 비공백 본문 무누락 범위, 사례 29,941개의 후속 큐 연결을 전수 대조했다. 최종 동결된 T1 파일과 공고별 요구 projection 36,856개, 조건 객체 199,485개의 일치 검사도 통과했다. 실행 결과는 structural-validation.json에 기록했다.
+
+다음 인계는 T3의 사건 및 문항 의미 후보 추출과 내용 검토, T1의 공고 조건 논리 검토, T4의 공고와 경험 회차 연결이다. 운영 정본의 experience_fact, profile_snapshot, evaluation, draft_version, opportunity_version, eligibility_rule은 이번 스냅샷에서 모두 0건이다. 정본 반영은 검토된 레코드와 인계 manifest를 사용하는 별도 단계다.
+
+저장 해시 보류 2개는 source-repair-diagnosis.json에 진단을 남겼다. 저장된 추출문 내용 SHA는 일치하지만 압축 텍스트 저장 메타데이터가 어긋나 있어 자동 승인을 하지 않았다. 운영 DB와 원문 파일은 수정하지 않았다.

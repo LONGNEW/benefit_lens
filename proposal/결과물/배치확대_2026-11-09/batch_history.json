@@ -1,0 +1,35 @@
+[
+  {
+    "at": "2026-11-09T02:44:28.245610+09:00",
+    "batch_id": "e158951aeb8251fb808132c17ec3b25be0405fddaf3d1336a0e66cd73583e712",
+    "cases": 7,
+    "patterns": 5,
+    "rounds": 15,
+    "run": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-run-20261109/runs/e158951aeb8251fb808132c17ec3b25be0405fddaf3d1336a0e66cd73583e712",
+    "source_backed": 9,
+    "summary_only": 6,
+    "verification": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-run-20261109/runs/e158951aeb8251fb808132c17ec3b25be0405fddaf3d1336a0e66cd73583e712/output/verification.json"
+  },
+  {
+    "at": "2026-11-09T02:44:43.580210+09:00",
+    "batch_id": "d6005e9fe2a489a3b5f64cea882479444d07cc94f90d66cd7cdaf690832dbb76",
+    "cases": 7,
+    "patterns": 6,
+    "rounds": 17,
+    "run": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-run-20261109/runs/d6005e9fe2a489a3b5f64cea882479444d07cc94f90d66cd7cdaf690832dbb76",
+    "source_backed": 11,
+    "summary_only": 6,
+    "verification": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-run-20261109/runs/d6005e9fe2a489a3b5f64cea882479444d07cc94f90d66cd7cdaf690832dbb76/output/verification.json"
+  },
+  {
+    "at": "2026-11-09T02:47:35.746313+09:00",
+    "batch_id": "c0ba1a2e1d72888d17dbeef724be27b14ba1c0219d784b8363f304b74f5a671e",
+    "cases": 7,
+    "patterns": 6,
+    "rounds": 17,
+    "run": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-run-20261109/runs/c0ba1a2e1d72888d17dbeef724be27b14ba1c0219d784b8363f304b74f5a671e",
+    "source_backed": 11,
+    "summary_only": 6,
+    "verification": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-run-20261109/runs/c0ba1a2e1d72888d17dbeef724be27b14ba1c0219d784b8363f304b74f5a671e/output/verification.json"
+  }
+]

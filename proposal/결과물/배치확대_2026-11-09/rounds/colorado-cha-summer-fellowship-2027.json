@@ -1,0 +1,170 @@
+{
+  "basis": "source_backed",
+  "title": "CU Boulder CHA Summer Fellowship",
+  "claims": [
+    {
+      "at": null,
+      "kind": "schedule",
+      "field": "deadline",
+      "value": {
+        "date": "2027-02-14",
+        "opening_status": "unverified"
+      },
+      "claim_id": "cha27-deadline",
+      "round_id": "2027",
+      "program_id": "colorado-cha-summer-fellowship",
+      "evidence_ids": [
+        "cha27-deadline-evidence"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "eligibility",
+      "field": "graduate_enrollment",
+      "value": {
+        "degree": [
+          "masters",
+          "phd"
+        ],
+        "institution": "CU Boulder",
+        "research_area": [
+          "humanities",
+          "arts"
+        ],
+        "fall_2027_course_enrollment": true
+      },
+      "claim_id": "cha27-degree",
+      "round_id": "2027",
+      "program_id": "colorado-cha-summer-fellowship",
+      "evidence_ids": [
+        "cha27-degree-evidence"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "writing",
+      "kind": "advice",
+      "field": "public_example_material",
+      "value": {
+        "url": "https://www.colorado.edu/cha/sites/default/files/attached-files/cha_summer_fellowship_sample_proposals.pdf",
+        "status": "downloaded",
+        "document_id": "cha27-samples-677d8277254236",
+        "verified_outcomes": false
+      },
+      "claim_id": "cha27-examples",
+      "round_id": "2027",
+      "program_id": "colorado-cha-summer-fellowship",
+      "evidence_ids": [
+        "cha27-examples-evidence"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "summer_2027",
+      "kind": "benefit",
+      "field": "summer_stipend",
+      "value": {
+        "amount": 6000,
+        "period": "summer_total",
+        "currency": "USD",
+        "installments": 2
+      },
+      "claim_id": "cha27-funding",
+      "round_id": "2027",
+      "program_id": "colorado-cha-summer-fellowship",
+      "evidence_ids": [
+        "cha27-funding-evidence"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "summer_2027",
+      "kind": "eligibility",
+      "field": "other_summer_funding",
+      "value": {
+        "allowed": false,
+        "includes_other_stipends": true
+      },
+      "claim_id": "cha27-other-funding",
+      "round_id": "2027",
+      "program_id": "colorado-cha-summer-fellowship",
+      "evidence_ids": [
+        "cha27-other-funding-evidence"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "application_packet",
+      "value": {
+        "files": 1,
+        "items": [
+          "cover_letter",
+          "research_proposal",
+          "cv"
+        ],
+        "format": "pdf",
+        "cover_letter_max_pages": 1
+      },
+      "claim_id": "cha27-packet",
+      "round_id": "2027",
+      "program_id": "colorado-cha-summer-fellowship",
+      "evidence_ids": [
+        "cha27-packet-evidence"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "research_proposal",
+      "value": {
+        "max_pages": 1,
+        "font_size_pt": 12,
+        "double_spaced": true,
+        "include_budget": false,
+        "max_pages_with_artistic_images": 2
+      },
+      "claim_id": "cha27-proposal",
+      "round_id": "2027",
+      "program_id": "colorado-cha-summer-fellowship",
+      "evidence_ids": [
+        "cha27-proposal-evidence"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "form",
+      "field": "public_application_form",
+      "value": {
+        "url": "https://www.colorado.edu/cha/content/summer-fellowship-application-form",
+        "status": "public_fields_verified",
+        "pdf_only": true,
+        "upload_limit_mb": 5
+      },
+      "claim_id": "cha27-upload",
+      "round_id": "2027",
+      "program_id": "colorado-cha-summer-fellowship",
+      "evidence_ids": [
+        "cha27-upload-evidence"
+      ],
+      "review_state": "reviewed"
+    }
+  ],
+  "issuer": "University of Colorado Boulder",
+  "status": "unknown",
+  "opens_on": null,
+  "round_id": "2027",
+  "closes_on": "2027-02-14",
+  "checked_on": "2026-11-09",
+  "program_id": "colorado-cha-summer-fellowship",
+  "announces_on": null,
+  "official_url": "https://www.colorado.edu/cha/funding-and-resources/grad-student-opportunities/summer-fellowships",
+  "notice_version": "batch-2026-11-09-v1",
+  "opportunity_id": "colorado-cha-summer-fellowship-2027",
+  "application_url": "https://www.colorado.edu/cha/content/summer-fellowship-application-form",
+  "opportunity_type": "fellowship"
+}

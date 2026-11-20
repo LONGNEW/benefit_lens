@@ -1,0 +1,265 @@
+{
+  "claim": [
+    {
+      "claim_id": "cern-744000159422712-deadline-claim",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "kind": "schedule",
+      "field": "application_deadline",
+      "at": "deadline",
+      "value": {
+        "date": "2027-11-01",
+        "time": "23:59",
+        "timezone": "Europe/Zurich",
+        "source_date_token": "01/11/2027"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159422712-enrollment",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "kind": "eligibility",
+      "field": "student_enrollment",
+      "at": "during_internship",
+      "value": {
+        "required": true,
+        "full_time_during_internship": true,
+        "levels": [
+          "technical_or_administrative_diploma",
+          "bachelor",
+          "master"
+        ],
+        "minimum_completed_semesters_at_start": null,
+        "phd_excluded": null,
+        "condition_summary": "CERN 공식 문구의 해당 인턴십 중 전일제 재학 조건"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159422712-nationality-claim",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "kind": "eligibility",
+      "field": "nationality_scope",
+      "at": "application",
+      "value": {
+        "scope": "CERN Member or Associate Member State",
+        "temporary_ceiling_exclusions": [
+          "Pakistan",
+          "Lithuania",
+          "Latvia",
+          "Cyprus",
+          "Croatia",
+          "Türkiye"
+        ]
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159422712-stipend-claim",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "kind": "benefit",
+      "field": "internship_allowance",
+      "at": "during_internship",
+      "value": {
+        "amount": 1593,
+        "currency": "CHF",
+        "basis": "month"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159422712-documents",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "kind": "submission",
+      "field": "application_documents",
+      "at": "application",
+      "value": {
+        "required": [
+          "cv"
+        ],
+        "optional": [
+          "other_relevant_document"
+        ],
+        "scope": "공식 제출 목록에서 확인한 항목"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159422712-form-link",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "kind": "form",
+      "field": "application_link",
+      "at": "application",
+      "value": {
+        "url": "https://jobs.smartrecruiters.com/CERN/744000159422712-short-term-internship-2027-applied-physics?oga=true",
+        "native_posting_id": "744000159422712",
+        "private_fields_status": "unknown",
+        "source": "public posting API applyUrl"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159603499-publication-status",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "kind": "schedule",
+      "field": "posting_status",
+      "at": "observed",
+      "value": {
+        "status": "open",
+        "active": true,
+        "visibility": "PUBLIC",
+        "native_posting_id": "744000159603499",
+        "ref_number": "SUMM-2027",
+        "released_at": "2026-11-04T11:01:17.722Z",
+        "checked_at": "2026-11-08T17:54:30.747688+00:00",
+        "detail_in_active_listing": true,
+        "form_interaction": "not_attempted"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159603499-deadline-claim",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "kind": "schedule",
+      "field": "application_deadline",
+      "at": "deadline",
+      "value": {
+        "date": "2027-01-21",
+        "time": "23:59",
+        "timezone": "Europe/Zurich",
+        "source_date_token": "21/01/27"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159603499-enrollment",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "kind": "eligibility",
+      "field": "student_enrollment",
+      "at": "during_internship",
+      "value": {
+        "required": true,
+        "full_time_during_internship": true,
+        "levels": [
+          "bachelor",
+          "master"
+        ],
+        "minimum_completed_semesters_at_start": 6,
+        "phd_excluded": true,
+        "condition_summary": "CERN 공식 문구의 해당 인턴십 중 전일제 재학 조건"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159603499-nationality-claim",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "kind": "eligibility",
+      "field": "nationality_scope",
+      "at": "application",
+      "value": {
+        "scope": "all nationalities",
+        "additional_application_countries": [
+          "Canada",
+          "Japan",
+          "United States"
+        ],
+        "additional_application_condition": "해당 국적은 별도 지역 웹사이트에도 신청한다."
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159603499-stipend-claim",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "kind": "benefit",
+      "field": "internship_allowance",
+      "at": "during_internship",
+      "value": {
+        "amount": 94,
+        "currency": "CHF",
+        "basis": "calendar_day"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159603499-documents",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "kind": "submission",
+      "field": "application_documents",
+      "at": "application",
+      "value": {
+        "required": [
+          "cv",
+          "academic_reference",
+          "official_academic_transcript",
+          "certificate_of_enrolment"
+        ],
+        "optional": [
+          "other_relevant_document"
+        ],
+        "scope": "공식 제출 목록에서 확인한 항목"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159603499-form-link",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "kind": "form",
+      "field": "application_link",
+      "at": "application",
+      "value": {
+        "url": "https://jobs.smartrecruiters.com/CERN/744000159603499-cern-summer-student-programme-2027-member-and-non-member-state-?oga=true",
+        "native_posting_id": "744000159603499",
+        "private_fields_status": "unknown",
+        "source": "public posting API applyUrl"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159596524-publication-status",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "kind": "schedule",
+      "field": "posting_status",
+      "at": "observed",
+      "value": {
+        "status": "open",
+        "active": true,
+        "visibility": "PUBLIC",
+        "native_posting_id": "744000159596524",
+        "ref_number": "SUM-OPENLAB-2027",
+        "released_at": "2026-11-04T10:46:37.247Z",
+        "checked_at": "2026-11-08T17:54:31.061802+00:00",
+        "detail_in_active_listing": true,
+        "form_interaction": "not_attempted"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159596524-deadline-claim",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "kind": "schedule",
+      "field": "application_deadline",
+      "at": "deadline",
+      "value": {
+        "date": "2027-01-21",
+        "time": "23:59",
+        "timezone": "Europe/Zurich",
+        "source_date_token": "21/01/27"
+      },
+      "review_state": "reviewed"
+    }
+  ]
+}

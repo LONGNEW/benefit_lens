@@ -1,0 +1,10 @@
+{
+  "version":"writing-foundation-sources-v3",
+  "extends":"writing_foundation_sources_v2.json",
+  "purpose":"Add before/after writing revisions and publicly shared grant applications. Keep source registries, complete proposals, revision pairs and edit-intent annotations as distinct units.",
+  "repositories":[
+    {"id":"iterater-revisions","repo":"vipulraheja/iterater","branch":"main","include":["README.md"],"genre":"formal_writing_revision","role":"corpus_documentation","scope":"Official author code/data archive. Import nested dataset separately, distinguish human edit-intention annotations from automatic classifier labels and preserve train/dev/test."},
+    {"id":"jfleg-revisions","repo":"keisks/jfleg","branch":"master","include":["README.md"],"genre":"sentence_fluency_revision","role":"corpus_documentation","scope":"Official author release of source sentences and four human revision references. Sentences and reference pairs are not people or complete applications."},
+    {"id":"open-grants","repo":"ogrants/ogrants","branch":"main","include":["proposals/*.pdf","_grants/*.md","README.md","LICENSE.md"],"genre":"grant_proposal","role":"application_text","scope":"Community-shared grant proposals with program metadata. Registry entries are URL discovery, not acquired proposal bodies; official source statement provides CC-BY sharing for uploaded proposals."}
+  ]
+}

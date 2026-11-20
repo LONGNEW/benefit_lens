@@ -1,0 +1,20 @@
+{
+  "version": "student-ten-v1",
+  "collection_enabled": false,
+  "applicant_scope": "student_individual",
+  "opportunity_ids": [
+    "gates-cambridge-2026-2027", "google-east-asia-2026", "ikef-undergraduate-2026",
+    "nvidia-2027-2028", "postech-ax-first-semester", "postech-k-top-tier",
+    "posco-overseas-2026", "hyundai-mobis-research-scholar-2026-h2",
+    "kosaf-presidential-2026", "kosaf-hope-ladder-2026-s2"
+  ],
+  "excluded_categories": ["research_grant"],
+  "excluded_applicants": ["organization", "faculty_only"],
+  "pattern_extraction": {
+    "command": "codex",
+    "reasoning_effort": "high",
+    "timeout_seconds": 600,
+    "max_attempts": 3,
+    "max_input_characters": 500000
+  }
+}

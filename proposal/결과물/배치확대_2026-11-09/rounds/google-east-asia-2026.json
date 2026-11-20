@@ -1,0 +1,78 @@
+{
+  "basis": "source_backed",
+  "title": "Google PhD Fellowship 2026 동아시아",
+  "claims": [
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "leadership_essay",
+      "value": {
+        "region": "East Asia",
+        "language": "en",
+        "required": true,
+        "max_words": 350,
+        "prompt_summary": "다른 사람에게 긍정적 영향을 주었거나, 갈등을 해결했거나, 시간에 걸쳐 공동 노력에 기여한 리더십 사례를 설명한다."
+      },
+      "claim_id": "g26w-leadership",
+      "round_id": "2026-east-asia",
+      "program_id": "google-phd-fellowship",
+      "evidence_ids": [
+        "g26w-english",
+        "g26w-lead"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "research_impact_essay",
+      "value": {
+        "region": "East Asia",
+        "language": "en",
+        "required": true,
+        "max_words": 350,
+        "prompt_summary": "연구가 분야와 사회에 미치기를 바라는 영향, 그 영향이 중요한 이유와 연구 관심을 만든 경험을 설명한다."
+      },
+      "claim_id": "g26w-research-impact",
+      "round_id": "2026-east-asia",
+      "program_id": "google-phd-fellowship",
+      "evidence_ids": [
+        "g26w-english",
+        "g26w-impact"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "research_proposal",
+      "value": {
+        "language": "en",
+        "required": true,
+        "max_pages": 3,
+        "references_excluded": true
+      },
+      "claim_id": "g26w-research-proposal",
+      "round_id": "2026-east-asia",
+      "program_id": "google-phd-fellowship",
+      "evidence_ids": [
+        "g26w-english",
+        "g26w-rp"
+      ],
+      "review_state": "reviewed"
+    }
+  ],
+  "issuer": "Google",
+  "status": "closed",
+  "opens_on": "2026-03-05",
+  "round_id": "2026-east-asia",
+  "closes_on": "2026-04-30",
+  "checked_on": "2026-10-15",
+  "program_id": "google-phd-fellowship",
+  "announces_on": null,
+  "official_url": "https://research.google/programs-and-events/phd-fellowship/",
+  "notice_version": "sample-2026-10-15",
+  "opportunity_id": "google-east-asia-2026",
+  "application_url": null,
+  "opportunity_type": "fellowship"
+}

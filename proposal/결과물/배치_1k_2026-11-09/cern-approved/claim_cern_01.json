@@ -1,0 +1,270 @@
+{
+  "claim": [
+    {
+      "claim_id": "cern-744000159629244-publication-status",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "kind": "schedule",
+      "field": "posting_status",
+      "at": "observed",
+      "value": {
+        "status": "open",
+        "active": true,
+        "visibility": "PUBLIC",
+        "native_posting_id": "744000159629244",
+        "ref_number": "STAG 2027 DS",
+        "released_at": "2026-11-04T13:16:16.721Z",
+        "checked_at": "2026-11-08T17:54:30.249679+00:00",
+        "detail_in_active_listing": true,
+        "form_interaction": "not_attempted"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159629244-deadline-claim",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "kind": "schedule",
+      "field": "application_deadline",
+      "at": "deadline",
+      "value": {
+        "date": "2027-11-01",
+        "time": "23:59",
+        "timezone": "Europe/Zurich",
+        "source_date_token": "01/11/2027"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159629244-enrollment",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "kind": "eligibility",
+      "field": "student_enrollment",
+      "at": "during_internship",
+      "value": {
+        "required": true,
+        "full_time_during_internship": true,
+        "levels": [
+          "technical_or_administrative_diploma",
+          "bachelor",
+          "master"
+        ],
+        "minimum_completed_semesters_at_start": null,
+        "phd_excluded": null,
+        "condition_summary": "CERN 공식 문구의 해당 인턴십 중 전일제 재학 조건"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159629244-nationality-claim",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "kind": "eligibility",
+      "field": "nationality_scope",
+      "at": "application",
+      "value": {
+        "scope": "CERN Member or Associate Member State",
+        "temporary_ceiling_exclusions": [
+          "Pakistan",
+          "Lithuania",
+          "Latvia",
+          "Cyprus",
+          "Croatia",
+          "Türkiye"
+        ]
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159629244-stipend-claim",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "kind": "benefit",
+      "field": "internship_allowance",
+      "at": "during_internship",
+      "value": {
+        "amount": 1593,
+        "currency": "CHF",
+        "basis": "month"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159629244-documents",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "kind": "submission",
+      "field": "application_documents",
+      "at": "application",
+      "value": {
+        "required": [
+          "cv"
+        ],
+        "optional": [
+          "other_relevant_document"
+        ],
+        "scope": "공식 제출 목록에서 확인한 항목"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159629244-form-link",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "kind": "form",
+      "field": "application_link",
+      "at": "application",
+      "value": {
+        "url": "https://jobs.smartrecruiters.com/CERN/744000159629244-short-term-internship-2027-data-science-ai-analytics?oga=true",
+        "native_posting_id": "744000159629244",
+        "private_fields_status": "unknown",
+        "source": "public posting API applyUrl"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159634239-publication-status",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "kind": "schedule",
+      "field": "posting_status",
+      "at": "observed",
+      "value": {
+        "status": "open",
+        "active": true,
+        "visibility": "PUBLIC",
+        "native_posting_id": "744000159634239",
+        "ref_number": "STAG 2027 IT",
+        "released_at": "2026-11-04T13:34:52.474Z",
+        "checked_at": "2026-11-08T17:54:30.250221+00:00",
+        "detail_in_active_listing": true,
+        "form_interaction": "not_attempted"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159634239-deadline-claim",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "kind": "schedule",
+      "field": "application_deadline",
+      "at": "deadline",
+      "value": {
+        "date": "2027-11-01",
+        "time": "23:59",
+        "timezone": "Europe/Zurich",
+        "source_date_token": "01/11/2027"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159634239-enrollment",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "kind": "eligibility",
+      "field": "student_enrollment",
+      "at": "during_internship",
+      "value": {
+        "required": true,
+        "full_time_during_internship": true,
+        "levels": [
+          "technical_or_administrative_diploma",
+          "bachelor",
+          "master"
+        ],
+        "minimum_completed_semesters_at_start": null,
+        "phd_excluded": null,
+        "condition_summary": "CERN 공식 문구의 해당 인턴십 중 전일제 재학 조건"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159634239-nationality-claim",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "kind": "eligibility",
+      "field": "nationality_scope",
+      "at": "application",
+      "value": {
+        "scope": "CERN Member or Associate Member State",
+        "temporary_ceiling_exclusions": [
+          "Pakistan",
+          "Lithuania",
+          "Latvia",
+          "Cyprus",
+          "Croatia",
+          "Türkiye"
+        ]
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159634239-stipend-claim",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "kind": "benefit",
+      "field": "internship_allowance",
+      "at": "during_internship",
+      "value": {
+        "amount": 1593,
+        "currency": "CHF",
+        "basis": "month"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159634239-documents",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "kind": "submission",
+      "field": "application_documents",
+      "at": "application",
+      "value": {
+        "required": [
+          "cv"
+        ],
+        "optional": [
+          "other_relevant_document"
+        ],
+        "scope": "공식 제출 목록에서 확인한 항목"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159634239-form-link",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "kind": "form",
+      "field": "application_link",
+      "at": "application",
+      "value": {
+        "url": "https://jobs.smartrecruiters.com/CERN/744000159634239-short-term-internship-2027-information-technologies?oga=true",
+        "native_posting_id": "744000159634239",
+        "private_fields_status": "unknown",
+        "source": "public posting API applyUrl"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159422712-publication-status",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "kind": "schedule",
+      "field": "posting_status",
+      "at": "observed",
+      "value": {
+        "status": "open",
+        "active": true,
+        "visibility": "PUBLIC",
+        "native_posting_id": "744000159422712",
+        "ref_number": "STAG 2027 AP",
+        "released_at": "2026-11-03T15:36:15.058Z",
+        "checked_at": "2026-11-08T17:54:30.659174+00:00",
+        "detail_in_active_listing": true,
+        "form_interaction": "not_attempted"
+      },
+      "review_state": "reviewed"
+    }
+  ]
+}

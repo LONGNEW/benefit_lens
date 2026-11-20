@@ -1,0 +1,141 @@
+{
+  "claim": [
+    {
+      "claim_id": "mitacs-rise-dates",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027",
+      "kind": "schedule",
+      "field": "application_and_project_windows",
+      "at": "application",
+      "value": {
+        "opens_on": "2026-10-15",
+        "closes_on": "2026-11-30",
+        "closes_time": "23:59",
+        "time_zone_label": "CET",
+        "start_date_range": [
+          "2027-05-15",
+          "2027-07-15"
+        ],
+        "minimum_weeks": 10
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "mitacs-rise-benefits",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027",
+      "kind": "benefit",
+      "field": "travel_living_and_insurance",
+      "at": "project",
+      "value": {
+        "components": [
+          {
+            "type": "travel_and_living_award",
+            "amount": 7000,
+            "currency": null,
+            "currency_symbol": "$",
+            "currency_status": "not_spelled_out_in_captured_notice",
+            "basis_weeks": 12
+          },
+          {
+            "type": "insurance",
+            "coverage": [
+              "health",
+              "accident",
+              "personal_liability"
+            ],
+            "provided_by": "DAAD"
+          }
+        ],
+        "no_duplicate_daad_stipend_or_travel_subsidy": true
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "mitacs-rise-eligibility",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027",
+      "kind": "eligibility",
+      "field": "canadian_university_undergraduate",
+      "at": "application_and_project",
+      "value": {
+        "minimum_age": 18,
+        "full_time_canadian_university_undergraduate": true,
+        "student_status_any": [
+          "Canadian citizen",
+          "Canadian permanent resident",
+          "international student"
+        ],
+        "german_citizenship_exception": "living outside Germany for at least six years",
+        "completed_years_normal": 2,
+        "quebec_three_year_degree_completed_years": 1,
+        "english_fluency_required": true
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "mitacs-rise-application",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027",
+      "kind": "submission",
+      "field": "daad_application",
+      "at": "application",
+      "value": {
+        "submitted_by": "applicant",
+        "portal": "RISE Germany",
+        "separate_mitacs_application": false,
+        "selection_by": "DAAD"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "mitacs-rise-award-forms",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027",
+      "kind": "submission",
+      "field": "post_selection_mitacs_forms",
+      "at": "after_selection",
+      "value": {
+        "submitted_by": "selected_student",
+        "items": [
+          "student_code_of_conduct_and_ethics",
+          "international_pre_departure_form"
+        ],
+        "required_before_award_release": true
+      },
+      "review_state": "reviewed"
+    }
+  ],
+  "claim_evidence": [
+    {
+      "claim_id": "mitacs-rise-dates",
+      "evidence_id": "RISE-DATES",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027"
+    },
+    {
+      "claim_id": "mitacs-rise-benefits",
+      "evidence_id": "RISE-BENEFITS",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027"
+    },
+    {
+      "claim_id": "mitacs-rise-eligibility",
+      "evidence_id": "RISE-ELIGIBILITY",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027"
+    },
+    {
+      "claim_id": "mitacs-rise-application",
+      "evidence_id": "RISE-APPLY",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027"
+    },
+    {
+      "claim_id": "mitacs-rise-award-forms",
+      "evidence_id": "RISE-APPLY",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027"
+    }
+  ]
+}

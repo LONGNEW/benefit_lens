@@ -1,0 +1,24 @@
+{
+  "experience_case": [
+    {
+      "case_id": "gc26w-c1",
+      "program_id": "gates-cambridge",
+      "experience_round_id": null,
+      "experience_round_label": "historical public PhD application; author account",
+      "outcome_status": "selected",
+      "outcome_basis": "author_report",
+      "outcome_evidence_id": "gc26w-c1-result",
+      "notes": "작성자가 Gates 선정과 공개 지원문 연결을 밝혔다. 공식 연감 파일은 확보하지 못해 결과 근거 수준은 본인 보고다. 2026/27의 동일 질문으로 전이하지 않는다."
+    },
+    {
+      "case_id": "gc26w-c2",
+      "program_id": "gates-cambridge",
+      "experience_round_id": null,
+      "experience_round_label": "2021 author materials; MPhil",
+      "outcome_status": "not_selected",
+      "outcome_basis": "author_report",
+      "outcome_evidence_id": "gc26w-c2-result",
+      "notes": "작성자 목록의 Gates 미선정을 보존했다. 공개 PDF 첫 쪽은 Gates 에세이이고 나머지는 Cambridge 입학 문항과 별도 연구계획이다."
+    }
+  ]
+}

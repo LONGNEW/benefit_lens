@@ -1,0 +1,44 @@
+{
+  "body": {
+    "steps": [
+      "연구 주제와 질문",
+      "여름에 달성할 일",
+      "학위 논문에 기여하는 방식"
+    ],
+    "title": "여름 연구계획의 세 항목",
+    "format": {
+      "max_pages": 1,
+      "font_size_pt": 12,
+      "double_spaced": true,
+      "budget_excluded": true,
+      "max_pages_with_artistic_images": 2
+    },
+    "evidence_boundary": "현재 공식 안내만 사용. 공개 예시의 제출 여부와 선정 결과는 미확인."
+  },
+  "evidence": [
+    {
+      "url": "https://www.colorado.edu/cha/funding-and-resources/grad-student-opportunities/summer-fellowships",
+      "quote": "Please do not include a budget.",
+      "case_id": null,
+      "locator": "L66-L67",
+      "purpose": "official_constraint",
+      "document_id": "cha27-notice-d187451dae6566",
+      "evidence_id": "cha27-proposal-evidence",
+      "source_role": "official_notice",
+      "text_sha256": "ca8afddad4773d463e9b5bafbfd1d4ce9032457176f3e7c8f97f9e89cae796e1",
+      "capture_mode": "full_document",
+      "source_round_id": "2027",
+      "source_program_id": "colorado-cha-summer-fellowship"
+    }
+  ],
+  "pattern_id": "cha27-official-proposal-guide",
+  "program_id": "colorado-cha-summer-fellowship",
+  "pattern_kind": "structure",
+  "scope_status": "official_only",
+  "target_field": "research_proposal",
+  "notice_version": "batch-2026-11-09-v1",
+  "opportunity_id": "colorado-cha-summer-fellowship-2027",
+  "target_claim_id": "cha27-proposal",
+  "target_round_id": "2027",
+  "causal_success_claim": false
+}

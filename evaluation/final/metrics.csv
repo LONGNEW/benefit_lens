@@ -1,0 +1,32 @@
+metric,numerator,denominator,value,unit,status,measured_on,evidence_path,note
+storage_contract_pass_rate,10,10,1,ratio,measured,2026-11-04,storage_contract_check.json,"형식 검사, 의미 정확도 아님"
+structured_condition_coverage,9,10,0.9,ratio,measured,2026-11-04,catalog_audit.csv,Gates 조건 미구조화
+source_backed_notice_coverage,4,10,0.4,ratio,measured,2026-11-04,catalog_audit.csv,"보관 원문 해시 연결, 내용 정확도 아님"
+scenario_pass_rate,11,11,1,ratio,historical,2026-10-18,../../web/pipeline-demo/pipeline-run.json,합성 프로필 기능 시험
+repeated_upsert_revision_count,30,,30,rows,historical,2026-10-18,../../web/pipeline-demo/pipeline-run.json,동일 표본 재적재에서 30개 유지
+live_stats_http_status,,,503,HTTP status,observed_failure,2026-11-04,,"DB 조회 실패, 복구 미수행"
+semantic_condition_precision,,,,,unmeasured,,,"TP/(TP+FP), 시점과 예외 및 경로 포함"
+semantic_condition_recall,,,,,unmeasured,,,"TP/(TP+FN), 필수 조건 누락 포함"
+semantic_benefit_precision,,,,,unmeasured,,,금액 성격과 단위 및 기간 포함
+semantic_benefit_recall,,,,,unmeasured,,,원문에서 확인한 혜택 항목
+eligibility_wrong_pass,,,,,unmeasured,,,독립 정답과 비교한 잘못된 최종 통과
+citation_entailment,,,,,unmeasured,,,인용이 실제로 주장을 뒷받침하는지
+prompt_fulfillment,,,,,unmeasured,,,공식 요구 항목의 충족률
+unsupported_personal_facts,,,,,unmeasured,,,본인 사실 입력에 없는 추가 사실
+new_relevant_opportunities,,,,,unmeasured,,,참가자별 처음 알았고 관련성 확인한 후보
+decision_time,,,,,unmeasured,,,참가자별 정확도와 함께 기록
+draft_time,,,,,unmeasured,,,같은 사실과 문항 조건의 작성 시간
+daily_refresh_delay,,,,,unmeasured,,,7일 운영 기록
+db_query_median_ms,,,,,unmeasured,,,규모와 인덱스 및 캐시 조건 고정
+required_fact_plan_recall,,,,,unmeasured,,,요구별 필요한 필드와 시점 및 자료의 독립 정답 대비
+identity_binding_precision,,,,,unmeasured,,,공개 자료의 동일인 연결 정밀도
+wrong_identity_accepted_merge,,,,,unmeasured,,,다른 사람의 accepted 사실 병합
+accepted_fact_precision,,,,,unmeasured,,,주체와 시점 및 값과 근거가 맞는 accepted 사실
+unconfirmed_inference_final_use,,,,,unmeasured,,,의미 추론 후보의 최종 판정과 초안 사용
+document_requirement_recall,,,,,unmeasured,,,필요 서류의 역할과 필수 및 조건부 여부
+resource_round_role_precision,,,,,unmeasured,,,서류 회차와 자료 역할 및 확보 상태
+fabricated_found_resource,,,,,unmeasured,,,실제 확보 없이 found로 표시한 자료
+guidance_evidence_support,,,,,unmeasured,,,관찰 범위와 원문 및 문항으로 뒷받침되는 지침
+unsupported_outcome_causal_claim,,,,,unmeasured,,,결과 라벨에서 만든 합격 또는 탈락 원인
+cross_program_guidance_mislabel,,,,,unmeasured,,,타 프로그램 지침의 전이를 숨긴 표기
+unaccepted_fact_in_draft_slot,,,,,unmeasured,,,확인 전 사실이나 타인의 사실을 초안에서 사용

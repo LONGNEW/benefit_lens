@@ -1,0 +1,50 @@
+{
+  "writing_pattern": [
+    {
+      "pattern_id": "g26w-impact-arc",
+      "program_id": "google-phd-fellowship",
+      "target_round_id": "2026-east-asia",
+      "target_claim_id": "g26w-research-impact",
+      "pattern_kind": "structure",
+      "body": {
+        "title": "원하는 영향과 연구 동기를 한 경로로 연결",
+        "decision": "adopted",
+        "language": "en",
+        "max_words": 350,
+        "slots": [
+          "연구가 해결하려는 구체적 문제",
+          "분야와 사회에서 영향을 받는 대상 및 예상 변화",
+          "문제가 중요해진 본인의 구체적 경험",
+          "예상 효과와 이미 관측한 결과의 구분"
+        ],
+        "question": "어느 집단에 어떤 변화가 예상되고, 본인의 어느 경험이 그 문제를 중요하게 만들었나요?",
+        "scope": "G1은 분야와 다른 응용에서 신뢰성이 중요한 이유를 연결하고 G4는 예상되는 피해와 이를 줄일 연구 경로를 연결한다. 과거 문장, 결과, 제시 순서를 그대로 적용하지 않는다."
+      },
+      "scope_status": "historical_transfer",
+      "causal_success_claim": false
+    },
+    {
+      "pattern_id": "g26w-leadership-arc",
+      "program_id": "google-phd-fellowship",
+      "target_round_id": "2026-east-asia",
+      "target_claim_id": "g26w-leadership",
+      "pattern_kind": "structure",
+      "body": {
+        "title": "직함보다 지속된 행동과 타인의 변화",
+        "decision": "adopted",
+        "language": "en",
+        "max_words": 350,
+        "slots": [
+          "공동 과제의 장애물",
+          "내가 한 구체적 조정이나 지원",
+          "시간에 걸쳐 확인한 변화",
+          "팀의 결과와 본인 역할 구분"
+        ],
+        "question": "무엇을 바꾸기 위해 누구와 어떤 행동을 반복했고, 그 사람이나 공동 과제에 무슨 변화가 있었나요?",
+        "scope": "G1의 반복 피드백과 G4의 워크숍 후 조정을 관찰했다. 공개문 속 결과는 작성자 보고이며 선발 영향은 알 수 없다."
+      },
+      "scope_status": "historical_transfer",
+      "causal_success_claim": false
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BenefitLens pipeline replay receipt v1",
+  "type": "object",
+  "required": [
+    "version",
+    "status",
+    "started_at",
+    "finished_at",
+    "data_as_of",
+    "sample_sha256",
+    "network_collection_executed",
+    "model_calls_this_run",
+    "private_profile_persisted",
+    "stages",
+    "model_reuse",
+    "matching_counts",
+    "examples",
+    "scenarios",
+    "outline",
+    "gaps"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": "pipeline-replay-v1"
+    },
+    "status": {
+      "const": "snapshot_passed_with_gaps"
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "finished_at": {
+      "type": "string"
+    },
+    "data_as_of": {
+      "type": "string"
+    },
+    "sample_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "network_collection_executed": {
+      "const": false
+    },
+    "model_calls_this_run": {
+      "const": 0
+    },
+    "private_profile_persisted": {
+      "const": false
+    },
+    "stages": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "stage",
+          "mode",
+          "seconds"
+        ],
+        "properties": {
+          "stage": {
+            "enum": [
+              "source_integrity",
+              "notice_contract",
+              "experience_patterns",
+              "database",
+              "online_matching",
+              "application_preparation"
+            ]
+          },
+          "mode": {
+            "type": "string"
+          },
+          "seconds": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "model_reuse": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "program_id",
+          "input_sha256",
+          "model",
+          "original_model_run_at",
+          "documents",
+          "characters",
+          "cases",
+          "patterns"
+        ],
+        "properties": {
+          "program_id": {
+            "type": "string"
+          },
+          "input_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "model": {
+            "type": "string"
+          },
+          "original_model_run_at": {
+            "type": "string"
+          },
+          "documents": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "characters": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "cases": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "patterns": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "prepared_context_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "prompt_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "extractor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "scope_validation": {
+            "enum": [
+              "legacy_v2_requires_scope_review",
+              "v3_scope_bound"
+            ]
+          },
+          "approved_handoff": {
+            "const": false
+          },
+          "semantic_approval_executed": {
+            "const": false
+          },
+          "compatibility_labels_added": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "model_called_this_run": {
+            "const": false
+          }
+        },
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "required": [
+                "scope_validation"
+              ]
+            },
+            "then": {
+              "required": [
+                "prepared_context_sha256",
+                "prompt_version",
+                "extractor",
+                "approved_handoff",
+                "semantic_approval_executed",
+                "compatibility_labels_added",
+                "model_called_this_run"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "matching_counts": {
+      "type": "object",
+      "properties": {
+        "match": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mismatch": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unknown": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "examples": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": [
+          "opportunity_id",
+          "title",
+          "result",
+          "trace",
+          "application_state",
+          "cases",
+          "patterns"
+        ],
+        "properties": {
+          "opportunity_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "result": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "trace": {
+            "type": "array"
+          },
+          "application_state": {
+            "enum": [
+              "open",
+              "closed",
+              "upcoming",
+              "rolling",
+              "unknown"
+            ]
+          },
+          "cases": {
+            "type": "integer"
+          },
+          "patterns": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "scenarios": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "actual",
+          "expected",
+          "passed"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "actual": {},
+          "expected": {},
+          "passed": {
+            "const": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "outline": {
+      "type": "object",
+      "required": [
+        "program_id",
+        "pattern_id",
+        "supporting_case_ids",
+        "text",
+        "status",
+        "model_called_this_run"
+      ],
+      "properties": {
+        "program_id": {
+          "type": "string"
+        },
+        "pattern_id": {
+          "type": "string"
+        },
+        "supporting_case_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "text": {
+          "type": "string"
+        },
+        "status": {
+          "const": "outline_only_user_facts_required"
+        },
+        "model_called_this_run": {
+          "const": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "gaps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "description": " Replay metadata records the actual extractor and scope review state; existing archived records remain readable."
+}

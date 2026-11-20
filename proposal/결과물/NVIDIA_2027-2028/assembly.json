@@ -1,0 +1,56 @@
+{
+  "rows": {
+    "source_document": 10,
+    "program": 1,
+    "opportunity_round": 1,
+    "evidence": 30,
+    "claim": 23,
+    "claim_evidence": 27,
+    "experience_case": 3,
+    "case_document": 8,
+    "writing_pattern": 2,
+    "pattern_evidence": 13
+  },
+  "original_evidence_offsets_verified": 34,
+  "quote_word_counts": {
+    "OFFICIAL-f68d3f6ccbeb": 25,
+    "PORTAL-40c13232c5c5": 2,
+    "N1-STATEMENT-1292bfba8ff4": 23,
+    "N1-INDEX-abd695f019fd": 8,
+    "N1-OUTCOME-23eb6b58ee64": 2,
+    "N2-STATEMENT-d1cc2f892c3b": 23,
+    "N2-PANEL-651d999ce104": 13,
+    "N2-OUTCOME-714690c58604": 2,
+    "N3-STATEMENT-25ee76529386": 22,
+    "N3-OUTCOME-web-b4c5d68e8618": 5
+  },
+  "reconciled_official_anchors": [
+    {
+      "evidence_id": "OFFICIAL-FORMAT",
+      "canonical_role": "official_guideline",
+      "policy": "Retain verified discovery anchor; writing anchor checked separately against the same snapshot."
+    },
+    {
+      "evidence_id": "OFFICIAL-VISION",
+      "canonical_role": "official_guideline",
+      "policy": "Retain verified discovery anchor; writing anchor checked separately against the same snapshot."
+    },
+    {
+      "evidence_id": "OFFICIAL-PROGRESS",
+      "canonical_role": "official_guideline",
+      "policy": "Retain verified discovery anchor; writing anchor checked separately against the same snapshot."
+    },
+    {
+      "evidence_id": "OFFICIAL-GPU-RELEVANCE",
+      "canonical_role": "official_guideline",
+      "policy": "Retain verified discovery anchor; writing anchor checked separately against the same snapshot."
+    }
+  ],
+  "target": {
+    "program_id": "nvidia-graduate-fellowship",
+    "round_id": "2027-2028",
+    "opportunity_id": "nvidia-2027-2028",
+    "notice_version": "nvidia-2027-2028-v1",
+    "research_proposal_claim_id": "nv27-research-proposal"
+  }
+}

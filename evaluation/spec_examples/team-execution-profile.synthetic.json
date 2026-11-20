@@ -1,0 +1,215 @@
+{
+  "contract_version": "team-execution-profile-v1",
+  "example_kind": "synthetic",
+  "subject_id": "synthetic-student-001",
+  "experience_id": "synthetic-experience-001",
+  "description": "Public-demo-style fictitious doctoral student; not a record of a real person. All experience facts are synthetic assumptions.",
+  "as_of": "2026-10-15",
+  "input_snapshot_sha256": "bbb83e5844163803471d51f454e6b05e3049c470746db71da916d55a37dce368",
+  "canonical_profile": {
+    "person.nationalities": [
+      "KR"
+    ],
+    "education.degree": "phd",
+    "education.status": "enrolled",
+    "education.country": "KR",
+    "education.institution_id": "postech",
+    "education.department_id": "ax",
+    "education.semester": 1,
+    "education.full_time": true,
+    "education.coursework_completed": false,
+    "employment.status": "unemployed"
+  },
+  "condition_answers": {},
+  "selected_opportunity_id": "nvidia-2027-2028",
+  "writing_task": {
+    "task_id": "nvidia-2027-2028-research-proposal",
+    "question_text": "Explain your PhD research and what you hope to do with it after graduation.",
+    "wording_status": "verified_summary",
+    "genre": "research_proposal",
+    "template_id": "experience_evidence",
+    "template_rationale": "Candidate structure for explaining prior work and personal contribution within the research proposal; the future-plan portion remains to be supplied.",
+    "constraints": {
+      "max_pages": 2,
+      "references_excluded": true,
+      "coverage_scope": "past_work_section_only",
+      "unfilled_task_aspects": [
+        "future_research_plan",
+        "program_fit"
+      ]
+    },
+    "source_ref": {
+      "kind": "stored_official_snapshot",
+      "url": "https://research.nvidia.com/graduate-fellowships",
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/text/nvidia-official.txt",
+      "text_sha256": "04b9b9d2edc87d2f702e3890175d82ee8e455aafbb13567b0e3cb8d81f9d435e",
+      "locator": "L153-L154",
+      "scope_as_of": "2026-10-15",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/raw/63c3869bae8a40d88c736f299ee3f09da432cd707ff317b4e7ba951848b05bda.html",
+      "raw_sha256": "63c3869bae8a40d88c736f299ee3f09da432cd707ff317b4e7ba951848b05bda",
+      "publisher_role": "official_program",
+      "status": "historical_demo"
+    },
+    "fact_slot_fields": {
+      "confirmed_prior_work": [
+        "project_context",
+        "responsibility",
+        "initial_approach",
+        "decision_trigger",
+        "chosen_change",
+        "test_setting",
+        "operational_rule",
+        "measurement_or_artifact",
+        "confirmed_result",
+        "verified_contribution"
+      ],
+      "future_plan": [
+        "future_research_plan"
+      ]
+    }
+  },
+  "confirmed_facts": [
+    {
+      "fact_id": "synthetic-fact-project_context",
+      "subject_id": "synthetic-student-001",
+      "experience_id": "synthetic-experience-001",
+      "field": "project_context",
+      "value": "합성 자료 12건을 다루는 가상 정보정리 실습",
+      "status": "confirmed",
+      "source": {
+        "kind": "synthetic_confirmed_fact",
+        "owner_subject_id": "synthetic-student-001",
+        "evidence_id": "synthetic-evidence-project_context"
+      }
+    },
+    {
+      "fact_id": "synthetic-fact-responsibility",
+      "subject_id": "synthetic-student-001",
+      "experience_id": "synthetic-experience-001",
+      "field": "responsibility",
+      "value": "같은 모집 회차가 여러 문서로 나타나는 경우를 구분하는 작업",
+      "status": "confirmed",
+      "source": {
+        "kind": "synthetic_confirmed_fact",
+        "owner_subject_id": "synthetic-student-001",
+        "evidence_id": "synthetic-evidence-responsibility"
+      }
+    },
+    {
+      "fact_id": "synthetic-fact-initial_approach",
+      "subject_id": "synthetic-student-001",
+      "experience_id": "synthetic-experience-001",
+      "field": "initial_approach",
+      "value": "제목이 같은 자료를 모두 같은 공고로 묶는 방법",
+      "status": "confirmed",
+      "source": {
+        "kind": "synthetic_confirmed_fact",
+        "owner_subject_id": "synthetic-student-001",
+        "evidence_id": "synthetic-evidence-initial_approach"
+      }
+    },
+    {
+      "fact_id": "synthetic-fact-decision_trigger",
+      "subject_id": "synthetic-student-001",
+      "experience_id": "synthetic-experience-001",
+      "field": "decision_trigger",
+      "value": "다음 학기 모집과 같은 회차의 재게시가 함께 나타난 사례",
+      "status": "confirmed",
+      "source": {
+        "kind": "synthetic_confirmed_fact",
+        "owner_subject_id": "synthetic-student-001",
+        "evidence_id": "synthetic-evidence-decision_trigger"
+      }
+    },
+    {
+      "fact_id": "synthetic-fact-chosen_change",
+      "subject_id": "synthetic-student-001",
+      "experience_id": "synthetic-experience-001",
+      "field": "chosen_change",
+      "value": "회차와 기관 식별자를 분리해 비교하는 방식",
+      "status": "confirmed",
+      "source": {
+        "kind": "synthetic_confirmed_fact",
+        "owner_subject_id": "synthetic-student-001",
+        "evidence_id": "synthetic-evidence-chosen_change"
+      }
+    },
+    {
+      "fact_id": "synthetic-fact-test_setting",
+      "subject_id": "synthetic-student-001",
+      "experience_id": "synthetic-experience-001",
+      "field": "test_setting",
+      "value": "실습용으로 만든 합성 문서 12건",
+      "status": "confirmed",
+      "source": {
+        "kind": "synthetic_confirmed_fact",
+        "owner_subject_id": "synthetic-student-001",
+        "evidence_id": "synthetic-evidence-test_setting"
+      }
+    },
+    {
+      "fact_id": "synthetic-fact-operational_rule",
+      "subject_id": "synthetic-student-001",
+      "experience_id": "synthetic-experience-001",
+      "field": "operational_rule",
+      "value": "회차가 다르면 분리하고 같은 회차의 재게시는 연결하는 규칙",
+      "status": "confirmed",
+      "source": {
+        "kind": "synthetic_confirmed_fact",
+        "owner_subject_id": "synthetic-student-001",
+        "evidence_id": "synthetic-evidence-operational_rule"
+      }
+    },
+    {
+      "fact_id": "synthetic-fact-measurement_or_artifact",
+      "subject_id": "synthetic-student-001",
+      "experience_id": "synthetic-experience-001",
+      "field": "measurement_or_artifact",
+      "value": "실습용 비교표",
+      "status": "confirmed",
+      "source": {
+        "kind": "synthetic_confirmed_fact",
+        "owner_subject_id": "synthetic-student-001",
+        "evidence_id": "synthetic-evidence-measurement_or_artifact"
+      }
+    },
+    {
+      "fact_id": "synthetic-fact-confirmed_result",
+      "subject_id": "synthetic-student-001",
+      "experience_id": "synthetic-experience-001",
+      "field": "confirmed_result",
+      "value": "합성 표본에서 서로 다른 회차를 구분한 결과",
+      "status": "confirmed",
+      "source": {
+        "kind": "synthetic_confirmed_fact",
+        "owner_subject_id": "synthetic-student-001",
+        "evidence_id": "synthetic-evidence-confirmed_result"
+      }
+    },
+    {
+      "fact_id": "synthetic-fact-verified_contribution",
+      "subject_id": "synthetic-student-001",
+      "experience_id": "synthetic-experience-001",
+      "field": "verified_contribution",
+      "value": "합성 표본의 비교 규칙을 작성하고 결과를 대조한 작업",
+      "status": "confirmed",
+      "source": {
+        "kind": "synthetic_confirmed_fact",
+        "owner_subject_id": "synthetic-student-001",
+        "evidence_id": "synthetic-evidence-verified_contribution"
+      }
+    }
+  ],
+  "style_profile": {
+    "version": "synthetic-style-profile-v1",
+    "basis": "user_requested_style_for_pilot",
+    "paragraph_order": "purpose_then_evidence_then_connection",
+    "opening_role": "introduce paragraph purpose",
+    "closing_role": "state what was established and connect to the next paragraph",
+    "preference_not_universal_quality_rule": true
+  },
+  "allowed_input_sha256": [
+    "bbb83e5844163803471d51f454e6b05e3049c470746db71da916d55a37dce368",
+    "5cc5c69263149bb1230a3aea8faabcf5222ba8b3e243b9da110aaa84f3a90f9d"
+  ]
+}

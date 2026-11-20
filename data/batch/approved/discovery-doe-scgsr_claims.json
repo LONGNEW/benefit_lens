@@ -1,0 +1,168 @@
+{
+  "claim": [
+    {
+      "claim_id": "doe-scgsr-schedule",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "kind": "schedule",
+      "field": "application_window",
+      "at": "application",
+      "value": {
+        "opens_on": "2026-08-12",
+        "closes_on": "2026-11-04",
+        "local_time": "17:00",
+        "time_zone": "America/New_York",
+        "offer_notification_period_approx": [
+          "2027-04-01",
+          "2027-04-16"
+        ]
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "doe-scgsr-placement",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "kind": "activity",
+      "field": "doe_lab_research_visit",
+      "at": "award_period",
+      "value": {
+        "consecutive_months_min": 3,
+        "consecutive_months_max": 12,
+        "project_start_range": [
+          "2027-06-07",
+          "2027-10-04"
+        ],
+        "host": "DOE national laboratory or facility"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "doe-scgsr-benefits",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "kind": "benefit",
+      "field": "living_and_transport_support",
+      "at": "award_period",
+      "value": {
+        "components": [
+          {
+            "type": "living_stipend",
+            "max_amount": 3600,
+            "currency": "USD",
+            "unit": "month",
+            "recipient": "student",
+            "actual_amount_assessed": true
+          },
+          {
+            "type": "transport_reimbursement",
+            "max_amount": 3000,
+            "currency": "USD",
+            "unit": "award",
+            "distance_from_home_institution_miles_gt": 50
+          }
+        ]
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "doe-scgsr-eligibility",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "kind": "eligibility",
+      "field": "citizenship_phd_candidacy_and_study",
+      "at": "application",
+      "value": {
+        "us_status_any": [
+          "citizen",
+          "lawful_permanent_resident"
+        ],
+        "minimum_age": 18,
+        "full_time_qualified_phd": true,
+        "candidacy_required": true,
+        "defined_thesis_and_advisor": true,
+        "official_proof_includes": [
+          "all_required_phd_coursework_completed",
+          "approved_thesis_topic"
+        ]
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "doe-scgsr-application",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "kind": "submission",
+      "field": "applicant_proposal_transcripts_and_candidacy",
+      "at": "application",
+      "value": {
+        "submitted_by": "applicant",
+        "items": [
+          "online_application",
+          "graduate_transcript_pdf",
+          "signed_candidacy_proof",
+          "research_proposal"
+        ],
+        "proposal_collaborator": "DOE laboratory scientist",
+        "proposal_consulted_with": "primary thesis advisor"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "doe-scgsr-letters",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "kind": "submission",
+      "field": "required_support_letters",
+      "at": "application",
+      "value": {
+        "requested_by": "applicant",
+        "submitted_by": [
+          "primary_thesis_advisor",
+          "collaborating_doe_lab_scientist"
+        ],
+        "count": 2,
+        "route": "online system"
+      },
+      "review_state": "reviewed"
+    }
+  ],
+  "claim_evidence": [
+    {
+      "claim_id": "doe-scgsr-schedule",
+      "evidence_id": "SCGSR-DATES",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2"
+    },
+    {
+      "claim_id": "doe-scgsr-placement",
+      "evidence_id": "SCGSR-ACTIVITY",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2"
+    },
+    {
+      "claim_id": "doe-scgsr-benefits",
+      "evidence_id": "SCGSR-FUNDING",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2"
+    },
+    {
+      "claim_id": "doe-scgsr-eligibility",
+      "evidence_id": "SCGSR-ELIGIBILITY",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2"
+    },
+    {
+      "claim_id": "doe-scgsr-application",
+      "evidence_id": "SCGSR-APPLICATION",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2"
+    },
+    {
+      "claim_id": "doe-scgsr-letters",
+      "evidence_id": "SCGSR-LETTERS",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2"
+    }
+  ]
+}

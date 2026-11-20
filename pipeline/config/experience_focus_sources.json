@@ -1,0 +1,3291 @@
+{
+  "schema": "experience-focus-v1",
+  "max_discovered_urls": 100,
+  "max_link_depth": 4,
+  "sources": [
+    {
+      "url": "https://pongdaang.tistory.com/75",
+      "program_id": "kwanjeong-domestic",
+      "role": "experience_review",
+      "content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "follow_experience_links": {
+        "selector": ".tt_article_useless_p_margin a[href], .contents_style a[href]",
+        "label_pattern": "관정|자기소개서|연구계획서|면접",
+        "url_pattern": "tistory\\.com/(?:entry/|\\d+)",
+        "child_content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+        "max_links": 6,
+        "follow_series": true
+      },
+      "case_id": "focus-kwanjeong-pongdaang-21",
+      "person_name": null,
+      "cycle": "21기",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://pongdaang.tistory.com/75",
+      "binding_evidence": {
+        "document_id": "writing-f66117878c3cbb599563bdc5",
+        "text_sha256": "1aeb240e4d2ea74b0ca8824ea431e727ef27963b72feedcc73af6b6dba6ce711",
+        "url": "https://pongdaang.tistory.com/75",
+        "line": 27,
+        "exact_quote": "관정 국내 학부장학생 21기로 선발된 학생입니다."
+      },
+      "author_handle": "퐁당당당",
+      "outcome_phase": "final_selection",
+      "experience_profile": {
+        "material_availability": "author_application_process_and_writing_reflections"
+      }
+    },
+    {
+      "url": "https://connect2space.tistory.com/3",
+      "program_id": "kwanjeong-domestic",
+      "role": "experience_review",
+      "content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-kwanjeong-starlink-19",
+      "person_name": null,
+      "cycle": "19기",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://connect2space.tistory.com/3",
+      "binding_evidence": {
+        "document_id": "writing-483d4789e3b25a4ff169d605",
+        "text_sha256": "a06653484c1cc7631bbbc8ed3faec3260c47b2549b0706988d98e49476811dbb",
+        "url": "https://connect2space.tistory.com/3",
+        "line": 19,
+        "exact_quote": "19기 관정이종환교육재단 국내 대학원생 장학에 최종 합격"
+      },
+      "author_handle": "스타링크",
+      "outcome_phase": "final_selection"
+    },
+    {
+      "url": "https://luto-dailylife.tistory.com/41",
+      "program_id": "ilju-domestic",
+      "role": "experience_review",
+      "content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-ilju-luto-2022",
+      "person_name": null,
+      "cycle": "2022",
+      "outcome": "not_selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://luto-dailylife.tistory.com/41",
+      "binding_evidence": {
+        "document_id": "writing-427be8caf20c3e35ad8703b5",
+        "text_sha256": "19b4f088d4b8409ece470555c9b40d5473e725f7fcb283adbd083ec75810d7a4",
+        "url": "https://luto-dailylife.tistory.com/41",
+        "line": 23,
+        "exact_quote": "아쉽게도 면접에서 탈락의 고배를 마셨습니다."
+      },
+      "author_handle": "루토01",
+      "outcome_phase": "interview",
+      "experience_profile": {
+        "material_availability": "own_essay_structure_and_interview_reflection; full_submission_not_shared",
+        "causal_reason_for_rejection": "not_established_by_source"
+      }
+    },
+    {
+      "url": "https://dongryul.tistory.com/6",
+      "program_id": "kfas-overseas-study",
+      "role": "experience_review",
+      "content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-kfas-dongryul-unknown",
+      "person_name": null,
+      "cycle": null,
+      "outcome": "unknown",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://dongryul.tistory.com/6",
+      "binding_evidence": {
+        "document_id": "writing-6d9ecc8d49484520b973a158",
+        "text_sha256": "31df36c09a01f2b599f50d81b17362fcef3f16afad2767f870c6df0b9f832e2a",
+        "url": "https://dongryul.tistory.com/6",
+        "line": 62,
+        "exact_quote": "한국 고등교육재단은 유학 지원 전 7월 경에 선발된다는 특징을 갖는다."
+      },
+      "author_handle": "dongryul",
+      "outcome_phase": "final_outcome_unverified"
+    },
+    {
+      "url": "https://hb2207.tistory.com/43",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "follow_experience_links": {
+        "selector": ".tt_article_useless_p_margin a[href], .contents_style a[href]",
+        "label_pattern": "풀브라이트|Fulbright",
+        "url_pattern": "tistory\\.com/(?:entry/|\\d+)",
+        "child_content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+        "max_links": 4
+      },
+      "case_id": "focus-fulbright-hb2207-2022",
+      "person_name": null,
+      "cycle": "2022",
+      "outcome": "unknown",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://hb2207.tistory.com/43",
+      "binding_evidence": {
+        "document_id": "writing-2bda8327da37ace3995497b6",
+        "text_sha256": "96516697dea8949217c872ddb039b60c7b3087fa583044221b1b642cc5f94c53",
+        "url": "https://hb2207.tistory.com/43",
+        "line": 17,
+        "exact_quote": "인터뷰는 총 30분간 진행되었으며"
+      },
+      "author_handle": "hb2207",
+      "outcome_phase": "interview_completed_final_result_unverified"
+    },
+    {
+      "url": "https://yoursopcoach.tistory.com/43",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-fulbright-yoursopcoach",
+      "person_name": null,
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://yoursopcoach.tistory.com/43",
+      "binding_evidence": {
+        "document_id": "writing-bc07d11dd40f3849293c64ac",
+        "text_sha256": "556bead6329c776133e29fa880171b38d61d30d990ff8b62ffc136b16a19d907",
+        "url": "https://yoursopcoach.tistory.com/43",
+        "line": 70,
+        "exact_quote": "이후 잊고 지내다가 9월 말에 최종합격 메일을 받았습니다."
+      },
+      "author_handle": "yoursopcoach",
+      "outcome_phase": "final_selection"
+    },
+    {
+      "url": "https://sanbaek.com/2011/03/22/mba%EC%A7%80%EC%9B%90%EA%B8%B03%ED%92%80%EB%B8%8C%EB%9D%BC%EC%9D%B4%ED%8A%B8fulbright%EC%9E%A5%ED%95%99%EA%B8%88%EC%8B%A0%EC%B2%AD/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": ".entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-fulbright-sanbaek-mba",
+      "person_name": null,
+      "cycle": null,
+      "outcome": "unknown",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://sanbaek.com/2011/03/22/mba%EC%A7%80%EC%9B%90%EA%B8%B03%ED%92%80%EB%B8%8C%EB%9D%BC%EC%9D%B4%ED%8A%B8fulbright%EC%9E%A5%ED%95%99%EA%B8%88%EC%8B%A0%EC%B2%AD/",
+      "binding_evidence": {
+        "document_id": "writing-c8b41fcd69ec110f30e403c5",
+        "text_sha256": "43716702bcb945ff1d0d472161821a3c6ae5102598fe86cbba5239543646f03d",
+        "url": "https://sanbaek.com/2011/03/22/mba%EC%A7%80%EC%9B%90%EA%B8%B03%ED%92%80%EB%B8%8C%EB%9D%BC%EC%9D%B4%ED%8A%B8fulbright%EC%9E%A5%ED%95%99%EA%B8%88%EC%8B%A0%EC%B2%AD/",
+        "line": 38,
+        "exact_quote": "영문으로 이력서/500자짜리 자기소개서와 공부계획서, 추천서 3장"
+      },
+      "author_handle": "sanbaek",
+      "outcome_phase": "application_preparation_final_result_unverified"
+    },
+    {
+      "url": "https://art.kookmin.ac.kr/community/newnhot/people/1075260?pn=55",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": null,
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-fulbright-koseohyun",
+      "person_name": "고서현",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "official_university_recipient_interview",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://art.kookmin.ac.kr/community/newnhot/people/1075260?pn=55",
+      "binding_evidence": {
+        "document_id": "writing-04188b750cefeda1573ee39c",
+        "text_sha256": "abbba97c502d435cce791a2e57ec2d7c8e193449fa1eb06bdd02cbebec002c99",
+        "url": "https://art.kookmin.ac.kr/community/newnhot/people/1075260?pn=55",
+        "line": 106,
+        "exact_quote": "국민대학교 행정학과 학석사 과정을 졸업한 고서현 동문(지도교수; 행정학과 박현희 교수)이 풀브라이트 장학 프로그램의 전액 장학생으로 선발되어 올해 8월부터 Urban Policy 분야에서 전미 6위(2024 US News & World Report)로 손꼽히는 미국 일리노이 대학교 시카고 캠퍼스(University of Illinois Chicago) 행정학과 박사과정에 진학할 예정이다."
+      },
+      "outcome_phase": "final_selection"
+    },
+    {
+      "url": "https://maetshju.github.io/how-it-felt-to-be-accepted-to-gsoc-2018.html",
+      "program_id": "google-summer-of-code",
+      "role": "experience_review",
+      "content_selector": "article, .post-content, .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-gsoc-maetshju-2018",
+      "person_name": null,
+      "cycle": "2018",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://maetshju.github.io/how-it-felt-to-be-accepted-to-gsoc-2018.html",
+      "binding_evidence": {
+        "document_id": "writing-ce1db20e08f1d9e1f654d492",
+        "text_sha256": "e6c455d2635386e274e7e6f625e15c6d2588dc0f3ece52ddf52abe7dd324d52b",
+        "url": "https://maetshju.github.io/how-it-felt-to-be-accepted-to-gsoc-2018.html",
+        "line": 14,
+        "exact_quote": "Ever the pragmatic (read, \"anxious\") pessimist, my first thought was, \"Well, better get ready to see that they rejected my proposal.\" But, lo and behold, the full title was, \"GSoC 2018: Congratulations, your proposal with NumFOCUS has been accepted!\". The waterfall of emotion that crashed down on me was awesome. I hadn't known that I was actually dreaming for that moment, but there I was, feeling as though a dream of mine had come true; I was going to be able to spend a summer immersed in the Julia language community and working on speech recognition with deep learning, an emerging passion of mine."
+      },
+      "author_handle": "maetshju",
+      "outcome_phase": "proposal_selected"
+    },
+    {
+      "url": "https://elisagdelope.rbind.io/post/gsoc24/",
+      "program_id": "google-summer-of-code",
+      "role": "experience_review",
+      "content_selector": "article, .post-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "follow_experience_links": {
+        "selector": "article a[href]",
+        "url_pattern": "\\.pdf(?:$|\\?)",
+        "child_role": "application_statement",
+        "pdf_role": "application_statement",
+        "max_links": 4
+      },
+      "case_id": "focus-gsoc-elisa-2024",
+      "person_name": "Elisa G. de Lope",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://elisagdelope.rbind.io/post/gsoc24/",
+      "binding_evidence": {
+        "document_id": "writing-200ea00bc71ab20c70468339",
+        "text_sha256": "cb9c0eea5d5ebd82832173c27e17e6a47537780e002242aee51c9ab9100e495c",
+        "url": "https://elisagdelope.rbind.io/post/gsoc24/",
+        "line": 19,
+        "exact_quote": "Long story short and fast-forward 6 months, my GSoC proposal to integrate the ESM-2 model (Meta’s open source protein language model) from Hugging Face into DeepChem for predicting protein binding sites was accepted. I am excited to share with you my motivations and how I crafted a successful proposal, hoping it will inspire you to apply to GSoC'25 and future editions."
+      },
+      "outcome_phase": "proposal_selected"
+    },
+    {
+      "url": "https://erickvelez.com/posts/gsoc_proposals/",
+      "program_id": "google-summer-of-code",
+      "role": "experience_index",
+      "content_selector": "article, .post-content, main",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "follow_experience_links": {
+        "selector": "article a[href], main a[href]",
+        "url_pattern": "\\.pdf(?:$|\\?)|docs\\.google\\.com/document/d/(?:e/)?[^/]+/pub(?:\\?|$)",
+        "child_role": "application_statement",
+        "pdf_role": "application_statement",
+        "max_links": 4,
+        "allow_published_google_docs": true
+      }
+    },
+    {
+      "url": "https://blogs.scummvm.org/hsk/2023/05/18/the-road-to-gsoc23-proposal-acceptance/",
+      "program_id": "google-summer-of-code",
+      "role": "experience_review",
+      "content_selector": ".entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-gsoc-hsk-2023",
+      "person_name": null,
+      "cycle": "2023",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://blogs.scummvm.org/hsk/2023/05/18/the-road-to-gsoc23-proposal-acceptance/",
+      "binding_evidence": {
+        "document_id": "writing-1b972edb0872f92d10751175",
+        "text_sha256": "4581935bb07a026ead8e38632f4a37b7317996970ad63879d9a26b84e711b36d",
+        "url": "https://blogs.scummvm.org/hsk/2023/05/18/the-road-to-gsoc23-proposal-acceptance/",
+        "line": 23,
+        "exact_quote": "getting my GSoC proposal selected"
+      },
+      "author_handle": "hsk",
+      "outcome_phase": "proposal_selected"
+    },
+    {
+      "url": "https://opensource.googleblog.com/2014/05/my-road-to-google-summer-of-code.html?m=0",
+      "program_id": "google-summer-of-code",
+      "role": "experience_review",
+      "content_selector": ".post-body",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "multi_round_application_narrative",
+      "case_id": "focus-gsoc-hesham-multi-round",
+      "person_name": "Hesham AL-Matary",
+      "cycle": "2012-2014 (multi-round narrative)",
+      "outcome": "selected",
+      "outcome_basis": "official_program_participant_post",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://opensource.googleblog.com/2014/05/my-road-to-google-summer-of-code.html?m=0",
+      "binding_evidence": {
+        "document_id": "writing-b8bf14d45bf1c5627d8b5de5",
+        "text_sha256": "6076b65e9d9da8fbd7a4c48a94c1e91b05e3e8357a8d2d072606d2786ab8bb07",
+        "url": "https://opensource.googleblog.com/2014/05/my-road-to-google-summer-of-code.html?m=0",
+        "line": 49,
+        "exact_quote": "By Hesham AL-Matary, Google Summer of Code Student, 2012-2014"
+      }
+    },
+    {
+      "url": "https://forgottenprogramme.github.io/work-blogs/my-outreachy-application/",
+      "program_id": "outreachy",
+      "role": "experience_review",
+      "content_selector": "article, .post-content, .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process"
+    },
+    {
+      "url": "https://opensource.creativecommons.org/blog/entries/2023-01-04-how-i-landed-my-first-internship/",
+      "program_id": "outreachy",
+      "role": "experience_review",
+      "content_selector": "article, main",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-outreachy-precious",
+      "person_name": "Precious Oritsedere",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://opensource.creativecommons.org/blog/entries/2023-01-04-how-i-landed-my-first-internship/",
+      "binding_evidence": {
+        "document_id": "writing-59979815ad59a3cc11512578",
+        "text_sha256": "13b8e84fa11ac996f7e6565ac9640c6b67f9961229625bee6a5dec0be44bb461",
+        "url": "https://opensource.creativecommons.org/blog/entries/2023-01-04-how-i-landed-my-first-internship/",
+        "line": 54,
+        "exact_quote": "I was so thrilled when I received the congratulatory mail some weeks later that I had been selected for the internship. My success in the Outreachy application process was a result of my dedication and hard work. I put in the time and effort to ensure I met all the requirements and made a valuable contribution to the project. And I am happy to announce that my determination and perseverance paid off and I was rewarded with a valuable internship opportunity."
+      },
+      "outcome_phase": "final_intern_selection"
+    },
+    {
+      "url": "https://oyinolatunji.hashnode.dev/outreachy-blog-1-introducing-myself",
+      "program_id": "outreachy",
+      "role": "experience_review",
+      "content_selector": "article",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_specs": [
+        {
+          "case_id": "focus-outreachy-oyindamola-2021-12",
+          "person_name": "Oyindamola Olatunji",
+          "cycle": "2021-12",
+          "outcome": "not_selected",
+          "outcome_basis": "public_author_self_report",
+          "case_scope": "application_process",
+          "binding_status": "exact_source_quote_checked",
+          "registry_url": "https://oyinolatunji.hashnode.dev/outreachy-blog-1-introducing-myself",
+          "binding_evidence": {
+            "document_id": "writing-8b61f90d491430f8d649034a",
+            "text_sha256": "9ce48ba9171f89a682669533765eed3681ba49dea331706b244c844a65a30672",
+            "url": "https://oyinolatunji.hashnode.dev/outreachy-blog-1-introducing-myself",
+            "line": 60,
+            "exact_quote": "My initial application for the December 2021 round was rejected."
+          },
+          "outcome_phase": "initial_application"
+        },
+        {
+          "case_id": "focus-outreachy-oyindamola-2022-03",
+          "person_name": "Oyindamola Olatunji",
+          "cycle": "2022-03",
+          "outcome": "not_selected",
+          "outcome_basis": "public_author_self_report",
+          "case_scope": "application_process",
+          "binding_status": "exact_source_quote_checked",
+          "registry_url": "https://oyinolatunji.hashnode.dev/outreachy-blog-1-introducing-myself",
+          "binding_evidence": {
+            "document_id": "writing-8b61f90d491430f8d649034a",
+            "text_sha256": "9ce48ba9171f89a682669533765eed3681ba49dea331706b244c844a65a30672",
+            "url": "https://oyinolatunji.hashnode.dev/outreachy-blog-1-introducing-myself",
+            "line": 60,
+            "exact_quote": "only to have my initial application rejected again."
+          },
+          "outcome_phase": "initial_application"
+        },
+        {
+          "case_id": "focus-outreachy-oyindamola-2022-12",
+          "person_name": "Oyindamola Olatunji",
+          "cycle": "2022-12",
+          "outcome": "unknown",
+          "outcome_basis": "public_author_self_report",
+          "case_scope": "application_process",
+          "binding_status": "exact_source_quote_checked",
+          "registry_url": "https://oyinolatunji.hashnode.dev/outreachy-blog-1-introducing-myself",
+          "binding_evidence": {
+            "document_id": "writing-8b61f90d491430f8d649034a",
+            "text_sha256": "9ce48ba9171f89a682669533765eed3681ba49dea331706b244c844a65a30672",
+            "url": "https://oyinolatunji.hashnode.dev/outreachy-blog-1-introducing-myself",
+            "line": 62,
+            "exact_quote": "Outreachy organizers withdrew my initial application"
+          },
+          "outcome_phase": "withdrawn_after_contribution_phase_started",
+          "experience_profile": {
+            "withdrawal_context": "academic_time_commitment_changed; not_essay_quality_judgment"
+          }
+        },
+        {
+          "case_id": "focus-outreachy-oyindamola-2023-12",
+          "person_name": "Oyindamola Olatunji",
+          "cycle": "2023-12",
+          "outcome": "selected",
+          "outcome_basis": "public_author_self_report",
+          "case_scope": "application_process",
+          "binding_status": "exact_source_quote_checked",
+          "registry_url": "https://oyinolatunji.hashnode.dev/outreachy-blog-1-introducing-myself",
+          "binding_evidence": {
+            "document_id": "writing-8b61f90d491430f8d649034a",
+            "text_sha256": "9ce48ba9171f89a682669533765eed3681ba49dea331706b244c844a65a30672",
+            "url": "https://oyinolatunji.hashnode.dev/outreachy-blog-1-introducing-myself",
+            "line": 65,
+            "exact_quote": "I was selected as an Outreachy intern with the Wikimedia community."
+          },
+          "outcome_phase": "final_intern_selection"
+        }
+      ]
+    },
+    {
+      "url": "https://dev.to/edithpuclla/my-experience-to-become-outreachy-intern-for-apache-airflow-48e6",
+      "program_id": "outreachy",
+      "role": "experience_review",
+      "content_selector": "#article-body",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-outreachy-edith",
+      "person_name": "Edith Puclla",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://dev.to/edithpuclla/my-experience-to-become-outreachy-intern-for-apache-airflow-48e6",
+      "binding_evidence": {
+        "document_id": "writing-633efb8ceb8a45b82486a4fb",
+        "text_sha256": "af1ea696e5b334d5760048575b29aa9cad540a259c447387824b1f0811ec23dd",
+        "url": "https://dev.to/edithpuclla/my-experience-to-become-outreachy-intern-for-apache-airflow-48e6",
+        "line": 84,
+        "exact_quote": "Here my mentors played a very important role, they encouraged us to send contributions, they reviewed our changes and gave us constant feedback. My mentors considered my application for the final stage, and that's how I became an Outreachy intern! It took me time, but I am finally in! 💃"
+      },
+      "outcome_phase": "final_intern_selection",
+      "attempt_history": {
+        "reported_attempt_count": 3,
+        "reported_previous_rejections": 2,
+        "previous_round_dates": "unspecified",
+        "change_evidence": {
+          "document_id": "writing-633efb8ceb8a45b82486a4fb",
+          "text_sha256": "af1ea696e5b334d5760048575b29aa9cad540a259c447387824b1f0811ec23dd",
+          "url": "https://dev.to/edithpuclla/my-experience-to-become-outreachy-intern-for-apache-airflow-48e6",
+          "line": 80,
+          "exact_quote": "On my third try, I improved my essays 😇 and as if nothing had happened before (two rejections), I applied again, with a positive mind! Always thinking: I will do my best! I will be able to do multiple pull requests! I'm ready to contribute!"
+        }
+      }
+    },
+    {
+      "url": "https://dev.to/maryam/journey-to-open-source-with-outreachy-4o26",
+      "program_id": "outreachy",
+      "role": "experience_review",
+      "content_selector": "#article-body",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_specs": [
+        {
+          "case_id": "focus-outreachy-maryam-2020",
+          "person_name": "Maryam Yusuf",
+          "cycle": "2020",
+          "outcome": "not_selected",
+          "outcome_basis": "public_author_self_report",
+          "case_scope": "application_process",
+          "binding_status": "exact_source_quote_checked",
+          "registry_url": "https://dev.to/maryam/journey-to-open-source-with-outreachy-4o26",
+          "binding_evidence": {
+            "document_id": "writing-aafd9ad4fefaef4213300583",
+            "text_sha256": "08eebaf538d57979d1991b3a6d6e402bf20456f5d7ba3f424e9605637f3ecde8",
+            "url": "https://dev.to/maryam/journey-to-open-source-with-outreachy-4o26",
+            "line": 48,
+            "exact_quote": "I tried applying in 2020 but got rejected."
+          },
+          "outcome_phase": "application_rejected_stage_unspecified"
+        },
+        {
+          "case_id": "focus-outreachy-maryam-2021",
+          "person_name": "Maryam Yusuf",
+          "cycle": "2021-12",
+          "outcome": "selected",
+          "outcome_basis": "public_author_self_report",
+          "case_scope": "application_process",
+          "binding_status": "exact_source_quote_checked",
+          "registry_url": "https://dev.to/maryam/journey-to-open-source-with-outreachy-4o26",
+          "binding_evidence": {
+            "document_id": "writing-aafd9ad4fefaef4213300583",
+            "text_sha256": "08eebaf538d57979d1991b3a6d6e402bf20456f5d7ba3f424e9605637f3ecde8",
+            "url": "https://dev.to/maryam/journey-to-open-source-with-outreachy-4o26",
+            "line": 37,
+            "exact_quote": "Hello! I'm Maryam Yusuf from Nigeria. I have been selected as one of the 61 interns of the Outreachy (December - March) '21 round."
+          },
+          "outcome_phase": "final_intern_selection"
+        }
+      ]
+    },
+    {
+      "url": "https://dev.to/thesynthax/my-google-summer-of-code-journey-part-2-4355",
+      "program_id": "google-summer-of-code",
+      "role": "experience_review",
+      "content_selector": "#article-body",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-gsoc-thesynthax-2025",
+      "person_name": null,
+      "cycle": "2025",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://dev.to/thesynthax/my-google-summer-of-code-journey-part-2-4355",
+      "binding_evidence": {
+        "document_id": "writing-ae537287049f1055bd5efbf3",
+        "text_sha256": "228df2462ada7b186bd118af27d5d279a7140634f16bca975d8a9db48af35f07",
+        "url": "https://dev.to/thesynthax/my-google-summer-of-code-journey-part-2-4355",
+        "line": 130,
+        "exact_quote": "Project has been accepted!”. (The previous mail was for the other proposal that I submitted.)"
+      },
+      "author_handle": "thesynthax",
+      "outcome_phase": "proposal_selected",
+      "application_targets": [
+        {
+          "project": "mac_do(4) and mdo(1) improvements",
+          "outcome": "selected"
+        },
+        {
+          "project": "adding compressed qcow2 images creation using mkimg(1)",
+          "outcome": "not_selected"
+        }
+      ],
+      "experience_profile": {
+        "material_availability": "process_and_mentor_revision_narrative; submitted_proposals_not_collected",
+        "comparison_scope": "same_author_same_round_different_project_targets"
+      }
+    },
+    {
+      "url": "https://fakhirahunzai.wordpress.com/my-motivation-letter/",
+      "program_id": "erasmus-mundus-dclead",
+      "role": "experience_review",
+      "content_selector": ".entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-erasmus-fakhira-dclead",
+      "person_name": "Fakhira Hunzai",
+      "cycle": null,
+      "outcome": "unknown",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://fakhirahunzai.wordpress.com/my-motivation-letter/",
+      "binding_evidence": {
+        "document_id": "writing-eab655391b761eed43aad96e",
+        "text_sha256": "95240e194b53b47ec2af277f9ab704aa22226d3ccce26b3d6270783c962929f6",
+        "url": "https://fakhirahunzai.wordpress.com/my-motivation-letter/",
+        "line": 32,
+        "exact_quote": "I wrote motivation letters for 3 different programs including DCLead"
+      },
+      "outcome_phase": "admission_attended_funding_award_unverified",
+      "experience_profile": {
+        "material_availability": "writing_process_only; author_explicitly_does_not_share_full_motivation_letter"
+      }
+    },
+    {
+      "url": "https://hitkim.tistory.com/55",
+      "program_id": "korea-future-work-experience",
+      "role": "experience_review",
+      "content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "application_process",
+      "case_id": "focus-korea-futurework-hitkim-2026-1",
+      "person_name": null,
+      "cycle": "2026-1차",
+      "outcome": "not_selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://hitkim.tistory.com/55",
+      "binding_evidence": {
+        "document_id": "writing-6fcc5a2bd9a6dd6734e60279",
+        "text_sha256": "bb0d5b6581f9454b8300f8c154e4ef65a5e26949ed06474706fe466c093de3ca",
+        "url": "https://hitkim.tistory.com/55",
+        "line": 116,
+        "exact_quote": "면접은 불합격함."
+      },
+      "author_handle": "hitkim",
+      "outcome_phase": "interview",
+      "application_targets": [
+        {
+          "host": "한국항공협회",
+          "round": "2026-1차",
+          "outcome": "not_selected"
+        }
+      ],
+      "experience_profile": {
+        "previous_experience": "author reports working under 한국항공재단 2025-2차; not counted as an additional collected case"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_index",
+      "content_selector": null,
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_or_program_search_20261115",
+      "case_scope": "post_award_experience",
+      "follow_experience_links": {
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers",
+        "pagination_pattern": "/alumni-stories/gsp/page/\\d+/",
+        "child_content_selector": "article .entry-content",
+        "minimum_content_characters": 300,
+        "subject_from_anchor": true,
+        "max_links": 24
+      }
+    },
+    {
+      "url": "https://zi-orv.tistory.com/entry/Naver-Cloude-네이버-클라우드-체험형-인턴-지원-후기-1-원서접수",
+      "program_id": "naver-cloud-student-internship",
+      "role": "experience_review",
+      "content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "public_author_search_result_20261115",
+      "case_scope": "application_process"
+    },
+    {
+      "url": "https://forgottenprogramme.github.io/writing/my-outreachy-application/",
+      "program_id": "outreachy",
+      "role": "experience_review",
+      "content_selector": "article, .post-content, .entry-content, .page__content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "author_published_canonical_and_refresh_redirect",
+      "case_scope": "application_process",
+      "case_specs": [
+        {
+          "case_id": "focus-outreachy-mahe-2020",
+          "person_name": "Mahe Iram Khan",
+          "cycle": "2020",
+          "outcome": "not_selected",
+          "outcome_basis": "public_author_self_report",
+          "case_scope": "application_process",
+          "binding_status": "exact_source_quote_checked",
+          "registry_url": "https://forgottenprogramme.github.io/writing/my-outreachy-application/",
+          "binding_evidence": {
+            "document_id": "writing-c5bcd1933db5197f5a167f10",
+            "text_sha256": "408dd0b357921c404e87cee2f9ad956a4b71feab36025f8f24836c75bcac2426",
+            "url": "https://forgottenprogramme.github.io/writing/my-outreachy-application/",
+            "line": 9,
+            "exact_quote": "Last year my initial application at Outreachy was rejected"
+          },
+          "outcome_phase": "initial_application",
+          "cycle_basis": "relative_year_resolved_from_dated_2021_05_06_post"
+        },
+        {
+          "case_id": "focus-outreachy-mahe-2021",
+          "person_name": "Mahe Iram Khan",
+          "cycle": "2021",
+          "outcome": "unknown",
+          "outcome_basis": "public_author_self_report",
+          "case_scope": "application_process",
+          "binding_status": "exact_source_quote_checked",
+          "registry_url": "https://forgottenprogramme.github.io/writing/my-outreachy-application/",
+          "binding_evidence": {
+            "document_id": "writing-c5bcd1933db5197f5a167f10",
+            "text_sha256": "408dd0b357921c404e87cee2f9ad956a4b71feab36025f8f24836c75bcac2426",
+            "url": "https://forgottenprogramme.github.io/writing/my-outreachy-application/",
+            "line": 57,
+            "exact_quote": "Now I wait for the results that are due May 17, 2021."
+          },
+          "outcome_phase": "final_application_submitted_result_pending_at_publication"
+        }
+      ]
+    },
+    {
+      "url": "https://pongdaang.tistory.com/entry/관정-이종환-장학금-합격-후기-2자기소개서",
+      "program_id": "kwanjeong-domestic",
+      "role": "experience_review",
+      "content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "author_series_found_by_public_search",
+      "case_scope": "application_process",
+      "follow_experience_links": null,
+      "case_id": "focus-kwanjeong-pongdaang-21",
+      "person_name": null,
+      "cycle": "21기",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://pongdaang.tistory.com/75",
+      "binding_evidence": {
+        "document_id": "writing-f66117878c3cbb599563bdc5",
+        "text_sha256": "1aeb240e4d2ea74b0ca8824ea431e727ef27963b72feedcc73af6b6dba6ce711",
+        "url": "https://pongdaang.tistory.com/75",
+        "line": 27,
+        "exact_quote": "관정 국내 학부장학생 21기로 선발된 학생입니다."
+      },
+      "author_handle": "퐁당당당",
+      "outcome_phase": "final_selection",
+      "experience_profile": {
+        "material_availability": "author_application_process_and_writing_reflections"
+      }
+    },
+    {
+      "url": "https://pongdaang.tistory.com/entry/관정-이종환-장학금-합격-후기-3-연구계획서",
+      "program_id": "kwanjeong-domestic",
+      "role": "experience_review",
+      "content_selector": ".tt_article_useless_p_margin, .contents_style, article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "author_series_found_by_public_search",
+      "case_scope": "application_process",
+      "follow_experience_links": null,
+      "case_id": "focus-kwanjeong-pongdaang-21",
+      "person_name": null,
+      "cycle": "21기",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://pongdaang.tistory.com/75",
+      "binding_evidence": {
+        "document_id": "writing-f66117878c3cbb599563bdc5",
+        "text_sha256": "1aeb240e4d2ea74b0ca8824ea431e727ef27963b72feedcc73af6b6dba6ce711",
+        "url": "https://pongdaang.tistory.com/75",
+        "line": 27,
+        "exact_quote": "관정 국내 학부장학생 21기로 선발된 학생입니다."
+      },
+      "author_handle": "퐁당당당",
+      "outcome_phase": "final_selection",
+      "experience_profile": {
+        "material_availability": "author_application_process_and_writing_reflections"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jung-eun-kwon/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+        "anchor_label": "Jung Eun Kwon",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-72923a60dc27f76d",
+      "person_name": "Jung Eun Kwon",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jung-eun-kwon/",
+      "binding_evidence": {
+        "document_id": "writing-8d3f82c5d15d4325e80cef35",
+        "text_sha256": "1aa25443a3a90667b8a6238fd75f1c27d1a9556550b1ca4f610d593b4d94f52d",
+        "url": "https://www.fulbright.or.kr/jung-eun-kwon/",
+        "line": 53,
+        "exact_quote": "권정은(Jung Eun Kwon"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [
+        {
+          "value": "2018",
+          "basis": "html_article_class",
+          "exact_quote": "tag-2018-fulbright-graduate-student-program"
+        },
+        {
+          "value": "2023",
+          "basis": "detail_body_header",
+          "exact_quote": "2023 Graduate Student Program"
+        }
+      ],
+      "cycle_basis": "conflicting_public_fields",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/wonsik-jung/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+        "anchor_label": "Wonsik Jung",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-e00d0ad73fb68ef8",
+      "person_name": "Wonsik Jung",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/wonsik-jung/",
+      "binding_evidence": {
+        "document_id": "writing-973653a55cbc855e17e5a9ca",
+        "text_sha256": "0dc781e506d70d5898067be7bc2f04757ab8b3ef78e57fc4b10d7e5e3551b569",
+        "url": "https://www.fulbright.or.kr/wonsik-jung/",
+        "line": 53,
+        "exact_quote": "정원식(Wonsik Jung"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/junghyun-shin/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+        "anchor_label": "Junghyun Shin",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-6bbbd74c044dee82",
+      "person_name": "Junghyun Shin",
+      "cycle": "2023",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/junghyun-shin/",
+      "binding_evidence": {
+        "document_id": "writing-b6c7f7833b4dd616cf32aa72",
+        "text_sha256": "4ccb178ef53c1124f415e9d63ea1f5b8649b0834fff05047dc5eae82131710e8",
+        "url": "https://www.fulbright.or.kr/junghyun-shin/",
+        "line": 53,
+        "exact_quote": "신정현(Junghyun Shin"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/hojung-yu/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+        "anchor_label": "Hojung Yu",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-6535cbcea3935242",
+      "person_name": "Hojung Yu",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/hojung-yu/",
+      "binding_evidence": {
+        "document_id": "writing-5895cc5d1593f69b98a4abbe",
+        "text_sha256": "6eb246760ec88e04229c35a699d8cadd0e65caa70cf88c61c2ee6a456c5d8909",
+        "url": "https://www.fulbright.or.kr/hojung-yu/",
+        "line": 53,
+        "exact_quote": "유호정(Hojung Yu"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/yerang-moon/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+        "anchor_label": "Yerang Moon",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-385626ec48467c10",
+      "person_name": "Yerang Moon",
+      "cycle": "2023",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/yerang-moon/",
+      "binding_evidence": {
+        "document_id": "writing-e388afa3f1b3325ad5f38942",
+        "text_sha256": "aa38891c130de5f1143356dff4f9ee85243a4db8301a25caba729f6e54bac374",
+        "url": "https://www.fulbright.or.kr/yerang-moon/",
+        "line": 53,
+        "exact_quote": "문예랑 (Yerang Moon"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/gyusang-yu/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+        "anchor_label": "Gyusang Yu",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-8c2290b6cb2b0303",
+      "person_name": "Gyusang Yu",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/gyusang-yu/",
+      "binding_evidence": {
+        "document_id": "writing-9f7c09a9f89636c5ea563903",
+        "text_sha256": "672af0499a3f2336b1ae2f516402485b695f1a2726116ba7402b4b57aff5d6bb",
+        "url": "https://www.fulbright.or.kr/gyusang-yu/",
+        "line": 53,
+        "exact_quote": "유규상(Gyusang Yu"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/seyoung-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+        "anchor_label": "Seyoung kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-46f11b9acdd09e90",
+      "person_name": "Seyoung kim",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/seyoung-kim/",
+      "binding_evidence": {
+        "document_id": "writing-f39ea63fd04b4b9cecf48ada",
+        "text_sha256": "8c31aeba09a6b50e303f0857f906b039a6b0f455a6b461ae65fe5575016c7d11",
+        "url": "https://www.fulbright.or.kr/seyoung-kim/",
+        "line": 53,
+        "exact_quote": "김세영(Seyoung kim"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/hyunjoo-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+        "anchor_label": "Hyunjoo Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-04200f45291490c2",
+      "person_name": "Hyunjoo Lee",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/hyunjoo-lee/",
+      "binding_evidence": {
+        "document_id": "writing-4bb928ca4a80b3399ceca582",
+        "text_sha256": "233d6b828c885cdb9267dee27df13bc0a87c4d0127187547c9edf4de8b2a698d",
+        "url": "https://www.fulbright.or.kr/hyunjoo-lee/",
+        "line": 53,
+        "exact_quote": "이현주(Hyunjoo Lee"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/eunwoo-yoo/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+        "anchor_label": "Eunwoo Yoo",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-e7dcd8cd7f81fb7c",
+      "person_name": "Eunwoo Yoo",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/eunwoo-yoo/",
+      "binding_evidence": {
+        "document_id": "writing-75897cb0d1140acfa14b9683",
+        "text_sha256": "d3d5553dd684023946a081fb590ba4d5aaa283c9f6fd15bf09769eae28864657",
+        "url": "https://www.fulbright.or.kr/eunwoo-yoo/",
+        "line": 53,
+        "exact_quote": "유은우 (Eunwoo Yoo"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jisoo-choi/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+        "anchor_label": "Jisoo Choi",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-8d35dae1c15e4ba2",
+      "person_name": "Jisoo Choi",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jisoo-choi/",
+      "binding_evidence": {
+        "document_id": "writing-bf91f4d0a8278e5aede02d9c",
+        "text_sha256": "8f791de814568dfb622ca2b26674bf7c1fd89eb3bb698b0600de76f70dc3b696",
+        "url": "https://www.fulbright.or.kr/jisoo-choi/",
+        "line": 53,
+        "exact_quote": "최지수(Jisoo Choi"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/ha-jaeyoung/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/3/",
+        "anchor_label": "Jaeyoung Ha",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-b11a4b52610c192d",
+      "person_name": "Jaeyoung Ha",
+      "cycle": "2017",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/ha-jaeyoung/",
+      "binding_evidence": {
+        "document_id": "writing-0a278c562bf5f8053775fb37",
+        "text_sha256": "d3d8a3f65deda74945435b1a8be519926e1868b347ed367f2c125e313a96621d",
+        "url": "https://www.fulbright.or.kr/ha-jaeyoung/",
+        "line": 53,
+        "exact_quote": "하재영 (Jaeyoung Ha)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/sumi-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/3/",
+        "anchor_label": "Sumi Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-3fc56f01e1918151",
+      "person_name": "Sumi Lee",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/sumi-lee/",
+      "binding_evidence": {
+        "document_id": "writing-69b8fa3fa350849539634557",
+        "text_sha256": "c249c93a8caf317d8a3e294a14c02208b466e95f35ae10314ba23e3bfee64841",
+        "url": "https://www.fulbright.or.kr/sumi-lee/",
+        "line": 53,
+        "exact_quote": "이수미 (Sumi Lee)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/ji-eun-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/3/",
+        "anchor_label": "Ji Eun Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-07b6263a01bf917b",
+      "person_name": "Ji Eun Kim",
+      "cycle": "2023",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/ji-eun-kim/",
+      "binding_evidence": {
+        "document_id": "writing-bdba822b479c07ec4772c7b7",
+        "text_sha256": "0ff28bc2e2bf1f7b7a7de30ec9b5d4021452f53e4c9e9c02264de985fffbf092",
+        "url": "https://www.fulbright.or.kr/ji-eun-kim/",
+        "line": 53,
+        "exact_quote": "김지은 (Ji Eun Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/hye-jin-cho/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/3/",
+        "anchor_label": "Hye Jin Cho",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-4cd877bb111e2e79",
+      "person_name": "Hye Jin Cho",
+      "cycle": "2023",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/hye-jin-cho/",
+      "binding_evidence": {
+        "document_id": "writing-3a4db8d6c4ce23b31ac7e59f",
+        "text_sha256": "11bb5b28d58791e627f1ea7cf0ba564903561ea0bb95f9a7e9318463d1e09b45",
+        "url": "https://www.fulbright.or.kr/hye-jin-cho/",
+        "line": 53,
+        "exact_quote": "조혜진 (Hye Jin Cho)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/yoonsuh-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/3/",
+        "anchor_label": "Yoonsuh Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-061abbf005fc76db",
+      "person_name": "Yoonsuh Kim",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/yoonsuh-kim/",
+      "binding_evidence": {
+        "document_id": "writing-c18366d3e5aa86da9ee07691",
+        "text_sha256": "ac0fc3fe17406be9be1fa36f363d98baea1c1de50427bd0a56a0bfd431a01e31",
+        "url": "https://www.fulbright.or.kr/yoonsuh-kim/",
+        "line": 54,
+        "exact_quote": "(Yoonsuh Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/joonsoo-park/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/3/",
+        "anchor_label": "Joonsoo Park",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-64d36174874ff498",
+      "person_name": "Joonsoo Park",
+      "cycle": "2015",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/joonsoo-park/",
+      "binding_evidence": {
+        "document_id": "writing-91e05f88b80d83e7565b69e2",
+        "text_sha256": "5b4fc0da06b66e72d206576de9e0a40dc37d7933f5681437b2fd1be144afb394",
+        "url": "https://www.fulbright.or.kr/joonsoo-park/",
+        "line": 53,
+        "exact_quote": "박준수 (Joonsoo Park)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jiin-oh/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/3/",
+        "anchor_label": "Jiin Oh",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-6dae3fd3ab6812d8",
+      "person_name": "Jiin Oh",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jiin-oh/",
+      "binding_evidence": {
+        "document_id": "writing-a3671d5a23a40948596da670",
+        "text_sha256": "b016929c28c6a32617c12afe87fbac22ea77c94548bb4ecfc316dffb84f3b730",
+        "url": "https://www.fulbright.or.kr/jiin-oh/",
+        "line": 53,
+        "exact_quote": "오지인 (Jiin Oh)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/yong-ho-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/3/",
+        "anchor_label": "Yong Ho Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-5e01abaf10944fc6",
+      "person_name": "Yong Ho Lee",
+      "cycle": "2023",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/yong-ho-lee/",
+      "binding_evidence": {
+        "document_id": "writing-4dfd40ebf3ce6c28ce45ba8f",
+        "text_sha256": "b877415147c9d4168b69f2e892cf1f4c980f2a588e5112f0036b3fa1db312a6a",
+        "url": "https://www.fulbright.or.kr/yong-ho-lee/",
+        "line": 53,
+        "exact_quote": "이용호 (Yong Ho Lee)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/narae-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/3/",
+        "anchor_label": "Narae Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-0c6409cc0adbc038",
+      "person_name": "Narae Lee",
+      "cycle": "2022",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/narae-lee/",
+      "binding_evidence": {
+        "document_id": "writing-fc3e990c80c04545aca58d9d",
+        "text_sha256": "b5572d30c656f87a8b4be836288bf9dc30d7f04e6216b19a9924fc1182ec5e60",
+        "url": "https://www.fulbright.or.kr/narae-lee/",
+        "line": 53,
+        "exact_quote": "이나래 (Narae Lee)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/byong-man-ahn/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/12/",
+        "anchor_label": "Byong Man Ahn",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-14c0d1614aa66b82",
+      "person_name": "Byong Man Ahn",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/byong-man-ahn/",
+      "binding_evidence": {
+        "document_id": "writing-366f6299b5099f26b60e52ca",
+        "text_sha256": "dce947118b659295e3ec5236ccf981cc73996056d24a657e472f42ff40c050b1",
+        "url": "https://www.fulbright.or.kr/byong-man-ahn/",
+        "line": 54,
+        "exact_quote": "안병만 (Byong Man Ahn)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "unconfirmed",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/gayoung-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/3/",
+        "anchor_label": "Gayoung Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-859abd0cb700465c",
+      "person_name": "Gayoung Lee",
+      "cycle": "2022",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/gayoung-lee/",
+      "binding_evidence": {
+        "document_id": "writing-6051426d4b4f2d89f9549621",
+        "text_sha256": "6bf2afc72bdf77697174a8e3d9fe3ab54ece2c01330e131e9f410329d8492cd5",
+        "url": "https://www.fulbright.or.kr/gayoung-lee/",
+        "line": 53,
+        "exact_quote": "이가영 (Gayoung Lee)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/sok-koo-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/12/",
+        "anchor_label": "Sok Koo Rhee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-1b6d9d164f9b0afc",
+      "person_name": "Sok Koo Rhee",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/sok-koo-lee/",
+      "binding_evidence": {
+        "document_id": "writing-bd5cd77791d882ea9d7b3077",
+        "text_sha256": "ef7c476f5d060623a3acbb6d0e2cefd0e4b968fcc4437a6c78320971a8f4d042",
+        "url": "https://www.fulbright.or.kr/sok-koo-lee/",
+        "line": 1,
+        "exact_quote": "Sok Koo Rhee"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "unconfirmed",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jin-young-choi/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/12/",
+        "anchor_label": "Jin Young Choi",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-2ea7e0528c72d849",
+      "person_name": "Jin Young Choi",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jin-young-choi/",
+      "binding_evidence": {
+        "document_id": "writing-007be8d885cd7eecf38b383b",
+        "text_sha256": "1704158fe435d23882cd528793b88d3aba0a40a0ae1ec51d71c4593e3a331e86",
+        "url": "https://www.fulbright.or.kr/jin-young-choi/",
+        "line": 1,
+        "exact_quote": "Jin Young Choi"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "unconfirmed",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/soohyun-shim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/2/",
+        "anchor_label": "Soohyun Shim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-e060f95e692a03cb",
+      "person_name": "Soohyun Shim",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/soohyun-shim/",
+      "binding_evidence": {
+        "document_id": "writing-8e045b40ae691673e2ac551e",
+        "text_sha256": "1debf0ae0bdd9ca5cadfd3f8fcff1a2bdeb3f63f00ef195d019ec9451469cd9f",
+        "url": "https://www.fulbright.or.kr/soohyun-shim/",
+        "line": 53,
+        "exact_quote": "심수현 (Soohyun Shim"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/yejin-son/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/2/",
+        "anchor_label": "Yejin Son",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-87a8014c0671dcdd",
+      "person_name": "Yejin Son",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/yejin-son/",
+      "binding_evidence": {
+        "document_id": "writing-d0e7a7e1750df4f6c259393d",
+        "text_sha256": "9eb3df7b5a35c3fe3e55f12d25703135fc7e1b11cfe0b7b2ff58a0e20f35c5b4",
+        "url": "https://www.fulbright.or.kr/yejin-son/",
+        "line": 53,
+        "exact_quote": "손예진 (Yejin Son"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/ji-min-yim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/2/",
+        "anchor_label": "Ji Min Yim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-1df06876fab18235",
+      "person_name": "Ji Min Yim",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/ji-min-yim/",
+      "binding_evidence": {
+        "document_id": "writing-c8efbc55e77fda9b264c07ec",
+        "text_sha256": "0e1556df63417c0ba2cc396f5fd5203ae239e40a010ca74e5b05c1f730bac0b9",
+        "url": "https://www.fulbright.or.kr/ji-min-yim/",
+        "line": 53,
+        "exact_quote": "임지민 (Ji Min Yim"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/yujin-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/2/",
+        "anchor_label": "Yujin Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-e2e167fe331268f7",
+      "person_name": "Yujin Lee",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/yujin-lee/",
+      "binding_evidence": {
+        "document_id": "writing-959b815ba42e9d090f1f0e07",
+        "text_sha256": "bd1504e9c83ea724d28c63eadfbffe044bdad65196530b454916432c7a43e606",
+        "url": "https://www.fulbright.or.kr/yujin-lee/",
+        "line": 53,
+        "exact_quote": "이유진 (Yujin Lee)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/suha-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/2/",
+        "anchor_label": "Suha Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-e58fb72fb57066f3",
+      "person_name": "Suha Kim",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/suha-kim/",
+      "binding_evidence": {
+        "document_id": "writing-bf7c2c8c311d5fb7740d3632",
+        "text_sha256": "441ddd6606c26cd9912287d1af2179b67075f113abe39fe82d2f8f102c263013",
+        "url": "https://www.fulbright.or.kr/suha-kim/",
+        "line": 53,
+        "exact_quote": "김수하 (Suha Kim"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jiseop-byeon/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/2/",
+        "anchor_label": "Jiseop Byeon",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-5b4b203c16be43aa",
+      "person_name": "Jiseop Byeon",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jiseop-byeon/",
+      "binding_evidence": {
+        "document_id": "writing-cdb776ff2e7aabe8529f6d35",
+        "text_sha256": "b6dd27b28446c23de3059a6c38247910bc0baccc2918fd199b7945f91d098a04",
+        "url": "https://www.fulbright.or.kr/jiseop-byeon/",
+        "line": 53,
+        "exact_quote": "변지섭 (Jiseop Byeon"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/hai-in-jo/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/2/",
+        "anchor_label": "Hai In Jo",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-9a95e93b0585fcfe",
+      "person_name": "Hai In Jo",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/hai-in-jo/",
+      "binding_evidence": {
+        "document_id": "writing-9842403c8d7bb9b3ae141ad5",
+        "text_sha256": "571433446d337d03dedf6917287f5998aacd3367e5bb8f82ff94720ca959c033",
+        "url": "https://www.fulbright.or.kr/hai-in-jo/",
+        "line": 53,
+        "exact_quote": "조해인 (Hai in Jo)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/nayoun-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/2/",
+        "anchor_label": "Nayoun Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-8db41472db2f6f39",
+      "person_name": "Nayoun Kim",
+      "cycle": "2023",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/nayoun-kim/",
+      "binding_evidence": {
+        "document_id": "writing-24812ddf2c65332566a68b5f",
+        "text_sha256": "3f67918e6092ac1a9f9df7b69b0c09c5fa3f8897ed367f60d3d3bfaedb33147a",
+        "url": "https://www.fulbright.or.kr/nayoun-kim/",
+        "line": 53,
+        "exact_quote": "김나윤 (Nayoun Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/seo-young-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/2/",
+        "anchor_label": "Seo Young Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-cf6c2d2531c73772",
+      "person_name": "Seo Young Kim",
+      "cycle": "2021",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/seo-young-kim/",
+      "binding_evidence": {
+        "document_id": "writing-b0ac9c1f928cff0b50bda998",
+        "text_sha256": "e241403ef319d484eb4cdea1e8ef4772fd74e33d75f8d1b5416f4e81e731926e",
+        "url": "https://www.fulbright.or.kr/seo-young-kim/",
+        "line": 53,
+        "exact_quote": "김서영 (Seo Young Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/sang-ki-nam/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/2/",
+        "anchor_label": "Sang Ki Nam",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-087f1ccb8e377370",
+      "person_name": "Sang Ki Nam",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/sang-ki-nam/",
+      "binding_evidence": {
+        "document_id": "writing-b9b4217c130f3fff499e8abb",
+        "text_sha256": "28ae4758c87faea44ec5bbe83b20076d62ba3f04c1887499d649b77da1265ce9",
+        "url": "https://www.fulbright.or.kr/sang-ki-nam/",
+        "line": 53,
+        "exact_quote": "남상기 (Sang Ki Nam)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [
+        {
+          "value": "2021",
+          "basis": "html_article_class",
+          "exact_quote": "tag-2021-fulbright-graduate-student-program-ko"
+        },
+        {
+          "value": "2023",
+          "basis": "detail_body_header",
+          "exact_quote": "2023 Graduate Student Program"
+        }
+      ],
+      "cycle_basis": "conflicting_public_fields",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/in-sang-yoo/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/5/",
+        "anchor_label": "In Sang Yoo",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-e2824e721f4434da",
+      "person_name": "In Sang Yoo",
+      "cycle": "2015",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/in-sang-yoo/",
+      "binding_evidence": {
+        "document_id": "writing-f3fbdf02a6695003eef1f1c3",
+        "text_sha256": "17a037bf6cce9142a61193e3f93d50582cffc89ee0d85c1d4216448894cc0ebf",
+        "url": "https://www.fulbright.or.kr/in-sang-yoo/",
+        "line": 53,
+        "exact_quote": "유인상 (Insang, Yoo)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/yu-jin-jang/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/5/",
+        "anchor_label": "Yu Jin Jang",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-1d5210c1f8ca86a6",
+      "person_name": "Yu Jin Jang",
+      "cycle": "2022",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/yu-jin-jang/",
+      "binding_evidence": {
+        "document_id": "writing-16a500853ec3d314d8033124",
+        "text_sha256": "c31375955874bc2d0bc49063d69081d24f8407eb881bad312d48992683d4d221",
+        "url": "https://www.fulbright.or.kr/yu-jin-jang/",
+        "line": 53,
+        "exact_quote": "장유진 (Yujin, Jang)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jee-hyun-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/5/",
+        "anchor_label": "Jee Hyun Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-a0492fb2746b2a23",
+      "person_name": "Jee Hyun Kim",
+      "cycle": "2021",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jee-hyun-kim/",
+      "binding_evidence": {
+        "document_id": "writing-396a2bce969642595a5d552c",
+        "text_sha256": "fce28f5049212f4aa9fe2d3cc98484a3f154d94c5179c4f04df49390a6739be6",
+        "url": "https://www.fulbright.or.kr/jee-hyun-kim/",
+        "line": 54,
+        "exact_quote": "(Jeehyun, Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/hyong-se-yoo/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/5/",
+        "anchor_label": "Hyong Se Yoo",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-9a94c925777f2966",
+      "person_name": "Hyong Se Yoo",
+      "cycle": "2018",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/hyong-se-yoo/",
+      "binding_evidence": {
+        "document_id": "writing-0100566fed6836cdd5218762",
+        "text_sha256": "cd8b75f61a863e9e7314fdc065bbf525663359f4000decf539b719496011e534",
+        "url": "https://www.fulbright.or.kr/hyong-se-yoo/",
+        "line": 53,
+        "exact_quote": "유형세 (Hyongse, Yoo)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/soo-hyun-cho/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/5/",
+        "anchor_label": "Soo Hyun Cho",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-07a9dbfa31323879",
+      "person_name": "Soo Hyun Cho",
+      "cycle": "2016",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/soo-hyun-cho/",
+      "binding_evidence": {
+        "document_id": "writing-57904f2937625a1c4dca5c32",
+        "text_sha256": "9a38207a1836b285010c87d895fdd89ae5c1a78fb037044a45154c975bc0fef6",
+        "url": "https://www.fulbright.or.kr/soo-hyun-cho/",
+        "line": 53,
+        "exact_quote": "조수현 (Soo Hyun Cho)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jong-seong-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/5/",
+        "anchor_label": "Jong Seong Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-3228a9741538de98",
+      "person_name": "Jong Seong Lee",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jong-seong-lee/",
+      "binding_evidence": {
+        "document_id": "writing-dd688c1285a848f0b577dc86",
+        "text_sha256": "96462057a32fdc05455a9f86474cd1aeaf6a809556e8d3f1b4e968b72064611f",
+        "url": "https://www.fulbright.or.kr/jong-seong-lee/",
+        "line": 54,
+        "exact_quote": "(Jongseong, Lee)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/do-won-yoo/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/5/",
+        "anchor_label": "Do Won Yoo",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-5ca8231eafcb0b3e",
+      "person_name": "Do Won Yoo",
+      "cycle": "2021",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/do-won-yoo/",
+      "binding_evidence": {
+        "document_id": "writing-6ca04fc85e6bfff5674a4c66",
+        "text_sha256": "3b0291b9454e9216d4c9603a5ec7cf72b947c6efc14f52f59d67d10a01c05b85",
+        "url": "https://www.fulbright.or.kr/do-won-yoo/",
+        "line": 53,
+        "exact_quote": "유도원 (Do Won Yoo)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/mi-jin-ryu/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/5/",
+        "anchor_label": "Mi Jin Ryu",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-28f15aa924bbbd0a",
+      "person_name": "Mi Jin Ryu",
+      "cycle": "2021",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/mi-jin-ryu/",
+      "binding_evidence": {
+        "document_id": "writing-3821da7f679ec8d99ac4b906",
+        "text_sha256": "217cd2cff93a4bb41e40cba64ab0083164db727a81084c51d7b82f6a9448aac3",
+        "url": "https://www.fulbright.or.kr/mi-jin-ryu/",
+        "line": 53,
+        "exact_quote": "유미진 (Mi Jin Ryu)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/nayun-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/4/",
+        "anchor_label": "Nayun Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-980328fc44e403e3",
+      "person_name": "Nayun Kim",
+      "cycle": "2021",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/nayun-kim/",
+      "binding_evidence": {
+        "document_id": "writing-a7cb6e96cb5d12f63f7e9674",
+        "text_sha256": "835d494a1a255fd30064769d2709b1cf2bc2de0bdec0ca666a9419aeb9210422",
+        "url": "https://www.fulbright.or.kr/nayun-kim/",
+        "line": 53,
+        "exact_quote": "김나윤 (Nayun Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/soohyun-cho/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/4/",
+        "anchor_label": "Soohyun Cho",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-9189944ad24e03c3",
+      "person_name": "Soohyun Cho",
+      "cycle": "2016",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/soohyun-cho/",
+      "binding_evidence": {
+        "document_id": "writing-981886fbf9637a9bc26fc55c",
+        "text_sha256": "f76f21d2b2efbbdb32bcd3c4f32dbc93bcd1d0c7ec5a2c25e774db46c2a32bf5",
+        "url": "https://www.fulbright.or.kr/soohyun-cho/",
+        "line": 53,
+        "exact_quote": "조수현 (Soohyun Cho)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/sohyun-kwon/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/4/",
+        "anchor_label": "Sohyun Kwon",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-bdb1057f52570e68",
+      "person_name": "Sohyun Kwon",
+      "cycle": "2022",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/sohyun-kwon/",
+      "binding_evidence": {
+        "document_id": "writing-540023c0a4ac5a95bb12b567",
+        "text_sha256": "8fff64b8b15798b1930e6ae6968ff168986ce361d696fb9730c58d1136712648",
+        "url": "https://www.fulbright.or.kr/sohyun-kwon/",
+        "line": 53,
+        "exact_quote": "권소현 (Sohyun Kwon)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/hyeonah-kang/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/4/",
+        "anchor_label": "Hyeonah Kang",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-8578d8d689a4f633",
+      "person_name": "Hyeonah Kang",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/hyeonah-kang/",
+      "binding_evidence": {
+        "document_id": "writing-fe4dab936c3aa50e4fe3075b",
+        "text_sha256": "a6b5755a52ac522d57729a2f9d02814f4d34d1fd73ceb9edace965d57ccf0c6e",
+        "url": "https://www.fulbright.or.kr/hyeonah-kang/",
+        "line": 53,
+        "exact_quote": "강현아 (Hyeonah Kang)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jiwon-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/4/",
+        "anchor_label": "Jiwon Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-a8d0728dfa42c626",
+      "person_name": "Jiwon Kim",
+      "cycle": "2022",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jiwon-kim/",
+      "binding_evidence": {
+        "document_id": "writing-ebc85e723147b5c22b73f2c4",
+        "text_sha256": "09908914d3ad570420b66884358e8b74903128cd394f2b3cee2ddd55f62588ed",
+        "url": "https://www.fulbright.or.kr/jiwon-kim/",
+        "line": 53,
+        "exact_quote": "김지원 (Jiwon Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/so-jeong-noh/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/4/",
+        "anchor_label": "So Jeong Noh",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-2a2830a02a7b2dde",
+      "person_name": "So Jeong Noh",
+      "cycle": "2022",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/so-jeong-noh/",
+      "binding_evidence": {
+        "document_id": "writing-c2a66a14756bf371962ba83b",
+        "text_sha256": "726a99f79ad5f3dcfa885eea5e13385edd2202670ae01359558a9de10ce7f7f1",
+        "url": "https://www.fulbright.or.kr/so-jeong-noh/",
+        "line": 53,
+        "exact_quote": "노소정 (So Jeong Noh)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jongmin-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/11/",
+        "anchor_label": "Jongmin Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-8a57d75d5daa6b62",
+      "person_name": "Jongmin Lee",
+      "cycle": "2018",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jongmin-lee/",
+      "binding_evidence": {
+        "document_id": "writing-11620b2abb84521e74fb81c3",
+        "text_sha256": "6888b7f5f94459b5c3419aa28a8159bb02d971b789039cb726b42bcba0013a80",
+        "url": "https://www.fulbright.or.kr/jongmin-lee/",
+        "line": 53,
+        "exact_quote": "이종민 (Jongmin Lee)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/sojeong-whang/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/11/",
+        "anchor_label": "Sojeong Whang",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-a55b7102b65563b1",
+      "person_name": "Sojeong Whang",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/sojeong-whang/",
+      "binding_evidence": {
+        "document_id": "writing-6e02a12eefc4c42134b95135",
+        "text_sha256": "0502bb7a2cb62bc6908b6f233da75730dcf9e4b22cef8ab936e6a4e01c1deaa1",
+        "url": "https://www.fulbright.or.kr/sojeong-whang/",
+        "line": 53,
+        "exact_quote": "황소정 (Sojeong Whang)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/kwanmok-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/4/",
+        "anchor_label": "Kwanmok Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-a5756c6008c6f3d0",
+      "person_name": "Kwanmok Kim",
+      "cycle": "2015",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/kwanmok-kim/",
+      "binding_evidence": {
+        "document_id": "writing-4c579a017546e2d1e67af759",
+        "text_sha256": "5adadb3a206b56ebcee1d0f222ddc38169b7544d7cbccbacd9b51349ad66bba1",
+        "url": "https://www.fulbright.or.kr/kwanmok-kim/",
+        "line": 53,
+        "exact_quote": "김관목 (Kwanmok Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/yeongseom-eom/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/11/",
+        "anchor_label": "Yeongseom Eom",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-7acfb095eb85b6d1",
+      "person_name": "Yeongseom Eom",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/yeongseom-eom/",
+      "binding_evidence": {
+        "document_id": "writing-b39d3aded2b99c1c6d037fb3",
+        "text_sha256": "a544310b844fe81dc0c5d470799ec86ddc1521587670d98486d943e51a183d17",
+        "url": "https://www.fulbright.or.kr/yeongseom-eom/",
+        "line": 53,
+        "exact_quote": "엄영섬 (Yeong Seom Eom)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/kichul-bae/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/4/",
+        "anchor_label": "Kichul Bae",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-1b3923c3e2b99a66",
+      "person_name": "Kichul Bae",
+      "cycle": "2022",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/kichul-bae/",
+      "binding_evidence": {
+        "document_id": "writing-80f0765d402db87e1d3b15a2",
+        "text_sha256": "cc3273416317f4be881c5407e0843016b874eb39e8d54f821ced74616d3b6555",
+        "url": "https://www.fulbright.or.kr/kichul-bae/",
+        "line": 53,
+        "exact_quote": "배기철 (Kichul Bae)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/seonyoung-park/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/11/",
+        "anchor_label": "Seonyoung Park",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-ee295cbfecc5130d",
+      "person_name": "Seonyoung Park",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/seonyoung-park/",
+      "binding_evidence": {
+        "document_id": "writing-07ff1b71e64d2f6c9efc6e39",
+        "text_sha256": "a69e57b263efe5a23985fb82e3015813b68cb24a4d46e0307df428f6ccd9ab40",
+        "url": "https://www.fulbright.or.kr/seonyoung-park/",
+        "line": 53,
+        "exact_quote": "박선영 (Seonyoung Park)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jieun-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/4/",
+        "anchor_label": "Jieun Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-86f1cde80ff110fe",
+      "person_name": "Jieun Lee",
+      "cycle": "2022",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jieun-lee/",
+      "binding_evidence": {
+        "document_id": "writing-7c50a83cf0ca337c1cb60210",
+        "text_sha256": "436946a6f63b69456ce9be18889d33abcfbbff0a0222022dc07c31c66a3f1ef1",
+        "url": "https://www.fulbright.or.kr/jieun-lee/",
+        "line": 53,
+        "exact_quote": "이지은 (Jieun Lee)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/inhwan-oh/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/4/",
+        "anchor_label": "Inhwan Oh",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-81b61f48530077e9",
+      "person_name": "Inhwan Oh",
+      "cycle": "2017",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/inhwan-oh/",
+      "binding_evidence": {
+        "document_id": "writing-8a788002c318f14b9b2721c0",
+        "text_sha256": "7ba588ec468cb611318e5d0c06cdd4c2d7c473afb8f27a80d1876d61846c0df2",
+        "url": "https://www.fulbright.or.kr/inhwan-oh/",
+        "line": 53,
+        "exact_quote": "오인환 (Inhwan Oh)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/hyewon-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/11/",
+        "anchor_label": "Hyewon Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-413de521329db614",
+      "person_name": "Hyewon Kim",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/hyewon-kim/",
+      "binding_evidence": {
+        "document_id": "writing-d9286aeb3543c0769baaa9f5",
+        "text_sha256": "decca7b36f07a19e9f2bfbd357a6aa9821d09de3e11df3427b79d15de85bdb22",
+        "url": "https://www.fulbright.or.kr/hyewon-kim/",
+        "line": 53,
+        "exact_quote": "김혜원 (Hyewon Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/dokyoung-koo/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/11/",
+        "anchor_label": "Dokyoung Koo",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-df3e05a32768d3b5",
+      "person_name": "Dokyoung Koo",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/dokyoung-koo/",
+      "binding_evidence": {
+        "document_id": "writing-863eef37d3da8aa95b7534af",
+        "text_sha256": "0bc0b34608568a105609fe1337e4512ea40e63a911d98bf55fff9b2673ccc5b3",
+        "url": "https://www.fulbright.or.kr/dokyoung-koo/",
+        "line": 53,
+        "exact_quote": "구도경 (Dokyoung Koo)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/moohyung-cho/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/11/",
+        "anchor_label": "Moohyung Cho",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-4deb72943d19f5ed",
+      "person_name": "Moohyung Cho",
+      "cycle": "2014",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/moohyung-cho/",
+      "binding_evidence": {
+        "document_id": "writing-ffa2b0d4d6a61e1b1404e022",
+        "text_sha256": "7baef2488f9d4609202215659ec8d64d3429b39d35f644193dc60c2b65bec7ab",
+        "url": "https://www.fulbright.or.kr/moohyung-cho/",
+        "line": 54,
+        "exact_quote": "조무형 (Moohyung Cho)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/woo-hyun-cook/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/11/",
+        "anchor_label": "Woo Hyun Cook",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-3dbea9ade6a0b617",
+      "person_name": "Woo Hyun Cook",
+      "cycle": "2010",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/woo-hyun-cook/",
+      "binding_evidence": {
+        "document_id": "writing-bafca6e823cffe682df7a7f1",
+        "text_sha256": "3469688725be5f1966e587a432165b66a5721c4af8ec7fb80cbf1e2f1e6038f7",
+        "url": "https://www.fulbright.or.kr/woo-hyun-cook/",
+        "line": 54,
+        "exact_quote": "국우현 (Woo Hyun Cook)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/kyuwon-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/11/",
+        "anchor_label": "Kyuwon Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-ae2c14aba22d5254",
+      "person_name": "Kyuwon Lee",
+      "cycle": "2017",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/kyuwon-lee/",
+      "binding_evidence": {
+        "document_id": "writing-1adbcd193e14a8561718f902",
+        "text_sha256": "be5c1b4c0e615957d12f72817c4d7f90e5fed288af06415638984796e8a372e6",
+        "url": "https://www.fulbright.or.kr/kyuwon-lee/",
+        "line": 54,
+        "exact_quote": "이규원 (Kyuwon Lee)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/sungjoo-han/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/11/",
+        "anchor_label": "SungJoo Han",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-edc76243e8479b9f",
+      "person_name": "SungJoo Han",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/sungjoo-han/",
+      "binding_evidence": {
+        "document_id": "writing-48f7a360de604ec133415211",
+        "text_sha256": "df2b35f391d8a3632a575cbc141b658c12101fd3168ddb7dcfd9f329c9dfb979",
+        "url": "https://www.fulbright.or.kr/sungjoo-han/",
+        "line": 54,
+        "exact_quote": "한승주 (SungJoo Han)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "unconfirmed",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/shin-hum-cho/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/10/",
+        "anchor_label": "Shin Hum Cho",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-07acf91ce0d98305",
+      "person_name": "Shin Hum Cho",
+      "cycle": "2015",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/shin-hum-cho/",
+      "binding_evidence": {
+        "document_id": "writing-50791228bf2591e07730d6fd",
+        "text_sha256": "2b4390824891710a61c0a214773aefa548b87994f4b675d39a69fb280b2fda3e",
+        "url": "https://www.fulbright.or.kr/shin-hum-cho/",
+        "line": 53,
+        "exact_quote": "조신흠 (Shin Hum Cho)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/ji-young-kang/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/10/",
+        "anchor_label": "Ji Young Kang",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-00d483a361fdd059",
+      "person_name": "Ji Young Kang",
+      "cycle": "2014",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/ji-young-kang/",
+      "binding_evidence": {
+        "document_id": "writing-a0f0ee97cfd1d9b098bc76af",
+        "text_sha256": "c2b03da58b5b0baf71089745607a86f3e9433cf81f1270dc7298c13baf9ad34d",
+        "url": "https://www.fulbright.or.kr/ji-young-kang/",
+        "line": 53,
+        "exact_quote": "강지영 (Ji Young Kang)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/seolji-han/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/10/",
+        "anchor_label": "Seolji Han",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-34239b94c450c7d6",
+      "person_name": "Seolji Han",
+      "cycle": "2015",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/seolji-han/",
+      "binding_evidence": {
+        "document_id": "writing-fb32e929a36a1678ec2553aa",
+        "text_sha256": "7386194ad1c7a05c45aa16eeaee0541cdb8dc6da2a2e84b9f3756d5260d9c405",
+        "url": "https://www.fulbright.or.kr/seolji-han/",
+        "line": 53,
+        "exact_quote": "한솔지 (Seolji Han)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/kibaek-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/10/",
+        "anchor_label": "Kibaek Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-9ba281ce8eb4676e",
+      "person_name": "Kibaek Kim",
+      "cycle": "2018",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/kibaek-kim/",
+      "binding_evidence": {
+        "document_id": "writing-35520d3a24bda200583cc502",
+        "text_sha256": "5ff133fd33fdf9653adb5d9d73cf1b74544365f2f6e5cd4b82c3ab56826f0d8d",
+        "url": "https://www.fulbright.or.kr/kibaek-kim/",
+        "line": 53,
+        "exact_quote": "김기백 (Kibaek Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/geunhee-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/10/",
+        "anchor_label": "Geunhee Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-338ba4171a1088a8",
+      "person_name": "Geunhee Lee",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/geunhee-lee/",
+      "binding_evidence": {
+        "document_id": "writing-1976163630b61788514f6fec",
+        "text_sha256": "5558c549d84f92f9cf066d0bd0dc91d15bd96fce07f447efdd4b5916b7071c21",
+        "url": "https://www.fulbright.or.kr/geunhee-lee/",
+        "line": 53,
+        "exact_quote": "이근희 (Geunhee Lee)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/kajin-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/10/",
+        "anchor_label": "Kajin Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-fa6da2dbf8de71a2",
+      "person_name": "Kajin Kim",
+      "cycle": "2018",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/kajin-kim/",
+      "binding_evidence": {
+        "document_id": "writing-62e966b9a7a371695c2e4bf2",
+        "text_sha256": "338a8a140ca744062f273657cdc63c1d53899f90f6ff6b4d84eeb5c53e4fa54a",
+        "url": "https://www.fulbright.or.kr/kajin-kim/",
+        "line": 53,
+        "exact_quote": "김가진 (Kajin Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jungyun-lee/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/10/",
+        "anchor_label": "Jungyun Lee",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-588e4492c5f718d2",
+      "person_name": "Jungyun Lee",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jungyun-lee/",
+      "binding_evidence": {
+        "document_id": "writing-2f73acbfc32fa6c1157b521b",
+        "text_sha256": "70fc4a94cc5e6ac9e082904f9f6bb7d2732a85a5cc064eb6cb452268811cd87a",
+        "url": "https://www.fulbright.or.kr/jungyun-lee/",
+        "line": 53,
+        "exact_quote": "이정윤 (Jungyun Lee)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/jiyoon-kim/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/10/",
+        "anchor_label": "Jiyoon Kim",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-82a198232984bae3",
+      "person_name": "Jiyoon Kim",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/jiyoon-kim/",
+      "binding_evidence": {
+        "document_id": "writing-f387a0d6c812f6a0feb366ab",
+        "text_sha256": "1f0725c23ca2ef3a0936a491020bf875c5ec9ac2bcc801c21ae9d173f6034f4d",
+        "url": "https://www.fulbright.or.kr/jiyoon-kim/",
+        "line": 53,
+        "exact_quote": "김지윤 (Jiyoon Kim)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/taehoon-kwon/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/10/",
+        "anchor_label": "Taehoon Kwon",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-014c032eacb8c24d",
+      "person_name": "Taehoon Kwon",
+      "cycle": "2016",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/taehoon-kwon/",
+      "binding_evidence": {
+        "document_id": "writing-83c9f10efe61acb0d5946c6b",
+        "text_sha256": "6b539f7479ec3b8544d3987780a95b7d969f0b1739f859ac52cf8234b230af07",
+        "url": "https://www.fulbright.or.kr/taehoon-kwon/",
+        "line": 53,
+        "exact_quote": "권태훈 (Taehoon Kwon)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    },
+    {
+      "url": "https://www.fulbright.or.kr/youngbin-hyeon/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_review",
+      "content_selector": "article .entry-content",
+      "minimum_content_characters": 300,
+      "discovery_basis": "collected_official_grantee_index_to_detail",
+      "discovery": {
+        "parent_url": "https://www.fulbright.or.kr/alumni-stories/gsp/page/10/",
+        "anchor_label": "Youngbin Hyeon",
+        "selector": "article.category-gsp h2.entry-title a[href], a.page-numbers"
+      },
+      "case_id": "focus-fulbright-alumni-c0da8a33cd7cf084",
+      "person_name": "Youngbin Hyeon",
+      "cycle": "2014",
+      "outcome": "selected",
+      "outcome_basis": "official_program_grantee_story",
+      "case_scope": "post_award_experience",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.fulbright.or.kr/youngbin-hyeon/",
+      "binding_evidence": {
+        "document_id": "writing-7f836ffa91748e062d9abcf4",
+        "text_sha256": "d44e8c549b79a097ce7710c96c7069f60476d6d3cb2a2831bb719cbfe2363f25",
+        "url": "https://www.fulbright.or.kr/youngbin-hyeon/",
+        "line": 53,
+        "exact_quote": "현영빈 (Youngbin Hyeon)"
+      },
+      "outcome_phase": "recipient_experience",
+      "cycle_conflicts": [],
+      "cycle_basis": "detail_body_header",
+      "experience_profile": {
+        "material_availability": "post_award_narrative; submitted_application_not_collected",
+        "outcome_basis_detail": "official_program_alumni_category_and_named_detail_story"
+      }
+    }
+  ]
+}

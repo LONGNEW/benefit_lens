@@ -1,0 +1,52 @@
+{
+  "case_document": [
+    {
+      "case_id": "g26w-g1",
+      "document_id": "g26w-hyeon-index-1f9562960047",
+      "program_id": "google-phd-fellowship",
+      "document_role": "application_index",
+      "finality": "not_applicable",
+      "binding_evidence_id": "g26w-g1-link"
+    },
+    {
+      "case_id": "g26w-g1",
+      "document_id": "g26w-hyeon-essay-ddd4094777d6",
+      "program_id": "google-phd-fellowship",
+      "document_role": "application_statement",
+      "finality": "unknown",
+      "binding_evidence_id": "g26w-g1-link"
+    },
+    {
+      "case_id": "g26w-g1",
+      "document_id": "g26w-google-recipients-eed7268fdcc3",
+      "program_id": "google-phd-fellowship",
+      "document_role": "outcome_record",
+      "finality": "not_applicable",
+      "binding_evidence_id": "g26w-g1-result"
+    },
+    {
+      "case_id": "g26w-g4",
+      "document_id": "g26w-morgan-index-b91e324547ec",
+      "program_id": "google-phd-fellowship",
+      "document_role": "application_index",
+      "finality": "not_applicable",
+      "binding_evidence_id": "g26w-g4-link"
+    },
+    {
+      "case_id": "g26w-g4",
+      "document_id": "g26w-morgan-impact-8c17a2169b3d",
+      "program_id": "google-phd-fellowship",
+      "document_role": "application_statement",
+      "finality": "unknown",
+      "binding_evidence_id": "g26w-g4-link"
+    },
+    {
+      "case_id": "g26w-g4",
+      "document_id": "g26w-morgan-leadership-07bb378fa4bc",
+      "program_id": "google-phd-fellowship",
+      "document_role": "application_statement",
+      "finality": "unknown",
+      "binding_evidence_id": "g26w-g4-link"
+    }
+  ]
+}

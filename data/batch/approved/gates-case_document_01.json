@@ -1,0 +1,36 @@
+{
+  "case_document": [
+    {
+      "case_id": "gc26w-c1",
+      "document_id": "gc26w-sampurna-essay-3016c6cfdd33",
+      "program_id": "gates-cambridge",
+      "document_role": "application_statement",
+      "finality": "unknown",
+      "binding_evidence_id": "gc26w-c1-bind"
+    },
+    {
+      "case_id": "gc26w-c1",
+      "document_id": "gc26w-sampurna-review-8c7aa3064e36",
+      "program_id": "gates-cambridge",
+      "document_role": "reflection",
+      "finality": "not_applicable",
+      "binding_evidence_id": "gc26w-c1-bind"
+    },
+    {
+      "case_id": "gc26w-c2",
+      "document_id": "gc26w-naveen-essay-d5cd02be08a1",
+      "program_id": "gates-cambridge",
+      "document_role": "application_statement",
+      "finality": "unknown",
+      "binding_evidence_id": "gc26w-c2-result"
+    },
+    {
+      "case_id": "gc26w-c2",
+      "document_id": "gc26w-naveen-review-de75834e80d8",
+      "program_id": "gates-cambridge",
+      "document_role": "reflection",
+      "finality": "not_applicable",
+      "binding_evidence_id": "gc26w-c2-result"
+    }
+  ]
+}

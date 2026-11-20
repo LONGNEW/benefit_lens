@@ -1,0 +1,80 @@
+{
+  "rows_by_table": {
+    "program": 5,
+    "opportunity_round": 5,
+    "source_document": 5,
+    "evidence": 36,
+    "claim": 35,
+    "claim_evidence": 46,
+    "experience_case": 0,
+    "case_document": 0,
+    "writing_pattern": 0,
+    "pattern_evidence": 0
+  },
+  "verified": [
+    {
+      "opportunity_id": "cern-744000159629244",
+      "native_id": "744000159629244",
+      "ref": "STAG 2027 DS",
+      "posting_url": "https://jobs.smartrecruiters.com/CERN/744000159629244-short-term-internship-2027-data-science-ai-analytics",
+      "apply_url": "https://jobs.smartrecruiters.com/CERN/744000159629244-short-term-internship-2027-data-science-ai-analytics?oga=true",
+      "deadline": "2027-11-01",
+      "fetched_at": "2026-11-08T17:54:30.249679+00:00",
+      "student_evidence_id": "cern-744000159629244-student",
+      "document_id": "cern-744000159629244-1489bcbcd78d"
+    },
+    {
+      "opportunity_id": "cern-744000159634239",
+      "native_id": "744000159634239",
+      "ref": "STAG 2027 IT",
+      "posting_url": "https://jobs.smartrecruiters.com/CERN/744000159634239-short-term-internship-2027-information-technologies",
+      "apply_url": "https://jobs.smartrecruiters.com/CERN/744000159634239-short-term-internship-2027-information-technologies?oga=true",
+      "deadline": "2027-11-01",
+      "fetched_at": "2026-11-08T17:54:30.250221+00:00",
+      "student_evidence_id": "cern-744000159634239-student",
+      "document_id": "cern-744000159634239-6a7bbc252e44"
+    },
+    {
+      "opportunity_id": "cern-744000159422712",
+      "native_id": "744000159422712",
+      "ref": "STAG 2027 AP",
+      "posting_url": "https://jobs.smartrecruiters.com/CERN/744000159422712-short-term-internship-2027-applied-physics",
+      "apply_url": "https://jobs.smartrecruiters.com/CERN/744000159422712-short-term-internship-2027-applied-physics?oga=true",
+      "deadline": "2027-11-01",
+      "fetched_at": "2026-11-08T17:54:30.659174+00:00",
+      "student_evidence_id": "cern-744000159422712-student",
+      "document_id": "cern-744000159422712-adb45c5db8e7"
+    },
+    {
+      "opportunity_id": "cern-744000159603499",
+      "native_id": "744000159603499",
+      "ref": "SUMM-2027",
+      "posting_url": "https://jobs.smartrecruiters.com/CERN/744000159603499-cern-summer-student-programme-2027-member-and-non-member-state-",
+      "apply_url": "https://jobs.smartrecruiters.com/CERN/744000159603499-cern-summer-student-programme-2027-member-and-non-member-state-?oga=true",
+      "deadline": "2027-01-21",
+      "fetched_at": "2026-11-08T17:54:30.747688+00:00",
+      "student_evidence_id": "cern-744000159603499-student",
+      "document_id": "cern-744000159603499-f67dafe97a35"
+    },
+    {
+      "opportunity_id": "cern-744000159596524",
+      "native_id": "744000159596524",
+      "ref": "SUM-OPENLAB-2027",
+      "posting_url": "https://jobs.smartrecruiters.com/CERN/744000159596524-cern-openlab-summer-student-programme-2027",
+      "apply_url": "https://jobs.smartrecruiters.com/CERN/744000159596524-cern-openlab-summer-student-programme-2027?oga=true",
+      "deadline": "2027-01-21",
+      "fetched_at": "2026-11-08T17:54:31.061802+00:00",
+      "student_evidence_id": "cern-744000159596524-student",
+      "document_id": "cern-744000159596524-ff2edfcc2400"
+    }
+  ],
+  "words_by_document": {
+    "cern-744000159629244-1489bcbcd78d": 13,
+    "cern-744000159634239-6a7bbc252e44": 13,
+    "cern-744000159422712-adb45c5db8e7": 13,
+    "cern-744000159603499-f67dafe97a35": 15,
+    "cern-744000159596524-ff2edfcc2400": 11
+  },
+  "projection": "JSON metadata values and HTML job-ad text extraction; projected field labels identify source fields",
+  "writing_pattern_policy": "No experience case or writing pattern generated"
+}

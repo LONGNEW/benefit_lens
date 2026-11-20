@@ -1,0 +1,190 @@
+{
+  "claim": [
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "claim_id": "wcfia27-deadline",
+      "kind": "schedule",
+      "field": "deadline",
+      "at": null,
+      "value": {
+        "date": "2027-02-22",
+        "opening_status": "unverified"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "claim_id": "wcfia27-funding",
+      "kind": "benefit",
+      "field": "dissertation_writing_grant",
+      "at": "award",
+      "value": {
+        "currency": "USD",
+        "amount": 21650,
+        "amount_kind": "approximate",
+        "period": "one_semester",
+        "recipient": "individual_doctoral_student"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "claim_id": "wcfia27-stage",
+      "kind": "eligibility",
+      "field": "doctoral_dissertation_stage",
+      "at": "application",
+      "value": {
+        "institution": "Harvard University",
+        "degree": "phd",
+        "stage": "writing_before_completion_year",
+        "advanced_g4_may_be_considered": true
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "claim_id": "wcfia27-stacking",
+      "kind": "eligibility",
+      "field": "other_term_time_grants",
+      "at": "award",
+      "value": {
+        "same_semester_cofunding_allowed": false
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "claim_id": "wcfia27-route",
+      "kind": "submission",
+      "field": "application_and_recommendations",
+      "at": "application",
+      "value": {
+        "application_portal": "https://carat.fas.harvard.edu",
+        "recommendation_submitter": "recommender",
+        "internal_form_unverified": true
+      },
+      "review_state": "reviewed"
+    }
+  ],
+  "claim_evidence": [
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "claim_id": "wcfia27-deadline",
+      "evidence_id": "wcfia27-deadline-evidence"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "claim_id": "wcfia27-funding",
+      "evidence_id": "wcfia27-funding-evidence"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "claim_id": "wcfia27-stage",
+      "evidence_id": "wcfia27-stage-evidence"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "claim_id": "wcfia27-stacking",
+      "evidence_id": "wcfia27-stacking-evidence"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "claim_id": "wcfia27-route",
+      "evidence_id": "wcfia27-route-evidence"
+    }
+  ],
+  "evidence": [
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "evidence_id": "wcfia27-deadline-evidence",
+      "document_id": "wcfia27-notice-3c0c2f20bd8ad2",
+      "source_role": "official_notice",
+      "locator": "L69-L70",
+      "quote": "February 22, 2027"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "evidence_id": "wcfia27-funding-evidence",
+      "document_id": "wcfia27-notice-3c0c2f20bd8ad2",
+      "source_role": "official_notice",
+      "locator": "L57-L58",
+      "quote": "approximately $21,650"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "evidence_id": "wcfia27-stage-evidence",
+      "document_id": "wcfia27-notice-3c0c2f20bd8ad2",
+      "source_role": "official_notice",
+      "locator": "L55-L60",
+      "quote": "writing stage of their dissertation"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "evidence_id": "wcfia27-stacking-evidence",
+      "document_id": "wcfia27-notice-3c0c2f20bd8ad2",
+      "source_role": "official_notice",
+      "locator": "L61-L62",
+      "quote": "other term-time grants"
+    },
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "evidence_id": "wcfia27-route-evidence",
+      "document_id": "wcfia27-notice-3c0c2f20bd8ad2",
+      "source_role": "official_notice",
+      "locator": "L63-L68",
+      "quote": "Recommenders must upload"
+    }
+  ],
+  "opportunity_round": [
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "round_id": "2027-deadline",
+      "opportunity_id": "harvard-wcfia-dissertation-writing-2027-deadline",
+      "notice_version": "batch-2026-11-09-v1",
+      "status": "unknown",
+      "official_url": "https://www.wcfia.harvard.edu/funding/student/dissertation-writing-grants",
+      "application_url": "https://carat.fas.harvard.edu",
+      "opens_on": null,
+      "closes_on": "2027-02-22",
+      "announces_on": null,
+      "checked_on": "2026-11-09"
+    }
+  ],
+  "program": [
+    {
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "title": "Weatherhead Center Dissertation Writing Grants",
+      "issuer": "Harvard University",
+      "opportunity_type": "other"
+    }
+  ],
+  "source_document": [
+    {
+      "document_id": "wcfia27-notice-3c0c2f20bd8ad2",
+      "title": "Weatherhead Center Dissertation Writing Grants",
+      "url": "https://www.wcfia.harvard.edu/funding/student/dissertation-writing-grants",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:38:43.289397+00:00",
+      "raw_sha256": "3c0c2f20bd8ad2ebb286033c51984bda0efcee4039eb2594713b7f8bdf659e7c",
+      "text_sha256": "68bd7cc75172690dafa021b9ea607ebd2ece2fd5b487641901a5d057be1fcf6a",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/3c0c2f20bd8ad2ebb286033c51984bda0efcee4039eb2594713b7f8bdf659e7c.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/68bd7cc75172690dafa021b9ea607ebd2ece2fd5b487641901a5d057be1fcf6a.txt"
+    }
+  ]
+}

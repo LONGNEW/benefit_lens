@@ -1,0 +1,182 @@
+{
+  "body": {
+    "why": "공식 안내의 비전과 진행 상황에 각각 답하고, 결과가 남긴 질문으로 다음 계획을 연결한다. 보관된 공개문에서 연구 목표와 프로젝트, 후속 연구의 연결을 관찰했다.",
+    "slots": [
+      {
+        "needs": [
+          "구체적 연구 질문",
+          "왜 이 질문을 다루는지"
+        ],
+        "slot_id": "vision"
+      },
+      {
+        "needs": [
+          "같은 경험에서 확인한 본인 행동",
+          "같은 조건의 비교 기준과 관측 결과"
+        ],
+        "slot_id": "progress"
+      },
+      {
+        "needs": [
+          "현재 결과의 한계",
+          "계획한 다음 실험"
+        ],
+        "slot_id": "next_test"
+      },
+      {
+        "needs": [
+          "확인된 졸업 후 방향"
+        ],
+        "slot_id": "long_term",
+        "omit_or_ask_if_missing": true
+      }
+    ],
+    "title": "문제에서 본인 기여와 다음 검증으로",
+    "decision": "adopted_for_this_delivery",
+    "question": "그 수치의 비교 대상과 같은 조건은 무엇이고, 남은 한계를 확인하려면 다음에 무엇을 바꿔 측정하나요?",
+    "scope_limit": "현재 안내와 기능이 맞는 설명 구조만 사용한다. 과거 공개문이 당시 최종 제출본인지, 당시 문항이 지금과 같았는지는 확인되지 않았다.",
+    "structure_choices": [
+      "문제 먼저: 한 경험의 병목, 내 역할, 비교 결과, 다음 검증",
+      "공통 목표 먼저: 관련 프로젝트가 여럿이면 공통 질문과 각각의 역할 및 증거를 묶고 다음 검증으로 연결"
+    ],
+    "observed_source_differences": "N1은 문제와 기술 병목에서 시작한다. N2는 연구 이력을 소개하고 공통 목표 아래 여러 프로젝트를 놓는다. N3는 문제와 연구 방향을 밝히고 기존 성과와 계획을 나눈다."
+  },
+  "evidence": [
+    {
+      "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+      "quote": "future work to generalize",
+      "case_id": "N1",
+      "locator": "L66-L84",
+      "purpose": "case_observation",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "evidence_id": "N1-NEXT-WORK",
+      "source_role": "application_statement",
+      "text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "nvidia-graduate-fellowship"
+    },
+    {
+      "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+      "quote": "close this gap in performance accessibility.",
+      "case_id": "N1",
+      "locator": "L6-L12",
+      "purpose": "case_observation",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "evidence_id": "N1-RESEARCH-VISION",
+      "source_role": "application_statement",
+      "text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "nvidia-graduate-fellowship"
+    },
+    {
+      "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+      "quote": "competitive with kernels in hand-tuned systems",
+      "case_id": "N1",
+      "locator": "L39-L48",
+      "purpose": "case_observation",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "evidence_id": "N1-RESULT-COMPARE",
+      "source_role": "application_statement",
+      "text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "nvidia-graduate-fellowship"
+    },
+    {
+      "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+      "quote": "Below I would briefly discuss my highlighted work to achieve this goal:",
+      "case_id": "N2",
+      "locator": "L14-L21",
+      "purpose": "case_observation",
+      "document_id": "N2-STATEMENT-d1cc2f892c3b",
+      "evidence_id": "N2-GOAL-TO-PROJECTS",
+      "source_role": "application_statement",
+      "text_sha256": "4bac610f3574b02c61dc64992f4947682c6bf2579eee4dfbbf0c0fc494262dc3",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "nvidia-graduate-fellowship"
+    },
+    {
+      "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+      "quote": "we plan to probe",
+      "case_id": "N3",
+      "locator": "L40-L47",
+      "purpose": "case_observation",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "evidence_id": "N3-NEXT-PROBE",
+      "source_role": "application_statement",
+      "text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "nvidia-graduate-fellowship"
+    },
+    {
+      "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+      "quote": "We\nalso introduced a novel metric",
+      "case_id": "N3",
+      "locator": "L33-L39",
+      "purpose": "case_observation",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "evidence_id": "N3-OBSERVED-METRIC",
+      "source_role": "application_statement",
+      "text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "nvidia-graduate-fellowship"
+    },
+    {
+      "url": "https://research.nvidia.com/graduate-fellowships",
+      "quote": "plus a bibliography",
+      "case_id": null,
+      "locator": "L130-L131",
+      "purpose": "official_constraint",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "evidence_id": "OFFICIAL-FORMAT",
+      "source_role": "official_guideline",
+      "text_sha256": "04b9b9d2edc87d2f702e3890175d82ee8e455aafbb13567b0e3cb8d81f9d435e",
+      "capture_mode": "full_document",
+      "source_round_id": "2027-2028",
+      "source_program_id": "nvidia-graduate-fellowship"
+    },
+    {
+      "url": "https://research.nvidia.com/graduate-fellowships",
+      "quote": "Show your progress",
+      "case_id": null,
+      "locator": "L157-L158",
+      "purpose": "official_guidance",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "evidence_id": "OFFICIAL-PROGRESS",
+      "source_role": "official_guideline",
+      "text_sha256": "04b9b9d2edc87d2f702e3890175d82ee8e455aafbb13567b0e3cb8d81f9d435e",
+      "capture_mode": "full_document",
+      "source_round_id": "2027-2028",
+      "source_program_id": "nvidia-graduate-fellowship"
+    },
+    {
+      "url": "https://research.nvidia.com/graduate-fellowships",
+      "quote": "Describe your vision",
+      "case_id": null,
+      "locator": "L153-L154",
+      "purpose": "official_guidance",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "evidence_id": "OFFICIAL-VISION",
+      "source_role": "official_guideline",
+      "text_sha256": "04b9b9d2edc87d2f702e3890175d82ee8e455aafbb13567b0e3cb8d81f9d435e",
+      "capture_mode": "full_document",
+      "source_round_id": "2027-2028",
+      "source_program_id": "nvidia-graduate-fellowship"
+    }
+  ],
+  "pattern_id": "NV27-RP-ARC",
+  "program_id": "nvidia-graduate-fellowship",
+  "pattern_kind": "structure",
+  "scope_status": "historical_transfer",
+  "target_field": "research_proposal",
+  "notice_version": "nvidia-2027-2028-v1",
+  "opportunity_id": "nvidia-2027-2028",
+  "target_claim_id": "nv27-research-proposal",
+  "target_round_id": "2027-2028",
+  "causal_success_claim": false
+}

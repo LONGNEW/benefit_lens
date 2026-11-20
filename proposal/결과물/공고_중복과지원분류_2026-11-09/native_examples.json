@@ -1,0 +1,155 @@
+[
+  {
+    "source": {
+      "source_family": "workday_public_cxs",
+      "native_id": "JR00019587",
+      "id": "abb:JR00019587",
+      "title": "Spring Intern",
+      "official_url": "https://abb.wd3.myworkdayjobs.com/External_Career_Page/job/Arecibo-Puerto-Rico/Spring-Intern_JR00019587-1",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/root/workday_extra/phase1/raw/3d64ca6fbc3ea69d4cb210bb62c37b568415934f2ac02bbbd9fd1252deef07ac.json",
+      "raw_sha256": "3d64ca6fbc3ea69d4cb210bb62c37b568415934f2ac02bbbd9fd1252deef07ac",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/root/workday_extra/normalized_text/abb-JR00019587-53b989fda1d402a3.txt",
+      "text_sha256": "53b989fda1d402a39cf7dbde9b9843520094d8b4edacada770048314b3decc20"
+    },
+    "native_fields": [
+      {
+        "json_pointer": "/jobPostingInfo/country/descriptor",
+        "value": "Puerto Rico",
+        "verification": "raw_field_confirmed_not_common_normalized"
+      },
+      {
+        "json_pointer": "/jobPostingInfo/jobRequisitionLocation/country/alpha2Code",
+        "value": "US",
+        "verification": "raw_field_confirmed_not_common_normalized"
+      },
+      {
+        "json_pointer": "/hiringOrganization/name",
+        "value": "PRICS Industrial C&S of P.R. LLC",
+        "verification": "raw_field_confirmed_not_common_normalized"
+      }
+    ],
+    "meaning_limit": "Work-location country fields differ in territory representation. Neither identifies issuer headquarters or applicant nationality."
+  },
+  {
+    "source": {
+      "source_family": "BoschGroup/SmartRecruiters",
+      "native_id": null,
+      "id": "744000158469434",
+      "title": "Undergraduate Placement Year 2027 – Design Intern in R&D",
+      "official_url": "https://jobs.smartrecruiters.com/BoschGroup/744000158469434-undergraduate-placement-year-2027-design-intern-in-r-d",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/bosch/details/744000158469434.json",
+      "raw_sha256": "c2d7fce2ef5757870f4220d828ee15d4b00f21e826bc20e132f5193983c904e9",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/bosch/normalized_text/744000158469434.txt",
+      "text_sha256": "f4a53b8d0b481cc4ffc032e4bd023e23237528310697f26838b3f6c280183afb"
+    },
+    "native_fields": [
+      {
+        "json_pointer": "/location/country",
+        "value": "gb",
+        "verification": "raw_field_confirmed_not_common_normalized"
+      },
+      {
+        "json_pointer": "/experienceLevel/id",
+        "value": "internship",
+        "verification": "raw_field_confirmed_not_common_normalized"
+      },
+      {
+        "json_pointer": "/typeOfEmployment/id",
+        "value": "permanent",
+        "verification": "raw_field_confirmed_not_common_normalized"
+      },
+      {
+        "json_pointer": "/typeOfEmployment/label",
+        "value": "Full-time",
+        "verification": "raw_field_confirmed_not_common_normalized"
+      }
+    ],
+    "meaning_limit": "Internship level coexists with code permanent and label Full-time. Contract duration, schedule and opportunity form need separate mapping."
+  },
+  {
+    "source": {
+      "source_family": "SchneiderElectric/Jibe",
+      "native_id": null,
+      "id": "132773",
+      "title": "Field Engineer Intern",
+      "official_url": "https://careers.se.com/jobs/132773?lang=en-us",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/phase2/schneider/details/132773.json",
+      "raw_sha256": "5295d88eb36f7c8c5ff911f8777ee08cd994bf58ebf40db09847b765842f167c",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/phase2/schneider/text/132773-a0850410136a7006.txt",
+      "text_sha256": "a0850410136a7006e55eed688897dca3207a3715d8bf8cf3cb3453597289f99f"
+    },
+    "native_fields": [
+      {
+        "json_pointer": "/country",
+        "value": "United States",
+        "verification": "raw_field_confirmed_not_common_normalized"
+      },
+      {
+        "json_pointer": "/country_code",
+        "value": "US",
+        "verification": "raw_field_confirmed_not_common_normalized"
+      },
+      {
+        "json_pointer": "/benefits",
+        "value": [],
+        "verification": "raw_field_confirmed_not_common_normalized"
+      }
+    ],
+    "meaning_limit": "Job-location code exists. An empty ATS benefits array does not establish that no financial benefit is offered."
+  },
+  {
+    "source": {
+      "source_family": "CERN",
+      "native_id": null,
+      "id": "744000159422712",
+      "title": "Short Term Internship 2027 - Applied Physics",
+      "official_url": "https://jobs.smartrecruiters.com/CERN/744000159422712-short-term-internship-2027-applied-physics",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/live-students-20261109/quality/cern-744000159422712.json",
+      "raw_sha256": "adb45c5db8e731007424764fca5de6b76147cc40f4e762d5e7cc8491bc06420c",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/live-students-20261109/quality/cern-744000159422712.txt",
+      "text_sha256": "0edfc169281df85ce5ea111152aaf58038d6d0a327f743d22bf7a1bfc6c8ba97"
+    },
+    "native_fields": [
+      {
+        "json_pointer": "/location/country",
+        "value": "ch",
+        "verification": "raw_field_confirmed_not_common_normalized"
+      }
+    ],
+    "meaning_limit": "Work country is separate from CERN Member State eligibility. Allowance and nationality are inside /jobAd/sections/additionalInformation/text.",
+    "text_evidence": [
+      {
+        "quote": "A monthly allowance of 1,593 Swiss Francs.",
+        "locator": "L36",
+        "raw_json_pointer": "/jobAd/sections/additionalInformation/text"
+      },
+      {
+        "quote": "You are a national of a\nCERN Member State or Associate Member State\n. Currently, we cannot consider applications from Pakistani, Lithuanian, Latvian, Cypriot, Croatian and Turkish nationals, as the ceiling defined under Article II.5 of the Associate Membership Agreement has been reached.",
+        "locator": "L39-L41",
+        "raw_json_pointer": "/jobAd/sections/additionalInformation/text"
+      }
+    ]
+  },
+  {
+    "source": {
+      "source_family": "workday_public_cxs",
+      "native_id": "R0011287",
+      "id": "berklee:R0011287",
+      "title": "BCB Performance Library Graduate Assistant",
+      "official_url": "https://berklee.wd1.myworkdayjobs.com/BerkleeStudentEmployment/job/Boston/BCB-Performance-Library-Graduate-Assistant_R0011287-1",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/schema/university1/raw/5c70b7d99dd6dd948d4bdb350bfca108c328a3b40d32247f01b6ad803401a7a6.json",
+      "raw_sha256": "5c70b7d99dd6dd948d4bdb350bfca108c328a3b40d32247f01b6ad803401a7a6",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/schema/university1/text/berklee-R0011287-2cfdb90803ea.txt",
+      "text_sha256": "2cfdb90803ea3f555f30ff295d2fece0d63053e6ae738f7af4d23d4531c6d05d"
+    },
+    "native_fields": [],
+    "meaning_limit": "Explicit paid-employment evidence is stored, but salary amount, currency and hourly unit have not been populated as common fields.",
+    "text_evidence": [
+      {
+        "quote": "Hourly Rate: $19.57",
+        "locator": "L58",
+        "raw_json_pointer": "/jobPostingInfo/jobDescription"
+      }
+    ]
+  }
+]

@@ -1,0 +1,88 @@
+{
+  "source_document": [
+    {
+      "document_id": "g26w-google-official-17fcd780d172",
+      "title": "Google PhD Fellowship 2026 공식 공고",
+      "url": "https://research.google/programs-and-events/phd-fellowship/",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-14T17:44:02.513373+00:00",
+      "raw_sha256": "17fcd780d172cd1e028e744ec417b5bc39eeaff9ae2c8803923a8fc15761815e",
+      "text_sha256": "9905fc9c5da269239ba0726a473d51034e75e77e182680eb7fd1dcdec4f7b5bd",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/17fcd780d172cd1e028e744ec417b5bc39eeaff9ae2c8803923a8fc15761815e.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/9905fc9c5da269239ba0726a473d51034e75e77e182680eb7fd1dcdec4f7b5bd.txt"
+    },
+    {
+      "document_id": "g26w-google-recipients-eed7268fdcc3",
+      "title": "Google PhD Fellowship 공식 수혜자 명단",
+      "url": "https://research.google/programs-and-events/phd-fellowship/recipients/",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-14T17:44:03.281472+00:00",
+      "raw_sha256": "eed7268fdcc3c7a6bdd40ed5b5b13dbd31e3e1650a9c37ce94d9eb76bdae3b43",
+      "text_sha256": "263d43d2f984b8aa07704dfa4e8d1c322b748a722ac76f74792345318b7345d6",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/eed7268fdcc3c7a6bdd40ed5b5b13dbd31e3e1650a9c37ce94d9eb76bdae3b43.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/263d43d2f984b8aa07704dfa4e8d1c322b748a722ac76f74792345318b7345d6.txt"
+    },
+    {
+      "document_id": "g26w-hyeon-index-1f9562960047",
+      "title": "G1 공개 지원자료 색인",
+      "url": "https://hyeonword.com/google_fellowship_materials/",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-14T17:44:03.087026+00:00",
+      "raw_sha256": "1f9562960047568fe487cb4e82d9a1c7ba26686f3970b6b87b2fca8c3c1e5d8c",
+      "text_sha256": "87e3280441f21b48e77b6810bdf39b3e4b80e68bdbcdc77e0c69c51ac5f1c282",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/1f9562960047568fe487cb4e82d9a1c7ba26686f3970b6b87b2fca8c3c1e5d8c.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/87e3280441f21b48e77b6810bdf39b3e4b80e68bdbcdc77e0c69c51ac5f1c282.txt"
+    },
+    {
+      "document_id": "g26w-hyeon-essay-ddd4094777d6",
+      "title": "G1 영향과 리더십 공개 지원문",
+      "url": "https://hyeonword.com/google_fellowship_materials/assets/essay_hj_googlefellowship.pdf",
+      "kind": "pdf",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-14T17:44:03.175528+00:00",
+      "raw_sha256": "ddd4094777d61fa609a4744c26f378d0a3af78afa2afade0b5f36fe93f7b6fd0",
+      "text_sha256": "86137fed1534db3245b92aeb34be65cb50ceda25d3165a093403a1d33165b74d",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/ddd4094777d61fa609a4744c26f378d0a3af78afa2afade0b5f36fe93f7b6fd0.pdf",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/86137fed1534db3245b92aeb34be65cb50ceda25d3165a093403a1d33165b74d.txt"
+    },
+    {
+      "document_id": "g26w-morgan-index-b91e324547ec",
+      "title": "G4 공개 펠로우십 자료 색인",
+      "url": "https://www.morgan-klaus.com/fellowships.html",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-14T17:44:04.531144+00:00",
+      "raw_sha256": "b91e324547ec01a2dc9b907d26f86fb1ad36efd91cd8442c8abdf80fdf5d317a",
+      "text_sha256": "bb946fdb44630911ff7f6078f5cc60574e919f0c166fa3b137b5e2e23eac5a4d",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/b91e324547ec01a2dc9b907d26f86fb1ad36efd91cd8442c8abdf80fdf5d317a.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/bb946fdb44630911ff7f6078f5cc60574e919f0c166fa3b137b5e2e23eac5a4d.txt"
+    },
+    {
+      "document_id": "g26w-morgan-impact-8c17a2169b3d",
+      "title": "G4 공개 Impact Statement",
+      "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_ImpactStatement.pdf",
+      "kind": "pdf",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-14T17:44:04.553977+00:00",
+      "raw_sha256": "8c17a2169b3d11d95fd33e88636b406dd515d3daab067e0c2097082c5648825e",
+      "text_sha256": "05ad396d11c9249873d64ce7ba30f07f3d70a6b22406f0dbf64ab63dce3c1be6",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/8c17a2169b3d11d95fd33e88636b406dd515d3daab067e0c2097082c5648825e.pdf",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/05ad396d11c9249873d64ce7ba30f07f3d70a6b22406f0dbf64ab63dce3c1be6.txt"
+    },
+    {
+      "document_id": "g26w-morgan-leadership-07bb378fa4bc",
+      "title": "G4 공개 Leadership Statement",
+      "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_LeadershipStatement.pdf",
+      "kind": "pdf",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-14T17:44:04.729377+00:00",
+      "raw_sha256": "07bb378fa4bcbe9e97ecb0ba4220b3b0b229b5c0d064529b0f73205f334668ca",
+      "text_sha256": "e3667c5bef53d4fc0857d798d4610376622860d4f290ac8a407a0164f762b041",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/07bb378fa4bcbe9e97ecb0ba4220b3b0b229b5c0d064529b0f73205f334668ca.pdf",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/e3667c5bef53d4fc0857d798d4610376622860d4f290ac8a407a0164f762b041.txt"
+    }
+  ]
+}

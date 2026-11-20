@@ -1,0 +1,124 @@
+{
+  "scope": "synthetic_contract_validation_only",
+  "external_search_executed": false,
+  "model_calls": 0,
+  "db_writes": 0,
+  "runtime_integration": false,
+  "cases": 15,
+  "passed": 15,
+  "results": [
+    {
+      "case": "synthetic_valid_plan",
+      "expected_accept": true,
+      "actual_accept": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case": "inferred_fact_final_use",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "False was expected"
+    },
+    {
+      "case": "conflicted_fact_final_use",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "False was expected"
+    },
+    {
+      "case": "causal_selection_claim",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "False was expected"
+    },
+    {
+      "case": "official_form_without_url",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "None is not of type 'string'"
+    },
+    {
+      "case": "unknown_evidence",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "Unknown reference: missing-evidence"
+    },
+    {
+      "case": "wrong_or_ambiguous_person",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "Accepted applicant fact has an unconfirmed subject"
+    },
+    {
+      "case": "reference_case_as_own_fact",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "Accepted applicant fact has an unconfirmed subject"
+    },
+    {
+      "case": "unknown_parent_fact",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "Unknown reference: missing-fact"
+    },
+    {
+      "case": "wrong_opportunity_document",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "Official evidence belongs to another opportunity or role"
+    },
+    {
+      "case": "candidate_fact_in_draft",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "Unaccepted fact used in draft"
+    },
+    {
+      "case": "merit_as_eligibility",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "Assessment axis does not match requirement kind"
+    },
+    {
+      "case": "accepted_null_fact",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "None should not be valid under {'enum': [None, '']}"
+    },
+    {
+      "case": "historical_fact_as_current",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "Applicant fact and requirement use different times"
+    },
+    {
+      "case": "ambiguous_requirement_as_settled",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true,
+      "error": "Unreviewed requirement used for settled assessment"
+    }
+  ],
+  "not_tested": [
+    "source authenticity",
+    "real same-person matching",
+    "semantic extraction accuracy",
+    "evidence entailment",
+    "actual application eligibility",
+    "draft usefulness"
+  ]
+}

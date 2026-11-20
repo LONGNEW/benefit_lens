@@ -53,6 +53,8 @@ def main(argv: list[str] | None = None) -> int:
         db.migrate(args.migration)
         result: object = {"status": "migrated", "migration": str(args.migration)}
     elif args.command == "collect-benefitlens":
+        from .demo_scope import require_collection_enabled
+        require_collection_enabled()
         result = collect(
             args.config,
             set(args.source) if args.source else None,

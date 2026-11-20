@@ -1,0 +1,161 @@
+{
+  "version": "university-archives-v2",
+  "counting_unit": "original_document_not_independent_person_or_episode",
+  "scope": "Public official archives, observed links only, policy checked per request",
+  "sources": [
+    {
+      "id": "hamburg-wiso-reports-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.wiso.uni-hamburg.de"],
+      "domain_suffixes": ["wiso.uni-hamburg.de"],
+      "institution": "Universitaet Hamburg WISO",
+      "official_publisher": true,
+      "max_depth": 1,
+      "follow_link_pattern": "erfahrungsberichte\\.html$",
+      "attachment_include_pattern": "erfahrungsberichte/berichte/",
+      "seeds": [{"kind": "index", "url": "https://www.wiso.uni-hamburg.de/internationales/international-office/auslandsstudium/rund-ums-auslandsstudium/erfahrungsberichte.html"}]
+    },
+    {
+      "id": "hamburg-central-reports-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.uni-hamburg.de"],
+      "domain_suffixes": ["uni-hamburg.de"],
+      "institution": "Universitaet Hamburg",
+      "official_publisher": true,
+      "max_depth": 3,
+      "follow_link_pattern": "auslandsberichte|erfahrungsberichte",
+      "attachment_include_pattern": "auslandsberichte|erfahrungsbericht",
+      "seeds": [{"kind": "index", "url": "https://www.uni-hamburg.de/internationales/studierende/outgoing/austausch-gaststudium/zentralaustausch.html"}]
+    },
+    {
+      "id": "hamburg-geography-reports-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.geo.uni-hamburg.de"],
+      "domain_suffixes": ["geo.uni-hamburg.de"],
+      "institution": "Universitaet Hamburg Geography",
+      "official_publisher": true,
+      "max_depth": 2,
+      "seeds": [{"kind": "index", "url": "https://www.geo.uni-hamburg.de/geographie/studium/auslandsaufenthalt/europaeische-hochschulen/erfahrungsberichte.html"}]
+    },
+    {
+      "id": "bremen-central-reports-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.uni-bremen.de"],
+      "domain_suffixes": ["uni-bremen.de"],
+      "institution": "Universitaet Bremen",
+      "official_publisher": true,
+      "max_depth": 3,
+      "follow_link_pattern": "erfahrungsberichte|[Bb]erichte_",
+      "seeds": [{"kind": "index", "url": "https://www.uni-bremen.de/studium/starten-studieren/studium-international/studieren-im-ausland/erasmus-studienaufenthalt/erfahrungsberichte"}]
+    },
+    {
+      "id": "bremen-law-reports-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.uni-bremen.de"],
+      "domain_suffixes": ["uni-bremen.de"],
+      "institution": "Universitaet Bremen Law",
+      "official_publisher": true,
+      "max_depth": 2,
+      "follow_link_pattern": "erfahrungsberichte|erfahrungsbericht",
+      "seeds": [{"kind": "index", "url": "https://www.uni-bremen.de/jura/fachbereich-6-rechtswissenschaft/international/studierende-outgoings/erfahrungsberichte"}]
+    },
+    {
+      "id": "bremen-history-reports-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.uni-bremen.de"],
+      "domain_suffixes": ["uni-bremen.de"],
+      "institution": "Universitaet Bremen History",
+      "official_publisher": true,
+      "max_depth": 2,
+      "seeds": [{"kind": "index", "url": "https://www.uni-bremen.de/institut-fuer-geschichtswissenschaft/studium/auslandsstudium/erfahrungsberichte"}]
+    },
+    {
+      "id": "potsdam-study-reports-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.uni-potsdam.de"],
+      "domain_suffixes": ["uni-potsdam.de"],
+      "institution": "Universitaet Potsdam",
+      "official_publisher": true,
+      "max_depth": 4,
+      "follow_link_pattern": "stories-of-exchange|erfahrungsbericht",
+      "article_pattern": "/stories-of-exchange-studium/[^/]+/[^/?]+",
+      "article_content_selector": "#main-content, #main, main, #content",
+      "seeds": [{"kind": "index", "url": "https://www.uni-potsdam.de/de/international/outgoing/studium/stories-of-exchange-studium"}]
+    },
+    {
+      "id": "potsdam-teaching-reports-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.uni-potsdam.de"],
+      "domain_suffixes": ["uni-potsdam.de"],
+      "institution": "Universitaet Potsdam ZeLB",
+      "official_publisher": true,
+      "max_depth": 2,
+      "follow_link_pattern": "erfahrungsberichte",
+      "seeds": [{"kind": "index", "url": "https://www.uni-potsdam.de/de/zelb/studium/praktika/erfahrungsberichte"}]
+    },
+    {
+      "id": "jena-worldwide-reports-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.uni-jena.de"],
+      "domain_suffixes": ["uni-jena.de"],
+      "institution": "Friedrich Schiller Universitaet Jena",
+      "official_publisher": true,
+      "max_depth": 4,
+      "follow_link_pattern": "erfahrungsbericht|nordamerika|lateinamerika|australien|asien|afrika",
+      "seeds": [{"kind": "index", "url": "https://www.uni-jena.de/139315/erfahrungsberichte"}]
+    },
+    {
+      "id": "bonn-outgoing-reports-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.uni-bonn.de"],
+      "domain_suffixes": ["uni-bonn.de"],
+      "institution": "Universitaet Bonn",
+      "official_publisher": true,
+      "max_depth": 3,
+      "follow_link_pattern": "erfahrungsbericht",
+      "article_pattern": "/erfahrungsberichte/[^/?]+$",
+      "article_content_selector": "#content-core, article, main",
+      "seeds": [{"kind": "index", "url": "https://www.uni-bonn.de/de/studium/studium-und-praktikum-im-ausland/erfahrungsberichte"}]
+    },
+    {
+      "id": "muenster-stipend-reports-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.uni-muenster.de"],
+      "domain_suffixes": ["uni-muenster.de"],
+      "institution": "Universitaet Muenster",
+      "official_publisher": true,
+      "max_depth": 2,
+      "follow_link_pattern": "erfahrungsbericht",
+      "seeds": [{"kind": "index", "url": "https://www.uni-muenster.de/IPID4all/forum/erfahrungsberichte.html"}]
+    },
+    {
+      "id": "yonsei-mirae-experiences-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["yiec.yonsei.ac.kr"],
+      "domain_suffixes": ["yiec.yonsei.ac.kr"],
+      "institution": "Yonsei University MIRAE",
+      "official_publisher": true,
+      "content_access": "authentication_required",
+      "max_depth": 2,
+      "follow_link_pattern": "exchange02\\.do",
+      "article_pattern": "exchange02\\.do\\?[^#]*articleNo=\\d+",
+      "article_content_selector": ".b-content-box, .board-content, .b-view-box",
+      "program_bindings": [{"program_id": "yonsei-mirae-student-exchange", "body_pattern": "교환학생|파견학생|교환\\s*프로그램"}],
+      "seeds": [{"kind": "index", "url": "https://yiec.yonsei.ac.kr/yiec/board/exchange02.do"}]
+    },
+    {
+      "id": "yeungnam-experiences-v2",
+      "adapter": "hierarchical_reports",
+      "allowed_hosts": ["www.yu.ac.kr"],
+      "domain_suffixes": ["yu.ac.kr"],
+      "institution": "Yeungnam University",
+      "official_publisher": true,
+      "max_depth": 2,
+      "follow_link_pattern": "/intl/bulltein/report\\.do",
+      "article_pattern": "/intl/bulltein/report\\.do\\?[^#]*articleNo=\\d+",
+      "article_content_selector": ".b-content-box, .board-content, .b-view-box",
+      "program_bindings": [{"program_id": "yeungnam-student-exchange", "body_pattern": "교환학생|파견학생|교환\\s*프로그램"}],
+      "seeds": [{"kind": "index", "url": "https://www.yu.ac.kr/intl/bulltein/report.do"}]
+    }
+  ]
+}

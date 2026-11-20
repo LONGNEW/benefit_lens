@@ -1,0 +1,118 @@
+[
+  {
+    "source_id": "OFFICIAL",
+    "url": "https://research.nvidia.com/graduate-fellowships",
+    "checked_at": "2026-11-08T16:04:50.453553+00:00",
+    "status": 200,
+    "final_url": "https://research.nvidia.com/graduate-fellowships",
+    "mime": "text/html",
+    "raw_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_delivery_20261109/discovery/raw/OFFICIAL.html",
+    "raw_sha256": "f68d3f6ccbeb84586a1da02dc24b4e67291012a0d2d0fd8c360838d076ddb80f",
+    "bytes": 65658,
+    "kind": "html"
+  },
+  {
+    "source_id": "PORTAL",
+    "url": "https://webportalapp.com/sp/nvidia_grad_fellow_2027",
+    "checked_at": "2026-11-08T16:04:50.453990+00:00",
+    "status": 200,
+    "final_url": "https://webportalapp.com/sp/login/nvidia_grad_fellow_2027",
+    "mime": "text/html",
+    "raw_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_delivery_20261109/discovery/raw/PORTAL.html",
+    "raw_sha256": "40c13232c5c567e3cd09cc4d8a665ca30021f0d15ff69a889672cba3de9878e2",
+    "bytes": 20442,
+    "kind": "html"
+  },
+  {
+    "source_id": "N1-STATEMENT",
+    "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+    "checked_at": "2026-11-08T16:04:50.454363+00:00",
+    "status": 200,
+    "final_url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+    "mime": "application/pdf",
+    "raw_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_delivery_20261109/discovery/raw/N1-STATEMENT.pdf",
+    "raw_sha256": "1292bfba8ff41323fbbddab2328785ecf679dec7562a7fb0fb72723168f7f374",
+    "bytes": 94014,
+    "kind": "pdf"
+  },
+  {
+    "source_id": "N1-INDEX",
+    "url": "https://rohany.github.io/",
+    "checked_at": "2026-11-08T16:04:50.454697+00:00",
+    "status": 200,
+    "final_url": "https://rohany.github.io/",
+    "mime": "text/html",
+    "raw_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_delivery_20261109/discovery/raw/N1-INDEX.html",
+    "raw_sha256": "abd695f019fd9a85e4b64d73e3517682233d477348acc1d0994500e3901c6990",
+    "bytes": 39249,
+    "kind": "html"
+  },
+  {
+    "source_id": "N1-OUTCOME",
+    "url": "https://research.nvidia.com/graduate-fellowships/2023",
+    "checked_at": "2026-11-08T16:04:50.455130+00:00",
+    "status": 200,
+    "final_url": "https://research.nvidia.com/graduate-fellowships/2023",
+    "mime": "text/html",
+    "raw_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_delivery_20261109/discovery/raw/N1-OUTCOME.html",
+    "raw_sha256": "23eb6b58ee64de5ec216e694a93aba3f0e1704ed5e6d6904db8c392e6e9e0641",
+    "bytes": 38965,
+    "kind": "html"
+  },
+  {
+    "source_id": "N2-STATEMENT",
+    "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+    "checked_at": "2026-11-08T16:04:50.775962+00:00",
+    "status": 200,
+    "final_url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+    "mime": "application/pdf",
+    "raw_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_delivery_20261109/discovery/raw/N2-STATEMENT.pdf",
+    "raw_sha256": "d1cc2f892c3bae3931e57e2d9c54e8e14d7d3751bce515b0b659d83184f1bdb0",
+    "bytes": 208014,
+    "kind": "pdf"
+  },
+  {
+    "source_id": "N2-PANEL",
+    "url": "https://students-at-systems.org/pages/events/fellowship-panel.html",
+    "checked_at": "2026-11-08T16:04:50.793902+00:00",
+    "status": 200,
+    "final_url": "https://students-at-systems.org/pages/events/fellowship-panel.html",
+    "mime": "text/html",
+    "raw_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_delivery_20261109/discovery/raw/N2-PANEL.html",
+    "raw_sha256": "651d999ce1040b17ef510c6a17854fa8970152df922a42a844c96bba0758e6a0",
+    "bytes": 17446,
+    "kind": "html"
+  },
+  {
+    "source_id": "N2-OUTCOME",
+    "url": "https://research.nvidia.com/graduate-fellowships/2022",
+    "checked_at": "2026-11-08T16:04:50.972674+00:00",
+    "status": 200,
+    "final_url": "https://research.nvidia.com/graduate-fellowships/2022",
+    "mime": "text/html",
+    "raw_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_delivery_20261109/discovery/raw/N2-OUTCOME.html",
+    "raw_sha256": "714690c58604307bab53e3682afca7b56c69e13892b0ddac54e2328ff68491be",
+    "bytes": 42756,
+    "kind": "html"
+  },
+  {
+    "source_id": "N3-STATEMENT",
+    "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+    "checked_at": "2026-11-08T16:04:51.001333+00:00",
+    "status": 200,
+    "final_url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+    "mime": "application/pdf",
+    "raw_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_delivery_20261109/discovery/raw/N3-STATEMENT.pdf",
+    "raw_sha256": "25ee765293861a712877b28173d0de9c7d997ba0f90af1957fb700e08fb28d18",
+    "bytes": 56166,
+    "kind": "pdf"
+  },
+  {
+    "source_id": "N3-OUTCOME",
+    "url": "https://medium.com/@ruthfong/applying-to-the-open-philanthropy-ai-fellowship-48dafe7fe27c",
+    "checked_at": "2026-11-08T16:04:51.046273+00:00",
+    "status": 403,
+    "final_url": "https://medium.com/@ruthfong/applying-to-the-open-philanthropy-ai-fellowship-48dafe7fe27c",
+    "failure": "http_error"
+  }
+]

@@ -1,0 +1,1155 @@
+{
+  "version": "python-campaign-v1",
+  "target": 50000,
+  "rate_seconds": 2,
+  "daily_request_limit": 10000,
+  "max_response_bytes": 8388608,
+  "max_stored_bytes": 5368709120,
+  "sources": [
+    {
+      "id": "mcgill-student",
+      "adapter": "workday",
+      "tenant": "mcgill",
+      "issuer": "McGill University",
+      "endpoint": "https://mcgill.wd3.myworkdayjobs.com/wday/cxs/mcgill/McGill_Careers",
+      "search": "student",
+      "allowed_hosts": [
+        "mcgill.wd3.myworkdayjobs.com"
+      ]
+    },
+    {
+      "id": "ubc-staff-student",
+      "adapter": "workday",
+      "tenant": "ubc",
+      "issuer": "University of British Columbia",
+      "endpoint": "https://ubc.wd10.myworkdayjobs.com/wday/cxs/ubc/ubcstaffjobs",
+      "search": "student",
+      "allowed_hosts": [
+        "ubc.wd10.myworkdayjobs.com"
+      ]
+    },
+    {
+      "id": "ubc-student",
+      "adapter": "workday",
+      "tenant": "ubc",
+      "issuer": "University of British Columbia",
+      "endpoint": "https://ubc.wd10.myworkdayjobs.com/wday/cxs/ubc/ubcstudentjob",
+      "search": "",
+      "allowed_hosts": [
+        "ubc.wd10.myworkdayjobs.com"
+      ]
+    },
+    {
+      "id": "lund-doctoral",
+      "adapter": "varbi",
+      "issuer": "Lund University",
+      "url": "https://www.lunduniversity.lu.se/vacancies",
+      "detail_hosts": [
+        "lu.varbi.com"
+      ],
+      "allowed_hosts": [
+        "www.lunduniversity.lu.se",
+        "lu.varbi.com"
+      ]
+    },
+    {
+      "id": "uppsala-doctoral",
+      "adapter": "varbi",
+      "issuer": "Uppsala University",
+      "url": "https://www.uu.se/en/about-uu/join-us/jobs-and-vacancies",
+      "detail_hosts": [
+        "uu.varbi.com"
+      ],
+      "allowed_hosts": [
+        "www.uu.se",
+        "uu.varbi.com"
+      ]
+    },
+    {
+      "id": "kth-doctoral",
+      "adapter": "varbi",
+      "issuer": "KTH Royal Institute of Technology",
+      "url": "https://www.kth.se/en/utbildning/become-a-phd-student/vacant-doctoral-positions-1.1411624",
+      "detail_hosts": [
+        "kth.varbi.com",
+        "kth.se"
+      ],
+      "allowed_hosts": [
+        "www.kth.se",
+        "kth.se",
+        "kth.varbi.com"
+      ]
+    },
+    {
+      "id": "ki-doctoral-p0",
+      "adapter": "varbi",
+      "issuer": "Karolinska Institutet",
+      "url": "https://ki.se/en/vacancies?page=0",
+      "detail_hosts": [
+        "ki.varbi.com"
+      ],
+      "allowed_hosts": [
+        "ki.se",
+        "ki.varbi.com"
+      ]
+    },
+    {
+      "id": "ki-doctoral-p1",
+      "adapter": "varbi",
+      "issuer": "Karolinska Institutet",
+      "url": "https://ki.se/en/vacancies?page=1",
+      "detail_hosts": [
+        "ki.varbi.com"
+      ],
+      "allowed_hosts": [
+        "ki.se",
+        "ki.varbi.com"
+      ]
+    },
+    {
+      "id": "stockholm-doctoral",
+      "adapter": "varbi",
+      "issuer": "Stockholm University",
+      "url": "https://www.su.se/english/about-the-university/work-at-su/available-jobs",
+      "detail_hosts": [
+        "su.varbi.com"
+      ],
+      "allowed_hosts": [
+        "www.su.se",
+        "su.varbi.com"
+      ]
+    },
+    {
+      "id": "gothenburg-doctoral",
+      "adapter": "reachmee",
+      "issuer": "University of Gothenburg",
+      "url": "https://www.gu.se/en/work-at-the-university-of-gothenburg/vacancies",
+      "allowed_hosts": [
+        "www.gu.se",
+        "web103.reachmee.com"
+      ]
+    },
+    {
+      "id": "iu-scholarships",
+      "adapter": "academicworks",
+      "issuer": "Indiana University",
+      "url": "https://iu.academicworks.com/",
+      "allowed_hosts": [
+        "iu.academicworks.com"
+      ]
+    },
+    {
+      "id": "montgomery-scholarships",
+      "adapter": "academicworks",
+      "issuer": "Montgomery College",
+      "url": "https://montgomerycollege.academicworks.com/",
+      "allowed_hosts": [
+        "montgomerycollege.academicworks.com"
+      ]
+    },
+    {
+      "id": "losmedanos-scholarships",
+      "adapter": "academicworks",
+      "issuer": "Los Medanos College",
+      "url": "https://losmedanos.academicworks.com/opportunities",
+      "allowed_hosts": [
+        "losmedanos.academicworks.com"
+      ]
+    },
+    {
+      "id": "known-abb-external_career_page",
+      "adapter": "workday",
+      "tenant": "abb",
+      "issuer": "ABB",
+      "endpoint": "https://abb.wd3.myworkdayjobs.com/wday/cxs/abb/External_Career_Page",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "abb.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://abb.wd3.myworkdayjobs.com/wday/cxs/abb/External_Career_Page/job/Arecibo-Puerto-Rico/Spring-Intern_JR00019587-1",
+        "program_id": "live-e18313ebf6e190fa5dcb7685",
+        "round_id": "JR00019587"
+      }
+    },
+    {
+      "id": "known-abbott-abbottcareers",
+      "adapter": "workday",
+      "tenant": "abbott",
+      "issuer": "Abbott",
+      "endpoint": "https://abbott.wd5.myworkdayjobs.com/wday/cxs/abbott/abbottcareers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "abbott.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://abbott.wd5.myworkdayjobs.com/wday/cxs/abbott/abbottcareers/job/Brazil---So-Paulo/Programa-de-Estgio-2026---So-Paulo-SP_31130791",
+        "program_id": "live-7ae66e7657b771b3b1a4a2c8",
+        "round_id": "31130791"
+      }
+    },
+    {
+      "id": "known-adobe-external_experienced",
+      "adapter": "workday",
+      "tenant": "adobe",
+      "issuer": "Adobe",
+      "endpoint": "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "adobe.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/job/San-Jose/XMLNAME-2027-Intern---Adobe-Sales-Academy-BDR_R170977",
+        "program_id": "live-1e68662c57421222dec07ee3",
+        "round_id": "R170977"
+      }
+    },
+    {
+      "id": "known-ag-airbus",
+      "adapter": "workday",
+      "tenant": "ag",
+      "issuer": "Airbus",
+      "endpoint": "https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "ag.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/job/Nordenham/Praktikant--m-w-d--in-der-Personalabteilung-am-Standort-Nordenham_JR10386648",
+        "program_id": "live-04f4ec78624871e5ae3242c6",
+        "round_id": "JR10386648"
+      }
+    },
+    {
+      "id": "known-amat-external",
+      "adapter": "workday",
+      "tenant": "amat",
+      "issuer": "Applied Materials",
+      "endpoint": "https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "amat.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/job/AustinTX/Finance-Intern--MBA---Austin--TX-_R2624934",
+        "program_id": "live-830635532558f7030195aa79",
+        "round_id": "R2624934"
+      }
+    },
+    {
+      "id": "known-amgen-careers",
+      "adapter": "workday",
+      "tenant": "amgen",
+      "issuer": "Amgen",
+      "endpoint": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "amgen.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/job/United-States---Remote/MBA-Intern---Commercial-Leadership-Program--Summer-2027-_R-254479",
+        "program_id": "live-28a432a904ecceae37797a68",
+        "round_id": "R-254479"
+      }
+    },
+    {
+      "id": "known-asml-asmlext1",
+      "adapter": "workday",
+      "tenant": "asml",
+      "issuer": "ASML",
+      "endpoint": "https://asml.wd3.myworkdayjobs.com/wday/cxs/asml/asmlext1",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "asml.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://asml.wd3.myworkdayjobs.com/wday/cxs/asml/asmlext1/job/Veldhoven-Netherlands/Communications---Digital-media-internship--editorial-content-creation_J-00349948",
+        "program_id": "live-609d4c36d46b9b6b11af9d08",
+        "round_id": "J-00349948"
+      }
+    },
+    {
+      "id": "known-barclays-external_career_site_barclays",
+      "adapter": "workday",
+      "tenant": "barclays",
+      "issuer": "Barclays",
+      "endpoint": "https://barclays.wd3.myworkdayjobs.com/wday/cxs/barclays/External_Career_Site_Barclays",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "barclays.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://barclays.wd3.myworkdayjobs.com/wday/cxs/barclays/External_Career_Site_Barclays/job/Singapore-Marina-Bay-Financial-Tower-2/Quantitative-Analytics-Associate-Off-Cycle-Internship-2027-Singapore_JR-0000117563",
+        "program_id": "live-485425497fbcfc4b4383c53c",
+        "round_id": "JR-0000117563"
+      }
+    },
+    {
+      "id": "known-bdo-bdo",
+      "adapter": "workday",
+      "tenant": "bdo",
+      "issuer": "BDO Canada",
+      "endpoint": "https://bdo.wd3.myworkdayjobs.com/wday/cxs/bdo/BDO",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "bdo.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://bdo.wd3.myworkdayjobs.com/wday/cxs/bdo/BDO/job/St-Johns---Kenmount-Rd/Co-op-or-Intern--Personal-Debt-Solutions-Admin---St-Johns---January-2027_JR6909",
+        "program_id": "live-5d336bbf3d280a302bd5a314",
+        "round_id": "JR6909"
+      }
+    },
+    {
+      "id": "known-berklee-berkleestudentemployment",
+      "adapter": "workday",
+      "tenant": "berklee",
+      "issuer": "Berklee College of Music",
+      "endpoint": "https://berklee.wd1.myworkdayjobs.com/wday/cxs/berklee/BerkleeStudentEmployment",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "berklee.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://berklee.wd1.myworkdayjobs.com/wday/cxs/berklee/BerkleeStudentEmployment/job/Boston/BCB-Performance-Library-Graduate-Assistant_R0011287-1",
+        "program_id": "live-513cefd4a87f703d50cb8bb3",
+        "round_id": "R0011287"
+      }
+    },
+    {
+      "id": "known-boeing-external_careers",
+      "adapter": "workday",
+      "tenant": "boeing",
+      "issuer": "Boeing",
+      "endpoint": "https://boeing.wd1.myworkdayjobs.com/wday/cxs/boeing/EXTERNAL_CAREERS",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "boeing.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://boeing.wd1.myworkdayjobs.com/wday/cxs/boeing/EXTERNAL_CAREERS/job/USA---Everett-WA/Boeing-Summer-2027-Internship-Program--Paid----Security---Fire-Operation--S-FO-_JR2026521717-1",
+        "program_id": "live-c3d7d90e644ed453096736a7",
+        "round_id": "JR2026521717"
+      }
+    },
+    {
+      "id": "known-crowe-external_careers",
+      "adapter": "workday",
+      "tenant": "crowe",
+      "issuer": "Crowe",
+      "endpoint": "https://crowe.wd12.myworkdayjobs.com/wday/cxs/crowe/External_Careers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "crowe.wd12.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://crowe.wd12.myworkdayjobs.com/wday/cxs/crowe/External_Careers/job/Boston-MA-USA/Audit-Intern-Winter-2027_R-47588",
+        "program_id": "live-6159b3902515a90b809f75b7",
+        "round_id": "R-47588"
+      }
+    },
+    {
+      "id": "known-cvshealth-cvs_health_careers",
+      "adapter": "workday",
+      "tenant": "cvshealth",
+      "issuer": "CVS Health",
+      "endpoint": "https://cvshealth.wd1.myworkdayjobs.com/wday/cxs/cvshealth/CVS_Health_Careers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "cvshealth.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://cvshealth.wd1.myworkdayjobs.com/wday/cxs/cvshealth/CVS_Health_Careers/job/SC---Charleston/Pharmacy-Intern_R0885454-1",
+        "program_id": "live-653c7688968740bb4ae4d8b1",
+        "round_id": "R0885454"
+      }
+    },
+    {
+      "id": "known-geaerospace-ge_externalsite",
+      "adapter": "workday",
+      "tenant": "geaerospace",
+      "issuer": "GE Aerospace",
+      "endpoint": "https://geaerospace.wd5.myworkdayjobs.com/wday/cxs/geaerospace/GE_ExternalSite",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "geaerospace.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://geaerospace.wd5.myworkdayjobs.com/wday/cxs/geaerospace/GE_ExternalSite/job/West-Chester/Colibrium-Additive-US-Manufacturing---Supply-Chain-Co-op---Spring-2027_R5040302-2",
+        "program_id": "live-245d2c5b7de7793e96b61924",
+        "round_id": "R5040302"
+      }
+    },
+    {
+      "id": "known-gevernova-vernova_externalsite",
+      "adapter": "workday",
+      "tenant": "gevernova",
+      "issuer": "GE Vernova",
+      "endpoint": "https://gevernova.wd5.myworkdayjobs.com/wday/cxs/gevernova/Vernova_ExternalSite",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "gevernova.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://gevernova.wd5.myworkdayjobs.com/wday/cxs/gevernova/Vernova_ExternalSite/job/Greenville/Wind-Engineering-Internship---Summer-2027_R5045680-2",
+        "program_id": "live-36e41dabc24e2019f735cd7b",
+        "round_id": "R5045680"
+      }
+    },
+    {
+      "id": "known-globalhr-rec_rtx_ext_gateway",
+      "adapter": "workday",
+      "tenant": "globalhr",
+      "issuer": "RTX",
+      "endpoint": "https://globalhr.wd5.myworkdayjobs.com/wday/cxs/globalhr/REC_RTX_Ext_Gateway",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "globalhr.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://globalhr.wd5.myworkdayjobs.com/wday/cxs/globalhr/REC_RTX_Ext_Gateway/job/US-CO-AURORA-S75--16800-E-Centretech-Pkwy--BLDG-S75/System-Engineering-Co-op--Remote-_01868902",
+        "program_id": "live-50c764408c96fae71cde82e9",
+        "round_id": "01868902"
+      }
+    },
+    {
+      "id": "known-gsk-gskcareers",
+      "adapter": "workday",
+      "tenant": "gsk",
+      "issuer": "GSK",
+      "endpoint": "https://gsk.wd5.myworkdayjobs.com/wday/cxs/gsk/GSKCareers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "gsk.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://gsk.wd5.myworkdayjobs.com/wday/cxs/gsk/GSKCareers/job/Belgium-Wavre/Internship--Cold-Chain-and-Distribution-Project-Coordinator--Vaccines-Supply-Chain--Belgium---2026_433310",
+        "program_id": "live-f9ba4e904dda2862e99e55f8",
+        "round_id": "433310"
+      }
+    },
+    {
+      "id": "known-hp-externalcareersite",
+      "adapter": "workday",
+      "tenant": "hp",
+      "issuer": "HP",
+      "endpoint": "https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/externalcareersite",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "hp.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/externalcareersite/job/San-Francisco-California-United-States-of-America/Software-Engineering-Intern--AIML-Platform---HP-IQ_UNI4800-1",
+        "program_id": "live-c0260a222a1c9ce0d4cffcce",
+        "round_id": "UNI4800"
+      }
+    },
+    {
+      "id": "known-hpe-jobsathpe",
+      "adapter": "workday",
+      "tenant": "hpe",
+      "issuer": "Hewlett Packard Enterprise",
+      "endpoint": "https://hpe.wd5.myworkdayjobs.com/wday/cxs/hpe/Jobsathpe",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "hpe.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://hpe.wd5.myworkdayjobs.com/wday/cxs/hpe/Jobsathpe/job/Spring-Texas-United-States-of-America/Account-Operations-Management-Intern_1213059",
+        "program_id": "live-2b3231342132e3330bcc10f0",
+        "round_id": "1213059"
+      }
+    },
+    {
+      "id": "known-intel-external",
+      "adapter": "workday",
+      "tenant": "intel",
+      "issuer": "Intel",
+      "endpoint": "https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "intel.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/job/US-Oregon-Hillsboro/Module-Engineering-PhD-Intern-2027_JR0286876",
+        "program_id": "live-af0968ee4aab9dd461823d0e",
+        "round_id": "JR0286876"
+      }
+    },
+    {
+      "id": "known-jj-jj",
+      "adapter": "workday",
+      "tenant": "jj",
+      "issuer": "Johnson & Johnson",
+      "endpoint": "https://jj.wd5.myworkdayjobs.com/wday/cxs/jj/JJ",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "jj.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://jj.wd5.myworkdayjobs.com/wday/cxs/jj/JJ/job/Cincinnati-Ohio-United-States-of-America/Design-and-Development-Co-Op-Spring-2027_R-095696",
+        "program_id": "live-ade8a54f1420630cbf449765",
+        "round_id": "R-095696"
+      }
+    },
+    {
+      "id": "known-labcorp-external",
+      "adapter": "workday",
+      "tenant": "labcorp",
+      "issuer": "Labcorp",
+      "endpoint": "https://labcorp.wd1.myworkdayjobs.com/wday/cxs/labcorp/External",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "labcorp.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://labcorp.wd1.myworkdayjobs.com/wday/cxs/labcorp/External/job/USA---NC---Durham---10-Moore-Drive/Intern---eLearning-Producer_2634725",
+        "program_id": "live-d0c29f61af1f6f71de61cb90",
+        "round_id": "2634725"
+      }
+    },
+    {
+      "id": "known-mastercard-campus",
+      "adapter": "workday",
+      "tenant": "mastercard",
+      "issuer": "Mastercard",
+      "endpoint": "https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/Campus",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "mastercard.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/Campus/job/Riyadh-Saudi-Arabia/Product-Management-Intern--Summer-2027---Saudi-Arabia_R-287595",
+        "program_id": "live-cab93524556eb163fcc71d5b",
+        "round_id": "R-287595"
+      }
+    },
+    {
+      "id": "known-medtronic-medtroniccareers",
+      "adapter": "workday",
+      "tenant": "medtronic",
+      "issuer": "Medtronic",
+      "endpoint": "https://medtronic.wd1.myworkdayjobs.com/wday/cxs/medtronic/MedtronicCareers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "medtronic.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://medtronic.wd1.myworkdayjobs.com/wday/cxs/medtronic/MedtronicCareers/job/Mounds-View-Minnesota-United-States-of-America/Engineering-Intern-Summer-2027--Candidates-Attending-2026-SWE-National-Conference-_R76021-1",
+        "program_id": "live-169211ad54c23fae044b9088",
+        "round_id": "R76021"
+      }
+    },
+    {
+      "id": "known-micron-external",
+      "adapter": "workday",
+      "tenant": "micron",
+      "issuer": "Micron",
+      "endpoint": "https://micron.wd1.myworkdayjobs.com/wday/cxs/micron/External",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "micron.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://micron.wd1.myworkdayjobs.com/wday/cxs/micron/External/job/MSB-Singapore/Intern---SSD-Validation-Engineer_JR108414",
+        "program_id": "live-41beec4038856fae57178b23",
+        "round_id": "JR108414"
+      }
+    },
+    {
+      "id": "known-nvidia-nvidiaexternalcareersite",
+      "adapter": "workday",
+      "tenant": "nvidia",
+      "issuer": "NVIDIA",
+      "endpoint": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "nvidia.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Hardware-ASIC-Design_JR2023486",
+        "program_id": "live-a5a5b7f6109597822e22d682",
+        "round_id": "JR2023486"
+      }
+    },
+    {
+      "id": "known-oregonstate-osu_careers_site",
+      "adapter": "workday",
+      "tenant": "oregonstate",
+      "issuer": "Oregon State University",
+      "endpoint": "https://oregonstate.wd501.myworkdayjobs.com/wday/cxs/oregonstate/OSU_Careers_Site",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "oregonstate.wd501.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://oregonstate.wd501.myworkdayjobs.com/wday/cxs/oregonstate/OSU_Careers_Site/job/Corvallis-Main-Campus/Dining-Student-Worker_JR0000530",
+        "program_id": "live-12ed30bb0a8ef299d14d9b8e",
+        "round_id": "JR0000530"
+      }
+    },
+    {
+      "id": "known-pg-1000",
+      "adapter": "workday",
+      "tenant": "pg",
+      "issuer": "Procter & Gamble",
+      "endpoint": "https://pg.wd5.myworkdayjobs.com/wday/cxs/pg/1000",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "pg.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://pg.wd5.myworkdayjobs.com/wday/cxs/pg/1000/job/SAO-PAULO-GENERAL-OFFICE/Banco-de-talentos-para-Estagirio-Gerencial-em-Vendas---Belm-PA_R000149247-2",
+        "program_id": "live-467a1b84fc8cd4e9bb157620",
+        "round_id": "R000149247"
+      }
+    },
+    {
+      "id": "known-philips-jobs-and-careers",
+      "adapter": "workday",
+      "tenant": "philips",
+      "issuer": "Philips",
+      "endpoint": "https://philips.wd3.myworkdayjobs.com/wday/cxs/philips/jobs-and-careers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "philips.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://philips.wd3.myworkdayjobs.com/wday/cxs/philips/jobs-and-careers/job/Orlando-Florida-United-States/Intern-Regulatory-Affairs-Orlando--FL-Summer-2027_590096-1",
+        "program_id": "live-3acdc72636e1dbdc92a4e5fc",
+        "round_id": "590096"
+      }
+    },
+    {
+      "id": "known-pwc-us_entry_level_careers",
+      "adapter": "workday",
+      "tenant": "pwc",
+      "issuer": "PwC",
+      "endpoint": "https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/US_Entry_Level_Careers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "pwc.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/US_Entry_Level_Careers/job/CA-Sacramento/Sacramento---Tax-JD---Intern---Summer-2027_6122615EIB-1",
+        "program_id": "live-061f253144cb76aef0dd4663",
+        "round_id": "6122615EIB"
+      }
+    },
+    {
+      "id": "known-pwc-global_campus_careers",
+      "adapter": "workday",
+      "tenant": "pwc",
+      "issuer": "PwC",
+      "endpoint": "https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "pwc.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/job/Ulaanbaatar/Tax-Intern_721240WD",
+        "program_id": "live-c9f0f2307c328c338516c199",
+        "round_id": "721240WD"
+      }
+    },
+    {
+      "id": "known-roche-roche-ext",
+      "adapter": "workday",
+      "tenant": "roche",
+      "issuer": "Roche",
+      "endpoint": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/roche-ext",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "roche.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/roche-ext/job/Mississauga/XMLNAME-2027-Winter-Internship----External-Quality-System-Intern_202608-121342",
+        "program_id": "live-4f0461d59853339e727c2103",
+        "round_id": "202608-121342"
+      }
+    },
+    {
+      "id": "known-rockwellautomation-external_rockwell_automation",
+      "adapter": "workday",
+      "tenant": "rockwellautomation",
+      "issuer": "Rockwell Automation",
+      "endpoint": "https://rockwellautomation.wd1.myworkdayjobs.com/wday/cxs/rockwellautomation/External_Rockwell_Automation",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "rockwellautomation.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://rockwellautomation.wd1.myworkdayjobs.com/wday/cxs/rockwellautomation/External_Rockwell_Automation/job/Milwaukee-Wisconsin-United-States/Intern--Technical-Sales---Consulting--USA-_R26-5962-2",
+        "program_id": "live-c57d347f35d5f815b7dfd05c",
+        "round_id": "R26-5962"
+      }
+    },
+    {
+      "id": "known-sanofi-sanoficareers",
+      "adapter": "workday",
+      "tenant": "sanofi",
+      "issuer": "Sanofi",
+      "endpoint": "https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/SanofiCareers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "sanofi.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/SanofiCareers/job/Frankfurt-am-Main/Initiativbewerbung-Studierende-Praktikum--all-genders-_R2832474",
+        "program_id": "live-5415c9effe51b05c007cd979",
+        "round_id": "R2832474"
+      }
+    },
+    {
+      "id": "known-sensata-sensata-careers",
+      "adapter": "workday",
+      "tenant": "sensata",
+      "issuer": "Sensata Technologies",
+      "endpoint": "https://sensata.wd1.myworkdayjobs.com/wday/cxs/sensata/Sensata-Careers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "sensata.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://sensata.wd1.myworkdayjobs.com/wday/cxs/sensata/Sensata-Careers/job/Newtownabbey-United-Kingdom/Hardware-Engineering-Placement-Student_IRC98569",
+        "program_id": "live-d5f68fe0ae81be4b143cc8ac",
+        "round_id": "IRC98569"
+      }
+    },
+    {
+      "id": "known-statestreet-global",
+      "adapter": "workday",
+      "tenant": "statestreet",
+      "issuer": "State Street",
+      "endpoint": "https://statestreet.wd1.myworkdayjobs.com/wday/cxs/statestreet/Global",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "statestreet.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://statestreet.wd1.myworkdayjobs.com/wday/cxs/statestreet/Global/job/Hangzhou-China/Global-Technology-Services-Intern---2027_R-800186",
+        "program_id": "live-1c14a661ad5eb4466ed44425",
+        "round_id": "R-800186"
+      }
+    },
+    {
+      "id": "known-stryker-strykercareers",
+      "adapter": "workday",
+      "tenant": "stryker",
+      "issuer": "Stryker",
+      "endpoint": "https://stryker.wd1.myworkdayjobs.com/wday/cxs/stryker/StrykerCareers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "stryker.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://stryker.wd1.myworkdayjobs.com/wday/cxs/stryker/StrykerCareers/job/Fort-Lauderdale-Florida/Summer-2027-Internship---Biomedical-Engineering---Florida_R572592",
+        "program_id": "live-f53b6edc63f3cf4ac4f0eddb",
+        "round_id": "R572592"
+      }
+    },
+    {
+      "id": "known-td-td_bank_careers",
+      "adapter": "workday",
+      "tenant": "td",
+      "issuer": "TD Bank",
+      "endpoint": "https://td.wd3.myworkdayjobs.com/wday/cxs/td/TD_Bank_Careers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "td.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://td.wd3.myworkdayjobs.com/wday/cxs/td/TD_Bank_Careers/job/New-York-New-York/XMLNAME-2027-Summer-Graduate-Leadership-Internship-Program---Retail-Distribution_R_1508518-1",
+        "program_id": "live-760cbff83900950d170f7099",
+        "round_id": "R_1508518"
+      }
+    },
+    {
+      "id": "known-thales-careers",
+      "adapter": "workday",
+      "tenant": "thales",
+      "issuer": "Thales",
+      "endpoint": "https://thales.wd3.myworkdayjobs.com/wday/cxs/thales/Careers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "thales.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://thales.wd3.myworkdayjobs.com/wday/cxs/thales/Careers/job/La-Fert-Saint-Aubin/STAGE---Lean-Amlioration-de-la-gestion-du-dveloppement-et-du-laboratoire---F-H_R0340866-1",
+        "program_id": "live-04e9760af6939ce5bb22e9c6",
+        "round_id": "R0340866"
+      }
+    },
+    {
+      "id": "known-thermofisher-thermofishercareers",
+      "adapter": "workday",
+      "tenant": "thermofisher",
+      "issuer": "Thermo Fisher Scientific",
+      "endpoint": "https://thermofisher.wd5.myworkdayjobs.com/wday/cxs/thermofisher/ThermoFisherCareers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "thermofisher.wd5.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://thermofisher.wd5.myworkdayjobs.com/wday/cxs/thermofisher/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Engineering-Co-Op_R-01366580-1",
+        "program_id": "live-3acbf572deb0014f1f8ff784",
+        "round_id": "R-01366580"
+      }
+    },
+    {
+      "id": "known-truist-careers",
+      "adapter": "workday",
+      "tenant": "truist",
+      "issuer": "Truist",
+      "endpoint": "https://truist.wd1.myworkdayjobs.com/wday/cxs/truist/Careers",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "truist.wd1.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://truist.wd1.myworkdayjobs.com/wday/cxs/truist/Careers/job/Charlotte-NC/XMLNAME-2027-Enterprise-Payments-Summer-Intern_R0121539",
+        "program_id": "live-15c3fa26516a857311485379",
+        "round_id": "R0121539"
+      }
+    },
+    {
+      "id": "known-unilever-unilever_experienced_professionals",
+      "adapter": "workday",
+      "tenant": "unilever",
+      "issuer": "Unilever",
+      "endpoint": "https://unilever.wd3.myworkdayjobs.com/wday/cxs/unilever/Unilever_Experienced_Professionals",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "unilever.wd3.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://unilever.wd3.myworkdayjobs.com/wday/cxs/unilever/Unilever_Experienced_Professionals/job/Rotterdam---Hofplein-19/Internship--27--Sustainable-Business-and-Communications_R-1189141",
+        "program_id": "live-4bfa31e16da8eec9cb847ac9",
+        "round_id": "R-1189141"
+      }
+    },
+    {
+      "id": "known-walmart-walmartexternal",
+      "adapter": "workday",
+      "tenant": "walmart",
+      "issuer": "Walmart",
+      "endpoint": "https://walmart.wd504.myworkdayjobs.com/wday/cxs/walmart/WalmartExternal",
+      "seed_terms": [
+        "student",
+        "intern"
+      ],
+      "allowed_hosts": [
+        "walmart.wd504.myworkdayjobs.com"
+      ],
+      "registry_provenance": {
+        "bundle": {
+          "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+          "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+        },
+        "observed_detail_request": "https://walmart.wd504.myworkdayjobs.com/wday/cxs/walmart/WalmartExternal/job/USA-WA-LYNNWOOD-05678-NEIGHBORHOOD-MARKET/Pharmacy-Pre-Grad-Intern---WM_R-2666355",
+        "program_id": "live-7052beeed6feaf7b6cbc6a3d",
+        "round_id": "R-2666355"
+      },
+      "enabled": false,
+      "disabled_reason": "requires separate verified official frontend status adapter"
+    }
+  ],
+  "disabled_sources": {
+    "wisconsin": "HTTP202 empty response, no immediate retry",
+    "ncss": "public pagination reached login requirement"
+  }
+}

@@ -14,8 +14,8 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from .discovery import PRIVATE, clean_text, role_for
 
 ROOT = Path(__file__).resolve().parents[2]
-TOPIC = re.compile(r"장학|장려금|연구지원|자기소개서|학업계획서|연구계획서|수기|후기|fellowship|scholarship|studentship|bursar|stipend|research.grant|travel.grant|personal.statement|motivation.letter|dissertation.funding|application.guideline", re.I)
-NOISE = re.compile(r"대출|등록금통계|평균등록금|학과별 등록금|대학별 등록금|(?:^|[/\s])loan|hiring|careers|jobs|tuition02|tuition04_09", re.I)
+TOPIC = re.compile(r"장학|장려금|연구지원|학자금|생활비|학비|등록금|대출|융자|인턴|학생근로|자기소개서|학업계획서|연구계획서|수기|후기|fellowship|scholarship|studentship|bursar|stipend|student.loan|education.loan|tuition.loan|maintenance.loan|internship|working.student|student.employment|research.grant|travel.grant|personal.statement|motivation.letter|dissertation.funding|application.guideline", re.I)
+NOISE = re.compile(r"등록금통계|평균등록금|학과별 등록금|대학별 등록금|tuition02|tuition04_09", re.I)
 SESSION = re.compile(r"(?:;|%3b)(?:homepage_)?jsessionid(?:=|%3d)[^/;?]*", re.I)
 
 

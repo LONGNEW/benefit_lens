@@ -1,0 +1,121 @@
+{
+  "contract_status": "proposed_not_implemented",
+  "example_scope": "existing-source observation with synthetic applicant facts; no model rerun",
+  "input": {
+    "program_id": "nvidia-graduate-fellowship",
+    "round_id": "2027-2028",
+    "opportunity_version": "snapshot_2026-10-15",
+    "application_schema_version": "proposed_v1",
+    "prompt_id": "proposed_research_proposal",
+    "official_prompt_binding": "derived from existing application.prompts[0]; new ID is proposed",
+    "source_document": {
+      "source_id": "yuke-proposal",
+      "document_id": "462edc14d047b3659368e1ad55edb673920cc507c3b1f558b450afc6a3dde2e9",
+      "content_sha256": "d1cc2f892c3bae3931e57e2d9c54e8e14d7d3751bce515b0b659d83184f1bdb0",
+      "text_sha256": "4bac610f3574b02c61dc64992f4947682c6bf2579eee4dfbbf0c0fc494262dc3",
+      "source_role": "public_application_unverified",
+      "case_id": "N2",
+      "person_id": "proposed_person_yuke_wang",
+      "round_binding_status": "candidate",
+      "submission_finality": "unverified",
+      "document_version_id": "proposed_yuke_snapshot_20261015",
+      "source_url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+      "fetched_at": "2026-10-15T09:39:04.899213+00:00",
+      "extracted_at": null,
+      "extraction_time_status": "not_recorded_in_existing_manifest"
+    },
+    "source_span": {
+      "evidence_id": "proposed_e_yuke_transition",
+      "locator": "text line 21",
+      "quote": "Below I would briefly discuss my highlighted work to achieve this goal:",
+      "document_version_id": "proposed_yuke_snapshot_20261015",
+      "char_start": 1883,
+      "char_end": 1954,
+      "offset_basis": "unicode code points in extracted text with recorded text_sha256"
+    },
+    "case_outcome": {
+      "status": "selected",
+      "verification": "official per current sample",
+      "application_round": "2022-2023",
+      "outcome_to_document_binding": "not_final_submission_verified"
+    }
+  },
+  "output": {
+    "observation": {
+      "observation_id": "proposed_o_research_arc",
+      "basis": "text_observation",
+      "scope": "public document",
+      "statement": "공통 연구목표를 설명한 뒤 그 목표를 위한 여러 프로젝트로 전환한다. 프로젝트의 설계와 결과를 서술하고 마지막에는 지원 자원의 효용을 설명한다.",
+      "evidence_ids": [
+        "proposed_e_yuke_transition"
+      ],
+      "review_status": "candidate",
+      "limitations": [
+        "전개 전체를 확인하려면 14-68행의 추가 span 검토가 필요하다. 단일 전환구절만으로 모든 해석을 승인하지 않는다.",
+        "정확한 최종 제출본과 당시 공식 문항은 미확인이다."
+      ]
+    },
+    "comparison": {
+      "status": "limited_textual_contrast",
+      "reason": "N2와 N3의 연구 주제, 회차, 자료와 결과 확인 수준이 다르다. 연구계획 전개의 공통점과 차이를 관찰할 수 있다.",
+      "causal_success_claim": false
+    },
+    "guidance": {
+      "guidance_id": "proposed_g_project_arc",
+      "guidance_kind": "structure",
+      "observation_ids": [
+        "proposed_o_research_arc"
+      ],
+      "scope": {
+        "program_id": "nvidia-graduate-fellowship",
+        "target_round": "2027-2028",
+        "prompt_id": "proposed_research_proposal",
+        "transfer_scope": "same_program_prior_round_review_required",
+        "application_schema_version": "proposed_v1"
+      },
+      "suggested_action": "현재 문항을 확인한 뒤 공통 연구목표, 본인 기여와 근거, 다음 단계와 지원 자원 효용을 묶는다.",
+      "required_user_fields": [
+        "research_goal",
+        "own_contribution",
+        "result_and_comparator",
+        "next_question",
+        "resource_use"
+      ],
+      "causal_success_claim": false,
+      "publication_status": "candidate_requires_span_and_prompt_review",
+      "case_ids": [
+        "N2"
+      ],
+      "basis": "text_observation",
+      "evidence_ids": [
+        "proposed_e_yuke_transition"
+      ],
+      "required_user_fields_purpose": "writing_guidance_input_not_eligibility"
+    },
+    "draft_slot": {
+      "prompt_id": "proposed_research_proposal",
+      "guidance_ids": [
+        "proposed_g_project_arc"
+      ],
+      "missing_fields": [
+        "research_goal",
+        "own_contribution",
+        "result_and_comparator",
+        "next_question",
+        "resource_use"
+      ],
+      "draft_text": null,
+      "status": "needs_user_input",
+      "fact_ids": [],
+      "experience_bindings": []
+    },
+    "applicant_fact_fixture": {
+      "fixture_kind": "synthetic_empty_profile",
+      "note": "실제 사용자 자료와 타인의 성과를 채우지 않았다."
+    }
+  },
+  "artifact_schema_version": "proposed-writing-contract-v1",
+  "producer": "writing-team-design-review",
+  "created_at": "2026-11-07T06:48:28.342810+00:00",
+  "run_id": "benefitlens-three-teams-20261107"
+}

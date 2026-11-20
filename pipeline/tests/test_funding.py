@@ -36,7 +36,7 @@ class FundingTests(unittest.TestCase):
 
     def test_loan_interest_is_not_direct_tuition_or_living_aid(self):
         result = classify_funding("안동시 학자금 대출 이자 지원", ["등록금, 생활비 대출의 발생이자 지원"])
-        self.assertEqual(result["tags"], [])
+        self.assertEqual(result["tags"], ["interest_subsidy"])
 
     def test_free_training_goods_prizes_and_own_cost_are_excluded(self):
         for text in ["교육비 전액 무료", "노트북 지급", "총 상금 1,000만원 지급", "본인 부담 등록금 60만원", "월 5만원 구독 이용권 지원", "장학금 수혜자 제외"]:
@@ -52,7 +52,18 @@ class FundingTests(unittest.TestCase):
         self.assertEqual(classify_funding("포스코비전장학 선발", [])["tags"], ["scholarship"])
         self.assertEqual(classify_funding("포스코사이언스펠로십 선발", [])["tags"], ["scholarship"])
         self.assertEqual(classify_funding("생활비 장학금", ["매월 50만원"])["tags"], ["cash", "scholarship", "living_expenses"])
-        self.assertEqual(classify_funding("삼성대여장학금", ["등록금 지원"])["tags"], [])
+        self.assertEqual(classify_funding("삼성대여장학금", ["등록금 지원"])["tags"], ["tuition", "loan"])
+
+    def test_repayable_student_loans_are_not_cash_grants(self):
+        result = classify_funding("학자금 대출", ["등록금 및 생활비 대출 지원"])
+        self.assertEqual(result['tags'], ['tuition', 'living_expenses', 'loan'])
+        self.assertNotIn('cash', result['tags'])
+        self.assertNotIn('scholarship', result['tags'])
+        self.assertEqual(classify_funding('Student loan', ['Tuition loan available'])['tags'], ['tuition','loan'])
+
+    def test_explicitly_unavailable_loans_are_not_support(self):
+        self.assertEqual(classify_funding('지원 안내', ['학자금 대출 불가'])['tags'], [])
+        self.assertEqual(classify_funding('Support guide', ['Student loans are not available'])['tags'], [])
 
     def test_standalone_extracted_amount_and_foreign_currency(self):
         self.assertEqual(classify_funding("활동 지원", ["8,000,000원 (연간 최대)"])["tags"], ["cash"])

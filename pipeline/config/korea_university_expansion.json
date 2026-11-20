@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "id": "hansung-sw-field-placements", "kind": "board", "issuer": "한성대학교 SW중심대학사업단",
+      "url": "https://www.hansung.ac.kr/swcenter/826/subview.do", "detail_path": "/bbs/swcenter/1605/([0-9]+)/artclView\\.do", "content": ".board-view",
+      "additional_urls": {
+        "226030": {"title":"2027 로보시지 인턴십","url":"https://www.hansung.ac.kr/swcenter/826/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3djZW50ZXIlMkYxNjA1JTJGMjI2MDMwJTJGYXJ0Y2xWaWV3LmRvJTNG"}
+      }
+    },
+    {
+      "id": "inu-ie-notices", "kind": "board", "issuer": "인천대학교",
+      "url": "https://cls.inu.ac.kr/ime/3100/subview.do", "detail_path": "/bbs/ime/352/([0-9]+)/artclView\\.do", "content": ".view-con",
+      "additional_urls": {
+        "432562": {"title":"2026학년도 겨울계절학기 현장교육실습생 모집","url":"https://cls.inu.ac.kr/ime/3100/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaW1lJTJGMzUyJTJGNDMyNTYyJTJGYXJ0Y2xWaWV3LmRvJTNG"}
+      }
+    },
+    {
+      "id": "kookmin-chem-notices", "kind": "board", "issuer": "국민대학교",
+      "url": "https://chem.kookmin.ac.kr/chem/community/notice001.do?mode=list&article.offset=0&articleLimit=10", "identity": "articleNo", "query_detail_path":"/chem/community/notice001.do", "content": ".fr-view"
+    },
+    {
+      "id": "scnu-chem-notices", "kind": "board", "issuer": "국립순천대학교",
+      "url": "https://www.scnu.ac.kr/chemistry/na/ntt/selectNttList.do?bbsId=2203&mi=3914", "identity": "nttSn", "query_detail_path":"/chemistry/na/ntt/selectNttInfo.do", "content": ".BD_table"
+    },
+    {
+      "id": "snu-sees-notices", "kind": "board", "issuer": "서울대학교",
+      "url": "https://sees.snu.ac.kr/community/notice", "identity": "bbsidx", "query_detail_path":"/community/notice", "content": ".bbs_contents"
+    },
+    {
+      "id": "snu-math-notices", "kind": "board", "issuer": "서울대학교",
+      "url": "https://www.math.snu.ac.kr/bbs/board.php?bo_table=Math_Notice", "identity": "wr_id", "query_detail_path":"/bbs/board.php", "content": ".view-content"
+    },
+    {
+      "id": "chosun-comm-notices", "kind": "board", "issuer": "조선대학교",
+      "url": "https://www4.chosun.ac.kr/comm/4284/subview.do", "detail_path": "/bbs/comm/279/([0-9]+)/artclView\\.do", "content": ".view-con"
+    },
+    {
+      "id": "korea-grad-notices", "kind": "board", "issuer": "고려대학교",
+      "url": "https://graduate.korea.ac.kr/community/notice.html", "identity": "no", "query_detail_path":"/community/notice_view.html", "content": ".contents_info"
+    },
+    {
+      "id": "korea-politics-grad-notices", "kind": "board", "issuer": "고려대학교",
+      "url": "https://politics.korea.ac.kr/kupolitics_kor/community/grad_school.do", "identity": "articleNo", "query_detail_path":"/kupolitics_kor/community/grad_school.do", "content": ".fr-view"
+    },
+    {
+      "id": "pknu-ecoeng-notices", "kind": "board", "issuer": "국립부경대학교",
+      "url": "https://ecoeng.pknu.ac.kr/ecoeng/5664", "identity": "no", "query_detail_path":"/ecoeng/5664", "content": ".bdvEdit"
+    },
+    {
+      "id": "skku-scholarship-notices", "kind": "board", "issuer": "성균관대학교",
+      "url": "https://www.skku.ac.kr/skku/campus/skk_comm/notice06.do", "identity": "articleNo", "query_detail_path":"/skku/campus/skk_comm/notice06.do", "content": ".board_view"
+    },
+    {
+      "id": "tuk-coop-notice", "kind": "board", "issuer": "한국공학대학교",
+      "url": "https://www.tukorea.ac.kr/combBbs/haksa/1/107/154502/view", "listing_only": true, "content": ".view-con",
+      "additional_urls": {
+        "154502": {"title":"2026년 겨울학기 TU인턴십 현장실습 학생 모집","url":"https://www.tukorea.ac.kr/combBbs/haksa/1/107/154502/view"},
+        "154502-attachment": {"title":"2026년 겨울학기 TU인턴십 현장실습 학생 모집","url":"https://www.tukorea.ac.kr/bbs/tukorea/107/51994/download.do","selector":"pdf"}
+      }
+    },
+    {"id": "yonsei-ilshin-scholarship-pdf", "kind": "board", "issuer": "일신문화재단", "url": "https://music.yonsei.ac.kr/music/notice1.do?articleNo=483441&mode=view", "listing_only": true, "content": ".fr-view", "additional_urls": {"483441-pdf": {"title": "2026 일신문화재단 형남장학금", "url": "https://music.yonsei.ac.kr/music/notice1.do?mode=download&articleNo=483441&attachNo=221208", "selector": "pdf"}}},
+    {"id":"snu-oga-oecd-round2-pdf","kind":"kboard_attachment","issuer":"서울대학교 국제처 및 OECD","url":"https://oga.snu.ac.kr/outgoing_notice-board/?mod=document&pageid=4&uid=3110","listing_only":true,"additional_urls":{"3110-pdf":{"title":"2026 OECD 인턴십 Round 2 서울대학교 선발","selector":"pdf","file_field":"file1"}}}
+  ]
+}

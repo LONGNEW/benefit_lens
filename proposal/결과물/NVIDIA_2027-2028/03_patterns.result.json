@@ -1,0 +1,196 @@
+[
+  {
+    "id": "NV27-RP-ARC",
+    "kind": "structure",
+    "claim": "nv27-research-proposal",
+    "round": "2027-2028",
+    "scope": "historical_transfer",
+    "evidence": [
+      {
+        "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+        "case": "N1",
+        "locator": "L66-L84",
+        "purpose": "case_observation",
+        "document": "N1-STATEMENT-1292bfba8ff4",
+        "evidence": "N1-NEXT-WORK"
+      },
+      {
+        "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+        "case": "N1",
+        "locator": "L6-L12",
+        "purpose": "case_observation",
+        "document": "N1-STATEMENT-1292bfba8ff4",
+        "evidence": "N1-RESEARCH-VISION"
+      },
+      {
+        "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+        "case": "N1",
+        "locator": "L39-L48",
+        "purpose": "case_observation",
+        "document": "N1-STATEMENT-1292bfba8ff4",
+        "evidence": "N1-RESULT-COMPARE"
+      },
+      {
+        "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+        "case": "N2",
+        "locator": "L14-L21",
+        "purpose": "case_observation",
+        "document": "N2-STATEMENT-d1cc2f892c3b",
+        "evidence": "N2-GOAL-TO-PROJECTS"
+      },
+      {
+        "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+        "case": "N3",
+        "locator": "L40-L47",
+        "purpose": "case_observation",
+        "document": "N3-STATEMENT-25ee76529386",
+        "evidence": "N3-NEXT-PROBE"
+      },
+      {
+        "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+        "case": "N3",
+        "locator": "L33-L39",
+        "purpose": "case_observation",
+        "document": "N3-STATEMENT-25ee76529386",
+        "evidence": "N3-OBSERVED-METRIC"
+      },
+      {
+        "url": "https://research.nvidia.com/graduate-fellowships",
+        "case": null,
+        "locator": "L130-L131",
+        "purpose": "official_constraint",
+        "document": "OFFICIAL-f68d3f6ccbeb",
+        "evidence": "OFFICIAL-FORMAT"
+      },
+      {
+        "url": "https://research.nvidia.com/graduate-fellowships",
+        "case": null,
+        "locator": "L157-L158",
+        "purpose": "official_guidance",
+        "document": "OFFICIAL-f68d3f6ccbeb",
+        "evidence": "OFFICIAL-PROGRESS"
+      },
+      {
+        "url": "https://research.nvidia.com/graduate-fellowships",
+        "case": null,
+        "locator": "L153-L154",
+        "purpose": "official_guidance",
+        "document": "OFFICIAL-f68d3f6ccbeb",
+        "evidence": "OFFICIAL-VISION"
+      }
+    ],
+    "guidance": {
+      "why": "공식 안내의 비전과 진행 상황에 각각 답하고, 결과가 남긴 질문으로 다음 계획을 연결한다. 보관된 공개문에서 연구 목표와 프로젝트, 후속 연구의 연결을 관찰했다.",
+      "slots": [
+        {
+          "needs": [
+            "구체적 연구 질문",
+            "왜 이 질문을 다루는지"
+          ],
+          "slot_id": "vision"
+        },
+        {
+          "needs": [
+            "같은 경험에서 확인한 본인 행동",
+            "같은 조건의 비교 기준과 관측 결과"
+          ],
+          "slot_id": "progress"
+        },
+        {
+          "needs": [
+            "현재 결과의 한계",
+            "계획한 다음 실험"
+          ],
+          "slot_id": "next_test"
+        },
+        {
+          "needs": [
+            "확인된 졸업 후 방향"
+          ],
+          "slot_id": "long_term",
+          "omit_or_ask_if_missing": true
+        }
+      ],
+      "title": "문제에서 본인 기여와 다음 검증으로",
+      "decision": "adopted_for_this_delivery",
+      "question": "그 수치의 비교 대상과 같은 조건은 무엇이고, 남은 한계를 확인하려면 다음에 무엇을 바꿔 측정하나요?",
+      "scope_limit": "현재 안내와 기능이 맞는 설명 구조만 사용한다. 과거 공개문이 당시 최종 제출본인지, 당시 문항이 지금과 같았는지는 확인되지 않았다.",
+      "structure_choices": [
+        "문제 먼저: 한 경험의 병목, 내 역할, 비교 결과, 다음 검증",
+        "공통 목표 먼저: 관련 프로젝트가 여럿이면 공통 질문과 각각의 역할 및 증거를 묶고 다음 검증으로 연결"
+      ],
+      "observed_source_differences": "N1은 문제와 기술 병목에서 시작한다. N2는 연구 이력을 소개하고 공통 목표 아래 여러 프로젝트를 놓는다. N3는 문제와 연구 방향을 밝히고 기존 성과와 계획을 나눈다."
+    },
+    "causal_success_claim": false
+  },
+  {
+    "id": "NV27-RP-GPU-LINK",
+    "kind": "strengthen",
+    "claim": "nv27-research-proposal",
+    "round": "2027-2028",
+    "scope": "historical_transfer",
+    "evidence": [
+      {
+        "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+        "case": "N1",
+        "locator": "L54-L65",
+        "purpose": "case_observation",
+        "document": "N1-STATEMENT-1292bfba8ff4",
+        "evidence": "N1-GPU-IMPLEMENTATION"
+      },
+      {
+        "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+        "case": "N2",
+        "locator": "L9-L12",
+        "purpose": "case_observation",
+        "document": "N2-STATEMENT-d1cc2f892c3b",
+        "evidence": "N2-GPU-TEAM"
+      },
+      {
+        "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+        "case": "N3",
+        "locator": "L79-L83",
+        "purpose": "case_observation",
+        "document": "N3-STATEMENT-25ee76529386",
+        "evidence": "N3-COLLAB-PROPOSAL"
+      },
+      {
+        "url": "https://research.nvidia.com/graduate-fellowships",
+        "case": null,
+        "locator": "L159-L160",
+        "purpose": "official_guidance",
+        "document": "OFFICIAL-f68d3f6ccbeb",
+        "evidence": "OFFICIAL-GPU-RELEVANCE"
+      }
+    ],
+    "guidance": {
+      "why": "공식 작성 안내는 GPU를 쓰는 방식, NVIDIA 기술이 연구에 주는 영향, 미래 GPU 관련 기여 중 맞는 경로를 설명하도록 권고한다.",
+      "slots": [
+        {
+          "needs": [
+            "사용한 기술 또는 장비",
+            "같은 경험의 실제 사용 또는 관측 근거"
+          ],
+          "slot_id": "gpu_observed"
+        },
+        {
+          "needs": [
+            "사용자 확인을 받은 계획",
+            "검증 대상과 방법"
+          ],
+          "slot_id": "gpu_planned"
+        }
+      ],
+      "title": "실제로 확인한 GPU 연결과 제안하는 연결을 분리",
+      "decision": "adopted_for_this_delivery",
+      "question": "어느 GPU, 소프트웨어 또는 기능이 방법에 실제로 관여했나요? 같은 조건에서 확인한 결과와 앞으로 검증할 내용을 나눠 알려 주세요.",
+      "scope_limit": "장비 사용만으로 NVIDIA와의 협업이나 GPU 설계 개선을 주장하지 않는다. 기존 인턴 경험은 해당할 때만 넣는다. 제출 자격이나 심사 결과의 규칙으로 쓰지 않는다.",
+      "structure_choices": [
+        "관측 경로: 어떤 NVIDIA 기술이나 장비를 썼고 어떤 조건에서 무엇을 측정했는지",
+        "계획 경로: 실제 협업이나 측정이 없다면 검증하려는 기술적 연결과 방법"
+      ],
+      "observed_source_differences": "N1/N2의 공개문은 기관과 한 작업을 서술한다. N3는 향후 협업을 제안한다. 이 차이는 서술 유형이다."
+    },
+    "causal_success_claim": false
+  }
+]

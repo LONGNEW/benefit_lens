@@ -15,14 +15,20 @@ def test_detail_display_aliases_preserve_document_and_attachment_identifiers():
 def test_authentication_social_and_statistics_are_not_originals():
     assert excluded_seed({"source_url":"https://school.test/sso/login", "title":"장학금"}) == "authentication_not_attempted"
     assert excluded_seed({"source_url":"https://www.reddit.com/r/funding", "title":"Scholarship"}) == "experience_or_social_metadata_only"
-    assert excluded_seed({"source_url":"https://school.test/table", "title":"대학별 등록금 통계"}) == "non_opportunity_statistics_or_loan"
+    assert excluded_seed({"source_url":"https://school.test/table", "title":"대학별 등록금 통계"}) == "non_opportunity_statistics"
     assert excluded_seed({"source_url":"https://ai.postech.ac.kr/careers/view/id/1", "title":"Qualcomm fellowship"}) is None
+    assert excluded_seed({"source_url":"https://school.test/student-loans", "title":"학자금 대출 신청 안내"}) is None
 
 
 def test_document_classification_requires_body_not_just_search_title():
     assert role_for_document("https://issuer.test/fellowship", "PhD fellowship", "unrelated homepage", "html") == "reference_or_unclassified"
     assert role_for_document("https://issuer.test/fellowship", "PhD fellowship", "PhD fellowship eligibility requirements. Scholarship reward. " * 8, "html") == "notice_or_policy"
     assert role_for_document("https://issuer.test/recipients", "Fellowship recipients", "fellowship eligibility"*20, "html") == "experience_reference"
+
+
+def test_student_loan_notice_survives_original_body_classification():
+    body = 'Student loan eligibility requirements. Financial support and benefits. Application deadline. ' * 8
+    assert role_for_document('https://issuer.test/student-loan', 'Student loan applications', body, 'html') == 'notice_or_policy'
 
 
 def test_original_issuer_requires_configured_domain_and_is_not_a_title_guess():

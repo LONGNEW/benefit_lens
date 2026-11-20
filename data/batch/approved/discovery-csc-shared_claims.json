@@ -1,0 +1,153 @@
+{
+  "claim": [
+    {
+      "claim_id": "csc-shared-dates",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "kind": "schedule",
+      "field": "application_window",
+      "at": "application",
+      "value": {
+        "opens_on": "2026-11-10",
+        "closes_on": "2026-12-08",
+        "closes_time": "16:00",
+        "time_zone": "GMT",
+        "study_start": "2027-09 or 2027-10"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "csc-shared-eligibility",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "kind": "eligibility",
+      "field": "degree_citizenship_residence_and_need",
+      "at": "application",
+      "value": {
+        "eligible_commonwealth_citizen_or_refugee": true,
+        "permanent_residence_in_eligible_country": true,
+        "degree_at_least": "upper second-class or lower second-class with relevant postgraduate qualification",
+        "degree_deadline": "2027-09",
+        "financial_need_required": true,
+        "high_income_country_study_or_work_limit": "공식 공고의 1학년 기준을 확인해야 함"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "csc-shared-benefits",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "kind": "benefit",
+      "field": "approved_tuition_travel_and_stipend",
+      "at": "award_period",
+      "value": {
+        "components": [
+          {
+            "type": "tuition",
+            "coverage": "approved_full_fees"
+          },
+          {
+            "type": "airfare",
+            "coverage": "approved_return_fare"
+          },
+          {
+            "type": "living_allowance",
+            "amount": 1712,
+            "currency": "GBP",
+            "unit": "month",
+            "london_rate": 2000,
+            "rate_scope": "published_current_levels"
+          }
+        ]
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "csc-shared-application",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "kind": "submission",
+      "field": "applicant_and_university_actions",
+      "at": "application",
+      "value": {
+        "submitted_by": "applicant",
+        "portal": "CSC Central",
+        "university_admission_separate": true,
+        "course_scope": "approved UK masters",
+        "nomination_by": "participating_university"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "csc-shared-docs",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "kind": "submission",
+      "field": "supporting_documents",
+      "at": "application",
+      "value": {
+        "uploaded_by": "applicant",
+        "items": [
+          "citizenship_or_refugee_proof",
+          "all_higher_education_transcripts",
+          "signed_references_pdf"
+        ],
+        "reference_writers_min": 2,
+        "translation": "certified if not in English"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "csc-shared-template",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "kind": "form",
+      "field": "official_template_application_form",
+      "at": "application",
+      "value": {
+        "status": "official_link_observed",
+        "url": "https://cscuk.fcdo.gov.uk/wp-content/uploads/2021/11/Shared-Scholarships-template-application-form-2027.pdf",
+        "use": "preparation_only; submit through CSC Central"
+      },
+      "review_state": "reviewed"
+    }
+  ],
+  "claim_evidence": [
+    {
+      "claim_id": "csc-shared-dates",
+      "evidence_id": "CSC-DATES",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "csc-shared-eligibility",
+      "evidence_id": "CSC-ELIGIBILITY",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "csc-shared-benefits",
+      "evidence_id": "CSC-FUNDING",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "csc-shared-application",
+      "evidence_id": "CSC-APPLY",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "csc-shared-docs",
+      "evidence_id": "CSC-DOCS",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "csc-shared-template",
+      "evidence_id": "CSC-TEMPLATE",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028"
+    }
+  ]
+}

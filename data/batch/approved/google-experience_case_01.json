@@ -1,0 +1,24 @@
+{
+  "experience_case": [
+    {
+      "case_id": "g26w-g1",
+      "program_id": "google-phd-fellowship",
+      "experience_round_id": null,
+      "experience_round_label": "2024 author-linked public materials",
+      "outcome_status": "selected",
+      "outcome_basis": "official_record",
+      "outcome_evidence_id": "g26w-g1-result",
+      "notes": "공식 명단의 이름과 학교, 작성자의 프로그램 및 연도 연결을 확인했다. 공개본의 정확한 최종 제출본 동일성은 미검증이다."
+    },
+    {
+      "case_id": "g26w-g4",
+      "program_id": "google-phd-fellowship",
+      "experience_round_id": null,
+      "experience_round_label": "2021 author index label",
+      "outcome_status": "unknown",
+      "outcome_basis": "unknown",
+      "outcome_evidence_id": null,
+      "notes": "작성자 색인의 상충하는 won/rejected 표기를 어느 결과 집단에도 배정하지 않았다. 2026 동아시아와 지역 또는 문항의 동일성을 주장하지 않는다."
+    }
+  ]
+}

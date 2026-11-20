@@ -1,0 +1,20 @@
+{
+  "scope": "read-only memory mutations; no LLM or DB",
+  "checks": [
+    {
+      "check": "existing_cached_result",
+      "result": "accepted"
+    },
+    {
+      "check": "all_statement_roles_relabelled_interviews",
+      "result": "accepted",
+      "interpretation": "현재 validator는 인용 존재와 사례 귀속을 검사하나 제출문 역할의 대비 적합성을 기계적으로 보장하지 않는다. 원문 의미 오류를 재현한 실험은 아니다."
+    },
+    {
+      "check": "no_comparable_pair_abstention",
+      "result": "rejected",
+      "reason": "Both outcome groups require an observed comparison.",
+      "interpretation": "현재 계약은 두 결과와 기준이 있으면 비교를 강제한다. 새 명세에는 비교 보류 상태가 필요하다."
+    }
+  ]
+}

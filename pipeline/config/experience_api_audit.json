@@ -1,0 +1,104 @@
+{
+  "schema": "experience-api-audit-v1",
+  "audited_at": "2026-11-15",
+  "scope": "Eight previously registered experience sources and three established writing-source publishers; not a claim of API absence across the web",
+  "authentication_used": "none",
+  "evidence_root": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/experience-api-audit-v1",
+  "sources": [
+    {
+      "id": "higherin",
+      "finding": "No documented public reviews API found; observed robots.txt disallows /api/ and /ajax/",
+      "usable_transport": "public HTML reviews and previously captured public sitemap candidates",
+      "action": "continue_html",
+      "evidence_url": "https://higherin.com/robots.txt"
+    },
+    {
+      "id": "dev-experiences",
+      "finding": "Documented public articles list and individual body API",
+      "usable_transport": "GET /api/articles with tag and pagination; GET /api/articles/{id} for body_html",
+      "body_batching": "list metadata up to 1000 per page; individual body requests still required",
+      "action": "running_expanded_tags_with_provider_backoff",
+      "documentation": "https://developers.forem.com/api/v1"
+    },
+    {
+      "id": "github-gsoc-proposals",
+      "finding": "Documented trees, blobs and complete repository archive API",
+      "usable_transport": "GET /repos/COPS-IITBHU/GSoC-Accepted-Proposals/tarball",
+      "body_batching": "one archive for previously listed 118 PDF files; validate each Git blob SHA1",
+      "action": "queued_after_provider_reset",
+      "observed_reset_kst": "2026-11-15T19:01:42+09:00",
+      "observed_unauthenticated_core_limit": 60,
+      "documentation": "https://docs.github.com/en/rest/repos/contents#download-a-repository-archive-tar"
+    },
+    {
+      "id": "daad-rise-germany",
+      "finding": "WordPress API advertised by oEmbed link; public API root returned HTTP 401",
+      "usable_transport": "public official HTML index and linked PDF originals",
+      "action": "retain_html_pdf",
+      "observed_api_url": "https://www.daad.de/rise/wp-json/"
+    },
+    {
+      "id": "daad-rise-professional",
+      "finding": "Same RISE WordPress API root returned HTTP 401",
+      "usable_transport": "public official HTML index and linked PDF originals",
+      "action": "retain_html_pdf",
+      "observed_api_url": "https://www.daad.de/rise/wp-json/"
+    },
+    {
+      "id": "heidelberg-erasmus",
+      "finding": "Page advertises a GraphQL endpoint through window.__API__; anonymous read-only route query returned HTTP 401",
+      "usable_transport": "public rendered HTML, embedded structured state and linked PDF originals",
+      "action": "retain_html_pdf",
+      "observed_api_url": "https://backend.mathinf.uni-heidelberg.de/graphql"
+    },
+    {
+      "id": "gfg",
+      "finding": "Terms prohibit automated collection without written permission; no usable experience bulk API verified",
+      "action": "disabled",
+      "evidence_url": "https://www.geeksforgeeks.org/legal/terms-of-use/"
+    },
+    {
+      "id": "linkareer",
+      "finding": "Observed HTTP 403; no documented usable public experience API verified",
+      "action": "disabled",
+      "evidence_url": "https://linkareer.com/terms"
+    },
+    {
+      "id": "fulbright-korea-api",
+      "finding": "Publisher-advertised public WordPress API returns complete rendered content",
+      "usable_transport": "GET /wp-json/wp/v2/posts?per_page=100&page=N",
+      "body_batching": "963 public posts enumerated in 10 list responses; not all are student experiences",
+      "action": "connected_and_running",
+      "evidence_url": "https://www.fulbright.or.kr/wp-json/wp/v2/posts?per_page=1",
+      "documentation": "https://developer.wordpress.org/rest-api/reference/posts/"
+    },
+    {
+      "id": "chevening-rss",
+      "finding": "WordPress API root returned HTTP 401; advertised public RSS contains complete content:encoded for 10 recent stories",
+      "usable_transport": "https://www.chevening.org/news/feed/",
+      "action": "connected_as_reference_material_pending_person_attribution",
+      "scope_limit": "Current feed only; historical feed pagination has not been verified"
+    },
+    {
+      "id": "gates-cambridge",
+      "finding": "Publisher-advertised WordPress API returned HTTP 200; posts collection returned X-WP-Total 0; scholar interviews have no verified bulk content endpoint",
+      "action": "no_additional_api_collection_enabled",
+      "evidence_url": "https://www.gatescambridge.org/wp-json/wp/v2/posts?per_page=1"
+    },
+    {
+      "id": "wordpress-com-public-post-api",
+      "audited_at": "2026-11-17T13:59:08.426657+09:00",
+      "finding": "Operator documents unauthenticated published-post GET access; API-host robots disallows indexing.",
+      "usable_transport": "GET https://public-api.wordpress.com/rest/v1.1/sites/{blog}.wordpress.com/posts/",
+      "scope": "Only approved WordPress.com published-post list routes and public parameters; other website robots checks remain active.",
+      "action": "standalone_staging_collection",
+      "source_domains_discovered": 134,
+      "documentation": "https://developer.wordpress.com/docs/api/getting-started/",
+      "reference": "https://developer.wordpress.com/docs/api/1/get/sites/$site/posts/",
+      "api_terms": "https://developer.wordpress.com/docs/api/guidelines-for-responsible-use-of-automattics-apis/",
+      "evidence_root": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/experience-wordpress-com-v1",
+      "accepted_experiences_added": 0,
+      "restrictions": "Do not retry denied blogs; stop unknown host denials and respect Retry-After. No identity spoofing or authentication bypass."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "notes": "작성자가 Gates 선정과 공개 지원문 연결을 밝혔다. 공식 연감 파일은 확보하지 못해 결과 근거 수준은 본인 보고다. 2026/27의 동일 질문으로 전이하지 않는다.",
+  "case_id": "gc26w-c1",
+  "program_id": "gates-cambridge",
+  "outcome_url": "https://sampurnabuffalo.wordpress.com/2017/11/16/gates-cambridge-scholarship-sample-essay-interview-and-life-after/",
+  "outcome_basis": "author_report",
+  "outcome_quote": "was chosen as a Gates Cambridge Scholar",
+  "case_documents": [
+    {
+      "url": "https://sampurnabuffalo.wordpress.com/wp-content/uploads/2017/11/gatesessay.pdf",
+      "case_id": "gc26w-c1",
+      "finality": "unknown",
+      "program_id": "gates-cambridge",
+      "document_id": "gc26w-sampurna-essay-3016c6cfdd33",
+      "capture_mode": "full_document",
+      "document_role": "application_statement",
+      "binding_evidence_id": "gc26w-c1-bind"
+    },
+    {
+      "url": "https://sampurnabuffalo.wordpress.com/2017/11/16/gates-cambridge-scholarship-sample-essay-interview-and-life-after/",
+      "case_id": "gc26w-c1",
+      "finality": "not_applicable",
+      "program_id": "gates-cambridge",
+      "document_id": "gc26w-sampurna-review-8c7aa3064e36",
+      "capture_mode": "full_document",
+      "document_role": "reflection",
+      "binding_evidence_id": "gc26w-c1-bind"
+    }
+  ],
+  "outcome_status": "selected",
+  "experience_round_id": null,
+  "outcome_evidence_id": "gc26w-c1-result",
+  "outcome_capture_mode": "full_document",
+  "experience_round_label": "historical public PhD application; author account"
+}

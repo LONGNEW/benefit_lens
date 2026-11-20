@@ -1,0 +1,30 @@
+작성 기준과 패턴 registry 확장 v1
+
+실행
+python3 tools/expand_benefitlens_writing_registry.py
+출력은 공용 캐시 team-production-20261119/team-expansion-20261120/writing-validation에 둔다.
+--experience-root는 cases.jsonl.gz와 documents.jsonl.gz가 있는 최신 경험 스냅샷을 받는다. 지정하지 않으면 BASE/experience를 사용한다. --case-source는 사례 파일만 직접 지정한다.
+
+입력과 처리
+writing/evidence-map.sqlite3의 모든 행에 자료 역할, 적용 가능한 검토 경로와 미지원 범위를 연결한다. 게시물, 글, 주석, 수정쌍과 라벨의 수는 단위별로 유지한다. 문학 조언의 지원서 전이, 미확인 장르, 모델의 수정 의도 예측과 사람이 붙인 라벨을 구분한다.
+
+내용 검토 단계는 요구, 주장, 근거, 추론, 문단과 문서다. 9개 기준의 원래 설명과 검토 단계, 원문 구간 검토, 기존 출처 ID를 연결한다. 실제 인용이 확인된 기존 원칙과 보존 자료의 ID만 확인된 근거도 별도 상태로 둔다.
+
+문항 의도는 기존에 보존한 관찰과 원문 인용 구간을 대조한다. 행정 사실이나 문항 소개에 설득형 글을 강제하지 않는다. 현행 공식 문항과 회차가 확인되기 전에는 개인 작성 요구로 승격하지 않는다.
+
+compact 인계의 실제 writing-fragments를 읽어 재료 역할, 주장과 근거 및 추론, 문장 기능, 국소 연결과 한계를 보존한다. 필요한 본인 사실 슬롯은 need_info로 두며 타인의 경험을 채우지 않는다. 문단의 첫 문장과 마지막 문장 연결은 사용자 스타일 층이며 실제 원문 전체의 문단 경계를 복원한 결과와 구분한다.
+
+자료 경계
+경험 사례 전량의 출처 역할, 결과 주장과 그 근거 유형, 인물과 실제 공고 회차 연결 상태를 case_boundary에 저장한다. 선정과 미선정 자료는 비교 맥락이며 글쓰기의 인과적 품질 정답이 아니다. 사람 채점 글은 원 척도를 유지하고, 이미 살펴본 PERSUADE test는 개발 자료로 사용한다.
+
+출력
+registry.sqlite3에는 source_route, capability_route, registry, case_boundary, document_route, metadata가 있다. registry는 검토 기준, 문항 의도, 작성 관찰, 템플릿과 공고 조건 참조를 유형별로 저장한다. document_route는 새 원문 ID와 본문 지문, 구조 세그먼트 참조 및 사례 연결을 보존한다. 개인 사실 값과 새 품질 점수는 채우지 않는다.
+support-distribution.jsonl과 genre-distribution.jsonl은 단위별 지원 범위다. evaluation-plan.json은 공식 문항 연결, 독립 사람 2명의 가림 평가, 작성자와 프로그램 및 회차 분리, 평가자 불일치 조정과 평가 모델 보정을 명시한다. 실제 수행 전에는 완료 수와 점수를 만들지 않는다.
+report.txt는 실제 계수와 남은 게이트, examples.json은 원문 ID가 있는 두 관찰을 보여준다. input-manifest.json은 입력 파일의 지문을 보존한다.
+
+갱신
+근거 지도의 파일 상태와 SHA가 같으면 source_route를 재사용하고 동적 문항, 관찰, 조건과 사례 경계를 트랜잭션으로 교체한다. 경로 정책을 바꿔 재분류할 때만 --rebuild-source-routes를 명시한다. 입력이 갱신 도중 바뀌면 코드 갱신을 다시 요청한다. 외부 모델이나 네트워크는 호출하지 않는다.
+
+확인
+python3 -m pytest -q tools/tests/test_benefitlens_writing_registry.py tools/tests/test_benefitlens_compact_handoff.py
+검사는 출처 연결과 계수 및 인계 계약을 대상으로 한다. 실제 글의 설득력은 독립 내용 검토의 대상이다.

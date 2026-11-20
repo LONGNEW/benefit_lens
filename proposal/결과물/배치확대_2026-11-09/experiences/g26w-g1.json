@@ -1,0 +1,45 @@
+{
+  "notes": "공식 명단의 이름과 학교, 작성자의 프로그램 및 연도 연결을 확인했다. 공개본의 정확한 최종 제출본 동일성은 미검증이다.",
+  "case_id": "g26w-g1",
+  "program_id": "google-phd-fellowship",
+  "outcome_url": "https://research.google/programs-and-events/phd-fellowship/recipients/",
+  "outcome_basis": "official_record",
+  "outcome_quote": "Hyeon Jeon, Seoul National University",
+  "case_documents": [
+    {
+      "url": "https://research.google/programs-and-events/phd-fellowship/recipients/",
+      "case_id": "g26w-g1",
+      "finality": "not_applicable",
+      "program_id": "google-phd-fellowship",
+      "document_id": "g26w-google-recipients-eed7268fdcc3",
+      "capture_mode": "full_document",
+      "document_role": "outcome_record",
+      "binding_evidence_id": "g26w-g1-result"
+    },
+    {
+      "url": "https://hyeonword.com/google_fellowship_materials/assets/essay_hj_googlefellowship.pdf",
+      "case_id": "g26w-g1",
+      "finality": "unknown",
+      "program_id": "google-phd-fellowship",
+      "document_id": "g26w-hyeon-essay-ddd4094777d6",
+      "capture_mode": "full_document",
+      "document_role": "application_statement",
+      "binding_evidence_id": "g26w-g1-link"
+    },
+    {
+      "url": "https://hyeonword.com/google_fellowship_materials/",
+      "case_id": "g26w-g1",
+      "finality": "not_applicable",
+      "program_id": "google-phd-fellowship",
+      "document_id": "g26w-hyeon-index-1f9562960047",
+      "capture_mode": "full_document",
+      "document_role": "application_index",
+      "binding_evidence_id": "g26w-g1-link"
+    }
+  ],
+  "outcome_status": "selected",
+  "experience_round_id": null,
+  "outcome_evidence_id": "g26w-g1-result",
+  "outcome_capture_mode": "full_document",
+  "experience_round_label": "2024 author-linked public materials"
+}

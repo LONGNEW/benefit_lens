@@ -1,0 +1,131 @@
+{
+  "scope": "existing_pure_functions_and_local_saved_evidence",
+  "observations": {
+    "format_alias_same_unit": {
+      "inputs": [
+        "매월 50만원 지원",
+        "500,000원/월 지원"
+      ],
+      "output": {
+        "amount_min": 500000.0,
+        "amount_max": 500000.0,
+        "currency": "KRW",
+        "recurrence": "month",
+        "amount_qualifier": "fixed"
+      },
+      "basis": "controlled_format_pair"
+    },
+    "period_not_in_short_anchor": {
+      "input": "600 만원",
+      "function_output": {
+        "amount_min": 6000000.0,
+        "amount_max": 6000000.0,
+        "currency": "KRW",
+        "recurrence": null,
+        "amount_qualifier": "fixed"
+      },
+      "saved_record": {
+        "amount": 6000000,
+        "currency": "KRW",
+        "period": "semester"
+      },
+      "source": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/data/sample/programs.json:503",
+      "archived_evidence": {
+        "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/text/ikef-official.txt",
+        "lines": [
+          105,
+          113
+        ],
+        "raw_sha256_matched": true,
+        "text_sha256": "fff211c4c338df9d7aa2c296502f86da27b36088abc0a636e597256170a73d18",
+        "quote": "학기당 금액\n비고\n관정성적우수장학금\nA\n형\n학부\n600\n만원\n타장학금 중복수혜 불가"
+      }
+    },
+    "multiple_scopes_and_duration_bug": {
+      "input": "박사과정생 월 200만 원, 석사과정생 월 150만 원이 지급되며, 최대 4학기까지 수혜가 가능하다",
+      "compound_output": {
+        "amount_min": null,
+        "amount_max": null,
+        "currency": null,
+        "recurrence": null,
+        "amount_qualifier": null
+      },
+      "phd": {
+        "amount_min": 2000000.0,
+        "amount_max": 2000000.0,
+        "currency": "KRW",
+        "recurrence": "month",
+        "amount_qualifier": "fixed"
+      },
+      "masters": {
+        "amount_min": 1500000.0,
+        "amount_max": 1500000.0,
+        "currency": "KRW",
+        "recurrence": "month",
+        "amount_qualifier": "fixed"
+      },
+      "duration_input": "석사과정생 월 150만 원이 지급되며, 최대 4학기까지 수혜가 가능하다",
+      "duration_output": {
+        "amount_min": null,
+        "amount_max": 1500000.0,
+        "currency": "KRW",
+        "recurrence": "month",
+        "amount_qualifier": "up_to"
+      },
+      "expected_semantics": "fixed monthly award, duration ceiling of 4 semesters",
+      "finding": "qualifier scope defect reproduced; production impact not checked",
+      "source": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/web/public/original-ingestion.json:156033"
+    },
+    "coursework_non_equivalence": {
+      "google": "unknown",
+      "mobis": false,
+      "profile": {
+        "education.degree": "phd",
+        "education.coursework_completed": false
+      },
+      "google_anchor": "completed most of their graduate coursework",
+      "mobis_anchor": "② 박사 : Coursework 수료자",
+      "scope": "coded subset, not a full eligibility verdict",
+      "source": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/data/sample/programs.json",
+      "archived_google_evidence": {
+        "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/text/google-official.txt",
+        "lines": [
+          159,
+          159
+        ],
+        "raw_sha256_matched": true,
+        "text_sha256": "9905fc9c5da269239ba0726a473d51034e75e77e182680eb7fd1dcdec4f7b5bd",
+        "quote": "Students who have completed most of their graduate coursework in their PhD by the academic award year when the Fellowship begins. Students should have sufficient time for research projects after receiving a fellowship."
+      }
+    },
+    "opportunity_type_not_activity": {
+      "category": "fellowship",
+      "anchor": "summer internship",
+      "activity": "수혜 학년도 전에 지정된 국가의 NVIDIA 연구소에서 대면 여름 인턴십을 수행해야 합니다.",
+      "source": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/data/sample/programs.json:728",
+      "archived_evidence": {
+        "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/text/nvidia-official.txt",
+        "lines": [
+          34,
+          34
+        ],
+        "raw_sha256_matched": true,
+        "text_sha256": "04b9b9d2edc87d2f702e3890175d82ee8e455aafbb13567b0e3cb8d81f9d435e",
+        "quote": "The NVIDIA Graduate Fellowship Program provides up to $60,000 per award for PhD research that advances accelerated computing. Fellows work with NVIDIA researchers and complete a required in-person summer internship before the award year."
+      }
+    },
+    "guide_quote_and_batch_shape": {
+      "line": "For previously awarded scholarships, scholarship rates remain unchanged, for more information on housing allowance and tuition fees, please contact your mobility officer.",
+      "line_number": 341,
+      "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/8dcdf982ec2d345efc8ad70fd4b080b294fb6e69d89222bf217e994c286c2df6.txt",
+      "hashes_matched": true,
+      "assertion_checked_by_person": "term present, no direct payment provision in this span",
+      "proposed_reply": "received receipt and rejected benefit mapping"
+    }
+  },
+  "verification_kind": "6 focused comparisons, including 1 known defect reproduction",
+  "full_extraction_accuracy_measured": false,
+  "runtime_code_changed": false,
+  "database_writes": 0,
+  "network_requests": 0
+}

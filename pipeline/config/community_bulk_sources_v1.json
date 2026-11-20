@@ -1,0 +1,33 @@
+{
+  "version": "community-bulk-v1",
+  "archive_item": "stackexchange_20260930",
+  "official_comparison_item": "stackexchange",
+  "publication_date": "2026-09-30",
+  "publisher_role": "community_redistributor",
+  "original_publisher": "Stack Exchange Network contributors",
+  "access_basis": "Public Internet Archive redistribution of Stack Exchange XML dumps. Current first-party dump preferences require login and are not used.",
+  "documentation": [
+    "https://meta.stackexchange.com/questions/419975/the-return-of-the-network-data-dump",
+    "https://meta.stackexchange.com/questions/2677/database-schema-documentation-for-the-public-data-dump-and-sede",
+    "https://archive.org/details/stackexchange_20260930"
+  ],
+  "sites": [
+    {"id": "academia", "domain": "academia.stackexchange.com", "archive_domain": "academia.stackexchange.com"},
+    {"id": "writing", "domain": "writing.stackexchange.com", "archive_domain": "writers.stackexchange.com"},
+    {"id": "workplace", "domain": "workplace.stackexchange.com", "archive_domain": "workplace.stackexchange.com"}
+  ],
+  "application_pattern": "(?<!\\w)(?:statement.of.purpose|personal.statement|motivation(?:al)?.letter|cover.letter|application.essay|admission.essay|scholarship.essay|research.statement|research.proposal|grant.proposal|fellowship.application|scholarship.application|letter.of.intent|letter.of.motivation|resumes?|résumés?|curriculum.vitae)(?!\\w)",
+  "application_tags": ["statement-of-purpose", "cv", "resume", "cover-letter", "application-cover-letter", "research-statement", "teaching-statement", "research-proposal", "motivation-letter"],
+  "writing_tags": ["academic-writing", "essays", "structure", "paragraphs", "editing", "revisions", "clarity", "style", "non-fiction", "argument", "persuasive-writing", "technical-writing", "business-writing", "professional-writing", "transitions", "organization"],
+  "intents": {
+    "research_motivation": "motivat|research.interest|purpose|inspiration",
+    "program_fit": "fit|why.this|university|institution|supervisor|professor|course",
+    "personal_contribution": "contribut|achievement|accomplish|research.experience|my.role|resume|résumé|curriculum.vitae",
+    "leadership_impact": "leadership|impact|community|volunteer",
+    "challenge_reflection": "failure|weakness|low.gpa|challenge|gap.year|learned",
+    "execution_plan": "plan|proposal|methodolog|timeline|future|goal",
+    "paragraph_logic": "paragraph|transition|cohesion|coherence|structure|opening|conclusion|first.sentence|last.sentence|argument",
+    "revision_clarity": "edit|revis|clarity|concise|word.limit|feedback|proofread|style"
+  },
+  "promotion": "All selections are lexical candidates for semantic review. Community acceptance is not an applicant selection outcome. No record counts as an experience."
+}

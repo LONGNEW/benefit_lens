@@ -1,0 +1,79 @@
+{
+  "version": "team-production-v2",
+  "status": "production_inventory_and_shared_contracts_not_completed_semantic_processing",
+  "reporting_scope": {
+    "exclude_record_types": ["sample"],
+    "exclude_synthetic_profiles": true,
+    "exclude_demo_tables_from_production_metrics": ["opportunities", "program_knowledge"],
+    "unit_rules": [
+      "공고 후보, 현재 모집 검증 공고, 원문 문서, 인물, 경험 사건, 작성 지침과 수정 전후 쌍은 서로 다른 단위로 집계한다.",
+      "本文 확보, 기계 추출, 의미 검토, 개인화 사용 가능 상태를 따로 집계한다.",
+      "10개 과거 데모와 코드 테스트 통과 수를 대량 프로젝트의 완료량으로 보고하지 않는다."
+    ]
+  },
+  "teams": [
+    {
+      "id": "T1", "name": "공고와 공유 조건 스키마",
+      "owns": ["notice_identity", "source_capture_and_freshness", "official_conditions", "official_writing_tasks", "shared_condition_catalog", "condition_normalization"],
+      "inputs": ["live_discovery_inventory", "retained_source_documents", "T4 unmapped condition feedback"],
+      "outputs": ["source_bound_notice_projection", "typed_condition_candidates", "shared_condition_catalog", "reviewed_official_tasks", "refresh_policy"],
+      "content_review": ["단위, 기준 시점, 예외와 AND/OR/NOT의 보존", "기관, 국가, 모집 회차와 중복의 구분", "공식 문항, 제출 서류와 추가 조건의 원문 연결"],
+      "consumers": ["T2", "T3", "T4", "T6"],
+      "definition_of_done": "대상 수집분 전체에 원문 경로와 처리 단계가 연결되고, 검토된 조건만 정본으로 인계되며 미상과 미지원 조건의 이유가 남는다."
+    },
+    {
+      "id": "T2", "name": "경험과 작성 사례 분석",
+      "owns": ["person_episode_document_identity", "source_role", "experience_fact_extraction", "observed_writing_strategy", "inferred_answer_intent"],
+      "inputs": ["collected_experience_documents", "T1 official program and task identity", "T3 genre and evidence requirements"],
+      "outputs": ["source_bound_episode_projection", "question_specific_fact_candidates", "paragraph_strategy_observations", "missing_evidence_and_analysis_queue"],
+      "content_review": ["공식 요구, 지원자의 행동과 분석자의 의미 추론을 구분", "같은 사람의 같은 사건을 다룬 여러 문서 연결", "합격, 불합격과 글의 품질을 별도 관찰로 기록"],
+      "consumers": ["T3", "T4", "T6"],
+      "definition_of_done": "원문 구간을 가진 사실과 전략이 사람, 사건과 문항에 연결되고 분석하지 못한 자료와 미상 값을 전량 보고한다."
+    },
+    {
+      "id": "T3", "name": "글쓰기 근거, 구성과 내용 검증",
+      "owns": ["writing_evidence_library", "genre_specific_principles", "argument_and_paragraph_structure", "content_quality_review", "rubric_calibration"],
+      "inputs": ["textbooks_and_primary_writing_guidance", "scored_essays_and_revision_corpora", "T1 official tasks", "T2 source_bound_observations"],
+      "outputs": ["source_linked_criteria", "genre_scoped_templates", "paragraph_plans", "content_review_decisions_and_comparisons"],
+      "content_review": ["문항의 의도, 주장, 근거와 추론의 연결", "문단 목적과 첫 문장, 마지막 문장, 앞뒤 문단의 관계", "장르와 사용자의 스타일 선호를 구분", "권고, 관찰 상관과 실험 효과를 구분"],
+      "consumers": ["T2", "T4", "T6"],
+      "definition_of_done": "기준마다 출처, 적용 장르와 판단 근거가 있고 실제 작성본의 문항 충족, 사실 보존과 논리 연결을 내용으로 검토한다."
+    },
+    {
+      "id": "T4", "name": "공유 조건 기반 개인화와 작성",
+      "owns": ["profile_field_binding", "eligibility_evaluation", "conditional_information_requests", "personal_episode_confirmation", "draft_and_revision"],
+      "inputs": ["T1 shared condition catalog and notice projection", "user_provided_documents_and_confirmations", "T2 observations", "T3 writing criteria and templates"],
+      "outputs": ["source_linked_condition_results", "missing_information_questions", "confirmed_personal_facts", "personal_plan_and_draft"],
+      "content_review": ["공고팀과 같은 field_id, 연산자, 단위와 시점을 사용", "공통 프로필로 판단 가능한 조건, 프로그램별 추가 조건과 작성 재료를 구분", "개인 사실을 외부 사례의 사실로 채우지 않음"],
+      "consumers": ["T1", "T3", "T6"],
+      "definition_of_done": "실제 공고 조건별 판정과 근거, 부족한 입력과 개인 작성본이 연결되고 미지원 조건은 이유와 함께 반환된다."
+    },
+    {
+      "id": "T6", "name": "통합 운영과 기술 검증",
+      "absorbs": ["former_T5_code_tests_and_technical_regression"],
+      "owns": ["collection_scheduling", "dependency_manifest", "version_lineage", "schema_and_code_validation", "retry_and_recovery", "cross_team_handoff", "production_status_reporting"],
+      "inputs": ["T1 refresh policy and shared catalog", "T1/T2/T3/T4 artifacts and dependencies"],
+      "outputs": ["full_inventory_execution_manifest", "invalidation_and_reprocessing_queue", "technical_validation_results", "stage_and_failure_counts"],
+      "technical_review": ["동일 조건 계약 버전의 사용", "입력 해시, 코드, 스키마와 산출물의 계보", "대량 처리 누락, 중복, 실패와 재개", "현재 모집, 자료 최신성, 내용 검토와 개인 적합성의 상태 보존"],
+      "consumers": ["T1", "T2", "T3", "T4"],
+      "definition_of_done": "다섯 팀 산출물의 계약과 의존성이 기계적으로 연결되고 변경, 실패와 미처리 자료가 실제 큐와 보고에 반영된다."
+    }
+  ],
+  "retired_team": {
+    "id": "T5", "reason": "기술 검사는 운영팀으로 통합하고 작성 내용 검증은 좋은 글 기준팀이 맡는다.",
+    "independence_rule": "내용 작성자와 검토자의 판단 기록을 구분하되 별도 코드 평가팀을 유지하지 않는다."
+  },
+  "connections": [
+    {"from": "T1", "to": "T4", "artifact": "shared_condition_catalog_and_notice_projection", "gate": "same_catalog_sha256"},
+    {"from": "T1", "to": "T2", "artifact": "official_program_round_and_task_identity"},
+    {"from": "T1", "to": "T3", "artifact": "official_writing_task_and_constraints"},
+    {"from": "T2", "to": "T3", "artifact": "source_bound_episode_and_strategy_observations"},
+    {"from": "T3", "to": "T2", "artifact": "genre_and_fact_requirements"},
+    {"from": "T3", "to": "T4", "artifact": "source_linked_criteria_and_paragraph_structure"},
+    {"from": "T4", "to": "T1", "artifact": "unmapped_fields_conflicts_and_missing_conditions"},
+    {"from": "T4", "to": "T3", "artifact": "confirmed_personal_facts_and_draft_for_content_review"},
+    {"from": "T6", "to": "T1,T2,T3,T4", "artifact": "versioned_execution_and_reprocessing_queue"}
+  ],
+  "report_metrics": ["inventory_by_native_unit", "source_body_linkage", "structured_projection_coverage", "semantic_review_coverage", "shared_catalog_binding", "unsupported_condition_reasons", "source_and_genre_coverage", "queue_and_failure_counts"],
+  "existing_runtime_state": "새 대량 감사와 projection은 로컬 실행하며, 기존 수집 서비스의 설정과 정본 DB 적재를 임의로 바꾸지 않는다."
+}

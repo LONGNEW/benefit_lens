@@ -1,0 +1,138 @@
+{
+  "seed": "benefitlens-2c-role-audit-2026-11-09",
+  "distinct_hash_population": 6115,
+  "items": [
+    {
+      "document_id": "58f50a873d45d90b010fc4d71176750f24c67c0c4688371245a61f071280acce",
+      "url": "https://cat-lettuce-6at7.squarespace.com/resources-and-guides",
+      "wave": 3,
+      "content_sha256": "95d4c1db55b7d8c34a8f11503d1c0ced318de4caa8587bf31f679c79245fc2d3",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/95d4c1db55b7d8c34a8f11503d1c0ced318de4caa8587bf31f679c79245fc2d3.txt",
+      "role_label": "third_party_discovery_pointer",
+      "evidence_line": 40,
+      "annotation": "제3자 블로그 목록. 원 기관의 공고 확인이 필요하다."
+    },
+    {
+      "document_id": "42dce79481572a708f6283ab2b099788bee741c714117369f0c80fa348ebd70e",
+      "url": "https://documents1.worldbank.org/curated/en/965151468314986713/pdf/383240EWPSno401TertiaryEd1Financing.pdf",
+      "wave": 3,
+      "content_sha256": "1dafdb58da95c27724d5b152aa88744043a4e6000810402ee06ee630aaf2f5db",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/1dafdb58da95c27724d5b152aa88744043a4e6000810402ee06ee630aaf2f5db.txt",
+      "role_label": "policy_report",
+      "evidence_line": 4,
+      "annotation": "대학 재원 정책 보고서. 개인 모집 공고가 아니다."
+    },
+    {
+      "document_id": "4fe5cac8c1202f9bd1ebc5d0705f92e20e81fb7c20f46b442f59959efcf428f0",
+      "url": "https://gfd.whoi.edu/wp-content/uploads/sites/24/2024/05/WHOI-Welcome-Packet-2024.pdf",
+      "wave": 4,
+      "content_sha256": "428427e527753a5cc4722518e5a0b5d2c828b0cda6e8ac0faedc81c7c748d486",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/428427e527753a5cc4722518e5a0b5d2c828b0cda6e8ac0faedc81c7c748d486.txt",
+      "role_label": "participant_admin_guide",
+      "evidence_line": 1,
+      "annotation": "기관 참여자 안내 자료. 별도 모집 회차 승인 근거는 없다."
+    },
+    {
+      "document_id": "8361f8e7937e160f24ce8a30645c8ed52c3c4e343c147ad01390813456f7e269",
+      "url": "https://bk21four-urban.pusan.ac.kr/bk21four-urban/58853/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGYmsyMWZvdXItdXJiYW4lMkYxNDU0MSUyRjE3NjI2OTUlMkZhcnRjbFZpZXcuZG8lM0Y%3D",
+      "wave": 3,
+      "content_sha256": "ac5979015cd7ee7fef80ac777630886a6faa77852b4f236f05c51c83e797c461",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/ac5979015cd7ee7fef80ac777630886a6faa77852b4f236f05c51c83e797c461.txt",
+      "role_label": "cycle_specific_issuer_candidate",
+      "evidence_line": 57,
+      "annotation": "PNU 2026 3MT 추가 모집과 시상. 지원 범위와 현재 상태는 검토 전이다."
+    },
+    {
+      "document_id": "d9189b22d34baf8e71b96b993b5ec7fd3c4976bd4ac65c88d1b6347ae7cd308f",
+      "url": "https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/funding/partial-tuition-waiver-simultaneously-enrolled-siblings-ay-2027-28",
+      "wave": 4,
+      "content_sha256": "6dc748b8be4d96572e11a5925e705a793e9e59b120499b049fc2d79dba2fcaca",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/6dc748b8be4d96572e11a5925e705a793e9e59b120499b049fc2d79dba2fcaca.txt",
+      "role_label": "cycle_specific_issuer_candidate",
+      "evidence_line": 131,
+      "annotation": "Bocconi 2027-2028 등록금 감면 규정. 신청자와 형제자매 조건은 분리해 봐야 한다."
+    },
+    {
+      "document_id": "23478d8320603e0635edb6ade63be198fe03fe414b52b935eeebc643c034fe46",
+      "url": "https://oge.mit.edu/gpp/funding-compensation/graduate-resident-advisors/",
+      "wave": 3,
+      "content_sha256": "6ab81d757eb8e077924a2fe5744783f664fb5acf91bceaab3a182d8167ef891e",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/6ab81d757eb8e077924a2fe5744783f664fb5acf91bceaab3a182d8167ef891e.txt",
+      "role_label": "institution_role_guide",
+      "evidence_line": 76,
+      "annotation": "MIT 기숙사 직무 보상 안내. 주거와 월 수당은 직무 보상이며 독립 모집 회차는 미확정이다."
+    },
+    {
+      "document_id": "da2b707ef9769cc05a04adbac433def8b95296a023321f2746a8b997148893f1",
+      "url": "https://www.bristol.ac.uk/students/support/disability-support/study-support/specialist/",
+      "wave": 4,
+      "content_sha256": "010d2eb38217cad697af216a3fdcbe41b93d67f5054932964f696588893a6c28",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/010d2eb38217cad697af216a3fdcbe41b93d67f5054932964f696588893a6c28.txt",
+      "role_label": "institution_service_guide",
+      "evidence_line": 88,
+      "annotation": "Bristol 장애 지원 서비스 안내. 독립 공고 회차는 확인하지 않았다."
+    },
+    {
+      "document_id": "5146f26ed53e5258d5d292568cdd56f0f0fa0c523bcb3df1cff97e3dfeb2f556",
+      "url": "https://futurestudents.yorku.ca/financialsupport/",
+      "wave": 4,
+      "content_sha256": "075ce98d7c0f8a1d74d3508c80c6ae32994c9602c3b116b4b6d62642c1c7d582",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/075ce98d7c0f8a1d74d3508c80c6ae32994c9602c3b116b4b6d62642c1c7d582.txt",
+      "role_label": "institution_directory",
+      "evidence_line": 46,
+      "annotation": "York 장학 및 재정지원 목록. 연결된 개별 공고는 검토 전이다."
+    },
+    {
+      "document_id": "d223cac6000d1ed002272e44a47e7a584054ea821719714a5ce169e62af3c03d",
+      "url": "https://www.ojp.gov/funding/apply/ojp-grant-application-resource-guide",
+      "wave": 3,
+      "content_sha256": "3a1acd48b89fbb1e722f39fc7c59236bc839bd6b1789bbdb7c75ae2040ec9f11",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/3a1acd48b89fbb1e722f39fc7c59236bc839bd6b1789bbdb7c75ae2040ec9f11.txt",
+      "role_label": "general_application_guide",
+      "evidence_line": 1,
+      "annotation": "미국 OJP의 일반 신청 가이드. 학생 개인 지원 공고로 분류할 근거가 없다."
+    },
+    {
+      "document_id": "d78656ef1d0ab8eb96aecb9ccb444803d8bb459a9a1f043d923066b5357b85db",
+      "url": "https://www.csuohio.edu/sites/default/files/Deckard%20Family%20Civic%20Fellows%20Application15.pdf",
+      "wave": 4,
+      "content_sha256": "0ec1d604d97d2a655b17737760982f2238e83cf731a904d3af7fe8f8a8372695",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/0ec1d604d97d2a655b17737760982f2238e83cf731a904d3af7fe8f8a8372695.txt",
+      "role_label": "application_form",
+      "evidence_line": 111,
+      "annotation": "Cleveland State 2015년 지원 양식. 현재 회차로 올릴 수 없다."
+    },
+    {
+      "document_id": "7fead1bcd984d87ad6a066655ed228e3c39ec2b68f18bd92a1e24ff66fbc71d2",
+      "url": "https://iovine-young.usc.edu/apply/scholarships-and-financial-aid",
+      "wave": 4,
+      "content_sha256": "379db9f799fe9a0c429af8c1c295da59d23f0d476d2cbca1e8f898e3cf90afd2",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/379db9f799fe9a0c429af8c1c295da59d23f0d476d2cbca1e8f898e3cf90afd2.txt",
+      "role_label": "institution_directory",
+      "evidence_line": 11,
+      "annotation": "USC 장학과 재정지원 목록. 하위 링크는 검토 전이다."
+    },
+    {
+      "document_id": "b434e6959eeeac4b3b9eb1d0649153ecfa6f2a7d61cb00128c08e69e2e964775",
+      "url": "https://www.ecf.org/uploads/pages/2026-Academic-Application-Form-1764904799.pdf",
+      "wave": 4,
+      "content_sha256": "eecf0618f78e52c2131115bd38a25b6ce89468bfacbcb0784a3900fd9a446e19",
+      "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/eecf0618f78e52c2131115bd38a25b6ce89468bfacbcb0784a3900fd9a446e19.txt",
+      "role_label": "application_form",
+      "evidence_line": 2,
+      "annotation": "ECF 2026 신청 양식. 공고 및 현재 모집 상태는 별도 확인이 필요하다."
+    }
+  ],
+  "counts": {
+    "third_party_discovery_pointer": 1,
+    "policy_report": 1,
+    "participant_admin_guide": 1,
+    "cycle_specific_issuer_candidate": 2,
+    "institution_role_guide": 1,
+    "institution_service_guide": 1,
+    "institution_directory": 2,
+    "general_application_guide": 1,
+    "application_form": 2
+  },
+  "scope": "단일 검토자가 6115개 고유 바이트 해시에서 고정 시드로 선택한 12개 저장 텍스트의 문서 역할을 판정. 공고 승인, 웹 모집단 정밀도 및 현재 접수 상태 평가는 아님."
+}

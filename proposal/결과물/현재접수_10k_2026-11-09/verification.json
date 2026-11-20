@@ -1,0 +1,43 @@
+{
+  "postgres_version": "16.15",
+  "rows": {
+    "case_document": 0,
+    "claim": 20094,
+    "claim_evidence": 24089,
+    "evidence": 24089,
+    "experience_case": 0,
+    "opportunity_round": 10000,
+    "pattern_evidence": 0,
+    "program": 10000,
+    "source_document": 10710,
+    "writing_pattern": 0
+  },
+  "raw_hashes": 10710,
+  "text_hashes": 10710,
+  "spans": 24089,
+  "unique_files_hashed": 21122,
+  "unique_text_files_read": 10710,
+  "schema_sha256": "3828bd6fde6c6e526ded1433a44c02aee80e0a3e49587cb52c234d0eb650bb46",
+  "packet_sha256": "7a57b96f7fc22e0264b59463e1d2a1ea9e9d482cc5d552c49e7711fb0af6a872",
+  "exact_input_duplicates_collapsed": 0,
+  "same_input_replay_unchanged": true,
+  "contract_violation_rows": 0,
+  "round_basis_counts": {
+    "source_backed": 10000
+  },
+  "live_identity_audit": {
+    "open_rows": 10000,
+    "round_rows": 10000,
+    "experience_cases": 0,
+    "writing_patterns": 0,
+    "distinct_providers": 94,
+    "distinct_round_keys": 10000,
+    "distinct_check_dates": 1,
+    "student_scope_claims": 10000,
+    "distinct_provider_native": 10000,
+    "student_scope_verified_rows": 10000,
+    "full_eligibility_verified_rows": 0
+  },
+  "basis_definition": "At least one reviewed claim with complete same-round official notice/guidance evidence; not a completeness assertion.",
+  "scope": "disposable PostgreSQL, no published ports and no network; no production writes"
+}

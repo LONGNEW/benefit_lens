@@ -1,0 +1,310 @@
+{
+  "manifest": {
+    "path": "/home/longnew/.cache/datasets/benefitlens/expansion-20261109/integration/manifest-a689af7e23d68c1e.json",
+    "sha256": "5acd97c59b841c1816656227cc76bfa6838aa0a854630f980c254e991c14e059",
+    "bytes": 5963
+  },
+  "expansion": {
+    "as_of": "2026-11-09",
+    "baseline_source_variants": 4339,
+    "baseline_current_rule_verified_variants": 4339,
+    "current_rule_verified_variants": 4378,
+    "new_current_variants": 39,
+    "new_current_periods_rechecked_from_originals": 39,
+    "historical_writing_rounds_added": 3,
+    "historical_writing_rounds_carried_forward": 1,
+    "historical_writing_rounds_new_in_this_expansion": 2,
+    "baseline_family_metrics": {
+      "parent_family_candidates": 1129,
+      "rule_passed_families": 1071,
+      "review_families": 58,
+      "variants_without_family_link": 0
+    },
+    "current_family_metrics": {
+      "parent_family_candidates": 1165,
+      "rule_passed_families": 1107,
+      "review_families": 58,
+      "variants_without_family_link": 0
+    },
+    "new_parent_family_candidates": 36,
+    "baseline_family_candidates_removed": 0,
+    "family_metrics_scope": "current rule-verified variants only, globally regrouped across all inputs",
+    "exact_input_rows_collapsed": {
+      "programs": 0,
+      "opportunity_rounds": 0,
+      "source_documents": 0,
+      "evidence": 0,
+      "claims": 0,
+      "experience_cases": 0,
+      "case_documents": 0,
+      "writing_patterns": 0,
+      "pattern_evidence": 0
+    },
+    "unique_semantic_opportunity_count": null,
+    "scope": "same-day rule-verified source variants and issuer-role family candidates; not personal eligibility"
+  },
+  "tests": {
+    "tests": 181,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "full": {
+    "receipt": "/home/longnew/.cache/datasets/benefitlens/expansion-20261109/integration/runs/159d6cd61816dc42d6aa9a75a7560932cbec54822a22a037afe44e3c56403c34/receipt.json",
+    "receipt_sha256": "824df8096dfa3941663417639aa2dbcbcca4ac89d0b384f699cf43fda510a272",
+    "projected_rows": {
+      "case_document": 13,
+      "claim": 13175,
+      "claim_evidence": 25703,
+      "evidence": 25709,
+      "experience_case": 5,
+      "opportunity_round": 4381,
+      "pattern_evidence": 23,
+      "program": 4378,
+      "source_document": 8323,
+      "writing_pattern": 4
+    },
+    "review": {
+      "accepted": {
+        "by_entity": {
+          "claim": 13175,
+          "writing_pattern": 4
+        },
+        "count": 13179,
+        "reasons": {}
+      },
+      "held": {
+        "by_entity": {
+          "claim": 67
+        },
+        "count": 67,
+        "reasons": {
+          "missing_basis": 31,
+          "missing_decision_id": 19,
+          "missing_reviewer": 19,
+          "missing_scope_fingerprint": 67,
+          "semantic_candidate": 67,
+          "unrecognized_review_basis": 31
+        }
+      },
+      "rejected": {
+        "by_entity": {},
+        "count": 0,
+        "reasons": {}
+      }
+    },
+    "literal": {
+      "documents": 8323,
+      "spans": 25709,
+      "state": "verified"
+    },
+    "projection_audit": {
+      "claim_evidence_relations_match": true,
+      "claim_ids_match_approved": true,
+      "pattern_ids_match_approved": true
+    },
+    "cache_hit_on_replay": true
+  },
+  "database_subset": {
+    "input": {
+      "path": "/home/longnew/.cache/datasets/benefitlens/expansion-20261109/integration/changed-programs-bfe446d577b73b9b.json",
+      "sha256": "ce0fec5d95a83712587539da29d9b00eb3fe7ef9841bf06fd3722dd5d115ebbf",
+      "bytes": 851523
+    },
+    "receipt": "/home/longnew/.cache/datasets/benefitlens/expansion-20261109/integration-db/runs/744eee57943c5b2817cb10ca77a30879012cabbdeccac6b9e454a57f44957062/receipt.json",
+    "receipt_sha256": "f881399c3a0d33e7246acca6a858914a5e23e5595e47b29c54fd8396b0022de2",
+    "projected_rows": {
+      "program": 55,
+      "opportunity_round": 58,
+      "source_document": 83,
+      "evidence": 359,
+      "claim": 206,
+      "claim_evidence": 363,
+      "experience_case": 5,
+      "case_document": 13,
+      "writing_pattern": 4,
+      "pattern_evidence": 23
+    },
+    "contract_violation_rows": 0,
+    "same_input_replay_unchanged": true,
+    "coordinator_cache_hit_on_replay": true,
+    "scope": "changed and carried reference programs only"
+  },
+  "normalization": {
+    "prior_mappings_carried": 7,
+    "net_new_reviewed_mappings": 27,
+    "old_corpus_new_mappings": 19,
+    "new_source_new_mappings": 8,
+    "new_source_typed_support_components": 4,
+    "reviewed_type_counts": {
+      "scholarship": 10,
+      "internship": 5,
+      "student_job": 1
+    },
+    "candidate_and_unknown_counts": {
+      "candidate": 4274,
+      "reviewed": 12,
+      "unknown": 53
+    },
+    "new_source_review_scope": {
+      "reviewed": 4,
+      "unknown": 35
+    },
+    "sql_program_type_for_unchanged_baseline": "other"
+  },
+  "writing": {
+    "new_programs": 2,
+    "new_people": 2,
+    "new_cases": 2,
+    "cases_in_composed_bundle": 5,
+    "approved_guidance_in_composed_bundle": 4,
+    "missing_questions": 13,
+    "finished_applications": 0,
+    "output": {
+      "bytes": 17511,
+      "path": "/home/longnew/.cache/datasets/benefitlens/expansion-20261109/integration/runs/159d6cd61816dc42d6aa9a75a7560932cbec54822a22a037afe44e3c56403c34/writing.json",
+      "sha256": "62de71eb0f033f21475f75d97b86a6e0b58922e6742301fb6510723aebde431c"
+    },
+    "new_llm_candidate_patterns": 5,
+    "new_data_model_calls_completed": 1,
+    "new_llm_candidate_promotions": 0
+  },
+  "loans": {
+    "candidate_programs": 2,
+    "secured_current_calls_added": 0,
+    "reason": "relative deadline requires student course date; current strict period contract does not model it",
+    "ref": {
+      "path": "/home/longnew/.cache/datasets/benefitlens/expansion-20261109/discovery/loan-candidates-344ad9f509660977.json",
+      "sha256": "344ad9f5096609779e12ebb39568bd3a80b82e267f0e311bf498a8318afffa54"
+    }
+  },
+  "new_current_sources": {
+    "AUCKLAND-SCHOLARSHIPS": 25,
+    "EMMANUEL-UQ-SUPPORT": 9,
+    "SWANSEA-EXCELLENCE": 1,
+    "CHINA-SCHOLARSHIP-SYDNEY": 1,
+    "NZSEE": 1,
+    "NMIT": 1,
+    "HPSNZ": 1
+  },
+  "elapsed_seconds": 48.8,
+  "production_db_writes": 0,
+  "large_base_copies": 0,
+  "new_support_examples": [
+    {
+      "program_id": "funding-33c338900be02bec3439f384",
+      "round_id": "recruitment-d242de450b7421ed27a59c24",
+      "value": {
+        "amount": {
+          "currency_code": null,
+          "currency_evidence_ids": [],
+          "frequency": "unknown",
+          "gross_or_net": "unknown",
+          "kind": "cap",
+          "max": null,
+          "min": null,
+          "raw_symbol": "£",
+          "value": 5000
+        },
+        "beneficiary": "student",
+        "component_id": "new-source-swansea",
+        "conditions": [
+          "for the first year of study"
+        ],
+        "conditions_state": "not_reviewed",
+        "method": "discount",
+        "purpose": "tuition",
+        "schema_version": "common-field-v1"
+      },
+      "evidence_ids": [
+        "semantic-evidence-93f34c3d099d6eaf48e346b2"
+      ]
+    },
+    {
+      "program_id": "funding-6ba2ae77af92338b9393adae",
+      "round_id": "recruitment-ca0d78592dbc618eae0ef35a",
+      "value": {
+        "amount": {
+          "currency_code": null,
+          "currency_evidence_ids": [],
+          "frequency": "unknown",
+          "gross_or_net": "unknown",
+          "kind": "exact",
+          "max": null,
+          "min": null,
+          "raw_symbol": "$",
+          "value": 10000
+        },
+        "beneficiary": "student",
+        "component_id": "new-source-nmit",
+        "conditions": [
+          "Domestic ākonga who are enrolled in their final year of an NMIT degree programme in 2027."
+        ],
+        "conditions_state": "not_reviewed",
+        "method": "unknown",
+        "purpose": "living",
+        "schema_version": "common-field-v1"
+      },
+      "evidence_ids": [
+        "semantic-evidence-59fd31474e0024e85a04ddc1"
+      ]
+    },
+    {
+      "program_id": "funding-5133a5e726ef5df0ad1e3ffd",
+      "round_id": "recruitment-765f86804923fb35aa95d931",
+      "value": {
+        "amount": {
+          "currency_code": null,
+          "currency_evidence_ids": [],
+          "frequency": "unknown",
+          "gross_or_net": "unknown",
+          "kind": "exact",
+          "max": null,
+          "min": null,
+          "raw_symbol": "$",
+          "value": 5000
+        },
+        "beneficiary": "student",
+        "component_id": "new-source-emmanuel",
+        "conditions": [],
+        "conditions_state": "not_reviewed",
+        "method": "grant",
+        "purpose": "unknown",
+        "schema_version": "common-field-v1"
+      },
+      "evidence_ids": [
+        "semantic-evidence-582325b0392673fd714f63b5"
+      ]
+    },
+    {
+      "program_id": "funding-d24ba3c849af14822e0f31d3",
+      "round_id": "recruitment-f50006c833ddcb9e10ef5e2e",
+      "value": {
+        "amount": {
+          "currency_code": null,
+          "currency_evidence_ids": [],
+          "frequency": "per_year",
+          "gross_or_net": "unknown",
+          "kind": "cap",
+          "max": null,
+          "min": null,
+          "raw_symbol": "$",
+          "value": 15000
+        },
+        "beneficiary": "student",
+        "component_id": "new-source-auckland",
+        "conditions": [
+          "for up to two years",
+          "for enrolment in the first year of an MArch(Prof) programme by a domestic or international student"
+        ],
+        "conditions_state": "not_reviewed",
+        "method": "unknown",
+        "purpose": "unknown",
+        "schema_version": "common-field-v1"
+      },
+      "evidence_ids": [
+        "semantic-evidence-ef1fbd0d060403bcb4dcec18"
+      ]
+    }
+  ]
+}

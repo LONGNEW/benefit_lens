@@ -1,0 +1,30 @@
+{
+  "version": "notice-refresh-policy-v1",
+  "status": "initial_operating_policy_not_empirically_optimized",
+  "timezone": "Asia/Seoul",
+  "default_hours": 24,
+  "near_deadline_hours": 72,
+  "near_deadline_check_hours": 6,
+  "inactive_days": 7,
+  "expedited_hours": 1,
+  "expedited_intake_modes": ["rolling", "first_come_first_served", "budget_exhaustion"],
+  "failure_retry_minutes": 30,
+  "provider_min_interval_seconds": 0,
+  "date_only_boundary": {"closing": "local_end_of_day", "opening": "local_start_of_day", "scope": "scheduling_only"},
+  "status_transition_rule": "verified_explicit_observation_only",
+  "failure_does_not_change_application_status": true,
+  "schema_refs": {
+    "notice": "pipeline/schemas/opportunity.schema.json",
+    "condition": "pipeline/schemas/opportunity.schema.json#/$defs/condition",
+    "common_claim": "pipeline/schemas/common-fields.schema.json",
+    "handoff": "pipeline/schemas/team-handoff.schema.json"
+  },
+  "source_overrides": {},
+  "recalibration": {
+    "observe_weeks": [2, 4],
+    "metrics": ["semantic_change_rate", "detection_delay", "stale_decision_rate", "request_cost", "review_cost"],
+    "policy_owner": "T1",
+    "policy_auditor": "T5",
+    "schedule_executor": "T6"
+  }
+}

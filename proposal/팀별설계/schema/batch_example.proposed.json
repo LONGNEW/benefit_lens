@@ -1,0 +1,60 @@
+{
+  "artifact_status": "proposed_exchange_on_local_saved_evidence_not_runtime",
+  "contract_version": "normalization-batch-v0-proposed",
+  "request": {
+    "batch_id": "example-batch-001",
+    "producer": "2A-discovery",
+    "delivery_policy": "same_batch_id_requires_same_payload_hash",
+    "entries": [
+      {
+        "candidate_id": "example-housing-mention",
+        "query_id": "0d6958461a337706510682a52074ea2252773606813ab32d036563c80b6b6c6a",
+        "search_concept": "housing allowance",
+        "search_relation": "related",
+        "source": {
+          "document_id": "4120cc554e9fd6bc5c23958f93a5d227f937cb7e6e21216126cf5b177b0e81b2",
+          "document_version_id": "example-source-version-001",
+          "canonical_url": "https://www.campusfrance.org/en/guide-scholarship-holder-study",
+          "source_role_candidate": "guide",
+          "content_sha256": "8dcdf982ec2d345efc8ad70fd4b080b294fb6e69d89222bf217e994c286c2df6",
+          "text_sha256": "04f01088cbf555e8b2d28e201c71df6f82c1243cc8844f8dfdf2059b27498b0f",
+          "fetched_at": "2026-10-18T07:36:56.633206+00:00",
+          "program_candidate": "France Excellence",
+          "round_candidate": null
+        },
+        "evidence": {
+          "evidence_id": "example-term-evidence-001",
+          "purpose": "term",
+          "locator": {"basis": "stored_extracted_text", "line": 341},
+          "exact_quote": "for more information on housing allowance and tuition fees, please contact your mobility officer.",
+          "context_line_before": "The information below concerns scholarship holders whose application was sent to Campus France by the French Ministry of Foreign Affairs or the Embassy as of 1st January 2023."
+        },
+        "proposed_claim": {"field": "benefit.housing_allowance", "assertion": "provided", "amount": null, "currency": null, "period": null},
+        "change_kind": "first_observation"
+      }
+    ]
+  },
+  "acknowledgment": {"batch_id": "example-batch-001", "receipt_state": "received", "valid_envelope_entries": 1},
+  "decisions": [
+    {
+      "candidate_id": "example-housing-mention",
+      "mapping_decision_id": "example-decision-001",
+      "mapper_version": "example-mapper-v0",
+      "registry_version": "example-registry-v0",
+      "review_state": "rejected",
+      "mapping_relation": "non_equivalent",
+      "benefit_role": "reference_mention",
+      "reason_code": "term_reference_does_not_establish_provision",
+      "required_context": ["해당 회차의 실제 주거비 지급 조항", "적용 대상과 조건"],
+      "approved_notice_version_id": null,
+      "same_round_approved_binding": null,
+      "refresh_targets": [],
+      "supersedes_mapping_decision_id": null,
+      "search_followup": "keep_as_search_term_without_promoting_to_benefit"
+    }
+  ],
+  "notes": [
+    "문서 해시와 인용은 기존 수집 기록에서 가져왔다. 계약 키와 판정 ID는 합성 예시다.",
+    "요건 주장 거절은 검색 표현 삭제, 원문 접근 실패 또는 공고 수집 실패를 뜻하지 않는다."
+  ]
+}

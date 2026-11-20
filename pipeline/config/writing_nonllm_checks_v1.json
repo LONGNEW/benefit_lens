@@ -1,0 +1,44 @@
+{
+  "version": "writing-nonllm-checks-v1",
+  "scope": "explicit_annotation_diagnostics_not_semantic_quality_scoring",
+  "semantic_quality_score": null,
+  "automatic_quality_acceptance": false,
+  "missing_annotation_policy": "null_with_zero_tested_denominator_and_missing_scope_or_count",
+  "empty_annotation_policy": "declared_empty_not_applicable_unless_an_explicit_requirement_has_no_binding",
+  "state_values": ["observed", "not_observable", "not_applicable"],
+  "checks": [
+    "sentence_fact_references", "sentence_subject_alignment", "sentence_experience_alignment",
+    "sentence_fact_confirmation", "sentence_plan_status", "sentence_activity_status", "sentence_state_time",
+    "sentence_state_value", "literal_fact_text", "fact_subject_scope", "fact_experience_scope", "fact_source_spans", "source_text_hashes",
+    "paragraph_sentence_references", "sentence_paragraph_references", "paragraph_link_references", "paragraph_link_order",
+    "claim_ground_references", "requirement_sentence_references", "required_annotation_binding",
+    "outline_order", "text_annotation_consistency", "length_constraints", "page_constraints",
+    "task_dependency_references", "task_dependency_cycle", "task_dates", "dependency_dates"
+  ],
+  "human_agreement": {
+    "method": "two_rater_quadratic_weighted_cohen_kappa",
+    "categories": [0, 1, 2],
+    "minimum_pairs_for_arithmetic": 2,
+    "minimum_pairs_is_not_a_statistical_guarantee": true,
+    "constant_either_rater": "null_even_when_arithmetic_kappa_might_be_defined",
+    "missing_ratings": "exclude_pair_and_report_count_never_replace_with_zero",
+    "required_origin": "reviewer_type=human; provenance=actual_human_review; review_record_id and source_ref.evidence_id present",
+    "origin_authentication": "input_declaration_only_not_independently_authenticated",
+    "synthetic_document": "never_report_human_agreement_from_fixture_ratings"
+  },
+  "limitations": [
+    "No prose interpretation, causal judgment, resource feasibility or admissions score",
+    "A declared reference or supplied annotation is not proof of semantic support",
+    "No entity-grid model, Korean coreference model or trained coherence scorer is executed",
+    "Synthetic mutations test annotation diagnostic sensitivity, not Korean application quality",
+    "No numeric total combines diagnostics, rubric ratings and human agreement"
+  ],
+  "sources": [
+    {"authors":"Barzilay, R.; Lapata, M.","year":2008,"title":"Modeling Local Coherence: An Entity-Based Approach","url":"https://aclanthology.org/J08-1001/","use":"Local entity transitions motivate annotation-level diagnostics; no implemented learned metric"},
+    {"authors":"Laban, P.; Dai, L.; Bandarkar, L.; Hearst, M. A.","year":2021,"title":"Can Transformer Models Measure Coherence In Text? Re-Thinking the Shuffle Test","url":"https://aclanthology.org/2021.acl-short.134/","use":"Order mutation sensitivity does not validate all coherence"},
+    {"authors":"Cohen, J.","year":1968,"title":"Weighted kappa: nominal scale agreement with provision for scaled disagreement or partial credit","doi":"10.1037/h0026256","url":"https://doi.org/10.1037/h0026256","use":"Quadratic weighted two-rater agreement arithmetic"},
+    {"authors":"scikit-learn developers","title":"cohen_kappa_score official documentation","url":"https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html","use":"Ordered labels and quadratic weighting reference; no runtime dependency"},
+    {"authors":"Hayes, A. F.; Krippendorff, K.","year":2007,"title":"Answering the Call for a Standard Reliability Measure for Coding Data","url":"https://doi.org/10.1080/19312450709336664","use":"Independent observations and missing-data reporting; alpha is not implemented"},
+    {"authors":"Crossley, S. A. et al.","year":2024,"title":"A large-scale corpus for assessing written argumentation: PERSUADE 2.0","url":"https://github.com/scrosseye/persuade_corpus_2.0","use":"Original rubrics retained; no transfer of English school essay ratings to Korean application scores"}
+  ]
+}

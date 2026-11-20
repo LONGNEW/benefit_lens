@@ -1,0 +1,265 @@
+{
+  "full": {
+    "run": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/integration-full/runs/05daf35a74f44a5e76aa16410f3021e408cf9422f9109a196faac47b31ee0f26",
+    "input_ref": {
+      "decisions": {
+        "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/approval-patches/approval-policy-patch-1b6b5343017ff05c.json",
+        "sha256": "1b6b5343017ff05cbdb4af77a3fc5a683d67d87d87ba8225cef3882cc9576ff6"
+      },
+      "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/discovery/full-handoff-scope-2130c882c45661a8.json",
+      "semantic_bundle_sha256": "ff68d2f8c0a86f18b7486db6ca9b4b542ea9f2578866e16b8bb034e93174ad26",
+      "sha256": "2130c882c45661a8a1055ed79a588ab7a34f901a9ae096f54b0dc250c078fd2d"
+    },
+    "projected_rows": {
+      "case_document": 0,
+      "claim": 13017,
+      "claim_evidence": 25422,
+      "evidence": 25434,
+      "experience_case": 0,
+      "opportunity_round": 4339,
+      "pattern_evidence": 0,
+      "program": 4339,
+      "source_document": 8267,
+      "writing_pattern": 0
+    },
+    "review": {
+      "accepted": {
+        "by_entity": {
+          "claim": 13017
+        },
+        "count": 13017,
+        "reasons": {}
+      },
+      "held": {
+        "by_entity": {
+          "claim": 12
+        },
+        "count": 12,
+        "reasons": {
+          "missing_basis": 12,
+          "missing_scope_fingerprint": 12,
+          "semantic_candidate": 12,
+          "unrecognized_review_basis": 12
+        }
+      },
+      "rejected": {
+        "by_entity": {},
+        "count": 0,
+        "reasons": {}
+      }
+    },
+    "common_fields": {},
+    "projection_audit": {
+      "claim_evidence_relations_match": true,
+      "claim_ids_match_approved": true,
+      "pattern_ids_match_approved": true
+    },
+    "family_counts": {
+      "accepted_claims": 13017,
+      "candidate_claims": 12,
+      "parent_family_candidates": 1129,
+      "processed_source_postings": 4339,
+      "review_families": 58,
+      "rule_passed_families": 1071
+    },
+    "observed_check_dates": [
+      "2026-11-09"
+    ],
+    "new_http_requests": 0,
+    "external_model_calls": 0,
+    "fresh_web_check": false,
+    "receipt": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/integration-full/runs/05daf35a74f44a5e76aa16410f3021e408cf9422f9109a196faac47b31ee0f26/receipt.json",
+    "receipt_sha256": "8a7b468709e4c045fcd405ec11d3bd22ddc766f0e71149ed59f8087d3b44f68f",
+    "literal_checks": {
+      "documents": 8267,
+      "spans": 25434,
+      "state": "verified"
+    },
+    "replay_cache_hit": true,
+    "saved_receipt_unchanged": true,
+    "database_executed": false
+  },
+  "reference": {
+    "run": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/integration-reference/runs/ca3951fcb1add51fb5c0fc17d3ce06106094216d585ee81e21ff51f71a9fcf0e",
+    "input_ref": {
+      "enrichments": {
+        "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_handoff_implementation_20261109/reference-v1-final-verified/reviewed-enrichments.json",
+        "sha256": "a4fffe4aba6d7e2d4f7e58fd4b0221d928bc1619e02b1d350fd240bf96e6e4d1"
+      },
+      "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_handoff_implementation_20261109/reference-v1-final-verified/six-variant-input.json",
+      "semantic_bundle_sha256": "f236be1cee4fdaecc7b805adf50be0e7c7e948458a3989be54988c9ac8cbdce2",
+      "sha256": "a8ce80c5895c716f61c04314c787689b017a5c630a251a4d9f6e01edec7796cc"
+    },
+    "projected_rows": {
+      "case_document": 0,
+      "claim": 25,
+      "claim_evidence": 33,
+      "evidence": 33,
+      "experience_case": 0,
+      "opportunity_round": 6,
+      "pattern_evidence": 0,
+      "program": 6,
+      "source_document": 10,
+      "writing_pattern": 0
+    },
+    "review": {
+      "accepted": {
+        "by_entity": {
+          "claim": 25
+        },
+        "count": 25,
+        "reasons": {}
+      },
+      "held": {
+        "by_entity": {},
+        "count": 0,
+        "reasons": {}
+      },
+      "rejected": {
+        "by_entity": {},
+        "count": 0,
+        "reasons": {}
+      }
+    },
+    "common_fields": {
+      "document_requirement": 1,
+      "enrollment_maintenance": 1,
+      "funding_gap_rule": 1,
+      "support_component": 4
+    },
+    "projection_audit": {
+      "claim_evidence_relations_match": true,
+      "claim_ids_match_approved": true,
+      "pattern_ids_match_approved": true
+    },
+    "family_counts": {
+      "parent_family_candidates": 5,
+      "processed_source_postings": 6,
+      "review_families": 0,
+      "rule_passed_families": 5
+    },
+    "observed_check_dates": [
+      "2026-11-09"
+    ],
+    "new_http_requests": 0,
+    "external_model_calls": 0,
+    "fresh_web_check": false,
+    "receipt": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/integration-reference/runs/ca3951fcb1add51fb5c0fc17d3ce06106094216d585ee81e21ff51f71a9fcf0e/receipt.json",
+    "receipt_sha256": "bf1ef2d532ca9d03fe0e2d66aa288ad4cde60c0d054a2a3812e9dc767980a01c",
+    "literal_checks": {
+      "documents": 10,
+      "spans": 33,
+      "state": "verified"
+    },
+    "replay_cache_hit": true,
+    "saved_receipt_unchanged": true,
+    "database_executed": true,
+    "database_summary": {
+      "postgres_version": "16.15",
+      "contract_violation_rows": 0,
+      "same_input_replay_unchanged": true
+    }
+  },
+  "writing": {
+    "run": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/integration-writing/runs/7b126b624d775e1abb0796c745954950842b322e5b0faced4f4c988002c85efc",
+    "input_ref": {
+      "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_handoff_implementation_20261109/reference-v1-final-verified/nvidia-input.json",
+      "required_fields": {
+        "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_handoff_implementation_20261109/reference-v1-final-verified/writing-needs.json",
+        "sha256": "9f4facf797a945bf2094bbeeb5b88bafab392774abd5501badcac7bd668c8eb1"
+      },
+      "semantic_bundle_sha256": "ed6afdc200d289ef7d244cd5ec336e5ae3271d444ad0431816e618c810f7fbbb",
+      "sha256": "44822185789be755bb433238cc35bae1fe1ac3114bfb6c8c994c2d6a5092370c"
+    },
+    "projected_rows": {
+      "case_document": 8,
+      "claim": 4,
+      "claim_evidence": 5,
+      "evidence": 30,
+      "experience_case": 3,
+      "opportunity_round": 1,
+      "pattern_evidence": 13,
+      "program": 1,
+      "source_document": 10,
+      "writing_pattern": 2
+    },
+    "review": {
+      "accepted": {
+        "by_entity": {
+          "claim": 4,
+          "writing_pattern": 2
+        },
+        "count": 6,
+        "reasons": {}
+      },
+      "held": {
+        "by_entity": {
+          "claim": 19
+        },
+        "count": 19,
+        "reasons": {
+          "missing_basis": 19,
+          "missing_decision_id": 19,
+          "missing_reviewer": 19,
+          "missing_scope_fingerprint": 19,
+          "semantic_candidate": 19,
+          "unrecognized_review_basis": 19
+        }
+      },
+      "rejected": {
+        "by_entity": {},
+        "count": 0,
+        "reasons": {}
+      }
+    },
+    "common_fields": {},
+    "projection_audit": {
+      "claim_evidence_relations_match": true,
+      "claim_ids_match_approved": true,
+      "pattern_ids_match_approved": true
+    },
+    "family_counts": null,
+    "observed_check_dates": [
+      "2026-11-09"
+    ],
+    "new_http_requests": 0,
+    "external_model_calls": 0,
+    "fresh_web_check": false,
+    "receipt": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/integration-writing/runs/7b126b624d775e1abb0796c745954950842b322e5b0faced4f4c988002c85efc/receipt.json",
+    "receipt_sha256": "64e9f013f7d09cf42d4632501141f74dab5815ae524bb0b22192816c162a5a4f",
+    "literal_checks": {
+      "documents": 10,
+      "spans": 30,
+      "state": "verified"
+    },
+    "replay_cache_hit": true,
+    "saved_receipt_unchanged": true,
+    "database_executed": true,
+    "database_summary": {
+      "postgres_version": "16.15",
+      "contract_violation_rows": 0,
+      "same_input_replay_unchanged": true
+    },
+    "writing_summary": {
+      "patterns": 2,
+      "missing_questions": 5,
+      "drafts": [
+        null
+      ],
+      "finished": false,
+      "path": "/home/longnew/.cache/datasets/benefitlens/team-handoff-20261109/integration-writing/runs/7b126b624d775e1abb0796c745954950842b322e5b0faced4f4c988002c85efc/writing.json"
+    }
+  },
+  "tests": {
+    "tests": 133,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "legacy_replay_schema": {
+    "runs": 3,
+    "valid": true,
+    "approved_handoff": false,
+    "models_called": 0
+  }
+}

@@ -1,0 +1,269 @@
+[
+  {
+    "series": "0099",
+    "request_url": "https://data.usajobs.gov/api/historicjoa?PositionSeries=0099&StartPositionOpenDate=2022-01-01&EndPositionCloseDate=2026-11-08",
+    "checked_at": "2026-11-08T17:52:27.902344+00:00",
+    "reused": false,
+    "raw_sha256": "81d40b58924a205022921554c8888e48fe37f604a6d3c4260c919f105d0744ea",
+    "raw_path": "/home/longnew/.cache/datasets/benefitlens/usajobs/historic-joa-student-20261109/probe_0099.json",
+    "received_rows": 500,
+    "metadata": {
+      "totalCount": 1276,
+      "pageSize": 500,
+      "continuationToken": "Qqf3iAz295JBKoUHWRCBxA%3D%3D"
+    },
+    "next": "/api/historicjoa?continuationtoken=Qqf3iAz295JBKoUHWRCBxA%3D%3D&positionseries=0099&startpositionopendate=2022-01-01&endpositionclosedate=2026-11-08",
+    "fields": [
+      "usajobsControlNumber",
+      "hiringAgencyCode",
+      "hiringAgencyName",
+      "hiringDepartmentCode",
+      "hiringDepartmentName",
+      "agencyLevel",
+      "agencyLevelSort",
+      "appointmentType",
+      "workSchedule",
+      "payScale",
+      "salaryType",
+      "vendor",
+      "travelRequirement",
+      "teleworkEligible",
+      "serviceType",
+      "securityClearanceRequired",
+      "securityClearance",
+      "whoMayApply",
+      "announcementClosingTypeCode",
+      "announcementClosingTypeDescription",
+      "positionOpenDate",
+      "positionCloseDate",
+      "positionExpireDate",
+      "announcementNumber",
+      "hiringSubelementName",
+      "positionTitle",
+      "minimumGrade",
+      "maximumGrade",
+      "promotionPotential",
+      "minimumSalary",
+      "maximumSalary",
+      "supervisoryStatus",
+      "drugTestRequired",
+      "relocationExpensesReimbursed",
+      "totalOpenings",
+      "disableAppyOnline",
+      "positionOpeningStatus",
+      "hiringpaths",
+      "jobcategories",
+      "positionlocations"
+    ],
+    "first_row": {
+      "usajobsControlNumber": 621398100,
+      "positionOpenDate": "2022-01-10",
+      "positionCloseDate": "2022-01-14",
+      "positionTitle": "Student Trainee (Park Ranger-Interpretation)",
+      "hiringpaths": [
+        {
+          "hiringPath": "Students"
+        }
+      ],
+      "jobcategories": [
+        {
+          "series": "0099"
+        }
+      ]
+    },
+    "paths": {
+      "Students": 377,
+      "The public": 189,
+      "Federal employees - Excepted service": 74,
+      "Internal to an agency": 3,
+      "Career transition (CTAP, ICTAP, RPL)": 21,
+      "National Guard and reserves": 69,
+      "Veterans": 75,
+      "Custom announcement": 14,
+      "Recent graduates": 2,
+      "Special authorities": 1,
+      "Individuals with disabilities": 1
+    }
+  },
+  {
+    "series": "0399",
+    "request_url": "https://data.usajobs.gov/api/historicjoa?PositionSeries=0399&StartPositionOpenDate=2022-01-01&EndPositionCloseDate=2026-11-08",
+    "checked_at": "2026-11-08T17:52:27.902510+00:00",
+    "reused": false,
+    "raw_sha256": "2409dabc96bef4b116183ee5201fe42a5e5b371681b94f844444447484ff01a7",
+    "raw_path": "/home/longnew/.cache/datasets/benefitlens/usajobs/historic-joa-student-20261109/probe_0399.json",
+    "received_rows": 500,
+    "metadata": {
+      "totalCount": 2716,
+      "pageSize": 500,
+      "continuationToken": "gaJA3%2BHluwLjHjx2Z2egvg%3D%3D"
+    },
+    "next": "/api/historicjoa?continuationtoken=gaJA3%2BHluwLjHjx2Z2egvg%3D%3D&positionseries=0399&startpositionopendate=2022-01-01&endpositionclosedate=2026-11-08",
+    "fields": [
+      "usajobsControlNumber",
+      "hiringAgencyCode",
+      "hiringAgencyName",
+      "hiringDepartmentCode",
+      "hiringDepartmentName",
+      "agencyLevel",
+      "agencyLevelSort",
+      "appointmentType",
+      "workSchedule",
+      "payScale",
+      "salaryType",
+      "vendor",
+      "travelRequirement",
+      "teleworkEligible",
+      "serviceType",
+      "securityClearanceRequired",
+      "securityClearance",
+      "whoMayApply",
+      "announcementClosingTypeCode",
+      "announcementClosingTypeDescription",
+      "positionOpenDate",
+      "positionCloseDate",
+      "positionExpireDate",
+      "announcementNumber",
+      "hiringSubelementName",
+      "positionTitle",
+      "minimumGrade",
+      "maximumGrade",
+      "promotionPotential",
+      "minimumSalary",
+      "maximumSalary",
+      "supervisoryStatus",
+      "drugTestRequired",
+      "relocationExpensesReimbursed",
+      "totalOpenings",
+      "disableAppyOnline",
+      "positionOpeningStatus",
+      "hiringpaths",
+      "jobcategories",
+      "positionlocations"
+    ],
+    "first_row": {
+      "usajobsControlNumber": 616083700,
+      "positionOpenDate": "2022-01-14",
+      "positionCloseDate": "2022-09-30",
+      "positionTitle": "Administration and Office Support Student Trainee Series",
+      "hiringpaths": [
+        {
+          "hiringPath": "Students"
+        },
+        {
+          "hiringPath": "Recent graduates"
+        }
+      ],
+      "jobcategories": [
+        {
+          "series": "0399"
+        }
+      ]
+    },
+    "paths": {
+      "Students": 476,
+      "Recent graduates": 5,
+      "The public": 84,
+      "Veterans": 23,
+      "Custom announcement": 1,
+      "Federal employees - Excepted service": 8,
+      "Federal employees - Competitive service": 2,
+      "Special authorities": 9,
+      "Internal to an agency": 11,
+      "Military spouses": 4,
+      "Individuals with disabilities": 3,
+      "Career transition (CTAP, ICTAP, RPL)": 11,
+      "Family of overseas employees": 1,
+      "Peace Corps & AmeriCorps Vista": 1,
+      "Land and base management": 2
+    }
+  },
+  {
+    "series": "0899",
+    "request_url": "https://data.usajobs.gov/api/historicjoa?PositionSeries=0899&StartPositionOpenDate=2022-01-01&EndPositionCloseDate=2026-11-08",
+    "checked_at": "2026-11-08T17:52:27.903124+00:00",
+    "reused": false,
+    "raw_sha256": "b66ab5bf9495e1cce11e86edd3d0d1729ac1e26d2d01d7e84852e3ef9b7d150e",
+    "raw_path": "/home/longnew/.cache/datasets/benefitlens/usajobs/historic-joa-student-20261109/probe_0899.json",
+    "received_rows": 500,
+    "metadata": {
+      "totalCount": 1053,
+      "pageSize": 500,
+      "continuationToken": "f2lV61%2BnOmkoNkvnAbG2sw%3D%3D"
+    },
+    "next": "/api/historicjoa?continuationtoken=f2lV61%2BnOmkoNkvnAbG2sw%3D%3D&positionseries=0899&startpositionopendate=2022-01-01&endpositionclosedate=2026-11-08",
+    "fields": [
+      "usajobsControlNumber",
+      "hiringAgencyCode",
+      "hiringAgencyName",
+      "hiringDepartmentCode",
+      "hiringDepartmentName",
+      "agencyLevel",
+      "agencyLevelSort",
+      "appointmentType",
+      "workSchedule",
+      "payScale",
+      "salaryType",
+      "vendor",
+      "travelRequirement",
+      "teleworkEligible",
+      "serviceType",
+      "securityClearanceRequired",
+      "securityClearance",
+      "whoMayApply",
+      "announcementClosingTypeCode",
+      "announcementClosingTypeDescription",
+      "positionOpenDate",
+      "positionCloseDate",
+      "positionExpireDate",
+      "announcementNumber",
+      "hiringSubelementName",
+      "positionTitle",
+      "minimumGrade",
+      "maximumGrade",
+      "promotionPotential",
+      "minimumSalary",
+      "maximumSalary",
+      "supervisoryStatus",
+      "drugTestRequired",
+      "relocationExpensesReimbursed",
+      "totalOpenings",
+      "disableAppyOnline",
+      "positionOpeningStatus",
+      "hiringpaths",
+      "jobcategories",
+      "positionlocations"
+    ],
+    "first_row": {
+      "usajobsControlNumber": 616008600,
+      "positionOpenDate": "2022-01-14",
+      "positionCloseDate": "2022-09-16",
+      "positionTitle": "STUDENT TRAINEE (GENERAL ENGINEER)",
+      "hiringpaths": [
+        {
+          "hiringPath": "Students"
+        },
+        {
+          "hiringPath": "Recent graduates"
+        }
+      ],
+      "jobcategories": [
+        {
+          "series": "0899"
+        }
+      ]
+    },
+    "paths": {
+      "Students": 483,
+      "Recent graduates": 6,
+      "Veterans": 14,
+      "The public": 91,
+      "Career transition (CTAP, ICTAP, RPL)": 5,
+      "Special authorities": 2,
+      "Federal employees - Excepted service": 1,
+      "Custom announcement": 3,
+      "Internal to an agency": 3,
+      "Individuals with disabilities": 17
+    }
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "program": [
+    {
+      "program_id": "csc-shared-scholarships",
+      "title": "Commonwealth Shared Scholarships",
+      "issuer": "Commonwealth Scholarship Commission in the UK",
+      "opportunity_type": "scholarship"
+    }
+  ],
+  "opportunity_round": [
+    {
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "opportunity_id": "csc-shared-scholarships-2027-2028",
+      "notice_version": "csc-shared-scholarships-2027-2028-v1",
+      "status": "upcoming",
+      "official_url": "https://cscuk.fcdo.gov.uk/shared/",
+      "application_url": "https://portal.csccentralonline.org.uk/application",
+      "opens_on": "2026-11-10",
+      "closes_on": "2026-12-08",
+      "announces_on": null,
+      "checked_on": "2026-11-09"
+    }
+  ],
+  "source_document": [
+    {
+      "document_id": "CSC-SHARED",
+      "title": "Commonwealth Shared Scholarships - Commonwealth Scholarship Commission in the UK",
+      "url": "https://cscuk.fcdo.gov.uk/shared/",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:34:43.318505+00:00",
+      "raw_sha256": "a338bbf946992c49e62f38af78e4ed9ac5cca1672e447042933e16031e49a727",
+      "text_sha256": "2347d417471ea34589c2888d20b3aaf3bd9234a3167f866b029294d95a6c701a",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/a338bbf946992c49e62f38af78e4ed9ac5cca1672e447042933e16031e49a727.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/2347d417471ea34589c2888d20b3aaf3bd9234a3167f866b029294d95a6c701a.txt"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "CSC-DATES",
+      "document_id": "CSC-SHARED",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "source_role": "official_notice",
+      "locator": "L32-L38",
+      "quote": "10 November 2026"
+    },
+    {
+      "evidence_id": "CSC-ELIGIBILITY",
+      "document_id": "CSC-SHARED",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "source_role": "official_notice",
+      "locator": "L129-L139",
+      "quote": "Candidate eligibility"
+    },
+    {
+      "evidence_id": "CSC-APPLY",
+      "document_id": "CSC-SHARED",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L39-L55",
+      "quote": "CSC Central"
+    },
+    {
+      "evidence_id": "CSC-DOCS",
+      "document_id": "CSC-SHARED",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L88-L98",
+      "quote": "Supporting documentation"
+    },
+    {
+      "evidence_id": "CSC-FUNDING",
+      "document_id": "CSC-SHARED",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "source_role": "official_notice",
+      "locator": "L262-L273",
+      "quote": "Financial assistance"
+    },
+    {
+      "evidence_id": "CSC-TEMPLATE",
+      "document_id": "CSC-SHARED",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L64-L74",
+      "quote": "template application form"
+    }
+  ]
+}

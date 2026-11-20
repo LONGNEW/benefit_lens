@@ -1,0 +1,131 @@
+{
+  "program": [
+    {
+      "program_id": "doe-scgsr",
+      "title": "Office of Science Graduate Student Research Program",
+      "issuer": "U.S. Department of Energy Office of Science",
+      "opportunity_type": "fellowship"
+    }
+  ],
+  "opportunity_round": [
+    {
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "opportunity_id": "doe-scgsr-2026-solicitation-2",
+      "notice_version": "doe-scgsr-2026-solicitation-2-v1",
+      "status": "closed",
+      "official_url": "https://science.osti.gov/wdts/scgsr/Key-Dates",
+      "application_url": "https://science.osti.gov/wdts/scgsr/How-to-Apply",
+      "opens_on": "2026-08-12",
+      "closes_on": "2026-11-04",
+      "announces_on": null,
+      "checked_on": "2026-11-09"
+    }
+  ],
+  "source_document": [
+    {
+      "document_id": "DOE-SCGSR-DATES",
+      "title": "SCGSR Key Dates | U.S. DOE Office of Science (SC)",
+      "url": "https://science.osti.gov/wdts/scgsr/Key-Dates",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:34:43.514588+00:00",
+      "raw_sha256": "7a20b79c10d8017a0cb60a8f205b182308706bdc5d890861f54b7292ba3cf1bc",
+      "text_sha256": "0a5c9d0613b234e6898e7c34800703b031018efe15bb7cb7911b8af8afb21bc2",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/7a20b79c10d8017a0cb60a8f205b182308706bdc5d890861f54b7292ba3cf1bc.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/0a5c9d0613b234e6898e7c34800703b031018efe15bb7cb7911b8af8afb21bc2.txt"
+    },
+    {
+      "document_id": "DOE-SCGSR-BENEFITS",
+      "title": "SCGSR Benefits | U.S. DOE Office of Science (SC)",
+      "url": "https://science.osti.gov/wdts/scgsr/Benefits",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:34:43.900589+00:00",
+      "raw_sha256": "d9bf3a8728189d51340ef65e7bed50546e5a502a677472e484ca17297d4f2e26",
+      "text_sha256": "91065f430240aed2e081eaebffb899c51a27bb248e1276399a23fbe53f6d23c4",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/d9bf3a8728189d51340ef65e7bed50546e5a502a677472e484ca17297d4f2e26.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/91065f430240aed2e081eaebffb899c51a27bb248e1276399a23fbe53f6d23c4.txt"
+    },
+    {
+      "document_id": "DOE-SCGSR-ELIGIBILITY",
+      "title": "SCGSR Eligibility | U.S. DOE Office of Science (SC)",
+      "url": "https://science.osti.gov/wdts/scgsr/Eligibility",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:34:44.228124+00:00",
+      "raw_sha256": "100a032203f0359d5d625887af649b8258a17bd5d587b4130c604d72680a6d54",
+      "text_sha256": "1bba9783a64cb1c21c184de533c728360805c0428cdc4db8b80c9ecf1d4a5c78",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/100a032203f0359d5d625887af649b8258a17bd5d587b4130c604d72680a6d54.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/1bba9783a64cb1c21c184de533c728360805c0428cdc4db8b80c9ecf1d4a5c78.txt"
+    },
+    {
+      "document_id": "DOE-SCGSR-APPLY",
+      "title": "SCGSR How to Apply | U.S. DOE Office of Science (SC)",
+      "url": "https://science.osti.gov/wdts/scgsr/How-to-Apply",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:34:43.514946+00:00",
+      "raw_sha256": "f7d4d3b93d2ab2e4ba4772baa34b8789f0fbc3cbf413d390c2c3e03742dd75ae",
+      "text_sha256": "1ffe40656284c114889e63174dbfcac938722027d08a454eac1133e03e1ce389",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/f7d4d3b93d2ab2e4ba4772baa34b8789f0fbc3cbf413d390c2c3e03742dd75ae.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/1ffe40656284c114889e63174dbfcac938722027d08a454eac1133e03e1ce389.txt"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "SCGSR-DATES",
+      "document_id": "DOE-SCGSR-DATES",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "source_role": "official_notice",
+      "locator": "L2-L19",
+      "quote": "2026 Solicitation 2"
+    },
+    {
+      "evidence_id": "SCGSR-ACTIVITY",
+      "document_id": "DOE-SCGSR-DATES",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "source_role": "official_notice",
+      "locator": "L21-L34",
+      "quote": "3 to 12 consecutive months"
+    },
+    {
+      "evidence_id": "SCGSR-FUNDING",
+      "document_id": "DOE-SCGSR-BENEFITS",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "source_role": "official_guideline",
+      "locator": "L7-L12",
+      "quote": "$3,600"
+    },
+    {
+      "evidence_id": "SCGSR-ELIGIBILITY",
+      "document_id": "DOE-SCGSR-ELIGIBILITY",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "source_role": "official_guideline",
+      "locator": "L19-L39",
+      "quote": "Academic Status"
+    },
+    {
+      "evidence_id": "SCGSR-APPLICATION",
+      "document_id": "DOE-SCGSR-APPLY",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "source_role": "official_guideline",
+      "locator": "L22-L42",
+      "quote": "SCGSR Research Proposal"
+    },
+    {
+      "evidence_id": "SCGSR-LETTERS",
+      "document_id": "DOE-SCGSR-APPLY",
+      "program_id": "doe-scgsr",
+      "round_id": "2026-solicitation-2",
+      "source_role": "official_guideline",
+      "locator": "L43-L50",
+      "quote": "Two Letters of Support"
+    }
+  ]
+}

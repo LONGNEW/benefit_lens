@@ -1,0 +1,52 @@
+{
+  "schema": "shared-experience-source-v1",
+  "source_id": "gsoc-shared-project-directory",
+  "provider": "GSoC Organizations community archive",
+  "documentation": "https://api.gsocorganizations.dev/",
+  "authenticated": false,
+  "verified_transport": "yearly_json_2016_through_2026",
+  "local_inventory": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/experience-bulk-discovery-v1/gsoc-shared-directory/inventory.json",
+  "candidate_index_jsonl": {
+    "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/experience-bulk-discovery-v1/gsoc-shared-directory/blobs/14669c7df5cc91831306390475e6ba83a5630ac003b362baec833a70d767e988.txt.gz",
+    "sha256": "14669c7df5cc91831306390475e6ba83a5630ac003b362baec833a70d767e988",
+    "storage": {
+      "codec": "gzip",
+      "decoded_bytes": 8208641,
+      "sha256": "7c3c1b3baf64ded38d863f689a3562f55bce891852e4992a37a5a90dac6d7e27",
+      "stored_bytes": 944581
+    }
+  },
+  "discovery_records": 12095,
+  "unique_external_urls": 10440,
+  "accepted_experiences_added": 0,
+  "next_validation": [
+    "official_project_identity",
+    "linked_original_body",
+    "named_person_attribution",
+    "program_round_binding",
+    "deduplication"
+  ],
+  "shared_import_minimum_fields": [
+    "source_record_id",
+    "original_url",
+    "program_name",
+    "program_id",
+    "round",
+    "author_key",
+    "material_type",
+    "original_text_or_document_url",
+    "collection_date",
+    "reuse_permission"
+  ],
+  "episode_key": [
+    "author_key",
+    "program_id",
+    "round"
+  ],
+  "counting": "One person-program-round episode; translation, weekly reports and writing documents remain linked materials.",
+  "sharing_modes": [
+    "CSV with original URLs",
+    "JSONL with original URLs and text",
+    "publisher-authorized archive with manifest and hashes"
+  ]
+}

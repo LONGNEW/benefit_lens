@@ -1,0 +1,101 @@
+{
+  "artifact_schema_version": "benefitlens-writing-delivery-v1",
+  "opportunity_id": "nvidia-2027-2028",
+  "target_claim_id": "nv27-research-proposal",
+  "profile": "synthetic",
+  "draft_status": "illustrative_excerpt",
+  "facts": {
+    "F1": {
+      "experience_id": "E1",
+      "status": "accepted_synthetic",
+      "mode": "observed",
+      "text": "GPU 전처리에서 배치마다 임시 버퍼를 다시 할당한다."
+    },
+    "F2": {
+      "experience_id": "E1",
+      "status": "accepted_synthetic",
+      "mode": "observed",
+      "text": "내가 버퍼 재사용 모듈을 구현했다."
+    },
+    "F3": {
+      "experience_id": "E1",
+      "status": "accepted_synthetic",
+      "mode": "observed",
+      "text": "동일 입력, 배치 크기 1,024의 NVIDIA A100 실험에서 10회 지연시간 중앙값이 60ms에서 45ms로 줄었다."
+    },
+    "F4": {
+      "experience_id": "E1",
+      "status": "accepted_synthetic",
+      "mode": "planned",
+      "text": "다른 배치 크기에서 지연시간과 최대 메모리 사용량을 측정할 계획이다."
+    },
+    "F5": {
+      "experience_id": "E1",
+      "status": "accepted_synthetic",
+      "mode": "planned",
+      "text": "박사 과정 후 과학 데이터를 위한 신뢰할 수 있는 GPU 전처리 기법을 개발하고 싶다."
+    }
+  },
+  "slots": [
+    {
+      "slot_id": "vision",
+      "mode": "observed_problem_and_goal",
+      "fact_ids": [
+        "F1"
+      ],
+      "pattern_ids": [
+        "NV27-RP-ARC"
+      ],
+      "text": "I am studying how to reduce repeated buffer allocation in GPU preprocessing.",
+      "experience_id": "E1"
+    },
+    {
+      "slot_id": "progress",
+      "mode": "observed",
+      "fact_ids": [
+        "F2",
+        "F3"
+      ],
+      "pattern_ids": [
+        "NV27-RP-ARC",
+        "NV27-RP-GPU-LINK"
+      ],
+      "text": "I implemented a reusable buffer module. On an NVIDIA A100, using the same input and a batch size of 1,024, the median latency over ten runs fell from 60 ms to 45 ms.",
+      "experience_id": "E1"
+    },
+    {
+      "slot_id": "next_test",
+      "mode": "planned",
+      "fact_ids": [
+        "F3",
+        "F4"
+      ],
+      "pattern_ids": [
+        "NV27-RP-ARC",
+        "NV27-RP-GPU-LINK"
+      ],
+      "text": "The measurement covers one device and batch size. I plan to test other batch sizes and measure both latency and peak memory use.",
+      "experience_id": "E1"
+    },
+    {
+      "slot_id": "long_term",
+      "mode": "planned",
+      "fact_ids": [
+        "F5"
+      ],
+      "pattern_ids": [
+        "NV27-RP-ARC"
+      ],
+      "text": "After my PhD, I want to develop reliable GPU preprocessing methods for scientific data.",
+      "experience_id": "E1"
+    }
+  ],
+  "remaining_question": "이 입력과 배치 크기 이외에 검증한 조건이 있나요? 아직 없으면 다음 실험으로 남깁니다.",
+  "submission_checklist": {
+    "name_at_top": true,
+    "max_pages_text_and_images": 2,
+    "bibliography_excluded": true,
+    "layout_checked": false
+  },
+  "selection_effect_claimed": false
+}

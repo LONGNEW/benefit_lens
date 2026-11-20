@@ -1,0 +1,99 @@
+{
+  "claim": [
+    {
+      "claim_id": "gc26w-criteria-claim",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "kind": "selection_criterion",
+      "field": "gates_selection_criteria",
+      "at": "application",
+      "value": {
+        "criteria": [
+          "학업 우수성",
+          "과정 선택 이유",
+          "타인의 삶을 개선하려는 노력",
+          "리더십 역량"
+        ],
+        "scoring_weights": "unknown"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "gc26w-portal-required",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "kind": "submission",
+      "field": "gates_additional_portal_questions",
+      "at": "application",
+      "value": {
+        "present": true,
+        "wording_status": "unknown",
+        "limits_status": "unknown"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "gc26w-portal-wording",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "kind": "form",
+      "field": "gates_portal_prompt_wording",
+      "at": "application",
+      "value": {
+        "status": "unknown",
+        "reason": "2026/27 공고에서 추가 질문의 존재만 확인했다. 정확한 문항과 분량은 확인하지 못했다."
+      },
+      "review_state": "unknown"
+    },
+    {
+      "claim_id": "gc26w-conditional-extra-rp",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "kind": "form",
+      "field": "gates_extra_research_proposal_form",
+      "at": "application",
+      "value": {
+        "url": "https://forms.office.com/e/1f3tRgn2uW",
+        "applies_if": "입학 지원서에 연구계획을 제출하지 않는 해당 지원자",
+        "requires": "지원 후 Applicant Portal에서 받은 신청 번호",
+        "prompt_text": "unverified_public_shell"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "gc26w-infection-phd-rp",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "kind": "submission",
+      "field": "research_proposal",
+      "at": "application",
+      "value": {
+        "required": true,
+        "confirmed_course": "PhD in Infection and Immunity",
+        "applies_if": "이 보존 과정에 Gates Cambridge 장학금을 함께 신청하는 박사 지원자",
+        "course_scope_only": true,
+        "full_form_text": "unverified",
+        "max_words": "unverified"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "gc26w-infection-proposal-guide",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "kind": "advice",
+      "field": "research_proposal_content_guidance",
+      "at": "application",
+      "value": {
+        "topics": [
+          "연구 주제",
+          "기존 문헌을 어떻게 확장하는지",
+          "해당 분야에서 중요한 이유",
+          "가용 시간과 자원에서의 실행 가능성"
+        ],
+        "basis": "Cambridge 2026 보존 공식 작성 안내. 과정별 형식과 지침을 별도로 확인한다."
+      },
+      "review_state": "reviewed"
+    }
+  ]
+}

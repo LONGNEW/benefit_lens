@@ -1,0 +1,160 @@
+{
+  "basis": "source_backed",
+  "title": "NSF Graduate Research Fellowship Program",
+  "claims": [
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "applicant_statement_and_transcripts",
+      "value": {
+        "portal": "Research.gov GRFP",
+        "submitted_by": "applicant",
+        "statement_page_limits": {
+          "graduate_research_plan": 2,
+          "personal_background_and_future_goals": 3
+        },
+        "statements_original_work": true,
+        "references_count_in_page_limits": true,
+        "official_undergraduate_transcript_required": true
+      },
+      "claim_id": "nsf-grfp-application",
+      "round_id": "fy2027",
+      "program_id": "nsf-grfp",
+      "evidence_ids": [
+        "NSF-SUBMISSION"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "funded_year",
+      "kind": "benefit",
+      "field": "stipend_and_institution_education_allowance",
+      "value": {
+        "components": [
+          {
+            "type": "living_stipend",
+            "unit": "12_month_tenure",
+            "amount": 37000,
+            "currency": "USD",
+            "recipient": "fellow_via_institution"
+          },
+          {
+            "type": "cost_of_education",
+            "unit": "tenure_year",
+            "amount": 16000,
+            "currency": "USD",
+            "recipient": "institution"
+          }
+        ],
+        "funded_years_max": 3,
+        "fellowship_window_years": 5,
+        "pending_availability_of_funds": true
+      },
+      "claim_id": "nsf-grfp-benefits",
+      "round_id": "fy2027",
+      "program_id": "nsf-grfp",
+      "evidence_ids": [
+        "NSF-FUNDING"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "schedule",
+      "field": "deadline_by_major_field",
+      "value": {
+        "dates": {
+          "2026-10-19": [
+            "Life Sciences"
+          ],
+          "2026-10-20": [
+            "Computer and Information Science and Engineering",
+            "Materials Research",
+            "Psychology",
+            "Social Sciences"
+          ],
+          "2026-10-22": [
+            "Engineering"
+          ],
+          "2026-10-23": [
+            "Chemistry",
+            "Geosciences",
+            "Mathematical Sciences",
+            "Physics and Astronomy"
+          ]
+        },
+        "time_zone": "America/New_York",
+        "local_time": "20:00"
+      },
+      "claim_id": "nsf-grfp-dates",
+      "round_id": "fy2027",
+      "program_id": "nsf-grfp",
+      "evidence_ids": [
+        "NSF-DATES"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application_and_acceptance",
+      "kind": "eligibility",
+      "field": "citizenship_and_academic_level",
+      "value": {
+        "degree_scope": "eligible thesis-based STEM masters or doctorate",
+        "us_status_any": [
+          "citizen",
+          "national",
+          "permanent_resident"
+        ],
+        "eligible_stages": [
+          "undergraduate_final_year",
+          "bachelor_holder_no_graduate_enrollment",
+          "joint_bs_ms_final_undergraduate_or_first_graduate_year",
+          "first_graduate_program_first_year_less_than_one_academic_year_completed"
+        ]
+      },
+      "claim_id": "nsf-grfp-eligibility",
+      "round_id": "fy2027",
+      "program_id": "nsf-grfp",
+      "evidence_ids": [
+        "NSF-ELIGIBILITY"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "reference_letters",
+      "value": {
+        "due_on": "2026-10-16",
+        "time_zone": "America/New_York",
+        "local_time": "20:00",
+        "requested_by": "applicant",
+        "submitted_by": "reference_writer",
+        "maximum_contacts": 5,
+        "minimum_contacts": 3,
+        "family_members_ineligible": true
+      },
+      "claim_id": "nsf-grfp-references",
+      "round_id": "fy2027",
+      "program_id": "nsf-grfp",
+      "evidence_ids": [
+        "NSF-REF",
+        "NSF-REF-DUE"
+      ],
+      "review_state": "reviewed"
+    }
+  ],
+  "issuer": "U.S. National Science Foundation",
+  "status": "closed",
+  "opens_on": null,
+  "round_id": "fy2027",
+  "closes_on": "2026-10-23",
+  "checked_on": "2026-11-09",
+  "program_id": "nsf-grfp",
+  "announces_on": null,
+  "official_url": "https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program/nsf26-526/solicitation",
+  "notice_version": "nsf-grfp-fy2027-v1",
+  "opportunity_id": "nsf-grfp-fy2027",
+  "application_url": "https://www.research.gov/grfp/Login.do",
+  "opportunity_type": "fellowship"
+}

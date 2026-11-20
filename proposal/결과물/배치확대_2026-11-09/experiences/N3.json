@@ -1,0 +1,35 @@
+{
+  "notes": "미선정은 공개 발췌의 본인 보고다. 공식 회차와 제출 최종본은 미확인.",
+  "case_id": "N3",
+  "program_id": "nvidia-graduate-fellowship",
+  "outcome_url": "https://medium.com/@ruthfong/applying-to-the-open-philanthropy-ai-fellowship-48dafe7fe27c",
+  "outcome_basis": "author_report",
+  "outcome_quote": "which I did not receive",
+  "case_documents": [
+    {
+      "url": "https://medium.com/@ruthfong/applying-to-the-open-philanthropy-ai-fellowship-48dafe7fe27c",
+      "case_id": "N3",
+      "finality": "not_applicable",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_id": "N3-OUTCOME-web-b4c5d68e8618",
+      "capture_mode": "public_web_excerpt",
+      "document_role": "reflection",
+      "binding_evidence_id": "N3-RESULT"
+    },
+    {
+      "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+      "case_id": "N3",
+      "finality": "unknown",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "capture_mode": "full_document",
+      "document_role": "application_statement",
+      "binding_evidence_id": "N3-RESULT"
+    }
+  ],
+  "outcome_status": "not_selected",
+  "experience_round_id": null,
+  "outcome_evidence_id": "N3-RESULT",
+  "outcome_capture_mode": "public_web_excerpt",
+  "experience_round_label": "2017 in public PDF file name"
+}

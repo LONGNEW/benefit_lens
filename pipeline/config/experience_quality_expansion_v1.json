@@ -1,0 +1,22 @@
+{
+  "version": "experience-quality-expansion-v1",
+  "source_role_families": {
+    "application_document": "application_document_declared",
+    "public_application_document": "application_document_declared",
+    "participation_experience": "participation_review_declared",
+    "post_award_experience": "participation_review_declared",
+    "multi_round_application_narrative": "application_process_or_advice_declared",
+    "application_process": "application_process_or_advice_declared",
+    "application_preparation": "application_process_or_advice_declared",
+    "application_or_interview_preparation": "application_process_or_advice_declared"
+  },
+  "noise_marker_regex": "popular[-_ ]?posts?|related[-_ ]?(?:posts?|articles?|stories)|recommended[-_ ]?(?:posts?|articles?|stories)|cookie[-_ ]consent|onetrust[-_]consent|blogarchive|tag[-_ ]?cloud",
+  "body_marker_regex": "(?:^|\\s)js-review-question-(?:container|stage)(?:\\s|$)|(?:^|\\s)post-body(?:\\s|$)|(?:^|\\s)entry-content(?:\\s|$)",
+  "related_section_headings": ["more from this blog", "related posts", "related articles", "related news", "recommended articles", "popular posts from this blog"],
+  "higherin_menu_lines": ["In This Review", "Overview of Role", "Skills Development", "Support and Guidance", "Company Culture", "Overall Experience", "Recommendations & Advice", "Future Career Prospects", "View All Reviews"],
+  "higherin_menu_hosts": ["higherin.com", "www.higherin.com"],
+  "automatic_exclusion": "unique DOM structural alignment, repeated page-boundary metadata, observed UI menu template, or source-verified exact context reuse of a Codex irrelevant decision",
+  "word_sense_hints_are_semantic_completion": false,
+  "new_model_calls": 0,
+  "canonical_database_writes": 0
+}

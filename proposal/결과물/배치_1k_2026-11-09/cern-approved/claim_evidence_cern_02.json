@@ -1,0 +1,94 @@
+{
+  "claim_evidence": [
+    {
+      "claim_id": "cern-744000159634239-stipend-claim",
+      "evidence_id": "cern-744000159634239-stipend",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239"
+    },
+    {
+      "claim_id": "cern-744000159634239-documents",
+      "evidence_id": "cern-744000159634239-submission",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239"
+    },
+    {
+      "claim_id": "cern-744000159634239-form-link",
+      "evidence_id": "cern-744000159634239-apply-url",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239"
+    },
+    {
+      "claim_id": "cern-744000159422712-publication-status",
+      "evidence_id": "cern-744000159422712-active",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712"
+    },
+    {
+      "claim_id": "cern-744000159422712-publication-status",
+      "evidence_id": "cern-744000159422712-apply-url",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712"
+    },
+    {
+      "claim_id": "cern-744000159422712-publication-status",
+      "evidence_id": "cern-744000159422712-deadline",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712"
+    },
+    {
+      "claim_id": "cern-744000159422712-deadline-claim",
+      "evidence_id": "cern-744000159422712-deadline",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712"
+    },
+    {
+      "claim_id": "cern-744000159422712-enrollment",
+      "evidence_id": "cern-744000159422712-student",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712"
+    },
+    {
+      "claim_id": "cern-744000159422712-nationality-claim",
+      "evidence_id": "cern-744000159422712-nationality",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712"
+    },
+    {
+      "claim_id": "cern-744000159422712-stipend-claim",
+      "evidence_id": "cern-744000159422712-stipend",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712"
+    },
+    {
+      "claim_id": "cern-744000159422712-documents",
+      "evidence_id": "cern-744000159422712-submission",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712"
+    },
+    {
+      "claim_id": "cern-744000159422712-form-link",
+      "evidence_id": "cern-744000159422712-apply-url",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712"
+    },
+    {
+      "claim_id": "cern-744000159603499-publication-status",
+      "evidence_id": "cern-744000159603499-active",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499"
+    },
+    {
+      "claim_id": "cern-744000159603499-publication-status",
+      "evidence_id": "cern-744000159603499-apply-url",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499"
+    },
+    {
+      "claim_id": "cern-744000159603499-publication-status",
+      "evidence_id": "cern-744000159603499-deadline",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499"
+    }
+  ]
+}

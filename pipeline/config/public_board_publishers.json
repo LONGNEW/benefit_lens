@@ -1,0 +1,11 @@
+{
+  "career_pages": [
+    "https://www.moloco.com/company/careers",
+    "https://www.figma.com/careers/",
+    "https://www.cloudflare.com/careers/jobs/",
+    "https://careers.duolingo.com/",
+    "https://careers.robinhood.com/",
+    "https://scale.com/careers"
+  ],
+  "discovery_rule": "Use board identifiers published verbatim by the official career page. No inferred tenant names."
+}

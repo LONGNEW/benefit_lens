@@ -1,0 +1,52 @@
+{
+  "contract_version": "personalization-production-v2",
+  "purpose": "실제 수집 코퍼스의 원문 연결, 구조 전처리와 개인화 입력 요구를 전량 추적한다.",
+  "shared_condition_catalog": "pipeline/config/shared_condition_catalog_v1.json",
+  "catalog_authority": "T1 defines every field and applicant_input_stage; consumers must not redefine eligibility semantics.",
+  "notice_projection": "notices.jsonl.gz",
+  "candidate_conditions_are_not_decisions": true,
+  "issue_user_questions_from_unreviewed_mentions": false,
+  "profile_channels": {
+    "common_profile": "동일 학생의 재사용 가능한 사실 후보. 특정 공고의 필수 입력이라는 뜻은 아니다.",
+    "program_followup": "선택한 공고의 검토된 조건과 적용 시점이 확인된 후 필요한 정보만 질문한다.",
+    "not_applicant_input": "마감과 혜택 등 공고 자체의 정보이며 학생 정보로 요청하지 않는다."
+  },
+  "eligibility_release_gate": {
+    "requires_reviewed_condition_logic": true,
+    "requires_source_snapshot_and_reference_time": true,
+    "requires_user_fact_provenance": true,
+    "raw_candidate_result": "unknown",
+    "missing_detection_result": "unknown"
+  },
+  "experience_source_scope": "benefitlens.experience_discovery_case excluding legacy_case_id and explicitly synthetic rows",
+  "exclude_from_performance": ["legacy_case_id", "example_kind=synthetic", "sample_scope=demo"],
+  "structural_preprocessing": {
+    "max_segment_characters": 2000,
+    "offset_unit": "Python Unicode code points in the unchanged stored text",
+    "source_paragraph_detection": "HTML paragraph text aligned to exact stored text; blank-line blocks otherwise remain layout candidates",
+    "semantic_event_extraction": false,
+    "new_meaning_approval": false
+  },
+  "writing_experience_channel": {
+    "requiredness": "Only a reviewed official task specification determines which facts are required.",
+    "fact_owner": "applicant subject_id and experience_id; public reference cases are not applicant facts",
+    "optional_event_slots": [
+      "opportunity_context", "choice_reason", "personal_role_and_actions",
+      "challenge_and_decision", "result_and_artifact", "reflection", "future_use"
+    ],
+    "observation_layers": ["official_request", "official_guidance", "source_author_strategy", "analyst_interpretation"],
+    "unknown_task_requirements": "Do not infer essay requirements from a generic document mention."
+  },
+  "output_contract": {
+    "cases": "cases.jsonl.gz",
+    "documents": "documents.jsonl.gz",
+    "segments": "segments.jsonl.gz",
+    "next_processing_queue": "next-processing-queue.jsonl.gz",
+    "personalization_requirements": "personalization-requirements.jsonl.gz",
+    "condition_distribution": "condition-demand-distribution.json",
+    "summary": "summary.json"
+  },
+  "network_requests": 0,
+  "model_calls": 0,
+  "database_writes": 0
+}

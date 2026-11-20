@@ -1,0 +1,22 @@
+{
+  "same_round_only": {
+    "sql": "INSERT INTO claim_evidence(claim_id,evidence_id,program_id,round_id)\nSELECT c.claim_id,e.evidence_id,c.program_id,c.round_id FROM claim c JOIN evidence e USING(program_id)\nWHERE e.round_id IS NULL ORDER BY c.claim_id,e.evidence_id LIMIT 1;",
+    "sqlstate": "23503"
+  },
+  "case_document_attribution": {
+    "sql": "UPDATE pattern_evidence SET case_id='N2'\nWHERE case_id='N1' AND purpose='case_observation';",
+    "sqlstate": "23503"
+  },
+  "reviewed_claims_missing_official_evidence": {
+    "sql": "SELECT count(*) FROM claim c\nWHERE c.review_state='reviewed' AND NOT EXISTS(\n  SELECT 1 FROM claim_evidence ce JOIN evidence e USING(evidence_id)\n  WHERE ce.claim_id=c.claim_id AND e.source_role IN('official_notice','official_guideline','official_form','application_portal'));",
+    "expected": 0
+  },
+  "pattern_source_role_mismatch": {
+    "sql": "SELECT count(*) FROM pattern_evidence pe JOIN evidence e USING(evidence_id)\nWHERE (pe.purpose='case_observation' AND pe.case_document_role<>e.source_role)\n  OR (pe.purpose<>'case_observation' AND e.source_role NOT IN ('official_notice','official_guideline','official_form'));",
+    "expected": 0
+  },
+  "pattern_success_causality": {
+    "sql": "UPDATE writing_pattern SET causal_success_claim=true;",
+    "sqlstate": "23514"
+  }
+}

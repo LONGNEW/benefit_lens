@@ -1,0 +1,206 @@
+{
+  "scope": "hand-authored comparison of three writing slot plans; all personal facts synthetic",
+  "opportunity_id": "nvidia-2027-2028",
+  "round_id": "2027-2028",
+  "notice_source": {
+    "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/text/nvidia-official.txt",
+    "text_sha256": "04b9b9d2edc87d2f702e3890175d82ee8e455aafbb13567b0e3cb8d81f9d435e",
+    "format_line": 131,
+    "guidance_lines": "151-163"
+  },
+  "same_inputs": "All arms use the same cached requirement, synthetic fact set, three slots, and target-round check. Only the source of writing guidance varies.",
+  "criteria_for_assessment": [
+    "current requirement preserved",
+    "claims traced to accepted same-experience facts",
+    "helpful new coverage or question",
+    "unnecessary or duplicate suggestion"
+  ],
+  "facts": {
+    "F1": {
+      "experience_id": "E1",
+      "accepted": true,
+      "kind": "observed",
+      "value": "GPU 전처리에서 배치마다 임시 버퍼를 다시 할당했다."
+    },
+    "F2": {
+      "experience_id": "E1",
+      "accepted": true,
+      "kind": "observed",
+      "value": "본인이 버퍼 재사용 모듈을 구현했다."
+    },
+    "F3": {
+      "experience_id": "E1",
+      "accepted": true,
+      "kind": "observed",
+      "value": "NVIDIA A100, 동일 입력과 배치 1,024에서 10회 측정 중앙값 60ms에서 45ms."
+    },
+    "F4": {
+      "experience_id": "E1",
+      "accepted": true,
+      "kind": "planned",
+      "value": "다음에 다른 배치 크기에서도 효과가 유지되는지 확인할 계획이다."
+    },
+    "F5": {
+      "experience_id": "E2",
+      "accepted": true,
+      "kind": "observed",
+      "value": "별도 프로젝트의 처리량이 2배로 개선됐다."
+    },
+    "F6": {
+      "experience_id": "E1",
+      "accepted": false,
+      "kind": "observed",
+      "value": "모든 GPU에서 효과가 재현된다는 후보 주장."
+    }
+  },
+  "arms": [
+    {
+      "arm": "general_only",
+      "guidance": [
+        "설계 후보: 구체적 문제와 내 행동, 비교 조건, 다음 검증을 연결"
+      ],
+      "constraints": {
+        "kind": "research_proposal",
+        "max_pages": 2,
+        "references_excluded": true
+      },
+      "source_facts_from_reference_cases": false,
+      "selection_claim": false,
+      "slots": [
+        {
+          "kind": "vision",
+          "text": "GPU 전처리에서 배치마다 되풀이되는 버퍼 할당을 줄이고자 한다.",
+          "fact_ids": [
+            "F1"
+          ],
+          "mode": "purpose",
+          "experience_id": "E1"
+        },
+        {
+          "kind": "progress",
+          "text": "제가 만든 버퍼 재사용 모듈은 A100, 동일 입력과 배치 1,024에서 지연시간 10회 중앙값을 60ms에서 45ms로 줄였다.",
+          "fact_ids": [
+            "F2",
+            "F3"
+          ],
+          "mode": "observed",
+          "experience_id": "E1"
+        },
+        {
+          "kind": "next_test",
+          "text": "다른 배치 크기에서도 이 차이가 유지되는지 검증할 계획이다.",
+          "fact_ids": [
+            "F4"
+          ],
+          "mode": "planned",
+          "experience_id": "E1"
+        }
+      ]
+    },
+    {
+      "arm": "case_only",
+      "guidance": [
+        "기존 NVIDIA research-arc: 목표, 기여와 근거, 다음 단계"
+      ],
+      "constraints": {
+        "kind": "research_proposal",
+        "max_pages": 2,
+        "references_excluded": true
+      },
+      "source_facts_from_reference_cases": false,
+      "selection_claim": false,
+      "slots": [
+        {
+          "kind": "vision",
+          "text": "연구 목표는 반복 GPU 전처리 비용을 낮추는 것이다. 그중 배치별 버퍼 재할당을 다룬다.",
+          "fact_ids": [
+            "F1"
+          ],
+          "mode": "purpose",
+          "experience_id": "E1"
+        },
+        {
+          "kind": "progress",
+          "text": "그 목표를 위해 제가 버퍼 재사용 모듈을 구현했다. A100의 동일 입력, 배치 1,024 조건에서 10회 지연시간 중앙값은 60ms에서 45ms로 줄었다.",
+          "fact_ids": [
+            "F2",
+            "F3"
+          ],
+          "mode": "observed",
+          "experience_id": "E1"
+        },
+        {
+          "kind": "next_test",
+          "text": "후속 연구에서는 배치 크기를 바꿔 이점을 확인할 계획이다.",
+          "fact_ids": [
+            "F4"
+          ],
+          "mode": "planned",
+          "experience_id": "E1"
+        }
+      ]
+    },
+    {
+      "arm": "hybrid",
+      "guidance": [
+        "일반 근거 연결",
+        "research-arc 구조 후보는 같은 답을 반복해 새 지침으로 채택하지 않음"
+      ],
+      "constraints": {
+        "kind": "research_proposal",
+        "max_pages": 2,
+        "references_excluded": true
+      },
+      "source_facts_from_reference_cases": false,
+      "selection_claim": false,
+      "slots": [
+        {
+          "kind": "vision",
+          "text": "GPU 전처리의 반복 비용을 줄이는 목표에서, 배치별 버퍼 재할당에 초점을 맞췄다.",
+          "fact_ids": [
+            "F1"
+          ],
+          "mode": "purpose",
+          "experience_id": "E1"
+        },
+        {
+          "kind": "progress",
+          "text": "제가 구현한 재사용 모듈을 A100에서 동일 입력과 배치 1,024로 비교했다. 10회 지연시간 중앙값은 60ms에서 45ms로 줄었다.",
+          "fact_ids": [
+            "F2",
+            "F3"
+          ],
+          "mode": "observed",
+          "experience_id": "E1"
+        },
+        {
+          "kind": "next_test",
+          "text": "다음에는 다른 배치 크기에서 효과가 유지되는지 검증할 계획이다.",
+          "fact_ids": [
+            "F4"
+          ],
+          "mode": "planned",
+          "experience_id": "E1"
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "general_only": "accepted_fixture",
+    "case_only": "accepted_fixture",
+    "hybrid": "accepted_fixture",
+    "cross_experience": "unconfirmed_or_different_experience",
+    "unconfirmed": "unconfirmed_or_different_experience",
+    "wrong_format_transfer": "wrong_prompt_constraints",
+    "outcome_claim": "reference_fact_or_outcome_claim",
+    "planned_as_observed": "plan_as_observed_result"
+  },
+  "manual_observation": "세 방식은 같은 문제, 구현, 관측 결과와 다음 계획을 담는다. 사례의 전환 순서는 선택지를 보태지만 이 예에서는 혼합이 새 사실이나 질문을 추가하지 않는다.",
+  "case_transfer_status": "offline example only; the underlying public texts do not verify current prompt or final submission",
+  "not_tested": [
+    "textual entailment or generator output",
+    "actual page layout",
+    "user effort or writing quality",
+    "acceptance outcome or causal effect"
+  ]
+}

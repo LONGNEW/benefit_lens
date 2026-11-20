@@ -1,0 +1,97 @@
+{
+  "checked_at": "2026-11-09T15:54:43.501250+09:00",
+  "count_unit": "issuer/role or named-scheme parent candidate",
+  "semantic_grouping_fully_verified": false,
+  "grouped_source": {
+    "manifest": "/home/longnew/.cache/datasets/benefitlens/opportunity-groups-20261109/discovery-final/manifest-eace463e62608e3c.json",
+    "version": "issuer-role-v1",
+    "input": {
+      "path": "/home/longnew/.cache/datasets/benefitlens/strict-students-20261109/root/strict-secured-649b56fbf414fbf9.jsonl",
+      "sha256": "649b56fbf414fbf917af51dbf50b62baba0cccbb120edbd240cf2728e091460b",
+      "rows": 4339
+    },
+    "parent_groups": 1129,
+    "confirmed_opportunity_count": 1071,
+    "review_required_groups": 58,
+    "confirmed_variant_count": 4276,
+    "all_variant_count": 4339,
+    "country_variant_count": 614,
+    "issuer_count": 90,
+    "files": {
+      "groups": {
+        "path": "/home/longnew/.cache/datasets/benefitlens/opportunity-groups-20261109/discovery-final/groups-2343c2627b5e6d55.jsonl",
+        "sha256": "2343c2627b5e6d55327ed37e904e3a70f07f2f8bffc19070aba504dbedfca310",
+        "rows": 1129
+      },
+      "review_queue": {
+        "path": "/home/longnew/.cache/datasets/benefitlens/opportunity-groups-20261109/discovery-final/review_queue-9713c7b996855189.jsonl",
+        "sha256": "9713c7b9968551895f89a3688d5c1c623a8fb79953ed0bf0c2ee5ca50e73108d",
+        "rows": 34
+      },
+      "duplicate_native_ids": {
+        "path": "/home/longnew/.cache/datasets/benefitlens/opportunity-groups-20261109/discovery-final/duplicate_native_ids-e3b0c44298fc1c14.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "rows": 0
+      }
+    },
+    "scope": "issuer-role rules; unresolved equivalence excluded"
+  },
+  "coverage_file": "coverage.json",
+  "taxonomy_registry_status": "proposal_not_applied_to_all_rows_or_SQL",
+  "benefit_examples": {
+    "count": 9,
+    "full_classification_coverage": false,
+    "root_hash_comparisons": 18
+  },
+  "tests": {
+    "count": 100,
+    "failures": 0,
+    "errors": 0,
+    "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/proposal/결과물/공고_중복과지원분류_2026-11-09/tests.xml"
+  },
+  "source_code": {
+    "tools/benefitlens_opportunity_groups.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/benefitlens_opportunity_groups.py",
+      "sha256": "701564fa0e6efeede64129b79aa1eefb2b8699d56f9dccc528efbec949737c86"
+    },
+    "tools/build_benefitlens_live_batch.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/build_benefitlens_live_batch.py",
+      "sha256": "c321df5abaf665d70161e7e8e7fe321a6cb89887454d3baa83abea460dc4f34e"
+    },
+    "tools/tests/test_benefitlens_count_units.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/tests/test_benefitlens_count_units.py",
+      "sha256": "5725b9b5ceeb7866320b0789016572cdc778f33c31803409fd9931dd13e23908"
+    },
+    "tests/test_benefitlens_opportunity_groups.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tests/test_benefitlens_opportunity_groups.py",
+      "sha256": "00a1053f477a61f694455842a70ef34b242cca0d6bf63b041ce7fab39da858de"
+    },
+    "pipeline/src/data_platform/funding.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/pipeline/src/data_platform/funding.py",
+      "sha256": "198e50203163b41e2c4bbc1f2f21fe5af9f431f5c9a59a5209653eff330b8c3e"
+    },
+    "pipeline/src/data_platform/keyword_search.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/pipeline/src/data_platform/keyword_search.py",
+      "sha256": "15d4ac114ff80baffff5d2ec1b151aa10e6f0ab0677555e14bcb1b32f7975db4"
+    },
+    "pipeline/src/data_platform/original_collection.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/pipeline/src/data_platform/original_collection.py",
+      "sha256": "2c3b37410fde05a7d33cf195bd52ff611a78b50a3e76f8fe9af544cb315eb635"
+    },
+    "pipeline/tests/test_funding.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/pipeline/tests/test_funding.py",
+      "sha256": "d4bebd4e3d4f0a1d25083142c9f675dfc3453e39569afdc39424694ba11a832c"
+    },
+    "pipeline/tests/test_keyword_search.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/pipeline/tests/test_keyword_search.py",
+      "sha256": "b570de4f51fec365e88e93633e444099dca96d72203b0001b1aa60595374ff7d"
+    },
+    "pipeline/tests/test_original_collection.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/pipeline/tests/test_original_collection.py",
+      "sha256": "7d2895ce1c31f177655e748a2df8ce36b80c8566804ea22e6f0d49c0518b627e"
+    }
+  },
+  "production_database_modified": false,
+  "new_original_collection": false,
+  "loan_calls_newly_secured": 0
+}

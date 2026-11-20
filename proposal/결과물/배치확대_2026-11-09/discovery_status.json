@@ -1,0 +1,58 @@
+{
+  "status": "chunk_attempt_limit",
+  "updated_at": "2026-11-08T17:47:21.354452+00:00",
+  "seed_terms": 2,
+  "dictionary_terms": 60,
+  "new_terms": 58,
+  "counters": {
+    "query": {
+      "executed": 17
+    },
+    "document": {
+      "collected": 11,
+      "failed": 5
+    },
+    "chunk": {
+      "failed": 2,
+      "pending": 8,
+      "processed": 23
+    }
+  },
+  "waves": [
+    {
+      "number": 1,
+      "mode": "initial_seeds",
+      "status": "closed",
+      "payload": {
+        "started_at": "2026-11-08T17:35:18.891584+00:00",
+        "completed_at": "2026-11-08T17:35:56.304639+00:00",
+        "new_terms": 5,
+        "dictionary_terms": 7,
+        "consecutive_zero_waves": 0
+      }
+    },
+    {
+      "number": 2,
+      "mode": "new_expressions",
+      "status": "closed",
+      "payload": {
+        "started_at": "2026-11-08T17:35:56.314589+00:00",
+        "completed_at": "2026-11-08T17:39:08.557676+00:00",
+        "new_terms": 10,
+        "dictionary_terms": 17,
+        "consecutive_zero_waves": 0
+      }
+    },
+    {
+      "number": 3,
+      "mode": "new_expressions",
+      "status": "open",
+      "payload": {
+        "started_at": "2026-11-08T17:39:08.566245+00:00"
+      }
+    }
+  ],
+  "scope": "Bounded continuation for individual university students. English and Korean, one query template per expression, one result per query; discovery candidates only.",
+  "whole_web_exhausted": false,
+  "config_sha256": "c3684d4f1df12aef7db1e224ea47a81f892dae8bccaf86f7ccc24721a64fd64f"
+}

@@ -8,6 +8,8 @@ from pathlib import Path
 
 import project
 
+MOBIS_NOTICE_URL = 'https://mse.kaist.ac.kr/index.php?document_srl=389673&mid=mse_notice'
+
 
 def rule(field, op, value):
     return {'field': field, 'op': op, 'value': value, 'at': 'application', 'evidence_ref': 'official'}
@@ -42,13 +44,14 @@ def extra_programs():
               {'type': 'cash', 'amount': 1500, 'currency': 'USD', 'description': '입학축하금'}],
              ['재단 온라인 접수 페이지에서 작성하고 제출 서류를 준비한다.',
               '수혜 후 성적 유지, 학업 보고와 연장 심사가 있다.']),
-        spec('posco-science-18', '제18기 포스코사이언스펠로십 선발공고(~5.31)',
-             '제18기 포스코사이언스펠로십', '포스코청암재단', 'fellowship', {'all': [nationality,
-                 rule('employment.status', 'eq', 'faculty'), rule('employment.institution_country', 'eq', 'KR'),
-                 rule('employment.first_appointment_months', 'lte', 36)]},
-             [{'type': 'research_fund', 'description': '연구 지원 프로그램. 이 예제에는 지원 금액을 전사하지 않았다.'}],
-             ['임용 예정자도 별도 경로가 있다. 국내 대학 임용 관련 서류와 해당 회차 기준을 확인한다.',
-              '연구계획서와 단계별 추천 및 발표 심사를 준비한다.']),
+        spec('hyundai-mobis-research-scholar-2026-h2', '[현대모비스] 26년 하반기 연구장학생 모집 (~9/29(화) 10:00)',
+             '현대모비스 2026 하반기 연구장학생', '현대모비스', 'scholarship', {'any': [
+                 {'all': [rule('education.degree', 'eq', 'masters'), rule('education.semester', 'between', [1, 3])]},
+                 {'all': [rule('education.degree', 'eq', 'phd'), rule('education.coursework_completed', 'eq', True)]}]},
+             [{'type': 'cash', 'description': '장학금 지급. 확보 원문에 금액이 명시되지 않아 금액은 비워 둔다.'},
+              {'type': 'mentoring', 'description': '현업 연구원 멘토링과 석박사 기술과제 수행비용 지원'}],
+             ['졸업 후 현대모비스 연구소 입사 기회가 제시된 연구장학생 모집이다.',
+              '박사 Coursework 수료는 성적표 상 학점이 더 이상 기입되지 않는 시점으로 안내한다.']),
         spec('kosaf-presidential-2026', '대통령과학장학금', '대통령과학장학금 2026 안내',
              '한국장학재단', 'scholarship', {'all': [nationality,
                  rule('education.degree', 'eq', 'bachelors'), rule('education.major_group', 'in', ['science', 'engineering'])]},
@@ -107,6 +110,13 @@ def main():
                 'extraction_status': 'public_demo_subset', 'resolution_status': 'historical_snapshot',
                 'explanation': '공식 원문을 연결한 공개 예제다. 저장된 공통 조건 일부를 비교하며 현재 모집 및 전체 자격 확인을 대신하지 않는다.'})
     for item in opportunities:
+        item['applicant_scope'] = 'student'
+        if item['opportunity_id'] == 'hyundai-mobis-research-scholar-2026-h2':
+            item['application'].update(url=MOBIS_NOTICE_URL, portal_url='https://careers.mobis.com/index',
+                                       opens_on='2026-09-11', closes_on='2026-09-29')
+            for ref in item['source_refs']:
+                ref.update(url=MOBIS_NOTICE_URL, locator='KAIST 신소재공학과의 같은 회차 공식 재게시',
+                           anchor='② 박사 : Coursework 수료자')
         item['extractor'] = 'public_demo_fixture_v1'
         item.pop('version_hash', None)
         for ref in item.get('source_refs', []):

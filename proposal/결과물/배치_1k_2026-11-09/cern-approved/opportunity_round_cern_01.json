@@ -1,0 +1,69 @@
+{
+  "opportunity_round": [
+    {
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "opportunity_id": "cern-744000159629244",
+      "notice_version": "cern-744000159629244-1489bcbcd78d",
+      "status": "open",
+      "official_url": "https://jobs.smartrecruiters.com/CERN/744000159629244-short-term-internship-2027-data-science-ai-analytics",
+      "application_url": "https://jobs.smartrecruiters.com/CERN/744000159629244-short-term-internship-2027-data-science-ai-analytics?oga=true",
+      "opens_on": null,
+      "closes_on": "2027-11-01",
+      "announces_on": null,
+      "checked_on": "2026-11-09"
+    },
+    {
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "opportunity_id": "cern-744000159634239",
+      "notice_version": "cern-744000159634239-6a7bbc252e44",
+      "status": "open",
+      "official_url": "https://jobs.smartrecruiters.com/CERN/744000159634239-short-term-internship-2027-information-technologies",
+      "application_url": "https://jobs.smartrecruiters.com/CERN/744000159634239-short-term-internship-2027-information-technologies?oga=true",
+      "opens_on": null,
+      "closes_on": "2027-11-01",
+      "announces_on": null,
+      "checked_on": "2026-11-09"
+    },
+    {
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "opportunity_id": "cern-744000159422712",
+      "notice_version": "cern-744000159422712-adb45c5db8e7",
+      "status": "open",
+      "official_url": "https://jobs.smartrecruiters.com/CERN/744000159422712-short-term-internship-2027-applied-physics",
+      "application_url": "https://jobs.smartrecruiters.com/CERN/744000159422712-short-term-internship-2027-applied-physics?oga=true",
+      "opens_on": null,
+      "closes_on": "2027-11-01",
+      "announces_on": null,
+      "checked_on": "2026-11-09"
+    },
+    {
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "opportunity_id": "cern-744000159603499",
+      "notice_version": "cern-744000159603499-f67dafe97a35",
+      "status": "open",
+      "official_url": "https://jobs.smartrecruiters.com/CERN/744000159603499-cern-summer-student-programme-2027-member-and-non-member-state-",
+      "application_url": "https://jobs.smartrecruiters.com/CERN/744000159603499-cern-summer-student-programme-2027-member-and-non-member-state-?oga=true",
+      "opens_on": null,
+      "closes_on": "2027-01-21",
+      "announces_on": null,
+      "checked_on": "2026-11-09"
+    },
+    {
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "opportunity_id": "cern-744000159596524",
+      "notice_version": "cern-744000159596524-ff2edfcc2400",
+      "status": "open",
+      "official_url": "https://jobs.smartrecruiters.com/CERN/744000159596524-cern-openlab-summer-student-programme-2027",
+      "application_url": "https://jobs.smartrecruiters.com/CERN/744000159596524-cern-openlab-summer-student-programme-2027?oga=true",
+      "opens_on": null,
+      "closes_on": "2027-01-21",
+      "announces_on": null,
+      "checked_on": "2026-11-09"
+    }
+  ]
+}

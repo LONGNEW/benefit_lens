@@ -1,0 +1,58 @@
+{
+  "evidence": [
+    {
+      "evidence_id": "cern-744000159596524-deadline",
+      "document_id": "cern-744000159596524-ff2edfcc2400",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "source_role": "official_notice",
+      "locator": "L51-L53",
+      "quote": "21/01/27"
+    },
+    {
+      "evidence_id": "cern-744000159596524-student",
+      "document_id": "cern-744000159596524-ff2edfcc2400",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "source_role": "official_notice",
+      "locator": "L37-L43",
+      "quote": "full-time student"
+    },
+    {
+      "evidence_id": "cern-744000159596524-nationality",
+      "document_id": "cern-744000159596524-ff2edfcc2400",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "source_role": "official_notice",
+      "locator": "L42-L44",
+      "quote": "all nationalities"
+    },
+    {
+      "evidence_id": "cern-744000159596524-stipend",
+      "document_id": "cern-744000159596524-ff2edfcc2400",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "source_role": "official_notice",
+      "locator": "L58-L60",
+      "quote": "94 CHF"
+    },
+    {
+      "evidence_id": "cern-744000159596524-apply-url",
+      "document_id": "cern-744000159596524-ff2edfcc2400",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "source_role": "official_notice",
+      "locator": "L8-L8",
+      "quote": "https://jobs.smartrecruiters.com/CERN/744000159596524-cern-openlab-summer-student-programme-2027?oga=true"
+    },
+    {
+      "evidence_id": "cern-744000159596524-submission",
+      "document_id": "cern-744000159596524-ff2edfcc2400",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "source_role": "official_notice",
+      "locator": "L45-L53",
+      "quote": "Your CV"
+    }
+  ]
+}

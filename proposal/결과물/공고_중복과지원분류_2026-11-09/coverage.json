@@ -1,0 +1,159 @@
+{
+  "input": {
+    "rows": 4339,
+    "path": "/home/longnew/.cache/datasets/benefitlens/strict-students-20261109/root/strict-secured-649b56fbf414fbf9.jsonl",
+    "sha256": "649b56fbf414fbf917af51dbf50b62baba0cccbb120edbd240cf2728e091460b",
+    "sql_query": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-period-strict-20261109/runs/4d7e03b00d9e7a4533330257afa1214702c5608975d1fd1e20113b6edd651ce8/output/rounds.result.json",
+    "sql_query_sha256": "6dc7d583d13d5073d418b67fcf20352d8d3f45f81e85c06f01ba71b9c51fc9c9"
+  },
+  "sql": {
+    "rows": 4339,
+    "issuer_nonempty": 4339,
+    "issuer_exact_distinct_strings": 91,
+    "opportunity_type": {
+      "internship": 4010,
+      "scholarship": 240,
+      "other": 74,
+      "admission_funding": 15
+    },
+    "claim_fields": {
+      "schedule/verified_application_period": 4339,
+      "schedule/current_application_status": 4339,
+      "eligibility/student_scope": 4339,
+      "benefit/payment_description": 7,
+      "eligibility/institution_enrollment": 5
+    },
+    "role_specific_country_fields": 0,
+    "nationality_rule_fields": 0,
+    "support_purpose_fields": 0,
+    "support_method_fields": 0,
+    "amount_currency_unit_fields": 0,
+    "source_specific_daad_country_filters": 4,
+    "partial_paid_student_employment_claims": 7
+  },
+  "input_flat": {
+    "country": 2977,
+    "location": 3826,
+    "nationality": 0,
+    "citizenship": 0,
+    "benefit_type": 0,
+    "support_purposes": 0,
+    "support_methods": 0
+  },
+  "native_raw": {
+    "workday_public_cxs": {
+      "/jobPostingInfo/country/descriptor": {
+        "rows": 2955,
+        "nonempty": 2950,
+        "present": 2950
+      },
+      "/jobPostingInfo/jobRequisitionLocation/country/alpha2Code": {
+        "rows": 2955,
+        "nonempty": 2955,
+        "present": 2955
+      },
+      "/hiringOrganization/name": {
+        "rows": 2955,
+        "nonempty": 2807,
+        "present": 2955
+      }
+    },
+    "BoschGroup/SmartRecruiters": {
+      "/location/country": {
+        "rows": 17,
+        "nonempty": 17,
+        "present": 17
+      },
+      "/experienceLevel/id": {
+        "rows": 17,
+        "nonempty": 17,
+        "present": 17
+      },
+      "/typeOfEmployment/id": {
+        "rows": 17,
+        "nonempty": 17,
+        "present": 17
+      }
+    },
+    "CERN": {
+      "/location/country": {
+        "rows": 21,
+        "nonempty": 21,
+        "present": 21
+      },
+      "/jobAd/sections/additionalInformation/text": {
+        "rows": 21,
+        "nonempty": 21,
+        "present": 21
+      }
+    },
+    "SchneiderElectric/Jibe": {
+      "/country_code": {
+        "rows": 6,
+        "nonempty": 6,
+        "present": 6
+      },
+      "/benefits": {
+        "rows": 6,
+        "nonempty": 0,
+        "present": 6
+      }
+    }
+  },
+  "native_workday_primary_country_codes": {
+    "US": 2700,
+    "CH": 8,
+    "DE": 25,
+    "SG": 38,
+    "MX": 11,
+    "FR": 11,
+    "CA": 16,
+    "CN": 6,
+    "AR": 1,
+    "BR": 10,
+    "GB": 25,
+    "CR": 8,
+    "NL": 14,
+    "HK": 2,
+    "IE": 5,
+    "QA": 1,
+    "AE": 2,
+    "BE": 28,
+    "MY": 10,
+    "PL": 1,
+    "JP": 1,
+    "ES": 1,
+    "SA": 1,
+    "EG": 1,
+    "TR": 1,
+    "CL": 2,
+    "CO": 6,
+    "SE": 4,
+    "FI": 1,
+    "DK": 1,
+    "IN": 1,
+    "PE": 1,
+    "MN": 1,
+    "MA": 3,
+    "VN": 4,
+    "BM": 1,
+    "HR": 1,
+    "SI": 1,
+    "CZ": 1
+  },
+  "native_workday_distinct_primary_country_codes": 39,
+  "raw_lexical_hits_unreviewed_not_normalized_benefits": {
+    "housing": 178,
+    "travel": 351,
+    "wage": 1247,
+    "nationality": 420,
+    "tuition": 49,
+    "living": 20,
+    "research_funding": 6,
+    "loan_any_context": 4,
+    "fee_waiver": 1
+  },
+  "uq_rows_with_named_scholarship_value_section": 125,
+  "cern_rows_with_explicit_nationality_condition": 19,
+  "interpretation": "Lexical hits can be duties, eligibility, employee or dependent benefits. Zero classified loans does not mean loans do not exist. Empty native fields are unknown, not explicit absence."
+}

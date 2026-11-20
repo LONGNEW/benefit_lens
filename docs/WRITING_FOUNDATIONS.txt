@@ -1,0 +1,50 @@
+일반 글쓰기 원천 수집과 적용
+
+프로그램별 후기 외에 일반 작문 교재, 작성 템플릿, 채점된 실제 글과 커뮤니티 조언을 별도 층으로 수집한다. 공고와 연결된 후기 수량은 기존 집계를 유지한다.
+
+원천 목록: pipeline/config/writing_foundation_sources_v3.json
+v3는 v2와 v1을 상속한다. 새 원천은 짧은 확장 명세에 추가한다.
+일반 기준: pipeline/config/writing_principles_v1.json
+분석 명세: pipeline/config/operational_writing_pattern_prompt_v5.txt
+패턴 분류: pipeline/config/writing_pattern_taxonomy_v1.json
+판정 기준: pipeline/config/writing_quality_rubric_v1.json
+기존 API 명세: pipeline/config/writing_knowhow_api_sources.json
+
+실행 위치는 저장소 루트다.
+1. 원천 확장
+/usr/bin/python3 tools/collect_benefitlens_writing_foundations.py --community-pages 2 --request-limit 64
+2. 채점된 글의 공식 배포 원본 가져오기 후 테이블 변환
+/usr/bin/python3 tools/import_benefitlens_scored_writing.py --archive /home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-foundations-v1/persuade/persuade_corpus_2.0_test.zip
+3. ELLIPSE의 연결성, 구문, 어휘와 문법 점수 변환
+/usr/bin/python3 tools/import_benefitlens_ellipse.py
+4. IteraTeR와 JFLEG의 수정 전후 자료 변환
+/usr/bin/python3 tools/import_benefitlens_writing_revisions.py
+5. 원문 검증, 읽기 자료와 보고서 갱신
+/usr/bin/python3 tools/report_benefitlens_writing_expansion.py
+
+수집은 공개 API 응답과 고정한 커밋의 아카이브를 재사용한다. 커뮤니티 질문과 답변은 각각 본문을 저장하고 답변에 질문을 연결한다. 질문 검색 페이지와 답변 페이지를 구분해 이어서 진행한다. 요청 예산, backoff, HTTP 보류를 저장하며 신규 인증이나 접근 제한 우회는 수행하지 않는다. 일시적인 원천 실패 때는 기존 원천 레코드를 유지한다.
+커뮤니티만 이어받을 때는 --community-only를 붙인다. PDF는 원본 해시가 같은 이전 추출 결과를 검증해 재사용한다. GitHub가 남은 요청 수 0과 재설정 시각을 반환하면 그 시각까지 보류하며, 시각이 지난 뒤 재실행할 때 정상 요청을 재개한다.
+
+기본 저장 위치:
+/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-foundations-v1
+이 경로는 사전에 승인된 공유 저장 디스크를 연결한다.
+
+채점 글의 테이블:
+- essay: 완성 글, 원 과제, 글 점수, 본문 해시, 원본 분할
+- essay_alias: 원래 글 ID와 중복 제거한 본문 ID의 연결
+- discourse: 글의 부분 역할, 부분 평가, 원 위치와 검증한 원문 위치
+CSV의 부분 주석 행을 독립된 글이나 사람으로 세지 않는다. 검증된 인용은 verified_start, verified_end와 verified_text가 가리키는 실제 본문을 사용한다.
+
+적용 순서:
+일반 글쓰기 원칙을 먼저 확인하고, 대상 글의 유형에 맞는 문단 형식을 고른다. 실제 지원 문항과 확인된 개인 사실을 넣어 초안을 만들고 각 문장의 목적과 근거, 문단 간 연결을 검토한다. 운영 명세 v5는 문항과 글의 유형, 자료 선택, 글과 문단의 구성, 연결 관계와 표현 수정을 구분한다. 문항별 패턴 6종과 관찰 근거를 남기는 판정 항목 9개를 내부 초안으로 정의했다.
+정량 분석: /usr/bin/python3 tools/analyze_benefitlens_writing_patterns.py
+분석 보고: /usr/bin/python3 tools/report_benefitlens_pattern_analysis.py
+판정 점수 0, 1, 2는 관찰한 기준에만 부여한다. 입력 부족과 해당 없음은 null로 구분한다. 가중치와 자동 승인 점수는 정의하지 않았다.
+
+2026-11-17 추가 확장 결과:
+PERSUADE와 ELLIPSE의 서로 다른 완성 글은 16,581편이다. 두 코퍼스에 겹치는 글 303편을 제외했다. 일반 작성 기준 8개의 인용 위치, 원천 본문 해시와 답변의 질문 연결을 검증한다. 개별 라이선스 값이 빠진 응답은 누락 상태를 보존한다.
+수정 전후 자료는 sentence와 document 단위를 분리한다. IteraTeR의 사람이 붙인 수정 목적과 모델이 분류한 목적, JFLEG의 사람이 작성한 수정 참조를 구분한다. 문장 수정쌍 201,136개와 문서 단위 수정쌍 31,754개를 확보했다. 수정 목적 라벨과 글의 개선 여부는 별도의 검토 항목이다.
+최신 원천별 수량: 공용 캐시의 expansion-round2-summary.json
+원문 비교와 보고서: outputs/benefitlens/BenefitLens_글쓰기원천_추가확장_20261117.html
+
+원천은 후보 상태이며 일괄 모델 추출과 정본 DB 승격은 수행하지 않았다. 미국 6~12학년 논증문 점수, 커뮤니티 추천과 프로그램별 선발 결과는 별도 평가다.

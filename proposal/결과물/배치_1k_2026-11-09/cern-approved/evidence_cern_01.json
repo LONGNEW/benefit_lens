@@ -1,0 +1,139 @@
+{
+  "evidence": [
+    {
+      "evidence_id": "cern-744000159629244-active",
+      "document_id": "cern-744000159629244-1489bcbcd78d",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "source_role": "official_notice",
+      "locator": "L4-L7",
+      "quote": "true"
+    },
+    {
+      "evidence_id": "cern-744000159629244-deadline",
+      "document_id": "cern-744000159629244-1489bcbcd78d",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "source_role": "official_notice",
+      "locator": "L35-L37",
+      "quote": "01/11/2027"
+    },
+    {
+      "evidence_id": "cern-744000159629244-student",
+      "document_id": "cern-744000159629244-1489bcbcd78d",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "source_role": "official_notice",
+      "locator": "L47-L53",
+      "quote": "full-time student"
+    },
+    {
+      "evidence_id": "cern-744000159629244-nationality",
+      "document_id": "cern-744000159629244-1489bcbcd78d",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "source_role": "official_notice",
+      "locator": "L46-L48",
+      "quote": "CERN Member State"
+    },
+    {
+      "evidence_id": "cern-744000159629244-stipend",
+      "document_id": "cern-744000159629244-1489bcbcd78d",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "source_role": "official_notice",
+      "locator": "L42-L44",
+      "quote": "1,593 Swiss Francs"
+    },
+    {
+      "evidence_id": "cern-744000159629244-apply-url",
+      "document_id": "cern-744000159629244-1489bcbcd78d",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "source_role": "official_notice",
+      "locator": "L8-L8",
+      "quote": "https://jobs.smartrecruiters.com/CERN/744000159629244-short-term-internship-2027-data-science-ai-analytics?oga=true"
+    },
+    {
+      "evidence_id": "cern-744000159629244-submission",
+      "document_id": "cern-744000159629244-1489bcbcd78d",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244",
+      "source_role": "official_notice",
+      "locator": "L53-L61",
+      "quote": "Your CV"
+    },
+    {
+      "evidence_id": "cern-744000159634239-active",
+      "document_id": "cern-744000159634239-6a7bbc252e44",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "source_role": "official_notice",
+      "locator": "L4-L7",
+      "quote": "true"
+    },
+    {
+      "evidence_id": "cern-744000159634239-deadline",
+      "document_id": "cern-744000159634239-6a7bbc252e44",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "source_role": "official_notice",
+      "locator": "L35-L37",
+      "quote": "01/11/2027"
+    },
+    {
+      "evidence_id": "cern-744000159634239-student",
+      "document_id": "cern-744000159634239-6a7bbc252e44",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "source_role": "official_notice",
+      "locator": "L47-L53",
+      "quote": "full-time student"
+    },
+    {
+      "evidence_id": "cern-744000159634239-nationality",
+      "document_id": "cern-744000159634239-6a7bbc252e44",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "source_role": "official_notice",
+      "locator": "L46-L48",
+      "quote": "CERN Member State"
+    },
+    {
+      "evidence_id": "cern-744000159634239-stipend",
+      "document_id": "cern-744000159634239-6a7bbc252e44",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "source_role": "official_notice",
+      "locator": "L42-L44",
+      "quote": "1,593 Swiss Francs"
+    },
+    {
+      "evidence_id": "cern-744000159634239-apply-url",
+      "document_id": "cern-744000159634239-6a7bbc252e44",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "source_role": "official_notice",
+      "locator": "L8-L8",
+      "quote": "https://jobs.smartrecruiters.com/CERN/744000159634239-short-term-internship-2027-information-technologies?oga=true"
+    },
+    {
+      "evidence_id": "cern-744000159634239-submission",
+      "document_id": "cern-744000159634239-6a7bbc252e44",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239",
+      "source_role": "official_notice",
+      "locator": "L53-L61",
+      "quote": "Your CV"
+    },
+    {
+      "evidence_id": "cern-744000159422712-active",
+      "document_id": "cern-744000159422712-adb45c5db8e7",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "source_role": "official_notice",
+      "locator": "L4-L7",
+      "quote": "true"
+    }
+  ]
+}

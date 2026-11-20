@@ -1,0 +1,51 @@
+공고 공통 스키마와 갱신 정책 v1
+2026-11-19 실행 산출물. T1은 의미 계약과 갱신 정책, T6는 일정 계산과 실행을 소유한다. T5는 새 조합과 정책을 검증한다. 이번 실행은 외부 HTTP 0회, DB 쓰기 0회이며 기존 서비스와 운영 설정은 바꾸지 않았다.
+
+1. 이번에 확정한 경계
+공통 스키마는 조건과 근거를 비교할 때 뜻이 같아야 하는 구조다. SQL 열과 JSONB 중 어느 곳에 두는지는 저장과 질의의 선택이다. 기존 PostgreSQL 키와 JSONB, team-handoff-v1을 유지한다. 스키마 설계 확정과 36,856개 후보 전량에 대한 정규화 적용은 별도 단계다.
+
+공통 식별과 상태: opportunity_id, program_id, round_id, title, issuer, 원문과 버전, 검토와 모집 상태, 확인 시각을 보존한다. 데모 category 네 값은 유지하고 인턴, 수당과 상금의 구분은 지급 목적, 방법, 수급 주체와 지급 조건의 타입이 있는 JSON 축에 둔다.
+조건 공통형: pipeline/schemas/opportunity.schema.json의 condition을 그대로 사용한다. all/any/not 트리와 field/op/value/evidence_ref, 선택적인 at/scale/degree_scope/period_scope를 보존한다. 현재 재학과 활동 기간 중 재학 유지, 현재 수료와 수혜 시작 시점 수료를 합치지 않는다. 부정과 예외를 삭제한 단어 치환을 의미 동치로 승인하지 않는다.
+검토된 공통 claim: common-fields.schema.json의 enrollment_maintenance, concurrent_funding_rule, institution_scope, application_route, document_requirement, support_component, funding_gap_rule을 사용한다. 공식 문항과 분량은 application과 requirement 원문 근거에 연결한다.
+특화 정보: 공통 필드로 승인되지 않은 항목은 원천과 프로그램이 식별되는 claim의 kind/field/value에 원래 표현, 타입, 단위와 근거를 남기고 candidate로 유지한다. 새 표현을 자동으로 공통 필드에 흡수하지 않는다.
+
+금액과 기간의 실제 구분
+- 600만원/학기: amount.value=6000000, currency_code=KRW, frequency=per_semester로 보존한다. 학기 수가 확인되지 않으면 총액을 계산하지 않는다.
+- 최대 4학기: 지급액 상한이 아니라 지원 기간 상한이다. 기간의 quantity=4, unit=semester, bound=max를 갖는 원천 특화 값으로 보존한다. 공통 기간 필드 승격은 별도 의미 검토 대상이다.
+- common-fields의 frequency enum에 per_semester와 per_term을 추가했다. per_month로 환산하지 않는다. 기존 값과 4개 category는 그대로이며 과거 승인 입력이나 원문 지문을 고치지 않았다. 이 추가는 구조 지원이고 새 조합의 의미 승인이나 과거 승인 승계가 아니다.
+
+2. 갱신 운영 정책
+초기 정책 파일은 pipeline/config/notice_refresh_policy_v1.json이다. 관측된 최적값이 아니라 적용과 평가를 시작할 운영 가설이다.
+- 기본: 마지막 성공 확인 후 24시간.
+- 마감 72시간 이내: 6시간. 이미 알고 있는 마감 경계가 그보다 먼저 오면 그 경계를 다음 확인 시점으로 잡는다.
+- 명시적으로 닫혔거나 비활성인 공고: 7일. 알려진 재개 시점이 임박하면 6시간으로 확인을 당긴다.
+- 수시, 선착순과 예산 소진형: expedited 기본 1시간, 원천별 또는 레코드별로 조정할 수 있다.
+- timeout, 미파싱과 접근 보류: 모집 상태를 유지하고 freshness=stale로 둔다. 재시도 기본 30분이며 마지막 시도 시각이 없으면 확인 필요로 둔다.
+- 검증 표지: input_current_open_verified는 입력값을 보존한다. current_open_verified는 기존 true 표지에 open, fresh, 원문과 파싱 성공 제약을 더한 조회값이다. 새로운 의미 승인을 만들지 않는다.
+- 제공자 Retry-After와 최소 요청 간격은 별도 제약이다. desired_next_check_at은 우리 정책, next_check_at은 제공자 제약까지 반영한 시점이다. 제공자가 더 늦게 허용하면 stale 상태로 기다린다.
+- 날짜만 있는 마감은 원천 시간대의 당일 끝, 재개는 당일 시작을 확인 일정에만 사용한다. 날짜 경과만으로 closed나 open으로 전환하지 않는다. 성공적으로 파싱된 명시적 상태 관찰이 검증됐을 때 상태를 바꾼다.
+2~4주간 의미 변경률, 탐지 지연, 오래된 조건의 판정과 조회/재검토 비용을 측정해 T1이 정책을 보정하고 T5가 감사한다.
+
+3. 구현 인터페이스와 실제 실행
+모듈 tools/benefitlens_notice_refresh.py:
+load_policy(path=None)
+schedule_notice(record, *, now, policy=None)
+build_manifest(records, *, now, policy=None)
+load_demo_records(): PostgreSQL REPEATABLE READ READ ONLY, 캐시 원문과 추출문 해시 대조.
+일정 계산 함수는 순수 계산이다. CLI는 --from-demo-db 또는 --input JSON, --now ISO8601, --output-root를 받는다. 반환값은 status, freshness, refresh_due, 원하는 시점과 실제 허용 시점, 입력 의미 검토 상태다.
+
+실행 결과:
+실제 DB 데모 10건을 읽었고 data/sample/programs.json과 opportunity_id 집합이 같았다. 10건 모두 historical_demo로 표시했다. 현재 모집 검증을 수행하지 않았고 status=unknown, freshness=stale, refresh_due=true가 각각 10건이다.
+공통 문서 DB에서 원문과 추출문 해시를 직접 대조하고 참조 해시에 결속한 것은 Gates, Google, 관정, NVIDIA 4건이다. 나머지 6건의 공통 DB 원문 연결은 이번 조회로 검증하지 못했다. 원문이 전혀 없다고 단정하지 않으며 남은 연결 검토 대상으로 둔다. 부분 추출, 과거 스냅샷과 기존 검토 상태는 input-records.json에 그대로 보존했다.
+
+출력:
+/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/team-execution-20261119/notice-refresh/input-records.json
+같은 폴더 manifest.json, validation.json. manifest는 입력 해시, 정책 해시와 참조 스키마 해시를 기록한다.
+재현:
+/usr/bin/python3 tools/benefitlens_notice_refresh.py --from-demo-db
+
+4. 팀별 완료와 다음 게이트
+T1 완료: 공통/특화 경계, 실제 재사용 스키마, 학기 지급 주기 보완, 갱신 초기 정책과 데모 입력 10건의 범위를 명시했다. 전체 후보 정규화, 6건의 원문 결속 확인과 현재 모집 재확인은 남아 있다.
+T6 완료: 재현 가능한 다음 확인 시점 계산과 일정 manifest를 실제 실행했다. 기존 운영 서비스에 새 정책을 배포하거나 외부 원문을 갱신하지 않았다.
+검증: 갱신 경계, 시간대, 원문 누락, 닫힘과 명시적 재개, 미파싱, 제공자 대기와 학기 단위를 포함한 테스트 및 기존 handoff 회귀 71개가 통과했다.
+다음 게이트: T1은 새 의미 조합과 현재 모집 근거를 항목별 검토하고, T5는 일정/정규화 반례와 비용을 감사한다. T6는 승인된 정책으로 고정 원천의 변경 감지와 재개 실험을 거친 뒤 운영 일정에 연결한다. 이번 일정 목록을 현재 모집이 검증된 10개 공고라고 표현하지 않는다.

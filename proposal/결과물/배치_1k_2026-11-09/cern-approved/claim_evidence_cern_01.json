@@ -1,0 +1,94 @@
+{
+  "claim_evidence": [
+    {
+      "claim_id": "cern-744000159629244-publication-status",
+      "evidence_id": "cern-744000159629244-active",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244"
+    },
+    {
+      "claim_id": "cern-744000159629244-publication-status",
+      "evidence_id": "cern-744000159629244-apply-url",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244"
+    },
+    {
+      "claim_id": "cern-744000159629244-publication-status",
+      "evidence_id": "cern-744000159629244-deadline",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244"
+    },
+    {
+      "claim_id": "cern-744000159629244-deadline-claim",
+      "evidence_id": "cern-744000159629244-deadline",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244"
+    },
+    {
+      "claim_id": "cern-744000159629244-enrollment",
+      "evidence_id": "cern-744000159629244-student",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244"
+    },
+    {
+      "claim_id": "cern-744000159629244-nationality-claim",
+      "evidence_id": "cern-744000159629244-nationality",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244"
+    },
+    {
+      "claim_id": "cern-744000159629244-stipend-claim",
+      "evidence_id": "cern-744000159629244-stipend",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244"
+    },
+    {
+      "claim_id": "cern-744000159629244-documents",
+      "evidence_id": "cern-744000159629244-submission",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244"
+    },
+    {
+      "claim_id": "cern-744000159629244-form-link",
+      "evidence_id": "cern-744000159629244-apply-url",
+      "program_id": "cern-stag-data-science",
+      "round_id": "2027-744000159629244"
+    },
+    {
+      "claim_id": "cern-744000159634239-publication-status",
+      "evidence_id": "cern-744000159634239-active",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239"
+    },
+    {
+      "claim_id": "cern-744000159634239-publication-status",
+      "evidence_id": "cern-744000159634239-apply-url",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239"
+    },
+    {
+      "claim_id": "cern-744000159634239-publication-status",
+      "evidence_id": "cern-744000159634239-deadline",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239"
+    },
+    {
+      "claim_id": "cern-744000159634239-deadline-claim",
+      "evidence_id": "cern-744000159634239-deadline",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239"
+    },
+    {
+      "claim_id": "cern-744000159634239-enrollment",
+      "evidence_id": "cern-744000159634239-student",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239"
+    },
+    {
+      "claim_id": "cern-744000159634239-nationality-claim",
+      "evidence_id": "cern-744000159634239-nationality",
+      "program_id": "cern-stag-information-technologies",
+      "round_id": "2027-744000159634239"
+    }
+  ]
+}

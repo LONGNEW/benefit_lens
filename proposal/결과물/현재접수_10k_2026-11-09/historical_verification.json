@@ -1,0 +1,31 @@
+{
+  "postgres_version": "16.15",
+  "rows": {
+    "case_document": 22,
+    "claim": 1098,
+    "claim_evidence": 1124,
+    "evidence": 1128,
+    "experience_case": 9,
+    "opportunity_round": 1006,
+    "pattern_evidence": 23,
+    "program": 1006,
+    "source_document": 53,
+    "writing_pattern": 6
+  },
+  "raw_hashes": 52,
+  "text_hashes": 53,
+  "spans": 1128,
+  "unique_files_hashed": 105,
+  "unique_text_files_read": 53,
+  "schema_sha256": "3828bd6fde6c6e526ded1433a44c02aee80e0a3e49587cb52c234d0eb650bb46",
+  "packet_sha256": "6257cb104fad53b0dee62966e9d7e384cbd961f50f9bb1a8e514eaab9422e3c8",
+  "exact_input_duplicates_collapsed": 0,
+  "same_input_replay_unchanged": true,
+  "contract_violation_rows": 0,
+  "round_basis_counts": {
+    "source_backed": 1000,
+    "summary_only": 6
+  },
+  "basis_definition": "At least one reviewed claim with complete same-round official notice/guidance evidence; not a completeness assertion.",
+  "scope": "disposable PostgreSQL, no published ports and no network; no production writes"
+}

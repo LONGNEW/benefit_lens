@@ -1,0 +1,52 @@
+{
+  "claim_evidence": [
+    {
+      "claim_id": "gc26w-criteria-claim",
+      "evidence_id": "gc26w-criteria",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027"
+    },
+    {
+      "claim_id": "gc26w-portal-required",
+      "evidence_id": "gc26w-portal",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027"
+    },
+    {
+      "claim_id": "gc26w-portal-wording",
+      "evidence_id": "gc26w-portal",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027"
+    },
+    {
+      "claim_id": "gc26w-conditional-extra-rp",
+      "evidence_id": "gc26w-extra-form",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027"
+    },
+    {
+      "claim_id": "gc26w-infection-phd-rp",
+      "evidence_id": "gc26w-infection-rp",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027"
+    },
+    {
+      "claim_id": "gc26w-infection-phd-rp",
+      "evidence_id": "gc26w-infection-cycle",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027"
+    },
+    {
+      "claim_id": "gc26w-infection-proposal-guide",
+      "evidence_id": "gc26w-proposal-guide",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027"
+    },
+    {
+      "claim_id": "gc26w-infection-proposal-guide",
+      "evidence_id": "gc26w-infection-cycle",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-11-09T12:02:22.004836+09:00",
+  "selected_open": 1000,
+  "unique_posting_urls": 1000,
+  "unique_application_entrypoints": 886,
+  "source_counts": {
+    "Amazon.jobs": 180,
+    "BoschGroup/SmartRecruiters": 180,
+    "CERN": 21,
+    "ESA": 175,
+    "UQ": 117,
+    "intel": 83,
+    "nvidia": 164,
+    "siemens": 80
+  },
+  "types": {
+    "internship": 883,
+    "scholarship": 117
+  },
+  "published_deadline_with_exact_evidence": 320,
+  "current_active_without_normalized_deadline": 680,
+  "fetched_at_first": "2026-11-09T02:50:32.972661+00:00",
+  "fetched_at_last": "2026-11-09T03:00:28.065491+00:00",
+  "uq_awards": 117,
+  "uq_shared_public_forms": 3,
+  "same_input_replay_unchanged": true,
+  "contract_violation_rows": 0,
+  "raw_hashes": 1000,
+  "text_hashes": 1000,
+  "evidence_spans": 2320,
+  "archive_baseline_present": true,
+  "verification": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-live-1k-20261109/runs/1bace1523bc71546c0fb965e14747dfa3f9c2d58a37a2bdd6e910b8793c5315b/output/verification.json",
+  "output": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-live-1k-20261109/runs/1bace1523bc71546c0fb965e14747dfa3f9c2d58a37a2bdd6e910b8793c5315b/output/rounds.result.json"
+}

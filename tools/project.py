@@ -64,7 +64,9 @@ def connect():
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('action', choices=['init', 'doctor', 'db-up', 'db-stop', 'schema', 'demo', 'status'])
-    action = parser.parse_args().action
+    parser.add_argument('--port', type=int, help='Override the loopback demo port.')
+    args = parser.parse_args()
+    action = args.action
     if action == 'init':
         path = ROOT / '.env'
         with path.open('x', encoding='utf-8') as out:
@@ -90,7 +92,7 @@ def main() -> None:
     elif action == 'demo':
         config = settings()
         subprocess.run([sys.executable, '-m', 'data_platform.pipeline_demo', '--port',
-                        config['BENEFITLENS_DEMO_PORT']], cwd=ROOT, env=environment(), check=True)
+                        str(args.port or config['BENEFITLENS_DEMO_PORT'])], cwd=ROOT, env=environment(), check=True)
     else:
         with connect() as conn:
             conn.execute('SET TRANSACTION READ ONLY')

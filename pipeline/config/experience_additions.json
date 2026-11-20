@@ -1,0 +1,296 @@
+{
+  "sources": [
+    {
+      "id": "yuke-proposal",
+      "program_id": "nvidia-graduate-fellowship",
+      "case_id": "N2",
+      "experience_case_ids": [
+        "N2"
+      ],
+      "role": "application_statement",
+      "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf"
+    },
+    {
+      "id": "yuke-panel",
+      "program_id": "nvidia-graduate-fellowship",
+      "case_id": "N2",
+      "experience_case_ids": [
+        "N2"
+      ],
+      "role": "experience_review",
+      "url": "https://students-at-systems.org/pages/events/fellowship-panel.html"
+    },
+    {
+      "id": "ruth-proposal",
+      "program_id": "nvidia-graduate-fellowship",
+      "case_id": "N3",
+      "experience_case_ids": [
+        "N3"
+      ],
+      "role": "application_statement",
+      "url": "https://ruthcfong.github.io/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf"
+    },
+    {
+      "id": "naveen-essay",
+      "program_id": "gates-cambridge",
+      "case_id": "C2",
+      "experience_case_ids": [
+        "C2"
+      ],
+      "role": "application_statement",
+      "url": "https://naveenraman.com/assets/sop/gates_cambridge.pdf"
+    },
+    {
+      "id": "naveen-review",
+      "program_id": "gates-cambridge",
+      "case_id": "C2",
+      "experience_case_ids": [
+        "C2"
+      ],
+      "role": "experience_review",
+      "url": "https://naveenraman.com/writing/fellowships.html"
+    },
+    {
+      "id": "paul-review",
+      "program_id": "gates-cambridge",
+      "case_id": "C3",
+      "experience_case_ids": [
+        "C3"
+      ],
+      "role": "experience_review",
+      "url": "https://mattsosna.com/gates-i/"
+    },
+    {
+      "id": "onon-interview",
+      "program_id": "gates-cambridge",
+      "case_id": "C4",
+      "experience_case_ids": [
+        "C4"
+      ],
+      "role": "official_interview",
+      "url": "https://hobbyalumni.squarespace.com/interviews/ononbayasgalan"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "N2",
+      "program_id": "nvidia-graduate-fellowship",
+      "name": "Yuke Wang",
+      "application_round": "2022-2023",
+      "document_type": "application_statement_and_panel",
+      "outcome_status": "selected",
+      "outcome_verification": "official",
+      "outcome_evidence": [
+        {
+          "url": "https://research.nvidia.com/graduate-fellowships/2022",
+          "quote": "Yuke Wang",
+          "verification": "official"
+        }
+      ],
+      "source_limitations": "지원용 공개 문서다. PDF 자체에는 제출 프로그램과 회차가 적혀 있지 않아 정확한 최종 제출본은 미확인이다."
+    },
+    {
+      "case_id": "N3",
+      "program_id": "nvidia-graduate-fellowship",
+      "name": "Ruth Fong",
+      "application_round": "2017",
+      "document_type": "application_statement",
+      "outcome_status": "not_selected",
+      "outcome_verification": "author_reported",
+      "outcome_evidence": [
+        {
+          "url": "https://medium.com/@ruthfong/applying-to-the-open-philanthropy-ai-fellowship-48dafe7fe27c",
+          "quote": "which I did not receive",
+          "verification": "author_reported"
+        }
+      ],
+      "source_limitations": "NVIDIA 미선정은 작성자 보고다. 다른 프로그램 Open Philanthropy에서의 선정과 구분한다."
+    },
+    {
+      "case_id": "C2",
+      "program_id": "gates-cambridge",
+      "name": "Naveen Raman",
+      "application_round": "2021",
+      "document_type": "application_statement_and_review",
+      "outcome_status": "not_selected",
+      "outcome_verification": "author_reported",
+      "outcome_evidence": [
+        {
+          "url": "https://naveenraman.com/writing/fellowships.html",
+          "quote": "Not Awarded",
+          "verification": "author_reported"
+        }
+      ],
+      "source_limitations": "6쪽 묶음 중 첫 쪽이 Gates 에세이이며 뒤에는 Cambridge 입학 문항과 연구계획이 포함된다. MPhil 지원이다."
+    },
+    {
+      "case_id": "C3",
+      "program_id": "gates-cambridge",
+      "name": "Paul Bergen",
+      "application_round": "2013",
+      "document_type": "experience_review",
+      "outcome_status": "selected",
+      "outcome_verification": "official_yearbook_and_author_report",
+      "outcome_evidence": [
+        {
+          "url": "https://www.gatescambridge.org/wp-content/uploads/2020/04/gc_yearbook_2016_web_0.pdf",
+          "quote": "Paul Bergen",
+          "verification": "official_yearbook_and_author_report"
+        }
+      ],
+      "source_limitations": "지원 준비와 본인 글의 구성에 대한 후기다. 제출 에세이 전문은 없다."
+    },
+    {
+      "case_id": "C4",
+      "program_id": "gates-cambridge",
+      "name": "Onon Bayasgalan",
+      "application_round": "2019",
+      "document_type": "official_interview",
+      "outcome_status": "selected",
+      "outcome_verification": "official_yearbook_and_interview",
+      "outcome_evidence": [
+        {
+          "url": "https://www.gatescambridge.org/wp-content/uploads/2020/04/gates_cambridge_annual_report_2019_final_web.pdf",
+          "quote": "Onon Bayasgalan",
+          "verification": "official_yearbook_and_interview"
+        }
+      ],
+      "source_limitations": "동문회에 실린 본인 인터뷰다. 제출 에세이 전문은 없다."
+    }
+  ],
+  "existing_case_updates": {
+    "G1": {
+      "outcome_status": "selected"
+    },
+    "G2": {
+      "outcome_status": "selected"
+    },
+    "G3": {
+      "outcome_status": "selected"
+    },
+    "G5": {
+      "outcome_status": "selected"
+    },
+    "G6": {
+      "outcome_status": "selected"
+    },
+    "G7": {
+      "outcome_status": "selected"
+    },
+    "N1": {
+      "outcome_status": "selected"
+    },
+    "G4": {
+      "outcome_status": "ambiguous",
+      "source_limitations": "작성자 페이지의 Google 결과 표기는 won / rejected로 최종 수혜 여부가 모호하다. 선정 집단이나 미선정 집단으로 배정하지 않는다."
+    },
+    "C1": {
+      "outcome_status": "selected",
+      "outcome_verification": "official_yearbook_and_author_report",
+      "outcome_evidence": [
+        {
+          "url": "https://www.gatescambridge.org/wp-content/uploads/2020/04/gc_yearbook_2016_web_0.pdf",
+          "quote": "Sampurna Chakrabarti",
+          "verification": "official_yearbook_and_author_report"
+        }
+      ],
+      "source_limitations": "2016-2017 박사과정 지원서와 후기다. 다른 회차 및 학위의 사례와 비교할 때 구분한다."
+    }
+  },
+  "evaluation_criteria": {
+    "nvidia-graduate-fellowship": [
+      {
+        "criterion_id": "student",
+        "label": "학업 및 연구 이력",
+        "source_id": "nvidia-official",
+        "quote": "Academic performance (GPA) and achievements",
+        "url": "https://research.nvidia.com/graduate-fellowships",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "research",
+        "label": "연구의 질과 결과",
+        "source_id": "nvidia-official",
+        "quote": "Results to date",
+        "url": "https://research.nvidia.com/graduate-fellowships",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "fit",
+        "label": "NVIDIA 기술과의 관련성",
+        "source_id": "nvidia-official",
+        "quote": "Potential influence on the design, performance, or use of future GPUs",
+        "url": "https://research.nvidia.com/graduate-fellowships",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      }
+    ],
+    "gates-cambridge": [
+      {
+        "criterion_id": "academic",
+        "label": "학업과 연구 역량",
+        "source_id": "gates-official",
+        "quote": "Academic excellence",
+        "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "course",
+        "label": "Cambridge 과정 선택의 이유",
+        "source_id": "gates-official",
+        "quote": "Reasons for choice of course",
+        "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "impact",
+        "label": "타인의 삶을 개선하는 기여",
+        "source_id": "gates-official",
+        "quote": "A commitment to improving the lives of others",
+        "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "leadership",
+        "label": "리더십",
+        "source_id": "gates-official",
+        "quote": "A capacity for leadership",
+        "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      }
+    ],
+    "google-phd-fellowship": [
+      {
+        "criterion_id": "research",
+        "label": "연구계획의 강점",
+        "source_id": "google-official",
+        "quote": "strength of the research proposal",
+        "url": "https://research.google/programs-and-events/phd-fellowship/",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "impact",
+        "label": "연구의 영향",
+        "source_id": "google-official",
+        "quote": "research impact",
+        "url": "https://research.google/programs-and-events/phd-fellowship/",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "academic",
+        "label": "학업 및 연구 성취",
+        "source_id": "google-official",
+        "quote": "student academic achievements",
+        "url": "https://research.google/programs-and-events/phd-fellowship/",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      },
+      {
+        "criterion_id": "leadership",
+        "label": "리더십 잠재력",
+        "source_id": "google-official",
+        "quote": "leadership potential",
+        "url": "https://research.google/programs-and-events/phd-fellowship/",
+        "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+      }
+    ]
+  }
+}

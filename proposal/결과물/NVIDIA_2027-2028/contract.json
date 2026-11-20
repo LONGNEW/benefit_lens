@@ -1,0 +1,46 @@
+{
+  "contract_version": "benefitlens-delivery-v1",
+  "schema": "public",
+  "sql_schema": "public",
+  "database_scope": "isolated delivery fixture; not a production migration",
+  "target": {
+    "program_id": "nvidia-graduate-fellowship",
+    "round_id": "2027-2028",
+    "opportunity_id": "nvidia-2027-2028",
+    "notice_version": "nvidia-2027-2028-v1",
+    "research_proposal_claim_id": "nv27-research-proposal"
+  },
+  "load_order": ["program", "opportunity_round", "source_document", "evidence", "claim", "claim_evidence", "experience_case", "case_document", "writing_pattern", "pattern_evidence"],
+  "column_order": {
+    "program": ["program_id", "title", "issuer", "opportunity_type"],
+    "opportunity_round": ["program_id", "round_id", "opportunity_id", "notice_version", "status", "official_url", "application_url", "opens_on", "closes_on", "announces_on", "checked_on"],
+    "source_document": ["document_id", "title", "url", "kind", "capture_mode", "fetched_at", "raw_sha256", "text_sha256", "raw_path", "text_path"],
+    "evidence": ["evidence_id", "document_id", "program_id", "round_id", "source_role", "locator", "quote"],
+    "claim": ["claim_id", "program_id", "round_id", "kind", "field", "at", "value", "review_state"],
+    "claim_evidence": ["claim_id", "evidence_id", "program_id", "round_id"],
+    "experience_case": ["case_id", "program_id", "experience_round_id", "experience_round_label", "outcome_status", "outcome_basis", "outcome_evidence_id", "notes"],
+    "case_document": ["case_id", "document_id", "program_id", "document_role", "finality", "binding_evidence_id"],
+    "writing_pattern": ["pattern_id", "program_id", "target_round_id", "target_claim_id", "pattern_kind", "body", "scope_status", "causal_success_claim"],
+    "pattern_evidence": ["pattern_id", "program_id", "target_round_id", "evidence_id", "document_id", "source_program_id", "source_round_id", "case_id", "case_document_role", "purpose"]
+  },
+  "derive_before_load": {
+    "claim_evidence": "For each claim's evidence_ids, write a row with program_id and round_id from the claim. The evidence must be for that exact program and round.",
+    "pattern_evidence": "Copy program_id/target_round_id from writing_pattern and document_id/source_program_id/source_round_id from the referenced evidence. Copy case_document_role from the case observation's documented role; official grounding has null case_id and case_document_role.",
+    "round_date_columns": "Project known dates from the reviewed schedule claims. Do not guess a time zone. checked_on is observation date, not a deadline.",
+    "causal_success_claim": "Pass false explicitly in JSON records. jsonb_populate_recordset produces SQL null for an omitted column, bypassing a default when inserting all columns."
+  },
+  "source_and_scope_rules": [
+    "A complete fetch has capture_mode=full_document with raw/text file and SHA-256. A visible web excerpt has capture_mode=public_web_excerpt, null raw file/hash, and a stored excerpt text/hash. Direct HTTP 403 does not become a full capture.",
+    "Evidence locator and exact quote are checked against the stored extracted text outside SQL. FK checks do not establish source truth, officiality, or semantic entailment.",
+    "If a verified outcome year does not identify the public statement's submission round, store experience_round_id=null with a descriptive experience_round_label and outcome_basis, preserving the distinction.",
+    "Keep official_constraint, official_guidance, and case_observation distinct. Do not turn a writing tip, an outcome listing, or a case excerpt into current eligibility or a success claim.",
+    "Optional unknown claim values use an explicit JSONB object such as {status: unknown}; do not supply a JSON null to a NOT NULL value column via jsonb_populate_recordset."
+  ],
+  "expected_validation": {
+    "queries": "Q1 claims with exact evidence; Q2 experiences and outcomes; Q3 writing pattern provenance; Q4 returns zero violations.",
+    "negative_cases": [
+      "A target-round claim link to an existing evidence span with a different or unknown round must fail the claim_evidence composite FK.",
+      "A pattern observation that points to an existing statement and span but assigns them to a different case without that case_document relation must fail the pattern_evidence composite FK."
+    ]
+  }
+}

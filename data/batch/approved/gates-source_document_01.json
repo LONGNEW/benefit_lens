@@ -1,0 +1,88 @@
+{
+  "source_document": [
+    {
+      "document_id": "gc26w-gates-official-59048ea28851",
+      "title": "Gates Cambridge 2026/27 국제 대상 공식 공고",
+      "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-14T17:44:01.444853+00:00",
+      "raw_sha256": "59048ea28851b7d6395c35be8c8a00dc1526e0405c08f5e0a4ba0a0b1966866e",
+      "text_sha256": "1d3ddde7ad851f96a76237a0ffc9c80f31fbef3558da060a4820f6cce44d44da",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/59048ea28851b7d6395c35be8c8a00dc1526e0405c08f5e0a4ba0a0b1966866e.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/1d3ddde7ad851f96a76237a0ffc9c80f31fbef3558da060a4820f6cce44d44da.txt"
+    },
+    {
+      "document_id": "gc26w-sampurna-essay-3016c6cfdd33",
+      "title": "C1 과거 Gates 공개 지원문",
+      "url": "https://sampurnabuffalo.wordpress.com/wp-content/uploads/2017/11/gatesessay.pdf",
+      "kind": "pdf",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-14T17:44:05.932408+00:00",
+      "raw_sha256": "3016c6cfdd33161f633942c715716ff5be7b28608236eec079207b8012c44d87",
+      "text_sha256": "8ff55fbfac759ed9a601ae1d16a48109ab490cd8a1401d8a7709627cdf919228",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/3016c6cfdd33161f633942c715716ff5be7b28608236eec079207b8012c44d87.pdf",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/8ff55fbfac759ed9a601ae1d16a48109ab490cd8a1401d8a7709627cdf919228.txt"
+    },
+    {
+      "document_id": "gc26w-sampurna-review-8c7aa3064e36",
+      "title": "C1 작성자 공개 지원 및 면접 후기",
+      "url": "https://sampurnabuffalo.wordpress.com/2017/11/16/gates-cambridge-scholarship-sample-essay-interview-and-life-after/",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-14T17:44:05.487707+00:00",
+      "raw_sha256": "8c7aa3064e36ce1df997aaa4b4540740a8db07fe2985bd40d3a5302b2e7cfe17",
+      "text_sha256": "34906c03fe76e5754ca2d21c730d2df2c6781bfd6083b0ab4764237d398e54d2",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/8c7aa3064e36ce1df997aaa4b4540740a8db07fe2985bd40d3a5302b2e7cfe17.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/34906c03fe76e5754ca2d21c730d2df2c6781bfd6083b0ab4764237d398e54d2.txt"
+    },
+    {
+      "document_id": "gc26w-naveen-essay-d5cd02be08a1",
+      "title": "C2 과거 Gates 및 Cambridge 입학 문서 묶음",
+      "url": "https://naveenraman.com/assets/sop/gates_cambridge.pdf",
+      "kind": "pdf",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-15T09:39:06.468122+00:00",
+      "raw_sha256": "d5cd02be08a11d9d9d006cad276203e12c891ca65b82734ecde7f5b559c1f469",
+      "text_sha256": "0fe3add96df7126ca2bd4688b6be8bdc5e52cf23add0842ffaed0d2320ac6b10",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/d5cd02be08a11d9d9d006cad276203e12c891ca65b82734ecde7f5b559c1f469.pdf",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/0fe3add96df7126ca2bd4688b6be8bdc5e52cf23add0842ffaed0d2320ac6b10.txt"
+    },
+    {
+      "document_id": "gc26w-naveen-review-de75834e80d8",
+      "title": "C2 작성자 공개 펠로우십 기록",
+      "url": "https://naveenraman.com/writing/fellowships.html",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-10-15T09:39:06.744807+00:00",
+      "raw_sha256": "de75834e80d8c9a1b6909ee4e53a33d07d529d61f6f99dd4d0514bc0a92c2e65",
+      "text_sha256": "6538c6a8a18486d6d304ed39926a3bb1bef8f148466d925b2d4f9c915ed3f704",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/de75834e80d8c9a1b6909ee4e53a33d07d529d61f6f99dd4d0514bc0a92c2e65.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/6538c6a8a18486d6d304ed39926a3bb1bef8f148466d925b2d4f9c915ed3f704.txt"
+    },
+    {
+      "document_id": "gc26w-cam-2026-docs-a9eb5bb58ecc",
+      "title": "Cambridge 2026 보존 연구계획 작성 안내",
+      "url": "https://www.2026.postgraduate.study.cam.ac.uk/apply/how/supporting-documents",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:36:53.887647+00:00",
+      "raw_sha256": "a9eb5bb58eccb471fe243879814b5b10b1ca28ced6a18f2680db49c1b8249ddd",
+      "text_sha256": "0f5eb642748b7729b2dcd17c455c1efa594d61f4bad58cdf3dc13891b43b3877",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/a9eb5bb58eccb471fe243879814b5b10b1ca28ced6a18f2680db49c1b8249ddd.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/0f5eb642748b7729b2dcd17c455c1efa594d61f4bad58cdf3dc13891b43b3877.txt"
+    },
+    {
+      "document_id": "gc26w-cam-2026-infection-17da16ba9328",
+      "title": "Cambridge 2026 보존 PhD in Infection and Immunity 지원 안내",
+      "url": "https://www.2026.postgraduate.study.cam.ac.uk/courses/directory/cvmdpdiim/apply",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:36:54.200199+00:00",
+      "raw_sha256": "17da16ba93282c98ef64226766784fe88c03e0945dba5bdfbff6e06d9cee369c",
+      "text_sha256": "1f509f2db0aaa30d7ca963ceb1a4f2c49cd6f3a3ac976bff160b4dcf7e48cb7a",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/17da16ba93282c98ef64226766784fe88c03e0945dba5bdfbff6e06d9cee369c.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/1f509f2db0aaa30d7ca963ceb1a4f2c49cd6f3a3ac976bff160b4dcf7e48cb7a.txt"
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "as_of": "2026-11-09",
+  "audit_completed_at": "2026-11-09T14:40:49.606523+09:00",
+  "prior_10k_claim": "retracted",
+  "candidate_inventory": 10471,
+  "previous_selected_10000": {
+    "secured": 3869,
+    "held": 45,
+    "unpublished_unknown": 5987,
+    "unparsed_date": 99
+  },
+  "all_candidates": {
+    "secured": 4339,
+    "held": 46,
+    "unpublished_unknown": 5987,
+    "unparsed_date": 99
+  },
+  "secured": 4339,
+  "remaining_to_10000": 5661,
+  "period_kinds": {
+    "explicit_rolling": 1013,
+    "fixed_deadline": 3326
+  },
+  "providers": {
+    "Amazon.jobs": 4,
+    "BoschGroup/SmartRecruiters": 17,
+    "CAMBRIDGE-FUNDING": 50,
+    "CERN": 21,
+    "DAAD": 4,
+    "ESA": 175,
+    "EURAXESS-PHD": 15,
+    "FRAUNHOFER": 23,
+    "Mercedes-Benz/jobs.api.mercedes-benz.com": 1,
+    "SYDNEY-SCHOLARSHIP": 39,
+    "SchneiderElectric/Jibe": 6,
+    "UNSW": 21,
+    "UQ": 125,
+    "siemens": 13,
+    "walgreens": 870,
+    "workday/abb": 57,
+    "workday/abbott": 15,
+    "workday/adobe": 8,
+    "workday/ag": 17,
+    "workday/amat": 17,
+    "workday/amgen": 29,
+    "workday/asml": 20,
+    "workday/barclays": 3,
+    "workday/bdo": 2,
+    "workday/berklee": 5,
+    "workday/boeing": 6,
+    "workday/crowe": 17,
+    "workday/cvshealth": 2308,
+    "workday/geaerospace": 7,
+    "workday/gevernova": 26,
+    "workday/globalhr": 17,
+    "workday/gsk": 40,
+    "workday/hp": 5,
+    "workday/hpe": 17,
+    "workday/intel": 22,
+    "workday/jj": 38,
+    "workday/labcorp": 5,
+    "workday/mastercard": 4,
+    "workday/medtronic": 2,
+    "workday/micron": 26,
+    "workday/nvidia": 15,
+    "workday/oregonstate": 2,
+    "workday/pg": 33,
+    "workday/philips": 2,
+    "workday/pwc": 43,
+    "workday/roche": 17,
+    "workday/rockwellautomation": 2,
+    "workday/sanofi": 40,
+    "workday/sensata": 6,
+    "workday/statestreet": 4,
+    "workday/stryker": 28,
+    "workday/td": 8,
+    "workday/thales": 1,
+    "workday/thermofisher": 19,
+    "workday/truist": 2,
+    "workday/unilever": 11,
+    "workday/walmart": 9
+  },
+  "types": {
+    "internship": 4010,
+    "other": 74,
+    "scholarship": 240,
+    "admission_funding": 15
+  },
+  "issuer_count": 91,
+  "top_issuers": [
+    [
+      "CVS Health",
+      2308
+    ],
+    [
+      "Walgreens",
+      870
+    ],
+    [
+      "European Space Agency",
+      175
+    ],
+    [
+      "The University of Queensland",
+      125
+    ],
+    [
+      "ABB",
+      57
+    ],
+    [
+      "PwC",
+      43
+    ],
+    [
+      "GSK",
+      40
+    ],
+    [
+      "Sanofi",
+      40
+    ],
+    [
+      "The University of Sydney",
+      39
+    ],
+    [
+      "Johnson & Johnson",
+      38
+    ],
+    [
+      "Procter & Gamble",
+      33
+    ],
+    [
+      "Amgen",
+      29
+    ]
+  ],
+  "capture_start": "2026-11-09T11:50:32.972661+09:00",
+  "capture_end": "2026-11-09T14:04:15.958764+09:00",
+  "outside_baseline_holds_not_reintroduced": [
+    {
+      "identity": [
+        "EURAXESS-PHD",
+        "478472"
+      ],
+      "team": "quality",
+      "reason": "ambiguous_held:future_deadline_disagreement"
+    },
+    {
+      "identity": [
+        "FRAUNHOFER",
+        "84883"
+      ],
+      "team": "quality",
+      "reason": "ambiguous_held:past_stated_start_window"
+    },
+    {
+      "identity": [
+        "IAESTE",
+        "FR-2027-002"
+      ],
+      "team": "quality",
+      "reason": "ambiguous_held:latest_start_precedes_capture"
+    },
+    {
+      "identity": [
+        "UNSW",
+        "1985-7241"
+      ],
+      "team": "quality",
+      "reason": "ambiguous_held:entry_cohort_disagreement"
+    },
+    {
+      "identity": [
+        "UNSW",
+        "1989-7245"
+      ],
+      "team": "quality",
+      "reason": "quarantine_past_fixed_cohort_or_conflicting_dates"
+    },
+    {
+      "identity": [
+        "UNSW",
+        "2006-7355"
+      ],
+      "team": "quality",
+      "reason": "ambiguous_held:entry_cohort_disagreement"
+    }
+  ],
+  "root_gate_holds": [
+    {
+      "identity": [
+        "UQ",
+        "toc-h-award-nursing-and-midwifery"
+      ],
+      "team": "quality",
+      "classification": "held",
+      "reason": "root_gate: Same-day deadline without exact cutoff is held for revalidation",
+      "review_source": "/home/longnew/Desktop/course_work/tmp/benefitlens_strict_10k_20261109/quality/period_audited_all_635_33fbec1be47c.jsonl",
+      "review_source_sha256": "33fbec1be47c9383e736ebbd0871875406554648b901907df2037b95ceb58b26",
+      "in_previous_selected_10000": true
+    }
+  ],
+  "inputs": [
+    {
+      "team": "schema",
+      "path": "/home/longnew/.cache/datasets/benefitlens/strict-students-20261109/schema/period-proof-df14cb2c40acebca.jsonl",
+      "sha256": "df14cb2c40acebcab1a10b824707280781becf9cdb9cab9ac49e7a9e0c8e7e49",
+      "role": "ledger"
+    },
+    {
+      "team": "schema",
+      "path": "/home/longnew/.cache/datasets/benefitlens/strict-students-20261109/schema/approved-periods-4b4425c405dfbeeb.jsonl",
+      "sha256": "4b4425c405dfbeebb6b62a86b758ec293a8358795ba77e077fb3c1def9b80597",
+      "role": "secured"
+    },
+    {
+      "team": "discovery",
+      "path": "/home/longnew/.cache/datasets/benefitlens/strict-10k-20261109/discovery/strict_all_classifications-604629c9481d7a02.jsonl",
+      "sha256": "604629c9481d7a021b299948f17819b7479137bcc274fd8f53630079fae1d794",
+      "role": "ledger"
+    },
+    {
+      "team": "discovery",
+      "path": "/home/longnew/.cache/datasets/benefitlens/strict-10k-20261109/discovery/strict_secured-ca516504c06f336a.jsonl",
+      "sha256": "ca516504c06f336a9bf951ca4014ede847eaff5d2940cc785629bdf23db945d0",
+      "role": "secured"
+    },
+    {
+      "team": "quality",
+      "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_strict_10k_20261109/quality/period_audited_all_635_33fbec1be47c.jsonl",
+      "sha256": "33fbec1be47c9383e736ebbd0871875406554648b901907df2037b95ceb58b26",
+      "role": "ledger"
+    },
+    {
+      "team": "quality",
+      "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_strict_10k_20261109/quality/period_verified_secured_474_f7d92412e780.jsonl",
+      "sha256": "f7d92412e7806814539d9a50401a2e3bbad1abf7e672b2e628aef4a2d747a702",
+      "role": "secured"
+    }
+  ],
+  "outputs": {
+    "secured": {
+      "path": "/home/longnew/.cache/datasets/benefitlens/strict-students-20261109/root/strict-secured-649b56fbf414fbf9.jsonl",
+      "sha256": "649b56fbf414fbf917af51dbf50b62baba0cccbb120edbd240cf2728e091460b",
+      "rows": 4339
+    },
+    "decisions": {
+      "path": "/home/longnew/.cache/datasets/benefitlens/strict-students-20261109/root/strict-classifications-dfb1be1228e17e56.jsonl",
+      "sha256": "dfb1be1228e17e56b0a6c7c6a3681000775a4dd1c18682f4ff7a54301d07481d",
+      "rows": 10471
+    }
+  },
+  "eligibility_scope": "student-targeted official source, full personal eligibility not verified",
+  "unknown_is_not_rolling": true,
+  "source_snapshots_reused": true
+}

@@ -1,0 +1,139 @@
+{
+  "evidence": [
+    {
+      "evidence_id": "cern-744000159422712-deadline",
+      "document_id": "cern-744000159422712-adb45c5db8e7",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "source_role": "official_notice",
+      "locator": "L35-L37",
+      "quote": "01/11/2027"
+    },
+    {
+      "evidence_id": "cern-744000159422712-student",
+      "document_id": "cern-744000159422712-adb45c5db8e7",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "source_role": "official_notice",
+      "locator": "L47-L53",
+      "quote": "full-time student"
+    },
+    {
+      "evidence_id": "cern-744000159422712-nationality",
+      "document_id": "cern-744000159422712-adb45c5db8e7",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "source_role": "official_notice",
+      "locator": "L46-L48",
+      "quote": "CERN Member State"
+    },
+    {
+      "evidence_id": "cern-744000159422712-stipend",
+      "document_id": "cern-744000159422712-adb45c5db8e7",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "source_role": "official_notice",
+      "locator": "L42-L44",
+      "quote": "1,593 Swiss Francs"
+    },
+    {
+      "evidence_id": "cern-744000159422712-apply-url",
+      "document_id": "cern-744000159422712-adb45c5db8e7",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "source_role": "official_notice",
+      "locator": "L8-L8",
+      "quote": "https://jobs.smartrecruiters.com/CERN/744000159422712-short-term-internship-2027-applied-physics?oga=true"
+    },
+    {
+      "evidence_id": "cern-744000159422712-submission",
+      "document_id": "cern-744000159422712-adb45c5db8e7",
+      "program_id": "cern-stag-applied-physics",
+      "round_id": "2027-744000159422712",
+      "source_role": "official_notice",
+      "locator": "L53-L61",
+      "quote": "Your CV"
+    },
+    {
+      "evidence_id": "cern-744000159603499-active",
+      "document_id": "cern-744000159603499-f67dafe97a35",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "source_role": "official_notice",
+      "locator": "L4-L7",
+      "quote": "true"
+    },
+    {
+      "evidence_id": "cern-744000159603499-deadline",
+      "document_id": "cern-744000159603499-f67dafe97a35",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "source_role": "official_notice",
+      "locator": "L55-L57",
+      "quote": "21/01/27"
+    },
+    {
+      "evidence_id": "cern-744000159603499-student",
+      "document_id": "cern-744000159603499-f67dafe97a35",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "source_role": "official_notice",
+      "locator": "L37-L43",
+      "quote": "full-time student"
+    },
+    {
+      "evidence_id": "cern-744000159603499-nationality",
+      "document_id": "cern-744000159603499-f67dafe97a35",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "source_role": "official_notice",
+      "locator": "L42-L44",
+      "quote": "all nationalities"
+    },
+    {
+      "evidence_id": "cern-744000159603499-stipend",
+      "document_id": "cern-744000159603499-f67dafe97a35",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "source_role": "official_notice",
+      "locator": "L62-L64",
+      "quote": "94 CHF"
+    },
+    {
+      "evidence_id": "cern-744000159603499-apply-url",
+      "document_id": "cern-744000159603499-f67dafe97a35",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "source_role": "official_notice",
+      "locator": "L8-L8",
+      "quote": "https://jobs.smartrecruiters.com/CERN/744000159603499-cern-summer-student-programme-2027-member-and-non-member-state-?oga=true"
+    },
+    {
+      "evidence_id": "cern-744000159603499-submission",
+      "document_id": "cern-744000159603499-f67dafe97a35",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "source_role": "official_notice",
+      "locator": "L45-L53",
+      "quote": "Your CV"
+    },
+    {
+      "evidence_id": "cern-744000159603499-nationality-addendum",
+      "document_id": "cern-744000159603499-f67dafe97a35",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499",
+      "source_role": "official_notice",
+      "locator": "L49-L52",
+      "quote": "you must also apply"
+    },
+    {
+      "evidence_id": "cern-744000159596524-active",
+      "document_id": "cern-744000159596524-ff2edfcc2400",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "source_role": "official_notice",
+      "locator": "L4-L7",
+      "quote": "true"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "source_documents": {
+    "notice": 25923,
+    "experience": 30588
+  },
+  "counts_by_kind": {
+    "experience": {
+      "groups_in_queue": 195518,
+      "llm_returned_groups": 0,
+      "llm_interpreted_groups": 0,
+      "relevant_groups": 0,
+      "irrelevant_groups": 0,
+      "unresolved_groups": 0,
+      "stored_occurrences": 205337,
+      "code_applied_occurrences": 0,
+      "unresolved_occurrences": 0,
+      "pending_groups": 195478,
+      "pending_occurrences": 203996,
+      "waiting_provider_groups": 40,
+      "waiting_provider_occurrences": 1341,
+      "irrelevant_occurrences": 0,
+      "writing_move_observations": 0,
+      "applied_unique_source_sentences": 0,
+      "applied_source_documents": 0,
+      "applied_source_document_versions": 0,
+      "model_representative_unique_sentences": 0
+    },
+    "notice": {
+      "groups_in_queue": 68552,
+      "llm_returned_groups": 0,
+      "llm_interpreted_groups": 0,
+      "relevant_groups": 0,
+      "irrelevant_groups": 0,
+      "unresolved_groups": 0,
+      "stored_occurrences": 197129,
+      "code_applied_occurrences": 0,
+      "unresolved_occurrences": 0,
+      "pending_groups": 68512,
+      "pending_occurrences": 177105,
+      "waiting_provider_groups": 40,
+      "waiting_provider_occurrences": 20024,
+      "irrelevant_occurrences": 0,
+      "writing_move_observations": 0,
+      "applied_unique_source_sentences": 0,
+      "applied_source_documents": 0,
+      "applied_source_document_versions": 0,
+      "model_representative_unique_sentences": 0
+    }
+  },
+  "cli_attempt_audit": {
+    "cli_attempts": 2,
+    "verified_cli_attempts": 2,
+    "waiting_provider_attempts": 2,
+    "actual_model_executions": 0,
+    "verified_input_tokens": 0,
+    "verified_output_tokens": 0,
+    "attempt_state_counts": {
+      "waiting_provider_limit": 2
+    },
+    "file_verification_errors": [],
+    "verified_attempts": [
+      {
+        "invocation_id": "381d50ed-d289-4b8f-93c5-71ec37768b63",
+        "kind": "notice",
+        "state": "waiting_provider_limit",
+        "model_called": false,
+        "api_error": "usage_limit_reached",
+        "api_error_status": 429,
+        "request_ref": {
+          "path": "/mnt/storage/longnew-shared-cache/datasets/benefitlens/scale50k-20261109/team-production-20261119/compact/batches/381d50ed-d289-4b8f-93c5-71ec37768b63/request.json",
+          "sha256": "141136b250bab9199b24ad5f29aee18f27ebc3a827702b3f0cca324d02dc14bb"
+        },
+        "response_ref": {
+          "path": "/mnt/storage/longnew-shared-cache/datasets/benefitlens/scale50k-20261109/team-production-20261119/compact/batches/381d50ed-d289-4b8f-93c5-71ec37768b63/response.json",
+          "sha256": "9f88403f900908ae9f83979fcf2725a3342c2d11864925e34ceeb3e8d19881e1"
+        }
+      },
+      {
+        "invocation_id": "46414130-64bb-4900-bf80-df0db5bdc500",
+        "kind": "experience",
+        "state": "waiting_provider_limit",
+        "model_called": false,
+        "api_error": "usage_limit_reached",
+        "api_error_status": 429,
+        "request_ref": {
+          "path": "/mnt/storage/longnew-shared-cache/datasets/benefitlens/scale50k-20261109/team-production-20261119/compact/batches/46414130-64bb-4900-bf80-df0db5bdc500/request.json",
+          "sha256": "4118a61279fa7c76ee4bea4cabb42840d65af503bd6e9101669e257b98e88cd6"
+        },
+        "response_ref": {
+          "path": "/mnt/storage/longnew-shared-cache/datasets/benefitlens/scale50k-20261109/team-production-20261119/compact/batches/46414130-64bb-4900-bf80-df0db5bdc500/response.json",
+          "sha256": "4c322f603581432bb4530c42ac218020dd25b90fffa35527dc6ddd656b0d26c6"
+        }
+      }
+    ]
+  },
+  "examples": [
+    {
+      "kind": "notice",
+      "candidate_tag": "education.status",
+      "source_text": "Accepted into or actively enrolled in an ACPE accredited college or school of pharmacy",
+      "context_text": "Education:\nAccepted into or actively enrolled in an ACPE accredited college or school of pharmacy\nRequired Qualifications:",
+      "source_url": "https://cvshealth.wd1.myworkdayjobs.com/wday/cxs/cvshealth/CVS_Health_Careers/job/PA---Philadelphia/Pharmacy-Intern_R1072536",
+      "document_id": "bulk-doc-a2a3d69181351390b8ef522bc52c5198",
+      "char_start": 1979,
+      "char_end": 2065,
+      "occurrence_count": 1279,
+      "semantic_review": "not_run"
+    },
+    {
+      "kind": "experience",
+      "candidate_tag": "reflection",
+      "source_text": "After a study abroad trip to Seoul in 2019, and navigating the cultural and\n              linguistic challenges that came with it, I realized it was time to bring these passions together.",
+      "context_text": "learning about South Korean culture and\n              partnering with the undocumented student club to provide after school tutoring services for\n              immigrant students. After a study abroad trip to Seoul in 2019, and navigating the cultural and\n              linguistic challenges that came with it, I realized it was time to bring these passions together.\n              This desire motivates me to return to South Korea, not as a student but as an ETA, to enrich my\n              students’ learning experience and contribute to their e",
+      "source_url": "https://drive.google.com/file/d/1KKtxwb1p0s7vqoQCATcYT1HcH54KoFjW/view",
+      "document_id": "application-doc-190392b661b8c78903c5d8346339dfec",
+      "char_start": 1121,
+      "char_end": 1308,
+      "occurrence_count": 1,
+      "semantic_review": "not_run"
+    }
+  ]
+}

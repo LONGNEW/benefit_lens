@@ -1,0 +1,48 @@
+{
+  "as_of": "2026-11-09",
+  "supplied_rows": 1344,
+  "validated_distinct": 1344,
+  "selected": 1000,
+  "provider_counts": {
+    "Amazon.jobs": 180,
+    "BoschGroup/SmartRecruiters": 180,
+    "CERN": 21,
+    "ESA": 175,
+    "UQ": 117,
+    "intel": 83,
+    "nvidia": 164,
+    "siemens": 80
+  },
+  "types": {
+    "internship": 883,
+    "scholarship": 117
+  },
+  "published_deadline": 320,
+  "no_published_or_parsed_deadline": 680,
+  "validation": {
+    "raw_hashes": 1000,
+    "text_hashes": 1000,
+    "spans": 2320,
+    "unique_files_hashed": 2000,
+    "unique_text_files_read": 1000
+  },
+  "inputs": [
+    {
+      "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_live_1k_20261109/quality/approved_with_form_gate_all.jsonl",
+      "sha256": "045bc1c9accb5f23ff112d251879cf3c9a8ff4da59491c64a4a1e7c0c2d4fe82"
+    },
+    {
+      "path": "/home/longnew/.cache/datasets/benefitlens/live-students-20261109/schema/approved.checked.jsonl",
+      "sha256": "fcdbd8062d48a46d75d0fe79c596b6e0905606ac7b7cf7c7075d0d7da7d05e72"
+    },
+    {
+      "path": "/home/longnew/.cache/datasets/benefitlens/live-students-20261109/approved_704_snapshot.jsonl",
+      "sha256": "138c4cfe1bf2e77996db1f21a8a2ab3c66812b5d9085ec540c7e067f0a8d2bf9"
+    },
+    {
+      "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_live_1k_20261109/root/siemens-final-80.jsonl",
+      "sha256": "dcf186f66d1546e297f0352e925505f83f39a35cfc88bfd0dc59767f6f6b0a18"
+    }
+  ],
+  "output": "/home/longnew/.cache/datasets/benefitlens/live-students-20261109/cohorts/verified-open-1000"
+}

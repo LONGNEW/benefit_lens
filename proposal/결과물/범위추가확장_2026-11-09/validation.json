@@ -1,0 +1,224 @@
+{
+  "manifest": {
+    "path": "/home/longnew/.cache/datasets/benefitlens/expansion2-20261109/integration/manifest-dd1f9177c351088c.json",
+    "sha256": "11577d449d7053cdffdeb019070fdefb90762de77c8a1c91bc495c1efaeae0e6",
+    "bytes": 11535
+  },
+  "expansion": {
+    "as_of": "2026-11-09",
+    "baseline_source_variants": 4378,
+    "reconstruction_baseline_rounds": 4339,
+    "comparison_manifest": {
+      "path": "/home/longnew/.cache/datasets/benefitlens/expansion-20261109/integration/manifest-a689af7e23d68c1e.json",
+      "sha256": "5acd97c59b841c1816656227cc76bfa6838aa0a854630f980c254e991c14e059"
+    },
+    "baseline_current_rule_verified_variants": 4378,
+    "current_rule_verified_variants": 4492,
+    "new_current_variants": 114,
+    "new_current_periods_rechecked_from_originals": 114,
+    "all_incremental_current_periods_rechecked_from_originals": 153,
+    "historical_writing_rounds_added": 5,
+    "historical_writing_rounds_carried_forward": 3,
+    "historical_writing_rounds_new_in_this_expansion": 2,
+    "baseline_family_metrics": {
+      "parent_family_candidates": 1165,
+      "rule_passed_families": 1107,
+      "review_families": 58,
+      "variants_without_family_link": 0
+    },
+    "current_family_metrics": {
+      "parent_family_candidates": 1275,
+      "rule_passed_families": 1214,
+      "review_families": 61,
+      "variants_without_family_link": 0
+    },
+    "new_parent_family_candidates": 110,
+    "baseline_family_candidates_removed": 0,
+    "family_metrics_scope": "current rule-verified variants only, globally regrouped across all inputs",
+    "exact_input_rows_collapsed": {
+      "programs": 0,
+      "opportunity_rounds": 0,
+      "source_documents": 0,
+      "evidence": 0,
+      "claims": 0,
+      "experience_cases": 0,
+      "case_documents": 0,
+      "writing_patterns": 0,
+      "pattern_evidence": 0
+    },
+    "unique_semantic_opportunity_count": null,
+    "scope": "same-day rule-verified source variants and issuer-role family candidates; not personal eligibility"
+  },
+  "full": {
+    "receipt": {
+      "path": "/home/longnew/.cache/datasets/benefitlens/expansion2-20261109/integration/runs/a8fc7a8cf6fcd785f7e477d61a0febe573dde251e7b6dedc5045eb1701964ad4/receipt.json",
+      "sha256": "f67e5f7f201a3afab226b5a8d28208df7b08d8fc696360e5461a695d896763fe"
+    },
+    "projected_rows": {
+      "case_document": 16,
+      "claim": 13528,
+      "claim_evidence": 26317,
+      "evidence": 26280,
+      "experience_case": 8,
+      "opportunity_round": 4497,
+      "pattern_evidence": 32,
+      "program": 4490,
+      "source_document": 8596,
+      "writing_pattern": 7
+    },
+    "review": {
+      "accepted": {
+        "by_entity": {
+          "claim": 13528,
+          "writing_pattern": 7
+        },
+        "count": 13535,
+        "reasons": {}
+      },
+      "held": {
+        "by_entity": {
+          "claim": 156
+        },
+        "count": 156,
+        "reasons": {
+          "missing_basis": 31,
+          "missing_decision_id": 19,
+          "missing_reviewer": 19,
+          "missing_scope_fingerprint": 156,
+          "semantic_candidate": 156,
+          "unrecognized_review_basis": 31
+        }
+      },
+      "rejected": {
+        "by_entity": {},
+        "count": 0,
+        "reasons": {}
+      }
+    },
+    "literal": {
+      "documents": 8596,
+      "spans": 26280,
+      "state": "verified"
+    },
+    "projection_audit": {
+      "claim_evidence_relations_match": true,
+      "claim_ids_match_approved": true,
+      "pattern_ids_match_approved": true
+    },
+    "cache_hit_on_replay": true
+  },
+  "database_subset": {
+    "input": {
+      "path": "/home/longnew/.cache/datasets/benefitlens/expansion2-20261109/integration/changed-programs-f5f05a3256b6b8fc.json",
+      "sha256": "5c12106335c198c82ced541a95652c2444a604030368b29386532c7fbe6406ae",
+      "bytes": 1879988
+    },
+    "receipt": {
+      "path": "/home/longnew/.cache/datasets/benefitlens/expansion2-20261109/integration-db/runs/168bdc2175ea84e107695ba73a45cccfc4f1f60b49ba3c909638450bb723ee68/receipt.json",
+      "sha256": "081b8c7e1fedce24f2535f0b1b7504cfa49e2debc0194c05bbce3361a18f8ce9"
+    },
+    "projected_rows": {
+      "case_document": 16,
+      "claim": 360,
+      "claim_evidence": 627,
+      "evidence": 620,
+      "experience_case": 8,
+      "opportunity_round": 119,
+      "pattern_evidence": 32,
+      "program": 115,
+      "source_document": 288,
+      "writing_pattern": 7
+    },
+    "contract_violation_rows": 0,
+    "same_input_replay_unchanged": true,
+    "coordinator_cache_hit_on_replay": true,
+    "scope": "new programs and all writing programs only"
+  },
+  "new_current_sources": {
+    "EURAXESS": 22,
+    "ASIA-OFFICIAL-FUNDING": 15,
+    "JOBBNORGE": 77
+  },
+  "new_source_variants_from_inputs": 114,
+  "new_semantic_claims": 6,
+  "approved_type_counts": {
+    "scholarship": 10,
+    "internship": 5,
+    "student_job": 1
+  },
+  "writing": {
+    "new_cases": 3,
+    "new_documents": 9,
+    "cases_in_composed_bundle": 8,
+    "known_person_ids_in_composed_bundle": 5,
+    "cases_without_person_id": 3,
+    "approved_patterns": 7,
+    "missing_questions": 21,
+    "draft_slots": 5,
+    "finished_drafts": 0,
+    "output": {
+      "bytes": 27280,
+      "path": "/home/longnew/.cache/datasets/benefitlens/expansion2-20261109/integration/runs/a8fc7a8cf6fcd785f7e477d61a0febe573dde251e7b6dedc5045eb1701964ad4/writing.json",
+      "sha256": "0b70abad09b64149e4bdb028e689e37136e32d458fec608a3faa86ea582b4f9f"
+    },
+    "policy_guard": {
+      "path": "/home/longnew/.cache/datasets/benefitlens/expansion2-20261109/integration/writing-policy-e30fa03d82d8f3ed.json",
+      "sha256": "5d1d8c7b12d294b3961268ec287e7a21e541573bd36b835675090ea8fcdd16c7",
+      "bytes": 874
+    },
+    "llm_analysis": {
+      "process_invocations": 1,
+      "extractor": "llm_full_experience_v3",
+      "model": "gpt-6.1-sol",
+      "candidate_patterns": 6,
+      "approved_from_model": 0,
+      "input_documents": 2,
+      "input_characters": 13083,
+      "input_truncated": false
+    }
+  },
+  "elapsed_seconds": 70.71,
+  "production_db_writes": 0,
+  "large_base_copies": 0,
+  "config": {
+    "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_expansion2_20261109/root/new_inputs.json",
+    "sha256": "69abc64f4a7a807af54b6c51193f80b779678adee075898ca9d843225c169d1f"
+  },
+  "tests": {
+    "tests": 199,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  },
+  "source_execution_receipt": {
+    "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_expansion2_20261109/discovery/execution_receipt_v3.json",
+    "sha256": "e23dcc1fd78f4463e3b7a238f97cbbcf04221b622bae5a4a9f0cf89ad6e9ae10"
+  },
+  "independent_source_review": {
+    "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_expansion2_20261109/schema/review_jobbnorge_v3.json",
+    "sha256": "297760089cb87ca8699671ce4abac43f8482d66ae44dc5e25be10f5b9ff63a75"
+  },
+  "source_axes": {
+    "euraxess_activity_countries": [
+      "Austria",
+      "Belgium",
+      "Denmark",
+      "Finland",
+      "France",
+      "Germany",
+      "Italy",
+      "Netherlands",
+      "Portugal",
+      "Spain",
+      "Sweden",
+      "United Kingdom"
+    ],
+    "asia_source_publishing_jurisdictions": {
+      "HK": 6,
+      "JP": 3,
+      "KR": 3,
+      "SG": 2,
+      "TW": 1
+    }
+  }
+}

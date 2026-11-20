@@ -1,0 +1,19 @@
+{
+  "version": "eligibility-fields-v1",
+  "fields": {
+    "person.nationalities": {"type": "string_array", "description": "국적 코드 목록"},
+    "education.degree": {"type": "string", "values": ["associate", "bachelors", "masters", "phd", "integrated"], "description": "비교 대상 학위 과정"},
+    "education.status": {"type": "string", "values": ["enrolled", "admitted", "graduated", "leave"], "description": "조건이 적용되는 시점의 학적"},
+    "education.country": {"type": "string", "description": "재학 또는 진학 대학의 국가"},
+    "education.institution_id": {"type": "string", "description": "정규화한 대학 ID"},
+    "education.department_id": {"type": "string", "description": "정규화한 학과 또는 전공 ID"},
+    "education.major_group": {"type": "string", "description": "전공 계열"},
+    "education.semester": {"type": "integer", "description": "해당 학위의 현재 학기, 1부터 시작"},
+    "education.year": {"type": "integer", "description": "해당 학위의 현재 학년, 1부터 시작"},
+    "education.full_time": {"type": "boolean", "description": "전일제 여부"},
+    "education.coursework_completed": {"type": "boolean", "description": "선택한 공고가 요구할 때 확인하는 교과 수료 여부"},
+    "education.entry_month": {"type": "string", "description": "진학 월 YYYY-MM"},
+    "education.gpa": {"type": "number", "description": "원문 기준 점수와 만점, 학위 및 산정 기간을 함께 저장"},
+    "education.previous_semester_percentile": {"type": "number", "description": "직전 학기 성적의 백분위, 0~100"}
+  }
+}

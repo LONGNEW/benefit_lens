@@ -1,0 +1,61 @@
+{
+  "source_document": [
+    {
+      "document_id": "CSC-SHARED-TEMPLATE",
+      "title": "Commonwealth Shared Scholarships 2027 template application form",
+      "url": "https://cscuk.fcdo.gov.uk/wp-content/uploads/2021/11/Shared-Scholarships-template-application-form-2027.pdf",
+      "kind": "pdf",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:39:39.010370+00:00",
+      "raw_sha256": "f0dd9d9e7f21ba193ca4007fcab81e52d1563f5529cd12e85c3e94d3932f9ae6",
+      "text_sha256": "e9ba1c5a3e6314c2441e4455ec25ec261ff573b5a0c17afe7d83c11fb747ce92",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/f0dd9d9e7f21ba193ca4007fcab81e52d1563f5529cd12e85c3e94d3932f9ae6.pdf",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/e9ba1c5a3e6314c2441e4455ec25ec261ff573b5a0c17afe7d83c11fb747ce92.txt"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "CSC-TEMPLATE-P1",
+      "document_id": "CSC-SHARED-TEMPLATE",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "source_role": "official_form",
+      "locator": "L1-L2",
+      "quote": "By September 2027"
+    }
+  ],
+  "claim": [
+    {
+      "claim_id": "csc-shared-template-captured",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028",
+      "kind": "form",
+      "field": "verified_preparation_template",
+      "at": "before_application",
+      "review_state": "reviewed",
+      "value": {
+        "format": "pdf",
+        "status": "public_original_obtained",
+        "purpose": "reference_only",
+        "interactive": false,
+        "page_count": 20,
+        "verified_scope": "public form linked in issuer page; p.1 visible September 2027 wording",
+        "submission_route_unchanged": "CSC Central"
+      }
+    }
+  ],
+  "claim_evidence": [
+    {
+      "claim_id": "csc-shared-template-captured",
+      "evidence_id": "CSC-TEMPLATE",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "csc-shared-template-captured",
+      "evidence_id": "CSC-TEMPLATE-P1",
+      "program_id": "csc-shared-scholarships",
+      "round_id": "2027-2028"
+    }
+  ]
+}

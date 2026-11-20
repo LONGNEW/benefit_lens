@@ -1,0 +1,69 @@
+{
+  "body": {
+    "scope": "2026/27 보존 과정에 확인된 연구계획 제출 준비용이다. Gates 장학금 추가 질문, 별도 폼의 원문이나 분량은 확인되지 않아 작성 패턴으로 생성하지 않았다. 과거 Gates 에세이를 연구계획 형식의 근거로 쓰지 않았다.",
+    "slots": [
+      "연구 주제와 구체적 질문",
+      "문헌에서 확인한 공백과 기여",
+      "학문적 중요성",
+      "가용 시간, 자원과 실행 단계"
+    ],
+    "title": "연구 질문, 문헌과의 차이, 실행 가능성 정리",
+    "decision": "adopted_for_confirmed_course_preparation",
+    "question": "기존 연구의 어느 부분을 확장하며 그 방법을 가용 시간과 자원으로 실행할 수 있나요?",
+    "confirmed_course": "PhD in Infection and Immunity"
+  },
+  "evidence": [
+    {
+      "url": "https://www.2026.postgraduate.study.cam.ac.uk/courses/directory/cvmdpdiim/apply",
+      "quote": "Michaelmas 2026",
+      "case_id": null,
+      "locator": "L126-L141",
+      "purpose": "official_constraint",
+      "document_id": "gc26w-cam-2026-infection-17da16ba9328",
+      "evidence_id": "gc26w-infection-cycle",
+      "source_role": "official_guideline",
+      "text_sha256": "1f509f2db0aaa30d7ca963ceb1a4f2c49cd6f3a3ac976bff160b4dcf7e48cb7a",
+      "capture_mode": "full_document",
+      "source_round_id": "2026-2027",
+      "source_program_id": "gates-cambridge"
+    },
+    {
+      "url": "https://www.2026.postgraduate.study.cam.ac.uk/courses/directory/cvmdpdiim/apply",
+      "quote": "Research Proposal (PhD applicants only)",
+      "case_id": null,
+      "locator": "L102-L105",
+      "purpose": "official_constraint",
+      "document_id": "gc26w-cam-2026-infection-17da16ba9328",
+      "evidence_id": "gc26w-infection-rp",
+      "source_role": "official_guideline",
+      "text_sha256": "1f509f2db0aaa30d7ca963ceb1a4f2c49cd6f3a3ac976bff160b4dcf7e48cb7a",
+      "capture_mode": "full_document",
+      "source_round_id": "2026-2027",
+      "source_program_id": "gates-cambridge"
+    },
+    {
+      "url": "https://www.2026.postgraduate.study.cam.ac.uk/apply/how/supporting-documents",
+      "quote": "extends the existing literature",
+      "case_id": null,
+      "locator": "L111-L114",
+      "purpose": "official_guidance",
+      "document_id": "gc26w-cam-2026-docs-a9eb5bb58ecc",
+      "evidence_id": "gc26w-proposal-guide",
+      "source_role": "official_guideline",
+      "text_sha256": "0f5eb642748b7729b2dcd17c455c1efa594d61f4bad58cdf3dc13891b43b3877",
+      "capture_mode": "full_document",
+      "source_round_id": "2026-2027",
+      "source_program_id": "gates-cambridge"
+    }
+  ],
+  "pattern_id": "gc26w-infection-phd-rp-prep",
+  "program_id": "gates-cambridge",
+  "pattern_kind": "structure",
+  "scope_status": "official_only",
+  "target_field": "research_proposal",
+  "notice_version": "sample-2026-10-15",
+  "opportunity_id": "gates-cambridge-2026-2027",
+  "target_claim_id": "gc26w-infection-phd-rp",
+  "target_round_id": "2026-2027",
+  "causal_success_claim": false
+}

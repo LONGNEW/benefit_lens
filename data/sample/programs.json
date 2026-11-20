@@ -35,7 +35,12 @@
         "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
         "prompts": [],
         "support_path": "new_admission",
-        "archived_round": true
+        "archived_round": true,
+        "link_verification": {
+          "checked_at": "2026-10-15T16:09:09.841864+09:00",
+          "status": 200,
+          "method": "HTTP GET and target-content review"
+        }
       },
       "eligibility": null,
       "explanation": "과거 회차와 공개 경험을 연결하는 진학 지원 예시입니다. 기본 프로필만으로 진학 의사와 지원 과정까지 추정하지 않습니다.",
@@ -120,7 +125,8 @@
       ],
       "extraction_status": "partial",
       "resolution_status": "program_round_resolved",
-      "sample_scope": "existing_source_reviewed_snapshot"
+      "sample_scope": "existing_source_reviewed_snapshot",
+      "applicant_scope": "student"
     },
     {
       "title": "Google PhD Fellowship 2026 동아시아",
@@ -164,7 +170,12 @@
         ],
         "opens_on": "2026-03-05",
         "closes_on": "2026-04-30",
-        "region_scope": "KR_demo_subset_of_East_Asia"
+        "region_scope": "KR_demo_subset_of_East_Asia",
+        "link_verification": {
+          "checked_at": "2026-10-15T16:09:09.841864+09:00",
+          "status": 200,
+          "method": "HTTP GET and target-content review"
+        }
       },
       "eligibility": {
         "all": [
@@ -343,7 +354,8 @@
       ],
       "extraction_status": "reviewed_demo",
       "resolution_status": "program_round_resolved",
-      "sample_scope": "existing_source_reviewed_snapshot"
+      "sample_scope": "existing_source_reviewed_snapshot",
+      "applicant_scope": "student"
     },
     {
       "title": "관정 2026 국내 학부 장학생",
@@ -392,7 +404,12 @@
           }
         ],
         "closes_on": "2025-12-16",
-        "date_scope": "first_online_submission"
+        "date_scope": "first_online_submission",
+        "link_verification": {
+          "checked_at": "2026-10-15T16:09:09.841864+09:00",
+          "status": 200,
+          "method": "HTTP GET and target-content review"
+        }
       },
       "eligibility": {
         "all": [
@@ -567,7 +584,8 @@
       ],
       "extraction_status": "reviewed_demo",
       "resolution_status": "program_round_resolved",
-      "sample_scope": "existing_source_reviewed_snapshot"
+      "sample_scope": "existing_source_reviewed_snapshot",
+      "applicant_scope": "student"
     },
     {
       "title": "NVIDIA Graduate Fellowship 2027–2028",
@@ -613,7 +631,12 @@
         "opens_on": "2026-09-30",
         "timezone": "not_stated",
         "closes_on": "2026-10-30",
-        "date_precision": "day"
+        "date_precision": "day",
+        "link_verification": {
+          "checked_at": "2026-10-15T16:09:09.841864+09:00",
+          "status": 200,
+          "method": "HTTP GET and target-content review"
+        }
       },
       "eligibility": {
         "all": [
@@ -763,7 +786,8 @@
       ],
       "extraction_status": "reviewed_demo",
       "resolution_status": "program_round_resolved",
-      "sample_scope": "existing_source_reviewed_snapshot"
+      "sample_scope": "existing_source_reviewed_snapshot",
+      "applicant_scope": "student"
     },
     {
       "opportunity_id": "postech-ax-first-semester",
@@ -836,7 +860,12 @@
       "application": {
         "url": "https://ax.postech.ac.kr/_res/postech/ax/etc/axguide.pdf",
         "opens_on": null,
-        "closes_on": null
+        "closes_on": null,
+        "link_verification": {
+          "checked_at": "2026-10-15T16:09:09.841864+09:00",
+          "status": 200,
+          "method": "HTTP GET and target-content review"
+        }
       },
       "additional_checks": [],
       "requirements": [],
@@ -852,7 +881,8 @@
       "extraction_status": "public_demo_subset",
       "resolution_status": "historical_snapshot",
       "explanation": "공식 원문을 연결한 공개 예제다. 저장된 공통 조건 일부를 비교하며 현재 모집 및 전체 자격 확인을 대신하지 않는다.",
-      "extractor": "public_demo_fixture_v1"
+      "extractor": "public_demo_fixture_v1",
+      "applicant_scope": "student"
     },
     {
       "opportunity_id": "postech-k-top-tier",
@@ -907,7 +937,12 @@
       "application": {
         "url": "https://adm-g.postech.ac.kr/graduate-info/support-policy/",
         "opens_on": null,
-        "closes_on": null
+        "closes_on": null,
+        "link_verification": {
+          "checked_at": "2026-10-15T16:09:09.841864+09:00",
+          "status": 200,
+          "method": "HTTP GET and target-content review"
+        }
       },
       "additional_checks": [],
       "requirements": [],
@@ -923,7 +958,8 @@
       "extraction_status": "public_demo_subset",
       "resolution_status": "historical_snapshot",
       "explanation": "공식 원문을 연결한 공개 예제다. 저장된 공통 조건 일부를 비교하며 현재 모집 및 전체 자격 확인을 대신하지 않는다.",
-      "extractor": "public_demo_fixture_v1"
+      "extractor": "public_demo_fixture_v1",
+      "applicant_scope": "student"
     },
     {
       "opportunity_id": "posco-overseas-2026",
@@ -1000,7 +1036,12 @@
       "application": {
         "url": "https://www.postf.org/news/notice/1001111",
         "opens_on": "2026-04-08",
-        "closes_on": "2026-04-30"
+        "closes_on": "2026-04-30",
+        "link_verification": {
+          "checked_at": "2026-10-15T16:09:09.841864+09:00",
+          "status": 200,
+          "method": "HTTP GET and target-content review"
+        }
       },
       "additional_checks": [],
       "requirements": [
@@ -1025,90 +1066,116 @@
       "extraction_status": "public_demo_subset",
       "resolution_status": "historical_snapshot",
       "explanation": "공식 원문을 연결한 공개 예제다. 저장된 공통 조건 일부를 비교하며 현재 모집 및 전체 자격 확인을 대신하지 않는다.",
-      "extractor": "public_demo_fixture_v1"
+      "extractor": "public_demo_fixture_v1",
+      "applicant_scope": "student"
     },
     {
-      "opportunity_id": "posco-science-18",
-      "program_id": "posco-science-18",
-      "round_id": "2026-snapshot",
-      "title": "제18기 포스코사이언스펠로십",
-      "category": "fellowship",
+      "opportunity_id": "hyundai-mobis-research-scholar-2026-h2",
+      "program_id": "hyundai-mobis-research-scholar-2026-h2",
+      "round_id": "2026-h2",
+      "title": "현대모비스 2026 하반기 연구장학생",
+      "category": "scholarship",
       "recipient_type": "individual",
       "issuer": {
-        "name": "포스코청암재단",
-        "country": "KR",
-        "type": "foundation"
+        "name": "현대모비스",
+        "type": "company",
+        "country": "KR"
       },
       "eligibility": {
-        "all": [
+        "any": [
           {
-            "field": "person.nationalities",
-            "op": "in",
-            "value": [
-              "KR"
-            ],
-            "at": "application",
-            "evidence_ref": "official"
+            "all": [
+              {
+                "field": "education.degree",
+                "op": "eq",
+                "value": "masters",
+                "at": "application",
+                "evidence_ref": "official"
+              },
+              {
+                "field": "education.semester",
+                "op": "between",
+                "value": [
+                  1,
+                  3
+                ],
+                "at": "application",
+                "evidence_ref": "official"
+              }
+            ]
           },
           {
-            "field": "employment.status",
-            "op": "eq",
-            "value": "faculty",
-            "at": "application",
-            "evidence_ref": "official"
-          },
-          {
-            "field": "employment.institution_country",
-            "op": "eq",
-            "value": "KR",
-            "at": "application",
-            "evidence_ref": "official"
-          },
-          {
-            "field": "employment.first_appointment_months",
-            "op": "lte",
-            "value": 36,
-            "at": "application",
-            "evidence_ref": "official"
+            "all": [
+              {
+                "field": "education.degree",
+                "op": "eq",
+                "value": "phd",
+                "at": "application",
+                "evidence_ref": "official"
+              },
+              {
+                "field": "education.coursework_completed",
+                "op": "eq",
+                "value": true,
+                "at": "application",
+                "evidence_ref": "official"
+              }
+            ]
           }
         ]
       },
       "benefits": [
         {
-          "type": "research_fund",
-          "description": "연구 지원 프로그램. 이 예제에는 지원 금액을 전사하지 않았다.",
+          "type": "cash",
+          "description": "장학금 지급. 확보 원문에 금액이 명시되지 않아 금액은 비워 둔다.",
+          "evidence_ref": "official"
+        },
+        {
+          "type": "mentoring",
+          "description": "현업 연구원 멘토링과 석박사 기술과제 수행비용 지원",
           "evidence_ref": "official"
         }
       ],
       "application": {
-        "url": "https://postf.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=247307",
-        "opens_on": "2026-03-19",
-        "closes_on": "2026-05-31"
+        "url": "https://mse.kaist.ac.kr/index.php?document_srl=389673&mid=mse_notice",
+        "opens_on": "2026-09-11",
+        "closes_on": "2026-09-29",
+        "portal_url": "https://careers.mobis.com/index",
+        "link_verification": {
+          "checked_at": "2026-10-15T16:09:09.841864+09:00",
+          "status": 200,
+          "method": "HTTP GET and target-content review"
+        }
       },
       "additional_checks": [],
       "requirements": [
         {
-          "description": "임용 예정자도 별도 경로가 있다. 국내 대학 임용 관련 서류와 해당 회차 기준을 확인한다.",
+          "description": "졸업 후 현대모비스 연구소 입사 기회가 제시된 연구장학생 모집이다.",
           "evidence_ref": "official"
         },
         {
-          "description": "연구계획서와 단계별 추천 및 발표 심사를 준비한다.",
+          "description": "박사 Coursework 수료는 성적표 상 학점이 더 이상 기입되지 않는 시점으로 안내한다.",
           "evidence_ref": "official"
         }
       ],
       "source_refs": [
         {
           "id": "official",
-          "url": "https://www.postf.org/news/notice/1001068",
-          "locator": "기존에 수집한 공식 안내의 자격과 혜택 구역"
+          "url": "https://mse.kaist.ac.kr/index.php?document_srl=389673&mid=mse_notice",
+          "locator": "KAIST 신소재공학과의 같은 회차 공식 재게시",
+          "anchor": "② 박사 : Coursework 수료자",
+          "previous_url": "https://cse.postech.ac.kr/csepostech/news/information.do?mode=view&articleNo=49468&article.offset=0&articleLimit=10&srCategoryId=320",
+          "source_kind": "university_republication",
+          "content_sha256": "b88e5cd433cd090080832842a9a957936a6483b161d223da22da7ea059ff62d5"
         }
       ],
       "record_kind": "notice",
       "sample_scope": "selected_conditions_not_complete_eligibility",
       "extraction_status": "public_demo_subset",
       "resolution_status": "historical_snapshot",
-      "explanation": "공식 원문을 연결한 공개 예제다. 저장된 공통 조건 일부를 비교하며 현재 모집 및 전체 자격 확인을 대신하지 않는다.",
-      "extractor": "public_demo_fixture_v1"
+      "explanation": "석사 1~3학기 또는 박사 Coursework 수료자가 대상인 2026 하반기 연구장학생 예제입니다. 원래 POSTECH 링크는 404여서 같은 회차의 KAIST 공식 재게시로 교체했습니다. 이 회차는 접수가 마감됐습니다.",
+      "extractor": "public_demo_fixture_v1",
+      "applicant_scope": "student"
     },
     {
       "opportunity_id": "kosaf-presidential-2026",
@@ -1162,7 +1229,12 @@
       "application": {
         "url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_05_01",
         "opens_on": null,
-        "closes_on": null
+        "closes_on": null,
+        "link_verification": {
+          "checked_at": "2026-10-15T16:09:09.841864+09:00",
+          "status": 200,
+          "method": "HTTP GET and target-content review"
+        }
       },
       "additional_checks": [],
       "requirements": [
@@ -1187,7 +1259,8 @@
       "extraction_status": "public_demo_subset",
       "resolution_status": "historical_snapshot",
       "explanation": "공식 원문을 연결한 공개 예제다. 저장된 공통 조건 일부를 비교하며 현재 모집 및 전체 자격 확인을 대신하지 않는다.",
-      "extractor": "public_demo_fixture_v1"
+      "extractor": "public_demo_fixture_v1",
+      "applicant_scope": "student"
     },
     {
       "opportunity_id": "kosaf-hope-ladder-2026-s2",
@@ -1286,7 +1359,12 @@
       "application": {
         "url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_14_01&ttab1=2",
         "opens_on": null,
-        "closes_on": null
+        "closes_on": null,
+        "link_verification": {
+          "checked_at": "2026-10-15T16:09:09.841864+09:00",
+          "status": 200,
+          "method": "HTTP GET and target-content review"
+        }
       },
       "additional_checks": [],
       "requirements": [
@@ -1311,40 +1389,169 @@
       "extraction_status": "public_demo_subset",
       "resolution_status": "historical_snapshot",
       "explanation": "공식 원문을 연결한 공개 예제다. 저장된 공통 조건 일부를 비교하며 현재 모집 및 전체 자격 확인을 대신하지 않는다.",
-      "extractor": "public_demo_fixture_v1"
+      "extractor": "public_demo_fixture_v1",
+      "applicant_scope": "student"
     }
   ],
   "program_knowledge": [
     {
-      "extractor": "public_demo_fixture_v1",
+      "extractor": "llm_full_experience_v2",
       "program_id": "gates-cambridge",
       "writing_pattern": [
         {
-          "basis": "single_case_observation",
-          "insight": "기여 의지를 추상적으로 선언하기보다 문제를 만난 경험과 행동의 수정에서 보여준다.",
+          "pattern_id": "GC-P1",
+          "insight": "공개 통합 에세이 두 편은 개인 경험을 연구와 교육의 진로, Cambridge 선택으로 연결한다. 반복 관점은 전문 활동의 사회적 의미다.",
           "sections": [
-            "문제를 만난 상황",
-            "본인의 행동과 수정",
-            "관찰한 변화",
-            "진학 후 기여"
+            "관심과 문제의 발견",
+            "활동에서 얻은 전환",
+            "연구와 교육의 진로",
+            "Cambridge와 장학 공동체"
           ],
-          "pattern_id": "gates-single-case-v1",
-          "variations": [],
-          "target_round": null,
-          "source_rounds": [
-            "2016-2017"
+          "supporting_case_ids": [
+            "C1",
+            "C2"
+          ],
+          "variations": [
+            "C1은 불평등→수업 설계→장벽과 조정→연구→Cambridge→연대 약속의 6문단이다.",
+            "C2는 이야기→AI의 사회적 의미→연구 글쓰기→교육과 교수 목표→Cambridge의 5문단이다.",
+            "현재 prompts는 비어 있고 안내는 보관 회차다. 과거 500단어 문항을 2026-2027 문항으로 사용하지 않는다."
           ],
           "required_inputs": [
-            "기여하려 한 대상",
-            "실제 어려움",
-            "바꾼 행동",
-            "관찰한 변화",
-            "향후 기여"
+            "관심의 출발점과 직접 접한 문제",
+            "본인 활동, 어려움과 선택의 변화",
+            "연구 경험, 교육 활동과 장기 목표",
+            "과정, 지도자, 활용 자원과 공동체 기여 계획"
           ],
-          "generation_status": "needs_current_prompt_alignment",
+          "basis": "observed_structure",
+          "source_rounds": [
+            "2016-2017",
+            "2021"
+          ],
+          "target_round": "2026-2027",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "GC-P2",
+          "insight": "C1의 통합 에세이는 한 봉사 경험에서 실행 조정으로 리더십을, 학생 일화로 영향을 보여 준다. 별도 리더십 문항의 답변은 아니다.",
+          "sections": [
+            "상황과 목표",
+            "참여를 막은 조건",
+            "본인이 바꾼 실행",
+            "관찰한 변화"
+          ],
           "supporting_case_ids": [
             "C1"
           ],
+          "variations": [
+            "목표는 모든 학생의 기본 회화와 시간 읽기지만 제시된 결과는 한 학생의 일화다. 집단 전체의 학습 효과는 미확인이다."
+          ],
+          "required_inputs": [
+            "대상, 규모와 수업 목표",
+            "연령과 언어 등 실제 장벽",
+            "직접 설계하고 수정한 활동",
+            "확인한 변화, 관찰 범위와 측정 방식"
+          ],
+          "basis": "single_case_observation",
+          "source_rounds": [
+            "2016-2017"
+          ],
+          "target_round": "2026-2027",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "GC-P3",
+          "insight": "C2의 별도 연구계획은 시장의 문제에서 선행연구와 공백을 거쳐 데이터 수집과 모델 제안으로 좁힌다. Gates 첫 쪽의 개인 서사와 구분된다.",
+          "sections": [
+            "문제와 선행연구",
+            "남은 공백",
+            "데이터와 방법 계획",
+            "준비와 지도자 연결"
+          ],
+          "supporting_case_ids": [
+            "C2"
+          ],
+          "variations": [
+            "실제 프라이버시 선호와 데이터 유형별 이질성을 두 탐색 방향으로 제시한다.",
+            "검증 지표와 수행 결과는 미확인이다. 과정 선택, 진로와 프로그래밍 경험은 다른 문항에 있다."
+          ],
+          "required_inputs": [
+            "문제 당사자, 기존 접근과 근거",
+            "기존 접근이 다루지 못한 조건",
+            "수집할 자료, 표현 방식과 제안 방법",
+            "관련 학습 경험과 지도자 연구와의 연결"
+          ],
+          "basis": "single_case_observation",
+          "source_rounds": [
+            "2021"
+          ],
+          "target_round": "2026-2027",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "GC-P4",
+          "insight": "C3는 연구 실패로 바뀐 관점을 연구자상과 공동체 활동까지 확장했다고 회고한다. 제출 전문이 아닌 본인의 구성 설명에 근거한 단일 사례다.",
+          "sections": [
+            "계기와 학부 연구",
+            "실패와 관점 변화",
+            "향후 연구 주제",
+            "학외 활동과 연구자상",
+            "현재 과제와 Cambridge"
+          ],
+          "supporting_case_ids": [
+            "C3"
+          ],
+          "variations": [
+            "연구 주제의 상세 설명은 별도 연구계획에 두었다고 한다. 원문의 문단 경계, 분량과 최종 표현은 미확인이다."
+          ],
+          "required_inputs": [
+            "관심 계기와 실제 연구 참여",
+            "실패 내용과 배운 점",
+            "후속 관심 주제와 기존 경험의 연결",
+            "구체적 학외 활동과 지향하는 역할",
+            "현재 수행 과제와 필요한 Cambridge 자원"
+          ],
+          "basis": "single_case_observation",
+          "source_rounds": [
+            "2013"
+          ],
+          "target_round": "2026-2027",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "GC-P5",
+          "insight": "준비 자료에서는 과정 선택의 구체화, 외부 검토와 면접 설명 준비가 반복된다. 아래는 준비 항목이며 제출 글의 문단 순서가 아니다.",
+          "sections": [
+            "과정과 연구 환경 조사",
+            "문서 검토와 수정",
+            "면접에서 이유와 실행 설명"
+          ],
+          "supporting_case_ids": [
+            "C1",
+            "C3",
+            "C4"
+          ],
+          "variations": [
+            "C3는 지도자 연락, 연구계획 수정과 모의면접을 직접 보고한다.",
+            "C4는 교수와 과정 조사, 선택 이유 질문을 보고한다. 초안 수정 횟수는 미확인이다.",
+            "C1은 실제 면접 질문과 연구 설명, 난점 대비 조언을 제공한다. 모든 권고를 본인의 준비 행동으로 간주하지 않는다."
+          ],
+          "required_inputs": [
+            "조사한 과정과 지도자, 선택 근거",
+            "검토자, 받은 의견과 반영 내용",
+            "연구 목적, 예상 난점, 활동 사례와 과정 선택 이유"
+          ],
+          "basis": "observed_structure",
+          "source_rounds": [
+            "2013",
+            "2016-2017",
+            "2019"
+          ],
+          "target_round": "2026-2027",
+          "generation_status": "outline_only_user_facts_required",
           "causal_success_claim": false
         }
       ],
@@ -1355,19 +1562,24 @@
           "case_id": "C1",
           "fragments": [
             {
-              "role": "action",
-              "summary": "교육 봉사에서 겪은 어려움과 수업 방식을 바꾼 행동을 서술",
-              "evidence_ref": "R1"
+              "role": "공개 에세이 1~3문단: 문제, 실행과 조정",
+              "summary": "교육 불평등을 봉사 경험으로 좁힌다. 40명 수업에서 연령과 언어 차이에 막혀 연령별 활동으로 바꾸고, 한 학생의 시간 읽기 활용 일화를 제시한다.",
+              "evidence_ref": "llm-sampurna-essay-0"
             },
             {
-              "role": "plan",
-              "summary": "Cambridge 진학과 앞으로의 연구 및 공동체 기여를 연결",
-              "evidence_ref": "R1"
+              "role": "공개 에세이 4문단: 연구와 사회적 목적",
+              "summary": "수용체 연구 경험을 신경질환 연구의 목적, 과학 블로그 활동과 연결한다. 연구의 구체적인 성능이나 치료 성과는 제시하지 않는다.",
+              "evidence_ref": "llm-sampurna-essay-1"
             },
             {
-              "role": "reflection",
-              "summary": "면접에서는 제안 연구를 짧게 설명하고 예상 문제와 기여를 준비",
-              "evidence_ref": "R2"
+              "role": "공개 에세이 5~6문단: 과정과 장학금의 연결",
+              "summary": "통증 연구, 지도자와 산업 협력, 과학 축제를 제시한 뒤 연구자와 교육자로서 삶을 개선하겠다는 약속으로 끝낸다.",
+              "evidence_ref": "llm-sampurna-essay-2"
+            },
+            {
+              "role": "후기: 면접과 선정 이후 경험",
+              "summary": "제안 연구와 기준 적합성을 다룬 면접, 봉사 경험의 추가 질문을 보고한다. 생활 지원과 공동체 교류 경험은 지원 당시 에세이와 구분한다.",
+              "evidence_ref": "llm-sampurna-review-3"
             }
           ],
           "award_round": null,
@@ -1387,53 +1599,850 @@
               "locator": "Preparing for questions",
               "source_id": "sampurna-review",
               "content_sha256": "8c7aa3064e36ce1df997aaa4b4540740a8db07fe2985bd40d3a5302b2e7cfe17"
+            },
+            {
+              "id": "llm-sampurna-essay-0",
+              "source_id": "sampurna-essay",
+              "url": "https://sampurnabuffalo.wordpress.com/wp-content/uploads/2017/11/gatesessay.pdf",
+              "anchor": "I started allotting age appropriate activities to master a common task.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "8ff55fbfac759ed9a601ae1d16a48109ab490cd8a1401d8a7709627cdf919228"
+            },
+            {
+              "id": "llm-sampurna-essay-1",
+              "source_id": "sampurna-essay",
+              "url": "https://sampurnabuffalo.wordpress.com/wp-content/uploads/2017/11/gatesessay.pdf",
+              "anchor": "I investigated alpha 3 glycine receptors",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "8ff55fbfac759ed9a601ae1d16a48109ab490cd8a1401d8a7709627cdf919228"
+            },
+            {
+              "id": "llm-sampurna-essay-2",
+              "source_id": "sampurna-essay",
+              "url": "https://sampurnabuffalo.wordpress.com/wp-content/uploads/2017/11/gatesessay.pdf",
+              "anchor": "translate findings from bench to bedside.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "8ff55fbfac759ed9a601ae1d16a48109ab490cd8a1401d8a7709627cdf919228"
+            },
+            {
+              "id": "llm-sampurna-review-3",
+              "source_id": "sampurna-review",
+              "url": "https://sampurnabuffalo.wordpress.com/2017/11/16/gates-cambridge-scholarship-sample-essay-interview-and-life-after/",
+              "anchor": "The first part entailed in-depth question about the proposed research work",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "34906c03fe76e5754ca2d21c730d2df2c6781bfd6083b0ab4764237d398e54d2"
             }
           ],
           "rights_scope": "analysis_summary_only",
           "document_type": "application_statement_and_review",
           "visual_status": "not_analyzed",
           "application_round": "2016-2017",
-          "outcome_verification": "self_reported_current_fetch",
+          "outcome_verification": "official_yearbook_and_author_report",
           "prior_verification_url": "https://www.buffalo.edu/fellowships/news.host.html/content/shared/university/news/ub-reporter-articles/stories/2016/05/interest-in-india.detail.html",
-          "verification_fetch_status": "robots_check_failed"
+          "verification_fetch_status": "robots_check_failed",
+          "outcome_status": "selected",
+          "outcome_evidence": [
+            {
+              "url": "https://www.gatescambridge.org/wp-content/uploads/2020/04/gc_yearbook_2016_web_0.pdf",
+              "quote": "Sampurna Chakrabarti",
+              "verification": "official_yearbook_and_author_report"
+            }
+          ],
+          "source_limitations": "2016-2017 박사과정 지원서와 후기다. 다른 회차 및 학위의 사례와 비교할 때 구분한다."
+        },
+        {
+          "case_id": "C2",
+          "name": "Naveen Raman",
+          "application_round": "2021",
+          "document_type": "application_statement_and_review",
+          "outcome_status": "not_selected",
+          "outcome_verification": "author_reported",
+          "outcome_evidence": [
+            {
+              "url": "https://naveenraman.com/writing/fellowships.html",
+              "quote": "Not Awarded",
+              "verification": "author_reported"
+            }
+          ],
+          "source_limitations": "6쪽 묶음 중 첫 쪽이 Gates 에세이이며 뒤에는 Cambridge 입학 문항과 연구계획이 포함된다. MPhil 지원이다.",
+          "source_refs": [
+            {
+              "id": "naveen-essay",
+              "source_id": "naveen-essay",
+              "url": "https://naveenraman.com/assets/sop/gates_cambridge.pdf",
+              "locator": "application_statement",
+              "content_sha256": "d5cd02be08a11d9d9d006cad276203e12c891ca65b82734ecde7f5b559c1f469"
+            },
+            {
+              "id": "naveen-review",
+              "source_id": "naveen-review",
+              "url": "https://naveenraman.com/writing/fellowships.html",
+              "locator": "experience_review",
+              "content_sha256": "de75834e80d8c9a1b6909ee4e53a33d07d529d61f6f99dd4d0514bc0a92c2e65"
+            },
+            {
+              "id": "llm-naveen-essay-0",
+              "source_id": "naveen-essay",
+              "url": "https://naveenraman.com/assets/sop/gates_cambridge.pdf",
+              "anchor": "stories can humanize ideas and elicit empathy",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0fe3add96df7126ca2bd4688b6be8bdc5e52cf23add0842ffaed0d2320ac6b10"
+            },
+            {
+              "id": "llm-naveen-essay-1",
+              "source_id": "naveen-essay",
+              "url": "https://naveenraman.com/assets/sop/gates_cambridge.pdf",
+              "anchor": "restructuring it in a narrative style",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0fe3add96df7126ca2bd4688b6be8bdc5e52cf23add0842ffaed0d2320ac6b10"
+            },
+            {
+              "id": "llm-naveen-essay-2",
+              "source_id": "naveen-essay",
+              "url": "https://naveenraman.com/assets/sop/gates_cambridge.pdf",
+              "anchor": "I intend to become a professor.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0fe3add96df7126ca2bd4688b6be8bdc5e52cf23add0842ffaed0d2320ac6b10"
+            },
+            {
+              "id": "llm-naveen-essay-3",
+              "source_id": "naveen-essay",
+              "url": "https://naveenraman.com/assets/sop/gates_cambridge.pdf",
+              "anchor": "privacy-related issues in data markets",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0fe3add96df7126ca2bd4688b6be8bdc5e52cf23add0842ffaed0d2320ac6b10"
+            },
+            {
+              "id": "llm-naveen-essay-4",
+              "source_id": "naveen-essay",
+              "url": "https://naveenraman.com/assets/sop/gates_cambridge.pdf",
+              "anchor": "many 1000s of lines of code",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0fe3add96df7126ca2bd4688b6be8bdc5e52cf23add0842ffaed0d2320ac6b10"
+            },
+            {
+              "id": "llm-naveen-essay-5",
+              "source_id": "naveen-essay",
+              "url": "https://naveenraman.com/assets/sop/gates_cambridge.pdf",
+              "anchor": "a matrix representing correlations between data types.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0fe3add96df7126ca2bd4688b6be8bdc5e52cf23add0842ffaed0d2320ac6b10"
+            },
+            {
+              "id": "llm-naveen-review-6",
+              "source_id": "naveen-review",
+              "url": "https://naveenraman.com/writing/fellowships.html",
+              "anchor": "Not Awarded",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "6538c6a8a18486d6d304ed39926a3bb1bef8f148466d925b2d4f9c915ed3f704"
+            }
+          ],
+          "fragments": [
+            {
+              "role": "공개 Gates 에세이 1~2문단: 관심의 연결",
+              "summary": "이야기에 대한 관심에서 출발해 AI의 사회적 효과를 접하고 공정성, 인간과 AI 협업, 독성 탐지 연구로 이동한다.",
+              "evidence_ref": "llm-naveen-essay-0"
+            },
+            {
+              "role": "공개 Gates 에세이 3문단: 연구자로의 전환",
+              "summary": "독성 연구의 기술적인 초고를 지도자 조언에 따라 서사적으로 수정하며 연구를 좋아하게 된 과정을 설명한다. 게재 결과는 미확인이다.",
+              "evidence_ref": "llm-naveen-essay-1"
+            },
+            {
+              "role": "공개 Gates 에세이 4문단: 교육과 진로",
+              "summary": "학생 동아리 지원, 읽기와 수학 지도, 대학 프로그래밍 수업을 이야기라는 관점으로 연결하고 교수 목표를 제시한다.",
+              "evidence_ref": "llm-naveen-essay-2"
+            },
+            {
+              "role": "공개 Gates 에세이 5문단: Cambridge 연결",
+              "summary": "Crowcroft와 데이터 시장의 프라이버시 연구, 고급 수업, 연구자와 장학생 협업을 희망한다.",
+              "evidence_ref": "llm-naveen-essay-3"
+            },
+            {
+              "role": "별도 입학 자료와 문항: 준비도",
+              "summary": "수상과 경력 목록, 진로와 코로나 영향, 과정 선택, 코딩과 수학 경험, 과목 선택이 있다. 코딩 경험에는 UI 반복 수정과 수천 행 작성이라는 자기보고가 있다.",
+              "evidence_ref": "llm-naveen-essay-4"
+            },
+            {
+              "role": "별도 연구계획: 공백과 제안",
+              "summary": "데이터 시장의 통제와 보상 문제, 선행연구, 실제 선호와 데이터 이질성의 공백을 제시한다. 선호 수집, 보상 벡터와 상관 행렬, MDP 활용을 제안한다.",
+              "evidence_ref": "llm-naveen-essay-5"
+            },
+            {
+              "role": "후기와 결과 목록",
+              "summary": "Gates 미선정을 저자가 보고한다. 기준에 맞춘 통합 서사를 권하지만 확률에 관한 조언은 검증된 효과가 아니다. Churchill과 NSF 선정은 별개다.",
+              "evidence_ref": "llm-naveen-review-6"
+            }
+          ]
+        },
+        {
+          "case_id": "C3",
+          "name": "Paul Bergen",
+          "application_round": "2013",
+          "document_type": "experience_review",
+          "outcome_status": "selected",
+          "outcome_verification": "official_yearbook_and_author_report",
+          "outcome_evidence": [
+            {
+              "url": "https://www.gatescambridge.org/wp-content/uploads/2020/04/gc_yearbook_2016_web_0.pdf",
+              "quote": "Paul Bergen",
+              "verification": "official_yearbook_and_author_report"
+            }
+          ],
+          "source_limitations": "지원 준비와 본인 글의 구성에 대한 후기다. 제출 에세이 전문은 없다.",
+          "source_refs": [
+            {
+              "id": "paul-review",
+              "source_id": "paul-review",
+              "url": "https://mattsosna.com/gates-i/",
+              "locator": "experience_review",
+              "content_sha256": "2558b237756a86150926d97c040e236858fe92e1c2fca6ac68559f355203e3ae"
+            },
+            {
+              "id": "llm-paul-review-0",
+              "source_id": "paul-review",
+              "url": "https://mattsosna.com/gates-i/",
+              "anchor": "My university set up three practice interviews for me",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "49efe354452e5bcb6b44f8c3908f2817271d9fe223dc2debc055e2e4f6aa0023"
+            },
+            {
+              "id": "llm-paul-review-1",
+              "source_id": "paul-review",
+              "url": "https://mattsosna.com/gates-i/",
+              "anchor": "I concluded with my current endeavor",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "49efe354452e5bcb6b44f8c3908f2817271d9fe223dc2debc055e2e4f6aa0023"
+            },
+            {
+              "id": "llm-paul-review-2",
+              "source_id": "paul-review",
+              "url": "https://mattsosna.com/gates-i/",
+              "anchor": "I was asked to defend the “definition” of a top researcher",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "49efe354452e5bcb6b44f8c3908f2817271d9fe223dc2debc055e2e4f6aa0023"
+            }
+          ],
+          "fragments": [
+            {
+              "role": "후기: 실제 준비 행동",
+              "summary": "약 한 달 지도자를 조사하고 세 명에게 연락해 한 명의 답을 받았다고 한다. 지도자와 연구계획을 다듬고 대학에서 세 차례 모의면접을 받았다.",
+              "evidence_ref": "llm-paul-review-0"
+            },
+            {
+              "role": "후기: 본인이 설명한 에세이 순서",
+              "summary": "Yellowstone 계기, 학부 연구, 실패와 인내, 연구관의 변화, 향후 주제, 학외 활동과 연구자상, 현재 과제와 Cambridge 순서로 썼다고 회고한다.",
+              "evidence_ref": "llm-paul-review-1"
+            },
+            {
+              "role": "후기: 면접의 추가 검증",
+              "summary": "에세이에 적은 훌륭한 연구자의 정의와 Cambridge가 이를 도울 구체적 사례를 설명하도록 질문받았다고 한다.",
+              "evidence_ref": "llm-paul-review-2"
+            }
+          ]
+        },
+        {
+          "case_id": "C4",
+          "name": "Onon Bayasgalan",
+          "application_round": "2019",
+          "document_type": "official_interview",
+          "outcome_status": "selected",
+          "outcome_verification": "official_yearbook_and_interview",
+          "outcome_evidence": [
+            {
+              "url": "https://www.gatescambridge.org/wp-content/uploads/2020/04/gates_cambridge_annual_report_2019_final_web.pdf",
+              "quote": "Onon Bayasgalan",
+              "verification": "official_yearbook_and_interview"
+            }
+          ],
+          "source_limitations": "동문회에 실린 본인 인터뷰다. 제출 에세이 전문은 없다.",
+          "source_refs": [
+            {
+              "id": "onon-interview",
+              "source_id": "onon-interview",
+              "url": "https://hobbyalumni.squarespace.com/interviews/ononbayasgalan",
+              "locator": "official_interview",
+              "content_sha256": "d9f2b44c00059d2da4c20affb6349faded13211da84dd665693c38c115837bb5"
+            },
+            {
+              "id": "llm-onon-interview-0",
+              "source_id": "onon-interview",
+              "url": "https://hobbyalumni.squarespace.com/interviews/ononbayasgalan",
+              "anchor": "It requires 5 years of experience in sustainable enterprise, and I have done exactly 5.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "ab4906fbcce7d59c782e09f894c1ed8068eccdd6de0c36bce982ede938fe6042"
+            },
+            {
+              "id": "llm-onon-interview-1",
+              "source_id": "onon-interview",
+              "url": "https://hobbyalumni.squarespace.com/interviews/ononbayasgalan",
+              "anchor": "I researched about the three professors and their research",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "ab4906fbcce7d59c782e09f894c1ed8068eccdd6de0c36bce982ede938fe6042"
+            },
+            {
+              "id": "llm-onon-interview-2",
+              "source_id": "onon-interview",
+              "url": "https://hobbyalumni.squarespace.com/interviews/ononbayasgalan",
+              "anchor": "We raised money for 88 air purifiers.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "ab4906fbcce7d59c782e09f894c1ed8068eccdd6de0c36bce982ede938fe6042"
+            },
+            {
+              "id": "llm-onon-interview-3",
+              "source_id": "onon-interview",
+              "url": "https://hobbyalumni.squarespace.com/interviews/ononbayasgalan",
+              "anchor": "I focused on creating relationships and partnerships, networking and connecting people.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "ab4906fbcce7d59c782e09f894c1ed8068eccdd6de0c36bce982ede938fe6042"
+            }
+          ],
+          "fragments": [
+            {
+              "role": "인터뷰: 경력과 과정 선택",
+              "summary": "번역을 통한 환경 문제 인식, 환경경제학과 환경관리 교육을 거쳤다. 지속가능 사업 5년 경험과 보전 리더십 과정의 기술 학습 필요를 연결한다.",
+              "evidence_ref": "llm-onon-interview-0"
+            },
+            {
+              "role": "인터뷰: 지원과 면접 준비",
+              "summary": "추가 짧은 에세이와 추천서를 제출했다고 한다. 면접 교수 세 명, Cambridge와 장학금을 조사하고 과정 선택과 MBA 대신 이 과정을 택한 이유를 질문받았다.",
+              "evidence_ref": "llm-onon-interview-1"
+            },
+            {
+              "role": "인터뷰: 기여와 동원 경험",
+              "summary": "공기청정기 100대 목표로 모금을 게시하고 친구들에게 초기 기부를 요청했다. 두 달 동안 88대분을 모금했다고 보고한다.",
+              "evidence_ref": "llm-onon-interview-2"
+            },
+            {
+              "role": "인터뷰: 조직과 이해관계자 경험",
+              "summary": "환경 펠로십 공동 시작과 자금 확보, 캐시미어 사업의 파트너십과 두 협동조합 활동을 설명한다. 중간상인과 목축민을 이해하며 신뢰와 지역별 조정의 중요성을 배웠다고 한다.",
+              "evidence_ref": "llm-onon-interview-3"
+            }
+          ]
+        }
+      ],
+      "pattern_extraction": {
+        "prompt_version": "whole-experience-evidence-v2",
+        "extractor": "llm_full_experience_v2",
+        "input_sha256": "43bba2340bc195479e1795730eeb29eae79dc7de0f6f02261aba564dfa2aea25",
+        "model": "gpt-6.1-sol",
+        "created_at": "2026-10-15T09:45:18.457317+00:00",
+        "full_text_characters": 78701,
+        "input_document_count": 6,
+        "model_attempts": 1,
+        "corrected_validation_errors": [],
+        "input_documents": [
+          {
+            "source_id": "sampurna-essay",
+            "role": "application_statement",
+            "case_ids": [
+              "C1"
+            ],
+            "url": "https://sampurnabuffalo.wordpress.com/wp-content/uploads/2017/11/gatesessay.pdf",
+            "document_id": "d8a7a88f5d39b9eaea79baf8fe1e742a0eddcd05593e15c64581bf42d9da93b3",
+            "content_sha256": "3016c6cfdd33161f633942c715716ff5be7b28608236eec079207b8012c44d87",
+            "text_sha256": "8ff55fbfac759ed9a601ae1d16a48109ab490cd8a1401d8a7709627cdf919228"
+          },
+          {
+            "source_id": "sampurna-review",
+            "role": "experience_review",
+            "case_ids": [
+              "C1"
+            ],
+            "url": "https://sampurnabuffalo.wordpress.com/2017/11/16/gates-cambridge-scholarship-sample-essay-interview-and-life-after/",
+            "document_id": "d8397c190b58dcf40e421b073ecc7f11cd08c80d14370a090679c2b1dc31db9c",
+            "content_sha256": "8c7aa3064e36ce1df997aaa4b4540740a8db07fe2985bd40d3a5302b2e7cfe17",
+            "text_sha256": "34906c03fe76e5754ca2d21c730d2df2c6781bfd6083b0ab4764237d398e54d2"
+          },
+          {
+            "source_id": "naveen-essay",
+            "role": "application_statement",
+            "case_ids": [
+              "C2"
+            ],
+            "url": "https://naveenraman.com/assets/sop/gates_cambridge.pdf",
+            "document_id": "7a87c6706c73a60dc9cfd994b7cc13d090a575380058da915a5ca8c8b2027a1c",
+            "content_sha256": "d5cd02be08a11d9d9d006cad276203e12c891ca65b82734ecde7f5b559c1f469",
+            "text_sha256": "0fe3add96df7126ca2bd4688b6be8bdc5e52cf23add0842ffaed0d2320ac6b10"
+          },
+          {
+            "source_id": "naveen-review",
+            "role": "experience_review",
+            "case_ids": [
+              "C2"
+            ],
+            "url": "https://naveenraman.com/writing/fellowships.html",
+            "document_id": "77502cb8c42f19524ca3a9d05c53781e2fc4e6c5723a417935ca308824137d29",
+            "content_sha256": "de75834e80d8c9a1b6909ee4e53a33d07d529d61f6f99dd4d0514bc0a92c2e65",
+            "text_sha256": "6538c6a8a18486d6d304ed39926a3bb1bef8f148466d925b2d4f9c915ed3f704"
+          },
+          {
+            "source_id": "paul-review",
+            "role": "experience_review",
+            "case_ids": [
+              "C3"
+            ],
+            "url": "https://mattsosna.com/gates-i/",
+            "document_id": "1c2a1fbcedf4b7ff5ae7f4a092fd05b3b03b2ffb3562908da7d88fac01f0665f",
+            "content_sha256": "2558b237756a86150926d97c040e236858fe92e1c2fca6ac68559f355203e3ae",
+            "text_sha256": "49efe354452e5bcb6b44f8c3908f2817271d9fe223dc2debc055e2e4f6aa0023"
+          },
+          {
+            "source_id": "onon-interview",
+            "role": "official_interview",
+            "case_ids": [
+              "C4"
+            ],
+            "url": "https://hobbyalumni.squarespace.com/interviews/ononbayasgalan",
+            "document_id": "aaf69faf795c06dd5944b3eb942ac08503084370f9c16d6fd04654f4f74e6bc7",
+            "content_sha256": "d9f2b44c00059d2da4c20affb6349faded13211da84dd665693c38c115837bb5",
+            "text_sha256": "ab4906fbcce7d59c782e09f894c1ed8068eccdd6de0c36bce982ede938fe6042"
+          }
+        ],
+        "network_collection_executed": false
+      },
+      "document_analyses": [
+        {
+          "source_id": "sampurna-essay",
+          "summary": "2016-2017 재정지원 양식 안의 500단어 통합 에세이 공개본이다. 교육 불평등, 봉사 수업의 설계와 수정, 연구 경험, Cambridge 박사과정과 장학 공동체 순서다. 앞부분의 다른 재원 안내는 에세이 밖이다. 교육 통계와 성과는 작성자의 보고다.",
+          "quote": "This was my journey of overcoming odds, developing independence, and taking responsibility"
+        },
+        {
+          "source_id": "sampurna-review",
+          "summary": "공개 에세이를 본인 지원서로 소개하고 선정, 연구계획과 기준 적합성을 다룬 면접을 회고한다. 연구 설명, 예상 난점, 공동체 기여와 진로에 대한 준비 조언에 이어 생활 지원과 교류 경험을 설명한다. 봉사와 연구의 비중, 학과 추천에 관한 설명은 개인 견해이며 현재 규정이 아니다.",
+          "quote": "I was asked to expand on the tutoring experience"
+        },
+        {
+          "source_id": "naveen-essay",
+          "summary": "첫 쪽만 Gates 통합 에세이다. 이후 수상, 추천인, 경력 목록, 진로, 코로나 영향, CV 표제, 타 대학 지원, MPhil 선택 이유, 프로그래밍과 수학 경험, 연구계획, 과목과 전공 선택이 이어진다. 연구계획의 방법은 제안이며 수행 결과가 아니다. 입학 문항을 Gates 에세이 문단으로 합치지 않는다.",
+          "quote": "My love of stories led to a passion for research and teaching"
+        },
+        {
+          "source_id": "naveen-review",
+          "summary": "여러 장학금의 결과와 자료 링크, 일반적인 기준 확인과 반복 수정 조언을 담는다. Gates에서는 연구와 학외 활동을 연결하는 이야기를 권한다. Churchill의 연구 중심 설명, DOE의 계산 자원, Hertz의 취미와 면접, NDSEG의 국방 적합성, NSF의 연구와 영향, Soros의 이주 배경 설명은 다른 프로그램 자료다. 목록에서 제출 문단 순서를 추정하지 않는다.",
+          "quote": "The essay is a space to tell the story"
+        },
+        {
+          "source_id": "paul-review",
+          "summary": "2013년 선정자의 후기다. 지도자 탐색과 연락, 조기 준비, 기준 확인, 운, 외부 도움을 설명하고 본인 에세이 전개를 회고한다. 연구계획 수정과 모의면접의 구체적 행동도 보고한다. 제출 전문은 없으므로 구성은 본인 설명 수준이다. 당시 경쟁률과 절차에 대한 진술을 현재 안내로 사용하지 않는다.",
+          "quote": "I started my essay on why I chose microbiology."
+        },
+        {
+          "source_id": "onon-interview",
+          "summary": "동문회 인터뷰로 학창 시절, 환경 분야 진입, 학위 선택, Gates 준비와 면접, 환경 사업, 공동체에 대한 배움, 개인 가치와 독서까지 다룬다. 공기청정기 모금과 보전 사업은 경험 근거지만 제출 에세이 전문은 없다. 타 대학 전액 장학금은 Gates 선정과 구분하며, 심사자의 관심에 관한 발언은 본인의 해석이다.",
+          "quote": "We raised money for 88 air purifiers."
+        }
+      ],
+      "evaluation_criteria": [
+        {
+          "criterion_id": "academic",
+          "label": "학업과 연구 역량",
+          "source_id": "gates-official",
+          "quote": "Academic excellence",
+          "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+          "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+        },
+        {
+          "criterion_id": "course",
+          "label": "Cambridge 과정 선택의 이유",
+          "source_id": "gates-official",
+          "quote": "Reasons for choice of course",
+          "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+          "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+        },
+        {
+          "criterion_id": "impact",
+          "label": "타인의 삶을 개선하는 기여",
+          "source_id": "gates-official",
+          "quote": "A commitment to improving the lives of others",
+          "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+          "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+        },
+        {
+          "criterion_id": "leadership",
+          "label": "리더십",
+          "source_id": "gates-official",
+          "quote": "A capacity for leadership",
+          "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+          "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+        }
+      ],
+      "criterion_observations": [
+        {
+          "case_id": "C1",
+          "criterion_id": "leadership",
+          "claim": "학생들의 차이에 대응해 수업을 조정한 책임과 주도성을 주장한다.",
+          "personal_action": "영어 과정을 개발하고 연령에 맞는 활동을 배정했다.",
+          "result_evidence": "참여 개선을 서술하고 한 학생이 어머니의 시간지기가 되었다는 일화를 제시한다. 작성자의 보고다.",
+          "institution_fit": "Cambridge에서 리더십과 기술을 발전시키고 연구자와 교육자로 기여하겠다고 연결한다.",
+          "limitations": "현재 기준으로 재분류한 관찰이다. 과거 심사표와 동일한지는 미확인이다. 참여율이나 전체 학습 성과는 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "C1",
+              "source_id": "sampurna-essay",
+              "quote": "I started allotting age appropriate activities to master a common task."
+            },
+            {
+              "case_id": "C1",
+              "source_id": "sampurna-essay",
+              "quote": "she had become her mother's timekeeper"
+            }
+          ]
+        },
+        {
+          "case_id": "C2",
+          "criterion_id": "academic",
+          "claim": "사회적 선을 고려하는 AI 연구에 대한 경험과 대학원 준비도를 제시한다.",
+          "personal_action": "독성 연구 초고를 수정했고, 연구와 인턴십에서 알고리즘과 UI를 구현했다고 한다.",
+          "result_evidence": "연구에 대한 진로 확신과 인턴 프로젝트의 수천 행 코드 작성을 보고한다. 논문 게재와 정량 연구 성능은 미확인이다.",
+          "institution_fit": "Crowcroft의 데이터 시장 연구, 고급 수업과 MPhil을 교수 진로에 연결한다.",
+          "limitations": "첫 쪽 에세이와 별도 입학 문항의 근거를 구분해야 한다. 코드량과 수상 목록은 연구의 질을 직접 측정하지 않는다. 당시 배점은 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "C2",
+              "source_id": "naveen-essay",
+              "quote": "restructuring it in a narrative style"
+            },
+            {
+              "case_id": "C2",
+              "source_id": "naveen-essay",
+              "quote": "many 1000s of lines of code"
+            }
+          ]
+        },
+        {
+          "case_id": "C3",
+          "criterion_id": "course",
+          "claim": "Cambridge가 원하는 연구자상에 필요한 도구를 제공한다고 설명했다고 한다.",
+          "personal_action": "지도자들을 조사하고 연락했으며 응답한 지도자의 도움으로 연구계획을 수정했다.",
+          "result_evidence": "지도자의 도움으로 제안서 표현을 다듬었다고 보고한다. 연구 수행 성과는 미확인이다.",
+          "institution_fit": "희망 지도자, 박사 주제와 장래 연구자상을 연결하고 면접에서 구체적 이유를 설명했다고 한다.",
+          "limitations": "2013년 박사 지원 후기이며 제출 전문은 없다. 특정 자원의 최종 서술과 현재 기준에 대한 당시 심사 판단은 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "C3",
+              "source_id": "paul-review",
+              "quote": "My Cambridge adviser helped me compose my project proposal so that it sounded less undergraduate-y."
+            }
+          ]
+        },
+        {
+          "case_id": "C4",
+          "criterion_id": "impact",
+          "claim": "대기오염 대응과 지역 보전 사업을 통해 타인의 삶을 개선하려는 활동을 보고한다.",
+          "personal_action": "모금을 게시하고 친구들에게 초기 기부를 요청했다. 캐시미어 사업에서는 관계와 파트너십을 구축했다.",
+          "result_evidence": "목표 100대 중 88대분 모금, 두 협동조합과의 사업을 보고한다. 공기청정기 전달과 건강 개선 수치는 미확인이다.",
+          "institution_fit": "지속가능 사업 경험을 보전 리더십 과정의 관리, 소통과 시장 활용 학습에 연결한다.",
+          "limitations": "공식 인터뷰의 경험 보고이며 제출 글의 내용과 순서는 미확인이다. 사업 목표를 달성 결과로 볼 수 없고 당시 심사표도 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "C4",
+              "source_id": "onon-interview",
+              "quote": "We raised money for 88 air purifiers."
+            },
+            {
+              "case_id": "C4",
+              "source_id": "onon-interview",
+              "quote": "We work with 2 cooperatives in Umnugobi province."
+            }
+          ]
+        }
+      ],
+      "outcome_comparisons": [
+        {
+          "criterion_id": "impact",
+          "observation": "선정 C1과 미선정 C2의 공개 Gates 에세이는 모두 교육과 사회적 기여를 연결한다. C1은 수업 조정 뒤 학생의 활용 일화를, C2는 다양한 지도 활동과 사회 변화의 목적을 제시한다. 제시한 결과의 구체성에 차이가 있다.",
+          "supporting_case_ids": [
+            "C1",
+            "C2"
+          ],
+          "evidence": [
+            {
+              "case_id": "C1",
+              "source_id": "sampurna-essay",
+              "quote": "she had become her mother's timekeeper"
+            },
+            {
+              "case_id": "C2",
+              "source_id": "naveen-essay",
+              "quote": "I was drawn to teaching because of its ability to enact social change"
+            }
+          ],
+          "limitations": "2016-2017 박사와 2021 MPhil 공개본 비교다. C1은 공식 자료와 저자 보고, C2는 저자 보고로 결과가 제시됐다. 실제 최종 제출본과의 일치, 심사 판단은 미확인이다. 일화의 차이로 선정 원인을 설명할 수 없다.",
+          "user_questions": [
+            "기여 활동에서 직접 바꾼 행동과 수혜자의 변화를 확인할 기록은 무엇인가?"
+          ],
+          "causal_success_claim": false,
+          "interpretation": "observed_difference_not_selection_cause"
+        },
+        {
+          "criterion_id": "course",
+          "observation": "선정 C1과 미선정 C2 모두 지도자와 연구 주제를 명시한다. C1은 통증 연구와 산업 협력, C2는 프라이버시 연구와 수업을 강조한다. 같은 기준에서 과정 적합성의 우열을 결정할 분명한 차이는 확인되지 않는다.",
+          "supporting_case_ids": [
+            "C1",
+            "C2"
+          ],
+          "evidence": [
+            {
+              "case_id": "C1",
+              "source_id": "sampurna-essay",
+              "quote": "Dr Smith has industrial collaborations that I am keen to explore"
+            },
+            {
+              "case_id": "C2",
+              "source_id": "naveen-essay",
+              "quote": "work with Dr. Jon Crowcroft"
+            }
+          ],
+          "limitations": "회차와 학위가 다르며 과거 심사표는 미확인이다. 비교 근거는 공개 Gates 에세이이고 C2의 별도 입학 연구계획을 같은 문항의 분량으로 합치지 않았다. C3와 C4는 제출 전문이 없어 이 비교에서 제외했다.",
+          "user_questions": [
+            "이 과정의 지도자, 수업이나 협력이 본인의 다음 단계에 필요한 이유는 무엇인가?"
+          ],
+          "causal_success_claim": false,
+          "interpretation": "observed_difference_not_selection_cause"
+        },
+        {
+          "criterion_id": "academic",
+          "observation": "선정 C1은 수용체 연구의 내용을, 미선정 C2는 연구 주제와 초고 수정 경험을 제시한다. 둘 다 연구 경험이 있지만 인용 부분만으로 연구 역량의 우열은 분명하지 않다.",
+          "supporting_case_ids": [
+            "C1",
+            "C2"
+          ],
+          "evidence": [
+            {
+              "case_id": "C1",
+              "source_id": "sampurna-essay",
+              "quote": "studied steroid modulation of GABA receptors in hippocampal neurons"
+            },
+            {
+              "case_id": "C2",
+              "source_id": "naveen-essay",
+              "quote": "I edited my draft, restructuring it in a narrative style."
+            }
+          ],
+          "limitations": "분야, 회차와 학위가 다르고 연구 성과는 작성자 보고다. 전체 성적, 추천서와 심사 자료는 없다. C2의 다른 프로그램 선정은 Gates의 학업 평가를 입증하지 않는다.",
+          "user_questions": [
+            "연구에서 본인이 맡은 질문, 판단과 산출물을 확인할 수 있는 자료는 무엇인가?"
+          ],
+          "causal_success_claim": false,
+          "interpretation": "observed_difference_not_selection_cause"
         }
       ]
     },
     {
-      "extractor": "public_demo_fixture_v1",
+      "extractor": "llm_full_experience_v2",
       "program_id": "google-phd-fellowship",
       "writing_pattern": [
         {
-          "basis": "observed_structure",
-          "insight": "과거 성과와 미래 계획을 하나의 미해결 문제로 연결한다.",
+          "pattern_id": "research-overall",
+          "insight": "공개 연구계획 네 사례는 활용상의 문제에서 연구 목표를 도출하고 연구 축별 근거와 계획을 전개한다. 아래는 문단 기능의 추상화다.",
           "sections": [
-            "사용자가 겪는 문제",
-            "본인이 수행한 연구와 결과",
-            "남은 질문과 검증 계획",
-            "프로그램과 연결되는 기여"
+            "문제 상황과 목표",
+            "연구 축별 근거와 계획",
+            "기여와 다음 방향"
           ],
-          "pattern_id": "google-research-v1",
-          "variations": [
-            "G2는 연구 단계별 검증을, G3는 세 연구 축을 중심으로 전개한다."
-          ],
-          "target_round": "2026-east-asia",
-          "source_rounds": [
-            "2024",
-            "2021",
-            "2019"
-          ],
-          "required_inputs": [
-            "구체적인 문제 상황",
-            "본인의 설계 판단",
-            "확인된 결과",
-            "다음 실험과 기대 효과"
-          ],
-          "generation_status": "outline_only_user_facts_required",
           "supporting_case_ids": [
             "G1",
             "G2",
+            "G3",
+            "G4"
+          ],
+          "variations": [
+            "G1: 개요→알고리즘→평가→상호작용→보급→졸업 후 연구. 공통 신뢰성 문제로 성과를 묶는다.",
+            "G2: 도입→세 단계 연구→영향. G3: 도입→일반화→신뢰성→해석가능성→윤리와 사회적 목표.",
+            "G4: 요약→배경→계획→결론. 결과가 모호한 공개본의 구성이다.",
+            "제공된 2026 안내는 연구계획 참고문헌 제외 3쪽, 영향과 리더십 각각 350단어다. 과거 분량과 문항의 동일성은 미확인이다."
+          ],
+          "required_inputs": [
+            "사용자와 상황, 겪는 실패, 연구 목표",
+            "본인 기여와 완료 상태, 방법과 남은 질문",
+            "수혜자, 예상 산출물과 후속 범위"
+          ],
+          "basis": "observed_structure",
+          "source_rounds": [
+            "2019",
+            "2021",
+            "2024"
+          ],
+          "target_round": "2026-east-asia",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "research-phase-tests",
+          "insight": "G2는 단계마다 장애물, 방법, 데이터와 평가를 대응시킨다. 제안 성능은 달성 결과와 구분된다.",
+          "sections": [
+            "장애물과 방법",
+            "데이터와 실행",
+            "검증과 유용성"
+          ],
+          "supporting_case_ids": [
+            "G2"
+          ],
+          "variations": [
+            "1단계는 소수 예제와 일반화, 2단계는 이미지 결합, 3단계는 사람의 정제를 포함한 은유 탐지다.",
+            "분포 밖 평가, 주석량 변화, 제거 실험과 전문가 평가를 계획한다."
+          ],
+          "required_inputs": [
+            "단계별 가설과 설계 이유",
+            "확보할 데이터, 주석과 협력자",
+            "비교 대상, 지표와 사용자 평가"
+          ],
+          "basis": "single_case_observation",
+          "source_rounds": [
+            "2021"
+          ],
+          "target_round": "2026-east-asia",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "research-theme-continuity",
+          "insight": "G3는 세 가지 목표마다 기존 연구, 진행 연구와 미래 질문을 연결한다.",
+          "sections": [
+            "일반화",
+            "신뢰성",
+            "해석가능성과 윤리"
+          ],
+          "supporting_case_ids": [
             "G3"
           ],
+          "variations": [
+            "일반화는 이론과 원격 지도 연구, 신뢰성은 교란 통제와 인턴 연구를 연결한다.",
+            "해석가능성은 입력 설명에서 훈련 자료의 영향으로 확장하고 윤리 교육 경험으로 닫는다."
+          ],
+          "required_inputs": [
+            "여러 과제로 전이할 근거와 기존 연구",
+            "교란 요인, 직접 분석한 결과와 남은 검증",
+            "설명을 사용할 사람, 후속 질문과 윤리 활동"
+          ],
+          "basis": "single_case_observation",
+          "source_rounds": [
+            "2019"
+          ],
+          "target_round": "2026-east-asia",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "research-layered-plan",
+          "insight": "G4는 기술과 사람의 판단을 층별로 조사하고 층간 비교로 통합 기여를 제안한다.",
+          "sections": [
+            "모델 분석",
+            "주석자 조사",
+            "개발자 조사와 통합"
+          ],
+          "supporting_case_ids": [
+            "G4"
+          ],
+          "variations": [
+            "모델의 중요 영역과 주석자의 판단을 비교한다.",
+            "개발자는 인터뷰와 민족지로 조사하며 개입 지점의 틀을 기대 산출물로 둔다."
+          ],
+          "required_inputs": [
+            "모델, 분류 범주와 분석 기법",
+            "참여자, 지침과 판단 근거 수집 방식",
+            "실무자 접근 경로, 조사 방법과 통합 산출물"
+          ],
+          "basis": "single_case_observation",
+          "source_rounds": [
+            "2021"
+          ],
+          "target_round": "2026-east-asia",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "impact",
+          "insight": "영향 서술은 영향을 받는 대상, 변화 경로와 활용 범위를 연결한다. 기대 효과의 실현 여부는 별도 근거가 필요하다.",
+          "sections": [
+            "영향받는 대상과 문제",
+            "변화를 만드는 경로",
+            "확산과 장기 목표"
+          ],
+          "supporting_case_ids": [
+            "G1",
+            "G2",
+            "G4"
+          ],
+          "variations": [
+            "G1 별도 에세이는 연구 요약→시각분석 공동체→다른 ML 분야다.",
+            "G4 별도 진술은 위해→학제 개입→생애주기 틀이다.",
+            "G2는 제안서 말미에서 자원 공개, 학제 활용과 사회적 활용을 전개한다."
+          ],
+          "required_inputs": [
+            "수혜자 또는 피해 집단과 현재 문제",
+            "산출물에서 실제 활용으로 이어지는 과정",
+            "공개 및 협력 계획, 확인된 활용과 기대 효과"
+          ],
+          "basis": "observed_structure",
+          "source_rounds": [
+            "2021",
+            "2024"
+          ],
+          "target_round": "2026-east-asia",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "leadership",
+          "insight": "두 공개 리더십 글은 공동체의 필요, 본인의 행동, 협력 운영과 결과를 제시한다.",
+          "sections": [
+            "필요와 동기",
+            "본인의 행동과 협력 운영",
+            "결과와 지속 방향"
+          ],
+          "supporting_case_ids": [
+            "G1",
+            "G4"
+          ],
+          "variations": [
+            "G1: 도움받은 경험→수업 개선→학기 후 지도→논문과 후배 지원의 순환.",
+            "G4: 리더십 정의→자원 공백→워크숍→지침 제작→외부 활용."
+          ],
+          "required_inputs": [
+            "누가 어떤 지원을 필요로 했는지",
+            "직접 바꾼 일, 책임, 일정과 피드백 운영",
+            "완성 산출물, 타인의 활용과 후속 활동"
+          ],
+          "basis": "observed_structure",
+          "source_rounds": [
+            "2021",
+            "2024"
+          ],
+          "target_round": "2026-east-asia",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "preparation",
+          "insight": "후기와 인터뷰의 준비 경험을 정리한 패턴이다. 인터뷰 사례의 제출 글 문단 순서는 미확인이다.",
+          "sections": [
+            "지원 경로",
+            "연구 방향 정리",
+            "문서 준비"
+          ],
+          "supporting_case_ids": [
+            "G1",
+            "G5",
+            "G6",
+            "G7"
+          ],
+          "variations": [
+            "G1은 연구계획과 에세이의 내용 및 디자인 일관성을 설명한다.",
+            "G5는 연구들의 연결, G6는 비전 표현과 추천서 요청, G7은 필요성의 논리 정립을 회고한다."
+          ],
+          "required_inputs": [
+            "학위 단계와 내부 추천 절차",
+            "기존 연구의 연결, 동기와 장기 목표",
+            "현재 요구 문서, 추천인과 검토할 내용"
+          ],
+          "basis": "observed_structure",
+          "source_rounds": [
+            "2024"
+          ],
+          "target_round": "2026-east-asia",
+          "generation_status": "outline_only_user_facts_required",
           "causal_success_claim": false
         }
       ],
@@ -1444,19 +2453,24 @@
           "case_id": "G1",
           "fragments": [
             {
-              "role": "problem",
-              "summary": "시각 분석에서 ML 결과를 신뢰하기 어려운 문제를 설정",
-              "evidence_ref": "R1"
+              "role": "연구계획",
+              "summary": "과신이라는 공통 문제로 알고리즘, 평가 지표, 브러싱, CLAMS와 ZADU를 연결하고 보급 계획으로 확장한다.",
+              "evidence_ref": "llm-hyeon-research-0"
             },
             {
-              "role": "prior_contribution",
-              "summary": "기존의 알고리즘과 평가 연구를 같은 문제의 해결로 연결",
-              "evidence_ref": "R1"
+              "role": "연구 영향",
+              "summary": "시각분석 공동체의 신뢰성에서 다른 ML 활용 분야의 안전성과 장기 목표로 확장한다.",
+              "evidence_ref": "llm-hyeon-essay-1"
             },
             {
-              "role": "plan",
-              "summary": "남은 박사 연구와 졸업 후 비전으로 확장",
-              "evidence_ref": "R2"
+              "role": "리더십",
+              "summary": "과제 개편, 정기 피드백과 학기 후 지도를 설명하고 논문 세 편과 한 편의 수상을 보고한다.",
+              "evidence_ref": "llm-hyeon-essay-2"
+            },
+            {
+              "role": "준비 후기",
+              "summary": "연구계획과 에세이의 일관성을 설명한다. 공개 CV는 제출본과 다르다.",
+              "evidence_ref": "llm-hyeon-index-3"
             }
           ],
           "award_round": null,
@@ -1484,13 +2498,46 @@
               "locator": "선정자 명단",
               "source_id": "google-recipients",
               "content_sha256": "eed7268fdcc3c7a6bdd40ed5b5b13dbd31e3e1650a9c37ce94d9eb76bdae3b43"
+            },
+            {
+              "id": "llm-hyeon-research-0",
+              "source_id": "hyeon-research",
+              "url": "https://hyeonword.com/google_fellowship_materials/assets/research_statement_hj_googlefellowship.pdf",
+              "anchor": "I aim to remedy overtrust in ML",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "c4a7dd042a347d948b57713d03d851d29c849ba5dfcb9b1199395cd01f5d6d43"
+            },
+            {
+              "id": "llm-hyeon-essay-1",
+              "source_id": "hyeon-essay",
+              "url": "https://hyeonword.com/google_fellowship_materials/assets/essay_hj_googlefellowship.pdf",
+              "anchor": "My research further informs practitioners",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "86137fed1534db3245b92aeb34be65cb50ceda25d3165a093403a1d33165b74d"
+            },
+            {
+              "id": "llm-hyeon-essay-2",
+              "source_id": "hyeon-essay",
+              "url": "https://hyeonword.com/google_fellowship_materials/assets/essay_hj_googlefellowship.pdf",
+              "anchor": "I thoroughly redesigned the homework assignments",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "86137fed1534db3245b92aeb34be65cb50ceda25d3165a093403a1d33165b74d"
+            },
+            {
+              "id": "llm-hyeon-index-3",
+              "source_id": "hyeon-index",
+              "url": "https://hyeonword.com/google_fellowship_materials/",
+              "anchor": "I am not able to share the exact version that I submitted.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "87e3280441f21b48e77b6810bdf39b3e4b80e68bdbcdc77e0c69c51ac5f1c282"
             }
           ],
           "rights_scope": "analysis_summary_only",
           "document_type": "application_statement",
           "visual_status": "not_analyzed",
           "application_round": "2024",
-          "outcome_verification": "official"
+          "outcome_verification": "official",
+          "outcome_status": "selected"
         },
         {
           "name": "공개 경험 사례 G2",
@@ -1498,14 +2545,14 @@
           "case_id": "G2",
           "fragments": [
             {
-              "role": "problem",
-              "summary": "프레이밍 탐지의 이론과 일반화 한계에서 질문을 도출",
-              "evidence_ref": "R1"
+              "role": "연구계획",
+              "summary": "주석 비용과 일반화 한계에 대응하는 세 단계를 제안한다. 분포 밖 평가, 주석량 변화, 제거 실험과 사용자 평가를 설계한다.",
+              "evidence_ref": "llm-julia-proposal-0"
             },
             {
-              "role": "plan",
-              "summary": "단계별 연구에 데이터와 평가 방법을 연결",
-              "evidence_ref": "R2"
+              "role": "기대 영향",
+              "summary": "자원 공개, 멘토링 기회, 학제 연구와 취약 집단 보호의 활용을 제안한다.",
+              "evidence_ref": "llm-julia-proposal-1"
             }
           ],
           "award_round": null,
@@ -1533,13 +2580,30 @@
               "locator": "선정자 명단",
               "source_id": "google-recipients",
               "content_sha256": "eed7268fdcc3c7a6bdd40ed5b5b13dbd31e3e1650a9c37ce94d9eb76bdae3b43"
+            },
+            {
+              "id": "llm-julia-proposal-0",
+              "source_id": "julia-proposal",
+              "url": "https://juliamendelsohn.github.io/assets/pdf/google_statement_2021.pdf",
+              "anchor": "I will further conduct ablation studies",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "c6d2a1e680901e49f2dea1a47cbbb9cb0a1a77239ab0a83811a569d43bbccb5f"
+            },
+            {
+              "id": "llm-julia-proposal-1",
+              "source_id": "julia-proposal",
+              "url": "https://juliamendelsohn.github.io/assets/pdf/google_statement_2021.pdf",
+              "anchor": "I will publicly share datasets",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "c6d2a1e680901e49f2dea1a47cbbb9cb0a1a77239ab0a83811a569d43bbccb5f"
             }
           ],
           "rights_scope": "analysis_summary_only",
           "document_type": "application_statement",
           "visual_status": "not_analyzed",
           "application_round": "2021",
-          "outcome_verification": "official"
+          "outcome_verification": "official",
+          "outcome_status": "selected"
         },
         {
           "name": "공개 경험 사례 G3",
@@ -1547,14 +2611,14 @@
           "case_id": "G3",
           "fragments": [
             {
-              "role": "problem",
-              "summary": "실제 활용에서 드러나는 언어 기술의 한계를 정리",
-              "evidence_ref": "R1"
+              "role": "연구계획",
+              "summary": "사회적 활용의 어려움에서 출발해 일반화, 신뢰성, 해석가능성마다 기존 연구와 후속 계획을 연결한다.",
+              "evidence_ref": "llm-anjalie-proposal-0"
             },
             {
-              "role": "plan",
-              "summary": "일반화, 신뢰성과 해석 가능성의 연구 축으로 과거 및 미래 작업 연결",
-              "evidence_ref": "R1"
+              "role": "연구 경험과 공동체 기여",
+              "summary": "Google 인턴 연구에서 추출성과 모델 성능의 관계를 보고한다. 윤리 수업 조교의 전문가 연결과 토론 경험도 제시한다.",
+              "evidence_ref": "llm-anjalie-proposal-1"
             }
           ],
           "award_round": null,
@@ -1574,13 +2638,30 @@
               "locator": "선정자 명단",
               "source_id": "google-recipients",
               "content_sha256": "eed7268fdcc3c7a6bdd40ed5b5b13dbd31e3e1650a9c37ce94d9eb76bdae3b43"
+            },
+            {
+              "id": "llm-anjalie-proposal-0",
+              "source_id": "anjalie-proposal",
+              "url": "https://anjalief.github.io/docs/2019_Google_Fellowship_Proposals.pdf",
+              "anchor": "high-stakes AI systems.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "6e8966588f45b240538f92c48b8e5cdb13ce82ccebbd44726c450c0c163fe2f8"
+            },
+            {
+              "id": "llm-anjalie-proposal-1",
+              "source_id": "anjalie-proposal",
+              "url": "https://anjalief.github.io/docs/2019_Google_Fellowship_Proposals.pdf",
+              "anchor": "I have\nestablished partnerships with experts in these fields",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "6e8966588f45b240538f92c48b8e5cdb13ce82ccebbd44726c450c0c163fe2f8"
             }
           ],
           "rights_scope": "analysis_summary_only",
           "document_type": "application_statement",
           "visual_status": "not_analyzed",
           "application_round": "2019",
-          "outcome_verification": "official"
+          "outcome_verification": "official",
+          "outcome_status": "selected"
         },
         {
           "name": "공개 경험 사례 G4",
@@ -1588,9 +2669,24 @@
           "case_id": "G4",
           "fragments": [
             {
-              "role": "reflection",
-              "summary": "여러 기업의 문항에 맞춰 내용을 조정했으며 유사한 과거 제안의 불합격도 공개",
-              "evidence_ref": "R1"
+              "role": "연구계획",
+              "summary": "정확도와 데이터에 집중한 접근의 공백을 제시하고 모델, 주석자, 개발자의 판단을 혼합 방법으로 연결한다.",
+              "evidence_ref": "llm-morgan-proposal-0"
+            },
+            {
+              "role": "기대 영향",
+              "summary": "분류의 위해에서 출발해 정체성을 다루는 개발 생애주기 전반의 개입 틀을 제안한다.",
+              "evidence_ref": "llm-morgan-impact-1"
+            },
+            {
+              "role": "리더십",
+              "summary": "워크숍 후 공동 저자 네 명과 지침을 만들며 일정, 편집과 피드백을 관리했다. 외부 활용 반응을 보고한다.",
+              "evidence_ref": "llm-morgan-leadership-2"
+            },
+            {
+              "role": "결과 확인 한계",
+              "summary": "Google 최종 결과가 모호해 선정 또는 미선정 집단에 배정하지 않는다. 이전 회차 반려 원문은 없다.",
+              "evidence_ref": "llm-morgan-index-3"
             }
           ],
           "award_round": null,
@@ -1618,13 +2714,47 @@
               "locator": "1쪽",
               "source_id": "morgan-leadership",
               "content_sha256": "07bb378fa4bcbe9e97ecb0ba4220b3b0b229b5c0d064529b0f73205f334668ca"
+            },
+            {
+              "id": "llm-morgan-proposal-0",
+              "source_id": "morgan-proposal",
+              "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_Proposal.pdf",
+              "anchor": "a mix\nof computational, quantitative, and qualitative research methods",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "614d8e0ff913471ed4f18faa3a759b372b73557e1538a9bb2caad1439712e21f"
+            },
+            {
+              "id": "llm-morgan-impact-1",
+              "source_id": "morgan-impact",
+              "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_ImpactStatement.pdf",
+              "anchor": "a framework for addressing identity",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "05ad396d11c9249873d64ce7ba30f07f3d70a6b22406f0dbf64ab63dce3c1be6"
+            },
+            {
+              "id": "llm-morgan-leadership-2",
+              "source_id": "morgan-leadership",
+              "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_LeadershipStatement.pdf",
+              "anchor": "I managed deadlines and milestones",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "e3667c5bef53d4fc0857d798d4610376622860d4f290ac8a407a0164f762b041"
+            },
+            {
+              "id": "llm-morgan-index-3",
+              "source_id": "morgan-index",
+              "url": "https://www.morgan-klaus.com/fellowships.html",
+              "anchor": "Google PhD Fellowship 2021 (won / rejected):",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "bb946fdb44630911ff7f6078f5cc60574e919f0c166fa3b137b5e2e23eac5a4d"
             }
           ],
           "rights_scope": "analysis_summary_only",
           "document_type": "application_statement",
           "visual_status": "not_analyzed",
           "application_round": "2021",
-          "outcome_verification": "self_reported"
+          "outcome_verification": "self_reported",
+          "outcome_status": "ambiguous",
+          "source_limitations": "작성자 페이지의 Google 결과 표기는 won / rejected로 최종 수혜 여부가 모호하다. 선정 집단이나 미선정 집단으로 배정하지 않는다."
         },
         {
           "name": "공개 경험 사례 G5",
@@ -1632,9 +2762,14 @@
           "case_id": "G5",
           "fragments": [
             {
-              "role": "reflection",
-              "summary": "연구를 시작한 이유, 해결할 문제와 앞으로의 방향을 연결하는 관점을 강조",
-              "evidence_ref": "R1"
+              "role": "지원 준비 회고",
+              "summary": "지도교수 권유, 교내 심사와 추천서를 거쳤고 연구들을 연결하며 장기 비전을 정리했다고 회고한다.",
+              "evidence_ref": "llm-moon-interview-0"
+            },
+            {
+              "role": "작성 조언",
+              "summary": "연구 동기, 해결 문제와 미래 방향을 설명하라고 조언한다. 실제 제출 글의 문단 순서는 미확인이다.",
+              "evidence_ref": "llm-moon-interview-1"
             }
           ],
           "award_round": null,
@@ -1646,13 +2781,30 @@
               "locator": "준비 경험",
               "source_id": "moon-interview",
               "content_sha256": "717e1f7cae58c4ba5f541750c122c7e51b7099626b4299f44114f425ec2aa5b4"
+            },
+            {
+              "id": "llm-moon-interview-0",
+              "source_id": "moon-interview",
+              "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-moon/",
+              "anchor": "저의 장기적인 연구 비전을 정립할 수 있었습니다.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0a2d29ea5b415c109bf6b583560f97ac8f6c99716fea345ce7b292630e971cce"
+            },
+            {
+              "id": "llm-moon-interview-1",
+              "source_id": "moon-interview",
+              "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-moon/",
+              "anchor": "왜 이 연구를 했는지, 이 연구가 어떤 문제를 해결하며, 앞으로 어디로 나아가고 싶은지",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0a2d29ea5b415c109bf6b583560f97ac8f6c99716fea345ce7b292630e971cce"
             }
           ],
           "rights_scope": "analysis_summary_only",
           "document_type": "official_interview",
           "visual_status": "not_analyzed",
           "application_round": null,
-          "outcome_verification": "official_interview"
+          "outcome_verification": "official_interview",
+          "outcome_status": "selected"
         },
         {
           "name": "공개 경험 사례 G6",
@@ -1660,9 +2812,14 @@
           "case_id": "G6",
           "fragments": [
             {
-              "role": "reflection",
-              "summary": "본인의 연구 방향성과 비전을 설명하는 관점",
-              "evidence_ref": "R1"
+              "role": "지원 준비 회고",
+              "summary": "통합과정 4년차에 제안서와 추천서를 준비하며 그래프 신경망과 확률 추론을 결합하는 비전을 담으려 했다.",
+              "evidence_ref": "llm-yoo-interview-0"
+            },
+            {
+              "role": "수혜 경험",
+              "summary": "멘토링, 진로 조언과 교류 기회의 도움을 보고한다. 비전이 선정 이유였다는 설명은 본인의 추측이다.",
+              "evidence_ref": "llm-yoo-interview-1"
             }
           ],
           "award_round": null,
@@ -1674,13 +2831,30 @@
               "locator": "준비 경험",
               "source_id": "yoo-interview",
               "content_sha256": "b42d9efd236d4760c02022daf560462b544b86beb3b9f4eb2c21b01a563bf62b"
+            },
+            {
+              "id": "llm-yoo-interview-0",
+              "source_id": "yoo-interview",
+              "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-yoo/",
+              "anchor": "약 4쪽 정도의 연구 프로포절을 작성하고",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "c6a0182f76b8ec2251dc3874493a55ccf11bc051b4e9b80c93c366e988c77829"
+            },
+            {
+              "id": "llm-yoo-interview-1",
+              "source_id": "yoo-interview",
+              "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-yoo/",
+              "anchor": "잘 보여주었기 때문이 아니었나 생각합니다.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "c6a0182f76b8ec2251dc3874493a55ccf11bc051b4e9b80c93c366e988c77829"
             }
           ],
           "rights_scope": "analysis_summary_only",
           "document_type": "official_interview",
           "visual_status": "not_analyzed",
           "application_round": null,
-          "outcome_verification": "official_interview"
+          "outcome_verification": "official_interview",
+          "outcome_status": "selected"
         },
         {
           "name": "공개 경험 사례 G7",
@@ -1688,9 +2862,14 @@
           "case_id": "G7",
           "fragments": [
             {
-              "role": "reflection",
-              "summary": "연구가 실제 사회 문제 해결에 기여할 경로를 드러내는 관점",
-              "evidence_ref": "R1"
+              "role": "지원 준비 회고",
+              "summary": "첫 MobiSys 논문 승인 무렵 지원했고 멀티 디바이스 연구의 필요성과 미래 가치를 전달하는 논리를 준비했다.",
+              "evidence_ref": "llm-oh-interview-0"
+            },
+            {
+              "role": "수혜 경험과 후속 연구",
+              "summary": "설계 조언과 FLUID 계열 후속 연구를 회고한다. 현재 온디바이스 AI 방향은 당시 연구와 구분된다.",
+              "evidence_ref": "llm-oh-interview-1"
             }
           ],
           "award_round": null,
@@ -1702,44 +2881,578 @@
               "locator": "준비 경험",
               "source_id": "oh-interview",
               "content_sha256": "4f69f14a9171b563dcaadb03cbe0279b959085ceb926c9773b53e28520eccfd0"
+            },
+            {
+              "id": "llm-oh-interview-0",
+              "source_id": "oh-interview",
+              "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-oh/",
+              "anchor": "멀티 디바이스 플랫폼 분야의 잠재력과 미래 가치를 강조하며",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "02c06c7006dff89f312c525b262e08f30a07fad0a852d490b16eb5c6e8e80a4c"
+            },
+            {
+              "id": "llm-oh-interview-1",
+              "source_id": "oh-interview",
+              "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-oh/",
+              "anchor": "디바이스 간 연결 방식, 시스템 내부 설계 등에 대한 실질적인 조언",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "02c06c7006dff89f312c525b262e08f30a07fad0a852d490b16eb5c6e8e80a4c"
             }
           ],
           "rights_scope": "analysis_summary_only",
           "document_type": "official_interview",
           "visual_status": "not_analyzed",
           "application_round": null,
-          "outcome_verification": "official_interview"
+          "outcome_verification": "official_interview",
+          "outcome_status": "selected"
         }
-      ]
+      ],
+      "pattern_extraction": {
+        "prompt_version": "whole-experience-evidence-v2",
+        "extractor": "llm_full_experience_v2",
+        "input_sha256": "415b3ee051771adf6305edae47341d72ad5a3782cb2810877c1bb1f8cd4fcd16",
+        "model": "gpt-6.1-sol",
+        "created_at": "2026-10-15T09:51:05.933180+00:00",
+        "full_text_characters": 147869,
+        "input_document_count": 14,
+        "model_attempts": 2,
+        "corrected_validation_errors": [
+          "Model quote is absent from the full original: julia-proposal; quote='Each phase of my proposed research addresses a major obstacle'"
+        ],
+        "input_documents": [
+          {
+            "source_id": "hyeon-index",
+            "role": "experience_index",
+            "case_ids": [
+              "G1"
+            ],
+            "url": "https://hyeonword.com/google_fellowship_materials/",
+            "document_id": "9de6a22e1e74d5f49fab3813835ab6c1dce762e678ee7da35ba6fb5a76927c01",
+            "content_sha256": "1f9562960047568fe487cb4e82d9a1c7ba26686f3970b6b87b2fca8c3c1e5d8c",
+            "text_sha256": "87e3280441f21b48e77b6810bdf39b3e4b80e68bdbcdc77e0c69c51ac5f1c282"
+          },
+          {
+            "source_id": "hyeon-research",
+            "role": "application_statement",
+            "case_ids": [
+              "G1"
+            ],
+            "url": "https://hyeonword.com/google_fellowship_materials/assets/research_statement_hj_googlefellowship.pdf",
+            "document_id": "2b4e269a34e48561f2ffbd470f1f06b0238aa521b9e9cb1833ab78211b027993",
+            "content_sha256": "a2f100377f601e7b530b10511e09994990703da6b0531fe44532339f8d6655df",
+            "text_sha256": "c4a7dd042a347d948b57713d03d851d29c849ba5dfcb9b1199395cd01f5d6d43"
+          },
+          {
+            "source_id": "hyeon-essay",
+            "role": "application_statement",
+            "case_ids": [
+              "G1"
+            ],
+            "url": "https://hyeonword.com/google_fellowship_materials/assets/essay_hj_googlefellowship.pdf",
+            "document_id": "b09c7367c51e0eaad208501f1ef7c371de6b553a0e6bba4a6095e0e51bc07092",
+            "content_sha256": "ddd4094777d61fa609a4744c26f378d0a3af78afa2afade0b5f36fe93f7b6fd0",
+            "text_sha256": "86137fed1534db3245b92aeb34be65cb50ceda25d3165a093403a1d33165b74d"
+          },
+          {
+            "source_id": "julia-index",
+            "role": "experience_index",
+            "case_ids": [
+              "G2"
+            ],
+            "url": "https://juliamendelsohn.github.io/resources/",
+            "document_id": "e75b1ad16bf3469532b0b8bf932c309856a3b201bfdc3feae8ddd6d765f643a7",
+            "content_sha256": "b146b361f0e78068f0872912ff4c48dc8606f6cb38c05d04f21249905768b83a",
+            "text_sha256": "c6b2b8ccc9af9eca5a5ffdc35c6d51f5adbb10cf3ada5de2221cab8733fe7c6e"
+          },
+          {
+            "source_id": "julia-proposal",
+            "role": "application_statement",
+            "case_ids": [
+              "G2"
+            ],
+            "url": "https://juliamendelsohn.github.io/assets/pdf/google_statement_2021.pdf",
+            "document_id": "fb06fe2bf99e289684933c76db064c1f9cb6e3f78b2eccf931ffdfd96fa84831",
+            "content_sha256": "3d414fdf99918da6f9b384f973a5bedb14691cd7f447bf3c0960e77349739a80",
+            "text_sha256": "c6d2a1e680901e49f2dea1a47cbbb9cb0a1a77239ab0a83811a569d43bbccb5f"
+          },
+          {
+            "source_id": "anjalie-index",
+            "role": "experience_index",
+            "case_ids": [
+              "G3"
+            ],
+            "url": "https://anjalief.github.io/statements.html",
+            "document_id": "19cc4521a64c37b7b5ec41dbb6462008cc28a9c7449f7e7f178c5e99e3dba247",
+            "content_sha256": "5249d9245ef6b33a7113c097b1d2275cf6aa58cb1cba43a2b7d2de6d0281c84b",
+            "text_sha256": "0357f6ba3c1e4e0170e1db49119cbc6cb4bfe72b716cba2c0891c391e8ecfeac"
+          },
+          {
+            "source_id": "anjalie-proposal",
+            "role": "application_statement",
+            "case_ids": [
+              "G3"
+            ],
+            "url": "https://anjalief.github.io/docs/2019_Google_Fellowship_Proposals.pdf",
+            "document_id": "7a904179268da69d2e9f998d8a0cc89d45fa5aafa764dc8c2f98f738ef957f3a",
+            "content_sha256": "2891b9b579c0e435dc0d045dcf52a1d3c8cfefe51aca070f708ef156cb093aae",
+            "text_sha256": "6e8966588f45b240538f92c48b8e5cdb13ce82ccebbd44726c450c0c163fe2f8"
+          },
+          {
+            "source_id": "morgan-index",
+            "role": "experience_index",
+            "case_ids": [
+              "G4"
+            ],
+            "url": "https://www.morgan-klaus.com/fellowships.html",
+            "document_id": "4bf1948841da630197aaac9e8a39d93b7ea6fb5f8ff45e426c35617780b73b8c",
+            "content_sha256": "b91e324547ec01a2dc9b907d26f86fb1ad36efd91cd8442c8abdf80fdf5d317a",
+            "text_sha256": "bb946fdb44630911ff7f6078f5cc60574e919f0c166fa3b137b5e2e23eac5a4d"
+          },
+          {
+            "source_id": "morgan-proposal",
+            "role": "application_statement",
+            "case_ids": [
+              "G4"
+            ],
+            "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_Proposal.pdf",
+            "document_id": "70228a2e275c75eb6a0769272d028a881d83567a1863c998cb28410eaf40f371",
+            "content_sha256": "0f42bcc5ad6cfcb4663b108d52f13f42b410e4ec27151a545ecbb0a5869edbae",
+            "text_sha256": "614d8e0ff913471ed4f18faa3a759b372b73557e1538a9bb2caad1439712e21f"
+          },
+          {
+            "source_id": "morgan-impact",
+            "role": "application_statement",
+            "case_ids": [
+              "G4"
+            ],
+            "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_ImpactStatement.pdf",
+            "document_id": "7234058992bf9ac0dd77b24e2d3c175dbd7c53d9c7e688aee32ad88ef2c9f31b",
+            "content_sha256": "8c17a2169b3d11d95fd33e88636b406dd515d3daab067e0c2097082c5648825e",
+            "text_sha256": "05ad396d11c9249873d64ce7ba30f07f3d70a6b22406f0dbf64ab63dce3c1be6"
+          },
+          {
+            "source_id": "morgan-leadership",
+            "role": "application_statement",
+            "case_ids": [
+              "G4"
+            ],
+            "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_LeadershipStatement.pdf",
+            "document_id": "61efd16717a790d74736cfb766b0fb40d6189b4b2e18da22978fb208d8b10c93",
+            "content_sha256": "07bb378fa4bcbe9e97ecb0ba4220b3b0b229b5c0d064529b0f73205f334668ca",
+            "text_sha256": "e3667c5bef53d4fc0857d798d4610376622860d4f290ac8a407a0164f762b041"
+          },
+          {
+            "source_id": "moon-interview",
+            "role": "official_interview",
+            "case_ids": [
+              "G5"
+            ],
+            "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-moon/",
+            "document_id": "72acc533f7f888ebea30acabb0e583d1b765d7bd056a972de60c30ab7f5b515e",
+            "content_sha256": "717e1f7cae58c4ba5f541750c122c7e51b7099626b4299f44114f425ec2aa5b4",
+            "text_sha256": "0a2d29ea5b415c109bf6b583560f97ac8f6c99716fea345ce7b292630e971cce"
+          },
+          {
+            "source_id": "yoo-interview",
+            "role": "official_interview",
+            "case_ids": [
+              "G6"
+            ],
+            "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-yoo/",
+            "document_id": "0a3d14caacce8b02b8029393c26701cefc914041da3f83b881b1561c486ceafd",
+            "content_sha256": "b42d9efd236d4760c02022daf560462b544b86beb3b9f4eb2c21b01a563bf62b",
+            "text_sha256": "c6a0182f76b8ec2251dc3874493a55ccf11bc051b4e9b80c93c366e988c77829"
+          },
+          {
+            "source_id": "oh-interview",
+            "role": "official_interview",
+            "case_ids": [
+              "G7"
+            ],
+            "url": "https://blog.google/intl/ko-kr/company-news/outreach-initiatives/phd-fellowship-2025-kr-oh/",
+            "document_id": "7eb52889fb99f1e07b35e8b9733d67460980e7b889ad981af2a78004ee8215cc",
+            "content_sha256": "4f69f14a9171b563dcaadb03cbe0279b959085ceb926c9773b53e28520eccfd0",
+            "text_sha256": "02c06c7006dff89f312c525b262e08f30a07fad0a852d490b16eb5c6e8e80a4c"
+          }
+        ],
+        "network_collection_executed": false
+      },
+      "document_analyses": [
+        {
+          "source_id": "hyeon-index",
+          "summary": "资料 목록과 준비 후기다. 연구계획과 에세이의 내용 및 디자인 일관성을 설명한다. 공개 CV는 실제 제출본이 아닌 2025년판이다.",
+          "quote": "I focused on maintaining a consistency with the research statement."
+        },
+        {
+          "source_id": "hyeon-research",
+          "summary": "공개 연구계획서다. DR의 신뢰성을 알고리즘, 평가, 상호작용, 보급 순서로 전개한다. 기존 성과에서 문헌조사, 점검 도구와 졸업 후 연구로 연결한다. 성능과 이용량은 작성자 보고다.",
+          "quote": "I plan to dedicate the rest of my Ph.D. study to further democratizing my findings."
+        },
+        {
+          "source_id": "hyeon-essay",
+          "summary": "영향과 리더십의 별도 응답이다. 영향은 시각분석에서 다른 ML 분야로 확장한다. 리더십은 교육 개선, 지속 지도와 출판 성과를 연결한다.",
+          "quote": "I thoroughly redesigned the homework assignments"
+        },
+        {
+          "source_id": "julia-index",
+          "summary": "지원 자료 목록이다. Google 2021 awarded를 명시한다. Meta finalist와 NSF honorable mention은 별개 결과이며 목록으로 제출 글 구성을 추정할 수 없다.",
+          "quote": "Google PhD Fellowship Proposal (2021; awarded)"
+        },
+        {
+          "source_id": "julia-proposal",
+          "summary": "공개 제안서다. 이론적 의미와 일반화의 공백에서 시작해 소수 예제, 멀티모달, 은유 탐지로 확장한다. 단계별 방법과 평가 이후 공개 자원, 학제 활용과 사회적 영향을 제안한다.",
+          "quote": "Phase 1: Flexible frame detection with Siamese networks and multitask learning"
+        },
+        {
+          "source_id": "anjalie-index",
+          "summary": "성공한 지원 자료를 공유하는 목록이다. Google 2019 연구계획서를 구직, 박사후연구원과 NSF 자료에서 구분한다. 목록 자체는 구성 근거가 아니다.",
+          "quote": "here are copies of my successful application statements:"
+        },
+        {
+          "source_id": "anjalie-proposal",
+          "summary": "공개 연구계획서다. 일반화, 신뢰성, 해석가능성별로 완료 연구와 후속 계획을 연결한다. 교란 통제, Google 인턴 연구, 훈련 자료 기반 설명을 다루고 윤리 교육 경험으로 끝낸다.",
+          "quote": "Generalizability"
+        },
+        {
+          "source_id": "morgan-index",
+          "summary": "자료 목록과 후기다. Google의 won / rejected는 모호하다. 이전 회차 미선정 제출 원문은 없고 Microsoft 선정은 다른 프로그램이므로 결과 비교를 만들 수 없다.",
+          "quote": "Google PhD Fellowship 2021 (won / rejected):"
+        },
+        {
+          "source_id": "morgan-proposal",
+          "summary": "공개 제안서다. 요약, 배경, 계획, 결론 순서로 정체성의 정의와 구현을 다룬다. 모델, 주석, 개발자 조사를 연결해 개입 지점의 틀을 제안한다.",
+          "quote": "three socio-technical levels of FA"
+        },
+        {
+          "source_id": "morgan-impact",
+          "summary": "별도 영향 진술이다. 정체성 분류의 위해와 주변화된 집단에서 출발해 학제 협력과 개발 생애주기의 개입으로 연결한다. 실현된 영향 측정은 미확인이다.",
+          "quote": "My broader goal is to mitigate technological harm"
+        },
+        {
+          "source_id": "morgan-leadership",
+          "summary": "별도 리더십 진술이다. 자원 부족, 워크숍, 공동 저자 운영, 지침 완성과 외부 활용 순서다. 활용 연락과 강연 초청은 작성자 보고다.",
+          "quote": "I led a team of four co-authors"
+        },
+        {
+          "source_id": "moon-interview",
+          "summary": "2020 수상자의 2025년 공식 인터뷰다. 내부 추천, 연구들의 연결과 장기 비전 정립을 회고한다. 팬데믹으로 행사와 멘토링은 진행하지 못했다. 제출 글은 미공개다.",
+          "quote": "각 연구 간의 연관성을 고민하게 되었고"
+        },
+        {
+          "source_id": "yoo-interview",
+          "summary": "2019 수상자의 2025년 공식 인터뷰다. 통합과정 4년차의 제안서 준비, 비전 점검, 멘토링과 진로 영향을 회고한다. 선정 이유에 대한 본인의 추측은 심사 근거로 채택하지 않는다.",
+          "quote": "연구 제안서를 작성하면서 제 연구 방향성과 비전을 최대한 담으려 노력했습니다."
+        },
+        {
+          "source_id": "oh-interview",
+          "summary": "2017 경험의 2025년 공식 인터뷰다. 필요성과 사회적 가치를 설명한 준비, 설계 멘토링과 후속 연구를 회고한다. 현재 AI 연구는 당시 지원 연구와 시점이 다르다. 제출 글은 미공개다.",
+          "quote": "멀티 디바이스 플랫폼 분야의 잠재력과 미래 가치를 강조하며"
+        }
+      ],
+      "evaluation_criteria": [
+        {
+          "criterion_id": "research",
+          "label": "연구계획의 강점",
+          "source_id": "google-official",
+          "quote": "strength of the research proposal",
+          "url": "https://research.google/programs-and-events/phd-fellowship/",
+          "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+        },
+        {
+          "criterion_id": "impact",
+          "label": "연구의 영향",
+          "source_id": "google-official",
+          "quote": "research impact",
+          "url": "https://research.google/programs-and-events/phd-fellowship/",
+          "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+        },
+        {
+          "criterion_id": "academic",
+          "label": "학업 및 연구 성취",
+          "source_id": "google-official",
+          "quote": "student academic achievements",
+          "url": "https://research.google/programs-and-events/phd-fellowship/",
+          "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+        },
+        {
+          "criterion_id": "leadership",
+          "label": "리더십 잠재력",
+          "source_id": "google-official",
+          "quote": "leadership potential",
+          "url": "https://research.google/programs-and-events/phd-fellowship/",
+          "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+        }
+      ],
+      "criterion_observations": [
+        {
+          "case_id": "G1",
+          "criterion_id": "leadership",
+          "claim": "후배의 연구와 출판을 돕는 역할을 제시한다.",
+          "personal_action": "과제를 개편하고 정기 피드백과 학기 후 지도를 했다.",
+          "result_evidence": "공동 저자 단편 논문 세 편과 한 편의 최우수 단편논문상을 보고한다.",
+          "institution_fit": "연구 공동체 기여와 연결된다. Google 활동과 직접 연결은 미확인이다.",
+          "limitations": "2024 박사과정 공개 에세이의 자기보고다. 최종 제출본 대조와 과거 심사표 동일성은 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "G1",
+              "source_id": "hyeon-essay",
+              "quote": "I routinely reviewed\nprojects and facilitated feedback sessions every few weeks."
+            }
+          ]
+        },
+        {
+          "case_id": "G2",
+          "criterion_id": "research",
+          "claim": "이론에 근거한 프레임의 일반화와 주석 부담 감소를 제안한다.",
+          "personal_action": "기존 연구에서 프레임 유형에 따른 분석 차이를 보였다고 보고한다. 세 단계 개발과 검증은 계획이다.",
+          "result_evidence": "기존 연구의 발견을 인용한다. 제안 모델의 달성 성능은 미확인이다.",
+          "institution_fit": "NLP와 AI 연구에 연결된다. Google 개별 연구와 직접 연결은 미확인이다.",
+          "limitations": "2021 박사과정 공개본이다. 현재 3쪽 형식과 다르며 최종본 대조와 과거 심사표 동일성은 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "G2",
+              "source_id": "julia-proposal",
+              "quote": "I will also evaluate out-of-domain performance"
+            }
+          ]
+        },
+        {
+          "case_id": "G3",
+          "criterion_id": "academic",
+          "claim": "기존 연구와 인턴 경험으로 사회적 활용을 위한 NLP 역량을 제시한다.",
+          "personal_action": "이론과 주석을 결합해 편향을 분석하고 생성 모델의 동작을 조사했다.",
+          "result_evidence": "학회 논문과 추출성에 따른 모델 성능 차이를 보고한다. 인턴 연구는 투고 준비 단계다.",
+          "institution_fit": "Google Structured Data 팀의 인턴 경험을 명시한다.",
+          "limitations": "2019 박사과정 공개본이다. 성능은 작성자 보고이며 최종본 대조와 과거 심사표 동일성은 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "G3",
+              "source_id": "anjalie-proposal",
+              "quote": "as a Research Intern with the Structured Data team at Google this summer"
+            }
+          ]
+        },
+        {
+          "case_id": "G4",
+          "criterion_id": "leadership",
+          "claim": "협력을 통해 HCI의 성별 포용 지침을 완성한 경험을 제시한다.",
+          "personal_action": "워크숍을 열고 공동 저자 네 명, 마감, 편집과 반복 피드백을 관리했다.",
+          "result_evidence": "완성 지침, 타 분야 활용 연락과 Facebook 강연 초청을 보고한다. 활용 규모는 미확인이다.",
+          "institution_fit": "포용적인 연구 공동체에 연결된다. Facebook 초청은 Google 활동과 구분된다.",
+          "limitations": "2021 박사과정 공개본이다. Google 결과는 모호하다. 최종본 대조와 과거 심사표 동일성은 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "G4",
+              "source_id": "morgan-leadership",
+              "quote": "assigned editors\nto each section of the piece."
+            }
+          ]
+        },
+        {
+          "case_id": "G5",
+          "criterion_id": "research",
+          "claim": "개별 연구를 연결하는 장기 비전을 준비 과정에서 정리했다고 회고한다.",
+          "personal_action": "연구계획서를 쓰며 수행한 연구들의 연관성을 고민했다.",
+          "result_evidence": "비전 정립과 이후 논문 및 제안서 작성의 도움을 보고한다. 당시 기술적 검증은 미확인이다.",
+          "institution_fit": "인터뷰 시점에 Google과 디지털 휴먼 및 인터랙티브 AI 협업을 희망한다.",
+          "limitations": "2020 수상 당시 박사과정 경험의 2025년 교수 인터뷰다. 제출본, 당시 학년과 과거 심사표 동일성은 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "G5",
+              "source_id": "moon-interview",
+              "quote": "각 연구 간의 연관성을 고민하게 되었고"
+            }
+          ]
+        },
+        {
+          "case_id": "G6",
+          "criterion_id": "research",
+          "claim": "그래프 신경망과 확률 추론을 결합하는 연구 비전을 표현했다고 회고한다.",
+          "personal_action": "제안서 작성과 추천서 요청 과정에서 연구자로서의 방향을 정리했다.",
+          "result_evidence": "방향 점검과 자신감 향상을 보고한다. 당시 성능과 검증 결과는 미확인이다.",
+          "institution_fit": "Google 멘토에게 최적화와 TensorFlow 개선 방향을 들었다고 보고한다.",
+          "limitations": "2019 통합과정 4년차 경험의 2025년 교수 인터뷰다. 제출본과 과거 심사표 동일성은 미확인이다. 선정 원인 추측은 채택하지 않는다.",
+          "evidence": [
+            {
+              "case_id": "G6",
+              "source_id": "yoo-interview",
+              "quote": "제 연구 방향을 큰 그림에서 점검할 수 있는 좋은 계기"
+            }
+          ]
+        },
+        {
+          "case_id": "G7",
+          "criterion_id": "impact",
+          "claim": "멀티 디바이스 연구의 사회적 필요성과 미래 가치를 전달하려 했다고 회고한다.",
+          "personal_action": "제안서의 필요성 논리를 준비했고 선정 후 FLUID 계열 연구를 수행했다고 설명한다.",
+          "result_evidence": "후속 연구와 전달 능력 향상을 보고한다. 당시 제안의 정량 사용자 효과는 미확인이다.",
+          "institution_fit": "Android 공개가 연구 기반이었으며 멘토에게 산업과 설계 조언을 받았다고 설명한다.",
+          "limitations": "2017 박사과정 경험의 2025년 교수 인터뷰다. 후속 연구와 현재 AI 방향은 시점이 다르다. 제출본과 과거 심사표 동일성은 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "G7",
+              "source_id": "oh-interview",
+              "quote": "실제 사회 문제 해결에 어떻게 기여할 수 있는지 설득력 있게 제시하고자 깊이 고민했습니다."
+            }
+          ]
+        }
+      ],
+      "outcome_comparisons": []
     },
     {
-      "extractor": "public_demo_fixture_v1",
+      "extractor": "llm_full_experience_v2",
       "program_id": "nvidia-graduate-fellowship",
       "writing_pattern": [
         {
-          "basis": "single_case_observation",
-          "insight": "본인의 기존 기술이 NVIDIA 환경의 구체적인 문제를 어떻게 풀고 다음 연구로 이어지는지 연결한다.",
+          "pattern_id": "research-arc",
+          "insight": "세 지원용 원문은 공통 연구 목표 아래 기존 기여를 연결한다. N1과 N3는 문제에서 시작하고 N2는 이력에서 시작한다. 현재 기준으로 읽은 구성 관찰이며 선정 원인이나 과거 문항의 재사용 지침은 아니다.",
           "sections": [
-            "성능 접근성 문제",
-            "본인의 해결과 결과",
-            "NVIDIA 기술 및 연구와의 연결",
-            "다음 기술적 과제"
+            "연구를 묶는 문제와 목표",
+            "핵심 기여와 근거",
+            "다음 단계 또는 지원의 효용"
           ],
-          "pattern_id": "nvidia-single-case-v1",
-          "variations": [],
-          "target_round": "2027-2028",
-          "source_rounds": [],
-          "required_inputs": [
-            "사용자의 문제",
-            "본인의 기술적 판단",
-            "측정 결과",
-            "NVIDIA와의 연결",
-            "다음 검증"
-          ],
-          "generation_status": "outline_only_user_facts_required",
           "supporting_case_ids": [
-            "N1"
+            "N1",
+            "N2",
+            "N3"
           ],
+          "variations": [
+            "N1: 접근성 문제, 두 병목, 컴파일러, 응용 라이브러리, 후속 과제.",
+            "N2: 이력, 공통 목표, 네 프로젝트, 자원 효용.",
+            "N3: 위험 사례, 세 목표, 기존 결과와 계획, 기관 협업."
+          ],
+          "required_inputs": [
+            "누가 어떤 작업에서 막히며 본인 연구가 해결할 공통 문제",
+            "본인 기여, 작동 원리, 비교 대상과 실제 결과",
+            "남은 질문과 실행 계획 또는 지원 자원의 구체적 용도"
+          ],
+          "basis": "observed_structure",
+          "source_rounds": [
+            "2017",
+            "2022-2023"
+          ],
+          "target_round": "2027-2028",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "future-research",
+          "insight": "N1과 N3는 기존 결과가 남긴 기술적 한계에서 미래 연구를 전개한다. 연구계획의 근거이며 별도의 리더십 경험을 입증하지 않는다.",
+          "sections": [
+            "기존 결과와 남은 한계",
+            "후속 질문과 접근",
+            "확장 방향"
+          ],
+          "supporting_case_ids": [
+            "N1",
+            "N3"
+          ],
+          "variations": [
+            "N1은 정적 라이브러리에서 JIT와 분산 희소 조립으로 전개한다.",
+            "N3는 공간 섭동에서 내부 표현, 전이, 편향과 적대적 견고성으로 전개한다.",
+            "두 문서 모두 명시적인 일정표와 단계별 성공 기준은 제한적이다."
+          ],
+          "required_inputs": [
+            "완료한 연구와 아직 해결하지 못한 조건",
+            "검증할 질문, 제안 접근과 필요한 실험",
+            "확장할 대상과 현실적인 연구 범위"
+          ],
+          "basis": "observed_structure",
+          "source_rounds": [
+            "2017"
+          ],
+          "target_round": "2027-2028",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "project-portfolio",
+          "insight": "N2 단일 사례는 이력 요약 뒤 알고리즘, 런타임과 GPU 기능 활용이라는 축으로 프로젝트를 묶는다. 프로젝트 설명은 설계, 결과와 공개 상태를 반복한다.",
+          "sections": [
+            "학업과 연구 이력",
+            "공통 연구 목표",
+            "프로젝트별 기여",
+            "지원 자원 활용"
+          ],
+          "supporting_case_ids": [
+            "N2"
+          ],
+          "variations": [
+            "학회 게재, 오픈소스와 투고 상태를 구분한다.",
+            "구체적인 미래 과제보다 완료하거나 진행 중인 프로젝트에 비중을 둔다."
+          ],
+          "required_inputs": [
+            "확인 가능한 학업 수치, 논문과 전문 활동 및 인턴십",
+            "프로젝트를 연결할 연구 목표",
+            "각 프로젝트의 본인 역할, 핵심 설계, 비교 결과와 공개 상태",
+            "필요한 자원과 그 자원이 도울 연구"
+          ],
+          "basis": "single_case_observation",
+          "source_rounds": [
+            "2022-2023"
+          ],
+          "target_round": "2027-2028",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "impact-and-fit",
+          "insight": "영향과 기관 연결은 서로 다른 근거로 작성된다. 사용자가 얻는 이익, 실제 사용이나 채택, NVIDIA와의 연결을 구분해야 한다. GPU 활용 자체에서 미래 GPU에 미칠 영향을 추정할 수 없다.",
+          "sections": [
+            "연구의 수혜자와 변화",
+            "관찰한 효용과 기대 영향",
+            "NVIDIA와의 연결"
+          ],
+          "supporting_case_ids": [
+            "N1",
+            "N2",
+            "N3"
+          ],
+          "variations": [
+            "N1은 일반 개발자의 접근성과 NVIDIA 공동 개발 경험을 본문에 연결한다.",
+            "N2는 성능과 에너지 효율의 활용 가치를 설명하고 마지막에 자원 접근을 요청한다.",
+            "N3는 안전한 AI의 필요성과 NVIDIA의 역할을 연결해 향후 협업을 제안한다."
+          ],
+          "required_inputs": [
+            "수혜자, 사용 상황과 줄이려는 부담",
+            "직접 관찰한 결과, 채택 여부와 아직 기대에 머무는 효과",
+            "관련 NVIDIA 기술, 실제 협업 또는 제안할 협업과 영향 경로"
+          ],
+          "basis": "observed_structure",
+          "source_rounds": [
+            "2017",
+            "2022-2023"
+          ],
+          "target_round": "2027-2028",
+          "generation_status": "outline_only_user_facts_required",
+          "causal_success_claim": false
+        },
+        {
+          "pattern_id": "panel-writing-advice",
+          "insight": "N2의 사후 패널 조언은 핵심 통찰과 기존 연구 비교를 강조한다. 제출 문단 순서나 본인의 준비 과정을 입증하는 자료는 아니다. 준비 과정, 리더십, CV와 추천서 구성은 별도 패턴을 만들 근거가 부족하다.",
+          "sections": [
+            "핵심 통찰",
+            "기존 연구와 비교",
+            "실제 활용"
+          ],
+          "supporting_case_ids": [
+            "N2"
+          ],
+          "variations": [
+            "패널의 배경, 목표, 주요 프로젝트, 미래 연구 순서는 공동 조언이다.",
+            "활용이나 채택을 쓸 때는 실제 확인한 사실이 필요하다."
+          ],
+          "required_inputs": [
+            "본인 연구의 핵심 통찰과 그 근거",
+            "비교 연구와 동일 조건에서 확인한 차이",
+            "실사용 또는 채택 사실과 확인 자료"
+          ],
+          "basis": "single_case_observation",
+          "source_rounds": [
+            "2022-2023"
+          ],
+          "target_round": "2027-2028",
+          "generation_status": "outline_only_user_facts_required",
           "causal_success_claim": false
         }
       ],
@@ -1750,19 +3463,29 @@
           "case_id": "N1",
           "fragments": [
             {
-              "role": "problem",
-              "summary": "일반 프로그래머가 분산 및 가속 시스템의 성능을 얻기 어려운 상황",
-              "evidence_ref": "R1"
+              "role": "자료 출처 확인",
+              "summary": "홈페이지가 NVIDIA 지원서 링크를 명시한다. 경력과 논문 및 교육 목록은 별도 배경 자료다.",
+              "evidence_ref": "llm-rohan-index-0"
             },
             {
-              "role": "prior_contribution",
-              "summary": "DISTAL 결과를 NVIDIA 인턴십의 legate.sparse 작업과 연결",
-              "evidence_ref": "R2"
+              "role": "문제와 연구 비전",
+              "summary": "분산 가속 시스템에서 일반 개발자가 고성능을 얻기 어렵다는 문제를 제시하고 배열 프로그래밍의 커널 개발과 시스템 구성으로 병목을 나눈다.",
+              "evidence_ref": "llm-rohan-proposal-1"
             },
             {
-              "role": "plan",
-              "summary": "현재 성과에서 JIT 스케줄링과 분산 희소 배열 조립 과제를 도출",
-              "evidence_ref": "R2"
+              "role": "기존 기여와 작동 원리",
+              "summary": "박사 초기 연구인 DISTAL과 희소 확장을 설명한다. 계산, 데이터 배치와 실행 매핑의 분리가 최적화 탐색을 돕고 기존 라이브러리와 경쟁한다고 보고한다.",
+              "evidence_ref": "llm-rohan-proposal-2"
+            },
+            {
+              "role": "실행 가능성과 사용 가치",
+              "summary": "NVIDIA 인턴십의 legate.sparse에 DISTAL을 적용해 12주 안에 scipy.sparse 인터페이스의 상당 부분을 구현했다고 보고한다. 단일 GPU와 분산 시스템 비교도 제시한다.",
+              "evidence_ref": "llm-rohan-proposal-3"
+            },
+            {
+              "role": "후속 연구와 장기 확장",
+              "summary": "사용자 정의 연산을 위한 JIT 컴파일과 데이터 분포를 고려한 자동 스케줄링, 분산 희소 출력 조립을 제안한 뒤 다른 응용 분야의 언어와 시스템으로 확장한다.",
+              "evidence_ref": "llm-rohan-proposal-4"
             }
           ],
           "award_round": "2023",
@@ -1790,13 +3513,582 @@
               "locator": "2023 선정 명단",
               "source_id": "nvidia-recipients",
               "content_sha256": "169f48da72882a7f0d8b2f68c257893e517a7381019574cefb54f2d9477d7558"
+            },
+            {
+              "id": "llm-rohan-index-0",
+              "source_id": "rohan-index",
+              "url": "https://rohany.github.io/",
+              "anchor": "My application statement for the NVIDIA Graduate Fellowship",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "55beb47c39a778a0ebb44127e61778357c0ff60f3ed45018a0e2e287d2fef0e6"
+            },
+            {
+              "id": "llm-rohan-proposal-1",
+              "source_id": "rohan-proposal",
+              "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+              "anchor": "their development has been hin-\ndered by at least two major technical challenges",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963"
+            },
+            {
+              "id": "llm-rohan-proposal-2",
+              "source_id": "rohan-proposal",
+              "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+              "anchor": "through independent high-level languages.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963"
+            },
+            {
+              "id": "llm-rohan-proposal-3",
+              "source_id": "rohan-proposal",
+              "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+              "anchor": "within a 12-week period.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963"
+            },
+            {
+              "id": "llm-rohan-proposal-4",
+              "source_id": "rohan-proposal",
+              "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+              "anchor": "must also find schedules that compose well with existing data distributions",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963"
             }
           ],
           "rights_scope": "analysis_summary_only",
           "document_type": "application_statement",
           "visual_status": "not_analyzed",
           "application_round": null,
-          "outcome_verification": "official"
+          "outcome_verification": "official",
+          "outcome_status": "selected"
+        },
+        {
+          "case_id": "N2",
+          "name": "Yuke Wang",
+          "application_round": "2022-2023",
+          "document_type": "application_statement_and_panel",
+          "outcome_status": "selected",
+          "outcome_verification": "official",
+          "outcome_evidence": [
+            {
+              "url": "https://research.nvidia.com/graduate-fellowships/2022",
+              "quote": "Yuke Wang",
+              "verification": "official"
+            }
+          ],
+          "source_limitations": "지원용 공개 문서다. PDF 자체에는 제출 프로그램과 회차가 적혀 있지 않아 정확한 최종 제출본은 미확인이다.",
+          "source_refs": [
+            {
+              "id": "yuke-proposal",
+              "source_id": "yuke-proposal",
+              "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+              "locator": "application_statement",
+              "content_sha256": "d1cc2f892c3bae3931e57e2d9c54e8e14d7d3751bce515b0b659d83184f1bdb0"
+            },
+            {
+              "id": "yuke-panel",
+              "source_id": "yuke-panel",
+              "url": "https://students-at-systems.org/pages/events/fellowship-panel.html",
+              "locator": "experience_review",
+              "content_sha256": "651d999ce1040b17ef510c6a17854fa8970152df922a42a844c96bba0758e6a0"
+            },
+            {
+              "id": "llm-yuke-proposal-0",
+              "source_id": "yuke-proposal",
+              "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+              "anchor": "successfully improved the end-to-end performance by 30%",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "4bac610f3574b02c61dc64992f4947682c6bf2579eee4dfbbf0c0fc494262dc3"
+            },
+            {
+              "id": "llm-yuke-proposal-1",
+              "source_id": "yuke-proposal",
+              "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+              "anchor": "DSXplore can reduce up to 3x memory overhead and save 40% to 60% computations.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "4bac610f3574b02c61dc64992f4947682c6bf2579eee4dfbbf0c0fc494262dc3"
+            },
+            {
+              "id": "llm-yuke-proposal-2",
+              "source_id": "yuke-proposal",
+              "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+              "anchor": "QGTC achieves an average 3.17x speedup",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "4bac610f3574b02c61dc64992f4947682c6bf2579eee4dfbbf0c0fc494262dc3"
+            },
+            {
+              "id": "llm-yuke-proposal-3",
+              "source_id": "yuke-proposal",
+              "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+              "anchor": "providing me easier access to state-of-the-art research",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "4bac610f3574b02c61dc64992f4947682c6bf2579eee4dfbbf0c0fc494262dc3"
+            },
+            {
+              "id": "llm-yuke-panel-4",
+              "source_id": "yuke-panel",
+              "url": "https://students-at-systems.org/pages/events/fellowship-panel.html",
+              "anchor": "Yuke advised highlighting key insights and comparing them to existing work.",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "7cbaed9e278d0e4f31d9ddab47f6c21b7ed0fb2e0ce4ea2a9b22a7132790baa9"
+            }
+          ],
+          "fragments": [
+            {
+              "role": "학업과 연구 이력의 선제 제시",
+              "summary": "박사 진학 연차, GPA 3.92/4.00, 논문 14편, 아티팩트 평가 활동과 NVIDIA 인턴십의 운영 파이프라인 성능 30% 개선을 보고한다.",
+              "evidence_ref": "llm-yuke-proposal-0"
+            },
+            {
+              "role": "공통 목표와 알고리즘 및 런타임 기여",
+              "summary": "GPU 딥러닝의 비효율 개선을 공통 목표로 둔다. DSXplore의 메모리와 계산 감소, GNNAdvisor의 지연 감소를 핵심 설계, 비교 결과, 게재와 공개 코드 순서로 설명한다.",
+              "evidence_ref": "llm-yuke-proposal-1"
+            },
+            {
+              "role": "하드웨어 기능 활용과 후속 실적",
+              "summary": "APNN-TC의 임의 정밀도 연산과 Tensor Core 매핑, QGTC의 저비트 표현과 커널 및 전송 최적화를 설명한다. QGTC는 평균 3.17배 가속과 당시 투고 상태를 보고한다.",
+              "evidence_ref": "llm-yuke-proposal-2"
+            },
+            {
+              "role": "지원 자원의 연구상 효용",
+              "summary": "서버, GPU와 책에 대한 접근 및 새로운 아이디어 개발을 기대한다. 구체적인 신규 연구 과제나 일정은 제시하지 않는다.",
+              "evidence_ref": "llm-yuke-proposal-3"
+            },
+            {
+              "role": "사후 작성 조언",
+              "summary": "패널 후기는 Yuke의 조언으로 핵심 통찰과 기존 연구 비교를 명시한다. 활용과 채택 사례 강조도 이어지지만 실제 준비 일정이나 수정 과정은 공개하지 않는다.",
+              "evidence_ref": "llm-yuke-panel-4"
+            }
+          ]
+        },
+        {
+          "case_id": "N3",
+          "name": "Ruth Fong",
+          "application_round": "2017",
+          "document_type": "application_statement",
+          "outcome_status": "not_selected",
+          "outcome_verification": "author_reported",
+          "outcome_evidence": [
+            {
+              "url": "https://medium.com/@ruthfong/applying-to-the-open-philanthropy-ai-fellowship-48dafe7fe27c",
+              "quote": "which I did not receive",
+              "verification": "author_reported"
+            }
+          ],
+          "source_limitations": "NVIDIA 미선정은 작성자 보고다. 다른 프로그램 Open Philanthropy에서의 선정과 구분한다.",
+          "source_refs": [
+            {
+              "id": "ruth-proposal",
+              "source_id": "ruth-proposal",
+              "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+              "locator": "application_statement",
+              "content_sha256": "25ee765293861a712877b28173d0de9c7d997ba0f90af1957fb700e08fb28d18"
+            },
+            {
+              "id": "llm-ruth-proposal-0",
+              "source_id": "ruth-proposal",
+              "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+              "anchor": "Human biases can also transfer to algorithmic ones",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae"
+            },
+            {
+              "id": "llm-ruth-proposal-1",
+              "source_id": "ruth-proposal",
+              "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+              "anchor": "improve\nCNNs to be “de-bias-able”",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae"
+            },
+            {
+              "id": "llm-ruth-proposal-2",
+              "source_id": "ruth-proposal",
+              "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+              "anchor": "We\nalso introduced a novel metric",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae"
+            },
+            {
+              "id": "llm-ruth-proposal-3",
+              "source_id": "ruth-proposal",
+              "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+              "anchor": "we plan to develop a CNN debugging tool",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae"
+            },
+            {
+              "id": "llm-ruth-proposal-4",
+              "source_id": "ruth-proposal",
+              "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+              "anchor": "collaboratively\napply our research to build AI safety mechanisms",
+              "locator": "LLM extraction from full collected text",
+              "text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae"
+            }
+          ],
+          "fragments": [
+            {
+              "role": "문제 시나리오와 사회적 동기",
+              "summary": "자율주행과 의료영상에서 불투명한 모델이 편향을 숨길 위험을 제기한다. 정치적 확증 편향과 얼굴 인식 실패 사례로 연구 필요성을 설명한다.",
+              "evidence_ref": "llm-ruth-proposal-0"
+            },
+            {
+              "role": "연구 목표의 단계화",
+              "summary": "개별 예측과 개념 및 전체 네트워크를 탐문하고 표현과 전이를 이해한 뒤 편향에 견고한 CNN으로 개선한다는 목표를 제시한다.",
+              "evidence_ref": "llm-ruth-proposal-1"
+            },
+            {
+              "role": "선행 접근의 한계와 기존 결과",
+              "summary": "보기 좋은 시각화와 다른 과제 성능을 좇는 접근의 한계를 설명한다. 최소 영역 섭동, 평가 지표와 허위 상관 탐지 시연을 기존 공동 연구로 제시한다.",
+              "evidence_ref": "llm-ruth-proposal-2"
+            },
+            {
+              "role": "표현 분석과 전이 및 견고성 계획",
+              "summary": "필터 공동 활성과 내부 병변 실험, 다중 모달 설명, 모델과 과제 간 전이, 인간 뇌 표현 비교를 제안한다. 적대적 사례 방어 시연과 향후 디버깅 및 편향 귀속 도구를 구분한다.",
+              "evidence_ref": "llm-ruth-proposal-3"
+            },
+            {
+              "role": "비전 회수와 기관 협업 제안",
+              "summary": "확증보다 엄밀한 탐문이라는 문제의식으로 돌아온 뒤 NVIDIA의 GPU 역할을 해석 가능성과 안전성으로 확장하고 공동 적용을 제안한다.",
+              "evidence_ref": "llm-ruth-proposal-4"
+            }
+          ]
+        }
+      ],
+      "pattern_extraction": {
+        "prompt_version": "whole-experience-evidence-v2",
+        "extractor": "llm_full_experience_v2",
+        "input_sha256": "64e3d940636b74e68bf6347c612f4626e7cff2dd91ea3257c5dec4d635ae97b5",
+        "model": "gpt-6.1-sol",
+        "created_at": "2026-10-15T09:54:07.186580+00:00",
+        "full_text_characters": 38082,
+        "input_document_count": 5,
+        "model_attempts": 1,
+        "corrected_validation_errors": [],
+        "input_documents": [
+          {
+            "source_id": "rohan-index",
+            "role": "experience_index",
+            "case_ids": [
+              "N1"
+            ],
+            "url": "https://rohany.github.io/",
+            "document_id": "c81fbc63a86733e0b20ad5d4a6b49045795f059a1aa4f3f2da873399daa48616",
+            "content_sha256": "abd695f019fd9a85e4b64d73e3517682233d477348acc1d0994500e3901c6990",
+            "text_sha256": "55beb47c39a778a0ebb44127e61778357c0ff60f3ed45018a0e2e287d2fef0e6"
+          },
+          {
+            "source_id": "rohan-proposal",
+            "role": "application_statement",
+            "case_ids": [
+              "N1"
+            ],
+            "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+            "document_id": "4624ed5e4c33448d7246c65b031579e1391f07f6521b8faf733e19551bb40427",
+            "content_sha256": "1292bfba8ff41323fbbddab2328785ecf679dec7562a7fb0fb72723168f7f374",
+            "text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963"
+          },
+          {
+            "source_id": "yuke-proposal",
+            "role": "application_statement",
+            "case_ids": [
+              "N2"
+            ],
+            "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+            "document_id": "462edc14d047b3659368e1ad55edb673920cc507c3b1f558b450afc6a3dde2e9",
+            "content_sha256": "d1cc2f892c3bae3931e57e2d9c54e8e14d7d3751bce515b0b659d83184f1bdb0",
+            "text_sha256": "4bac610f3574b02c61dc64992f4947682c6bf2579eee4dfbbf0c0fc494262dc3"
+          },
+          {
+            "source_id": "yuke-panel",
+            "role": "experience_review",
+            "case_ids": [
+              "N2"
+            ],
+            "url": "https://students-at-systems.org/pages/events/fellowship-panel.html",
+            "document_id": "853347f57ad43b6de97a35ea2bc0fd0fe6374757580f08667949856651e8a8e2",
+            "content_sha256": "651d999ce1040b17ef510c6a17854fa8970152df922a42a844c96bba0758e6a0",
+            "text_sha256": "7cbaed9e278d0e4f31d9ddab47f6c21b7ed0fb2e0ce4ea2a9b22a7132790baa9"
+          },
+          {
+            "source_id": "ruth-proposal",
+            "role": "application_statement",
+            "case_ids": [
+              "N3"
+            ],
+            "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+            "document_id": "7e97e9d961c0dcff805d9f65b0e6d9970c0a1ff1d7c63fcca21e287af14136aa",
+            "content_sha256": "25ee765293861a712877b28173d0de9c7d997ba0f90af1957fb700e08fb28d18",
+            "text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae"
+          }
+        ],
+        "network_collection_executed": false
+      },
+      "document_analyses": [
+        {
+          "source_id": "rohan-index",
+          "summary": "개인 홈페이지의 경력, 연구, 논문, 소프트웨어, 교육 활동과 지원서 링크 목록이다. 지원서의 프로그램 연결을 뒷받침하지만 목록으로 제출 글의 구성을 추정하지 않는다. 현재 경력과 후속 논문을 지원 당시 실적으로 소급할 수 없다.",
+          "quote": "My application statement for the NVIDIA Graduate Fellowship"
+        },
+        {
+          "source_id": "rohan-proposal",
+          "summary": "공개 지원서다. 성능 접근성 비전, 두 기술 병목, DISTAL과 희소 확장, NVIDIA 인턴십의 legate.sparse 구현, JIT 스케줄링과 분산 희소 배열 조립 계획, 장기 방향 순서다. 성능과 구현 기간은 작성자 보고이며 회차와 최종 제출본 여부는 미확인이다.",
+          "quote": "My overarching research vision is to close this gap in performance accessibility."
+        },
+        {
+          "source_id": "yuke-proposal",
+          "summary": "공개 지원용 문서다. 학업과 연구 실적, 전문 활동과 인턴십 성과를 먼저 제시하고 공통 목표 아래 DSXplore, GNNAdvisor, APNN-TC, QGTC를 설명한 뒤 지원 자원의 효용으로 끝낸다. 수치는 작성자 보고이며 프로그램, 회차와 최종 제출본은 PDF 자체로 확인되지 않는다.",
+          "quote": "Below I would briefly discuss my highlighted work to achieve this goal:"
+        },
+        {
+          "source_id": "yuke-panel",
+          "summary": "2024년 행사 후기, 공동 조언, 발표자 소개와 지원용 연구문서 목록이다. Yuke에게 명시적으로 귀속된 조언은 핵심 통찰, 기존 연구 비교와 활용 사례 강조다. Mark, Yang, Shimaa의 발언과 패널 공동 의견을 Yuke 개인 경험으로 취급하지 않는다.",
+          "quote": "Yuke advised highlighting key insights and comparing them to existing work."
+        },
+        {
+          "source_id": "ruth-proposal",
+          "summary": "2017년 공개 지원서다. 고위험 적용과 인간 편향 사례, 탐문과 이해 및 개선이라는 목표, 기존 시각화의 한계와 섭동 연구, 표현과 전이 및 견고성 계획, NVIDIA 협업 제안으로 이어진다. 완료 연구와 미래 계획이 섞여 있어 구분해야 한다. 미선정은 제공된 메타데이터의 작성자 보고다.",
+          "quote": "Interrogating, understanding, and improving deep learning"
+        }
+      ],
+      "evaluation_criteria": [
+        {
+          "criterion_id": "student",
+          "label": "학업 및 연구 이력",
+          "source_id": "nvidia-official",
+          "quote": "Academic performance (GPA) and achievements",
+          "url": "https://research.nvidia.com/graduate-fellowships",
+          "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+        },
+        {
+          "criterion_id": "research",
+          "label": "연구의 질과 결과",
+          "source_id": "nvidia-official",
+          "quote": "Results to date",
+          "url": "https://research.nvidia.com/graduate-fellowships",
+          "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+        },
+        {
+          "criterion_id": "fit",
+          "label": "NVIDIA 기술과의 관련성",
+          "source_id": "nvidia-official",
+          "quote": "Potential influence on the design, performance, or use of future GPUs",
+          "url": "https://research.nvidia.com/graduate-fellowships",
+          "scope": "안내를 확보한 2026-10-15 기준. 과거 심사표의 동일성은 미확인이다."
+        }
+      ],
+      "criterion_observations": [
+        {
+          "case_id": "N1",
+          "criterion_id": "student",
+          "claim": "박사 초기 연구의 연속성을 제시한다.",
+          "personal_action": "DISTAL 개발 후 희소 텐서로 확장했다고 쓴다.",
+          "result_evidence": "PLDI 2022와 당시 게재 예정 SC22 연구를 참고문헌으로 제시한다.",
+          "institution_fit": "분산 가속 시스템 연구와 NVIDIA 인턴십을 연결한다.",
+          "limitations": "GPA는 미확인이다. 회차와 선정 근거 원문이 없고 현재 기준과 당시 심사표의 동일성도 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "N1",
+              "source_id": "rohan-proposal",
+              "quote": "I have spent the initial two years of my PhD"
+            }
+          ]
+        },
+        {
+          "case_id": "N1",
+          "criterion_id": "research",
+          "claim": "컴파일러가 커널 개발과 배열 라이브러리 구현을 돕는다고 주장한다.",
+          "personal_action": "DISTAL과 희소 확장을 개발하고 legate.sparse 구현에 적용했다.",
+          "result_evidence": "수작업 최적화 시스템과 경쟁하는 성능 및 12주 구현을 보고한다.",
+          "institution_fit": "CPU와 GPU 클러스터용 프로그래밍 시스템이다.",
+          "limitations": "성능은 작성자 보고다. 상세 실험 수치와 독립 검증은 없으며 최종 제출본은 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "N1",
+              "source_id": "rohan-proposal",
+              "quote": "DISTAL generates code that\nis competitive with kernels in hand-tuned systems"
+            }
+          ]
+        },
+        {
+          "case_id": "N1",
+          "criterion_id": "fit",
+          "claim": "일반 개발자가 GPU 클러스터 성능을 활용하도록 하려 한다.",
+          "personal_action": "NVIDIA Research 인턴십에서 legate.sparse 공동 개발에 참여했다.",
+          "result_evidence": "scipy.sparse 프로그램의 GPU 클러스터 확장과 성능 비교를 보고한다.",
+          "institution_fit": "Michael Bauer, Michael Garland와의 협업을 명시한다.",
+          "limitations": "미래 GPU 설계에 미친 실제 영향과 사용 규모는 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "N1",
+              "source_id": "rohan-proposal",
+              "quote": "to clusters of GPUs, putting high performance in the hands of domain scientists."
+            }
+          ]
+        },
+        {
+          "case_id": "N2",
+          "criterion_id": "student",
+          "claim": "학업, 논문과 전문 활동으로 연구 이력을 제시한다.",
+          "personal_action": "제1저자 연구, 아티팩트 평가와 NVIDIA 인턴십 수행을 보고한다.",
+          "result_evidence": "GPA 3.92/4.00과 논문 14편을 보고한다.",
+          "institution_fit": "NVIDIA Clara Parabricks 팀 경험을 명시한다.",
+          "limitations": "수치는 작성자 보고다. 공식 선정 회차는 2022-2023이나 PDF의 정확한 최종 제출본은 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "N2",
+              "source_id": "yuke-proposal",
+              "quote": "3.92/4.00 and have published 14 papers"
+            }
+          ]
+        },
+        {
+          "case_id": "N2",
+          "criterion_id": "research",
+          "claim": "알고리즘부터 GPU 런타임과 하드웨어 매핑까지 성능을 개선한다고 주장한다.",
+          "personal_action": "네 프로젝트의 제1저자 작업과 핵심 설계를 설명한다. 단독 기여는 미확인이다.",
+          "result_evidence": "GNNAdvisor의 지연 감소와 QGTC의 DGL 대비 평균 3.17배 가속 등을 보고한다.",
+          "institution_fit": "GPU 딥러닝 실행 효율과 Tensor Core 활용에 직접 연결된다.",
+          "limitations": "성능은 작성자 보고다. 프로젝트별 조건이 달라 수치끼리 직접 비교할 수 없고 당시 심사표는 미확인이다.",
+          "evidence": [
+            {
+              "case_id": "N2",
+              "source_id": "yuke-proposal",
+              "quote": "largely reduces the execution latency by 2x-3x"
+            }
+          ]
+        },
+        {
+          "case_id": "N2",
+          "criterion_id": "fit",
+          "claim": "GPU 기능을 활용하고 실제 처리 파이프라인을 개선한 경험을 제시한다.",
+          "personal_action": "Ampere Tensor Core용 연구와 NVIDIA 팀 인턴십을 수행했다고 쓴다.",
+          "result_evidence": "운영 중 유전체 파이프라인의 종단 성능 30% 개선을 보고한다.",
+          "institution_fit": "NVIDIA 하드웨어와 제품 팀 경험을 명시한다.",
+          "limitations": "개인별 개선 기여와 미래 GPU 설계 영향은 미확인이다. 지원 자원 효용은 기대다.",
+          "evidence": [
+            {
+              "case_id": "N2",
+              "source_id": "yuke-proposal",
+              "quote": "genomics processing pipeline in production."
+            }
+          ]
+        },
+        {
+          "case_id": "N3",
+          "criterion_id": "student",
+          "claim": "관련 선행 공동 연구로 연구 이력을 제시한다.",
+          "personal_action": "섭동 시각화, 평가 지표와 인간 뇌 표현을 이용한 연구 참여를 기술한다.",
+          "result_evidence": "2017년 관련 연구를 인용하며 Scientific Reports 논문은 당시 인쇄 중이라고 표기한다.",
+          "institution_fit": "딥러닝 해석과 안전성 연구를 GPU 생태계에 연결한다.",
+          "limitations": "GPA, 학위 연차와 개인 분담은 미확인이다. 다른 회차 사례와 직접 대조하기 어렵다.",
+          "evidence": [
+            {
+              "case_id": "N3",
+              "source_id": "ruth-proposal",
+              "quote": "In Fong et al., 2017, we demonstrate"
+            }
+          ]
+        },
+        {
+          "case_id": "N3",
+          "criterion_id": "research",
+          "claim": "설명 기법이 모델의 실패와 허위 상관을 드러내야 한다고 주장한다.",
+          "personal_action": "공동 연구의 최소 영역 섭동과 평가 지표를 제시한다. 개인 분담은 미확인이다.",
+          "result_evidence": "허위 상관 탐지와 적대적 사례에 대한 비지도 방어 시연을 보고한다.",
+          "institution_fit": "GPU로 학습하고 배포하는 네트워크의 안전성에 연결한다.",
+          "limitations": "정량 성능은 본문에 없고 표현 분석과 디버깅의 상당 부분은 계획이다. 결과는 작성자 보고다.",
+          "evidence": [
+            {
+              "case_id": "N3",
+              "source_id": "ruth-proposal",
+              "quote": "our\nvisualization method can be used for unsupervised defense against adversarial examples"
+            }
+          ]
+        },
+        {
+          "case_id": "N3",
+          "criterion_id": "fit",
+          "claim": "NVIDIA가 딥러닝의 해석 가능성과 안전성을 지원할 수 있다고 제안한다.",
+          "personal_action": "GPU 학습 및 배포 네트워크에 안전 장치를 공동 적용하는 방향을 제안했다.",
+          "result_evidence": "NVIDIA와 실행한 협업이나 적용 결과는 미확인이다.",
+          "institution_fit": "GPU 계산 자원과 안전한 딥러닝이라는 연구 목표를 연결한다.",
+          "limitations": "기관 연결은 향후 제안이다. 2017년 미선정은 작성자 보고이며 Open Philanthropy 선정과 구분한다.",
+          "evidence": [
+            {
+              "case_id": "N3",
+              "source_id": "ruth-proposal",
+              "quote": "make it interpretable and safe."
+            }
+          ]
+        }
+      ],
+      "outcome_comparisons": [
+        {
+          "criterion_id": "research",
+          "observation": "선정 N1과 N2는 시스템 성능 비교를, 미선정 N3는 설명 기법과 실패 탐지 시연을 제시한다. N1과 N3 모두 기존 결과에서 구체적인 미래 과제로 이어진다. 연구 연속성의 유무로 결과를 구분할 차이는 분명하지 않다.",
+          "supporting_case_ids": [
+            "N1",
+            "N2",
+            "N3"
+          ],
+          "evidence": [
+            {
+              "case_id": "N1",
+              "source_id": "rohan-proposal",
+              "quote": "within a 12-week period."
+            },
+            {
+              "case_id": "N2",
+              "source_id": "yuke-proposal",
+              "quote": "QGTC achieves an average 3.17x speedup"
+            },
+            {
+              "case_id": "N3",
+              "source_id": "ruth-proposal",
+              "quote": "We\nalso introduced a novel metric"
+            }
+          ],
+          "limitations": "연구 분야와 결과 지표가 다르고 수치는 작성자 보고다. N1은 회차, N2는 최종 제출본이 미확인이다. N3는 2017년 작성자 보고 미선정이다. 학위 단계와 추천서 등 전체 제출 자료가 같지 않거나 미확인이고 현재 기준이 당시 심사표였는지도 미확인이다. 선정 원인이나 탈락 이유는 판단할 수 없다.",
+          "user_questions": [
+            "완료한 연구와 제안 단계의 연구는 각각 무엇인가?",
+            "동일 조건의 비교 결과와 본인의 기여를 어떤 자료로 확인할 수 있는가?"
+          ],
+          "causal_success_claim": false,
+          "interpretation": "observed_difference_not_selection_cause"
+        },
+        {
+          "criterion_id": "fit",
+          "observation": "선정 N1과 N2는 NVIDIA 인턴십과 GPU 관련 구현을 제시하고, 미선정 N3는 안전성 연구를 NVIDIA와 공동 적용하자는 방향을 제안한다. 기존 협업과 미래 제안이라는 근거 역할의 차이가 관찰되지만 세 문서 모두 기관 연결을 명시한다.",
+          "supporting_case_ids": [
+            "N1",
+            "N2",
+            "N3"
+          ],
+          "evidence": [
+            {
+              "case_id": "N1",
+              "source_id": "rohan-proposal",
+              "quote": "an internship at NVIDIA"
+            },
+            {
+              "case_id": "N2",
+              "source_id": "yuke-proposal",
+              "quote": "NVIDIA’s Clara Parabricks team"
+            },
+            {
+              "case_id": "N3",
+              "source_id": "ruth-proposal",
+              "quote": "make it interpretable and safe."
+            }
+          ],
+          "limitations": "관찰 대상은 세 공개 지원용 원문이다. 홈페이지 목록과 2024년 패널 후기는 당시 제출본을 대체하지 않는다. 회차, 학위 단계, 제출본 확인 수준과 결과 검증 수준이 다르다. 미래 GPU에 미친 실제 영향은 공통으로 미확인이다. 인턴십의 선정 효과나 글의 우열을 추론할 수 없다.",
+          "user_questions": [
+            "NVIDIA 기술과 직접 맞닿는 연구 결과는 무엇인가?",
+            "실행한 협업과 앞으로 제안할 협업을 각각 어떻게 설명할 수 있는가?",
+            "미래 GPU의 설계, 성능 또는 사용에 영향을 줄 구체적 경로는 무엇인가?"
+          ],
+          "causal_success_claim": false,
+          "interpretation": "observed_difference_not_selection_cause"
         }
       ]
     }

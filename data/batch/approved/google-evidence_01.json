@@ -1,0 +1,103 @@
+{
+  "evidence": [
+    {
+      "evidence_id": "g26w-rp",
+      "document_id": "g26w-google-official-17fcd780d172",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia",
+      "source_role": "official_guideline",
+      "locator": "L162-L168",
+      "quote": "maximum 3 pages, excluding references"
+    },
+    {
+      "evidence_id": "g26w-impact",
+      "document_id": "g26w-google-official-17fcd780d172",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia",
+      "source_role": "official_guideline",
+      "locator": "L178-L182",
+      "quote": "desired impact your research will make"
+    },
+    {
+      "evidence_id": "g26w-lead",
+      "document_id": "g26w-google-official-17fcd780d172",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia",
+      "source_role": "official_guideline",
+      "locator": "L178-L183",
+      "quote": "example of your leadership experience"
+    },
+    {
+      "evidence_id": "g26w-english",
+      "document_id": "g26w-google-official-17fcd780d172",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia",
+      "source_role": "official_guideline",
+      "locator": "L162-L165",
+      "quote": "submitted in English"
+    },
+    {
+      "evidence_id": "g26w-g1-link",
+      "document_id": "g26w-hyeon-index-1f9562960047",
+      "program_id": "google-phd-fellowship",
+      "round_id": null,
+      "source_role": "application_index",
+      "locator": "L1-L3",
+      "quote": "used for my Google Ph.D. Fellowship application in 2024"
+    },
+    {
+      "evidence_id": "g26w-g1-result",
+      "document_id": "g26w-google-recipients-eed7268fdcc3",
+      "program_id": "google-phd-fellowship",
+      "round_id": null,
+      "source_role": "outcome_record",
+      "locator": "L217-L222",
+      "quote": "Hyeon Jeon, Seoul National University"
+    },
+    {
+      "evidence_id": "g26w-g1-impact-observed",
+      "document_id": "g26w-hyeon-essay-ddd4094777d6",
+      "program_id": "google-phd-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L15-L33",
+      "quote": "underscoring the value of reliability"
+    },
+    {
+      "evidence_id": "g26w-g1-lead-observed",
+      "document_id": "g26w-hyeon-essay-ddd4094777d6",
+      "program_id": "google-phd-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L47-L61",
+      "quote": "facilitated feedback sessions every few weeks"
+    },
+    {
+      "evidence_id": "g26w-g4-link",
+      "document_id": "g26w-morgan-index-b91e324547ec",
+      "program_id": "google-phd-fellowship",
+      "round_id": null,
+      "source_role": "application_index",
+      "locator": "L12-L17",
+      "quote": "Google PhD Fellowship 2021 (won / rejected)"
+    },
+    {
+      "evidence_id": "g26w-g4-impact-observed",
+      "document_id": "g26w-morgan-impact-8c17a2169b3d",
+      "program_id": "google-phd-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L16-L32",
+      "quote": "mitigate technological harm"
+    },
+    {
+      "evidence_id": "g26w-g4-lead-observed",
+      "document_id": "g26w-morgan-leadership-07bb378fa4bc",
+      "program_id": "google-phd-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L16-L29",
+      "quote": "communicated with previous workshop participants for iterative feedback"
+    }
+  ]
+}

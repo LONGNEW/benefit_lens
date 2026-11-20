@@ -1,0 +1,45 @@
+경험 사건과 작성 관찰의 실제 LLM 분석 계약
+
+1. 입력 생성
+tools/benefitlens_experience_semantics.py의 build_input(record, max_chunk_characters=16000, max_units_per_task=24)는 cases.jsonl.gz의 실제 사례를 받는다. 원문, 추출문, segments_ref의 저장 해시와 내용 해시를 다시 확인하고 모든 문서의 추출 텍스트를 연속 청크로 나눈다. 누락된 문서와 무결성 보류가 있는 사례는 중단한다. 비활성 또는 병합 사례도 실행 대상에서 분리한다.
+
+반환 bundle의 unit_id는 experience:<case_key>, kind는 experience, record_key는 case_key다. input_sha256는 문서 참조와 모든 task SHA를 포함한다. 각 task는 task_id, input_sha256, request={system,user}, context_start, context_end, context_text, paragraph_units를 가진다. 입력 SHA에는 프롬프트와 JSON Schema SHA도 들어간다. 원문에 포함된 지시문은 자료로만 취급하도록 system에 명시한다.
+
+각 청크는 문서 전체 내용의 일부이며 모든 청크를 실행해야 그 사례가 완료된다. 문단 구조는 위치 후보로 제공하고, LLM이 실제 문단, 문단 조각, 여러 문단, 비산문인지 평가한다. 공개 HTML의 메뉴나 평점을 설득적 지원서 구조로 강제하지 않는다.
+
+2. 모델 출력
+result_schema()는 pipeline/schemas/experience-semantics-result.schema.json을 반환한다. parent 워커가 각 task.request와 이 스키마를 Claude CLI에 전달한다. 이 모듈은 모델을 호출하거나 DB에 쓰지 않는다.
+
+events는 동기, 상황, 본인 역할, 선택, 행동, 결과, 성찰, 향후 활용을 담는다. 각 슬롯은 explicit, inferred, not_present를 구분하며, 추론에는 근거와 이유를 남긴다. 다른 사람이나 팀의 사건은 focal_person의 신원에 귀속하지 않는다. source_subject_id는 해당 사례의 출처 인물을 가리키는 ID이며 출처 간 동일인 검증을 뜻하지 않는다.
+
+writing_observations는 명시적 요청, 명시적 지침, 관찰된 작성 전략, 추론된 의도를 별도 layer로 기록한다. 표면 문구를 넘어 읽는 사람이 무엇을 파악하려는지 intent_axes로 설명하고, 전이 가능한 작성 행동과 적용 한계를 남긴다. 추론된 의도에는 다른 해석도 요구한다. 참여 후기와 인터뷰에서 공개하지 않은 실제 지원서의 구조나 합격 효과를 만들어 내지 않는다.
+
+paragraph_observations는 입력 위치 단위마다 목적, 첫 부분과 마지막 부분의 문장 기능, 주장, 근거 사용, 추론, 앞뒤 연결을 다룬다. 위치 단위가 실제 문단이라는 판단은 LLM의 후보 해석이다. 청크 밖의 연결은 outside_chunk 또는 not_observed로 보존한다.
+
+3. 검증
+validate_result(result, task)는 출력 스키마, task와 입력 SHA, 인물과 경험 ID, 문서와 위치 단위 귀속, 모든 위치 단위의 관찰 여부를 검사한다. LLM의 짧은 인용을 해당 원문 구간에서 찾아 실제 Unicode 문자 위치, 줄 위치, 문서 SHA를 붙인다. 첫 부분과 마지막 부분의 기능에는 각 경계 부근의 원문 근거가 있어야 한다. 인용의 진실성, 귀속과 형식 검사는 내용 해석에 대한 독립 승인과 구분한다.
+
+검증 출력에는 source_model_result, raw_result_sha256, semantic_review=unreviewed, approved_pattern=false를 보존한다. 원 모델 출력과 검증 후 파생 정보를 분리해 저장하며, 사후 내용 변경은 최종 결합 단계에서 다시 차단한다.
+
+4. 실제 실행 영수증과 완료
+finalize_case(bundle, results, receipts)는 모든 청크의 결과와 영수증을 요구한다. receipt에는 task_id, input_sha256, model_called=true, exit_code=0, model, request_ref, response_ref, result_sha256가 필요하다. 각 ref는 실제 파일 경로와 파일 SHA다. request_ref에는 task.request JSON 전체를, response_ref에는 실제 CLI stdout을 저장한다. result_sha256는 validate_result가 반환한 결과의 canonical JSON SHA다.
+
+실제 응답의 structured_output.results[{task_id,analysis}]에서 분석을 찾아 source_model_result와 대조한다. 제출 요청 파일도 task.request와 대조한다. 모든 문서 청크를 이어 붙인 내용 SHA가 원문 추출 텍스트 SHA와 같아야 analysis_state=completed_unreviewed를 반환한다. 이 상태는 모델 분석과 원문 연결 검증의 완료다. 작성 패턴의 승인과 개인 사실의 확인은 후속 검토 상태로 남긴다.
+
+최종 결과는 case_key, program_id, round_id, program_binding, coverage, chunks, execution_receipts를 가진다. program_binding.status는 unreviewed_source_identifier다. 프로그램과 회차의 정본 연결은 검토 후 반영한다. chunks 안의 사건, 문단 관찰과 작성 관찰을 T3가 그대로 소비할 수 있다.
+
+5. 검증 근거와 실행 구분
+tools/tests/test_benefitlens_experience_semantics.py의 합성 경계 테스트 16개는 원문 무누락, 입력 축약 차단, 다른 인물과 경험 귀속 차단, 문서 인용과 문단 관찰 누락, 인터뷰의 지원서 승격, 추론 대안, 영수증과 실제 응답의 교체를 검사한다. 최초 enqueue된 v1 입력의 동결된 요청과 스키마 호환성, 공백이 긴 이메일 머리글의 경계 피드백, not_present의 무근거 허용과 inferred 연결의 근거 요구, 생성 전용 스키마의 상태별 제약도 포함한다. 이 테스트는 실제 코퍼스의 모델 분석 건수로 집계하지 않는다.
+
+최초 v1 task에는 analysis_contract와 context_line_start가 없었다. 이 입력은 기존 core SHA와 task.request 전체, 현재 동결 SYSTEM 및 당시 schema SHA를 대조한다. 기존 성공 결과의 canonical SHA는 재검증 후에도 동일했다. 이 입력의 줄 번호는 기존 청크 상대값을 보존하므로 전역 원문 위치에는 char_start와 char_end를 사용한다. 경계 실패 메시지는 unit_id, 허용되는 인용 시작 또는 끝 범위, 실제 인용 위치를 반환해 실제 모델 재시도에 전달한다.
+
+missing_evidence_fields(result)는 상태에 따라 필수인 근거가 빈 필드를 전부 찾아 경로와 소유 ID를 반환한다. not_present인 사건 슬롯과 주장, 추론에는 근거를 요구하지 않는다. explicit 또는 inferred인 문단 연결에는 실제 인용이 필요하다. 페이지나 양식의 물리적 순서만 보이면 의미 연결은 not_observed로 남길 수 있다. 실제 배치에서 발견한 30개와 46개의 빈 inferred 연결은 원 응답을 보존하고 재시도 피드백으로 기록했다.
+
+실제 원문 입력 생성도 별도로 확인했다. application-ucr-0c7465aff0dc2088f64ca0cd는 32,187자 전체를 4개 청크로, experience-higherin-10343은 7,032자 전체를 1개 청크로 구성했다. 영수증이 없는 입력 생성은 분석 완료가 아니다. 이후 실제 모델 실행과 영속 큐 관리는 부모 워커가 담당한다.
+
+6. 생성 전용 스키마
+generation_schema()는 원본 result_schema의 엄격한 부분집합을 반환한다. 완전한 상태별 객체를 anyOf 분기로 구성하며 각 분기는 원본의 필수 필드와 추가 필드 제한을 유지한다. inferred 슬롯과 주장, 추론에는 비어 있지 않은 설명과 이유, 최소 한 개의 근거를 요구한다. explicit에도 설명과 근거가 필요하다. not_present는 설명과 이유를 null로, 근거를 빈 배열로 고정한다.
+
+문단 연결의 explicit과 inferred는 비어 있지 않은 target_unit_id와 relation, 근거가 필요하다. not_observed는 두 값을 null로, 근거를 빈 배열로 제한한다. outside_chunk의 target_unit_id도 null이다. 생성 스키마는 모델의 출력 상태 조합을 제한하며, 원문 귀속과 인용 검증은 validate_result가 수행한다.
+
+원본 JSON Schema 파일, SYSTEM, build_input과 원 입력 SHA는 유지한다. 실제 제출에 사용한 생성 스키마는 워커가 actual_batch_schema_ref로 별도 보존한다. 실제 기존 성공 원 출력 3개는 두 스키마를 모두 통과했고, 원래 근거가 빠졌던 실제 원 출력 2개는 원본 스키마에서 허용되지만 생성 스키마에서 거부됐다. 이 대조 결과와 파일 해시는 semantic/diagnostics/experience-generation-schema-validation.json에 기록했다.

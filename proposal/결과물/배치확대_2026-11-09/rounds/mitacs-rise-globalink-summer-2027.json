@@ -1,0 +1,139 @@
+{
+  "basis": "source_backed",
+  "title": "RISE-Globalink Research Internship",
+  "claims": [
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "daad_application",
+      "value": {
+        "portal": "RISE Germany",
+        "selection_by": "DAAD",
+        "submitted_by": "applicant",
+        "separate_mitacs_application": false
+      },
+      "claim_id": "mitacs-rise-application",
+      "round_id": "summer-2027",
+      "program_id": "mitacs-rise-globalink",
+      "evidence_ids": [
+        "RISE-APPLY"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "after_selection",
+      "kind": "submission",
+      "field": "post_selection_mitacs_forms",
+      "value": {
+        "items": [
+          "student_code_of_conduct_and_ethics",
+          "international_pre_departure_form"
+        ],
+        "submitted_by": "selected_student",
+        "required_before_award_release": true
+      },
+      "claim_id": "mitacs-rise-award-forms",
+      "round_id": "summer-2027",
+      "program_id": "mitacs-rise-globalink",
+      "evidence_ids": [
+        "RISE-APPLY"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "project",
+      "kind": "benefit",
+      "field": "travel_living_and_insurance",
+      "value": {
+        "components": [
+          {
+            "type": "travel_and_living_award",
+            "amount": 7000,
+            "currency": null,
+            "basis_weeks": 12,
+            "currency_status": "not_spelled_out_in_captured_notice",
+            "currency_symbol": "$"
+          },
+          {
+            "type": "insurance",
+            "coverage": [
+              "health",
+              "accident",
+              "personal_liability"
+            ],
+            "provided_by": "DAAD"
+          }
+        ],
+        "no_duplicate_daad_stipend_or_travel_subsidy": true
+      },
+      "claim_id": "mitacs-rise-benefits",
+      "round_id": "summer-2027",
+      "program_id": "mitacs-rise-globalink",
+      "evidence_ids": [
+        "RISE-BENEFITS"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "schedule",
+      "field": "application_and_project_windows",
+      "value": {
+        "opens_on": "2026-10-15",
+        "closes_on": "2026-11-30",
+        "closes_time": "23:59",
+        "minimum_weeks": 10,
+        "time_zone_label": "CET",
+        "start_date_range": [
+          "2027-05-15",
+          "2027-07-15"
+        ]
+      },
+      "claim_id": "mitacs-rise-dates",
+      "round_id": "summer-2027",
+      "program_id": "mitacs-rise-globalink",
+      "evidence_ids": [
+        "RISE-DATES"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application_and_project",
+      "kind": "eligibility",
+      "field": "canadian_university_undergraduate",
+      "value": {
+        "minimum_age": 18,
+        "student_status_any": [
+          "Canadian citizen",
+          "Canadian permanent resident",
+          "international student"
+        ],
+        "completed_years_normal": 2,
+        "english_fluency_required": true,
+        "german_citizenship_exception": "living outside Germany for at least six years",
+        "quebec_three_year_degree_completed_years": 1,
+        "full_time_canadian_university_undergraduate": true
+      },
+      "claim_id": "mitacs-rise-eligibility",
+      "round_id": "summer-2027",
+      "program_id": "mitacs-rise-globalink",
+      "evidence_ids": [
+        "RISE-ELIGIBILITY"
+      ],
+      "review_state": "reviewed"
+    }
+  ],
+  "issuer": "Mitacs in partnership with DAAD",
+  "status": "open",
+  "opens_on": "2026-10-15",
+  "round_id": "summer-2027",
+  "closes_on": "2026-11-30",
+  "checked_on": "2026-11-09",
+  "program_id": "mitacs-rise-globalink",
+  "announces_on": null,
+  "official_url": "https://www.mitacs.ca/our-programs/rise-globalink-research-internship/",
+  "notice_version": "mitacs-rise-globalink-summer-2027-v1",
+  "opportunity_id": "mitacs-rise-globalink-summer-2027",
+  "application_url": "https://www.daad.de/rise/en/rise-germany/find-an-internship/application-portal/",
+  "opportunity_type": "internship"
+}

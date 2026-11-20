@@ -1,0 +1,230 @@
+{
+  "inventory_scope": "existing local sample; no collection",
+  "programs": [
+    {
+      "program_id": "gates-cambridge",
+      "cases": 4,
+      "documents": 6,
+      "patterns": 5,
+      "checks": [
+        {
+          "source_id": "sampurna-essay",
+          "role": "application_statement",
+          "case_ids": [
+            "C1"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "sampurna-review",
+          "role": "experience_review",
+          "case_ids": [
+            "C1"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "naveen-essay",
+          "role": "application_statement",
+          "case_ids": [
+            "C2"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "naveen-review",
+          "role": "experience_review",
+          "case_ids": [
+            "C2"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "paul-review",
+          "role": "experience_review",
+          "case_ids": [
+            "C3"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "onon-interview",
+          "role": "official_interview",
+          "case_ids": [
+            "C4"
+          ],
+          "hash_matches": true
+        }
+      ]
+    },
+    {
+      "program_id": "google-phd-fellowship",
+      "cases": 7,
+      "documents": 14,
+      "patterns": 7,
+      "checks": [
+        {
+          "source_id": "hyeon-index",
+          "role": "experience_index",
+          "case_ids": [
+            "G1"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "hyeon-research",
+          "role": "application_statement",
+          "case_ids": [
+            "G1"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "hyeon-essay",
+          "role": "application_statement",
+          "case_ids": [
+            "G1"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "julia-index",
+          "role": "experience_index",
+          "case_ids": [
+            "G2"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "julia-proposal",
+          "role": "application_statement",
+          "case_ids": [
+            "G2"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "anjalie-index",
+          "role": "experience_index",
+          "case_ids": [
+            "G3"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "anjalie-proposal",
+          "role": "application_statement",
+          "case_ids": [
+            "G3"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "morgan-index",
+          "role": "experience_index",
+          "case_ids": [
+            "G4"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "morgan-proposal",
+          "role": "application_statement",
+          "case_ids": [
+            "G4"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "morgan-impact",
+          "role": "application_statement",
+          "case_ids": [
+            "G4"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "morgan-leadership",
+          "role": "application_statement",
+          "case_ids": [
+            "G4"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "moon-interview",
+          "role": "official_interview",
+          "case_ids": [
+            "G5"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "yoo-interview",
+          "role": "official_interview",
+          "case_ids": [
+            "G6"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "oh-interview",
+          "role": "official_interview",
+          "case_ids": [
+            "G7"
+          ],
+          "hash_matches": true
+        }
+      ]
+    },
+    {
+      "program_id": "nvidia-graduate-fellowship",
+      "cases": 3,
+      "documents": 5,
+      "patterns": 5,
+      "checks": [
+        {
+          "source_id": "rohan-index",
+          "role": "experience_index",
+          "case_ids": [
+            "N1"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "rohan-proposal",
+          "role": "application_statement",
+          "case_ids": [
+            "N1"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "yuke-proposal",
+          "role": "application_statement",
+          "case_ids": [
+            "N2"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "yuke-panel",
+          "role": "experience_review",
+          "case_ids": [
+            "N2"
+          ],
+          "hash_matches": true
+        },
+        {
+          "source_id": "ruth-proposal",
+          "role": "application_statement",
+          "case_ids": [
+            "N3"
+          ],
+          "hash_matches": true
+        }
+      ]
+    }
+  ],
+  "cases_are_not_verified_unique_people": true
+}

@@ -1,0 +1,43 @@
+BenefitLens 경량 일괄 처리 v1
+변경일: 2026-11-20
+
+목표
+문서마다 장문 LLM 심사를 하는 경로는 중단했다. 보존된 원문과 기존 분석 결과는 유지한다. 코드가 문장과 관련 표현을 먼저 추출하고, 여러 대표 문맥을 한 번의 요청으로 정규화한다.
+
+처리 순서
+1. HTML과 PDF에서 이미 추출한 텍스트를 재사용하고 원문 해시를 확인한다. OCR은 추출 텍스트가 없는 이미지 문서에 사용하는 후속 경로다. 이번 실행은 기존 추출문을 사용했다.
+2. 코드가 문장 또는 긴 문장의 구간을 나누고 관련 표현, 앞뒤 문맥, 문서 ID와 문자 위치를 연결한다. 공고는 공유 조건 사전의 표현을, 경험은 동기, 상황, 역할, 선택, 행동, 결과, 성찰과 작성 조언 표현을 찾는다.
+3. 동일 표현과 문맥을 묶는다. 공백 차이는 정규화하며 숫자, 부정, 필수와 우대, 주체와 시점은 보존한다. 국적, 대학 등 문맥에 따라 달라지는 범위도 분리한다.
+4. 검색 화면 제목과 짧은 메타데이터를 모델 입력에서 제외한다. 빈도와 원천, 필드, 자료 역할을 고려해 기본 40개 묶음을 한 배치로 보낸다. 최대 50개까지 설정할 수 있다.
+5. LLM은 짧은 필드 매핑 또는 작성 의도를 반환한다. 코드는 결과를 원문 구간에 연결한다. 오류가 있는 묶음만 보류하고 배치 전체를 다시 호출하지 않는다.
+
+공고와 경험의 결과
+공고는 field_id, 연산자, 값 추출 방법, 단위, 기준 시점, 필수와 우대, 주체, 논리 단서와 미상 이유로 연결한다. 프로그램별 추가 요구는 공유 사전의 program_specific.requirement로 남긴다.
+경험은 사건 역할, 작성 의도, 재료 역할, 주장과 근거 및 추론, 관찰 가능한 문장 기능과 주변 연결을 짧게 정리한다. 동일 표현 묶음이 사람의 사건이나 성과를 합치지는 않는다. 본문 전체의 전개는 후속 문단 계획에서 구성한다.
+
+비용과 재실행
+기존 CLI 경로의 기본 한도는 실행당 요청 2회다. 이미 해석된 묶음은 다시 보내지 않는다. 공급자 429가 확인되면 후속 요청을 멈추고 provider_waiting 상태를 저장한다. 다음 실행도 명시적인 재개 전에는 해당 CLI 모델을 호출하지 않는다.
+사용자의 지시에 따라 현재 의미 해석은 Codex 서브 에이전트가 담당한다. 준비된 공고와 경험 묶음을 각 에이전트가 함께 읽어 실제 추론 결과를 작성하고 독립 검토 에이전트가 확인한다. 부모가 받은 실제 완료 메시지, 입력 지문, 원결과와 검증 결과의 해시를 인계 기록에 연결한다. Codex의 모델명, 토큰과 내부 API 호출 수는 확인되지 않아 기입하지 않는다.
+문서별 장문 worker 두 서비스는 중단 상태다. 새 경로에는 자동 반복 모델 worker와 타이머를 설치하지 않았다.
+
+실행
+python3 tools/run_benefitlens_compact.py scan
+python3 tools/prepare_benefitlens_codex_batches.py --batch-size 40
+부모가 준비된 요청을 Codex 서브 에이전트에 전달해 해석 결과와 실제 완료 메시지를 받는다.
+python3 tools/import_benefitlens_codex_batch.py --kind notice --request 요청.json --result 결과.json --completion 실제완료기록.json --agent-name 실제에이전트이름
+python3 tools/run_benefitlens_compact.py status
+python3 tools/build_benefitlens_compact_handoff.py
+
+prepare 명령은 입력만 준비하고 모델을 실행하지 않는다. importer도 모델을 호출하지 않으며 실제 완료 증거와 원문 묶음이 맞는 결과를 저장한다. 같은 invocation_id는 한 번만 적재한다.
+
+기존 Claude CLI 경로를 선택적으로 재개할 때
+python3 tools/run_benefitlens_compact.py normalize --resume-provider --max-calls 2 --batch-size 40
+
+저장
+공용 캐시 team-production-20261119/compact/queue.sqlite에 표현 묶음과 원문 위치를 저장한다. batches 디렉터리에는 실제 요청, CLI 원응답, 검증 결과와 호출 영수증이 있다. handoff는 해석 결과와 적용 원문, 부분 작성 구조를 제공한다.
+
+내용 검토와 작성 템플릿
+handoff/notice-semantic-review-20261120.json과 experience-semantic-review-20261120.json에 독립 에이전트의 원문 비교를 기록했다. 공고의 훈련 시점 1묶음은 보류하고 나머지 해석은 유지했다. proposed-writing-templates-20261120.json은 문제 해결 경험과 실행 가능한 연구계획의 문단 틀 2종을 제안한다. 각 틀은 근거 그룹, 필요한 본인 사실, 첫 문장과 중간 전개, 마지막 문장과 다음 문단 연결을 갖는다. 원문 관찰을 바탕으로 제안한 틀이며 공식 문항과 확인된 사용자 사실에 맞춰 사용한다.
+
+보고 단위
+코드가 읽은 문서 수, 추출한 원문 구간 수, 중복 정리한 묶음 수, LLM 해석 완료 묶음 수, 실제 연결 문장 수를 따로 센다. 선택 구절 분석을 문서 전체의 분석 완료 건수로 확대하지 않는다. 실제 숫자는 compact/status.json과 compact/handoff/summary.json을 따른다.

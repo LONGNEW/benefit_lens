@@ -1,0 +1,18 @@
+{
+  "prior_claim": "10000 verified current-open opportunities",
+  "status": "retracted_strict_audit_completed_target_not_achieved",
+  "sql_integrity_result": "preserved; not application-period certification",
+  "known_deadline_field_rows": 2936,
+  "unpublished_or_unparsed_deadline_rows": 7064,
+  "strict_verified_count": 4339,
+  "reason": "User rejected counting opportunities with unresolved application periods as secured opportunities.",
+  "previous_selected_10000_strict_verified_count": 3869,
+  "candidate_inventory": 10471,
+  "remaining_to_10000": 5661,
+  "corrected_report": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/proposal/결과물/신청기간_엄격검증_2026-11-09/README.md",
+  "strict_verified_count_unit": "source_posting_not_distinct_opportunity",
+  "opportunity_parent_candidates": 1129,
+  "rule_passed_parent_candidates": 1071,
+  "group_review_required": 58,
+  "latest_definition_report": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/proposal/결과물/공고_중복과지원분류_2026-11-09/README.md"
+}

@@ -1,0 +1,166 @@
+{
+  "claim_evidence": [
+    {
+      "claim_id": "nv27-first-year",
+      "evidence_id": "OFFICIAL-ELIGIBILITY",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-first-year-exception",
+      "evidence_id": "OFFICIAL-EXCEPTION",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-field",
+      "evidence_id": "OFFICIAL-ELIGIBILITY",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-active-research",
+      "evidence_id": "OFFICIAL-ELIGIBILITY",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-full-time",
+      "evidence_id": "OFFICIAL-ELIGIBILITY",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-participation-restrictions",
+      "evidence_id": "OFFICIAL-ELIGIBILITY",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-institution",
+      "evidence_id": "OFFICIAL-ELIGIBILITY",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-international",
+      "evidence_id": "OFFICIAL-ELIGIBILITY",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-opens",
+      "evidence_id": "OFFICIAL-DATES",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-closes",
+      "evidence_id": "OFFICIAL-DATES",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-announces",
+      "evidence_id": "OFFICIAL-DATES",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-funding",
+      "evidence_id": "OFFICIAL-FUNDING",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-funding",
+      "evidence_id": "OFFICIAL-ELIGIBILITY",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-internship",
+      "evidence_id": "OFFICIAL-ELIGIBILITY",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-selection",
+      "evidence_id": "OFFICIAL-SELECTION",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-research-proposal",
+      "evidence_id": "OFFICIAL-FORMAT",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-research-proposal",
+      "evidence_id": "OFFICIAL-SUBMISSIONS",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-resume",
+      "evidence_id": "OFFICIAL-SUBMISSIONS",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-recommendations",
+      "evidence_id": "OFFICIAL-SUBMISSIONS",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-availability",
+      "evidence_id": "OFFICIAL-SUBMISSIONS",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-portal",
+      "evidence_id": "OFFICIAL-URL",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-portal",
+      "evidence_id": "PORTAL-LANDING",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-blank-form",
+      "evidence_id": "OFFICIAL-URL",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-blank-form",
+      "evidence_id": "PORTAL-LANDING",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-vision",
+      "evidence_id": "OFFICIAL-VISION",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-progress",
+      "evidence_id": "OFFICIAL-PROGRESS",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    },
+    {
+      "claim_id": "nv27-gpu",
+      "evidence_id": "OFFICIAL-GPU-RELEVANCE",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028"
+    }
+  ]
+}

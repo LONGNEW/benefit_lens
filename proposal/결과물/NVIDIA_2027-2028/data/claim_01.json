@@ -1,0 +1,329 @@
+{
+  "claim": [
+    {
+      "claim_id": "nv27-first-year",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "eligibility",
+      "field": "phd_first_year_completed",
+      "at": "application",
+      "value": {
+        "required": true,
+        "coursework_completion_inferred": false
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-first-year-exception",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "eligibility",
+      "field": "phd_first_year_exception",
+      "at": "application",
+      "value": {
+        "possible": true,
+        "decision": "issuer_review",
+        "basis": "충분한 선행 연구가 있는 예외 사례를 FAQ가 허용한다. 자동 통과 규칙은 공개되지 않았다."
+      },
+      "review_state": "ambiguous"
+    },
+    {
+      "claim_id": "nv27-field",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "eligibility",
+      "field": "field_of_study",
+      "at": "application",
+      "value": {
+        "listed_fields": [
+          "computer science",
+          "computer engineering",
+          "system architecture",
+          "electrical engineering"
+        ],
+        "related_fields_allowed": true
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-active-research",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "eligibility",
+      "field": "active_thesis_research",
+      "at": "application",
+      "value": true,
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-full-time",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "eligibility",
+      "field": "full_time_active_phd",
+      "at": "award_year",
+      "value": {
+        "required": true,
+        "months": 9,
+        "graduate_before_end_allowed": false
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-participation-restrictions",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "eligibility",
+      "field": "employment_family_restrictions",
+      "at": "application",
+      "value": {
+        "full_time_employee_ineligible": true,
+        "employee_immediate_family_ineligible": true
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-institution",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "eligibility",
+      "field": "university_administers_award",
+      "at": "award_year",
+      "value": true,
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-international",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "eligibility",
+      "field": "international_students_may_apply",
+      "at": "application",
+      "value": true,
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-opens",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "schedule",
+      "field": "application_opens_on",
+      "at": null,
+      "value": "2026-09-30",
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-closes",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "schedule",
+      "field": "application_closes_on",
+      "at": null,
+      "value": {
+        "date": "2026-10-30",
+        "includes_recommendations": true,
+        "time_zone": null
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-announces",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "schedule",
+      "field": "winner_notification_on",
+      "at": null,
+      "value": "2027-01-15",
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-funding",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "benefit",
+      "field": "research_funding",
+      "at": "award_year",
+      "value": {
+        "amount_max": 60000,
+        "currency": "USD",
+        "unit": "per_award",
+        "administered_by": "university",
+        "covers": [
+          "stipend",
+          "tuition",
+          "mandatory_fees"
+        ],
+        "direct_student_payment": false
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-internship",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "activity",
+      "field": "in_person_summer_internship",
+      "at": "before_award_year",
+      "value": {
+        "required": true,
+        "employer": "NVIDIA",
+        "locations": [
+          "United States",
+          "Canada",
+          "Germany",
+          "Sweden",
+          "Finland",
+          "Switzerland",
+          "Israel",
+          "Taiwan",
+          "Singapore"
+        ]
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-selection",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "selection_criterion",
+      "field": "published_evaluation_dimensions",
+      "at": "selection",
+      "value": {
+        "dimensions": [
+          "student_quality",
+          "research_quality",
+          "nvidia_relevance"
+        ],
+        "mentions_gpa": true,
+        "published_gpa_threshold": null
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-research-proposal",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "submission",
+      "field": "research_proposal",
+      "at": "application",
+      "value": {
+        "required": true,
+        "upload": true,
+        "max_pages": 2,
+        "includes_text_and_images": true,
+        "bibliography_excluded": true,
+        "applicant_name_at_top": true
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-resume",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "submission",
+      "field": "resume_or_cv",
+      "at": "application",
+      "value": {
+        "required": true,
+        "upload": true,
+        "include_contact_information": true
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-recommendations",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "submission",
+      "field": "recommendation_letters",
+      "at": "application",
+      "value": {
+        "required": true,
+        "min": 2,
+        "max": 3,
+        "thesis_advisor_letter_required": true,
+        "other_recommenders_need_not_be_professors": true,
+        "submission_route": "portal_invitation",
+        "due_by": "2026-10-30"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-availability",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "submission",
+      "field": "internship_availability_confirmation",
+      "at": "application",
+      "value": {
+        "required": true,
+        "in_portal": true
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-portal",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "form",
+      "field": "application_portal",
+      "at": "application",
+      "value": {
+        "url": "https://webportalapp.com/sp/nvidia_grad_fellow_2027",
+        "status": "login_required",
+        "public_landing_status": 200,
+        "internal_fields_status": "unverified"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-blank-form",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "form",
+      "field": "official_blank_form",
+      "at": "application",
+      "value": {
+        "status": "not_found_in_public_material",
+        "inside_portal": "unverified"
+      },
+      "review_state": "unknown"
+    },
+    {
+      "claim_id": "nv27-vision",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "advice",
+      "field": "research_vision",
+      "at": "writing",
+      "value": {
+        "suggestion": "박사 연구의 목표와 졸업 이후 이어갈 방향을 설명한다."
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-progress",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "advice",
+      "field": "research_progress",
+      "at": "writing",
+      "value": {
+        "suggestion": "현재까지의 연구 결과와 출판을 근거와 함께 설명한다."
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nv27-gpu",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "kind": "advice",
+      "field": "nvidia_gpu_connection",
+      "at": "writing",
+      "value": {
+        "suggestion": "GPU 사용, NVIDIA 기술의 영향 또는 미래 GPU의 설계, 성능과 활용에 대한 기여를 설명한다."
+      },
+      "review_state": "reviewed"
+    }
+  ]
+}

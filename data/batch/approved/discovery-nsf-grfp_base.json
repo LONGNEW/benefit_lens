@@ -1,0 +1,95 @@
+{
+  "program": [
+    {
+      "program_id": "nsf-grfp",
+      "title": "NSF Graduate Research Fellowship Program",
+      "issuer": "U.S. National Science Foundation",
+      "opportunity_type": "fellowship"
+    }
+  ],
+  "opportunity_round": [
+    {
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "opportunity_id": "nsf-grfp-fy2027",
+      "notice_version": "nsf-grfp-fy2027-v1",
+      "status": "closed",
+      "official_url": "https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program/nsf26-526/solicitation",
+      "application_url": "https://www.research.gov/grfp/Login.do",
+      "opens_on": null,
+      "closes_on": "2026-10-23",
+      "announces_on": null,
+      "checked_on": "2026-11-09"
+    }
+  ],
+  "source_document": [
+    {
+      "document_id": "NSF-GRFP",
+      "title": "NSF 26-526: NSF Graduate Research Fellowship Program (GRFP) | NSF - U.S. National Science Foundation",
+      "url": "https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program/nsf26-526/solicitation",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:34:43.318835+00:00",
+      "raw_sha256": "001f1ec488462b96c7bbc93d389c8f13b5ec1f88ba1f682f09cc2941f8015fc2",
+      "text_sha256": "7b1858d02e16fc389095360d94be497d3943f4c5de125827356f3ea90d172d79",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/001f1ec488462b96c7bbc93d389c8f13b5ec1f88ba1f682f09cc2941f8015fc2.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/7b1858d02e16fc389095360d94be497d3943f4c5de125827356f3ea90d172d79.txt"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "NSF-DATES",
+      "document_id": "NSF-GRFP",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "source_role": "official_notice",
+      "locator": "L27-L40",
+      "quote": "Application Deadline(s)"
+    },
+    {
+      "evidence_id": "NSF-FUNDING",
+      "document_id": "NSF-GRFP",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "source_role": "official_notice",
+      "locator": "L165-L170",
+      "quote": "$37,000"
+    },
+    {
+      "evidence_id": "NSF-ELIGIBILITY",
+      "document_id": "NSF-GRFP",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "source_role": "official_notice",
+      "locator": "L185-L208",
+      "quote": "Citizenship"
+    },
+    {
+      "evidence_id": "NSF-SUBMISSION",
+      "document_id": "NSF-GRFP",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "source_role": "official_guideline",
+      "locator": "L264-L287",
+      "quote": "GRFP Application Module"
+    },
+    {
+      "evidence_id": "NSF-REF-DUE",
+      "document_id": "NSF-GRFP",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "source_role": "official_notice",
+      "locator": "L57-L58",
+      "quote": "October 16"
+    },
+    {
+      "evidence_id": "NSF-REF",
+      "document_id": "NSF-GRFP",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "source_role": "official_guideline",
+      "locator": "L289-L293",
+      "quote": "Reference Letters"
+    }
+  ]
+}

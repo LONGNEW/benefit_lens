@@ -1,0 +1,63 @@
+공고 전량 처리와 공유 조건 계약 v2
+기준 시각: 2026-11-19T22:52:26.570912+09:00
+이번 실행 대상은 발견 후보 36,856건 전부다. 데모 10건은 모든 성과 집계에서 제외했다. 원문을 새로 수집하거나 운영 서비스를 바꾸지 않았고, DB는 REPEATABLE READ READ ONLY로 조회했다. 산출물은 공유 캐시에 썼다.
+
+1. 전량에서 실제로 확인하고 생성한 것
+- 원문 확보 표지 26,035건의 원문과 추출문 해시를 전부 검증했다. 실패 0건이다. 원문 미해결 10,821건은 별도 상태로 남겼다.
+- 24,997건에서 조건 표현 후보 199,485개를 만들었다. 본문이 있으나 사전 패턴이 검출되지 않은 1,038건도 기록했다. 미검출을 요구 조건 없음으로 바꾸지 않았다.
+- 조건 후보 199,485개의 원문 문자 위치와 exact_quote를 전수 대조했고 오류는 0개다. 모든 조건은 candidate이며 새 의미 승인과 정본 DB 쓰기는 각각 0건이다.
+- 기존 수집 테이블에는 제목 36,856건, 기관명 36,739건이 있다. 기관명 누락은 117건이다. issuer_kind는 36,856건 모두 unknown, source_country는 모두 NULL, payload.countries와 funding_hints는 모두 빈 배열이다. 필드가 존재하는 것과 값이 해석된 것을 구분했다.
+- 이전 추출의 eligibility 배열에는 16,059건에서 51,745개 조항, benefits는 11,203건에서 46,488개, application은 24,743건에서 116,022개가 있다. 수집 데이터에 구조가 전혀 없던 상태는 아니다.
+- 현재 발견 후보의 intake semantic_review는 전부 unreviewed이고 current_open_verified 표지의 true는 0건이다. 지금 접수 중인 실제 공고가 없다는 뜻으로 해석하지 않는다.
+
+2. 과거 정규화 산출물을 별도 보존했다
+2026-11-09 고정 manifest와 baseline, current-opportunity 증분, semantic overlay, 검토 영수증의 해시를 읽어 기존 인계를 색인했다. 조정기와 모델을 재실행하지 않았다.
+- 과거 공고 입력 4,492개 회차와 원문 8,571개를 색인했다. 전체 인계의 4,497회차와 8,596문서는 역사적 작성 자료까지 포함한 다른 범위다.
+- 과거 기록에는 학생성, 모집 상태와 신청 기간의 승인 claim이 각각 4,492개 있다. 일반 학생 프로필에 대한 모든 자격 요건을 검토했다는 의미는 아니다.
+- 공통 정규형 매핑 기록은 support_component 20개, document_requirement 1개, enrollment_maintenance 1개, funding_gap_rule 1개로 총 23개다. 별도 의미 분류와 source-specific 지침도 원래 참조와 필드 범위를 유지했다.
+- 현재 36,856개와 연결한 결과는 원문 raw hash 동일 114건, URL만 동일 2,740건, 연결 없음 34,002건이다. URL만 같으면 같은 스냅샷으로 확정하지 않는다. 공용 POST endpoint와 여러 버전도 가능한 상태다.
+- 과거 검토 기준일은 2026-11-09로 보존했다. 과거 모집 상태를 오늘의 현재 모집 상태로 승계하지 않았다.
+- 주 DB의 opportunity, opportunity_version, eligibility_rule은 각 0행이다. 이 운영 정본 계층 수치와 과거 인계의 정규화, 임시 SQL 검증 결과를 서로 대체하지 않는다.
+
+3. 공고팀과 개인화팀이 공유하는 단일 계약
+pipeline/config/shared_condition_catalog_v1.json의 fields 사전 19개를 양쪽 팀이 직접 소비한다. 별도의 기본 조건 목록을 만들지 않았다. 조건은 field_id, operator, value, value_type, unit, at, evidence, status와 unknown_reasons로 표현한다.
+각 근거에는 document_id, text_sha256, char_start, char_end, exact_quote와 source_url이 있다. 날짜, 단위, 논리 귀속이나 값이 미해석이면 unknown 사유가 붙는다. AND/OR/NOT와 예외 표현은 logical_context에 보존하고, 조건 목록을 자동으로 AND 트리로 바꾸지 않는다.
+applicant_input_stage는 common_profile, program_followup, not_applicant_input의 요청 시점 정책이다. 해당 필드가 모든 공고의 필수 요건이라는 의미가 아니다. application과 benefit 필드는 각각 제출과 혜택 역할로 구분한다.
+group 대표 문서만 검토한 경우 variant_count와 not_all_round_or_location_variants_reviewed를 남겼다. 그 조건을 다른 국가나 회차 전체로 확대하지 않는다. source_origin은 URL 도메인 유형이며 원문 공식성의 의미 검토를 대신하지 않는다.
+
+4. 필드별 실제 표면 표현 후보 분포
+아래는 표현을 발견한 공고 후보 수이며, 의미 승인된 필수 요건 수와 구분한다.
+- education.degree: 8,557건, 표면 표현 25종, 미검출 또는 원문 미확보 28,299건
+- education.status: 5,333건, 표면 표현 16종, 미검출 또는 원문 미확보 31,523건
+- education.full_time: 673건, 표면 표현 66종, 미검출 또는 원문 미확보 36,183건
+- education.coursework_completed: 18건, 표면 표현 12종, 미검출 또는 원문 미확보 36,838건
+- education.gpa: 961건, 표면 표현 108종, 미검출 또는 원문 미확보 35,895건
+- education.major_group: 5,804건, 표면 표현 688종, 미검출 또는 원문 미확보 31,052건
+- education.institution_id: 45건, 표면 표현 4종, 미검출 또는 원문 미확보 36,811건
+- person.nationalities: 2,603건, 표면 표현 7종, 미검출 또는 원문 미확보 34,253건
+- person.age: 686건, 표면 표현 70종, 미검출 또는 원문 미확보 36,170건
+- person.residency: 4,963건, 표면 표현 6종, 미검출 또는 원문 미확보 31,893건
+- work.authorization: 1,334건, 표면 표현 6종, 미검출 또는 원문 미확보 35,522건
+- work.visa_sponsorship: 621건, 표면 표현 26종, 미검출 또는 원문 미확보 36,235건
+- experience.years: 2,347건, 표면 표현 150종, 미검출 또는 원문 미확보 34,509건
+- language.proficiency: 988건, 표면 표현 48종, 미검출 또는 원문 미확보 35,868건
+- application.deadline: 6,635건, 표면 표현 7종, 미검출 또는 원문 미확보 30,221건
+- application.nomination: 73건, 표면 표현 8종, 미검출 또는 원문 미확보 36,783건
+- application.document_requirement: 1,242건, 표면 표현 13종, 미검출 또는 원문 미확보 35,614건
+- benefit.amount: 9,446건, 표면 표현 2,521종, 미검출 또는 원문 미확보 27,410건
+- program_specific.requirement: 16,440건, 표면 표현 22,537종, 미검출 또는 원문 미확보 20,416건
+
+금액 표현은 2,521종이며 숫자와 원, 만원, 학기당 주기를 후보로 보존했다. $만 있으면 통화를 USD로 확정하지 않았다. 원천별 미해석 요건은 program_specific.requirement에 94,350개 문장으로 남겼다. 이 문자열을 정규화 값이 완성된 것으로 세지 않았다.
+
+5. 아직 처리하지 못한 의미와 실제 다음 작업
+연산자 unknown은 198,000개, 기준 시점 unknown은 198,886개다. 현재 구현은 전량 증거 연결과 표현 후보 투영이며 문항 의미를 모두 해석한 결과가 아니다. 학점 만점 환산, 기관명과 국적 값 식별, 언어 점수 기준, 비교 및 예외의 범위, 복합 논리 트리, 상대 마감과 프로그램 고유 요건의 공통 승격은 남아 있다.
+T1은 동일한 원문과 구간에서 신규 의미 매핑과 예외를 검토한다. T4는 공유 사전의 동일 조건 객체를 변경하지 않고 정보 요구 후보와 unknown으로 소비한다. 미승인 후보로 실제 충족 판정이나 사용자 질문을 자동 실행하지 않는다. T6는 문서와 구간, 객체 동일성, 계약과 처리 상태를 검사한다.
+
+6. 실행 코드, 출력과 재현
+코드: tools/audit_benefitlens_notice_production.py
+명령: /usr/bin/python3 tools/audit_benefitlens_notice_production.py --root /home/longnew/.cache/datasets/benefitlens/scale50k-20261109/team-production-20261119/notice
+출력: notices.jsonl.gz 36,856행, conditions.jsonl.gz 199,485행, next-processing-queue.jsonl.gz 36,856행, summary.json, audit-checks.json, manifest.json. records.jsonl.gz는 notices의 호환 하드링크다.
+각 공고 행은 원문 ref, 기존 처리 상태, 조건 객체, 미검출 필드와 원인, 과거 인계 연결 범위를 보존한다. 다음 처리 큐는 원문 복구 또는 의미 검토로 분기한다. 운영 서비스에 새 수집 요청을 전송하지 않았다.
+데이터 동결 manifest는 산출물과 코드 및 공유 사전의 SHA256을 기록한다. 조건 추출 테스트 7개가 통과했다. OR와 우대 표현, 부분 coursework, 학기당 금액과 미상 통화, 특화 요건, 국적 오추론 방지와 원문 구간 보존을 검사했다.
+
+추가 구현을 기다리지 않고 T4가 이 전량 산출물을 바로 읽을 수 있다. 현재 모집 재검증과 정본 게시, 전체 의미 승인 완료는 이번 성과로 주장하지 않는다.

@@ -1,0 +1,131 @@
+{
+  "program": [
+    {
+      "program_id": "chevening-south-korea",
+      "title": "Chevening Scholarship in South Korea",
+      "issuer": "UK Foreign, Commonwealth and Development Office and partners",
+      "opportunity_type": "scholarship"
+    }
+  ],
+  "opportunity_round": [
+    {
+      "program_id": "chevening-south-korea",
+      "round_id": "2027-2028",
+      "opportunity_id": "chevening-south-korea-2027-2028",
+      "notice_version": "chevening-south-korea-2027-2028-v1",
+      "status": "closed",
+      "official_url": "https://www.chevening.org/scholarship/south-korea/",
+      "application_url": "https://www.chevening.org/scholarship/south-korea/",
+      "opens_on": null,
+      "closes_on": null,
+      "announces_on": null,
+      "checked_on": "2026-11-09"
+    }
+  ],
+  "source_document": [
+    {
+      "document_id": "CHEV-KR",
+      "title": "South Korea (Chevening Scholarship) | Chevening",
+      "url": "https://www.chevening.org/scholarship/south-korea/",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:37:39.439567+00:00",
+      "raw_sha256": "b8e5ab29c7b1f90ae076c2456ec9bf80f8ab40650e02eb415f19152433d3dfc3",
+      "text_sha256": "32a00ba7c529f1daf0c473a210d56b53b8f94b448749778b356bbeab7d461ff2",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/b8e5ab29c7b1f90ae076c2456ec9bf80f8ab40650e02eb415f19152433d3dfc3.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/32a00ba7c529f1daf0c473a210d56b53b8f94b448749778b356bbeab7d461ff2.txt"
+    },
+    {
+      "document_id": "CHEV-TIMELINE",
+      "title": "Application timeline | Chevening",
+      "url": "https://www.chevening.org/scholarships/application-timeline/",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:37:39.440125+00:00",
+      "raw_sha256": "1f561a0e5a45ff2e5d1c0bd7b3719ef8cbb605991568c6c29535aa7cba361d3b",
+      "text_sha256": "6e028b9a5b3989d68e93924bffbf7c1fdcc58a4c3d99d18deb4da3759dfe2499",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/1f561a0e5a45ff2e5d1c0bd7b3719ef8cbb605991568c6c29535aa7cba361d3b.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/6e028b9a5b3989d68e93924bffbf7c1fdcc58a4c3d99d18deb4da3759dfe2499.txt"
+    },
+    {
+      "document_id": "CHEV-ELIGIBILITY",
+      "title": "Chevening eligibility criteria | Chevening",
+      "url": "https://www.chevening.org/resource-hub/guidance/eligibility/",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:37:39.440841+00:00",
+      "raw_sha256": "fb1f795255d04bbf3102629d844808f7406bce2f5c2784ffa0356889a002a767",
+      "text_sha256": "2a5daddad6f524d809e737f5efd261cd8c2ce606d1b2cee7ccadab7223c9a092",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/fb1f795255d04bbf3102629d844808f7406bce2f5c2784ffa0356889a002a767.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/2a5daddad6f524d809e737f5efd261cd8c2ce606d1b2cee7ccadab7223c9a092.txt"
+    },
+    {
+      "document_id": "CHEV-BENEFITS",
+      "title": "What does a Chevening Scholarship cover?  | Chevening",
+      "url": "https://www.chevening.org/faqs/what-does-a-chevening-scholarship-cover/",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:37:39.440538+00:00",
+      "raw_sha256": "d5ed97612c9d7a7b411885b7c1c6f1ca84e58f830a920cb8ffa31ff61f29cae9",
+      "text_sha256": "8897ffe49870cf760466d7fc7bc0f36a51ac332065bd3df7eca987d05f212e05",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/d5ed97612c9d7a7b411885b7c1c6f1ca84e58f830a920cb8ffa31ff61f29cae9.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/8897ffe49870cf760466d7fc7bc0f36a51ac332065bd3df7eca987d05f212e05.txt"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "CHEV-KR-ROUND",
+      "document_id": "CHEV-KR",
+      "program_id": "chevening-south-korea",
+      "round_id": "2027-2028",
+      "source_role": "official_notice",
+      "locator": "L1-L12",
+      "quote": "Chevening Scholarships are now closed."
+    },
+    {
+      "evidence_id": "CHEV-KR-APPLY",
+      "document_id": "CHEV-KR",
+      "program_id": "chevening-south-korea",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L20-L35",
+      "quote": "How to apply"
+    },
+    {
+      "evidence_id": "CHEV-KR-SCHEDULE",
+      "document_id": "CHEV-TIMELINE",
+      "program_id": "chevening-south-korea",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L1-L14",
+      "quote": "Application timeline"
+    },
+    {
+      "evidence_id": "CHEV-KR-DOCUMENTS",
+      "document_id": "CHEV-TIMELINE",
+      "program_id": "chevening-south-korea",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L27-L39",
+      "quote": "seven working days"
+    },
+    {
+      "evidence_id": "CHEV-KR-ELIGIBILITY",
+      "document_id": "CHEV-ELIGIBILITY",
+      "program_id": "chevening-south-korea",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L4-L21",
+      "quote": "2,800 hours"
+    },
+    {
+      "evidence_id": "CHEV-KR-FUNDING",
+      "document_id": "CHEV-BENEFITS",
+      "program_id": "chevening-south-korea",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L10-L18",
+      "quote": "Payment of tuition fees"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": "personalization-expansion-v1",
+  "catalog": "pipeline/config/shared_condition_catalog_v1.json",
+  "field_labels": {
+    "education.degree": "학위 과정", "education.status": "재학 상태", "education.full_time": "전일제 여부",
+    "education.coursework_completed": "수료 여부", "education.gpa": "학점과 만점 기준", "education.major_group": "전공",
+    "education.institution_id": "소속 학교", "person.nationalities": "국적", "person.age": "나이",
+    "person.residency": "거주 자격", "work.authorization": "취업 자격", "work.visa_sponsorship": "비자 지원 필요 여부",
+    "experience.years": "관련 경력", "language.proficiency": "언어 능력", "application.deadline": "마감",
+    "application.nomination": "기관 추천", "application.document_requirement": "제출 서류", "benefit.amount": "혜택 금액",
+    "program_specific.requirement": "해당 공고의 추가 조건"
+  },
+  "phase_labels": {"application": "신청 시점", "benefit_start": "지원 또는 활동 시작 시점", "throughout_activity": "지원 또는 활동 기간 전체", "unknown": "적용 시점 미확정"},
+  "document_hints": [
+    {"kind": "personal_statement", "regex": "personal statement|자기소개서", "author": "applicant", "drafting_material": true},
+    {"kind": "research_proposal", "regex": "research (?:proposal|statement)|연구계획서", "author": "applicant", "drafting_material": true},
+    {"kind": "resume", "regex": "resume|résumé|curriculum vitae|\\bCV\\b|이력서", "author": "applicant", "drafting_material": true},
+    {"kind": "academic_transcript", "regex": "academic transcript|transcript|성적증명서", "author": "institution", "drafting_material": false},
+    {"kind": "degree_audit", "regex": "degree audit|학위 이수 점검표", "author": "institution", "drafting_material": false},
+    {"kind": "enrolment_certificate", "regex": "enrolment certificate|enrollment certificate|재학증명서", "author": "institution", "drafting_material": false},
+    {"kind": "recommendation_letter", "regex": "recommendation letter|reference letter|추천서", "author": "referee", "drafting_material": false}
+  ],
+  "unreviewed_mappings_issue_live_questions": false,
+  "unreviewed_extraction_plan_is_executable_eligibility_rule": false,
+  "public_reference_case_is_applicant_fact": false
+}

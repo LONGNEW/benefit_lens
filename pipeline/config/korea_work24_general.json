@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "id": "work24-general-interns",
+      "kind": "work24_general",
+      "url": "https://www.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do",
+      "content": ".cont_wrap_area",
+      "terms": ["대학생", "현장실습", "인턴"],
+      "max_pages": 60
+    }
+  ]
+}

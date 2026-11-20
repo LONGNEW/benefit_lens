@@ -220,6 +220,23 @@ def normalize_corpus(output):
     return report
 
 
+def extract_source_text(body, kind):
+    """Use the same local conversion for a fetched response and offline replay."""
+    if kind == 'html':
+        soup = BeautifulSoup(body, 'html.parser')
+        for node in soup.select('script,style,nav,header,footer,noscript,svg'):
+            node.decompose()
+        content = soup.select_one('main,article') or soup
+        text = '\n'.join(line.strip() for line in content.get_text('\n', strip=True).splitlines() if line.strip())
+    elif kind in {'pdf', 'hwp', 'hwpx', 'image'}:
+        text = extract_document(body, kind)
+    else:
+        raise ValueError('unsupported document kind')
+    if len(text.strip()) < 60:
+        raise ValueError('no usable source text')
+    return text
+
+
 class SourceCollector:
     def __init__(self, output):
         self.output = output.resolve()
@@ -239,7 +256,13 @@ class SourceCollector:
             with self.lock:
                 if origin not in self.robots:
                     try:
-                        robots = client.get(origin + '/robots.txt')
+                        # A public redirect may move an author's site to a new
+                        # domain. Check that origin's policy with its own host
+                        # allowlist, rather than silently skipping the policy.
+                        policy_client = SafeHttpClient(allowed_hosts={parts.hostname},
+                            user_agent='BenefitLensCourseDemo/1.0', timeout_seconds=20,
+                            max_body_bytes=20_000_000, allow_public_redirects=True)
+                        robots = policy_client.get(origin + '/robots.txt')
                         self.robots[origin] = robots.body.decode('utf-8', errors='replace')
                     except Exception as error:
                         if 'HTTP 404' in str(error):
@@ -253,18 +276,7 @@ class SourceCollector:
         try:
             fetched = client.get(url, request_guard=guard)
             kind = document_kind(fetched.body, fetched.content_type, fetched.final_url)
-            if kind == 'html':
-                soup = BeautifulSoup(fetched.body, 'html.parser')
-                for node in soup.select('script,style,nav,header,footer,noscript,svg'):
-                    node.decompose()
-                content = soup.select_one('main,article') or soup
-                text = '\n'.join(line.strip() for line in content.get_text('\n',strip=True).splitlines() if line.strip())
-            elif kind in {'pdf','hwp','hwpx','image'}:
-                text = extract_document(fetched.body, kind)
-            else:
-                raise ValueError('unsupported document kind')
-            if len(text.strip()) < 60:
-                raise ValueError('no usable source text')
+            text = extract_source_text(fetched.body, kind)
             raw = self.output / 'raw' / (fetched.sha256 + '.' + kind)
             raw.write_bytes(fetched.body)
             path = self.output / 'text' / (source['id'] + '.txt')
@@ -279,6 +291,8 @@ class SourceCollector:
 
 
 def collect_sources(output):
+    from .demo_scope import require_collection_enabled
+    require_collection_enabled()
     migrate(ROOT / 'migrations/020_proposal_pipeline.sql')
     sources = json.loads((ROOT / 'config/proposal_demo_sources.json').read_text())['sources']
     collector = SourceCollector(output)

@@ -1,0 +1,10 @@
+{
+  "period_verified_postings": 4339,
+  "parent_candidates": 1129,
+  "rule_passed_parents": 1071,
+  "review_parents": 58,
+  "selected_source_variants": 4276,
+  "inflated_target_4339_rejected": "4339 issuer/role groups requested, only 1071 pass grouping rules; 4339 source postings are not distinct opportunities",
+  "all_periods_and_raw_variants_preserved": true,
+  "semantic_deduplication_full_audit": false
+}

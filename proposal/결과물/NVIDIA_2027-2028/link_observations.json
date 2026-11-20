@@ -1,0 +1,29 @@
+{
+  "direct_links": [
+    {
+      "from_document": "OFFICIAL",
+      "linked_url": "https://webportalapp.com/sp/nvidia_grad_fellow_2027",
+      "matched_in_saved_html": true
+    },
+    {
+      "from_document": "N1-INDEX",
+      "linked_url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+      "matched_in_saved_html": true
+    },
+    {
+      "from_document": "N2-PANEL",
+      "linked_url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+      "matched_in_saved_html": true
+    }
+  ],
+  "official_download_candidates": [],
+  "n3_outcome_origin_get_status": 403,
+  "n3_public_web_excerpt_observed": true,
+  "n3_author_linked_pdf_url": "https://ruthcfong.github.io/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+  "n3_legacy_link_verification": {
+    "status": 200,
+    "final_url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+    "raw_sha256": "25ee765293861a712877b28173d0de9c7d997ba0f90af1957fb700e08fb28d18",
+    "same_bytes_as_N3_STATEMENT": true
+  }
+}

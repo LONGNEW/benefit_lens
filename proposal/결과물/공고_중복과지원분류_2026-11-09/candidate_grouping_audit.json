@@ -1,0 +1,11 @@
+{
+  "unit": "rule_based_issuer_role_parent_candidates_not_semantically_verified_opportunities",
+  "input_source_postings": 10471,
+  "parent_candidates": 6078,
+  "rule_passed_parents": 5555,
+  "review_parents": 523,
+  "review_relations": 465,
+  "period_verification_inherited": false,
+  "members": 10471,
+  "new_original_downloads": 0
+}

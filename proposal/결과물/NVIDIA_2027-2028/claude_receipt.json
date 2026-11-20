@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "returncode": 0,
+  "elapsed_seconds": 32.52,
+  "cli": "/home/longnew/.local/bin/claude",
+  "effort": "medium",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "7b0fdf8d-c7bc-4446-800d-14ff83c48e69",
+  "prompt": "/home/longnew/Desktop/course_work/tmp/benefitlens_delivery_20261109/claude_release_review.prompt.txt",
+  "prompt_sha256": "e2f3dfa59fca7fed740fc26eb83afebd90db92842654fc636704cc8cba4fad39",
+  "response": "/home/longnew/Desktop/course_work/tmp/benefitlens_delivery_20261109/claude_release_review.txt",
+  "tools": [],
+  "mcp_servers": [],
+  "scope": "text-only design review"
+}

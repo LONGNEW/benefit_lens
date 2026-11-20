@@ -1,0 +1,53 @@
+{
+  "contract_version": "condition-value-candidates-v2",
+  "status": "offline_proposal_not_operational_catalog_or_meaning_approval",
+  "input_catalog_version": "shared-condition-catalog-v1",
+  "candidate_only": true,
+  "executable": false,
+  "unknown_is_false": false,
+  "scope": "Selected stored LLM-linked notice mappings, not all project extraction paths.",
+  "value_envelope": {
+    "required": ["field", "type", "value", "unit", "attributes", "namespace"],
+    "separate_preserved_objects": ["raw_mapping", "evidence", "logic", "context", "review"],
+    "number_representation": "JSON number parsed from a finite decimal; no implicit unit conversion",
+    "range_representation": "two ordered numbers; inclusivity comes from original operator and needs review",
+    "boolean_representation": "true or false only when explicit field-specific text supports polarity; null means unknown",
+    "text_representation": "source label, not a verified entity identifier"
+  },
+  "common_required": ["reference_phase", "subject", "modality", "operator"],
+  "field_definitions": {
+    "education.degree": {"type": "enum_or_set", "values": ["associate", "bachelor", "master", "doctorate"], "required_attributes": ["degree_state"], "unit": null},
+    "education.status": {"type": "enum_or_set", "values": ["enrolled", "on_leave", "expected_graduate", "graduated"], "required_attributes": [], "unit": null},
+    "education.full_time": {"type": "boolean", "required_attributes": [], "unit": null},
+    "education.coursework_completed": {"type": "boolean", "required_attributes": ["coursework_scope"], "unit": null},
+    "education.gpa": {"type": "number_or_range", "required_attributes": ["scale", "degree_scope", "period_scope"], "unit": "gpa_point", "bounds": [0, 100]},
+    "education.major_group": {"type": "string", "required_attributes": ["verified_major_id"], "unit": null},
+    "education.institution_id": {"type": "string", "required_attributes": ["verified_institution_id"], "unit": null},
+    "person.nationalities": {"type": "array", "required_attributes": ["country_codes"], "unit": null},
+    "person.age": {"type": "number_or_range", "required_attributes": ["as_of_date"], "unit": "year", "bounds": [0, 150]},
+    "person.residency": {"type": "string", "required_attributes": ["jurisdiction", "residency_kind"], "unit": null},
+    "work.authorization": {"type": "boolean", "required_attributes": ["jurisdiction"], "unit": null},
+    "work.visa_sponsorship": {"type": "boolean", "meaning": "applicant needs sponsorship, distinct from employer offers sponsorship", "required_attributes": ["jurisdiction"], "unit": null},
+    "experience.years": {"type": "number_or_range", "required_attributes": ["experience_scope", "overlap_policy"], "unit": "year", "bounds": [0, 150]},
+    "language.proficiency": {"type": "string", "required_attributes": ["language", "test_or_level", "validity"], "unit": null},
+    "application.deadline": {"type": "date", "required_attributes": ["timezone", "precision"], "unit": null},
+    "application.nomination": {"type": "string", "required_attributes": ["nominator", "nomination_state"], "unit": null},
+    "application.document_requirement": {"type": "string", "required_attributes": ["document_kind", "submission_state"], "unit": null},
+    "benefit.amount": {"type": "number_or_range", "required_attributes": ["currency", "payment_period", "payment_duration", "recipient"], "unit": "currency", "bounds": [0, 1000000000000]},
+    "program_specific.requirement": {"type": "unresolved_condition", "required_attributes": ["reviewed_specific_type"], "unit": null}
+  },
+  "proposed_additions": {
+    "education.study_duration": {"type": "number_or_range", "units": ["year", "month", "semester"], "required_attributes": ["degree_scope", "reference_phase", "completion_state"], "not_equivalent_to": "education.coursework_completed"},
+    "education.earned_credits": {"type": "number_or_range", "units": ["credit", "semester_hour"], "required_attributes": ["credit_system", "period_scope", "reference_phase"]},
+    "education.academic_year": {"type": "number_or_range", "units": ["academic_year"], "required_attributes": ["education_status", "reference_phase"], "not_a_duration": true},
+    "education.gpa.attributes.scale": {"type": "number", "meaning": "explicit denominator, never inferred from institution or country", "cross_scale_conversion": "held"},
+    "benefit.amount.attributes.payment_period": {"type": "enum", "values": ["hour", "day", "week", "month", "semester", "year", "one_time"], "conversion": "held_without_hours_count_or_installments"}
+  },
+  "namespace_adapters": {"shared_v2_degree": {"phd": "doctorate", "Ph.D.": "doctorate"}, "demo_degree": {"doctorate": "phd"}, "automatic_cross_namespace_matching": false},
+  "country_alias_scope": {"US": ["United States", "U.S.", "US", "USA", "미국"], "KR": ["대한민국", "Republic of Korea", "South Korea"], "GB": ["United Kingdom", "UK"], "CA": ["Canada", "Canadian"], "AU": ["Australia", "Australian"]},
+  "logic_contract": {"nodes": ["all", "any", "not", "leaf"], "truth_values": [true, false, null], "unordered_mentions": "not_conjoined", "cues_without_scoped_tree": "held", "missing_cue": "not_proof_of_single_clause_in_full_notice", "preference_benefit_institution_duty": "not_applicant_eligibility_predicate"},
+  "context_contract": {"preserve": ["candidate_key", "group_id", "occurrence_id", "document_id", "text_sha256", "source_url", "source_spans", "reference_phase", "subject", "modality", "statement_type"], "execution_requires": ["verified_program_identity", "verified_round_identity", "source_version", "reviewed_scoped_logic", "meaning_approval", "supported_executor"], "candidate_key_is_round_identity": false},
+  "readiness_dimensions": ["type_parse_success", "required_attributes_complete_local", "human_meaning_review_match", "execution_possible"],
+  "dimensions_are_not_additive": true,
+  "approval_policy": "This contract and parser cannot create approval, canonical rules, user facts, or personal decisions."
+}

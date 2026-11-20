@@ -1,0 +1,148 @@
+{
+  "artifact_status": "proposed_contract_synthetic_not_runtime",
+  "contract_version": "opportunity-contract-v2-proposal",
+  "program_id": "demo-program",
+  "round_id": "demo-2027",
+  "round_resolution": "reviewed",
+  "opportunity_version": "demo-opportunity-v1",
+  "field_registry_version": "field-registry-v2-proposal",
+  "source_documents": [
+    {
+      "document_id": "demo-source",
+      "content_sha256": null,
+      "canonical_url": "https://example.org/demo/2027",
+      "fetched_at": null,
+      "note": "합성 구조 예시이며 URL과 해시는 실제 확보 증거가 아니다.",
+      "document_version_id": "demo-source-v1",
+      "fetch_status": "not_executed_synthetic_sketch",
+      "role_bindings": [
+        {
+          "binding_scope": "document",
+          "role": "official_notice",
+          "program_id": "demo-program",
+          "round_id": "demo-2027",
+          "prompt_id": null,
+          "speaker": null,
+          "resolution_status": "reviewed_synthetic"
+        }
+      ],
+      "extraction_version": "synthetic-parser-v1",
+      "text_sha256": null
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "demo-e1",
+      "locator": "synthetic paragraph 1",
+      "exact_quote": "Applicants must be enrolled in a PhD program.",
+      "document_version_id": "demo-source-v1",
+      "extraction_version": "synthetic-parser-v1",
+      "text_sha256": null,
+      "locator_basis": "synthetic_extraction_text_not_original_page"
+    },
+    {
+      "evidence_id": "demo-e2",
+      "locator": "synthetic paragraph 2",
+      "exact_quote": "Most coursework should be completed before the award starts.",
+      "document_version_id": "demo-source-v1",
+      "extraction_version": "synthetic-parser-v1",
+      "text_sha256": null,
+      "locator_basis": "synthetic_extraction_text_not_original_page"
+    }
+  ],
+  "eligibility": {
+    "all": [
+      {
+        "criterion_id": "demo-degree",
+        "field": "education.degree",
+        "op": "eq",
+        "value": "phd",
+        "at": "application",
+        "evidence_ids": [
+          "demo-e1"
+        ],
+        "interpretation_status": "reviewed"
+      },
+      {
+        "criterion_id": "demo-coursework",
+        "field": "program.demo-program.coursework_most_completed",
+        "op": "eq",
+        "value": true,
+        "at": "award_start",
+        "evidence_ids": [
+          "demo-e2"
+        ],
+        "interpretation_status": "ambiguous",
+        "reason": "기관이 most의 판정 기준을 제시하지 않아 완전 수료 boolean으로 치환하지 않는다."
+      }
+    ]
+  },
+  "application_schema": {
+    "schema_version": "demo-app-v1",
+    "round_id": "demo-2027",
+    "prompts": [
+      {
+        "prompt_id": "demo-research-proposal",
+        "required": true,
+        "limits": [
+          {
+            "unit": "page",
+            "maximum": 2,
+            "references_excluded": true
+          }
+        ],
+        "evidence_ids": [],
+        "interpretation_status": "candidate"
+      }
+    ],
+    "documents": [],
+    "program_specific": {
+      "advisor_letter_required": null
+    },
+    "ai_writing_policy": {
+      "status": "unknown",
+      "scope": "prompt",
+      "evidence_ids": []
+    }
+  },
+  "subject_facts": [
+    {
+      "fact_id": "demo-f1",
+      "field": "education.degree",
+      "value": "phd",
+      "at": "application",
+      "status": "accepted",
+      "subject_id": "demo-student"
+    },
+    {
+      "fact_id": "demo-f2",
+      "field": "education.coursework_completed",
+      "value": false,
+      "at": "current",
+      "status": "accepted",
+      "subject_id": "demo-student"
+    }
+  ],
+  "expected_assessment": {
+    "retrieval": "retain_candidate",
+    "eligibility": "unknown",
+    "criterion_results": [
+      {
+        "criterion_id": "demo-degree",
+        "status": "satisfied",
+        "fact_ids": [
+          "demo-f1"
+        ]
+      },
+      {
+        "criterion_id": "demo-coursework",
+        "status": "unknown",
+        "fact_ids": []
+      }
+    ],
+    "next_questions": [
+      "수혜 시작 시점의 교과 이수 계획과 기관이 말한 대부분 이수의 해석을 확인해야 한다."
+    ],
+    "note": "현재 미수료를 미래의 대부분 이수 조건 불충족으로 처리하지 않는다."
+  }
+}

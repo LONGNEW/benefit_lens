@@ -1,0 +1,100 @@
+[
+  {
+    "case": "N1",
+    "basis": "official_record",
+    "notes": "공개 지원서와 공식 수상은 확인했다. 정확한 제출 회차, 최종본 및 문항 매핑은 미확인.",
+    "outcome": "selected",
+    "documents": [
+      {
+        "url": "https://rohany.github.io/",
+        "role": "application_index",
+        "capture": "full_document",
+        "document": "N1-INDEX-abd695f019fd",
+        "finality": "not_applicable"
+      },
+      {
+        "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+        "role": "application_statement",
+        "capture": "full_document",
+        "document": "N1-STATEMENT-1292bfba8ff4",
+        "finality": "unknown"
+      },
+      {
+        "url": "https://research.nvidia.com/graduate-fellowships/2023",
+        "role": "outcome_record",
+        "capture": "full_document",
+        "document": "N1-OUTCOME-23eb6b58ee64",
+        "finality": "not_applicable"
+      }
+    ],
+    "round_label": "2023 award cohort",
+    "outcome_evidence": {
+      "url": "https://research.nvidia.com/graduate-fellowships/2023",
+      "locator": "L43-L44",
+      "document": "N1-OUTCOME-23eb6b58ee64"
+    }
+  },
+  {
+    "case": "N2",
+    "basis": "official_record",
+    "notes": "PDF 및 2024 패널은 공개 자료다. 수상 회차와 PDF 제출 회차를 동일시하지 않았다.",
+    "outcome": "selected",
+    "documents": [
+      {
+        "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+        "role": "application_statement",
+        "capture": "full_document",
+        "document": "N2-STATEMENT-d1cc2f892c3b",
+        "finality": "unknown"
+      },
+      {
+        "url": "https://research.nvidia.com/graduate-fellowships/2022",
+        "role": "outcome_record",
+        "capture": "full_document",
+        "document": "N2-OUTCOME-714690c58604",
+        "finality": "not_applicable"
+      },
+      {
+        "url": "https://students-at-systems.org/pages/events/fellowship-panel.html",
+        "role": "panel",
+        "capture": "full_document",
+        "document": "N2-PANEL-651d999ce104",
+        "finality": "not_applicable"
+      }
+    ],
+    "round_label": "2022 award cohort",
+    "outcome_evidence": {
+      "url": "https://research.nvidia.com/graduate-fellowships/2022",
+      "locator": "L53-L54",
+      "document": "N2-OUTCOME-714690c58604"
+    }
+  },
+  {
+    "case": "N3",
+    "basis": "author_report",
+    "notes": "미선정은 공개 발췌의 본인 보고다. 공식 회차와 제출 최종본은 미확인.",
+    "outcome": "not_selected",
+    "documents": [
+      {
+        "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+        "role": "application_statement",
+        "capture": "full_document",
+        "document": "N3-STATEMENT-25ee76529386",
+        "finality": "unknown"
+      },
+      {
+        "url": "https://medium.com/@ruthfong/applying-to-the-open-philanthropy-ai-fellowship-48dafe7fe27c",
+        "role": "reflection",
+        "capture": "public_web_excerpt",
+        "document": "N3-OUTCOME-web-b4c5d68e8618",
+        "finality": "not_applicable"
+      }
+    ],
+    "round_label": "2017 in public PDF file name",
+    "outcome_evidence": {
+      "url": "https://medium.com/@ruthfong/applying-to-the-open-philanthropy-ai-fellowship-48dafe7fe27c",
+      "locator": "L1",
+      "document": "N3-OUTCOME-web-b4c5d68e8618"
+    }
+  }
+]

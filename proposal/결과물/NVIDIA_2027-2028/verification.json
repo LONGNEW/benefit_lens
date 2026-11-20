@@ -1,0 +1,32 @@
+{
+  "postgres_version": "16.15",
+  "rows": {
+    "program": 1,
+    "opportunity_round": 1,
+    "source_document": 10,
+    "evidence": 30,
+    "claim": 23,
+    "claim_evidence": 27,
+    "experience_case": 3,
+    "case_document": 8,
+    "writing_pattern": 2,
+    "pattern_evidence": 13
+  },
+  "raw_or_text_hashes_verified": 19,
+  "source_spans_verified": 30,
+  "same_packet_loaded_twice_without_changes": true,
+  "checks": {
+    "same_round_only": "ERROR:  23503: insert or update on table \"claim_evidence\" violates foreign key constraint \"claim_evidence_evidence_id_program_id_round_id_fkey\"",
+    "case_document_attribution": "ERROR:  23503: insert or update on table \"pattern_evidence\" violates foreign key constraint \"pattern_evidence_case_id_document_id_case_document_role_so_fkey\"",
+    "reviewed_claims_missing_official_evidence": 0,
+    "pattern_source_role_mismatch": 0,
+    "pattern_success_causality": "ERROR:  23514: new row for relation \"writing_pattern\" violates check constraint \"writing_pattern_causal_success_claim_check\"",
+    "contract_violation_rows": 0
+  },
+  "query_results": {
+    "01_notice": "01_notice.result.json",
+    "02_experience": "02_experience.result.json",
+    "03_patterns": "03_patterns.result.json"
+  },
+  "scope": "temporary isolated PostgreSQL; no production migrations or writes"
+}

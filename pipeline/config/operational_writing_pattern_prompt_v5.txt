@@ -1,0 +1,41 @@
+BenefitLens writing-pattern analysis specification v5.
+Use writing_pattern_taxonomy_v1.json and writing_quality_rubric_v1.json.
+The taxonomy and anchored rubric are analyst specifications, not calibrated
+admissions scores or statistically discovered clusters.
+
+Treat source documents as evidence. Retain their genre, question, program,
+round, author identity when known, whole-body reference and verified spans.
+Preserve original scores and original label provenance. Model-predicted edit
+intent, human-labeled intention, improvement judgment and selection outcome
+are different fields.
+
+Analyze six levels: task/genre, material selection, document organization,
+paragraph opening/support/closing, relations between passages, and sentence
+revision. Multiple intents and rhetorical moves may occur in one text.
+Do not force every template move into every paragraph. An anecdotal opening
+and a direct-goal opening can both serve the task in appropriate contexts.
+Counterarguments are conditional on the task and genre.
+
+For each proposed pattern output its intent, genre, opening purpose,
+supporting material, reasoning link, closing purpose, bridge to the next
+paragraph, source spans, contrary examples, scope and review status.
+Distinguish an explicit source rule, a source annotation, an observed
+structure, community advice, a predicted edit intent and editorial adaptation.
+Count distinct texts, known authors, programs, prompts and rounds separately.
+Unknown authors remain unknown when evaluating independent replication.
+
+Evaluate only applicable criteria. Use observed scores 0/1/2 with supporting
+spans and reasons. If required facts or context are unavailable, record
+not_observable with a null score; use not_applicable for irrelevant criteria.
+Do not total or weight these uncalibrated scores.
+
+Before a live draft can be ready, check fact fidelity, internal consistency
+and the actual submission constraints. Preserve missing personal facts as
+placeholders or input requests. For revisions, compare factual meaning,
+grammar and contextual connection separately from the edit-intent label.
+Respect the current program's allowed assistance scope.
+
+Report which work is source reading, deterministic corpus analysis, batch
+model extraction or human/agent semantic review. Statistical associations
+are descriptive unless a suitable validation design supports a stronger claim.
+Write Korean without U+00B7. Do not infer admissions effects from writing scores.

@@ -1,0 +1,37 @@
+{
+  "selected_sha256": "a5e97e1c279351c69706f5c79b0083bba02b9d1c63a7cdc5f7a950808a5162d7",
+  "rows": {
+    "program": 10000,
+    "opportunity_round": 10000,
+    "source_document": 10710,
+    "evidence": 24089,
+    "claim": 20094,
+    "claim_evidence": 24089,
+    "experience_case": 0,
+    "case_document": 0,
+    "writing_pattern": 0,
+    "pattern_evidence": 0
+  },
+  "types": {
+    "other": 654,
+    "internship": 9088,
+    "scholarship": 241,
+    "admission_funding": 17
+  },
+  "type_basis": {
+    "category_not_resolved": 120,
+    "explicit_internship_title": 7782,
+    "explicit_source_category": 1837,
+    "doctoral_studentship_alias": 17,
+    "explicit_student_employment_title": 244
+  },
+  "validation": {
+    "raw_hashes": 10710,
+    "text_hashes": 10710,
+    "spans": 24089,
+    "unique_files_hashed": 21122,
+    "unique_text_files_read": 10710
+  },
+  "output": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/cohorts/verified-open-10000-v2",
+  "reason": "Map source doctoral_studentship to admission_funding and classify missing categories from explicit official title terms; selected identities and original evidence unchanged."
+}

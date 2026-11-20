@@ -1,0 +1,565 @@
+{
+ "type": "object",
+ "properties": {
+  "analysis_version": {
+   "const": "notice-semantic-analysis-v1"
+  },
+  "task_id": {
+   "type": "string"
+  },
+  "input_sha256": {
+   "type": "string",
+   "pattern": "^[0-9a-f]{64}$"
+  },
+  "chunk_id": {
+   "type": "string"
+  },
+  "source_text_sha256": {
+   "type": "string",
+   "pattern": "^[0-9a-f]{64}$"
+  },
+  "conditions": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/condition"
+   }
+  },
+  "logic_groups": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/logic"
+   }
+  },
+  "root_logic_ids": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "root_list_semantics": {
+   "const": "not_implicitly_conjoined"
+  },
+  "exceptions": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/exception"
+   }
+  },
+  "official_prompts": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/prompt"
+   }
+  },
+  "unknowns": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/unknown"
+   }
+  }
+ },
+ "required": [
+  "analysis_version",
+  "task_id",
+  "input_sha256",
+  "chunk_id",
+  "source_text_sha256",
+  "conditions",
+  "logic_groups",
+  "root_logic_ids",
+  "root_list_semantics",
+  "exceptions",
+  "official_prompts",
+  "unknowns"
+ ],
+ "additionalProperties": false,
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Notice LLM semantic candidates with exact source evidence v1",
+ "$defs": {
+  "evidence": {
+   "type": "object",
+   "properties": {
+    "document_id": {
+     "type": "string"
+    },
+    "quote": {
+     "type": "string",
+     "minLength": 1
+    },
+    "char_start": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "minimum": 0
+    },
+    "char_end": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "minimum": 0
+    }
+   },
+   "required": [
+    "document_id",
+    "quote",
+    "char_start",
+    "char_end"
+   ],
+   "additionalProperties": false
+  },
+  "condition": {
+   "type": "object",
+   "properties": {
+    "condition_id": {
+     "type": "string"
+    },
+    "field_id": {
+     "enum": [
+      "education.degree",
+      "education.status",
+      "education.full_time",
+      "education.coursework_completed",
+      "education.gpa",
+      "education.major_group",
+      "education.institution_id",
+      "person.nationalities",
+      "person.age",
+      "person.residency",
+      "work.authorization",
+      "work.visa_sponsorship",
+      "experience.years",
+      "language.proficiency",
+      "application.deadline",
+      "application.nomination",
+      "application.document_requirement",
+      "benefit.amount",
+      "program_specific.requirement"
+     ]
+    },
+    "program_specific_key": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "statement_type": {
+     "enum": [
+      "eligibility_requirement",
+      "submission_requirement",
+      "selection_preference",
+      "benefit_description",
+      "participation_obligation",
+      "institution_requirement",
+      "description",
+      "unknown"
+     ]
+    },
+    "subject": {
+     "enum": [
+      "applicant",
+      "institution",
+      "referee",
+      "program",
+      "employer",
+      "unknown"
+     ]
+    },
+    "modality": {
+     "enum": [
+      "required",
+      "prohibited",
+      "preferred",
+      "optional",
+      "informational",
+      "unknown"
+     ]
+    },
+    "operator": {
+     "enum": [
+      "eq",
+      "in",
+      "not_in",
+      "gte",
+      "lte",
+      "gt",
+      "lt",
+      "between",
+      "exists",
+      "unknown"
+     ]
+    },
+    "value_type": {
+     "enum": [
+      "enum",
+      "boolean",
+      "number",
+      "string",
+      "array",
+      "date",
+      "unresolved_condition"
+     ]
+    },
+    "value": {},
+    "unit": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "at": {
+     "type": "object",
+     "properties": {
+      "phase": {
+       "enum": [
+        "application",
+        "benefit_start",
+        "throughout_activity",
+        "unknown"
+       ]
+      },
+      "date": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "original_text": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "required": [
+      "phase",
+      "date",
+      "original_text"
+     ],
+     "additionalProperties": false
+    },
+    "qualifiers": {
+     "type": "object",
+     "properties": {
+      "gpa_scale": {
+       "type": [
+        "number",
+        "null"
+       ],
+       "exclusiveMinimum": 0
+      },
+      "currency": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "frequency": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "jurisdiction": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "original_value_text": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "required": [
+      "gpa_scale",
+      "currency",
+      "frequency",
+      "jurisdiction",
+      "original_value_text"
+     ],
+     "additionalProperties": false
+    },
+    "evidence": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/evidence"
+     },
+     "minItems": 1
+    },
+    "unknown_reasons": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "condition_id",
+    "field_id",
+    "program_specific_key",
+    "statement_type",
+    "subject",
+    "modality",
+    "operator",
+    "value_type",
+    "value",
+    "unit",
+    "at",
+    "qualifiers",
+    "evidence",
+    "unknown_reasons"
+   ],
+   "additionalProperties": false
+  },
+  "logic": {
+   "type": "object",
+   "properties": {
+    "group_id": {
+     "type": "string"
+    },
+    "operator": {
+     "enum": [
+      "all",
+      "any",
+      "not"
+     ]
+    },
+    "members": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    },
+    "statement_type": {
+     "enum": [
+      "eligibility_requirement",
+      "submission_requirement",
+      "selection_preference",
+      "benefit_description",
+      "participation_obligation",
+      "institution_requirement",
+      "description",
+      "unknown"
+     ]
+    },
+    "evidence": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/evidence"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "group_id",
+    "operator",
+    "members",
+    "statement_type",
+    "evidence"
+   ],
+   "additionalProperties": false
+  },
+  "exception": {
+   "type": "object",
+   "properties": {
+    "exception_id": {
+     "type": "string"
+    },
+    "applies_to": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "condition_ids": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "effect": {
+     "enum": [
+      "waive",
+      "replace",
+      "additional_condition",
+      "unclear"
+     ]
+    },
+    "explanation": {
+     "type": "string"
+    },
+    "unknown_reason": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/evidence"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "exception_id",
+    "applies_to",
+    "condition_ids",
+    "effect",
+    "explanation",
+    "unknown_reason",
+    "evidence"
+   ],
+   "additionalProperties": false
+  },
+  "prompt": {
+   "type": "object",
+   "properties": {
+    "prompt_id": {
+     "type": "string"
+    },
+    "text": {
+     "type": "string"
+    },
+    "instruction_kind": {
+     "enum": [
+      "writing_prompt",
+      "document_requirement",
+      "procedural_instruction",
+      "unknown"
+     ]
+    },
+    "subject": {
+     "enum": [
+      "applicant",
+      "institution",
+      "referee",
+      "program",
+      "employer",
+      "unknown"
+     ]
+    },
+    "response_form": {
+     "enum": [
+      "essay",
+      "short_answer",
+      "research_proposal",
+      "personal_statement",
+      "cv",
+      "document_upload",
+      "form_field",
+      "unknown"
+     ]
+    },
+    "required": {
+     "enum": [
+      "required",
+      "optional",
+      "unknown"
+     ]
+    },
+    "limit": {
+     "type": "object",
+     "properties": {
+      "min": {
+       "type": [
+        "integer",
+        "null"
+       ],
+       "minimum": 0
+      },
+      "max": {
+       "type": [
+        "integer",
+        "null"
+       ],
+       "minimum": 0
+      },
+      "unit": {
+       "enum": [
+        "words",
+        "characters",
+        "pages",
+        "unknown"
+       ]
+      },
+      "scope_note": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "required": [
+      "min",
+      "max",
+      "unit",
+      "scope_note"
+     ],
+     "additionalProperties": false
+    },
+    "evidence": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/evidence"
+     },
+     "minItems": 1
+    },
+    "unknown_reasons": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "prompt_id",
+    "text",
+    "instruction_kind",
+    "subject",
+    "response_form",
+    "required",
+    "limit",
+    "evidence",
+    "unknown_reasons"
+   ],
+   "additionalProperties": false
+  },
+  "unknown": {
+   "type": "object",
+   "properties": {
+    "reason_code": {
+     "type": "string"
+    },
+    "detail": {
+     "type": "string"
+    },
+    "affected_ids": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "evidence": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/evidence"
+     }
+    }
+   },
+   "required": [
+    "reason_code",
+    "detail",
+    "affected_ids",
+    "evidence"
+   ],
+   "additionalProperties": false
+  }
+ }
+}

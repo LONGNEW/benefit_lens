@@ -9,29 +9,66 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
 
 from .db import connect
+from .demo_scope import student_scope
 
 ASSETS = Path(__file__).resolve().parents[3] / 'web/pipeline-demo'
 
 
 def query_api(path, query):
+    scope = student_scope()
+    allowed = scope['opportunity_ids']
     with connect() as conn:
         conn.execute('SET TRANSACTION READ ONLY')
+        if path == '/api/pipeline/collection':
+            try:
+                page=max(1,min(100000,int(query.get('page',['1'])[0])))
+            except ValueError:
+                page=1
+            q=query.get('q',[''])[0][:200]
+            status=query.get('status',[''])[0][:100]
+            where=["source_family='full_history_inventory_v1'"];params=[]
+            if q:
+                where.append('(title ILIKE %s OR issuer_name ILIKE %s)');params.extend(['%'+q+'%']*2)
+            if status:
+                where.append('capture_status=%s');params.append(status)
+            clause=' AND '.join(where)
+            total=conn.execute('SELECT count(*) FROM benefitlens.support_discovery_record WHERE '+clause,params).fetchone()[0]
+            rows=conn.execute('''SELECT candidate_key,title,issuer_name,source_country,source_url,
+                capture_status,eligibility_status,payload->>'document_id' FROM benefitlens.support_discovery_record
+                WHERE '''+clause+' ORDER BY candidate_key LIMIT 50 OFFSET %s',params+[(page-1)*50]).fetchall()
+            keys=['candidate_key','title','issuer_name','source_country','source_url','capture_status','eligibility_status','document_id']
+            counts=dict(conn.execute("SELECT capture_status,count(*) FROM benefitlens.support_discovery_record WHERE source_family='full_history_inventory_v1' GROUP BY capture_status"))
+            return {'data':[dict(zip(keys,row)) for row in rows],
+                'meta':{'total':total,'page':page,'page_size':50,'capture_states':counts,
+                        'scope':'all imported inventory candidates; eligibility unverified'}}
+        if path == '/api/pipeline/collection-detail':
+            key=query.get('id',[''])[0][:200]
+            row=conn.execute('''SELECT candidate_key,title,source_url,capture_status,detail_text,payload
+                FROM benefitlens.support_discovery_record WHERE candidate_key=%s
+                AND source_family='full_history_inventory_v1' ''',(key,)).fetchone()
+            if row is None:raise KeyError('수집 후보를 찾을 수 없습니다.')
+            return dict(zip(['candidate_key','title','source_url','capture_status','full_text','metadata'],row))
         if path == '/api/pipeline/stats':
             return {
                 'as_of': '2026-10-15', 'storage': 'PostgreSQL',
-                'source_records': conn.execute('SELECT count(*) FROM benefitlens.support_discovery_record').fetchone()[0],
-                'normalized_records': conn.execute('SELECT count(*) FROM benefitlens.opportunities').fetchone()[0],
-                'reviewed_demo': conn.execute("SELECT count(*) FROM benefitlens.opportunities WHERE extractor IN ('assistant_source_reading_review_v1','public_demo_fixture_v1')").fetchone()[0],
+                'scope': scope['applicant_scope'], 'collection_enabled': scope['collection_enabled'],
+                'source_records': conn.execute('SELECT count(*) FROM benefitlens.support_discovery_record WHERE candidate_key=ANY(%s)',(allowed,)).fetchone()[0],
+                'normalized_records': conn.execute('SELECT count(*) FROM benefitlens.opportunities WHERE opportunity_id=ANY(%s)',(allowed,)).fetchone()[0],
+                'reviewed_demo': conn.execute('SELECT count(*) FROM benefitlens.opportunities WHERE opportunity_id=ANY(%s)',(allowed,)).fetchone()[0],
                 'public_sample': conn.execute("SELECT count(*) FROM benefitlens.opportunities WHERE extractor='public_demo_fixture_v1'").fetchone()[0],
                 'work_items': dict(conn.execute('SELECT status,count(*) FROM benefitlens.pipeline_work_item GROUP BY status').fetchall()),
                 'source_document_versions':conn.execute('SELECT count(*) FROM benefitlens.pipeline_document').fetchone()[0],
                 'knowledge_programs':conn.execute('SELECT count(*) FROM benefitlens.program_knowledge').fetchone()[0],
                 'experience_cases':conn.execute('SELECT coalesce(sum(jsonb_array_length(experience_cases)),0) FROM benefitlens.program_knowledge').fetchone()[0],
+                'writing_patterns':conn.execute('SELECT coalesce(sum(jsonb_array_length(writing_pattern)),0) FROM benefitlens.program_knowledge').fetchone()[0],
+                'llm_knowledge_programs':conn.execute("SELECT count(*) FROM benefitlens.program_knowledge WHERE payload->>'extractor' IN ('llm_full_experience_v1','llm_full_experience_v2')").fetchone()[0],
                 'categories':dict(conn.execute('SELECT category,count(*) FROM benefitlens.opportunities GROUP BY category').fetchall()),
                 'search_waves':[r[0] for r in conn.execute('SELECT payload FROM benefitlens.pipeline_search_wave ORDER BY run_id,wave')],
             }
         if path == '/api/pipeline/detail':
             key = query.get('id', [''])[0][:200]
+            if key not in allowed:
+                raise KeyError('학생 대상 예제 10개에 포함되지 않은 공고입니다.')
             row = conn.execute('''SELECT o.payload,o.version_hash,k.payload
               FROM benefitlens.opportunities o LEFT JOIN benefitlens.program_knowledge k USING(program_id)
               WHERE opportunity_id=%s''',(key,)).fetchone()
@@ -46,7 +83,7 @@ def query_api(path, query):
                 page = max(1,min(10000,int(query.get('page',['1'])[0])))
             except ValueError:
                 page = 1
-            where, params = [], []
+            where, params = ["opportunity_id=ANY(%s)", "recipient_type='individual'", "category<>'research_grant'"], [allowed]
             if scope != 'all':
                 where.append("extractor IN ('assistant_source_reading_review_v1','public_demo_fixture_v1')")
             if category != 'all':

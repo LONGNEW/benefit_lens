@@ -26,7 +26,7 @@ from .keyword_search import safe_source_url, scope_hint
 from .linked import _inline_notice_body, extract_document
 
 ROOT = Path(__file__).resolve().parents[2]
-TOPIC = re.compile(r"장학|장학생|연구장려|연구지원|생활장려|fellowship|scholarship|studentship|bursar|stipend|research.grant|travel.grant|doctoral.funding", re.I)
+TOPIC = re.compile(r"장학|장학생|연구장려|연구지원|생활장려|학자금|대출|융자|인턴|학생근로|fellowship|scholarship|studentship|bursar|stipend|student.loan|education.loan|tuition.loan|maintenance.loan|internship|working.student|student.employment|research.grant|travel.grant|doctoral.funding", re.I)
 AUTH = re.compile(r"(?:^|[/\W])(?:login|logout|sign.?in|sso|mypage|password|register|account)(?:[/\W]|$)", re.I)
 SOCIAL = {"reddit.com", "youtube.com", "youtu.be", "facebook.com", "instagram.com", "linkedin.com", "quora.com"}
 NON_DOCUMENT_ASSET=re.compile(r"\.(?:exe|msi|dmg|apk|deb|rpm|appimage|dll|so|bat|cmd|ps1|sh)$",re.I)
@@ -147,8 +147,8 @@ def excluded_seed(candidate: dict) -> str | None:
         return "authentication_not_attempted"
     if any(host == h or host.endswith("." + h) for h in SOCIAL):
         return "experience_or_social_metadata_only"
-    if re.search(r"대학별 등록금|학과별 등록금|등록금통계|평균등록금|학자금 대출|tuition02|tuition04_09", candidate["title"] + " " + candidate["source_url"]):
-        return "non_opportunity_statistics_or_loan"
+    if re.search(r"대학별 등록금|학과별 등록금|등록금통계|평균등록금|tuition02|tuition04_09", candidate["title"] + " " + candidate["source_url"]):
+        return "non_opportunity_statistics"
     if not document_url(candidate["source_url"]):
         return "non_https_or_unsafe_url"
     return None
@@ -528,6 +528,9 @@ def main():
     parser.add_argument("--retry-status",action="append",default=[])
     parser.add_argument("--checkpoint-name")
     args=parser.parse_args()
+    if not args.offline_refresh:
+        from .demo_scope import require_collection_enabled
+        require_collection_enabled()
     summary=json.loads(args.input.read_text(encoding="utf-8")); config=json.loads(args.config.read_text(encoding="utf-8"))
     candidates=summary["candidates"]
     if args.limit:

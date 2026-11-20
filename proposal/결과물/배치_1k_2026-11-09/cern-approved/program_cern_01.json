@@ -1,0 +1,34 @@
+{
+  "program": [
+    {
+      "program_id": "cern-stag-data-science",
+      "title": "Short Term Internship 2027 - Data Science, AI & Analytics",
+      "issuer": "CERN",
+      "opportunity_type": "internship"
+    },
+    {
+      "program_id": "cern-stag-information-technologies",
+      "title": "Short Term Internship 2027 - Information Technologies",
+      "issuer": "CERN",
+      "opportunity_type": "internship"
+    },
+    {
+      "program_id": "cern-stag-applied-physics",
+      "title": "Short Term Internship 2027 - Applied Physics",
+      "issuer": "CERN",
+      "opportunity_type": "internship"
+    },
+    {
+      "program_id": "cern-summer-student-programme",
+      "title": "CERN Summer Student Programme 2027 (Member and Non-Member State)",
+      "issuer": "CERN",
+      "opportunity_type": "internship"
+    },
+    {
+      "program_id": "cern-openlab-summer-student-programme",
+      "title": "CERN OPENLAB Summer Student Programme 2027",
+      "issuer": "CERN",
+      "opportunity_type": "internship"
+    }
+  ]
+}

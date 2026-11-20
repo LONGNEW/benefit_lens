@@ -4,13 +4,17 @@ from __future__ import annotations
 import re
 from typing import Any, Iterable
 
-FUNDING_VERSION = "funding-1.0.0"
+FUNDING_VERSION = "funding-1.1.0"
 FUNDING_LABELS = {
     "cash": "현금성 지원",
     "scholarship": "장학금",
     "tuition": "등록금",
     "living_expenses": "생활비",
+    "loan": "상환형 대출",
+    "interest_subsidy": "대출 이자 지원",
 }
+LOAN = re.compile(r"대출|대여장학|융자|\b(?:student|education|tuition|maintenance)[ -]loans?\b", re.I)
+INTEREST = re.compile(r"(?:대출|학자금).{0,16}(?:이자|interest).{0,12}(?:지원|보조|감면)|(?:loan )?interest (?:support|subsidy|subsidies)", re.I)
 
 
 def operator_group(provider_kind: str) -> str:
@@ -33,21 +37,33 @@ def classify_funding(
     """No eligibility, dates or arbitrary full-page text is treated as a benefit.
 
     A scholarship title proves its category, not its payment amount or use.
-    Loans and loan interest are kept in the registry but outside the default scope.
+    Repayable loans and interest subsidies retain distinct labels from grants.
     """
     sources = [("benefit", str(text)) for text in benefits if text]
     sources += [("presentation.benefits", str(text)) for text in (presentation or {}).get("benefits", []) if text]
     sources.append(("title", title))
     evidence: dict[str, dict[str, str]] = {}
-    loan_program = bool(re.search(r"대출|대여장학|융자|학자금\s*이자|발생\s*이자", title))
+    loan_program = bool(LOAN.search(title))
+    interest_program = bool(INTEREST.search(title))
     for field, text in sources:
         for raw in re.split(r"\s+/\s+|[\r\n]|;\s*", text):
             quote = raw.strip()
             if not quote or len(quote) > 1500 or re.search(r"<[^>]+>|data:[^,]+;base64", quote):
                 continue
-            if loan_program or re.search(r"대출|발생\s*이자|이자\s*(?:지원|감면)", quote):
-                continue
             if re.search(r"본인\s*부담|자비\s*부담|(?:장학금|지원금).{0,16}(?:수혜자\s*제외|지원\s*불가|지급\s*불가)|지원하지\s*않|지급하지\s*않|지급되지\s*않", quote):
+                continue
+            if re.search(r"(?:대출|융자).{0,12}(?:불가|제외|아님)|(?:student|education|tuition|maintenance)[ -]loans?\s+(?:are\s+)?(?:not available|excluded)", quote, re.I):
+                continue
+            if interest_program or INTEREST.search(quote):
+                if field == 'title' or INTEREST.search(quote):
+                    evidence.setdefault('interest_subsidy', {'tag':'interest_subsidy','text':quote[:700],'field':field})
+                continue
+            if loan_program or LOAN.search(quote):
+                if field == 'title' or LOAN.search(quote):
+                    evidence.setdefault('loan', {'tag':'loan','text':quote[:700],'field':field})
+                for tag, pattern in [('tuition', r'등록금|학비|tuition'), ('living_expenses', r'생활비|생계비|maintenance|living expenses')]:
+                    if re.search(pattern, quote, re.I):
+                        evidence.setdefault(tag, {'tag':tag,'text':quote[:700],'field':field})
                 continue
             tags: list[str] = []
             if re.search(r"장학|펠로우?십|fellowship", quote, re.I):

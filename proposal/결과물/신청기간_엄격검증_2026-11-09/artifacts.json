@@ -1,0 +1,90 @@
+{
+  "as_of": "2026-11-09",
+  "secured_count": 4339,
+  "full_personal_eligibility_verified": 0,
+  "cohort": {
+    "path": "/home/longnew/.cache/datasets/benefitlens/strict-students-20261109/root/strict-secured-649b56fbf414fbf9.jsonl",
+    "sha256": "649b56fbf414fbf917af51dbf50b62baba0cccbb120edbd240cf2728e091460b",
+    "rows": 4339
+  },
+  "classifications": {
+    "path": "/home/longnew/.cache/datasets/benefitlens/strict-students-20261109/root/strict-classifications-dfb1be1228e17e56.jsonl",
+    "sha256": "dfb1be1228e17e56b0a6c7c6a3681000775a4dd1c18682f4ff7a54301d07481d",
+    "rows": 10471
+  },
+  "sql_run": {
+    "batch_id": "4d7e03b00d9e7a4533330257afa1214702c5608975d1fd1e20113b6edd651ce8",
+    "run": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-period-strict-20261109/runs/4d7e03b00d9e7a4533330257afa1214702c5608975d1fd1e20113b6edd651ce8",
+    "verification": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-period-strict-20261109/runs/4d7e03b00d9e7a4533330257afa1214702c5608975d1fd1e20113b6edd651ce8/output/verification.json",
+    "rounds": 4339,
+    "source_backed": 4339,
+    "summary_only": 0,
+    "cases": 0,
+    "patterns": 0
+  },
+  "source_code": {
+    "tools/benefitlens_application_period.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/benefitlens_application_period.py",
+      "sha256": "10721c5272de6ac8b6d48201da98bcf8c236b9eddcba2f7222d1d31a7503e68d"
+    },
+    "tools/build_benefitlens_live_batch.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/build_benefitlens_live_batch.py",
+      "sha256": "b275e1a359bc5caac43298399b705b67bb9148e8fd9550216fd496855c572823"
+    },
+    "tools/run_benefitlens_batch.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/run_benefitlens_batch.py",
+      "sha256": "4925ea79b5d7f157237699cec00331b832a2ab0a2a01cd079dd7165297f6a482"
+    },
+    "tools/benefitlens_batch_db.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/benefitlens_batch_db.py",
+      "sha256": "f442d666e66422231aa43e07dcce3901d6ec988589769a09a896bd96bfbacd26"
+    },
+    "tools/tests/test_benefitlens_application_period.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/tests/test_benefitlens_application_period.py",
+      "sha256": "ce3841482731e0bbd0aa525a2de915022c0204517f250e4cbf83227b4e016ed7"
+    },
+    "tools/tests/test_benefitlens_batch.py": {
+      "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/tests/test_benefitlens_batch.py",
+      "sha256": "c2f7bd54ba11296a8f385e801fe87e347a92a990aaeff1412b9a7e0fbb6586e3"
+    }
+  },
+  "team_inputs": [
+    {
+      "team": "schema",
+      "path": "/home/longnew/.cache/datasets/benefitlens/strict-students-20261109/schema/period-proof-df14cb2c40acebca.jsonl",
+      "sha256": "df14cb2c40acebcab1a10b824707280781becf9cdb9cab9ac49e7a9e0c8e7e49",
+      "role": "ledger"
+    },
+    {
+      "team": "schema",
+      "path": "/home/longnew/.cache/datasets/benefitlens/strict-students-20261109/schema/approved-periods-4b4425c405dfbeeb.jsonl",
+      "sha256": "4b4425c405dfbeebb6b62a86b758ec293a8358795ba77e077fb3c1def9b80597",
+      "role": "secured"
+    },
+    {
+      "team": "discovery",
+      "path": "/home/longnew/.cache/datasets/benefitlens/strict-10k-20261109/discovery/strict_all_classifications-604629c9481d7a02.jsonl",
+      "sha256": "604629c9481d7a021b299948f17819b7479137bcc274fd8f53630079fae1d794",
+      "role": "ledger"
+    },
+    {
+      "team": "discovery",
+      "path": "/home/longnew/.cache/datasets/benefitlens/strict-10k-20261109/discovery/strict_secured-ca516504c06f336a.jsonl",
+      "sha256": "ca516504c06f336a9bf951ca4014ede847eaff5d2940cc785629bdf23db945d0",
+      "role": "secured"
+    },
+    {
+      "team": "quality",
+      "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_strict_10k_20261109/quality/period_audited_all_635_33fbec1be47c.jsonl",
+      "sha256": "33fbec1be47c9383e736ebbd0871875406554648b901907df2037b95ceb58b26",
+      "role": "ledger"
+    },
+    {
+      "team": "quality",
+      "path": "/home/longnew/Desktop/course_work/tmp/benefitlens_strict_10k_20261109/quality/period_verified_secured_474_f7d92412e780.jsonl",
+      "sha256": "f7d92412e7806814539d9a50401a2e3bbad1abf7e672b2e628aef4a2d747a702",
+      "role": "secured"
+    }
+  ],
+  "scope": "source-captured application-period audit; no production writes"
+}

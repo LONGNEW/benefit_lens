@@ -1,0 +1,86 @@
+[
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/approved_with_form_gate_all-045bc1c9accb-7c407b69330d8a4a.jsonl",
+    "sha256": "7c407b69330d8a4a82d08206bc0a1c289d43087725c3a8ba4eea28c0a20aa2c3",
+    "rows": 313,
+    "origin": "/home/longnew/.cache/datasets/benefitlens/live-students-20261109/inputs/approved_with_form_gate_all-045bc1c9accb.jsonl",
+    "origin_sha256": "045bc1c9accb5f23ff112d251879cf3c9a8ff4da59491c64a4a1e7c0c2d4fe82"
+  },
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/discovery_verified_with_guidelines_snapshot-701ec6580f827527.jsonl",
+    "sha256": "701ec6580f827527473917eb6c9c28f3059820afcc5e5ee12b9744195d9842dc",
+    "rows": 1832,
+    "origin": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/discovery_verified_with_guidelines_snapshot.jsonl",
+    "origin_sha256": "de0fe665508fc0e137eda62856ec683096d65f719ea391eba53a1076791c18de"
+  },
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/approved.checked-20261109T045940Z-8887d1f0421e604c.jsonl",
+    "sha256": "8887d1f0421e604cb7cba0e70a608abc9fc0a2820b7cc1447dfb430b7323fe38",
+    "rows": 5600,
+    "origin": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/schema/approved.checked-20261109T045940Z.jsonl",
+    "origin_sha256": "4ded18239e5cec3e5967d7e926147d5e4259e1a65b6af973f785d947081f654c"
+  },
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/approved.checked-20261109T045248Z-8716c5b8ae36a0e7.jsonl",
+    "sha256": "8716c5b8ae36a0e7fb79e58a7c27e264c8d2711e01eccce630eca2f9b5b0f867",
+    "rows": 1212,
+    "origin": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/root/workday_extra/approved.checked-20261109T045248Z.jsonl",
+    "origin_sha256": "f947ade5d2a55431d84cfe852cca88764056131f8b3604be3dcf7cfd95635e56"
+  },
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/walgreens-approved-7d58d1288ec0ed1b.jsonl",
+    "sha256": "7d58d1288ec0ed1b264312644c277f06ae09012fa3cf13fa859183b6d72e0d16",
+    "rows": 870,
+    "origin": "/home/longnew/Desktop/course_work/tmp/benefitlens_live_10k_20261109/root/walgreens-approved.jsonl",
+    "origin_sha256": "8d78a415bf268f80e930a04041ffe3499ca34e5d1c1c31fedd9cbdfcc753cfe1"
+  },
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/siemens-typed-305-d50727d57215aa9c.jsonl",
+    "sha256": "d50727d57215aa9c0a0389aab21c3f90de62cedc5b6e4d72bc4071858fe50291",
+    "rows": 304,
+    "origin": "/home/longnew/Desktop/course_work/tmp/benefitlens_live_10k_20261109/root/siemens-typed-305.jsonl",
+    "origin_sha256": "b9100d18499d60f16d7bbb5aba13e2b68ebd7a8c74e4f54bfa070b5276a4ea4a"
+  },
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/fraunhofer_approved_151_frozen_20261109-64c94697753f4508.jsonl",
+    "sha256": "64c94697753f450897f9a68e76e7d291d87e3f3a99845f03afb1fc9f7dd9b5e1",
+    "rows": 150,
+    "origin": "/home/longnew/Desktop/course_work/tmp/benefitlens_live_10k_20261109/quality/fraunhofer_approved_151_frozen_20261109.jsonl",
+    "origin_sha256": "ff55678a52890a3f2ea348d2a39da71cc1ad513011d12bb24c1ef01c2a99ce4f"
+  },
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/quality-https-82-a207001cd8b92011.jsonl",
+    "sha256": "a207001cd8b92011e043b33f8aa137b6730ab7d559bbeb9b0ef0843134b70548",
+    "rows": 77,
+    "origin": "/home/longnew/Desktop/course_work/tmp/benefitlens_live_10k_20261109/root/quality-https-82.jsonl",
+    "origin_sha256": "d82a28f93c5db1e401cfaf0911fc840b08570db751fc57cd34099b65ea98a6f2"
+  },
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/cambridge_approved_50_frozen_20261109-b762acec41c776a6.jsonl",
+    "sha256": "b762acec41c776a608052fdf7f387ceffec7ed4a3ba1c6fb18de23f865c3b3d5",
+    "rows": 50,
+    "origin": "/home/longnew/Desktop/course_work/tmp/benefitlens_live_10k_20261109/quality/cambridge_approved_50_frozen_20261109.jsonl",
+    "origin_sha256": "026323002dddb14a2fe92718ce51ca8ddab70a4c165c50553948e1c428091a28"
+  },
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/university.approved.checked-20261109T045326Z-f611f9fa7b96db70.jsonl",
+    "sha256": "f611f9fa7b96db704e50e846818095b7d8edc1a47bd5e43588f35f7d958e29c4",
+    "rows": 50,
+    "origin": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/schema/university.approved.checked-20261109T045326Z.jsonl",
+    "origin_sha256": "142b9d1396c37b5abe7397fdbf9267b5052255370c59e7f5fa682737e0e08b1b"
+  },
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/approved_221_snapshot-af0d54cbe60f09ef.jsonl",
+    "sha256": "af0d54cbe60f09ef1b5929cfc81661ff15735fb57c74c689319146adafcc51b4",
+    "rows": 221,
+    "origin": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/phase2/schneider/approved_221_snapshot.jsonl",
+    "origin_sha256": "3c167dcaf4e8a2295e06b6d1e37ca0defc7a695034ac0dfeaeee1ef79af7d628"
+  },
+  {
+    "path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/inputs/sydney_approved_39_frozen_20261109-c9ef0d30a5df874c.jsonl",
+    "sha256": "c9ef0d30a5df874c3749a5daa35b712fd588d5e66e70ded7292cca1e2ba496d1",
+    "rows": 39,
+    "origin": "tmp/benefitlens_live_10k_20261109/quality/sydney_approved_39_frozen_20261109.jsonl",
+    "origin_sha256": "b4adc96d825dc6738f0619c6f3f20ff09f2efcd4e2023b798623a7b5f3b9ab43"
+  }
+]

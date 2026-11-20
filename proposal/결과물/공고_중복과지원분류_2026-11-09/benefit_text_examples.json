@@ -1,0 +1,74 @@
+[
+  {
+    "source": {
+      "source_family": "UQ",
+      "native_id": null,
+      "id": "uq-refugee-and-humanitarian-scholarship",
+      "title": "UQ Refugee and Humanitarian Scholarship",
+      "official_url": "https://scholarships.uq.edu.au/scholarship/uq-refugee-and-humanitarian-scholarship",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/live-students-20261109/quality/uq-uq-refugee-and-humanitarian-scholarship.html",
+      "raw_sha256": "0be81747ade1e5f2b2d65c57d4ca8c2c0db23166a404b75e9e58c4cb67399a28",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/live-students-20261109/quality/uq-uq-refugee-and-humanitarian-scholarship.txt",
+      "text_sha256": "dc21a7b7a52a4ba10ef977bbac62b797b5fcac36cffa317c1d711749f273f241"
+    },
+    "evidence": {
+      "quote": "100% tuition fee waiver, plus $29,000 annual living stipend",
+      "locator": "L19"
+    },
+    "status": "raw_evidence_confirmed_not_common_normalized"
+  },
+  {
+    "source": {
+      "source_family": "UQ",
+      "native_id": null,
+      "id": "33rd-uq-senate-create-change-residential-scholarship",
+      "title": "33rd UQ Senate Create Change Residential Scholarship",
+      "official_url": "https://scholarships.uq.edu.au/scholarship/33rd-uq-senate-create-change-residential-scholarship",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/live-students-20261109/quality/uq-33rd-uq-senate-create-change-residential-scholarship.html",
+      "raw_sha256": "aa77a879e46216d9861227700c83c3d4bac2b0a1dfdc916d18a74e0a30337ab5",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/live-students-20261109/quality/uq-33rd-uq-senate-create-change-residential-scholarship.txt",
+      "text_sha256": "a93d53ca45ee6fa5225eb1cdba86c4f870a32dda1a62a43f9aeb22e96320d126"
+    },
+    "evidence": {
+      "quote": "$10,000 towards accommodation fees",
+      "locator": "L19"
+    },
+    "status": "raw_evidence_confirmed_not_common_normalized"
+  },
+  {
+    "source": {
+      "source_family": "CAMBRIDGE-FUNDING",
+      "native_id": null,
+      "id": "clare-hall-natural-sciences-bursary-2026",
+      "title": "Clare Hall Natural Sciences Bursary",
+      "official_url": "https://www.student-funding.cam.ac.uk/fund/clare-hall-natural-sciences-bursary-2026",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/quality/cam-clare-hall-natural-sciences-bursary-2026.html",
+      "raw_sha256": "4a5b43668c71518604f167307cbe1c752df8db2fa20db34e18124bdd57b47e0a",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/quality/cam-clare-hall-natural-sciences-bursary-2026.txt",
+      "text_sha256": "9b11400a9c9ebf65a1e331444c83e5548859a253c5b1601ab60d122f5b703e8c"
+    },
+    "evidence": {
+      "quote": "A bursary for fees and living costs.",
+      "locator": "L53"
+    },
+    "status": "raw_evidence_confirmed_not_common_normalized"
+  },
+  {
+    "source": {
+      "source_family": "CAMBRIDGE-FUNDING",
+      "native_id": null,
+      "id": "george-and-lilian-schiff-studentship-2026",
+      "title": "George and Lilian Schiff Studentship",
+      "official_url": "https://www.student-funding.cam.ac.uk/fund/george-and-lilian-schiff-studentship-2026",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/quality/cam-george-and-lilian-schiff-studentship-2026.html",
+      "raw_sha256": "dd11b9126cad0233cc0945249f5de6c3b2901ad8b4ef4cc457a8a952e575fa2e",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/quality/cam-george-and-lilian-schiff-studentship-2026.txt",
+      "text_sha256": "b4a43346b8e15232f3a51ae6253f33555582793adcafeb64d5096bb98eef5468"
+    },
+    "evidence": {
+      "quote": "A research allowance of £1,100 is available annually for the duration of the award.",
+      "locator": "L57"
+    },
+    "status": "raw_evidence_confirmed_not_common_normalized"
+  }
+]

@@ -1,0 +1,295 @@
+{
+  "version": "writing-evidence-framework-v2",
+  "status": "source_grounded_content_framework_not_calibrated_quality_predictor",
+  "legacy_eight_principles_role": "A small editorial adaptation from six Writing for Success principles and two Microsoft style principles; not the complete inventory of good writing.",
+  "ownership": {
+    "T3": [
+      "writing-source relevance",
+      "genre and audience applicability",
+      "requirement-to-claim coverage",
+      "evidence sufficiency",
+      "warrant and causal scope",
+      "paragraph and document coherence",
+      "content review and human calibration"
+    ],
+    "T6": [
+      "unit and integration tests",
+      "schema and hash checks",
+      "source version and provenance",
+      "queue execution and recovery"
+    ],
+    "independent_code_evaluation_team": "removed; independent human content review remains a procedure owned by T3"
+  },
+  "content_review_chain": [
+    {
+      "id": "requirement",
+      "question": "공식 요청의 어느 항목에 답하는가?",
+      "output": [
+        "task_id",
+        "literal_requirement_refs",
+        "guidance_refs",
+        "inferred_intent_separate"
+      ]
+    },
+    {
+      "id": "claim",
+      "question": "독자가 받아들이기를 원하는 판단은 무엇이며 범위는 어디까지인가?",
+      "output": [
+        "claim_id",
+        "claim_text",
+        "scope",
+        "qualification"
+      ]
+    },
+    {
+      "id": "grounds",
+      "question": "어떤 개인 사실, 자료나 결과가 그 판단을 뒷받침하는가?",
+      "output": [
+        "source_span_refs",
+        "person_and_episode_binding",
+        "observation_or_plan",
+        "contrary_evidence"
+      ]
+    },
+    {
+      "id": "warrant",
+      "question": "그 근거가 왜 그 주장을 뒷받침하며 다른 설명은 무엇인가?",
+      "output": [
+        "reasoning_link",
+        "assumptions",
+        "alternative_explanations",
+        "causal_claim_status"
+      ]
+    },
+    {
+      "id": "paragraph",
+      "question": "문단의 역할, 첫 문장과 도달점, 이웃 문단의 관계가 일치하는가?",
+      "output": [
+        "paragraph_purpose",
+        "opening_function",
+        "closing_function",
+        "relation_to_previous",
+        "relation_to_next"
+      ]
+    },
+    {
+      "id": "document",
+      "question": "요구 전체를 어떤 논리 순서로 충족하며 무엇이 남았는가?",
+      "output": [
+        "coverage_matrix",
+        "genre_structure",
+        "unfilled_task_aspects",
+        "cross_paragraph_claim_consistency"
+      ]
+    }
+  ],
+  "evidence_kinds": {
+    "official_requirement": "현재 회차의 명시 요구. 판정과 문항 커버의 근거",
+    "scholarly_recommendation": "교재, 학술적 글쓰기 권고와 대학 안내. 적용 조건이 있는 작성 원칙",
+    "human_scored_observation": "사람의 점수나 담화 주석. 해당 장르와 척도 내의 관찰",
+    "observational_research": "상관과 구조의 경험적 관찰. 인과적 개선 효과로 승격하지 않음",
+    "experimental_effect": "실험이 조작한 조건과 측정 결과에 한정한 효과",
+    "community_advice": "독자나 작성자의 조언. 검토 후보이며 권위 있는 정답이 아님",
+    "example_text": "실제 작성본과 초안. 구조와 재료의 사례이며 성공 원인은 미확정",
+    "revision_pair": "수정 전후 관계. 사람과 모델 라벨을 분리하며 모든 수정이 개선은 아님"
+  },
+  "genre_boundaries": {
+    "application": "본인 경험, 기회와 목표, 명시 문항. 타인의 성과를 개인 사실로 복사하지 않음",
+    "scientific_academic": "문제, 방법, 결과와 해석의 주장 구조. Methods를 지원동기 문단으로 바꾸지 않음",
+    "school_argument": "과제 논증과 원 평가 척도. 지원서 합격 점수로 전이하지 않음",
+    "literary_fiction": "장면, 서사와 목소리의 목적을 보존. 지원서 논증 기준을 일괄 강제하지 않음",
+    "general_language": "독자와 목표에 따라 명료성, 어휘와 연결을 검토. 간단한 단어의 무조건적 우월을 가정하지 않음"
+  },
+  "review_states": [
+    "auto_source_role_classified",
+    "agent_source_rule_reviewed",
+    "needs_genre_review",
+    "needs_content_review",
+    "calibration_not_performed"
+  ],
+  "outcome_boundary": "Selection outcomes and monetary funding are context-specific observations, not universal causal writing-quality labels.",
+  "primary_sources": [
+    {
+      "id": "openstax-writing-guide-book",
+      "url": "https://assets.openstax.org/oscms-prodcms/media/documents/WritingGuide-WEB.pdf",
+      "source_form": "complete_textbook",
+      "evidence_kind": "scholarly_recommendation",
+      "target_genres": [
+        "multi_genre_textbook"
+      ],
+      "known_size_bytes": 63546834,
+      "byte_limit": 100663296,
+      "selection": "publisher PDF located through the official Writing Guide pages"
+    },
+    {
+      "id": "harvard-body-paragraph",
+      "url": "https://writingcenter.fas.harvard.edu/anatomy-body-paragraph",
+      "source_form": "university_writing_center",
+      "evidence_kind": "scholarly_recommendation",
+      "target_genres": [
+        "scientific_academic",
+        "general_language"
+      ]
+    },
+    {
+      "id": "harvard-transitions",
+      "url": "https://writingcenter.fas.harvard.edu/transitions",
+      "source_form": "university_writing_center",
+      "evidence_kind": "scholarly_recommendation",
+      "target_genres": [
+        "scientific_academic",
+        "general_language"
+      ]
+    },
+    {
+      "id": "purdue-toulmin",
+      "url": "https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html",
+      "source_form": "university_writing_center",
+      "evidence_kind": "scholarly_recommendation",
+      "target_genres": [
+        "argumentative",
+        "scientific_academic"
+      ]
+    },
+    {
+      "id": "mensh-kording-2017",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005619",
+      "source_form": "scholarly_editorial",
+      "evidence_kind": "scholarly_recommendation",
+      "target_genres": [
+        "scientific_academic"
+      ],
+      "article_type": "Editorial"
+    },
+    {
+      "id": "plaven-sigray-2017",
+      "url": "https://cdn.elifesciences.org/articles/27725/elife-27725-v2.pdf",
+      "source_form": "research_article",
+      "evidence_kind": "observational_research",
+      "target_genres": [
+        "scientific_academic"
+      ]
+    },
+    {
+      "id": "shulman-bullock-2020",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239524",
+      "source_form": "research_article",
+      "evidence_kind": "experimental_effect",
+      "target_genres": [
+        "science_communication"
+      ],
+      "effect_scope": "jargon by topic urgency, N=393; not an application-writing intervention"
+    },
+    {
+      "id": "markowitz-shulman-2021",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8106339/",
+      "source_form": "research_article",
+      "evidence_kind": "observational_research",
+      "target_genres": [
+        "public_communication",
+        "grant_abstract"
+      ],
+      "effect_scope": "12 field samples; language complexity and engagement/funding associations, not causal admissions effects"
+    },
+    {
+      "id": "gopen-swan-1990-academic-copy",
+      "url": "https://www.gatsby.ucl.ac.uk/~pel/misc/gopen_swan.pdf",
+      "source_form": "original_article_academic_mirror",
+      "evidence_kind": "scholarly_recommendation",
+      "target_genres": [
+        "scientific_academic"
+      ],
+      "publisher": "American Scientist",
+      "access_host_role": "academic mirror of the original text"
+    },
+    {
+      "id": "openstax-writing-process-chapter",
+      "url": "https://openstax.org/books/writing-guide/pages/1-5-writing-process-thinking-critically-about-a-text",
+      "source_form": "textbook_section",
+      "evidence_kind": "scholarly_recommendation",
+      "target_genres": [
+        "multi_genre_textbook"
+      ],
+      "access_note": "Official public HTML chapter; separate publication format from the held PDF download"
+    },
+    {
+      "id": "openstax-thesis-evidence-chapter",
+      "url": "https://openstax.org/books/writing-guide/pages/10-3-glance-at-genre-thesis-reasoning-and-evidence",
+      "source_form": "textbook_section",
+      "evidence_kind": "scholarly_recommendation",
+      "target_genres": [
+        "argumentative",
+        "scientific_academic"
+      ],
+      "access_note": "Official public HTML chapter; separate publication format from the held PDF download"
+    },
+    {
+      "id": "vanderbilt-application-essays",
+      "url": "https://www.vanderbilt.edu/writing/resources/handouts/writing-application-essays/",
+      "source_form": "university_writing_center",
+      "evidence_kind": "scholarly_recommendation",
+      "target_genres": [
+        "application"
+      ]
+    }
+  ],
+  "legacy_rubric_to_content_chain": {
+    "task_alignment": [
+      "requirement",
+      "document"
+    ],
+    "own_contribution": [
+      "grounds"
+    ],
+    "evidence_support": [
+      "grounds",
+      "warrant"
+    ],
+    "reasoning_link": [
+      "warrant"
+    ],
+    "paragraph_focus": [
+      "paragraph"
+    ],
+    "cross_paragraph_coherence": [
+      "paragraph",
+      "document"
+    ],
+    "program_specificity": [
+      "requirement",
+      "grounds",
+      "warrant"
+    ],
+    "plan_feasibility": [
+      "claim",
+      "grounds",
+      "warrant",
+      "document"
+    ],
+    "expression_control": [
+      "reader_and_genre_conditional_language"
+    ]
+  },
+  "content_release_gate": {
+    "required_evidence": [
+      "requirement_coverage_matrix",
+      "claim_scope_and_person_binding",
+      "grounds_and_counterevidence",
+      "explicit_or_reviewed_warrant",
+      "paragraph_and_document_links"
+    ],
+    "not_sufficient": [
+      "exact_quote_or_hash_only",
+      "unit_test_pass",
+      "self_assigned_rubric_score",
+      "selection_outcome_alone"
+    ],
+    "review_result": [
+      "supported_with_scope",
+      "missing_information",
+      "unsupported_inference",
+      "genre_mismatch",
+      "requires_independent_review"
+    ]
+  }
+}

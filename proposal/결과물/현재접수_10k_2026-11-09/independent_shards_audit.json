@@ -1,0 +1,24 @@
+{
+  "tables": {
+    "claim": 20094,
+    "claim_evidence": 24089,
+    "evidence": 24089,
+    "opportunity_round": 10000,
+    "program": 10000,
+    "source_document": 10710
+  },
+  "sql_normalized_opportunity_types": {
+    "other": 654,
+    "internship": 9088,
+    "scholarship": 241,
+    "admission_funding": 17
+  },
+  "program_ids": 10000,
+  "distinct_rounds": 10000,
+  "round_status": {
+    "open": 10000
+  },
+  "student_scope_flags": {
+    "(True, False)": 10000
+  }
+}

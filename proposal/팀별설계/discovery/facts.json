@@ -1,0 +1,208 @@
+{
+  "scope": "read-only audit of last persisted checkpoint; not evidence of current process liveness or completed run",
+  "status_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/status.json",
+  "status_file_sha256": "b1e0e902940731e350eebd8a7d70a3bf00c992fb866ccf6012dccace8b567145",
+  "saved_status": {
+    "status": "running",
+    "updated_at": "2026-10-19T05:01:28.250580+00:00",
+    "seed_terms": 24,
+    "dictionary_terms": 3229,
+    "new_terms": 3205,
+    "counters": {
+      "query": {
+        "executed": 4682,
+        "failed": 16
+      },
+      "document": {
+        "collected": 6240,
+        "excluded_scope": 1754,
+        "failed": 1585
+      },
+      "chunk": {
+        "failed": 808,
+        "pending": 5032,
+        "processed": 7727
+      }
+    },
+    "waves": [
+      {
+        "number": 1,
+        "mode": "initial_seeds",
+        "status": "closed",
+        "payload": {
+          "started_at": "2026-10-18T07:32:06.507759+00:00",
+          "completed_at": "2026-10-18T07:56:29.454346+00:00",
+          "new_terms": 234,
+          "dictionary_terms": 258,
+          "consecutive_zero_waves": 0
+        }
+      },
+      {
+        "number": 2,
+        "mode": "new_expressions",
+        "status": "closed",
+        "payload": {
+          "started_at": "2026-10-18T07:56:29.456024+00:00",
+          "completed_at": "2026-10-18T10:46:17.848487+00:00",
+          "new_terms": 691,
+          "dictionary_terms": 949,
+          "consecutive_zero_waves": 0
+        }
+      },
+      {
+        "number": 3,
+        "mode": "new_expressions",
+        "status": "closed",
+        "payload": {
+          "started_at": "2026-10-18T10:46:17.852421+00:00",
+          "completed_at": "2026-10-18T20:13:50.881733+00:00",
+          "new_terms": 1400,
+          "dictionary_terms": 2349,
+          "consecutive_zero_waves": 0
+        }
+      },
+      {
+        "number": 4,
+        "mode": "new_expressions",
+        "status": "open",
+        "payload": {
+          "started_at": "2026-10-18T20:13:50.890295+00:00"
+        }
+      }
+    ],
+    "scope": "Public Korean and English graduate-student individual funding notices and scholarship/fellowship application materials. Two exact query templates per expression; first three native search results per query. No recursive site crawl or whole-web completeness claim. Eligibility is not assessed by vocabulary discovery.",
+    "whole_web_exhausted": false,
+    "config_sha256": "5cb3bf29e4c0e9d076209c83e1ba37938b5c588c9ef738da06ba5c6a89c52cc4"
+  },
+  "sqlite_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/expansion.sqlite",
+  "sql_counters": {
+    "query": {
+      "executed": 4682,
+      "failed": 16
+    },
+    "document": {
+      "collected": 6240,
+      "excluded_scope": 1754,
+      "failed": 1585
+    },
+    "chunk": {
+      "failed": 808,
+      "pending": 5032,
+      "processed": 7727
+    }
+  },
+  "status_sql_match": true,
+  "count_units": {
+    "document": "distinct search-result URL IDs, url UNIQUE; collected not approved opportunities",
+    "chunk": "document text chunks, not people, cases or opportunities",
+    "query": "wave+term+query work item; may include repeated query in later confirmation",
+    "failed": "query/document/chunk failed are different workflow levels; cannot sum as unique sources/people",
+    "pending_chunks": "5032 pending text chunks, not pending opportunities"
+  },
+  "collected_distinct_content_hashes": 6115,
+  "new_terms_per_closed_wave": [
+    [
+      1,
+      234
+    ],
+    [
+      2,
+      691
+    ],
+    [
+      3,
+      1400
+    ]
+  ],
+  "example_lineage_file": "/home/longnew/Desktop/course_work/tmp/benefitlens_three_teams_20261107/discovery/example_lineage.json",
+  "no_collection_resumed": true,
+  "reviewed_code_sha256": {
+    "pipeline/src/data_platform/dictionary_expansion.py": "fff241414f470d4fb4d2886756c7bdd49fa18e8376bc6b74243e256d68632f4b",
+    "pipeline/src/data_platform/saturation_search.py": "b42f71c4ff4736b68b7894dcb23043796a9e3bc8d1e5c60e5441d9be979632c3",
+    "pipeline/src/data_platform/exploration.py": "1fb2271cf0d6311160f54107e0d4f12538d843eeff7ca5eb51742e86c11cb333",
+    "pipeline/src/data_platform/proposal_pipeline.py": "a148c553e1ab05487fedbad12a12b0c1161f092f6291b89f4f6b30da9042adc2",
+    "pipeline/src/data_platform/keyword_search.py": "a18fd3c057f152ccba2838fce64557747b62924f9c730b9052f775d9285305ce"
+  },
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=pipeline/src .venv/bin/python -m pytest pipeline/tests/test_dictionary_expansion.py pipeline/tests/test_saturation_search.py -q -p no:cacheprovider --basetemp=/home/longnew/Desktop/course_work/tmp/benefitlens_three_teams_20261107/discovery/pytest",
+    "exit_code": 0,
+    "passed": 11,
+    "scope": "fixture unit tests, no real search/fetch/production DB operations"
+  },
+  "sql_formulas": {
+    "query_document_chunk_status_counts": "SELECT status, COUNT(*) FROM <query|document|chunk> GROUP BY status",
+    "collected_url_rows": "SELECT COUNT(*) FROM document WHERE status='collected'",
+    "collected_distinct_byte_hashes": "SELECT COUNT(DISTINCT json_extract(payload, '$.content_sha256')) FROM document WHERE status='collected'",
+    "term_counts": "SELECT seed, COUNT(*) FROM term GROUP BY seed",
+    "closed_wave_growth": "SELECT number,json_extract(payload, '$.new_terms') FROM wave WHERE status='closed' ORDER BY number",
+    "term_counts_by_wave": "SELECT wave,seed,COUNT(*) FROM term GROUP BY wave,seed ORDER BY wave"
+  },
+  "term_counts_by_wave": [
+    {
+      "wave": 0,
+      "seed": 1,
+      "count": 24
+    },
+    {
+      "wave": 1,
+      "seed": 0,
+      "count": 234
+    },
+    {
+      "wave": 2,
+      "seed": 0,
+      "count": 691
+    },
+    {
+      "wave": 3,
+      "seed": 0,
+      "count": 1400
+    },
+    {
+      "wave": 4,
+      "seed": 0,
+      "count": 880
+    }
+  ],
+  "dictionary_reconciliation": "24 + 234 + 691 + 1400 + 880 (open wave 4) = 3229",
+  "claude_consultation": [
+    {
+      "round": 1,
+      "success": true,
+      "returncode": 0,
+      "elapsed_seconds": 785.38,
+      "cli": "/home/longnew/.local/bin/claude",
+      "effort": "max",
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "session_id": "5e56cb86-1cef-47c3-bb7d-8bc82500b49c",
+      "prompt": "/home/longnew/Desktop/course_work/tmp/benefitlens_three_teams_20261107/discovery/round1.prompt.txt",
+      "prompt_sha256": "1ffaad3f9fb2a9596206811f1a1bb8bfd97e29c0e82486b903ba1a8613cd9f15",
+      "response": "/home/longnew/Desktop/course_work/tmp/benefitlens_three_teams_20261107/discovery/round1.txt",
+      "tools": [],
+      "mcp_servers": [],
+      "scope": "text-only design review"
+    },
+    {
+      "round": 2,
+      "success": true,
+      "returncode": 0,
+      "elapsed_seconds": 68.56,
+      "cli": "/home/longnew/.local/bin/claude",
+      "effort": "high",
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "session_id": "e4c2b568-d8a7-4406-80ee-12f4b1dd53de",
+      "prompt": "/home/longnew/Desktop/course_work/tmp/benefitlens_three_teams_20261107/discovery/round2.prompt.txt",
+      "prompt_sha256": "8d7130c7e6cc84e536cf11ecae0b5ef7b18a14add80e4ff68a5e5c8bc7a09547",
+      "response": "/home/longnew/Desktop/course_work/tmp/benefitlens_three_teams_20261107/discovery/round2.txt",
+      "tools": [],
+      "mcp_servers": [],
+      "scope": "text-only design review"
+    }
+  ],
+  "claude_response_evidence_limit": "Text-only briefs; no code, web, tools or MCP access by Claude. Discovery team independently audited local source and saved records.",
+  "rejected_claude_inference": "No actual lease or process liveness evidence was checked for the historical run; retain saved running checkpoint and report current liveness unverified rather than assert stale."
+}

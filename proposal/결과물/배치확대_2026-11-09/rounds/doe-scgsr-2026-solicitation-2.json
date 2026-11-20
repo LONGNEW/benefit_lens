@@ -1,0 +1,163 @@
+{
+  "basis": "source_backed",
+  "title": "Office of Science Graduate Student Research Program",
+  "claims": [
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "applicant_proposal_transcripts_and_candidacy",
+      "value": {
+        "items": [
+          "online_application",
+          "graduate_transcript_pdf",
+          "signed_candidacy_proof",
+          "research_proposal"
+        ],
+        "submitted_by": "applicant",
+        "proposal_collaborator": "DOE laboratory scientist",
+        "proposal_consulted_with": "primary thesis advisor"
+      },
+      "claim_id": "doe-scgsr-application",
+      "round_id": "2026-solicitation-2",
+      "program_id": "doe-scgsr",
+      "evidence_ids": [
+        "SCGSR-APPLICATION"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "award_period",
+      "kind": "benefit",
+      "field": "living_and_transport_support",
+      "value": {
+        "components": [
+          {
+            "type": "living_stipend",
+            "unit": "month",
+            "currency": "USD",
+            "recipient": "student",
+            "max_amount": 3600,
+            "actual_amount_assessed": true
+          },
+          {
+            "type": "transport_reimbursement",
+            "unit": "award",
+            "currency": "USD",
+            "max_amount": 3000,
+            "distance_from_home_institution_miles_gt": 50
+          }
+        ]
+      },
+      "claim_id": "doe-scgsr-benefits",
+      "round_id": "2026-solicitation-2",
+      "program_id": "doe-scgsr",
+      "evidence_ids": [
+        "SCGSR-FUNDING"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "eligibility",
+      "field": "citizenship_phd_candidacy_and_study",
+      "value": {
+        "minimum_age": 18,
+        "us_status_any": [
+          "citizen",
+          "lawful_permanent_resident"
+        ],
+        "candidacy_required": true,
+        "full_time_qualified_phd": true,
+        "official_proof_includes": [
+          "all_required_phd_coursework_completed",
+          "approved_thesis_topic"
+        ],
+        "defined_thesis_and_advisor": true
+      },
+      "claim_id": "doe-scgsr-eligibility",
+      "round_id": "2026-solicitation-2",
+      "program_id": "doe-scgsr",
+      "evidence_ids": [
+        "SCGSR-ELIGIBILITY"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "required_support_letters",
+      "value": {
+        "count": 2,
+        "route": "online system",
+        "requested_by": "applicant",
+        "submitted_by": [
+          "primary_thesis_advisor",
+          "collaborating_doe_lab_scientist"
+        ]
+      },
+      "claim_id": "doe-scgsr-letters",
+      "round_id": "2026-solicitation-2",
+      "program_id": "doe-scgsr",
+      "evidence_ids": [
+        "SCGSR-LETTERS"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "award_period",
+      "kind": "activity",
+      "field": "doe_lab_research_visit",
+      "value": {
+        "host": "DOE national laboratory or facility",
+        "project_start_range": [
+          "2027-06-07",
+          "2027-10-04"
+        ],
+        "consecutive_months_max": 12,
+        "consecutive_months_min": 3
+      },
+      "claim_id": "doe-scgsr-placement",
+      "round_id": "2026-solicitation-2",
+      "program_id": "doe-scgsr",
+      "evidence_ids": [
+        "SCGSR-ACTIVITY"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "schedule",
+      "field": "application_window",
+      "value": {
+        "opens_on": "2026-08-12",
+        "closes_on": "2026-11-04",
+        "time_zone": "America/New_York",
+        "local_time": "17:00",
+        "offer_notification_period_approx": [
+          "2027-04-01",
+          "2027-04-16"
+        ]
+      },
+      "claim_id": "doe-scgsr-schedule",
+      "round_id": "2026-solicitation-2",
+      "program_id": "doe-scgsr",
+      "evidence_ids": [
+        "SCGSR-DATES"
+      ],
+      "review_state": "reviewed"
+    }
+  ],
+  "issuer": "U.S. Department of Energy Office of Science",
+  "status": "closed",
+  "opens_on": "2026-08-12",
+  "round_id": "2026-solicitation-2",
+  "closes_on": "2026-11-04",
+  "checked_on": "2026-11-09",
+  "program_id": "doe-scgsr",
+  "announces_on": null,
+  "official_url": "https://science.osti.gov/wdts/scgsr/Key-Dates",
+  "notice_version": "doe-scgsr-2026-solicitation-2-v1",
+  "opportunity_id": "doe-scgsr-2026-solicitation-2",
+  "application_url": "https://science.osti.gov/wdts/scgsr/How-to-Apply",
+  "opportunity_type": "fellowship"
+}

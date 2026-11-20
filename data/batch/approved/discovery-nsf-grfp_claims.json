@@ -1,0 +1,167 @@
+{
+  "claim": [
+    {
+      "claim_id": "nsf-grfp-dates",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "kind": "schedule",
+      "field": "deadline_by_major_field",
+      "at": "application",
+      "value": {
+        "time_zone": "America/New_York",
+        "local_time": "20:00",
+        "dates": {
+          "2026-10-19": [
+            "Life Sciences"
+          ],
+          "2026-10-20": [
+            "Computer and Information Science and Engineering",
+            "Materials Research",
+            "Psychology",
+            "Social Sciences"
+          ],
+          "2026-10-22": [
+            "Engineering"
+          ],
+          "2026-10-23": [
+            "Chemistry",
+            "Geosciences",
+            "Mathematical Sciences",
+            "Physics and Astronomy"
+          ]
+        }
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nsf-grfp-benefits",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "kind": "benefit",
+      "field": "stipend_and_institution_education_allowance",
+      "at": "funded_year",
+      "value": {
+        "components": [
+          {
+            "type": "living_stipend",
+            "amount": 37000,
+            "currency": "USD",
+            "unit": "12_month_tenure",
+            "recipient": "fellow_via_institution"
+          },
+          {
+            "type": "cost_of_education",
+            "amount": 16000,
+            "currency": "USD",
+            "unit": "tenure_year",
+            "recipient": "institution"
+          }
+        ],
+        "funded_years_max": 3,
+        "fellowship_window_years": 5,
+        "pending_availability_of_funds": true
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nsf-grfp-eligibility",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "kind": "eligibility",
+      "field": "citizenship_and_academic_level",
+      "at": "application_and_acceptance",
+      "value": {
+        "us_status_any": [
+          "citizen",
+          "national",
+          "permanent_resident"
+        ],
+        "eligible_stages": [
+          "undergraduate_final_year",
+          "bachelor_holder_no_graduate_enrollment",
+          "joint_bs_ms_final_undergraduate_or_first_graduate_year",
+          "first_graduate_program_first_year_less_than_one_academic_year_completed"
+        ],
+        "degree_scope": "eligible thesis-based STEM masters or doctorate"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nsf-grfp-application",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "kind": "submission",
+      "field": "applicant_statement_and_transcripts",
+      "at": "application",
+      "value": {
+        "submitted_by": "applicant",
+        "portal": "Research.gov GRFP",
+        "official_undergraduate_transcript_required": true,
+        "statement_page_limits": {
+          "personal_background_and_future_goals": 3,
+          "graduate_research_plan": 2
+        },
+        "references_count_in_page_limits": true,
+        "statements_original_work": true
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "nsf-grfp-references",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027",
+      "kind": "submission",
+      "field": "reference_letters",
+      "at": "application",
+      "value": {
+        "requested_by": "applicant",
+        "submitted_by": "reference_writer",
+        "minimum_contacts": 3,
+        "maximum_contacts": 5,
+        "due_on": "2026-10-16",
+        "time_zone": "America/New_York",
+        "local_time": "20:00",
+        "family_members_ineligible": true
+      },
+      "review_state": "reviewed"
+    }
+  ],
+  "claim_evidence": [
+    {
+      "claim_id": "nsf-grfp-dates",
+      "evidence_id": "NSF-DATES",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027"
+    },
+    {
+      "claim_id": "nsf-grfp-benefits",
+      "evidence_id": "NSF-FUNDING",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027"
+    },
+    {
+      "claim_id": "nsf-grfp-eligibility",
+      "evidence_id": "NSF-ELIGIBILITY",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027"
+    },
+    {
+      "claim_id": "nsf-grfp-application",
+      "evidence_id": "NSF-SUBMISSION",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027"
+    },
+    {
+      "claim_id": "nsf-grfp-references",
+      "evidence_id": "NSF-REF-DUE",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027"
+    },
+    {
+      "claim_id": "nsf-grfp-references",
+      "evidence_id": "NSF-REF",
+      "program_id": "nsf-grfp",
+      "round_id": "fy2027"
+    }
+  ]
+}

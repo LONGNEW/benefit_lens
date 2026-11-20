@@ -1,0 +1,76 @@
+{
+  "pattern_evidence": [
+    {
+      "pattern_id": "g26w-impact-arc",
+      "program_id": "google-phd-fellowship",
+      "target_round_id": "2026-east-asia",
+      "evidence_id": "g26w-impact",
+      "document_id": "g26w-google-official-17fcd780d172",
+      "source_program_id": "google-phd-fellowship",
+      "source_round_id": "2026-east-asia",
+      "case_id": null,
+      "case_document_role": null,
+      "purpose": "official_constraint"
+    },
+    {
+      "pattern_id": "g26w-impact-arc",
+      "program_id": "google-phd-fellowship",
+      "target_round_id": "2026-east-asia",
+      "evidence_id": "g26w-g1-impact-observed",
+      "document_id": "g26w-hyeon-essay-ddd4094777d6",
+      "source_program_id": "google-phd-fellowship",
+      "source_round_id": null,
+      "case_id": "g26w-g1",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    },
+    {
+      "pattern_id": "g26w-impact-arc",
+      "program_id": "google-phd-fellowship",
+      "target_round_id": "2026-east-asia",
+      "evidence_id": "g26w-g4-impact-observed",
+      "document_id": "g26w-morgan-impact-8c17a2169b3d",
+      "source_program_id": "google-phd-fellowship",
+      "source_round_id": null,
+      "case_id": "g26w-g4",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    },
+    {
+      "pattern_id": "g26w-leadership-arc",
+      "program_id": "google-phd-fellowship",
+      "target_round_id": "2026-east-asia",
+      "evidence_id": "g26w-lead",
+      "document_id": "g26w-google-official-17fcd780d172",
+      "source_program_id": "google-phd-fellowship",
+      "source_round_id": "2026-east-asia",
+      "case_id": null,
+      "case_document_role": null,
+      "purpose": "official_constraint"
+    },
+    {
+      "pattern_id": "g26w-leadership-arc",
+      "program_id": "google-phd-fellowship",
+      "target_round_id": "2026-east-asia",
+      "evidence_id": "g26w-g1-lead-observed",
+      "document_id": "g26w-hyeon-essay-ddd4094777d6",
+      "source_program_id": "google-phd-fellowship",
+      "source_round_id": null,
+      "case_id": "g26w-g1",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    },
+    {
+      "pattern_id": "g26w-leadership-arc",
+      "program_id": "google-phd-fellowship",
+      "target_round_id": "2026-east-asia",
+      "evidence_id": "g26w-g4-lead-observed",
+      "document_id": "g26w-morgan-leadership-07bb378fa4bc",
+      "source_program_id": "google-phd-fellowship",
+      "source_round_id": null,
+      "case_id": "g26w-g4",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    }
+  ]
+}

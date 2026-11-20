@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BenefitLens question-level writing evidence",
+  "description": "Collect advice, policy, personal practice or partial answers for a writing request. Full applications, outcomes and rounds are optional. Unicode offsets refer to LF-normalized source text. Exact official prompts and community questions remain distinct. Cross-reference, hash, exact-span and review-fingerprint checks run in benefitlens_question_evidence.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "source_documents", "question_evidence"],
+  "properties": {
+    "version": {"const": "writing-question-evidence-v1"},
+    "source_documents": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/document"}},
+    "question_evidence": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/evidence"}}
+  },
+  "$defs": {
+    "string": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "nullable_string": {"anyOf": [{"$ref": "#/$defs/string"}, {"type": "null"}]},
+    "strings": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/string"}},
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "url": {"type": "string", "format": "uri", "pattern": "^https?://[^/]+"},
+    "document": {
+      "type": "object", "additionalProperties": false,
+      "required": ["document_id", "url", "text_ref", "text_sha256", "body_scope", "publisher_role"],
+      "properties": {
+        "document_id": {"$ref": "#/$defs/string"},
+        "url": {"$ref": "#/$defs/url"},
+        "text_ref": {"$ref": "#/$defs/string"},
+        "text_sha256": {"$ref": "#/$defs/hash"},
+        "text_derivation": {"$ref": "#/$defs/string"},
+        "raw_ref": {"$ref": "#/$defs/string"},
+        "raw_sha256": {"$ref": "#/$defs/hash"},
+        "title": {"$ref": "#/$defs/string"},
+        "fetched_at": {"type": "string", "format": "date-time"},
+        "body_scope": {"enum": ["full_answer", "full_question", "full_article", "full_document", "partial_document"]},
+        "publisher_role": {"enum": ["official_program", "institutional_advice", "personal", "community"]}
+      },
+      "dependentRequired": {"raw_ref": ["raw_sha256"], "raw_sha256": ["raw_ref"]}
+    },
+    "locator": {
+      "type": "object", "additionalProperties": false,
+      "required": ["char_start", "char_end", "line_start", "line_end"],
+      "properties": {
+        "char_start": {"type": "integer", "minimum": 0},
+        "char_end": {"type": "integer", "minimum": 1},
+        "line_start": {"type": "integer", "minimum": 1},
+        "line_end": {"type": "integer", "minimum": 1}
+      }
+    },
+    "prompt": {
+      "type": "object", "additionalProperties": false,
+      "required": ["text", "document_id", "locator"],
+      "properties": {
+        "text": {"$ref": "#/$defs/string"},
+        "document_id": {"$ref": "#/$defs/string"},
+        "locator": {"$ref": "#/$defs/locator"}
+      }
+    },
+    "original_question": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "text", "context"],
+      "properties": {
+        "id": {"$ref": "#/$defs/nullable_string"},
+        "text": {"$ref": "#/$defs/nullable_string"},
+        "context": {"$ref": "#/$defs/string"},
+        "url": {"$ref": "#/$defs/url"},
+        "body_ref": {"$ref": "#/$defs/string"}
+      }
+    },
+    "review": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state"],
+      "properties": {
+        "state": {"enum": ["pending", "accepted", "rejected"]},
+        "basis": {"enum": ["agent_semantic_review", "human_semantic_review"]},
+        "reviewer": {"$ref": "#/$defs/string"},
+        "decision_id": {"$ref": "#/$defs/string"},
+        "reason": {"$ref": "#/$defs/string"},
+        "review_receipt_ref": {"$ref": "#/$defs/string"},
+        "reviewed_at": {"type": "string", "format": "date-time"},
+        "input_fingerprint": {"$ref": "#/$defs/hash"}
+      },
+      "if": {"properties": {"state": {"const": "accepted"}}},
+      "then": {"required": ["basis", "reviewer", "decision_id", "reason", "review_receipt_ref", "reviewed_at", "input_fingerprint"]}
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evidence_id", "document_id", "question_intent", "source_role", "claim_type", "quote", "locator", "original_question", "exact_prompt", "applicability", "inference", "semantic_review"],
+      "properties": {
+        "evidence_id": {"$ref": "#/$defs/string"},
+        "document_id": {"$ref": "#/$defs/string"},
+        "question_intent": {"enum": ["research_motivation", "personal_contribution", "program_fit", "execution_plan", "leadership_impact", "challenge_reflection"]},
+        "source_role": {"enum": ["official_policy", "public_advice", "personal_experience", "partial_answer"]},
+        "claim_type": {"enum": ["official_requirement", "official_recommendation", "recommendation", "self_reported_practice", "observed_answer"]},
+        "quote": {"type": "string", "minLength": 1, "maxLength": 800, "pattern": "\\S"},
+        "locator": {"$ref": "#/$defs/locator"},
+        "original_question": {"$ref": "#/$defs/original_question"},
+        "exact_prompt": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/prompt"}]},
+        "applicability": {
+          "type": "object", "additionalProperties": false,
+          "required": ["program_ids", "round_ids", "stages", "limitations"],
+          "properties": {
+            "program_ids": {"$ref": "#/$defs/strings"},
+            "round_ids": {"$ref": "#/$defs/strings"},
+            "stages": {"$ref": "#/$defs/strings"},
+            "limitations": {"allOf": [{"$ref": "#/$defs/strings"}], "minItems": 1}
+          }
+        },
+        "inference": {
+          "type": "object", "additionalProperties": false,
+          "required": ["label", "statement"],
+          "properties": {
+            "label": {"enum": ["source_explicit", "analyst_inference"]},
+            "statement": {"$ref": "#/$defs/string"}
+          }
+        },
+        "submission_status": {"const": "final_submission_unconfirmed"},
+        "semantic_review": {"$ref": "#/$defs/review"}
+      },
+      "allOf": [
+        {"if": {"properties": {"source_role": {"const": "official_policy"}}}, "then": {"properties": {"claim_type": {"enum": ["official_requirement", "official_recommendation"]}}}},
+        {"if": {"properties": {"source_role": {"const": "public_advice"}}}, "then": {"properties": {"claim_type": {"const": "recommendation"}}}},
+        {"if": {"properties": {"source_role": {"const": "personal_experience"}}}, "then": {"properties": {"claim_type": {"const": "self_reported_practice"}}}},
+        {"if": {"properties": {"source_role": {"const": "partial_answer"}}}, "then": {"required": ["submission_status"], "properties": {"claim_type": {"const": "observed_answer"}}}, "else": {"not": {"required": ["submission_status"]}}}
+      ]
+    }
+  }
+}

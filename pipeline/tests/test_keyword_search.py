@@ -59,12 +59,18 @@ def test_multiple_documents_on_one_host_are_not_multiple_institutions():
     assert summary["counts"]["host_keys"] == 1
 
 
-def test_noise_and_login_paths_are_not_prioritized_for_crawling():
+def test_student_loan_is_a_candidate_while_login_is_not():
     query = row("q001", "funding", ["https://new.test/fellowship", "https://new.test/login", "https://new.test/loan"])
     query["results"][2]["title"] = "학자금 대출"
     summary = analyze([query], before())
-    assert len(summary["crawl_queue"]) == 1
-    assert summary["crawl_queue"][0]["url"] == "https://new.test/fellowship"
+    assert {x['url'] for x in summary['crawl_queue']} == {'https://new.test/fellowship','https://new.test/loan'}
+
+
+def test_internships_on_careers_pages_are_not_noise():
+    query = row('q001','internship',['https://new.test/careers/jobs/7'])
+    query['results'][0]['title'] = 'Engineering internship for university students'
+    summary = analyze([query], before())
+    assert len(summary['crawl_queue']) == 1
 
 
 def test_other_university_pages_have_scope_review_not_applicant_recommendation():

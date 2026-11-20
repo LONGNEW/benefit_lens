@@ -1,0 +1,94 @@
+{
+  "claim_evidence": [
+    {
+      "claim_id": "cern-744000159603499-deadline-claim",
+      "evidence_id": "cern-744000159603499-deadline",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499"
+    },
+    {
+      "claim_id": "cern-744000159603499-enrollment",
+      "evidence_id": "cern-744000159603499-student",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499"
+    },
+    {
+      "claim_id": "cern-744000159603499-nationality-claim",
+      "evidence_id": "cern-744000159603499-nationality",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499"
+    },
+    {
+      "claim_id": "cern-744000159603499-nationality-claim",
+      "evidence_id": "cern-744000159603499-nationality-addendum",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499"
+    },
+    {
+      "claim_id": "cern-744000159603499-stipend-claim",
+      "evidence_id": "cern-744000159603499-stipend",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499"
+    },
+    {
+      "claim_id": "cern-744000159603499-documents",
+      "evidence_id": "cern-744000159603499-submission",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499"
+    },
+    {
+      "claim_id": "cern-744000159603499-form-link",
+      "evidence_id": "cern-744000159603499-apply-url",
+      "program_id": "cern-summer-student-programme",
+      "round_id": "2027-744000159603499"
+    },
+    {
+      "claim_id": "cern-744000159596524-publication-status",
+      "evidence_id": "cern-744000159596524-active",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524"
+    },
+    {
+      "claim_id": "cern-744000159596524-publication-status",
+      "evidence_id": "cern-744000159596524-apply-url",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524"
+    },
+    {
+      "claim_id": "cern-744000159596524-publication-status",
+      "evidence_id": "cern-744000159596524-deadline",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524"
+    },
+    {
+      "claim_id": "cern-744000159596524-deadline-claim",
+      "evidence_id": "cern-744000159596524-deadline",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524"
+    },
+    {
+      "claim_id": "cern-744000159596524-enrollment",
+      "evidence_id": "cern-744000159596524-student",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524"
+    },
+    {
+      "claim_id": "cern-744000159596524-nationality-claim",
+      "evidence_id": "cern-744000159596524-nationality",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524"
+    },
+    {
+      "claim_id": "cern-744000159596524-stipend-claim",
+      "evidence_id": "cern-744000159596524-stipend",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524"
+    },
+    {
+      "claim_id": "cern-744000159596524-documents",
+      "evidence_id": "cern-744000159596524-submission",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524"
+    }
+  ]
+}

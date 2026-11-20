@@ -1,0 +1,70 @@
+{
+  "body": {
+    "scope": "G1의 반복 피드백과 G4의 워크숍 후 조정을 관찰했다. 공개문 속 결과는 작성자 보고이며 선발 영향은 알 수 없다.",
+    "slots": [
+      "공동 과제의 장애물",
+      "내가 한 구체적 조정이나 지원",
+      "시간에 걸쳐 확인한 변화",
+      "팀의 결과와 본인 역할 구분"
+    ],
+    "title": "직함보다 지속된 행동과 타인의 변화",
+    "decision": "adopted",
+    "language": "en",
+    "question": "무엇을 바꾸기 위해 누구와 어떤 행동을 반복했고, 그 사람이나 공동 과제에 무슨 변화가 있었나요?",
+    "max_words": 350
+  },
+  "evidence": [
+    {
+      "url": "https://hyeonword.com/google_fellowship_materials/assets/essay_hj_googlefellowship.pdf",
+      "quote": "facilitated feedback sessions every few weeks",
+      "case_id": "g26w-g1",
+      "locator": "L47-L61",
+      "purpose": "case_observation",
+      "document_id": "g26w-hyeon-essay-ddd4094777d6",
+      "evidence_id": "g26w-g1-lead-observed",
+      "source_role": "application_statement",
+      "text_sha256": "86137fed1534db3245b92aeb34be65cb50ceda25d3165a093403a1d33165b74d",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "google-phd-fellowship"
+    },
+    {
+      "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_LeadershipStatement.pdf",
+      "quote": "communicated with previous workshop participants for iterative feedback",
+      "case_id": "g26w-g4",
+      "locator": "L16-L29",
+      "purpose": "case_observation",
+      "document_id": "g26w-morgan-leadership-07bb378fa4bc",
+      "evidence_id": "g26w-g4-lead-observed",
+      "source_role": "application_statement",
+      "text_sha256": "e3667c5bef53d4fc0857d798d4610376622860d4f290ac8a407a0164f762b041",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "google-phd-fellowship"
+    },
+    {
+      "url": "https://research.google/programs-and-events/phd-fellowship/",
+      "quote": "example of your leadership experience",
+      "case_id": null,
+      "locator": "L178-L183",
+      "purpose": "official_constraint",
+      "document_id": "g26w-google-official-17fcd780d172",
+      "evidence_id": "g26w-lead",
+      "source_role": "official_guideline",
+      "text_sha256": "9905fc9c5da269239ba0726a473d51034e75e77e182680eb7fd1dcdec4f7b5bd",
+      "capture_mode": "full_document",
+      "source_round_id": "2026-east-asia",
+      "source_program_id": "google-phd-fellowship"
+    }
+  ],
+  "pattern_id": "g26w-leadership-arc",
+  "program_id": "google-phd-fellowship",
+  "pattern_kind": "structure",
+  "scope_status": "historical_transfer",
+  "target_field": "leadership_essay",
+  "notice_version": "sample-2026-10-15",
+  "opportunity_id": "google-east-asia-2026",
+  "target_claim_id": "g26w-leadership",
+  "target_round_id": "2026-east-asia",
+  "causal_success_claim": false
+}

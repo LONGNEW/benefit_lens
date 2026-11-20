@@ -13,11 +13,14 @@ def test_public_sample_is_ten_distinct_opportunities_and_connected_knowledge():
     data = sample_data.read_sample()
     assert len(data['opportunities']) == 10
     assert len(data['program_knowledge']) == 3
-    assert sum(len(p['experience_cases']) for p in data['program_knowledge']) == 9
+    assert sum(len(p['experience_cases']) for p in data['program_knowledge']) == 14
     for item in data['opportunities']:
         assert item['source_refs']
         assert item['application']['url'].startswith('https://')
         assert item['extractor'] == 'public_demo_fixture_v1'
+        assert item['applicant_scope'] == 'student'
+        assert item['category'] != 'research_grant'
+        assert item['program_id'] != 'posco-science-18'
     serialized = json.dumps(data,ensure_ascii=False)
     assert '/home/' not in serialized
     assert '1997' not in serialized
@@ -28,6 +31,16 @@ def test_bad_sample_hash_is_rejected(tmp_path):
     (tmp_path/'manifest.json').write_text((sample_data.SAMPLE/'manifest.json').read_text())
     (tmp_path/'programs.json').write_bytes(b'{}')
     with pytest.raises(ValueError,match='checksum'):
+        sample_data.read_sample(tmp_path)
+
+
+def test_staged_originals_cannot_be_loaded_before_model_analysis(tmp_path):
+    data = json.loads((sample_data.SAMPLE/'programs.json').read_text())
+    data['program_knowledge'][0]['experience_cases'][0]['fragments'] = []
+    raw = (json.dumps(data, ensure_ascii=False)+'\n').encode()
+    (tmp_path/'programs.json').write_bytes(raw)
+    (tmp_path/'manifest.json').write_text(json.dumps({'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()}))
+    with pytest.raises(ValueError, match='analysis is incomplete'):
         sample_data.read_sample(tmp_path)
 
 

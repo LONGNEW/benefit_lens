@@ -1,0 +1,158 @@
+{
+  "basis": "source_backed",
+  "title": "Chevening Scholarship in South Korea",
+  "claims": [
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "country_application_and_course_choices",
+      "value": {
+        "entry": "country page online application system",
+        "course_type": "eligible one-year taught UK masters",
+        "submitted_by": "applicant",
+        "eligible_courses_min": 3,
+        "email_phone_required": true
+      },
+      "claim_id": "chev-kr-application",
+      "round_id": "2027-2028",
+      "program_id": "chevening-south-korea",
+      "evidence_ids": [
+        "CHEV-KR-APPLY",
+        "CHEV-KR-ELIGIBILITY"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "award_period",
+      "kind": "benefit",
+      "field": "tuition_living_travel_and_visa",
+      "value": {
+        "components": [
+          {
+            "type": "tuition_payment"
+          },
+          {
+            "type": "monthly_living_allowance",
+            "amount": null,
+            "rate_depends_on_london": true
+          },
+          {
+            "type": "approved_economy_return_travel",
+            "recipient": "scholar_only"
+          },
+          {
+            "type": "entry_clearance_cost",
+            "recipient": "scholar_only"
+          },
+          {
+            "type": "tb_test_contribution_if_required",
+            "currency": "GBP",
+            "max_amount": 75
+          }
+        ]
+      },
+      "claim_id": "chev-kr-benefits",
+      "round_id": "2027-2028",
+      "program_id": "chevening-south-korea",
+      "evidence_ids": [
+        "CHEV-KR-FUNDING"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "eligibility",
+      "field": "country_degree_work_and_return",
+      "value": {
+        "award_country": "South Korea",
+        "eligible_uk_courses_applied_to": 3,
+        "return_to_country_of_award_years_min": 2,
+        "eligible_country_citizenship_required": true,
+        "post_undergraduate_work_experience_hours_min": 2800,
+        "undergraduate_studies_finished_years_before_deadline_min": 2
+      },
+      "claim_id": "chev-kr-eligibility",
+      "round_id": "2027-2028",
+      "program_id": "chevening-south-korea",
+      "evidence_ids": [
+        "CHEV-KR-ELIGIBILITY",
+        "CHEV-KR-ROUND"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "before_interview",
+      "kind": "submission",
+      "field": "interview_documents",
+      "value": {
+        "items": [
+          "photo_id",
+          "undergraduate_certificate_or_diploma",
+          "reference_letters"
+        ],
+        "uploaded_by": "shortlisted_applicant",
+        "due_working_days_before_interview": 7
+      },
+      "claim_id": "chev-kr-interview-documents",
+      "round_id": "2027-2028",
+      "program_id": "chevening-south-korea",
+      "evidence_ids": [
+        "CHEV-KR-DOCUMENTS"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "after_successful_interview",
+      "kind": "submission",
+      "field": "unconditional_uk_course_offer",
+      "value": {
+        "due_on": "2027-07-08",
+        "local_time": "17:00",
+        "submitted_by": "applicant",
+        "minimum_offers": 1,
+        "time_zone_label": "BST"
+      },
+      "claim_id": "chev-kr-offer",
+      "round_id": "2027-2028",
+      "program_id": "chevening-south-korea",
+      "evidence_ids": [
+        "CHEV-KR-DOCUMENTS",
+        "CHEV-KR-ELIGIBILITY"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "schedule",
+      "field": "country_round_and_status",
+      "value": {
+        "round": "2027-2028",
+        "status": "closed",
+        "closing_month": "2026-10",
+        "opening_month": "2026-08",
+        "precise_country_deadline": "unconfirmed_in_production_country_page"
+      },
+      "claim_id": "chev-kr-schedule",
+      "round_id": "2027-2028",
+      "program_id": "chevening-south-korea",
+      "evidence_ids": [
+        "CHEV-KR-ROUND",
+        "CHEV-KR-SCHEDULE"
+      ],
+      "review_state": "reviewed"
+    }
+  ],
+  "issuer": "UK Foreign, Commonwealth and Development Office and partners",
+  "status": "closed",
+  "opens_on": null,
+  "round_id": "2027-2028",
+  "closes_on": null,
+  "checked_on": "2026-11-09",
+  "program_id": "chevening-south-korea",
+  "announces_on": null,
+  "official_url": "https://www.chevening.org/scholarship/south-korea/",
+  "notice_version": "chevening-south-korea-2027-2028-v1",
+  "opportunity_id": "chevening-south-korea-2027-2028",
+  "application_url": "https://www.chevening.org/scholarship/south-korea/",
+  "opportunity_type": "scholarship"
+}

@@ -1,0 +1,52 @@
+{
+  "cohort_file": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-period-strict-20261109/runs/4d7e03b00d9e7a4533330257afa1214702c5608975d1fd1e20113b6edd651ce8/output/rounds.result.json",
+  "cohort_sha256": "6dc7d583d13d5073d418b67fcf20352d8d3f45f81e85c06f01ba71b9c51fc9c9",
+  "fixed_cohort_rows": 4339,
+  "funding_scope_rows": 255,
+  "existing_structured_benefit_claims_in_funding_scope": 0,
+  "demo_metadata_rows_reviewed": 10,
+  "demo_primary_benefit_sources_reviewed": 2,
+  "verified_examples": 9,
+  "current_funding_examples": 6,
+  "historical_demo_examples": 2,
+  "current_employment_comparison_examples": 1,
+  "verified_student_loan_calls_in_scope": 0,
+  "in_kind_examples_verified": 0,
+  "loan_keyword_hits_reviewed": [
+    {
+      "title": "PhD Candidate - Hydrogen and Industrial Decarbonization Pathways",
+      "url": "https://euraxess.ec.europa.eu/jobs/478444",
+      "source": {
+        "raw_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/quality/euraxess-478444.html",
+        "raw_sha256": "fb7667321d8b8fda11296ab645f79563b8657893978ef465615a1200d9c676aa",
+        "text_path": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/quality/euraxess-478444.txt",
+        "text_sha256": "2fdaa05d5e09deffe7ad24292eacb86adf591d990517ea26d9e541db2ed532b3",
+        "fetched_at": "2026-11-09T04:20:49.724236+00:00"
+      },
+      "locator": "L114-L114",
+      "quote": "Good loan, insurance, and pension schemes in the Norwegian Public Service Pension Fund",
+      "classification": "incidental_employee_pension_fund_loan_benefit_not_a_verified_student_loan_call"
+    }
+  ],
+  "raw_text_hash_comparisons": 20,
+  "explanatory_taxonomy_rule": "grant means scholarship/award cash or fee funding in these excerpts, separate from employment wage; clawback on breach is not a student loan scheme. Unspecified purpose remains null. Fee coverage is not automatically fee waiver.",
+  "classification_coverage": "Selected source-verified examples only, not a full benefit/eligibility classification of4339 or255 rows.",
+  "no_network_calls": true,
+  "no_external_llm_calls": true,
+  "no_product_or_database_writes": true,
+  "files": [
+    "examples_01.json",
+    "examples_02.json",
+    "examples_03.json"
+  ],
+  "demo_benefit_type_counts": {
+    "tuition": 4,
+    "living_allowance": 1,
+    "research_fund": 3,
+    "cash": 5,
+    "living_expenses": 1,
+    "mentoring": 1
+  },
+  "demo_loan_typed_benefits": 0,
+  "demo_metadata_source_sha256": "5cc5c69263149bb1230a3aea8faabcf5222ba8b3e243b9da110aaa84f3a90f9d"
+}

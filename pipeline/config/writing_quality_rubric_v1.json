@@ -1,0 +1,33 @@
+{
+  "version":"writing-quality-rubric-v1",
+  "status":"proposed_anchored_review_rubric_not_calibrated_admissions_score",
+  "rating_scope":"Apply to the relevant task, paragraph or document. Source examples and current applicant facts remain separate.",
+  "rating_states":["observed","not_observable","not_applicable"],
+  "score_values":[0,1,2,null],
+  "rules":[
+    "관찰한 기준에만 0, 1, 2점을 준다. 자료가 부족하면 not_observable과 null을 기록한다.",
+    "문항에 해당하지 않는 기준은 not_applicable과 null을 기록한다.",
+    "점수마다 해당 원문 위치, 판단 이유와 보완할 정보를 기록한다.",
+    "점수는 문제를 진단하는 기준별 기록이다. 합계와 가중치는 정의하지 않는다.",
+    "PERSUADE의 논증 점수와 ELLIPSE의 언어 점수는 원 척도를 보존한다. 새 기준의 점수로 자동 변환하지 않는다."
+  ],
+  "criteria":[
+    {"id":"task_alignment","name":"문항에 대한 답","applies":"all_tasks","0":"요구한 질문과 다른 답을 한다.","1":"주제는 맞지만 요구한 판단이나 세부 항목을 충분히 답하지 않는다.","2":"요구한 판단과 세부 항목에 구체적으로 답한다.","basis":["reader-purpose","persuade-rubrics:argumentation_effectiveness_rubric.pdf"]},
+    {"id":"own_contribution","name":"본인의 역할과 선택","applies":"experience_or_contribution_question","0":"팀의 성과를 나열하며 본인의 역할을 식별하기 어렵다.","1":"본인의 행동은 나오지만 책임이나 선택 이유가 모호하다.","2":"본인의 책임, 선택과 수행을 팀의 결과와 구분한다.","basis":["qa-190775","official-chevening-leadership-2023"]},
+    {"id":"evidence_support","name":"근거의 구체성과 관련성","applies":"claims_about_past_or_present","0":"평가나 결론을 뒷받침할 사례가 없다.","1":"사례는 있지만 주장과의 연결이나 결과의 범위가 모호하다.","2":"관련 있는 행동과 구체적인 결과가 주장의 범위를 뒷받침한다.","basis":["specific-evidence","persuade-rubrics:argumentation_effectiveness_rubric.pdf"]},
+    {"id":"reasoning_link","name":"행동과 결과의 의미 설명","applies":"argument_or_experience_interpretation","0":"사실 나열에서 결론으로 건너뛴다.","1":"연결은 추정할 수 있으나 이유나 범위가 충분히 드러나지 않는다.","2":"그 근거가 해당 주장이나 다음 목표를 뒷받침하는 이유를 설명한다.","basis":["coherence","earned-conclusion"]},
+    {"id":"paragraph_focus","name":"문단의 목적과 통일성","applies":"paragraph","0":"서로 관련 없는 요점이 섞여 문단의 목적이 흐리다.","1":"요점은 있지만 일부 문장이 다른 방향으로 흐른다.","2":"도입, 뒷받침과 마무리가 하나의 목적에 기여한다.","basis":["topic-sentence","paragraph-unity","earned-conclusion"]},
+    {"id":"cross_paragraph_coherence","name":"문단 사이의 개연성","applies":"multi_paragraph_document","0":"문단 사이에 목표나 논점의 단절이 있다.","1":"연결어는 있지만 다음 문단이 필요한 이유가 약하다.","2":"근거, 인과, 대비, 보완이나 다음 과제의 관계로 문단이 이어진다.","basis":["coherence","ellipse-corpus:ELL_Rubrics.docx"]},
+    {"id":"program_specificity","name":"프로그램과 목표의 연결","applies":"program_fit_question","0":"어느 기관에도 적용할 수 있는 칭찬만 있다.","1":"기관의 자원은 적지만 본인의 필요나 활용 계획과의 연결이 약하다.","2":"확인된 자원을 본인의 목표, 준비와 활용 계획에 연결한다.","basis":["qa-125525","academic-author-jean:phd-application-2007/personal_statement.pdf"]},
+    {"id":"plan_feasibility","name":"실행 계획의 구체성","applies":"proposal_or_execution_question","0":"하고 싶은 일만 나열한다.","1":"기간과 작업은 있으나 의존관계, 산출물이나 검증이 약하다.","2":"제약을 반영한 작업 순서, 단계별 산출물과 검증 방법을 제시한다.","basis":["reflection-5003792","gsoc-iitbhu:Other Fellowships/LFX - 2023 - CNCF-Harbor - Paarth Agarwal.pdf"]},
+    {"id":"expression_control","name":"명확성과 문법, 표현","applies":"all_tasks","0":"모호한 지칭이나 문법 오류가 의미를 바꾼다.","1":"의미는 전달되지만 중복, 부정확한 용어와 읽기 방해가 남는다.","2":"주체와 대상이 명확하고 필요한 용어를 일관되게 사용한다.","basis":["concise-meaning","consistent-terms","ellipse-corpus:ELL_Rubrics.docx"]}
+  ],
+  "required_checks":[
+    {"id":"fact_fidelity","requirement":"개인 사실은 제공 자료나 사용자 확인에 연결하고, 프로그램 정보는 해당 회차의 공식 원문에 연결한다. 부족한 사실은 입력 요청이나 자리표시자로 남긴다."},
+    {"id":"internal_consistency","requirement":"프로그램명, 대상 프로젝트, 시점, 역할과 수치를 대조해 서로 어긋난 문장을 검토한다."},
+    {"id":"submission_constraints","requirement":"실제 문항, 분량, 필수 항목, 제출 형식과 허용된 작성 지원 범위를 확인한다."}
+  ],
+  "check_states":["pass","fail","needs_input","not_applicable"],
+  "application_ready_rule":"All applicable required_checks pass. Semantic quality remains a criterion-level review with explicit unresolved observations; no unvalidated numeric acceptance cutoff is used.",
+  "calibration_required":["independent reviewers","source-blind paired draft comparisons","question and genre stratification","fact preservation checks","disagreement adjudication","separate evaluation examples"]
+}

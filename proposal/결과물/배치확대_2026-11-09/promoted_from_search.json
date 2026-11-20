@@ -1,0 +1,26 @@
+[
+  {
+    "opportunity_id": "colorado-cha-summer-fellowship-2027",
+    "url": "https://www.colorado.edu/cha/funding-and-resources/grad-student-opportunities/summer-fellowships",
+    "search_paths": [
+      {
+        "wave": 2,
+        "q": "\"Summer Fellowships\" PhD graduate student funding eligibility application",
+        "term": "Summer Fellowships",
+        "receipt": "/home/longnew/Desktop/course_work/tmp/benefitlens_batch_expand_20261109/frontier/model-calls/20261108T173622117251-a3242abf24"
+      }
+    ]
+  },
+  {
+    "opportunity_id": "harvard-wcfia-dissertation-writing-2027-deadline",
+    "url": "https://www.wcfia.harvard.edu/funding/student/dissertation-writing-grants",
+    "search_paths": [
+      {
+        "wave": 2,
+        "q": "\"Dissertation-Writing Grants\" PhD graduate student funding eligibility application",
+        "term": "Dissertation-Writing Grants",
+        "receipt": "/home/longnew/Desktop/course_work/tmp/benefitlens_batch_expand_20261109/frontier/model-calls/20261108T173829879893-86a77095fd"
+      }
+    ]
+  }
+]

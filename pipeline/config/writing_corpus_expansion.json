@@ -1,0 +1,1810 @@
+{
+  "schema": "writing-corpus-sources-v1",
+  "scope": "public historical applications, reflection, reviewer feedback and official guidance",
+  "sources": [
+    {
+      "url": "https://astrobarker.github.io/essays/nsf_feedback.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Brandon Barker",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "reviewer_feedback",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://astrobarker.github.io/essays/nsf_grfp_personal.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Brandon Barker",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "personal_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://astrobarker.github.io/essays/nsf_grfp_research.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Brandon Barker",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "research_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://b83bf412-fbd3-4487-852d-9a66499bab1a.filesusr.com/ugd/24b4aa_274f1300d8e4479aac61c9733a9e105c.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": null,
+      "cycle": null,
+      "outcome": "unknown",
+      "outcome_basis": "unknown",
+      "role": "application_bundle",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://emilybaltz.files.wordpress.com/2020/04/etb-grfp-personal-statement.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Emily Baltz",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "personal_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://emilybaltz.files.wordpress.com/2020/04/etb-nsf-grfp-research-statement-2019.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Emily Baltz",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "research_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://github.com/logan-pearce/logan-pearce.github.io/blob/main/resources/my_grfp_application.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Logan Pearce",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "university_profile_self_report",
+      "role": "application_bundle",
+      "registry_url": "https://gradcenter.arizona.edu/news/spotlight-logan-pearce-nsf-grfp",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check",
+      "registry_quote": "I received the National Science Foundation Graduate Research Fellowship (NSF GRFP) in 2019"
+    },
+    {
+      "url": "https://jamesrhowevi.files.wordpress.com/2019/04/personalstatement_jhowe_grfp.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "James Howe",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "personal_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://jamesrhowevi.files.wordpress.com/2019/04/researchplan_jhowe_grfp.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "James Howe",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "research_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://jamesrhowevi.files.wordpress.com/2019/04/reviews_jhowe_grfp.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "James Howe",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "reviewer_feedback",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://natureinparadise.github.io/blog/grfp/Klinges_GRFP_personal_statement.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Dave Klinges",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "personal_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://natureinparadise.github.io/blog/grfp/Klinges_GRFP_research_statement.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Dave Klinges",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "research_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://natureinparadise.github.io/blog/grfp/Klinges_GRFP_reviews.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Dave Klinges",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "reviewer_feedback",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://njw.fish/static/posts/nsf_grfp/personal_statement.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": null,
+      "cycle": null,
+      "outcome": "unknown",
+      "outcome_basis": "unknown",
+      "role": "personal_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://njw.fish/static/posts/nsf_grfp/research_proposal.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": null,
+      "cycle": null,
+      "outcome": "unknown",
+      "outcome_basis": "unknown",
+      "role": "research_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://njw.fish/static/posts/nsf_grfp/reviews.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": null,
+      "cycle": null,
+      "outcome": "unknown",
+      "outcome_basis": "unknown",
+      "role": "reviewer_feedback",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://thiagotvarella.github.io/docs/NewPersonalStatement.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Thiago Tarraf Varella",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "personal_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://thiagotvarella.github.io/docs/NewResearchPlan.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Thiago Tarraf Varella",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "research_statement",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://thiagotvarella.github.io/docs/NewReview.pdf",
+      "program_id": "nsf-grfp",
+      "person_name": "Thiago Tarraf Varella",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "public_author_registry",
+      "role": "reviewer_feedback",
+      "registry_url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:27:10.057360+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339.raw.gz",
+        "request_data": null,
+        "sha256": "532487e09b60cd6b9fbc5217299ad7731fb77fe0c8efab1d48654a723a142339",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 417204,
+          "sha256": "78dfcf1ff61c3777be12134b137de22eab6fd22833619bee28bfbf0abf606e0a",
+          "stored_bytes": 87780
+        },
+        "url": "https://docs.google.com/spreadsheets/d/1xoezGhbtcpg3BvNdag2F5dTQM-Xl2EELUgAfG1eUg0s/edit"
+      },
+      "binding_status": "curated_name_and_public_host_requires_document_check"
+    },
+    {
+      "url": "https://jef.works/blog/2017/10/15/NSF-GRFP-application-tips-and-example/",
+      "program_id": "nsf-grfp",
+      "person_name": "Jean Fan",
+      "cycle": "2013",
+      "outcome": "selected",
+      "outcome_basis": "author_self_report",
+      "role": "experience_review",
+      "follow_pdf_links": true,
+      "binding_evidence": {
+        "document_id": "writing-2b9f89fd9d1885f3a6c44877",
+        "text_sha256": "477188d30509f1078619ef06fa70f08089724f44d73c223e6b98b5ad15a8c731",
+        "line": 32,
+        "exact_quote": "2013 NSF GRFP Applicant: Jean Fan",
+        "url": "https://jef.works/assets/docs/nsf/NSF_ViewApplReview.pdf"
+      }
+    },
+    {
+      "url": "https://www.nsf.gov/funding/initiatives/grfp/how-to-apply",
+      "program_id": "nsf-grfp",
+      "role": "official_guidance",
+      "outcome": "not_applicable"
+    },
+    {
+      "url": "https://www.nsf.gov/funding/initiatives/grfp/applicants/faq",
+      "program_id": "nsf-grfp",
+      "role": "official_guidance",
+      "outcome": "not_applicable"
+    },
+    {
+      "url": "https://www.gatescambridge.org/apply/criteria/",
+      "program_id": "gates-cambridge",
+      "role": "official_guidance",
+      "outcome": "not_applicable"
+    },
+    {
+      "url": "https://poorvucenter.yale.edu/sites/default/files/2026-08/Research%20%26%20Personal%20Statement%20Bundle%203%20%28Neuroscience%2C%20Awarded%20to%20Katie%20Ream%20in%202026%29.pdf",
+      "role": "application_bundle",
+      "program_id": "nsf-grfp",
+      "person_name": "Katie Ream",
+      "cycle": "2026",
+      "outcome": "selected",
+      "outcome_basis": "university_published_author_and_outcome",
+      "registry_url": "https://poorvucenter.yale.edu/writing/writing-resources-for-graduate-students/fellowship-writing",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:39:23.769199+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/bdcc10acb564cb4523867a56e66cda0a475cb058e2b5608a879fbc8b34a08b59.raw.gz",
+        "request_data": null,
+        "sha256": "bdcc10acb564cb4523867a56e66cda0a475cb058e2b5608a879fbc8b34a08b59",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 108157,
+          "sha256": "7916cd9de9599340daed60bd6795179506c097586fd5b1aa07ddff1fb78ebe8f",
+          "stored_bytes": 16526
+        },
+        "url": "https://poorvucenter.yale.edu/writing/writing-resources-for-graduate-students/fellowship-writing"
+      },
+      "registry_quote": "Provided by Katie Ream, awarded the NSF GRFP in 2026",
+      "binding_status": "university_attributed_bundle"
+    },
+    {
+      "url": "https://poorvucenter.yale.edu/sites/default/files/2026-08/Research%20%26%20Personal%20Statement%20Bundle%201%20%28Chemistry%20of%20Life%20Processes%2C%20Awarded%20to%20Hannah%20Castillo%20in%202024%29.pdf",
+      "role": "application_bundle",
+      "program_id": "nsf-grfp",
+      "person_name": "Hannah Castillo",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "university_published_author_and_outcome",
+      "registry_url": "https://poorvucenter.yale.edu/writing/writing-resources-for-graduate-students/fellowship-writing",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:39:23.769199+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/bdcc10acb564cb4523867a56e66cda0a475cb058e2b5608a879fbc8b34a08b59.raw.gz",
+        "request_data": null,
+        "sha256": "bdcc10acb564cb4523867a56e66cda0a475cb058e2b5608a879fbc8b34a08b59",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 108157,
+          "sha256": "7916cd9de9599340daed60bd6795179506c097586fd5b1aa07ddff1fb78ebe8f",
+          "stored_bytes": 16526
+        },
+        "url": "https://poorvucenter.yale.edu/writing/writing-resources-for-graduate-students/fellowship-writing"
+      },
+      "registry_quote": "Provided by Hannah Castillo, awarded the NSF GRFP in 2024",
+      "binding_status": "university_attributed_bundle"
+    },
+    {
+      "url": "https://poorvucenter.yale.edu/sites/default/files/2026-08/Research%20%26%20Personal%20Statement%20%2B%20Reviewer%20Comment%20Bundle%202%20%28Neuroscience%2C%20Awarded%20to%20Rosa%20Grijalva%20in%202024%29.pdf",
+      "role": "application_bundle",
+      "program_id": "nsf-grfp",
+      "person_name": "Rosa Grijalva",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "university_published_author_and_outcome",
+      "registry_url": "https://poorvucenter.yale.edu/writing/writing-resources-for-graduate-students/fellowship-writing",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:39:23.769199+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/bdcc10acb564cb4523867a56e66cda0a475cb058e2b5608a879fbc8b34a08b59.raw.gz",
+        "request_data": null,
+        "sha256": "bdcc10acb564cb4523867a56e66cda0a475cb058e2b5608a879fbc8b34a08b59",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 108157,
+          "sha256": "7916cd9de9599340daed60bd6795179506c097586fd5b1aa07ddff1fb78ebe8f",
+          "stored_bytes": 16526
+        },
+        "url": "https://poorvucenter.yale.edu/writing/writing-resources-for-graduate-students/fellowship-writing"
+      },
+      "registry_quote": "Provided by Rosa Grijalva, awarded the NSF GRFP in 2024",
+      "binding_status": "university_attributed_bundle"
+    },
+    {
+      "url": "https://poorvucenter.yale.edu/sites/default/files/2026-10/Research%20%26%20Personal%20Statement%20Bundle%204%20%28Neuroscience%2C%20Awarded%20to%20AJ%20Simon%20in%202024%29.pdf",
+      "role": "application_bundle",
+      "program_id": "nsf-grfp",
+      "person_name": "AJ Simon",
+      "cycle": "2024",
+      "outcome": "selected",
+      "outcome_basis": "university_published_author_and_outcome",
+      "registry_url": "https://poorvucenter.yale.edu/writing/writing-resources-for-graduate-students/fellowship-writing",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:39:23.769199+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/bdcc10acb564cb4523867a56e66cda0a475cb058e2b5608a879fbc8b34a08b59.raw.gz",
+        "request_data": null,
+        "sha256": "bdcc10acb564cb4523867a56e66cda0a475cb058e2b5608a879fbc8b34a08b59",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 108157,
+          "sha256": "7916cd9de9599340daed60bd6795179506c097586fd5b1aa07ddff1fb78ebe8f",
+          "stored_bytes": 16526
+        },
+        "url": "https://poorvucenter.yale.edu/writing/writing-resources-for-graduate-students/fellowship-writing"
+      },
+      "registry_quote": "Provided by AJ Simon, awarded the NSF GRFP in 2024",
+      "binding_status": "university_attributed_bundle"
+    },
+    {
+      "url": "https://poorvucenter.yale.edu/sites/default/files/2026-10/Research%20%26%20Personal%20Statement%20Bundle%205%20%28Chemistry%20of%20Life%20Processes%2C%20Awarded%20to%20Sydney%20Shuster%20in%202021%29.pdf",
+      "role": "application_bundle",
+      "program_id": "nsf-grfp",
+      "person_name": "Sydney Shuster",
+      "cycle": "2021",
+      "outcome": "selected",
+      "outcome_basis": "university_published_author_and_outcome",
+      "registry_url": "https://poorvucenter.yale.edu/writing/writing-resources-for-graduate-students/fellowship-writing",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:39:23.769199+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/bdcc10acb564cb4523867a56e66cda0a475cb058e2b5608a879fbc8b34a08b59.raw.gz",
+        "request_data": null,
+        "sha256": "bdcc10acb564cb4523867a56e66cda0a475cb058e2b5608a879fbc8b34a08b59",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 108157,
+          "sha256": "7916cd9de9599340daed60bd6795179506c097586fd5b1aa07ddff1fb78ebe8f",
+          "stored_bytes": 16526
+        },
+        "url": "https://poorvucenter.yale.edu/writing/writing-resources-for-graduate-students/fellowship-writing"
+      },
+      "registry_quote": "Provided by Sydney Shuster, awarded the NSF GRFP in 2021",
+      "binding_status": "university_attributed_bundle"
+    },
+    {
+      "url": "https://mitcommlab.mit.edu/eecs/wp-content/uploads/sites/6/2016/09/GRFP-personal-statement-example-1-Morgan.pdf",
+      "role": "personal_statement",
+      "program_id": "nsf-grfp",
+      "person_name": "Morgan Blevins",
+      "case_id": "nsf-mit-morgan-example",
+      "cycle": "2019",
+      "outcome": "selected",
+      "outcome_basis": "university_pdf_cover",
+      "registry_url": "https://mitcommlab.mit.edu/eecs/commkit/nsf-personal-statement/",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:39:34.287045+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/7ca9963f747cbca5a213ea6c50ff756fb13f6c1f47d61f8364ac3395b540a6bb.raw.gz",
+        "request_data": null,
+        "sha256": "7ca9963f747cbca5a213ea6c50ff756fb13f6c1f47d61f8364ac3395b540a6bb",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 70420,
+          "sha256": "818b4a4f971c367a632bd08eedeb025c35ab8ada4cd71f1bb2a3a87364ecddd2",
+          "stored_bytes": 17657
+        },
+        "url": "https://mitcommlab.mit.edu/eecs/commkit/nsf-personal-statement/"
+      },
+      "binding_status": "name_cycle_and_award_explicit_in_university_pdf",
+      "registry_quote": "The author was awarded the fellowship.",
+      "binding_evidence": {
+        "document_id": "writing-1604a3bd7d921aebec103ff9",
+        "text_sha256": "c96e8cf2d78b694ad7b296a126f5456c7e28e05af54f7d0367bffe7b96397c5a",
+        "line": 2,
+        "exact_quote": "The author was awarded the fellowship.",
+        "url": "https://mitcommlab.mit.edu/eecs/wp-content/uploads/sites/6/2016/09/GRFP-personal-statement-example-1-Morgan.pdf"
+      }
+    },
+    {
+      "url": "https://mitcommlab.mit.edu/eecs/wp-content/uploads/sites/6/2016/09/GRFP-personal-statement-example-2-Jessica.pdf",
+      "role": "personal_statement",
+      "program_id": "nsf-grfp",
+      "person_name": "Jessica Yin",
+      "case_id": "nsf-mit-jessica-2020",
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "university_pdf_cover",
+      "registry_url": "https://mitcommlab.mit.edu/eecs/commkit/nsf-personal-statement/",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:39:34.287045+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/7ca9963f747cbca5a213ea6c50ff756fb13f6c1f47d61f8364ac3395b540a6bb.raw.gz",
+        "request_data": null,
+        "sha256": "7ca9963f747cbca5a213ea6c50ff756fb13f6c1f47d61f8364ac3395b540a6bb",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 70420,
+          "sha256": "818b4a4f971c367a632bd08eedeb025c35ab8ada4cd71f1bb2a3a87364ecddd2",
+          "stored_bytes": 17657
+        },
+        "url": "https://mitcommlab.mit.edu/eecs/commkit/nsf-personal-statement/"
+      },
+      "binding_status": "university_attributed_example"
+    },
+    {
+      "url": "https://joshuamundinger.github.io/nsfgrfp.html",
+      "role": "experience_review",
+      "person_name": "Joshua Mundinger",
+      "cycle": null,
+      "program_id": "nsf-grfp",
+      "outcome": "selected",
+      "outcome_basis": "self_report",
+      "registry_quote": "I was awarded the GRFP during my senior year of undergraduate studies.",
+      "binding_status": "self_published_report"
+    },
+    {
+      "url": "https://joycechew.github.io/resources/grfp",
+      "role": "experience_review",
+      "person_name": "Joyce A. Chew",
+      "cycle": "2020",
+      "program_id": "nsf-grfp",
+      "outcome": "unknown",
+      "outcome_basis": "no_explicit_outcome_quote_recorded",
+      "follow_pdf_links": true,
+      "registry_quote": "My application materials",
+      "binding_status": "self_published_linked_documents",
+      "binding_evidence": {
+        "document_id": "writing-a8ef570637f150055a9d7632",
+        "text_sha256": "91d6f6574344796dd820b9cbf0364379c072626750aa3e7ed7f9c6a802297454",
+        "line": 1,
+        "exact_quote": "Application Year: 2020",
+        "url": "https://joycechew.github.io/files/JAC_NSF_reviews.pdf"
+      }
+    },
+    {
+      "url": "https://dtabaker.github.io/2026/10/13/nsf-grfp-reflections.html",
+      "role": "experience_review",
+      "person_name": "Dillon Baker",
+      "cycle": null,
+      "program_id": "nsf-grfp",
+      "outcome": "not_selected",
+      "outcome_basis": "self_report",
+      "registry_quote": "I received neither the fellowship nor an honorable mention.",
+      "binding_status": "self_published_report_no_application_essay"
+    },
+    {
+      "url": "https://www.rochester.edu/College/studentfellowships/assets/documents/EssaySample1A.pdf",
+      "role": "application_bundle",
+      "program_id": "fulbright-us-student",
+      "person_name": null,
+      "case_id": "fulbright-rochester-EssaySample1A",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "university_published_successful_sample",
+      "registry_url": "https://www.rochester.edu/College/studentfellowships/fulbright/samples.html",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:40:52.420282+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/11f317031c7174d041a13926aa50904bfa49702339fdeb117279d52a6926aee4.raw.gz",
+        "request_data": null,
+        "sha256": "11f317031c7174d041a13926aa50904bfa49702339fdeb117279d52a6926aee4",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 18486,
+          "sha256": "787129c2cf09847172ccc355f1b69f381aec48f4c3cee42ba2a2f24b00bdaec3",
+          "stored_bytes": 4517
+        },
+        "url": "https://www.rochester.edu/College/studentfellowships/fulbright/samples.html"
+      },
+      "registry_quote": "Reading successful applicants’ essays will provide you with examples",
+      "binding_status": "anonymous_university_example_not_confirmed_distinct_person"
+    },
+    {
+      "url": "https://www.rochester.edu/College/studentfellowships/assets/documents/EssaySample1B.pdf",
+      "role": "application_bundle",
+      "program_id": "fulbright-us-student",
+      "person_name": null,
+      "case_id": "fulbright-rochester-EssaySample1B",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "university_published_successful_sample",
+      "registry_url": "https://www.rochester.edu/College/studentfellowships/fulbright/samples.html",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:40:52.420282+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/11f317031c7174d041a13926aa50904bfa49702339fdeb117279d52a6926aee4.raw.gz",
+        "request_data": null,
+        "sha256": "11f317031c7174d041a13926aa50904bfa49702339fdeb117279d52a6926aee4",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 18486,
+          "sha256": "787129c2cf09847172ccc355f1b69f381aec48f4c3cee42ba2a2f24b00bdaec3",
+          "stored_bytes": 4517
+        },
+        "url": "https://www.rochester.edu/College/studentfellowships/fulbright/samples.html"
+      },
+      "registry_quote": "Reading successful applicants’ essays will provide you with examples",
+      "binding_status": "anonymous_university_example_not_confirmed_distinct_person"
+    },
+    {
+      "url": "https://www.rochester.edu/College/studentfellowships/assets/documents/EssaySample1C.pdf",
+      "role": "application_bundle",
+      "program_id": "fulbright-us-student",
+      "person_name": null,
+      "case_id": "fulbright-rochester-EssaySample1C",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "university_published_successful_sample",
+      "registry_url": "https://www.rochester.edu/College/studentfellowships/fulbright/samples.html",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:40:52.420282+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/11f317031c7174d041a13926aa50904bfa49702339fdeb117279d52a6926aee4.raw.gz",
+        "request_data": null,
+        "sha256": "11f317031c7174d041a13926aa50904bfa49702339fdeb117279d52a6926aee4",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 18486,
+          "sha256": "787129c2cf09847172ccc355f1b69f381aec48f4c3cee42ba2a2f24b00bdaec3",
+          "stored_bytes": 4517
+        },
+        "url": "https://www.rochester.edu/College/studentfellowships/fulbright/samples.html"
+      },
+      "registry_quote": "Reading successful applicants’ essays will provide you with examples",
+      "binding_status": "anonymous_university_example_not_confirmed_distinct_person"
+    },
+    {
+      "url": "https://www.rochester.edu/College/studentfellowships/assets/documents/EssaySample2.pdf",
+      "role": "application_bundle",
+      "program_id": "fulbright-us-student",
+      "person_name": null,
+      "case_id": "fulbright-rochester-EssaySample2",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "university_published_successful_sample",
+      "registry_url": "https://www.rochester.edu/College/studentfellowships/fulbright/samples.html",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:40:52.420282+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/11f317031c7174d041a13926aa50904bfa49702339fdeb117279d52a6926aee4.raw.gz",
+        "request_data": null,
+        "sha256": "11f317031c7174d041a13926aa50904bfa49702339fdeb117279d52a6926aee4",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 18486,
+          "sha256": "787129c2cf09847172ccc355f1b69f381aec48f4c3cee42ba2a2f24b00bdaec3",
+          "stored_bytes": 4517
+        },
+        "url": "https://www.rochester.edu/College/studentfellowships/fulbright/samples.html"
+      },
+      "registry_quote": "Reading successful applicants’ essays will provide you with examples",
+      "binding_status": "anonymous_university_example_not_confirmed_distinct_person"
+    },
+    {
+      "url": "https://www.rochester.edu/College/studentfellowships/assets/documents/EssaySample3.pdf",
+      "role": "application_bundle",
+      "program_id": "fulbright-us-student",
+      "person_name": null,
+      "case_id": "fulbright-rochester-EssaySample3",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "university_published_successful_sample",
+      "registry_url": "https://www.rochester.edu/College/studentfellowships/fulbright/samples.html",
+      "registry_snapshot": {
+        "at": "2026-11-15T16:40:52.420282+09:00",
+        "blocked_until": 0,
+        "headers": {
+          "content-type": "text/html"
+        },
+        "method": "GET",
+        "path": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/writing-corpus-expansion-v1/blobs/11f317031c7174d041a13926aa50904bfa49702339fdeb117279d52a6926aee4.raw.gz",
+        "request_data": null,
+        "sha256": "11f317031c7174d041a13926aa50904bfa49702339fdeb117279d52a6926aee4",
+        "status": 200,
+        "storage": {
+          "codec": "gzip",
+          "decoded_bytes": 18486,
+          "sha256": "787129c2cf09847172ccc355f1b69f381aec48f4c3cee42ba2a2f24b00bdaec3",
+          "stored_bytes": 4517
+        },
+        "url": "https://www.rochester.edu/College/studentfellowships/fulbright/samples.html"
+      },
+      "registry_quote": "Reading successful applicants’ essays will provide you with examples",
+      "binding_status": "anonymous_university_example_not_confirmed_distinct_person"
+    },
+    {
+      "url": "https://www.wbs.ac.uk/blogs/student/masters/how-my-chevening-msc-scholarship-gave-me-the-platform-to-succeed/",
+      "role": "official_interview",
+      "program_id": "chevening",
+      "person_name": "Odera (public interview name)",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "university_interview_self_report",
+      "registry_quote": "I was chosen to receive the Chevening scholarship on my third attempt of applying",
+      "binding_status": "university_published_interview_no_application_essay"
+    },
+    {
+      "url": "https://www.chevening.org/news/chevening-scholars-share-top-tips-for-hopeful-applicants/",
+      "program_id": "chevening",
+      "role": "official_interview",
+      "discovery_basis": "public_search_result_20261115",
+      "case_specs": [
+        {
+          "person_name": "Anai Salazar",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_current_scholar_cohort",
+          "registry_url": "https://www.chevening.org/news/chevening-scholars-share-top-tips-for-hopeful-applicants/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-ce101c5fea4815b00fefa688",
+            "text_sha256": "126d496dcf6013951676c65672809acb648f3403a11b616e16b6789f970a70ec",
+            "url": "https://www.chevening.org/news/chevening-scholars-share-top-tips-for-hopeful-applicants/",
+            "line": 78,
+            "exact_quote": "Anai Salazar"
+          }
+        },
+        {
+          "person_name": "John Michael Orimbo",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_current_scholar_cohort",
+          "registry_url": "https://www.chevening.org/news/chevening-scholars-share-top-tips-for-hopeful-applicants/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-ce101c5fea4815b00fefa688",
+            "text_sha256": "126d496dcf6013951676c65672809acb648f3403a11b616e16b6789f970a70ec",
+            "url": "https://www.chevening.org/news/chevening-scholars-share-top-tips-for-hopeful-applicants/",
+            "line": 82,
+            "exact_quote": "John Michael Orimbo"
+          }
+        },
+        {
+          "person_name": "Simin Ibnat Dharitree",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_current_scholar_cohort",
+          "registry_url": "https://www.chevening.org/news/chevening-scholars-share-top-tips-for-hopeful-applicants/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-ce101c5fea4815b00fefa688",
+            "text_sha256": "126d496dcf6013951676c65672809acb648f3403a11b616e16b6789f970a70ec",
+            "url": "https://www.chevening.org/news/chevening-scholars-share-top-tips-for-hopeful-applicants/",
+            "line": 86,
+            "exact_quote": "Simin Ibnat Dharitree"
+          }
+        },
+        {
+          "person_name": "Faith Fao",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_current_scholar_cohort",
+          "registry_url": "https://www.chevening.org/news/chevening-scholars-share-top-tips-for-hopeful-applicants/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-ce101c5fea4815b00fefa688",
+            "text_sha256": "126d496dcf6013951676c65672809acb648f3403a11b616e16b6789f970a70ec",
+            "url": "https://www.chevening.org/news/chevening-scholars-share-top-tips-for-hopeful-applicants/",
+            "line": 91,
+            "exact_quote": "Faith Fao"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+      "program_id": "chevening",
+      "role": "official_interview",
+      "discovery_basis": "public_search_result_20261115",
+      "case_specs": [
+        {
+          "person_name": "Hossein Cheaito",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_explicit_recipient_interviews",
+          "registry_url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+            "line": 83,
+            "exact_quote": "Hossein Cheaito"
+          },
+          "case_text_span": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "line_start": 81,
+            "line_end": 82,
+            "attribution_basis": "quoted_paragraphs_immediately_preceding_named_em_credit_in_archived_HTML"
+          }
+        },
+        {
+          "person_name": "Graziani Correa",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_explicit_recipient_interviews",
+          "registry_url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+            "line": 87,
+            "exact_quote": "Graziani Correa"
+          },
+          "case_text_span": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "line_start": 86,
+            "line_end": 86,
+            "attribution_basis": "quoted_paragraphs_immediately_preceding_named_em_credit_in_archived_HTML"
+          }
+        },
+        {
+          "person_name": "Sunday Ubur",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_explicit_recipient_interviews",
+          "registry_url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+            "line": 90,
+            "exact_quote": "Sunday Ubur"
+          },
+          "case_text_span": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "line_start": 89,
+            "line_end": 89,
+            "attribution_basis": "quoted_paragraphs_immediately_preceding_named_em_credit_in_archived_HTML"
+          }
+        },
+        {
+          "person_name": "Bojana Nikolić",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_explicit_recipient_interviews",
+          "registry_url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+            "line": 94,
+            "exact_quote": "Bojana Nikolić"
+          },
+          "case_text_span": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "line_start": 93,
+            "line_end": 93,
+            "attribution_basis": "quoted_paragraphs_immediately_preceding_named_em_credit_in_archived_HTML"
+          }
+        },
+        {
+          "person_name": "Yasmin El-Beih",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_explicit_recipient_interviews",
+          "registry_url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+            "line": 101,
+            "exact_quote": "Yasmin El-Beih"
+          },
+          "case_text_span": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "line_start": 100,
+            "line_end": 100,
+            "attribution_basis": "quoted_paragraphs_immediately_preceding_named_em_credit_in_archived_HTML"
+          }
+        },
+        {
+          "person_name": "Mukhbirakhon Kazimova",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_explicit_recipient_interviews",
+          "registry_url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+            "line": 105,
+            "exact_quote": "Mukhbirakhon Kazimova"
+          },
+          "case_text_span": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "line_start": 104,
+            "line_end": 104,
+            "attribution_basis": "quoted_paragraphs_immediately_preceding_named_em_credit_in_archived_HTML"
+          }
+        },
+        {
+          "person_name": "Nora Robledo",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_explicit_recipient_interviews",
+          "registry_url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+            "line": 109,
+            "exact_quote": "Nora Robledo"
+          },
+          "case_text_span": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "line_start": 108,
+            "line_end": 108,
+            "attribution_basis": "quoted_paragraphs_immediately_preceding_named_em_credit_in_archived_HTML"
+          }
+        },
+        {
+          "person_name": "Minh Dat Loc",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_explicit_recipient_interviews",
+          "registry_url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+            "line": 113,
+            "exact_quote": "Minh Dat Loc"
+          },
+          "case_text_span": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "line_start": 112,
+            "line_end": 112,
+            "attribution_basis": "quoted_paragraphs_immediately_preceding_named_em_credit_in_archived_HTML"
+          }
+        },
+        {
+          "person_name": "Sarah Natumanya",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_explicit_recipient_interviews",
+          "registry_url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+            "line": 117,
+            "exact_quote": "Sarah Natumanya"
+          },
+          "case_text_span": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "line_start": 116,
+            "line_end": 116,
+            "attribution_basis": "quoted_paragraphs_immediately_preceding_named_em_credit_in_archived_HTML"
+          }
+        },
+        {
+          "person_name": "Suzane Mollel",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_explicit_recipient_interviews",
+          "registry_url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+            "line": 120,
+            "exact_quote": "Suzane Mollel"
+          },
+          "case_text_span": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "line_start": 119,
+            "line_end": 119,
+            "attribution_basis": "quoted_paragraphs_immediately_preceding_named_em_credit_in_archived_HTML"
+          }
+        },
+        {
+          "person_name": "Raquel Bautista",
+          "cycle": null,
+          "outcome": "selected",
+          "outcome_basis": "official_article_explicit_recipient_interviews",
+          "registry_url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "url": "https://www.chevening.org/news/chevening-interview-tips-from-scholars/",
+            "line": 125,
+            "exact_quote": "Raquel Bautista"
+          },
+          "case_text_span": {
+            "document_id": "writing-a41a84adbaffa42ea6c4733f",
+            "text_sha256": "2a88a41459b33ec7d42d3afcf68b361d71e4d63aafe56ddb9e2c6f99a5aa7620",
+            "line_start": 123,
+            "line_end": 124,
+            "attribution_basis": "quoted_paragraphs_immediately_preceding_named_em_credit_in_archived_HTML"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://www.chevening.org/news/chevening-applications-qa-your-questions-answered/",
+      "program_id": "chevening",
+      "role": "official_guidance",
+      "discovery_basis": "public_search_result_20261115"
+    },
+    {
+      "url": "https://www.ids.ac.uk/opinions/want-to-win-chevening-five-tips-to-nail-your-essays-even-in-300-words/",
+      "program_id": "chevening",
+      "role": "experience_review",
+      "discovery_basis": "public_search_result_20261115",
+      "person_name": "Zohra Jalal",
+      "cycle": "2024-25",
+      "outcome": "selected",
+      "outcome_basis": "official_publisher_report",
+      "binding_status": "exact_source_quote_checked",
+      "case_scope": "application_preparation",
+      "binding_evidence": {
+        "document_id": "writing-ce04b9ddad55ae84c2939c90",
+        "text_sha256": "e0027fd750be2d526b8fff7af6cccf32adc8a21f720177f71238369806ef2104",
+        "url": "https://www.ids.ac.uk/opinions/want-to-win-chevening-five-tips-to-nail-your-essays-even-in-300-words/",
+        "line": 115,
+        "exact_quote": "Zohra Jalal"
+      }
+    },
+    {
+      "url": "https://www.spelman.edu/_1_Docs-and-Files/academics/cwp/writing-center-handouts/fulbright-scholar-statements.pdf",
+      "program_id": "fulbright-us-student",
+      "role": "application_bundle",
+      "discovery_basis": "public_search_result_20261115"
+    },
+    {
+      "url": "https://externalscholarships.lafayette.edu/wp-content/uploads/sites/178/2010/08/Fulbright-Scholarship-Sample-Documents.pdf",
+      "program_id": "fulbright-us-student",
+      "role": "application_bundle",
+      "discovery_basis": "public_search_result_20261115"
+    },
+    {
+      "url": "https://foundation.miraeasset.com/upload/upload/2025/5/20250515021211017257.pdf",
+      "program_id": "miraeasset-exchange",
+      "role": "experience_review",
+      "discovery_basis": "public_search_result_20261115"
+    },
+    {
+      "url": "https://foundation.miraeasset.com/upload/upload/2024/6/20240604061443117476.pdf",
+      "program_id": "miraeasset-exchange",
+      "role": "experience_review",
+      "discovery_basis": "public_search_result_20261115"
+    },
+    {
+      "url": "https://toriplanning.tistory.com/2?category=887328",
+      "program_id": "kfas-overseas-study",
+      "role": "experience_review",
+      "discovery_basis": "public_search_result_20261115",
+      "person_name": null,
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "registry_url": "https://toriplanning.tistory.com/2?category=887328",
+      "binding_status": "exact_source_quote_checked",
+      "case_scope": "application_or_interview_preparation",
+      "binding_evidence": {
+        "document_id": "writing-433e7ed60a33e09175233ec4",
+        "text_sha256": "c8e98a1cf8cb5af3d06a5da4843c4ca2cb7269a59fbe954e5b65590f4b53df92",
+        "url": "https://toriplanning.tistory.com/2?category=887328",
+        "line": 15,
+        "exact_quote": "오후 다섯시 반쯤에 혹시나 하는 마음에 확인해보았는데 운 좋게도 면접에 합격했다."
+      },
+      "case_id": "kfas-toriplanning-2020",
+      "author_handle": "토끼오리",
+      "outcome_phase": "candidate_scholar_selection"
+    },
+    {
+      "url": "https://toriplanning.tistory.com/5?category=887328",
+      "program_id": "kfas-overseas-study",
+      "role": "experience_review",
+      "discovery_basis": "public_search_result_20261115",
+      "person_name": null,
+      "cycle": "2020",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "registry_url": "https://toriplanning.tistory.com/2?category=887328",
+      "binding_status": "exact_source_quote_checked",
+      "case_scope": "application_or_interview_preparation",
+      "binding_evidence": {
+        "document_id": "writing-433e7ed60a33e09175233ec4",
+        "text_sha256": "c8e98a1cf8cb5af3d06a5da4843c4ca2cb7269a59fbe954e5b65590f4b53df92",
+        "url": "https://toriplanning.tistory.com/2?category=887328",
+        "line": 15,
+        "exact_quote": "오후 다섯시 반쯤에 혹시나 하는 마음에 확인해보았는데 운 좋게도 면접에 합격했다."
+      },
+      "case_id": "kfas-toriplanning-2020",
+      "author_handle": "토끼오리",
+      "outcome_phase": "candidate_scholar_selection"
+    },
+    {
+      "url": "https://chemiolin.tistory.com/330",
+      "program_id": "kfas-overseas-study",
+      "role": "experience_review",
+      "discovery_basis": "public_search_result_20261115",
+      "person_name": null,
+      "cycle": "2020",
+      "outcome": "not_selected",
+      "outcome_basis": "public_author_self_report",
+      "registry_url": "https://chemiolin.tistory.com/330",
+      "binding_status": "exact_source_quote_checked",
+      "case_scope": "application_or_interview_preparation",
+      "binding_evidence": {
+        "document_id": "writing-79be96f25355184b744122ae",
+        "text_sha256": "21141682cb5f6a5c8ca2cf0429eb132b8764bd2c76aa24e2bca81eb335c4c42e",
+        "url": "https://chemiolin.tistory.com/330",
+        "line": 62,
+        "exact_quote": "불합격..!"
+      },
+      "case_id": "kfas-chemiolin-2020",
+      "author_handle": "chemiolin",
+      "outcome_phase": "written_exam"
+    },
+    {
+      "url": "https://butter00.tistory.com/28?category=1031376",
+      "program_id": "miraeasset-exchange",
+      "role": "experience_review",
+      "discovery_basis": "public_search_result_20261115"
+    },
+    {
+      "url": "https://blogs.ed.ac.uk/careersinformed/engaging-in-world-class-research-in-canada-mitacs-globalink-research-internships-programme/",
+      "program_id": "mitacs-globalink",
+      "role": "experience_review",
+      "discovery_basis": "public_search_result_20261115",
+      "person_name": "Daisy Lints",
+      "cycle": "2021",
+      "outcome": "selected",
+      "outcome_basis": "official_publisher_report",
+      "registry_url": "https://blogs.ed.ac.uk/careersinformed/engaging-in-world-class-research-in-canada-mitacs-globalink-research-internships-programme/",
+      "binding_status": "exact_source_quote_checked",
+      "case_scope": "application_or_interview_preparation",
+      "binding_evidence": {
+        "document_id": "writing-3fde17f817cf8670c1acf8f0",
+        "text_sha256": "65c427cc21640a3f7a2a1b85c944176e83c8e5e99e0e97c3738061fb62350164",
+        "url": "https://blogs.ed.ac.uk/careersinformed/engaging-in-world-class-research-in-canada-mitacs-globalink-research-internships-programme/",
+        "line": 61,
+        "exact_quote": "Daisy Lints, Biomedical Sciences student, did a research internship last summer"
+      }
+    },
+    {
+      "url": "https://udaaniitt.in/editions/2022_Autumn/MitacsGlobalinkResearchInternship/",
+      "program_id": "mitacs-globalink",
+      "role": "experience_review",
+      "discovery_basis": "public_search_result_20261115",
+      "case_specs": [
+        {
+          "person_name": "Noble",
+          "cycle": "2022",
+          "outcome": "selected",
+          "outcome_basis": "public_author_self_report",
+          "registry_url": "https://udaaniitt.in/editions/2022_Autumn/MitacsGlobalinkResearchInternship/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-3cb8afd02b4b2d7e7d7ec7e2",
+            "text_sha256": "d5a5d09a7c8875660e9b8293ae37becd4555d4cea7f3f8c746c3845f44c0a716",
+            "url": "https://udaaniitt.in/editions/2022_Autumn/MitacsGlobalinkResearchInternship/",
+            "line": 13,
+            "exact_quote": "who was also selected for this prestigious scholarship program along with me."
+          }
+        },
+        {
+          "person_name": "Srikarah",
+          "cycle": "2022",
+          "outcome": "selected",
+          "outcome_basis": "public_author_self_report",
+          "registry_url": "https://udaaniitt.in/editions/2022_Autumn/MitacsGlobalinkResearchInternship/",
+          "binding_status": "exact_source_quote_checked",
+          "case_scope": "application_or_interview_preparation",
+          "binding_evidence": {
+            "document_id": "writing-3cb8afd02b4b2d7e7d7ec7e2",
+            "text_sha256": "d5a5d09a7c8875660e9b8293ae37becd4555d4cea7f3f8c746c3845f44c0a716",
+            "url": "https://udaaniitt.in/editions/2022_Autumn/MitacsGlobalinkResearchInternship/",
+            "line": 13,
+            "exact_quote": "who was also selected for this prestigious scholarship program along with me."
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://www.nitt.edu/home/academics/departments/eee/eee_newsletter/Tronicals7.1.pdf",
+      "program_id": "mitacs-globalink",
+      "role": "experience_review",
+      "discovery_basis": "public_search_result_20261115"
+    },
+    {
+      "url": "https://goldwatercommunity.org/application-resources/",
+      "program_id": "goldwater",
+      "role": "official_guidance",
+      "discovery_basis": "public_search_result_20261115"
+    },
+    {
+      "url": "https://www.e-education.psu.edu/writingpersonalstatementsonline/sites/www.e-education.psu.edu.writingpersonalstatementsonline/files/file/Rhodes.pdf",
+      "program_id": "rhodes",
+      "role": "application_bundle",
+      "discovery_basis": "public_search_result_20261115"
+    },
+    {
+      "url": "https://www.rhodeshouse.ox.ac.uk/media/0v5hjjsm/scholars-guide-2026_27.pdf",
+      "program_id": "rhodes",
+      "role": "writing_guide",
+      "discovery_basis": "public_search_result_20261115"
+    },
+    {
+      "url": "https://www.fulbright.or.kr/my-fulbright-story/",
+      "program_id": "fulbright-korea",
+      "role": "experience_index",
+      "discovery_basis": "public_search_result_20261115"
+    },
+    {
+      "url": "https://www.chevening.org/news/perseverance-pays-off-what-i-learned-from-applying-to-chevening-four-times/",
+      "program_id": "chevening",
+      "role": "experience_review",
+      "discovery_basis": "observed_related_link_on_collected_original"
+    },
+    {
+      "url": "https://www.chevening.org/news/reading-committee-feedback-for-applicants/",
+      "program_id": "chevening",
+      "role": "reviewer_guidance",
+      "discovery_basis": "observed_related_link_on_collected_original"
+    },
+    {
+      "url": "https://www.chevening.org/news/interviews-tips-from-chevening-scholars/",
+      "program_id": "chevening",
+      "role": "official_interview",
+      "discovery_basis": "observed_related_link_on_collected_original"
+    },
+    {
+      "url": "https://www.chevening.org/news/what-will-your-contribution-be-how-to-show-interviewers-your-value-to-the-chevening-network/",
+      "program_id": "chevening",
+      "role": "official_interview",
+      "discovery_basis": "observed_related_link_on_collected_original"
+    },
+    {
+      "url": "https://www.fulbright.or.kr/alumni-stories/gsp/",
+      "program_id": "fulbright-korea-gsp",
+      "role": "experience_index",
+      "discovery_basis": "observed_related_link_on_collected_original"
+    }
+  ],
+  "archived_sources": [
+    {
+      "url": "https://us.fulbrightonline.org/applicants/application-components/academic",
+      "program_id": "fulbright-us-student",
+      "role": "official_guidance",
+      "receipt_cache_path": "expansion-20261109/writing/exp-fulbright-2027-official-7c0705f17c56.receipt.json"
+    },
+    {
+      "url": "https://kalinaeskew.com/wp-content/uploads/2024/10/grfp-personal-statement.pdf",
+      "program_id": "nsf-grfp",
+      "role": "personal_statement",
+      "person_name": "Kalina Eskew",
+      "cycle": "2021",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://kalinaeskew.wordpress.com/2024/10/17/applying-for-the-nsf-grfp/",
+      "binding_evidence": {
+        "source_id": "exp-nsf-eskew-index",
+        "document_id": "writing-3d81c7e7bb589b25e7d91606",
+        "text_sha256": "3e13197e360d7e10b8c0aea94efefb2149a99e5e7190d09acdb5820d30ad7851",
+        "url": "https://kalinaeskew.wordpress.com/2024/10/17/applying-for-the-nsf-grfp/",
+        "line": 21,
+        "exact_quote": "I was awarded the National Science Foundation’s Graduate Research Fellowship in 2021 as an undergraduate student."
+      },
+      "receipt_cache_path": "expansion-20261109/writing/exp-nsf-eskew-personal-b5e6604807e1.receipt.json"
+    },
+    {
+      "url": "https://kalinaeskew.wordpress.com/2024/10/17/applying-for-the-nsf-grfp/",
+      "program_id": "nsf-grfp",
+      "role": "experience_review",
+      "person_name": "Kalina Eskew",
+      "cycle": "2021",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://kalinaeskew.wordpress.com/2024/10/17/applying-for-the-nsf-grfp/",
+      "binding_evidence": {
+        "source_id": "exp-nsf-eskew-index",
+        "document_id": "writing-3d81c7e7bb589b25e7d91606",
+        "text_sha256": "3e13197e360d7e10b8c0aea94efefb2149a99e5e7190d09acdb5820d30ad7851",
+        "url": "https://kalinaeskew.wordpress.com/2024/10/17/applying-for-the-nsf-grfp/",
+        "line": 21,
+        "exact_quote": "I was awarded the National Science Foundation’s Graduate Research Fellowship in 2021 as an undergraduate student."
+      },
+      "receipt_cache_path": "expansion-20261109/writing/exp-nsf-eskew-index-3d81c7e7bb58.receipt.json"
+    },
+    {
+      "url": "https://kalinaeskew.com/wp-content/uploads/2024/10/kalinaeskewproposalgrfp.docx.pdf",
+      "program_id": "nsf-grfp",
+      "role": "research_statement",
+      "person_name": "Kalina Eskew",
+      "cycle": "2021",
+      "outcome": "selected",
+      "outcome_basis": "public_author_self_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://kalinaeskew.wordpress.com/2024/10/17/applying-for-the-nsf-grfp/",
+      "binding_evidence": {
+        "source_id": "exp-nsf-eskew-index",
+        "document_id": "writing-3d81c7e7bb589b25e7d91606",
+        "text_sha256": "3e13197e360d7e10b8c0aea94efefb2149a99e5e7190d09acdb5820d30ad7851",
+        "url": "https://kalinaeskew.wordpress.com/2024/10/17/applying-for-the-nsf-grfp/",
+        "line": 21,
+        "exact_quote": "I was awarded the National Science Foundation’s Graduate Research Fellowship in 2021 as an undergraduate student."
+      },
+      "receipt_cache_path": "expansion-20261109/writing/exp-nsf-eskew-research-fba28f856a4e.receipt.json"
+    },
+    {
+      "url": "https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program/nsf26-526/solicitation",
+      "program_id": "nsf-grfp",
+      "role": "official_guidance",
+      "receipt_cache_path": "expansion-20261109/writing/exp-nsf-2027-official-001f1ec48846.receipt.json"
+    },
+    {
+      "url": "https://www.sjc.edu/news/focus-fulbrights-tobin-stauffer-translates-johnnies-inquiring-mind-fulbright-project-india",
+      "program_id": "fulbright-us-student",
+      "role": "official_interview",
+      "person_name": "Tobin Stauffer",
+      "cycle": "2022",
+      "outcome": "selected",
+      "outcome_basis": "official_publisher_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.sjc.edu/news/focus-fulbrights-tobin-stauffer-translates-johnnies-inquiring-mind-fulbright-project-india",
+      "binding_evidence": {
+        "source_id": "exp-fulbright-stauffer-interview",
+        "document_id": "writing-427a54880106863f1ca94ea0",
+        "text_sha256": "15885a75685009868c61a36e7f1df712539f289bd8d96fb46ea46b68498c4b2c",
+        "url": "https://www.sjc.edu/news/focus-fulbrights-tobin-stauffer-translates-johnnies-inquiring-mind-fulbright-project-india",
+        "line": 76,
+        "exact_quote": "Fulbright recipient Tobin Stauffer (AGI22)"
+      },
+      "receipt_cache_path": "expansion-20261109/writing/exp-fulbright-stauffer-interview-427a54880106.receipt.json"
+    },
+    {
+      "url": "https://www.chevening.org/resource-hub/guidance/application-criteria/",
+      "program_id": "chevening",
+      "role": "official_guidance",
+      "receipt_cache_path": "expansion2-20261109/writing/exp2-chevening-criteria-bcdd8da87905.receipt.json"
+    },
+    {
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/faqs/",
+      "program_id": "rhodes",
+      "role": "official_guidance",
+      "receipt_cache_path": "expansion2-20261109/writing/exp2-rhodes-ai-b386fd3e5923.receipt.json"
+    },
+    {
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholar-network/oral-history/john-mccall-macbain/",
+      "program_id": "rhodes",
+      "role": "official_interview",
+      "person_name": "John McCall MacBain",
+      "cycle": "1980",
+      "outcome": "selected",
+      "outcome_basis": "official_publisher_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.rhodeshouse.ox.ac.uk/scholar-network/oral-history/john-mccall-macbain/",
+      "binding_evidence": {
+        "source_id": "exp2-rhodes-mccall",
+        "document_id": "writing-f5d080ae88376f78460015fe",
+        "text_sha256": "6012e00597d597c63e6c9daa63b260d1093121f5f594713b70f6fa5b37528d4c",
+        "url": "https://www.rhodeshouse.ox.ac.uk/scholar-network/oral-history/john-mccall-macbain/",
+        "line": 141,
+        "exact_quote": "John McCall MacBain (Québec & Wadham 1980)"
+      },
+      "receipt_cache_path": "expansion2-20261109/writing/exp2-rhodes-mccall-f5d080ae8837.receipt.json"
+    },
+    {
+      "url": "https://www.chevening.org/news/andjelas-interview-tips/",
+      "program_id": "chevening",
+      "role": "official_interview",
+      "person_name": "Andjela Miskovic",
+      "cycle": null,
+      "outcome": "selected",
+      "outcome_basis": "official_publisher_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.chevening.org/news/andjelas-interview-tips/",
+      "binding_evidence": {
+        "source_id": "exp2-chevening-andjela",
+        "document_id": "writing-4b8440c8bfda90b8d568ddcf",
+        "text_sha256": "05b9bc60356bc0381ef3e12eb2da76202061e516caf5fdd6ba5ba2859f3a171d",
+        "url": "https://www.chevening.org/news/andjelas-interview-tips/",
+        "line": 79,
+        "exact_quote": "Chevening scholar Andjela Miskovic shares how to prepare for the Chevening interview."
+      },
+      "receipt_cache_path": "expansion2-20261109/writing/exp2-chevening-andjela-4b8440c8bfda.receipt.json"
+    },
+    {
+      "url": "https://www.chevening.org/news/prepare-for-your-chevening-interview-with-griffins-timbe/",
+      "program_id": "chevening",
+      "role": "official_interview",
+      "person_name": "Griffins Timbe",
+      "cycle": "2025",
+      "outcome": "selected",
+      "outcome_basis": "official_publisher_report",
+      "binding_status": "exact_source_quote_checked",
+      "registry_url": "https://www.chevening.org/news/prepare-for-your-chevening-interview-with-griffins-timbe/",
+      "binding_evidence": {
+        "source_id": "exp2-chevening-timbe",
+        "document_id": "writing-7191f1910a29dfc85d0ff970",
+        "text_sha256": "2a694af23bbb3bbe581106e62b6851a505697e3f3d2d71846a7a2439be6f706e",
+        "url": "https://www.chevening.org/news/prepare-for-your-chevening-interview-with-griffins-timbe/",
+        "line": 82,
+        "exact_quote": "When I was awarded the scholarship"
+      },
+      "receipt_cache_path": "expansion2-20261109/writing/exp2-chevening-timbe-7191f1910a29.receipt.json"
+    },
+    {
+      "url": "https://www.rhodeshouse.ox.ac.uk/media2/clefvna2/canada-information-for-candidates-document-2027-final.pdf",
+      "program_id": "rhodes",
+      "role": "official_guidance",
+      "receipt_cache_path": "expansion2-20261109/writing/exp2-rhodes-canada-ifc-2fa44410461a.receipt.json"
+    },
+    {
+      "url": "https://www.chevening.org/scholarships/application-timeline/",
+      "program_id": "chevening",
+      "role": "official_guidance",
+      "receipt_cache_path": "expansion2-20261109/writing/exp2-chevening-timeline-821d7c510815.receipt.json"
+    },
+    {
+      "url": "https://www.chevening.org/faqs/can-i-use-ai-to-help-me-write-my-application/",
+      "program_id": "chevening",
+      "role": "official_guidance",
+      "receipt_cache_path": "expansion2-20261109/writing/exp2-chevening-ai-d6b4471aad22.receipt.json"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "writing-foundation-sources-v1",
+  "purpose": "Scale general writing principles, annotated real essays and reusable forms before adapting them to an application question.",
+  "collection_requires": ["original_body", "publisher_or_author", "source_locator", "genre", "material_unit", "reuse_scope"],
+  "role_separation": ["general_writing_principle", "genre_template", "scored_student_essay", "discourse_annotation", "community_advice", "program_specific_instruction", "application_text"],
+  "whole_application_required": false,
+  "admission_outcome_required": false,
+  "question_and_score_are_not_admission_outcomes": true,
+  "repositories": [
+    {"id":"microsoft-writing-style","repo":"MicrosoftDocs/microsoft-style-guide","branch":"main","include":["styleguide/**/*.md"],"genre":"technology_communication","role":"general_writing_principle","scope":"Archived official source snapshot. Includes terminology as well as composition rules; relevance requires classification."},
+    {"id":"writing-for-success","repo":"saylordotorg/text_writing-for-success","branch":"master","include":["s[0-9]*.html"],"genre":"college_composition","role":"general_writing_principle","scope":"Open textbook chapters, exercises and worked essays; chapter and book counts remain separate."},
+    {"id":"diataxis","repo":"evildmp/diataxis-documentation-framework","branch":"main","include":["source/*.rst","source/*.md"],"genre":"documentation","role":"genre_template","scope":"Purpose and reader need determine form. Documentation conventions require review before application-essay transfer."},
+    {"id":"persuade-rubrics","repo":"scrosseye/persuade_corpus_2.0","branch":"main","include":["*.pdf","README.md"],"genre":"student_argumentative_essay","role":"scoring_rubric","scope":"Author-provided holistic and discourse-element rubrics; archive contains references rather than the large CSVs."}
+  ],
+  "gitlab": [{"id":"good-docs-current","project":"tgdp/templates","url":"https://gitlab.com/tgdp/templates","genre":"documentation","role":"genre_template","scope":"Current upstream; archived GitHub copy is a separate historical snapshot."}],
+  "communities": [{"id":"writing-stackexchange","site":"writing","url":"https://writing.stackexchange.com/","api":"https://api.stackexchange.com/2.3/search/advanced","tags":["academic-writing","technical-writing","essay","style","structure","editing"],"nottagged":"fiction;novel;poetry;screenwriting;fan-fiction;world-building","read_fields":["body","owner","content_license","question_id","answer_id","score"],"pagination":"page, pagesize, has_more per single-tag query","scope":"Query each tag separately; live multi-tag probes narrowed results. Genre filtering reduces fiction-specific advice; community votes remain separate from correctness review."}],
+  "corpora": [
+    {"id":"persuade-2","publisher":"Scott Crossley and collaborators","url":"https://github.com/scrosseye/persuade_corpus_2.0","reported_scale":"over 25000 argumentative essays","train_file_id":"13phHyDzIsb0MHyJr6q-B-qIa9P2tM135","train_bytes":616894963,"train_access":"Drive connector 413: stored-file size exceeds 268435456-byte tool limit","test_file_id":"1K1SIJiG-2zWgMlTzxQeYOcLwOsFaVel1","test_bytes":14060214,"public_test_password":"persuade_test","password_basis":"Author README explicitly publishes the archive password.","role":"scored_student_essay","genre":"US_grade_6_to_12_argumentative_writing","unit":"unique complete essay; annotations counted separately","reuse_scope":"Author publicly distributes files; dataset license not declared in the GitHub metadata. Preserve original distribution and review permission before redistribution."},
+    {"id":"dress","url":"https://haneul-yoo.github.io/dress/","reported_human_new_essays":2279,"reported_standardized_existing_essays":6515,"reported_synthetic_essays":40185,"rubrics":["content","organization","language"],"access":"Author consent form required; not submitted","synthetic_counts_as_human":false}
+  ],
+  "additional_seeds": [
+    {"url":"https://developers.google.com/tech-writing/one","path":"HTML lesson links and complete article bodies","role":"general_writing_principle"},
+    {"url":"https://developers.google.com/style","path":"HTML navigation and complete article bodies","role":"general_writing_principle"},
+    {"url":"https://writingcenter.unc.edu/tips-and-tools/","path":"Published handout index; robots and reuse terms must be checked before crawling","role":"general_writing_principle"},
+    {"url":"https://www.writethedocs.org/guide/","path":"Public guide and linked source repository","role":"community_advice"}
+  ],
+  "apply_to_drafting": "General principles -> genre-specific structure -> exact application question -> confirmed applicant facts -> initial draft and review questions."
+}

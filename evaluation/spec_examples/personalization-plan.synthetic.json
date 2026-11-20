@@ -1,0 +1,302 @@
+{
+  "contract_version": "personalization-plan-v1",
+  "example_kind": "synthetic",
+  "subject_id": "demo-student-A",
+  "opportunity_id": "demo-fellowship-2027",
+  "program_id": "demo-fellowship",
+  "round_id": "2027",
+  "as_of": "2026-11-04",
+  "evidence": [
+    {
+      "evidence_id": "E-official",
+      "owner_scope": "opportunity",
+      "owner_id": "demo-fellowship-2027",
+      "source_kind": "official_notice",
+      "identity_status": "confirmed",
+      "url": "https://example.org/demo/2027",
+      "locator": "합성 모집 요건과 제출 안내",
+      "quote": "박사 재학생은 자유 양식 제안서 2쪽과 재학증명서를 제출합니다. 본인 기여와 결과 근거를 설명하고 대면 인턴십 참여 가능 여부를 확인합니다.",
+      "snapshot_id": "synthetic-official-v1",
+      "observed_at": "2026-11-04T08:00:00Z",
+      "content_sha256": "efddb3aed353463ca77d9ca1d2e4e0c39c1b00eda7d023faa2c3b0ccce08ba1f"
+    },
+    {
+      "evidence_id": "E-user",
+      "owner_scope": "applicant",
+      "owner_id": "demo-student-A",
+      "source_kind": "user_statement",
+      "identity_status": "confirmed",
+      "url": null,
+      "locator": "합성 사용자 확인 응답",
+      "quote": "박사 재학생이고 실험 자동화 도구를 직접 구현했습니다. 결과 수치는 아직 입력하지 않았습니다.",
+      "snapshot_id": "synthetic-user-answer-v1",
+      "observed_at": "2026-11-04T08:01:00Z",
+      "content_sha256": "b267fb4871c62cb00819d7f4a526a43d0c426aeba3a02cb1a3f29e5099e88dc7"
+    },
+    {
+      "evidence_id": "E-public",
+      "owner_scope": "applicant",
+      "owner_id": "demo-student-A",
+      "source_kind": "public_profile",
+      "identity_status": "ambiguous",
+      "url": "https://example.org/demo/profile",
+      "locator": "동명이인 여부가 확인되지 않은 합성 프로필",
+      "quote": "컴파일러 프로젝트에 관심이 있습니다.",
+      "snapshot_id": "synthetic-profile-v1",
+      "observed_at": "2026-11-04T08:02:00Z",
+      "content_sha256": "097a1a80cc29e68f3e4943c4a252a5ea694cb4ab11bd70ddea1f8f2d3b8f9b5b"
+    },
+    {
+      "evidence_id": "E-case",
+      "owner_scope": "reference_case",
+      "owner_id": "demo-case-U",
+      "source_kind": "experience_text",
+      "identity_status": "confirmed",
+      "url": "https://example.org/demo/essay",
+      "locator": "결과 미상 사례의 합성 공개 발췌",
+      "quote": "혁신적인 연구로 큰 성과를 냈습니다.",
+      "snapshot_id": "synthetic-excerpt-v1",
+      "observed_at": "2026-11-04T08:03:00Z",
+      "content_sha256": "8169e3d15dd4395fcfd01dd7e199eb47db290db6d1eed95779429ad520913171"
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "F-degree",
+      "field": "education.degree",
+      "value": "phd",
+      "derivation_type": "user_confirmed",
+      "review_status": "accepted",
+      "evidence_ids": [
+        "E-user"
+      ],
+      "derived_from_fact_ids": [],
+      "derivation_rule": null,
+      "eligible_for_final_use": true,
+      "at": "application",
+      "as_of": "2026-11-04"
+    },
+    {
+      "fact_id": "F-topic",
+      "field": "research.topic",
+      "value": "compiler",
+      "derivation_type": "semantic_inference",
+      "review_status": "candidate",
+      "evidence_ids": [
+        "E-public"
+      ],
+      "derived_from_fact_ids": [],
+      "derivation_rule": null,
+      "eligible_for_final_use": false,
+      "at": "unknown",
+      "as_of": "2026-11-04"
+    },
+    {
+      "fact_id": "F-action",
+      "field": "experience.own_action",
+      "value": "실험 자동화 도구를 직접 구현했다.",
+      "derivation_type": "user_confirmed",
+      "review_status": "accepted",
+      "evidence_ids": [
+        "E-user"
+      ],
+      "derived_from_fact_ids": [],
+      "derivation_rule": null,
+      "eligible_for_final_use": true,
+      "at": "historical",
+      "as_of": "2026-11-04"
+    }
+  ],
+  "requirements": [
+    {
+      "criterion_id": "R-degree",
+      "kind": "eligibility",
+      "field": "education.degree",
+      "op": "eq",
+      "value": "phd",
+      "at": "application",
+      "condition_path": "/eligibility/all/0",
+      "evidence_ids": [
+        "E-official"
+      ],
+      "interpretation_status": "reviewed"
+    },
+    {
+      "criterion_id": "R-writing",
+      "kind": "writing_prompt",
+      "field": "experience.result_evidence",
+      "op": "exists",
+      "value": null,
+      "at": "application",
+      "condition_path": "/application/prompts/0",
+      "evidence_ids": [
+        "E-official"
+      ],
+      "interpretation_status": "reviewed"
+    },
+    {
+      "criterion_id": "R-enrollment",
+      "kind": "application_document",
+      "field": null,
+      "op": null,
+      "value": "certificate_of_enrollment",
+      "at": "application",
+      "condition_path": "/application/documents/0",
+      "evidence_ids": [
+        "E-official"
+      ],
+      "interpretation_status": "reviewed"
+    },
+    {
+      "criterion_id": "R-internship",
+      "kind": "activity",
+      "field": "availability.internship",
+      "op": "eq",
+      "value": true,
+      "at": "award_period",
+      "condition_path": "/requirements/0",
+      "evidence_ids": [
+        "E-official"
+      ],
+      "interpretation_status": "reviewed"
+    }
+  ],
+  "resources": [
+    {
+      "resource_id": "D-guide",
+      "requirement_id": "R-writing",
+      "artifact_kind": "official_guideline",
+      "resolution_status": "found",
+      "download_url": "https://example.org/demo/2027",
+      "evidence_ids": [
+        "E-official"
+      ],
+      "next_action": "공식 문항과 2쪽 제한에 맞춰 준비"
+    },
+    {
+      "resource_id": "D-form",
+      "requirement_id": "R-writing",
+      "artifact_kind": "official_blank_form",
+      "resolution_status": "not_provided",
+      "download_url": null,
+      "evidence_ids": [
+        "E-official"
+      ],
+      "next_action": "공식 자유 양식 지시에 따라 작성"
+    },
+    {
+      "resource_id": "D-enrollment",
+      "requirement_id": "R-enrollment",
+      "artifact_kind": "user_issued_record",
+      "resolution_status": "needs_user_provided",
+      "download_url": null,
+      "evidence_ids": [
+        "E-official"
+      ],
+      "next_action": "학교의 발급 경로에서 본인 문서 준비"
+    }
+  ],
+  "assessments": [
+    {
+      "assessment_id": "A-degree",
+      "criterion_id": "R-degree",
+      "axis": "eligibility",
+      "status": "satisfied",
+      "fact_ids": [
+        "F-degree"
+      ],
+      "evidence_ids": [
+        "E-official",
+        "E-user"
+      ],
+      "missing_fields": [],
+      "reason": "이 합성 공고의 박사 학위 조건과 확인한 사실이 일치"
+    },
+    {
+      "assessment_id": "A-writing",
+      "criterion_id": "R-writing",
+      "axis": "readiness",
+      "status": "unknown",
+      "fact_ids": [
+        "F-action"
+      ],
+      "evidence_ids": [
+        "E-official",
+        "E-user"
+      ],
+      "missing_fields": [
+        "experience.result_evidence"
+      ],
+      "reason": "본인 행동은 있으나 결과 근거가 아직 없음"
+    },
+    {
+      "assessment_id": "A-internship",
+      "criterion_id": "R-internship",
+      "axis": "practical_fit",
+      "status": "unknown",
+      "fact_ids": [],
+      "evidence_ids": [
+        "E-official"
+      ],
+      "missing_fields": [
+        "availability.internship"
+      ],
+      "reason": "참여 가능 여부의 사용자 확인 필요"
+    }
+  ],
+  "guidance_rules": [
+    {
+      "guidance_id": "G-evidence",
+      "case_id": "demo-case-U",
+      "outcome_status": "unknown",
+      "guidance_kind": "avoid",
+      "observation": "이 공개 발췌에는 큰 성과라는 주장과 구체적 근거가 연결돼 있지 않음",
+      "observation_scope": "excerpt",
+      "scope_limit": "합성 발췌 범위의 관찰이며 전체 지원서의 결함이나 선발 원인을 판단하지 않음",
+      "suggested_action": "현재 문항에 맞게 본인 행동과 비교 조건 및 결과 근거를 나눠 제시",
+      "evidence_ids": [
+        "E-case",
+        "E-official"
+      ],
+      "required_user_fields": [
+        "experience.own_action",
+        "experience.result_evidence"
+      ],
+      "transfer_scope": "same_program",
+      "causal_success_claim": false,
+      "basis": "text_observation"
+    }
+  ],
+  "draft_slots": [
+    {
+      "slot_id": "S-contribution",
+      "prompt_id": "R-writing",
+      "guidance_ids": [
+        "G-evidence"
+      ],
+      "fact_ids": [
+        "F-action"
+      ],
+      "missing_fields": [
+        "experience.result_evidence"
+      ],
+      "draft_text": "실험 자동화 도구를 직접 구현했습니다. [비교 조건과 측정 결과를 입력]"
+    }
+  ],
+  "next_questions": [
+    {
+      "field": "experience.result_evidence",
+      "why_requirement_ids": [
+        "R-writing"
+      ],
+      "question": "어떤 조건과 비교했고 실제 결과를 뒷받침할 자료가 있나요?"
+    },
+    {
+      "field": "availability.internship",
+      "why_requirement_ids": [
+        "R-internship"
+      ],
+      "question": "공고가 요구한 기간과 장소에서 인턴십 참여가 가능한가요?"
+    }
+  ]
+}

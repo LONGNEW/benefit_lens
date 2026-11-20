@@ -1,0 +1,98 @@
+{
+  "body": {
+    "why": "공식 작성 안내는 GPU를 쓰는 방식, NVIDIA 기술이 연구에 주는 영향, 미래 GPU 관련 기여 중 맞는 경로를 설명하도록 권고한다.",
+    "slots": [
+      {
+        "needs": [
+          "사용한 기술 또는 장비",
+          "같은 경험의 실제 사용 또는 관측 근거"
+        ],
+        "slot_id": "gpu_observed"
+      },
+      {
+        "needs": [
+          "사용자 확인을 받은 계획",
+          "검증 대상과 방법"
+        ],
+        "slot_id": "gpu_planned"
+      }
+    ],
+    "title": "실제로 확인한 GPU 연결과 제안하는 연결을 분리",
+    "decision": "adopted_for_this_delivery",
+    "question": "어느 GPU, 소프트웨어 또는 기능이 방법에 실제로 관여했나요? 같은 조건에서 확인한 결과와 앞으로 검증할 내용을 나눠 알려 주세요.",
+    "scope_limit": "장비 사용만으로 NVIDIA와의 협업이나 GPU 설계 개선을 주장하지 않는다. 기존 인턴 경험은 해당할 때만 넣는다. 제출 자격이나 심사 결과의 규칙으로 쓰지 않는다.",
+    "structure_choices": [
+      "관측 경로: 어떤 NVIDIA 기술이나 장비를 썼고 어떤 조건에서 무엇을 측정했는지",
+      "계획 경로: 실제 협업이나 측정이 없다면 검증하려는 기술적 연결과 방법"
+    ],
+    "observed_source_differences": "N1/N2의 공개문은 기관과 한 작업을 서술한다. N3는 향후 협업을 제안한다. 이 차이는 서술 유형이다."
+  },
+  "evidence": [
+    {
+      "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+      "quote": "I utilized\nDISTAL to implement",
+      "case_id": "N1",
+      "locator": "L54-L65",
+      "purpose": "case_observation",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "evidence_id": "N1-GPU-IMPLEMENTATION",
+      "source_role": "application_statement",
+      "text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "nvidia-graduate-fellowship"
+    },
+    {
+      "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+      "quote": "I worked with a\nteam of NVIDIA’s GPU experts",
+      "case_id": "N2",
+      "locator": "L9-L12",
+      "purpose": "case_observation",
+      "document_id": "N2-STATEMENT-d1cc2f892c3b",
+      "evidence_id": "N2-GPU-TEAM",
+      "source_role": "application_statement",
+      "text_sha256": "4bac610f3574b02c61dc64992f4947682c6bf2579eee4dfbbf0c0fc494262dc3",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "nvidia-graduate-fellowship"
+    },
+    {
+      "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+      "quote": "opportunity to collaboratively\napply our research",
+      "case_id": "N3",
+      "locator": "L79-L83",
+      "purpose": "case_observation",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "evidence_id": "N3-COLLAB-PROPOSAL",
+      "source_role": "application_statement",
+      "text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "nvidia-graduate-fellowship"
+    },
+    {
+      "url": "https://research.nvidia.com/graduate-fellowships",
+      "quote": "Connect the work to NVIDIA",
+      "case_id": null,
+      "locator": "L159-L160",
+      "purpose": "official_guidance",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "evidence_id": "OFFICIAL-GPU-RELEVANCE",
+      "source_role": "official_guideline",
+      "text_sha256": "04b9b9d2edc87d2f702e3890175d82ee8e455aafbb13567b0e3cb8d81f9d435e",
+      "capture_mode": "full_document",
+      "source_round_id": "2027-2028",
+      "source_program_id": "nvidia-graduate-fellowship"
+    }
+  ],
+  "pattern_id": "NV27-RP-GPU-LINK",
+  "program_id": "nvidia-graduate-fellowship",
+  "pattern_kind": "strengthen",
+  "scope_status": "historical_transfer",
+  "target_field": "research_proposal",
+  "notice_version": "nvidia-2027-2028-v1",
+  "opportunity_id": "nvidia-2027-2028",
+  "target_claim_id": "nv27-research-proposal",
+  "target_round_id": "2027-2028",
+  "causal_success_claim": false
+}

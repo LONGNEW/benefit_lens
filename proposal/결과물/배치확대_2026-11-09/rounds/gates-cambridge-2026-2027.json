@@ -1,0 +1,134 @@
+{
+  "basis": "source_backed",
+  "title": "Gates Cambridge 2026/27 진학 지원",
+  "claims": [
+    {
+      "at": "application",
+      "kind": "form",
+      "field": "gates_extra_research_proposal_form",
+      "value": {
+        "url": "https://forms.office.com/e/1f3tRgn2uW",
+        "requires": "지원 후 Applicant Portal에서 받은 신청 번호",
+        "applies_if": "입학 지원서에 연구계획을 제출하지 않는 해당 지원자",
+        "prompt_text": "unverified_public_shell"
+      },
+      "claim_id": "gc26w-conditional-extra-rp",
+      "round_id": "2026-2027",
+      "program_id": "gates-cambridge",
+      "evidence_ids": [
+        "gc26w-extra-form"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "selection_criterion",
+      "field": "gates_selection_criteria",
+      "value": {
+        "criteria": [
+          "학업 우수성",
+          "과정 선택 이유",
+          "타인의 삶을 개선하려는 노력",
+          "리더십 역량"
+        ],
+        "scoring_weights": "unknown"
+      },
+      "claim_id": "gc26w-criteria-claim",
+      "round_id": "2026-2027",
+      "program_id": "gates-cambridge",
+      "evidence_ids": [
+        "gc26w-criteria"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "research_proposal",
+      "value": {
+        "required": true,
+        "max_words": "unverified",
+        "applies_if": "이 보존 과정에 Gates Cambridge 장학금을 함께 신청하는 박사 지원자",
+        "full_form_text": "unverified",
+        "confirmed_course": "PhD in Infection and Immunity",
+        "course_scope_only": true
+      },
+      "claim_id": "gc26w-infection-phd-rp",
+      "round_id": "2026-2027",
+      "program_id": "gates-cambridge",
+      "evidence_ids": [
+        "gc26w-infection-cycle",
+        "gc26w-infection-rp"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "advice",
+      "field": "research_proposal_content_guidance",
+      "value": {
+        "basis": "Cambridge 2026 보존 공식 작성 안내. 과정별 형식과 지침을 별도로 확인한다.",
+        "topics": [
+          "연구 주제",
+          "기존 문헌을 어떻게 확장하는지",
+          "해당 분야에서 중요한 이유",
+          "가용 시간과 자원에서의 실행 가능성"
+        ]
+      },
+      "claim_id": "gc26w-infection-proposal-guide",
+      "round_id": "2026-2027",
+      "program_id": "gates-cambridge",
+      "evidence_ids": [
+        "gc26w-infection-cycle",
+        "gc26w-proposal-guide"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "gates_additional_portal_questions",
+      "value": {
+        "present": true,
+        "limits_status": "unknown",
+        "wording_status": "unknown"
+      },
+      "claim_id": "gc26w-portal-required",
+      "round_id": "2026-2027",
+      "program_id": "gates-cambridge",
+      "evidence_ids": [
+        "gc26w-portal"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "form",
+      "field": "gates_portal_prompt_wording",
+      "value": {
+        "reason": "2026/27 공고에서 추가 질문의 존재만 확인했다. 정확한 문항과 분량은 확인하지 못했다.",
+        "status": "unknown"
+      },
+      "claim_id": "gc26w-portal-wording",
+      "round_id": "2026-2027",
+      "program_id": "gates-cambridge",
+      "evidence_ids": [
+        "gc26w-portal"
+      ],
+      "review_state": "unknown"
+    }
+  ],
+  "issuer": "Gates Cambridge Trust",
+  "status": "unknown",
+  "opens_on": null,
+  "round_id": "2026-2027",
+  "closes_on": null,
+  "checked_on": "2026-10-15",
+  "program_id": "gates-cambridge",
+  "announces_on": null,
+  "official_url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2025",
+  "notice_version": "sample-2026-10-15",
+  "opportunity_id": "gates-cambridge-2026-2027",
+  "application_url": null,
+  "opportunity_type": "admission_funding"
+}

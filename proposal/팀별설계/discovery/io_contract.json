@@ -1,0 +1,317 @@
+{
+  "contract_version": "discovery-handoff-v1-proposed",
+  "implementation_status": "design_not_integrated",
+  "discovery_run": {
+    "run_id": "required",
+    "task_type": [
+      "discovery",
+      "refresh",
+      "experience_discovery"
+    ],
+    "scope": {
+      "provider": "required",
+      "language_set": "required",
+      "query_template_version": "required",
+      "seed_version": "required",
+      "top_k": "required",
+      "observed_from_to": "required",
+      "budgets": [
+        "queries",
+        "wall_time",
+        "model_cost",
+        "download_bytes"
+      ]
+    },
+    "run_status": [
+      "running",
+      "completed",
+      "partial",
+      "budget_exhausted",
+      "cancelled"
+    ],
+    "stop_reason": [
+      "observed_frontier_exhausted",
+      "failure_gaps",
+      "query_budget",
+      "time_budget",
+      "cost_budget",
+      "yield_diminished",
+      "user_stop"
+    ],
+    "run_manifest": [
+      "config_hash",
+      "code_revision_or_source_hash",
+      "model_id",
+      "prompt_version",
+      "parser_version"
+    ],
+    "rerun_lineage": [
+      "epoch_id",
+      "resumes_run_id",
+      "retry_event_id",
+      "supersedes_report_id",
+      "policy_change_requires_new_run"
+    ],
+    "execution_health": [
+      "not_checked",
+      "alive",
+      "lease_expired"
+    ]
+  },
+  "query_event": {
+    "query_id": "required",
+    "parent_term_ids": "required",
+    "exact_query": "required",
+    "lane": [
+      "notice",
+      "experience"
+    ],
+    "program_candidate_id": "nullable",
+    "round_hint": "nullable",
+    "provider_receipt_id": "required_when_executed",
+    "attempt_id": "required",
+    "result_rank": "required",
+    "requested_at": "required",
+    "completed_at": "nullable",
+    "status": [
+      "planned",
+      "running",
+      "executed",
+      "retry_pending",
+      "failed",
+      "cancelled"
+    ],
+    "individual_model_judgment": [
+      "model_id",
+      "prompt_hash",
+      "input_ref",
+      "response_ref",
+      "decision",
+      "reason"
+    ]
+  },
+  "source_document": {
+    "document_id": "logical_source_document",
+    "document_version_id": "immutable_snapshot_id",
+    "original_url": "required",
+    "final_url": "nullable_before_fetch",
+    "canonical_url": "candidate_until_resolved",
+    "content_sha256": "bytes_hash_nullable_until_fetch",
+    "text_sha256": "nullable_until_parse",
+    "raw_ref": "nullable_until_fetch",
+    "text_ref": "nullable_until_parse",
+    "fetched_at": "nullable_until_fetch",
+    "last_checked_at": "nullable",
+    "last_changed_at": "nullable",
+    "kind": [
+      "html",
+      "pdf",
+      "hwp",
+      "hwpx",
+      "image",
+      "unknown"
+    ],
+    "fetch_status": [
+      "discovered",
+      "fetched",
+      "blocked",
+      "failed",
+      "unavailable"
+    ],
+    "parse_status": [
+      "not_started",
+      "extracted",
+      "ocr_extracted",
+      "partial",
+      "failed"
+    ],
+    "role_candidates": [
+      "official_notice",
+      "official_guideline",
+      "official_form",
+      "public_application",
+      "interview",
+      "reflection",
+      "directory",
+      "unknown"
+    ],
+    "public_application_state": [
+      "final_verified",
+      "final_unverified",
+      "excerpt",
+      "not_applicable",
+      "unknown"
+    ],
+    "identity_candidates": [
+      "issuer",
+      "program",
+      "round",
+      "author",
+      "person"
+    ],
+    "resolution_status": [
+      "candidate",
+      "reviewed",
+      "ambiguous",
+      "rejected"
+    ],
+    "rights_review_status": [
+      "review_required",
+      "approved_for_analysis",
+      "restricted",
+      "unknown"
+    ],
+    "source_policy_version": "required",
+    "capture_metadata": [
+      "http_status",
+      "etag",
+      "last_modified",
+      "request_policy_version",
+      "parse_started_at",
+      "parse_completed_at",
+      "content_type",
+      "charset",
+      "redirect_chain",
+      "fetch_method",
+      "robots_policy_verdict",
+      "detected_language",
+      "extraction_warnings"
+    ],
+    "attachment_relation": [
+      "parent_document_version_id",
+      "link_text",
+      "discovery_method",
+      "required_resource_candidate_id"
+    ],
+    "identity_resolution_metadata": [
+      "raw_labels",
+      "evidence_ids",
+      "resolved_by",
+      "resolved_at",
+      "conflict_reason"
+    ],
+    "copy_of_candidate_id": "nullable_no_automatic_role_or_round_merge"
+  },
+  "evidence": {
+    "evidence_id": "required",
+    "document_version_id": "required",
+    "quote": "exact_span",
+    "locator": [
+      "page_or_section",
+      "text_offset_or_line",
+      "parser_version"
+    ],
+    "literal_validation_status": [
+      "passed",
+      "failed",
+      "unavailable"
+    ],
+    "semantic_validation_status": [
+      "not_reviewed",
+      "reviewed",
+      "ambiguous"
+    ],
+    "purpose": [
+      "term",
+      "role",
+      "round",
+      "requirement"
+    ],
+    "context": [
+      "raw_or_normalized_offset_coordinate",
+      "normalizer_version",
+      "exact_original_span",
+      "prefix_suffix",
+      "quote_hash"
+    ]
+  },
+  "term_candidate": {
+    "term_id": "surface_expression",
+    "language": "explicit",
+    "script": "separate_from_language",
+    "lane": [
+      "notice",
+      "experience"
+    ],
+    "candidate_status": [
+      "proposed",
+      "evidence_checked",
+      "relevance_review",
+      "accepted",
+      "alias_candidate",
+      "rejected",
+      "deprecated",
+      "probe"
+    ],
+    "evidence_ids": "required",
+    "translation_origin": "literal_source_or_inferred_translation",
+    "equivalence_review": "not_silent_merge",
+    "search_concept_id": "search_concept_id namespace, never requirement_field or benefit_type"
+  },
+  "lineage_edges": [
+    "seed_or_accepted_term -> exact_query -> provider_event -> ranked_result -> source_document_version -> evidence -> term_candidate",
+    "source_document_version -> candidate_program_round_role_binding"
+  ],
+  "ownership": {
+    "discovery_team": "retrieval, snapshots, literal_evidence, role_and_identity_candidates, lineage",
+    "schema_team": "confirmed IDs, current round, officialness, common/extension schema, publish gate",
+    "writing_team": "person/case/outcome attribution, document-role and final submission state approval, observation/guidance provenance"
+  },
+  "dedup_rules": [
+    "same bytes may share blob but preserve source URL and role/round/time bindings",
+    "canonical URL does not prove same program or same round",
+    "same person multiple documents are one person, with separate application cases when justified",
+    "unknown round/person retain provisional IDs"
+  ],
+  "envelope": {
+    "artifact_schema_version": "discovery-handoff-v1-proposed",
+    "producer": "discovery_team",
+    "created_at": "required_UTC",
+    "run_id": "required"
+  },
+  "feedback": {
+    "schema_team_to_discovery": [
+      "approved_notice_version_id",
+      "approved_source_binding",
+      "round_status",
+      "refresh_targets",
+      "stale_review_decision"
+    ],
+    "writing_team_to_discovery": [
+      "document_role_verdict",
+      "case_or_person_link",
+      "submission_state_verdict",
+      "accept_reject_reason",
+      "query_rule_adjustment"
+    ],
+    "handling": "versioned review feedback, budgeted follow-up only; does not restart collection in this task",
+    "discovery_change_event": {
+      "fields": [
+        "event_id",
+        "publication_id",
+        "document_id",
+        "document_version_id",
+        "observed_at",
+        "diff_ref"
+      ],
+      "kind": [
+        "none",
+        "surface",
+        "body",
+        "attachment_bytes",
+        "attachment_set",
+        "gone",
+        "blocked"
+      ],
+      "publication_state_owner": "schema_team"
+    }
+  },
+  "correction_lineage": [
+    "handoff_batch_id",
+    "idempotency_key",
+    "superseded_by",
+    "tombstone",
+    "resolved_by",
+    "resolved_at"
+  ]
+}

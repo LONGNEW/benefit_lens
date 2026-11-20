@@ -1,0 +1,167 @@
+{
+  "checkpoint": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/status.json",
+  "checkpoint_sha256": "b1e0e902940731e350eebd8a7d70a3bf00c992fb866ccf6012dccace8b567145",
+  "sqlite": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/expansion.sqlite",
+  "as_of_saved": "2026-10-19T05:01:28.250580+00:00",
+  "saved_status": "running",
+  "methods": {
+    "language": "regex any Hangul in term matches dictionary_expansion.py:325 template selection; not document language or country",
+    "host": "lowercased hostname of final_url of collected URL rows; no merge of subdomains or organizations",
+    "wave": "document.wave is first registration wave; unique SHA-256 is bytes dedup, not program/round dedup",
+    "query_lanes": "query linked to term.lane; document lane sets come from executed query links and can overlap",
+    "attempts": "sum query row attempts, not HTTP requests, tool calls, LLM tokens, or currency",
+    "elapsed": "saved wave start to completion; open wave excluded from rates; not an application serving load test"
+  },
+  "executed_queries": 4682,
+  "distinct_executed_query_strings": 4682,
+  "executed_template_routes": {
+    "en": 4078,
+    "ko": 604
+  },
+  "executed_query_lanes": {
+    "experience": 2026,
+    "announcement": 2656
+  },
+  "collected_url_rows": 6240,
+  "distinct_content_sha256": 6115,
+  "collected_document_kinds": {
+    "html": 4814,
+    "pdf": 1425,
+    "hwp": 1
+  },
+  "collected_url_linked_lanes": {
+    "experience": 2255,
+    "announcement": 3851,
+    "announcement+experience": 134
+  },
+  "collected_url_linked_seed_status": {
+    "seed": 56,
+    "expanded+seed": 42,
+    "expanded": 6142
+  },
+  "distinct_final_hostnames": 3399,
+  "top_final_hostnames": {
+    "www.scribd.com": 108,
+    "www.kosaf.go.kr": 93,
+    "www.gov.uk": 51,
+    "www.ukri.org": 50,
+    "www.mcgill.ca": 37,
+    "www.imperial.ac.uk": 35,
+    "www.nsf.gov": 35,
+    "www.york.ac.uk": 24,
+    "www.kyungnam.ac.kr": 23,
+    "uwaterloo.ca": 22
+  },
+  "top_10_host_url_share_pct": 7.66,
+  "wave_breakdown": [
+    {
+      "wave": 1,
+      "state": "closed",
+      "executed_queries": 48,
+      "failed_queries": 0,
+      "query_row_attempts": 48,
+      "ko_route": 14,
+      "en_route": 34,
+      "document_states": {
+        "collected": 98,
+        "excluded_scope": 13,
+        "failed": 21
+      },
+      "collected_distinct_content_sha256": 98,
+      "first_seen_content_sha256": 98,
+      "hashes_already_seen_in_previous_waves": 0,
+      "distinct_final_hostnames": 79,
+      "top_final_hostnames": {
+        "www.nsf.gov": 5,
+        "www.ukri.org": 5,
+        "www.gov.uk": 3
+      },
+      "closed_wave_elapsed_seconds": 1462.946587,
+      "collected_urls_per_wall_hour": 241.16
+    },
+    {
+      "wave": 2,
+      "state": "closed",
+      "executed_queries": 468,
+      "failed_queries": 0,
+      "query_row_attempts": 468,
+      "ko_route": 76,
+      "en_route": 392,
+      "document_states": {
+        "failed": 218,
+        "collected": 652,
+        "excluded_scope": 132
+      },
+      "collected_distinct_content_sha256": 648,
+      "first_seen_content_sha256": 645,
+      "hashes_already_seen_in_previous_waves": 3,
+      "distinct_final_hostnames": 451,
+      "top_final_hostnames": {
+        "www.kosaf.go.kr": 23,
+        "www.imperial.ac.uk": 13,
+        "funding.yale.edu": 11
+      },
+      "closed_wave_elapsed_seconds": 10188.392463,
+      "collected_urls_per_wall_hour": 230.38
+    },
+    {
+      "wave": 3,
+      "state": "closed",
+      "executed_queries": 1382,
+      "failed_queries": 0,
+      "query_row_attempts": 1382,
+      "ko_route": 220,
+      "en_route": 1162,
+      "document_states": {
+        "collected": 1935,
+        "excluded_scope": 483,
+        "failed": 466
+      },
+      "collected_distinct_content_sha256": 1894,
+      "first_seen_content_sha256": 1878,
+      "hashes_already_seen_in_previous_waves": 16,
+      "distinct_final_hostnames": 1299,
+      "top_final_hostnames": {
+        "www.kosaf.go.kr": 43,
+        "www.scribd.com": 23,
+        "www.gov.uk": 22
+      },
+      "closed_wave_elapsed_seconds": 34053.029312,
+      "collected_urls_per_wall_hour": 204.56
+    },
+    {
+      "wave": 4,
+      "state": "open",
+      "executed_queries": 2784,
+      "failed_queries": 16,
+      "query_row_attempts": 2856,
+      "ko_route": 294,
+      "en_route": 2490,
+      "document_states": {
+        "failed": 880,
+        "excluded_scope": 1126,
+        "collected": 3555
+      },
+      "collected_distinct_content_sha256": 3520,
+      "first_seen_content_sha256": 3494,
+      "hashes_already_seen_in_previous_waves": 26,
+      "distinct_final_hostnames": 2281,
+      "top_final_hostnames": {
+        "www.scribd.com": 81,
+        "www.kosaf.go.kr": 26,
+        "www.ukri.org": 21
+      },
+      "closed_wave_elapsed_seconds": null,
+      "collected_urls_per_wall_hour": null
+    }
+  ],
+  "cannot_infer": [
+    "current approved program rounds",
+    "eligible countries or aid variety",
+    "web completeness",
+    "serving capacity",
+    "causal advantage of expansion"
+  ],
+  "fresh_searches": 0,
+  "production_db_writes": 0
+}

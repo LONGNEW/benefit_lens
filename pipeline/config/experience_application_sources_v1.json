@@ -1,0 +1,40 @@
+{
+  "version": "application-material-expansion-v1",
+  "connector_material_collections": [
+    {
+      "id": "ucr-application-samples",
+      "seed": "https://international.ucr.edu/abroad/scholarship",
+      "transport": "Google Drive metadata and raw-file fetch connector",
+      "index": "/home/longnew/.cache/datasets/benefitlens/scale50k-20261109/experience-application-expansion-v1/ucr-application-samples/index.json",
+      "scope": "Five US outbound Fulbright recipient application bundles, 2021-2027; separate from experience reviews and Korea GSP.",
+      "automatic_refresh": false,
+      "reuse": "Verified local snapshots are reusable; renewed downloads require fresh connector file references."
+    }
+  ],
+  "sources": [
+    {
+      "id": "psu-published-scholarship-essays",
+      "seed": "https://courses.ems.psu.edu/writingpersonalstatementsonline/book/export/html/1796",
+      "index_selector": "article a[href$='.pdf']",
+      "pagination_selector": null,
+      "allowed_prefix": "https://courses.ems.psu.edu/writingpersonalstatementsonline/sites/writingpersonalstatementsonline/files/file/",
+      "content_selector": null,
+      "role_hint": "published_application_sample",
+      "scope": "Archived US-oriented scholarship examples; applicant identity, outcome and current prompt require separate review. Fulbright direction differs from Korea GSP.",
+      "max_index_pages": 1,
+      "max_documents": 12
+    },
+    {
+      "id": "chevening-application-archive",
+      "seed": "https://www.chevening.org/news/?chevening_category=application",
+      "index_selector": "main article h2 a[href], main article h3 a[href]",
+      "pagination_selector": "a.pagination_element.next",
+      "allowed_prefix": "https://www.chevening.org/news/",
+      "content_selector": "main article, main",
+      "role_hint": "application_process_or_assessor_guidance_candidate",
+      "scope": "Separate named scholar accounts from committee advice, interviews and participation stories before promotion.",
+      "max_index_pages": 4,
+      "max_documents": 45
+    }
+  ]
+}

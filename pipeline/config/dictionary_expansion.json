@@ -1,0 +1,134 @@
+{
+  "schema_version": "dictionary-expansion-v3",
+  "seed_origin": "pipeline/src/data_platform/exploration.py:TERMS",
+  "scope": "Public Korean and English graduate-student individual funding notices and scholarship/fellowship application materials. Two exact query templates per expression; first three native search results per query. No recursive site crawl or whole-web completeness claim. Eligibility is not assessed by vocabulary discovery.",
+  "seeds": [
+    {
+      "term": "studentship",
+      "lane": "announcement"
+    },
+    {
+      "term": "bursary",
+      "lane": "announcement"
+    },
+    {
+      "term": "traineeship",
+      "lane": "announcement"
+    },
+    {
+      "term": "doctoral training partnership",
+      "lane": "announcement"
+    },
+    {
+      "term": "travel grant",
+      "lane": "announcement"
+    },
+    {
+      "term": "travel bursary",
+      "lane": "announcement"
+    },
+    {
+      "term": "maintenance allowance",
+      "lane": "announcement"
+    },
+    {
+      "term": "living allowance",
+      "lane": "announcement"
+    },
+    {
+      "term": "tuition waiver",
+      "lane": "announcement"
+    },
+    {
+      "term": "research statement",
+      "lane": "experience"
+    },
+    {
+      "term": "personal statement",
+      "lane": "experience"
+    },
+    {
+      "term": "statement of purpose",
+      "lane": "experience"
+    },
+    {
+      "term": "research proposal",
+      "lane": "experience"
+    },
+    {
+      "term": "broader impacts",
+      "lane": "experience"
+    },
+    {
+      "term": "intellectual merit",
+      "lane": "experience"
+    },
+    {
+      "term": "mock interview",
+      "lane": "experience"
+    },
+    {
+      "term": "reviewer comments",
+      "lane": "experience"
+    },
+    {
+      "term": "합격 수기",
+      "lane": "experience"
+    },
+    {
+      "term": "지원 후기",
+      "lane": "experience"
+    },
+    {
+      "term": "연구계획서",
+      "lane": "experience"
+    },
+    {
+      "term": "자기소개서",
+      "lane": "experience"
+    },
+    {
+      "term": "생활비",
+      "lane": "announcement"
+    },
+    {
+      "term": "연구장려금",
+      "lane": "announcement"
+    },
+    {
+      "term": "학회 참가",
+      "lane": "announcement"
+    }
+  ],
+  "templates": {
+    "announcement": {
+      "en": [
+        "\"{term}\" PhD graduate student funding eligibility application",
+        "\"{term}\" international postgraduate students financial support"
+      ],
+      "ko": [
+        "\"{term}\" 대학원생 학생 지원 신청",
+        "\"{term}\" 대학원 장학 모집 공고"
+      ]
+    },
+    "experience": {
+      "en": [
+        "\"{term}\" PhD fellowship scholarship application experience example",
+        "\"{term}\" fellowship scholarship application materials guide"
+      ],
+      "ko": [
+        "\"{term}\" 대학원 장학금 지원 경험",
+        "\"{term}\" 장학생 지원서 후기"
+      ]
+    }
+  },
+  "results_per_query": 3,
+  "search_batch_size": 8,
+  "fetch_workers": 12,
+  "extract_batch_size": 8,
+  "chunk_characters": 24000,
+  "max_attempts": 3,
+  "receipt_policy": "one_exact_query_per_completed_search_event",
+  "vocabulary_policy": "funding_mechanisms_benefits_document_types_preparation_formats_named_review_frameworks_excludes_generic_advice_qualities",
+  "scope_screening": "LLM may exclude clearly unrelated returned sources using titles and snippets; uncertain results are fetched. All exclusions recorded."
+}

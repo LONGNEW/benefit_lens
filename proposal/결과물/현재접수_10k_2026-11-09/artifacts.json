@@ -1,0 +1,19 @@
+{
+  "current_sql_run": {
+    "batch_id": "3f5febb6e1dafdfc350c2edded4b55d53cb3af9820ad2bced792fb1d9aeef95f",
+    "run": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-live-10k-20261109/runs/3f5febb6e1dafdfc350c2edded4b55d53cb3af9820ad2bced792fb1d9aeef95f",
+    "verification": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-live-10k-20261109/runs/3f5febb6e1dafdfc350c2edded4b55d53cb3af9820ad2bced792fb1d9aeef95f/output/verification.json",
+    "rounds": 10000,
+    "source_backed": 10000,
+    "summary_only": 0,
+    "cases": 0,
+    "patterns": 0
+  },
+  "selected_source_snapshot": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/cohorts/open-10000-selected.jsonl",
+  "canonical_shards": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/cohorts/verified-open-10000-v2",
+  "historical_shards": "/home/longnew/.cache/datasets/benefitlens/live-students-10k-20261109/cohorts/historical-writing-v2",
+  "historical_sql_output": "/home/longnew/Desktop/course_work/tmp/benefitlens_live_10k_20261109/root/historical-sql",
+  "milestones": "/home/longnew/Desktop/course_work/tmp/benefitlens_live_10k_20261109/milestones.md",
+  "build_source_sha256": "8c76e250ea406c054943ff9a77540415c4756fc3171db27bb2e8c983e3324263",
+  "db_source_sha256": "16a2a0ed75535149a192ccab180abcd2802ec02b7f336c3a20b64f35cf9f12a1"
+}

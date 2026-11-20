@@ -1,0 +1,269 @@
+{
+  "registry_version": "proposal-2026-11-09-v1",
+  "status": "proposal_not_applied_to_sql_or_rows",
+  "audit_scope": {
+    "publication_rows": 4339,
+    "count_before_company_role_dedup": true,
+    "source": "coverage.json"
+  },
+  "storage_boundary": {
+    "stable_sql_candidates": [
+      "issuer_entity_id",
+      "opportunity_family_id",
+      "round_id",
+      "opportunity_form",
+      "review_state"
+    ],
+    "jsonb_candidates": [
+      "geography",
+      "eligibility_ast",
+      "support_components",
+      "source_specific_extensions"
+    ],
+    "current_delivery_schema": "PostgreSQL v1 program/opportunity_round/claim/evidence, not yet this registry"
+  },
+  "fields": [
+    {
+      "id": "organization",
+      "shape": "object",
+      "keys": [
+        "issuer_entity_id",
+        "issuer_label",
+        "legal_employer_id",
+        "legal_employer_label",
+        "brand_group_id",
+        "publisher_id",
+        "source_host"
+      ],
+      "rule": "Source label, legal employer, company group and host are distinct. Group aliases need a reviewed registry.",
+      "current": "issuer plain text nonempty 4339; exact strings 91; normalized entity/group registry absent"
+    },
+    {
+      "id": "geography.issuer_country",
+      "shape": "country_or_area assertion",
+      "rule": "Official organization address or explicit organizational evidence only. Never derive from job location, domain or currency.",
+      "current": "no common field; headquarters evidence not systematically collected"
+    },
+    {
+      "id": "geography.work_or_study_locations",
+      "shape": "array of country_or_area assertions plus city/region/remote",
+      "rule": "Preserve all locations on one posting; location count does not create new opportunities. Preserve source scheme/code/label.",
+      "current": "flat country 2977 and location 3826; Workday primary alpha2 2955 with 39 source codes; not canonical SQL geography"
+    },
+    {
+      "id": "geography.beneficiary_scope",
+      "shape": "eligibility AST for where support may be used",
+      "rule": "Destination or permitted study country differs from applicant nationality and issuer country.",
+      "current": "not commonly normalized"
+    },
+    {
+      "id": "eligibility.nationality",
+      "shape": "AST: include/exclude/group/reference/effective_at",
+      "rule": "Nationality groups require source-specific membership version; do not infer from location or residency.",
+      "current": "no canonical rule; nationality wording lexical hits 420, not reviewed coverage"
+    },
+    {
+      "id": "eligibility.residency",
+      "shape": "AST distinct from nationality",
+      "rule": "Country of residence, ordinary residence, immigration status and work authorization remain separate operands.",
+      "current": "DAAD 4 application_scope country filters preserved in current_application_status JSONB; exact nationality unresolved"
+    },
+    {
+      "id": "opportunity_form",
+      "shape": "enum with optional source subform",
+      "values": [
+        "internship",
+        "student_job",
+        "scholarship",
+        "fellowship",
+        "admission_funding",
+        "loan",
+        "contest",
+        "individual_grant",
+        "other",
+        "unknown"
+      ],
+      "rule": "Mandatory internship inside a fellowship is an activity requirement, not a second opportunity. Taxonomy label alone does not determine financial method.",
+      "current": "SQL internship 4010, scholarship 240, other 74, admission_funding 15; current SQL enum lacks loan and student_job"
+    },
+    {
+      "id": "employment_terms",
+      "shape": "object",
+      "keys": [
+        "experience_level",
+        "contract_duration",
+        "work_schedule",
+        "paid_status"
+      ],
+      "rule": "Internship, permanent and full-time occupy different axes. Preserve incompatible raw code and label pending review.",
+      "current": "Bosch native experienceLevel and typeOfEmployment present 17; not common canonical fields"
+    },
+    {
+      "id": "support_components",
+      "shape": "array of independently evidenced components",
+      "component_keys": [
+        "component_id",
+        "purpose",
+        "method",
+        "payment_label",
+        "amount",
+        "beneficiary",
+        "scope",
+        "conditions",
+        "evidence_refs",
+        "state"
+      ],
+      "rule": "One award can combine a fee waiver and living stipend. Do not collapse them into a single benefit label.",
+      "current": "canonical purposes/methods/amount-currency-unit 0; paid_student_employment flag 7, amount/currency null"
+    },
+    {
+      "id": "support_components.purpose",
+      "shape": "enum or reviewed extension",
+      "values": [
+        "tuition",
+        "living",
+        "housing",
+        "travel",
+        "research",
+        "equipment",
+        "training",
+        "loan_interest",
+        "existing_loan_repayment",
+        "unrestricted",
+        "other",
+        "unknown"
+      ],
+      "rule": "Travel duty, equipment used at work and financial-industry job tasks do not establish support purposes."
+    },
+    {
+      "id": "support_components.method",
+      "shape": "enum or reviewed extension",
+      "values": [
+        "grant",
+        "wage",
+        "stipend",
+        "loan",
+        "fee_waiver",
+        "interest_subsidy",
+        "reimbursement",
+        "in_kind",
+        "discount",
+        "other",
+        "unknown"
+      ],
+      "rule": "Keep source payment_label. Allowance/stipend does not automatically establish wage or nonrepayable grant. Interest subsidy or loan repayment benefit is not a new loan."
+    },
+    {
+      "id": "support_components.scope",
+      "shape": "enum",
+      "values": [
+        "main_opportunity",
+        "employee_general",
+        "employee_dependent",
+        "third_party_context",
+        "eligibility_cost",
+        "unknown"
+      ],
+      "rule": "Staff benefits or dependent tuition assistance are not automatically benefits of the student opportunity."
+    },
+    {
+      "id": "support_components.amount",
+      "shape": "object",
+      "keys": [
+        "min",
+        "max",
+        "exact",
+        "cap",
+        "percentage",
+        "currency_code",
+        "raw_symbol",
+        "frequency",
+        "duration",
+        "gross_or_net"
+      ],
+      "frequency_values": [
+        "one_time",
+        "per_award",
+        "per_hour",
+        "per_month",
+        "per_year",
+        "other",
+        "unknown"
+      ],
+      "rule": "A cap is not an exact amount. A year is not a month. Bare $ leaves currency_code unknown unless separately supported. A fee waiver percentage is not a cash amount."
+    },
+    {
+      "id": "evidence_refs",
+      "shape": "array",
+      "keys": [
+        "document_id",
+        "document_version_id",
+        "raw_path",
+        "raw_sha256",
+        "text_path",
+        "text_sha256",
+        "json_pointer",
+        "locator",
+        "exact_quote",
+        "round_scope",
+        "observed_at",
+        "normalization_rule_version"
+      ],
+      "rule": "Keep original JSON pointer and text extraction hash. Text offsets attach to that extraction version."
+    }
+  ],
+  "verification": {
+    "states": [
+      "verified",
+      "source_asserted_unmapped",
+      "normalized_candidate",
+      "conflicting",
+      "unknown",
+      "not_applicable",
+      "explicit_none"
+    ],
+    "unknown_reasons": [
+      "not_collected",
+      "source_missing",
+      "not_reviewed",
+      "ambiguous_meaning",
+      "ambiguous_scope",
+      "source_conflict"
+    ],
+    "rules": [
+      "Zero classified rows does not imply real-world absence.",
+      "An empty native array, absent key or no keyword hit is unknown, not explicit_none.",
+      "explicit_none requires a source negative with scoped quote.",
+      "A source country filter is stored under that role; do not copy into nationality.",
+      "Related, broader and narrower aliases require distinct mapping relations; only reviewed exact equivalents substitute automatically.",
+      "Unresolved required eligibility returns unknown and requests additional facts instead of false."
+    ]
+  },
+  "dedup_contract": {
+    "family_candidate_keys": [
+      "reviewed company/group identity",
+      "reviewed role family"
+    ],
+    "preserve_children": [
+      "native_publication_id",
+      "source_document_versions",
+      "locations",
+      "application_periods",
+      "cohort_or_round",
+      "eligibility_variants",
+      "source_specific_extensions"
+    ],
+    "rule": "Same reviewed company and same reviewed role are one user-facing family. Country or location arrays do not multiply families. Distinct cohorts/conditions remain child variants. Uncertain role or organization aliases enter review.",
+    "execution": "Parent owns implementation. This file does not apply merges or certify provisional groups."
+  },
+  "promotion_rule": {
+    "requirements": [
+      "documented definition and type",
+      "reviewed source-to-common mappings with counterexamples",
+      "evidence and time scope",
+      "old/new impact counts",
+      "registry version and replay plan"
+    ],
+    "field_absence_policy": "Preserve raw input and unknown until mapping review; never backfill from title alone when semantic ambiguity remains."
+  }
+}

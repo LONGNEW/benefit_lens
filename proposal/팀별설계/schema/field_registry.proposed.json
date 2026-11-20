@@ -1,0 +1,163 @@
+{
+  "artifact_status": "proposed_design_not_runtime_configuration",
+  "registry_version": "field-registry-v2-proposal",
+  "principles": [
+    "조건의 threshold 값과 개인 fact의 구조를 구분한다.",
+    "field 이름 외에 단위, 적용 시점, 학위와 산정 기간을 비교한다.",
+    "별칭이 비슷해도 의미가 다르면 자동 치환하지 않는다.",
+    "이 파일의 정의는 현재 validator나 evaluator에 연결되지 않았다."
+  ],
+  "fields": [
+    {
+      "field": "education.degree",
+      "predicate_value_type": "enum",
+      "fact_value_type": "enum",
+      "values": [
+        "associate",
+        "bachelors",
+        "masters",
+        "phd",
+        "integrated"
+      ],
+      "operators": [
+        "eq",
+        "in",
+        "not_in"
+      ],
+      "context_keys": [
+        "at",
+        "institution_id",
+        "program_track"
+      ],
+      "source_aliases": [
+        {
+          "source_contract": "eligibility-1.x",
+          "field": "academicLevel",
+          "value": "doctoral",
+          "mapping_candidate": "phd",
+          "review": "학위 과정 범위가 동일한지 확인 후 adapter 버전에 채택"
+        },
+        {
+          "source_contract": "eligibility-1.x",
+          "field": "academicLevel",
+          "value": "undergraduate",
+          "mapping_candidate": null,
+          "review": "associate와 bachelors 범위가 구분되지 않으면 unresolved"
+        }
+      ],
+      "unsupported_handling": "unknown_and_question",
+      "purpose": "eligibility_matching"
+    },
+    {
+      "field": "education.gpa",
+      "predicate_value_type": "number",
+      "fact_value_type": "object",
+      "fact_required_keys": [
+        "value",
+        "scale",
+        "degree_scope",
+        "period_scope",
+        "at"
+      ],
+      "operators": [
+        "gte",
+        "lte",
+        "between"
+      ],
+      "context_keys": [
+        "scale",
+        "degree_scope",
+        "period_scope",
+        "at"
+      ],
+      "conversion_policy": "no_implicit_scale_or_percentile_conversion",
+      "unsupported_handling": "unknown_and_question",
+      "sql_column_promotion": "query_workload_measurement_required",
+      "purpose": "eligibility_matching"
+    },
+    {
+      "field": "education.coursework_completed",
+      "predicate_value_type": "boolean",
+      "fact_value_type": "boolean",
+      "operators": [
+        "eq"
+      ],
+      "context_keys": [
+        "degree_scope",
+        "institution_id",
+        "at",
+        "modality"
+      ],
+      "non_equivalent_expressions": [
+        "completed most coursework",
+        "PhD candidate",
+        "completed first PhD year"
+      ],
+      "unsupported_handling": "preserve_source_specific_requirement",
+      "purpose": "eligibility_matching"
+    },
+    {
+      "field": "education.status",
+      "predicate_value_type": "enum",
+      "fact_value_type": "enum",
+      "values": [
+        "enrolled",
+        "admitted",
+        "graduated",
+        "leave"
+      ],
+      "operators": [
+        "eq",
+        "in",
+        "not_in"
+      ],
+      "context_keys": [
+        "degree_scope",
+        "institution_id",
+        "at",
+        "modality"
+      ],
+      "unknown_future_state": "unknown_unless_requirement_is_explicitly_about_intention_or_commitment",
+      "purpose": "eligibility_matching"
+    },
+    {
+      "field": "program.demo-program.coursework_most_completed",
+      "predicate_value_type": "unresolved_boolean_interpretation",
+      "fact_value_type": "candidate",
+      "operators": [],
+      "interpretation_status": "ambiguous",
+      "minimum_retained_content": [
+        "exact_quote",
+        "document_version_id",
+        "locator",
+        "program_id",
+        "round_id",
+        "at"
+      ],
+      "question": "기관이 대부분 이수를 어떤 기준으로 확인하는가?",
+      "unsupported_handling": "unknown_manual_review",
+      "promotion_rule": "기관 기준과 다른 프로그램의 의미 동일성을 검토한 후 registry 새 버전으로 승격",
+      "purpose": "eligibility_matching"
+    }
+  ],
+  "writing_fields_proposed": {
+    "purpose": "writing",
+    "fields": [
+      "research_goal",
+      "own_contribution",
+      "result_and_comparator",
+      "next_question",
+      "resource_use",
+      "completed_collaboration",
+      "proposed_collaboration"
+    ],
+    "fact_contract": [
+      "subject_id",
+      "review_status",
+      "evidence_ids",
+      "at",
+      "modality"
+    ],
+    "rule": "논문 공저나 타인 사례만으로 본인 기여를 확정하지 않고, 미확인 사실은 missing slot과 질문으로 반환한다."
+  }
+}

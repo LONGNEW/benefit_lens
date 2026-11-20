@@ -1,0 +1,156 @@
+{
+  "scope": "공개 추출문 검토. 공개 범위 밖의 문서와 심사 원인은 추정하지 않음.",
+  "comparison_status": "limited_textual_contrast",
+  "cases": [
+    {
+      "case_id": "N1",
+      "outcome_status": "selected",
+      "outcome_basis": "official_recipient_list",
+      "outcome_cohort_label": "2023",
+      "statement_submission_round": null,
+      "statement_finality": "unknown",
+      "technical_results_basis": "author_report_in_public_text",
+      "documents": [
+        {
+          "document_id": "N1-STATEMENT",
+          "document_version_id": "N1-STATEMENT-1292bfba8ff4",
+          "source_role": "application_statement",
+          "capture_scope": "all_available_extracted_text",
+          "text_characters": 8991,
+          "text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963",
+          "locators": [
+            "lines 6-27: 목표와 병목",
+            "lines 28-65: 기여, 비교, 구현",
+            "lines 66-89: 다음 연구"
+          ],
+          "observation": "성능 접근성 목표와 분산 커널 및 고수준 라이브러리의 병목, 본인의 컴파일러 개발과 비교 결과, NVIDIA 인턴십 프로토타입, JIT 및 희소 배열의 후속 문제를 설명한다. 공개 PDF이며 최종 제출본은 확인되지 않았다."
+        },
+        {
+          "document_id": "N1-INDEX",
+          "document_version_id": "N1-INDEX-abd695f019fd",
+          "source_role": "application_index",
+          "capture_scope": "all_available_extracted_text",
+          "text_characters": 6611,
+          "text_sha256": "55beb47c39a778a0ebb44127e61778357c0ff60f3ed45018a0e2e287d2fef0e6",
+          "locators": [
+            "lines 183-189"
+          ],
+          "observation": "작성자의 공개 페이지가 이 PDF를 NVIDIA 지원문으로 연결한다. 자료 관계를 확인하는 데만 사용한다."
+        },
+        {
+          "document_id": "N1-OUTCOME",
+          "document_version_id": "N1-OUTCOME-23eb6b58ee64",
+          "source_role": "outcome_record",
+          "capture_scope": "all_available_extracted_text",
+          "text_characters": 2309,
+          "text_sha256": "54e7c3c98b0a590693b8b5fbbc9e649f8b62d9f56314615f3eb6144e8b7e8e5f",
+          "locators": [
+            "lines 35-44"
+          ],
+          "observation": "기관의 2023 수혜자 명단에 이름과 학교가 일치한다. 공개 PDF가 실제 제출됐다는 증거는 아니다."
+        }
+      ]
+    },
+    {
+      "case_id": "N2",
+      "outcome_status": "selected",
+      "outcome_basis": "official_recipient_list",
+      "outcome_cohort_label": "2022",
+      "statement_submission_round": null,
+      "statement_finality": "unknown",
+      "technical_results_basis": "author_report_in_public_text",
+      "documents": [
+        {
+          "document_id": "N2-STATEMENT",
+          "document_version_id": "N2-STATEMENT-d1cc2f892c3b",
+          "source_role": "application_statement",
+          "capture_scope": "all_available_extracted_text",
+          "text_characters": 6292,
+          "text_sha256": "4bac610f3574b02c61dc64992f4947682c6bf2579eee4dfbbf0c0fc494262dc3",
+          "locators": [
+            "lines 1-12: 이력과 적용 경험",
+            "lines 14-64: 목표와 프로젝트",
+            "lines 66-68: 지원 자원 활용"
+          ],
+          "observation": "학업과 인턴 경험을 소개한 뒤 공통 GPU 연구 목표, 여러 프로젝트의 설계와 결과, 지원 자원 사용으로 이어진다. 지원용 공개문이지만 NVIDIA의 정확한 문항 및 최종본 여부는 미확인이다."
+        },
+        {
+          "document_id": "N2-PANEL",
+          "document_version_id": "N2-PANEL-651d999ce104",
+          "source_role": "panel",
+          "capture_scope": "all_available_extracted_text",
+          "text_characters": 6395,
+          "text_sha256": "7cbaed9e278d0e4f31d9ddab47f6c21b7ed0fb2e0ce4ea2a9b22a7132790baa9",
+          "locators": [
+            "line 37: N2에게 귀속된 조언",
+            "lines 65-77: 자료 링크와 수혜 소개"
+          ],
+          "observation": "행사 주최자의 복수 화자 후기다. 37행 비교 조언을 N2에게 귀속할 수 있다. 패널과 연구문을 한 사람으로 세고, 후기의 추천 순서를 실제 제출 구성으로 간주하지 않는다."
+        },
+        {
+          "document_id": "N2-OUTCOME",
+          "document_version_id": "N2-OUTCOME-714690c58604",
+          "source_role": "outcome_record",
+          "capture_scope": "all_available_extracted_text",
+          "text_characters": 2281,
+          "text_sha256": "a7485815890006aa6a3bdb4a5cb06153b14d8268cd80d9c29f823242a01187e6",
+          "locators": [
+            "lines 35-54"
+          ],
+          "observation": "공식 2022 수혜 명단의 이름과 학교가 일치한다. 패널의 2022-23 소개와 함께 읽되 공개문의 회차는 별도로 미확인이다."
+        }
+      ]
+    },
+    {
+      "case_id": "N3",
+      "outcome_status": "not_selected",
+      "outcome_basis": "author_report",
+      "outcome_cohort_label": null,
+      "statement_submission_round": null,
+      "statement_finality": "unknown",
+      "technical_results_basis": "author_report_in_public_text",
+      "documents": [
+        {
+          "document_id": "N3-STATEMENT",
+          "document_version_id": "N3-STATEMENT-25ee76529386",
+          "source_role": "application_statement",
+          "capture_scope": "all_available_extracted_text",
+          "text_characters": 9793,
+          "text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae",
+          "locators": [
+            "lines 7-25: 문제와 연구 목적",
+            "lines 26-73: 선행 결과 및 계획",
+            "lines 79-83: 협업 제안"
+          ],
+          "observation": "모델 편향과 해석 문제에서 시작해 섭동과 평가 지표를 사용한 결과, 표현과 견고성의 후속 계획, NVIDIA와의 협업 제안으로 이어진다. 제안은 실행된 협업이 아니다. 파일명 2017과 정확한 공식 회차는 구분한다."
+        },
+        {
+          "document_id": "N3-OUTCOME",
+          "document_version_id": "N3-OUTCOME-web-b4c5d68e8618",
+          "source_role": "reflection",
+          "capture_scope": "public_web_excerpt_only",
+          "text_characters": 24,
+          "text_sha256": "b4c5d68e8618326f52de668e6107d059d71e8866a5552cd468fa502a224b7e31",
+          "locators": [
+            "web extraction line 130; local excerpt line 1"
+          ],
+          "observation": "해당 NVIDIA 지원의 미수혜는 작성자 보고다. 다른 기관의 결과와 합치지 않는다. 공개 발췌를 확보했고 직접 원문 GET은 403이었다."
+        }
+      ]
+    }
+  ],
+  "technical_evidence_limit": "성능과 학술 성과는 각 문서 작성자의 보고를 관찰했다. 이 작업에서 독립 재현하지 않았다.",
+  "official": {
+    "document_id": "OFFICIAL",
+    "document_version_id": "OFFICIAL-f68d3f6ccbeb",
+    "source_role": "official_notice",
+    "capture_scope": "proposal_requirement_and_writing_guidance",
+    "text_characters": 15168,
+    "text_sha256": "04b9b9d2edc87d2f702e3890175d82ee8e455aafbb13567b0e3cb8d81f9d435e",
+    "locators": [
+      "lines 118-137: 평가와 필수 항목",
+      "lines 151-162: 작성 안내"
+    ],
+    "observation": "연구계획 제출 형식과 선택 작성 안내를 분리하고 대상 회차에 한정한다."
+  }
+}

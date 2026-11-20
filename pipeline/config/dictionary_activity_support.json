@@ -1,0 +1,247 @@
+{
+  "schema_version": "dictionary-activity-support-v1",
+  "seed_origin": "Stipend etymology and student-facing payment terms; see docs/specs/activity-support.md",
+  "scope": "Student-eligible financial opportunities: study and living allowances, activity payments, paid placements, prizes, and restricted project funds.",
+  "seeds": [
+    {
+      "term": "stipend",
+      "lane": "announcement",
+      "payment_candidate_kind": "fixed_allowance"
+    },
+    {
+      "term": "living allowance",
+      "lane": "announcement",
+      "payment_candidate_kind": "fixed_allowance"
+    },
+    {
+      "term": "subsistence allowance",
+      "lane": "announcement",
+      "payment_candidate_kind": "fixed_allowance"
+    },
+    {
+      "term": "training allowance",
+      "lane": "announcement",
+      "payment_candidate_kind": "fixed_allowance"
+    },
+    {
+      "term": "maintenance allowance",
+      "lane": "announcement",
+      "payment_candidate_kind": "fixed_allowance"
+    },
+    {
+      "term": "pocket money",
+      "lane": "announcement",
+      "payment_candidate_kind": "fixed_allowance"
+    },
+    {
+      "term": "생활비 지원",
+      "lane": "announcement",
+      "payment_candidate_kind": "fixed_allowance"
+    },
+    {
+      "term": "체재비",
+      "lane": "announcement",
+      "payment_candidate_kind": "fixed_allowance"
+    },
+    {
+      "term": "연구장려금",
+      "lane": "announcement",
+      "payment_candidate_kind": "fixed_allowance"
+    },
+    {
+      "term": "연수수당",
+      "lane": "announcement",
+      "payment_candidate_kind": "fixed_allowance"
+    },
+    {
+      "term": "honorarium",
+      "lane": "announcement",
+      "payment_candidate_kind": "participation_or_completion"
+    },
+    {
+      "term": "participant compensation",
+      "lane": "announcement",
+      "payment_candidate_kind": "participation_or_completion"
+    },
+    {
+      "term": "participation incentive",
+      "lane": "announcement",
+      "payment_candidate_kind": "participation_or_completion"
+    },
+    {
+      "term": "completion payment",
+      "lane": "announcement",
+      "payment_candidate_kind": "participation_or_completion"
+    },
+    {
+      "term": "활동비",
+      "lane": "announcement",
+      "payment_candidate_kind": "participation_or_completion"
+    },
+    {
+      "term": "참여비",
+      "lane": "announcement",
+      "payment_candidate_kind": "participation_or_completion"
+    },
+    {
+      "term": "실험 참여 사례비",
+      "lane": "announcement",
+      "payment_candidate_kind": "participation_or_completion"
+    },
+    {
+      "term": "설문 참여 사례금",
+      "lane": "announcement",
+      "payment_candidate_kind": "participation_or_completion"
+    },
+    {
+      "term": "수료 수당",
+      "lane": "announcement",
+      "payment_candidate_kind": "participation_or_completion"
+    },
+    {
+      "term": "활동수당",
+      "lane": "announcement",
+      "payment_candidate_kind": "participation_or_completion"
+    },
+    {
+      "term": "paid internship",
+      "lane": "announcement",
+      "payment_candidate_kind": "student_wages"
+    },
+    {
+      "term": "paid traineeship",
+      "lane": "announcement",
+      "payment_candidate_kind": "student_wages"
+    },
+    {
+      "term": "student employment",
+      "lane": "announcement",
+      "payment_candidate_kind": "student_wages"
+    },
+    {
+      "term": "유급 인턴",
+      "lane": "announcement",
+      "payment_candidate_kind": "student_wages"
+    },
+    {
+      "term": "현장실습지원비",
+      "lane": "announcement",
+      "payment_candidate_kind": "student_wages"
+    },
+    {
+      "term": "근로장학금",
+      "lane": "announcement",
+      "payment_candidate_kind": "student_wages"
+    },
+    {
+      "term": "prize money",
+      "lane": "announcement",
+      "payment_candidate_kind": "prize"
+    },
+    {
+      "term": "cash prize",
+      "lane": "announcement",
+      "payment_candidate_kind": "prize"
+    },
+    {
+      "term": "student challenge prize",
+      "lane": "announcement",
+      "payment_candidate_kind": "prize"
+    },
+    {
+      "term": "경진대회 상금",
+      "lane": "announcement",
+      "payment_candidate_kind": "prize"
+    },
+    {
+      "term": "공모전 시상금",
+      "lane": "announcement",
+      "payment_candidate_kind": "prize"
+    },
+    {
+      "term": "project grant",
+      "lane": "announcement",
+      "payment_candidate_kind": "project_funds"
+    },
+    {
+      "term": "seed grant",
+      "lane": "announcement",
+      "payment_candidate_kind": "project_funds"
+    },
+    {
+      "term": "microgrant",
+      "lane": "announcement",
+      "payment_candidate_kind": "project_funds"
+    },
+    {
+      "term": "프로젝트 지원금",
+      "lane": "announcement",
+      "payment_candidate_kind": "project_funds"
+    },
+    {
+      "term": "팀 활동비",
+      "lane": "announcement",
+      "payment_candidate_kind": "project_funds"
+    },
+    {
+      "term": "travel reimbursement",
+      "lane": "announcement",
+      "payment_candidate_kind": "restricted_benefit"
+    },
+    {
+      "term": "travel grant",
+      "lane": "announcement",
+      "payment_candidate_kind": "restricted_benefit"
+    },
+    {
+      "term": "tuition waiver",
+      "lane": "announcement",
+      "payment_candidate_kind": "restricted_benefit"
+    },
+    {
+      "term": "교통비 실비",
+      "lane": "announcement",
+      "payment_candidate_kind": "restricted_benefit"
+    },
+    {
+      "term": "등록금 감면",
+      "lane": "announcement",
+      "payment_candidate_kind": "restricted_benefit"
+    }
+  ],
+  "templates": {
+    "announcement": {
+      "en": [
+        "\"{term}\" student apply current application official",
+        "\"{term}\" students research competition internship volunteer application deadline"
+      ],
+      "ko": [
+        "\"{term}\" 대학생 대학원생 참가자 신청 모집",
+        "\"{term}\" 학생 모집 공고 지원 참가 신청 마감"
+      ]
+    },
+    "experience": {
+      "en": [
+        "\"{term}\" PhD fellowship scholarship application experience example",
+        "\"{term}\" fellowship scholarship application materials guide"
+      ],
+      "ko": [
+        "\"{term}\" 대학원 장학금 지원 경험",
+        "\"{term}\" 장학생 지원서 후기"
+      ]
+    }
+  },
+  "results_per_query": 3,
+  "search_batch_size": 4,
+  "fetch_workers": 12,
+  "extract_batch_size": 8,
+  "chunk_characters": 24000,
+  "max_attempts": 3,
+  "receipt_policy": "one_exact_query_per_completed_search_event",
+  "vocabulary_policy": "funding_mechanisms_benefits_document_types_preparation_formats_named_review_frameworks_excludes_generic_advice_qualities",
+  "scope_screening": "LLM may exclude clearly unrelated returned sources using titles and snippets; uncertain results are fetched. All exclusions recorded.",
+  "vocabulary_scope": {
+    "search": "student-eligible financial opportunities in the configured language, including paid participation or training, fixed study or living allowances, honoraria, student contests with prizes, and project funding open to individuals or student teams",
+    "extraction": "student-eligible financial opportunities and their application preparation. Include paid student placements, researcher participant incentives, completion payments, pocket money, competition prizes, documented reimbursements, tuition concessions, and project funds that individuals or student teams may apply for. Preserve the payment trigger, recipient, and restrictions in the explanations. Exclude ordinary employment without a student placement route and funding available only to a PI or institution."
+  }
+}

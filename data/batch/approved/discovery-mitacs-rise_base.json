@@ -1,0 +1,77 @@
+{
+  "program": [
+    {
+      "program_id": "mitacs-rise-globalink",
+      "title": "RISE-Globalink Research Internship",
+      "issuer": "Mitacs in partnership with DAAD",
+      "opportunity_type": "internship"
+    }
+  ],
+  "opportunity_round": [
+    {
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027",
+      "opportunity_id": "mitacs-rise-globalink-summer-2027",
+      "notice_version": "mitacs-rise-globalink-summer-2027-v1",
+      "status": "open",
+      "official_url": "https://www.mitacs.ca/our-programs/rise-globalink-research-internship/",
+      "application_url": "https://www.daad.de/rise/en/rise-germany/find-an-internship/application-portal/",
+      "opens_on": "2026-10-15",
+      "closes_on": "2026-11-30",
+      "announces_on": null,
+      "checked_on": "2026-11-09"
+    }
+  ],
+  "source_document": [
+    {
+      "document_id": "MITACS-RISE",
+      "title": "RISE-Globalink Research Internship - Mitacs",
+      "url": "https://www.mitacs.ca/our-programs/rise-globalink-research-internship/",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:34:43.319293+00:00",
+      "raw_sha256": "08cf60ad2f447f0a7773d95fc652f74323c1335648ce6c0e9528cf1c11040cee",
+      "text_sha256": "299fd2e76ee67242ff95343af10e17277a10afdc62cae29fcf88862e0ed89867",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/08cf60ad2f447f0a7773d95fc652f74323c1335648ce6c0e9528cf1c11040cee.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/299fd2e76ee67242ff95343af10e17277a10afdc62cae29fcf88862e0ed89867.txt"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "RISE-DATES",
+      "document_id": "MITACS-RISE",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027",
+      "source_role": "official_notice",
+      "locator": "L15-L21",
+      "quote": "October 15, 2026 to November 30"
+    },
+    {
+      "evidence_id": "RISE-BENEFITS",
+      "document_id": "MITACS-RISE",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027",
+      "source_role": "official_notice",
+      "locator": "L22-L32",
+      "quote": "Mitacs provides $7,000"
+    },
+    {
+      "evidence_id": "RISE-ELIGIBILITY",
+      "document_id": "MITACS-RISE",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027",
+      "source_role": "official_notice",
+      "locator": "L33-L43",
+      "quote": "Student eligibility"
+    },
+    {
+      "evidence_id": "RISE-APPLY",
+      "document_id": "MITACS-RISE",
+      "program_id": "mitacs-rise-globalink",
+      "round_id": "summer-2027",
+      "source_role": "official_guideline",
+      "locator": "L66-L93",
+      "quote": "Application steps:"
+    }
+  ]
+}

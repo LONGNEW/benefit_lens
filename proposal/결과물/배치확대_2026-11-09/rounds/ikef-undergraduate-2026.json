@@ -1,0 +1,102 @@
+{
+  "basis": "source_backed",
+  "title": "관정 2026 국내 학부 장학생",
+  "claims": [
+    {
+      "at": "award",
+      "kind": "benefit",
+      "field": "scholarship_type_a",
+      "value": {
+        "amount": 6000000,
+        "period": "semester",
+        "currency": "KRW",
+        "recipient": "undergraduate",
+        "alternative_to": "B-undergraduate"
+      },
+      "claim_id": "ikef26-aid-a",
+      "round_id": "2026-undergraduate",
+      "program_id": "ikef-domestic-undergraduate",
+      "evidence_ids": [
+        "ikef26-aid-a-source"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "award",
+      "kind": "benefit",
+      "field": "scholarship_type_b_undergraduate",
+      "value": {
+        "amount": 4000000,
+        "period": "semester",
+        "currency": "KRW",
+        "recipient": "undergraduate",
+        "alternative_to": "A"
+      },
+      "claim_id": "ikef26-aid-b",
+      "round_id": "2026-undergraduate",
+      "program_id": "ikef-domestic-undergraduate",
+      "evidence_ids": [
+        "ikef26-aid-b-source"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "eligibility",
+      "field": "degree_level",
+      "value": {
+        "value": "undergraduate"
+      },
+      "claim_id": "ikef26-degree",
+      "round_id": "2026-undergraduate",
+      "program_id": "ikef-domestic-undergraduate",
+      "evidence_ids": [
+        "ikef26-degree-source"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "personal_statement",
+      "value": {
+        "self_written": true
+      },
+      "claim_id": "ikef26-statement",
+      "round_id": "2026-undergraduate",
+      "program_id": "ikef-domestic-undergraduate",
+      "evidence_ids": [
+        "ikef26-statement-source"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "eligibility",
+      "field": "transfer_student",
+      "value": {
+        "eligible": false
+      },
+      "claim_id": "ikef26-transfer",
+      "round_id": "2026-undergraduate",
+      "program_id": "ikef-domestic-undergraduate",
+      "evidence_ids": [
+        "ikef26-transfer-source"
+      ],
+      "review_state": "reviewed"
+    }
+  ],
+  "issuer": "관정이종환교육재단",
+  "status": "closed",
+  "opens_on": null,
+  "round_id": "2026-undergraduate",
+  "closes_on": "2025-12-16",
+  "checked_on": "2026-10-15",
+  "program_id": "ikef-domestic-undergraduate",
+  "announces_on": null,
+  "official_url": "https://www.ikef.or.kr/page.php?id=%2Fkj%2Fscholar_schedule_detail&page=1&wr_id=102",
+  "notice_version": "sample-2026-10-15",
+  "opportunity_id": "ikef-undergraduate-2026",
+  "application_url": null,
+  "opportunity_type": "scholarship"
+}

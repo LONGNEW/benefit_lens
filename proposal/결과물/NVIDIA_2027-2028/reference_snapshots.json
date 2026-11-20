@@ -1,0 +1,55 @@
+{
+  "scope": "two saved-source normalization examples; not loaded into the NVIDIA delivery",
+  "records": [
+    {
+      "opportunity_id": "google-east-asia-2026",
+      "claim": {
+        "program_id": "google-phd-fellowship",
+        "round_id": "2026-east-asia",
+        "kind": "eligibility",
+        "field": "coursework.most_completed",
+        "at": "award_start",
+        "value": {
+          "condition": "completed_most_graduate_coursework",
+          "threshold": null,
+          "automatic_decision": "unknown"
+        },
+        "review_state": "reviewed"
+      },
+      "source": {
+        "url": "https://research.google/programs-and-events/phd-fellowship/",
+        "raw_sha256": "17fcd780d172cd1e028e744ec417b5bc39eeaff9ae2c8803923a8fc15761815e",
+        "text_sha256": "9905fc9c5da269239ba0726a473d51034e75e77e182680eb7fd1dcdec4f7b5bd",
+        "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/text/google-official.txt",
+        "locator": "line:159-159",
+        "quote": "Students who have completed most of their graduate coursework in their PhD by the academic award year when the Fellowship begins. Students should have sufficient time for research projects after receiving a fellowship."
+      }
+    },
+    {
+      "opportunity_id": "ikef-undergraduate-2026",
+      "claim": {
+        "program_id": "ikef-domestic-undergraduate",
+        "round_id": "2026-undergraduate",
+        "kind": "benefit",
+        "field": "cash",
+        "at": "award_period",
+        "value": {
+          "amount": 6000000,
+          "currency": "KRW",
+          "period": "semester",
+          "amount_kind": "fixed",
+          "track": "A_undergraduate"
+        },
+        "review_state": "reviewed"
+      },
+      "source": {
+        "url": "https://www.ikef.or.kr/page.php?id=%2Fkj%2Fscholar_schedule_detail&page=1&wr_id=102",
+        "raw_sha256": "e873c235413018b70ad605592e372455b8c24c3cc963fde67027c2d3e349317c",
+        "text_sha256": "fff211c4c338df9d7aa2c296502f86da27b36088abc0a636e597256170a73d18",
+        "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefitlens/pipeline/data/proposal_demo/2026-10-15/text/ikef-official.txt",
+        "locator": "line:105-113",
+        "quote": "학기당 금액\n비고\n관정성적우수장학금\nA\n형\n학부\n600\n만원\n타장학금 중복수혜 불가"
+      }
+    }
+  ]
+}

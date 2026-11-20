@@ -1,0 +1,37 @@
+{
+  "verification_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-live-10k-20261109/runs/3f5febb6e1dafdfc350c2edded4b55d53cb3af9820ad2bced792fb1d9aeef95f/output/verification.json",
+  "verification_sha256": "255d7b4f426bd7f6e209800b627d98d0b066d9e875eeb639c8de003ab63e8d4e",
+  "round_query_result_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-live-10k-20261109/runs/3f5febb6e1dafdfc350c2edded4b55d53cb3af9820ad2bced792fb1d9aeef95f/output/rounds.result.json",
+  "round_query_result_sha256": "38c0efa09826b1c265cef5c40177dfb209522467fdbf5a906f1bf801b0cbb4a8",
+  "postgres_version": "16.15",
+  "round_rows": 10000,
+  "distinct_provider_native": 10000,
+  "exact_selected_identity_set": true,
+  "sql_url_identity_deadline_scope_mismatches": [],
+  "provider_distribution_matches_selected": true,
+  "sql_types": {
+    "internship": 9088,
+    "scholarship": 241,
+    "other": 654,
+    "admission_funding": 17
+  },
+  "source_backed_rows": 10000,
+  "open_rows": 10000,
+  "full_eligibility_verified_rows": 0,
+  "experience_cases": 0,
+  "writing_patterns": 0,
+  "schema_contract_violations": 0,
+  "replay_unchanged": true,
+  "validation_hashes_spans": {
+    "raw_hashes": 10710,
+    "text_hashes": 10710,
+    "spans": 24089
+  },
+  "scope": "disposable PostgreSQL, no published ports and no network; no production writes",
+  "final_code_sha256": {
+    "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/build_benefitlens_live_batch.py": "8c76e250ea406c054943ff9a77540415c4756fc3171db27bb2e8c983e3324263",
+    "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/run_benefitlens_batch.py": "b163ef1f6c1998f03a9d2d30002c9ebfb8a53d613e17b6741ffb4657f08e4a5f",
+    "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/tools/benefitlens_batch_db.py": "16a2a0ed75535149a192ccab180abcd2802ec02b7f336c3a20b64f35cf9f12a1"
+  },
+  "final_regression_tests_passed": 19
+}

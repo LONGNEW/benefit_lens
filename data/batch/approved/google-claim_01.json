@@ -1,0 +1,51 @@
+{
+  "claim": [
+    {
+      "claim_id": "g26w-research-proposal",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia",
+      "kind": "submission",
+      "field": "research_proposal",
+      "at": "application",
+      "value": {
+        "required": true,
+        "max_pages": 3,
+        "references_excluded": true,
+        "language": "en"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "g26w-research-impact",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia",
+      "kind": "submission",
+      "field": "research_impact_essay",
+      "at": "application",
+      "value": {
+        "required": true,
+        "max_words": 350,
+        "language": "en",
+        "region": "East Asia",
+        "prompt_summary": "연구가 분야와 사회에 미치기를 바라는 영향, 그 영향이 중요한 이유와 연구 관심을 만든 경험을 설명한다."
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "g26w-leadership",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia",
+      "kind": "submission",
+      "field": "leadership_essay",
+      "at": "application",
+      "value": {
+        "required": true,
+        "max_words": 350,
+        "language": "en",
+        "region": "East Asia",
+        "prompt_summary": "다른 사람에게 긍정적 영향을 주었거나, 갈등을 해결했거나, 시간에 걸쳐 공동 노력에 기여한 리더십 사례를 설명한다."
+      },
+      "review_state": "reviewed"
+    }
+  ]
+}

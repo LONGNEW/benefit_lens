@@ -9,8 +9,10 @@ description = "PostgreSQL-backed collection pipeline for support opportunities"
 requires-python = ">=3.11"
 dependencies = [
   "beautifulsoup4>=4.12,<5",
+  "lxml>=5,<7",
   "psycopg[binary]>=3.2,<4",
   "requests>=2.31,<3",
+  "jsonschema>=4.10,<5",
 ]
 
 [project.optional-dependencies]

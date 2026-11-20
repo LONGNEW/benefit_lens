@@ -1,0 +1,104 @@
+{
+  "basis": "source_backed",
+  "title": "Weatherhead Center Dissertation Writing Grants",
+  "claims": [
+    {
+      "at": null,
+      "kind": "schedule",
+      "field": "deadline",
+      "value": {
+        "date": "2027-02-22",
+        "opening_status": "unverified"
+      },
+      "claim_id": "wcfia27-deadline",
+      "round_id": "2027-deadline",
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "evidence_ids": [
+        "wcfia27-deadline-evidence"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "award",
+      "kind": "benefit",
+      "field": "dissertation_writing_grant",
+      "value": {
+        "amount": 21650,
+        "period": "one_semester",
+        "currency": "USD",
+        "recipient": "individual_doctoral_student",
+        "amount_kind": "approximate"
+      },
+      "claim_id": "wcfia27-funding",
+      "round_id": "2027-deadline",
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "evidence_ids": [
+        "wcfia27-funding-evidence"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "submission",
+      "field": "application_and_recommendations",
+      "value": {
+        "application_portal": "https://carat.fas.harvard.edu",
+        "internal_form_unverified": true,
+        "recommendation_submitter": "recommender"
+      },
+      "claim_id": "wcfia27-route",
+      "round_id": "2027-deadline",
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "evidence_ids": [
+        "wcfia27-route-evidence"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "award",
+      "kind": "eligibility",
+      "field": "other_term_time_grants",
+      "value": {
+        "same_semester_cofunding_allowed": false
+      },
+      "claim_id": "wcfia27-stacking",
+      "round_id": "2027-deadline",
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "evidence_ids": [
+        "wcfia27-stacking-evidence"
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "at": "application",
+      "kind": "eligibility",
+      "field": "doctoral_dissertation_stage",
+      "value": {
+        "stage": "writing_before_completion_year",
+        "degree": "phd",
+        "institution": "Harvard University",
+        "advanced_g4_may_be_considered": true
+      },
+      "claim_id": "wcfia27-stage",
+      "round_id": "2027-deadline",
+      "program_id": "harvard-wcfia-dissertation-writing",
+      "evidence_ids": [
+        "wcfia27-stage-evidence"
+      ],
+      "review_state": "reviewed"
+    }
+  ],
+  "issuer": "Harvard University",
+  "status": "unknown",
+  "opens_on": null,
+  "round_id": "2027-deadline",
+  "closes_on": "2027-02-22",
+  "checked_on": "2026-11-09",
+  "program_id": "harvard-wcfia-dissertation-writing",
+  "announces_on": null,
+  "official_url": "https://www.wcfia.harvard.edu/funding/student/dissertation-writing-grants",
+  "notice_version": "batch-2026-11-09-v1",
+  "opportunity_id": "harvard-wcfia-dissertation-writing-2027-deadline",
+  "application_url": "https://carat.fas.harvard.edu",
+  "opportunity_type": "other"
+}

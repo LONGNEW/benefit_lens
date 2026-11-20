@@ -1,11 +1,15 @@
 {
   "format": "benefitlens-public-sample-v1",
   "file": "programs.json",
-  "bytes": 64406,
-  "sha256": "35b9ba9058cfb1277c5c1ef1668b07058801d2b526eb5bf6fbe554cb37d1d605",
+  "bytes": 190441,
+  "sha256": "5cc5c69263149bb1230a3aea8faabcf5222ba8b3e243b9da110aaa84f3a90f9d",
   "opportunities": 10,
   "program_knowledge": 3,
-  "experience_summaries": 9,
+  "experience_summaries": 14,
   "raw_documents": 0,
-  "private_profiles": 0
+  "private_profiles": 0,
+  "pattern_extractor": "llm_full_experience_v2",
+  "writing_patterns": 17,
+  "criterion_observations": 20,
+  "outcome_comparisons": 5
 }

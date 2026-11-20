@@ -1,0 +1,99 @@
+{
+  "parent_term": "maintenance allowance",
+  "query_id": "0d6958461a337706510682a52074ea2252773606813ab32d036563c80b6b6c6a",
+  "q": "\"maintenance allowance\" international postgraduate students financial support",
+  "wave": 1,
+  "query_payload": {
+    "receipt": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/model-calls/20261018T073341096039-e36ddd1155",
+    "executed_at": "2026-10-18T07:34:43.944146+00:00",
+    "event_ids": [
+      "exec-e56b9b5a-e15b-42e0-8beb-4e8b548656db"
+    ],
+    "queries": [
+      "\"maintenance allowance\" international postgraduate students financial support"
+    ],
+    "matching_result": [
+      {
+        "url": "https://www.campusfrance.org/en/guide-scholarship-holder-study",
+        "title": "Study scholarships: how-to guide | Campus France",
+        "snippet": "## Allowances, education and erolment fees### Maintenance allowance ... As a French government scholarship holder, and upon submitting your scholarship certificate or certificate of financial"
+      }
+    ],
+    "complete_response_sha256": "cab0524de3e882a381db948aa9bb844679dd6bf6711bc7dae7925f273f3632f1"
+  },
+  "rank": 1,
+  "document_id": "4120cc554e9fd6bc5c23958f93a5d227f937cb7e6e21216126cf5b177b0e81b2",
+  "url": "https://www.campusfrance.org/en/guide-scholarship-holder-study",
+  "document_payload": {
+    "final_url": "https://www.campusfrance.org/en/guide-scholarship-holder-study",
+    "fetched_at": "2026-10-18T07:36:56.633206+00:00",
+    "content_sha256": "8dcdf982ec2d345efc8ad70fd4b080b294fb6e69d89222bf217e994c286c2df6",
+    "text_sha256": "04f01088cbf555e8b2d28e201c71df6f82c1243cc8844f8dfdf2059b27498b0f",
+    "raw_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/raw/8dcdf982ec2d345efc8ad70fd4b080b294fb6e69d89222bf217e994c286c2df6.html",
+    "text_path": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/text/8dcdf982ec2d345efc8ad70fd4b080b294fb6e69d89222bf217e994c286c2df6.txt",
+    "characters": 17428,
+    "kind": "html"
+  },
+  "term_id": "3272aee2d5e72dbace6e43cb2c2527f0e9b7b6954ababb6527086e76492f6ea2",
+  "term": "housing allowance",
+  "term_payload": {
+    "term": "housing allowance",
+    "lane": "announcement",
+    "kind": "funding_benefit",
+    "quote": "for more information on housing allowance and tuition fees, please contact your mobility officer.",
+    "explanation": "Finds financial allowances specifically for accommodation costs.",
+    "equivalent_to": "",
+    "source_url": "https://www.campusfrance.org/en/guide-scholarship-holder-study",
+    "document_id": "4120cc554e9fd6bc5c23958f93a5d227f937cb7e6e21216126cf5b177b0e81b2",
+    "chunk_id": "60535ce6de0694835053b5242ed610ef002cdabf0a246431744294fe80abe258",
+    "receipt": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/model-calls/20261018T074304460484-fe9093b83f",
+    "accepted_at": "2026-10-18T07:43:54.354159+00:00",
+    "source_discovery_wave": 1,
+    "validation": "exact_phrase_and_quote",
+    "relevance": "LLM_judgment"
+  },
+  "next_queries": [
+    {
+      "id": "60933110e88d2c5747a5a372d1ad935c48b94daac971ef6c0eadb5caaa4d8b20",
+      "q": "\"housing allowance\" PhD graduate student funding eligibility application",
+      "wave": 2,
+      "status": "executed"
+    },
+    {
+      "id": "48f70690389ff1e0b955c37259ff1e6c184adc01fba857e7bbe0cecfeb3799a4",
+      "q": "\"housing allowance\" international postgraduate students financial support",
+      "wave": 2,
+      "status": "executed"
+    }
+  ],
+  "raw_path_hash_verified": true,
+  "text_path_hash_verified": true,
+  "quote_exact_present": true,
+  "text_locator_line": 341,
+  "raw_event_verification": [
+    {
+      "type": "item.started",
+      "item_type": "web_search",
+      "id": "exec-e56b9b5a-e15b-42e0-8beb-4e8b548656db",
+      "action_type": "other",
+      "queries": [
+        ""
+      ],
+      "matched_query": false,
+      "returned_original_url": false
+    },
+    {
+      "type": "item.completed",
+      "item_type": "web_search",
+      "id": "exec-e56b9b5a-e15b-42e0-8beb-4e8b548656db",
+      "action_type": "search",
+      "queries": [
+        "\"maintenance allowance\" international postgraduate students financial support"
+      ],
+      "matched_query": true,
+      "returned_original_url": true
+    }
+  ],
+  "raw_events_file": "/home/longnew/Desktop/course_work/tmp/benefitlens_auto_dictionary_20261018/run-v3/model-calls/20261018T073341096039-e36ddd1155/events.jsonl",
+  "raw_completed_receipt_verified": true
+}

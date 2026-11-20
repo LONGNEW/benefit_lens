@@ -1,0 +1,17 @@
+{
+  "schema": "experience-coverage-v1",
+  "minimum_experiences_per_notice": 3,
+  "minimum_total_experiences": 50000,
+  "planning_denominator": "all_non_sample_discovery_records",
+  "planning_reason": "Conservative collection capacity target including unresolved notice candidates; publishable notices are reported separately.",
+  "per_notice_link": "exact_program_id_only",
+  "program_aliases": {
+    "fulbright-korea-gsp": "fulbright-graduate-student-program"
+  },
+  "counting_unit": "person_program_round_or_anonymous_original_episode",
+  "include_material_roles": ["application_process", "participation_experience"],
+  "writing_material_counted_separately": ["application_document"],
+  "exclude": ["inactive", "missing_original", "unresolved_attribution", "generic_guide", "reference_material"],
+  "writing_pattern_fields": ["source_observation", "writing_order", "required_user_facts", "follow_up_questions", "behavior", "example", "evidence", "transfer_scope"],
+  "completion_requires": ["global_ratio", "per_notice_linked_coverage"]
+}

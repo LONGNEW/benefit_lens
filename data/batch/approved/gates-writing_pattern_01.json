@@ -1,0 +1,26 @@
+{
+  "writing_pattern": [
+    {
+      "pattern_id": "gc26w-infection-phd-rp-prep",
+      "program_id": "gates-cambridge",
+      "target_round_id": "2026-2027",
+      "target_claim_id": "gc26w-infection-phd-rp",
+      "pattern_kind": "structure",
+      "body": {
+        "title": "연구 질문, 문헌과의 차이, 실행 가능성 정리",
+        "decision": "adopted_for_confirmed_course_preparation",
+        "confirmed_course": "PhD in Infection and Immunity",
+        "slots": [
+          "연구 주제와 구체적 질문",
+          "문헌에서 확인한 공백과 기여",
+          "학문적 중요성",
+          "가용 시간, 자원과 실행 단계"
+        ],
+        "question": "기존 연구의 어느 부분을 확장하며 그 방법을 가용 시간과 자원으로 실행할 수 있나요?",
+        "scope": "2026/27 보존 과정에 확인된 연구계획 제출 준비용이다. Gates 장학금 추가 질문, 별도 폼의 원문이나 분량은 확인되지 않아 작성 패턴으로 생성하지 않았다. 과거 Gates 에세이를 연구계획 형식의 근거로 쓰지 않았다."
+      },
+      "scope_status": "official_only",
+      "causal_success_claim": false
+    }
+  ]
+}

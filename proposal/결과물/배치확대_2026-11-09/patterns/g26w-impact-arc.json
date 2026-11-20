@@ -1,0 +1,70 @@
+{
+  "body": {
+    "scope": "G1은 분야와 다른 응용에서 신뢰성이 중요한 이유를 연결하고 G4는 예상되는 피해와 이를 줄일 연구 경로를 연결한다. 과거 문장, 결과, 제시 순서를 그대로 적용하지 않는다.",
+    "slots": [
+      "연구가 해결하려는 구체적 문제",
+      "분야와 사회에서 영향을 받는 대상 및 예상 변화",
+      "문제가 중요해진 본인의 구체적 경험",
+      "예상 효과와 이미 관측한 결과의 구분"
+    ],
+    "title": "원하는 영향과 연구 동기를 한 경로로 연결",
+    "decision": "adopted",
+    "language": "en",
+    "question": "어느 집단에 어떤 변화가 예상되고, 본인의 어느 경험이 그 문제를 중요하게 만들었나요?",
+    "max_words": 350
+  },
+  "evidence": [
+    {
+      "url": "https://hyeonword.com/google_fellowship_materials/assets/essay_hj_googlefellowship.pdf",
+      "quote": "underscoring the value of reliability",
+      "case_id": "g26w-g1",
+      "locator": "L15-L33",
+      "purpose": "case_observation",
+      "document_id": "g26w-hyeon-essay-ddd4094777d6",
+      "evidence_id": "g26w-g1-impact-observed",
+      "source_role": "application_statement",
+      "text_sha256": "86137fed1534db3245b92aeb34be65cb50ceda25d3165a093403a1d33165b74d",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "google-phd-fellowship"
+    },
+    {
+      "url": "https://www.morgan-klaus.com/pdfs/misc/Fellowship_Materials/Google2021_ImpactStatement.pdf",
+      "quote": "mitigate technological harm",
+      "case_id": "g26w-g4",
+      "locator": "L16-L32",
+      "purpose": "case_observation",
+      "document_id": "g26w-morgan-impact-8c17a2169b3d",
+      "evidence_id": "g26w-g4-impact-observed",
+      "source_role": "application_statement",
+      "text_sha256": "05ad396d11c9249873d64ce7ba30f07f3d70a6b22406f0dbf64ab63dce3c1be6",
+      "capture_mode": "full_document",
+      "source_round_id": null,
+      "source_program_id": "google-phd-fellowship"
+    },
+    {
+      "url": "https://research.google/programs-and-events/phd-fellowship/",
+      "quote": "desired impact your research will make",
+      "case_id": null,
+      "locator": "L178-L182",
+      "purpose": "official_constraint",
+      "document_id": "g26w-google-official-17fcd780d172",
+      "evidence_id": "g26w-impact",
+      "source_role": "official_guideline",
+      "text_sha256": "9905fc9c5da269239ba0726a473d51034e75e77e182680eb7fd1dcdec4f7b5bd",
+      "capture_mode": "full_document",
+      "source_round_id": "2026-east-asia",
+      "source_program_id": "google-phd-fellowship"
+    }
+  ],
+  "pattern_id": "g26w-impact-arc",
+  "program_id": "google-phd-fellowship",
+  "pattern_kind": "structure",
+  "scope_status": "historical_transfer",
+  "target_field": "research_impact_essay",
+  "notice_version": "sample-2026-10-15",
+  "opportunity_id": "google-east-asia-2026",
+  "target_claim_id": "g26w-research-impact",
+  "target_round_id": "2026-east-asia",
+  "causal_success_claim": false
+}

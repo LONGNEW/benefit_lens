@@ -1,0 +1,40 @@
+{
+  "pattern_evidence": [
+    {
+      "pattern_id": "gc26w-infection-phd-rp-prep",
+      "program_id": "gates-cambridge",
+      "target_round_id": "2026-2027",
+      "evidence_id": "gc26w-infection-rp",
+      "document_id": "gc26w-cam-2026-infection-17da16ba9328",
+      "source_program_id": "gates-cambridge",
+      "source_round_id": "2026-2027",
+      "case_id": null,
+      "case_document_role": null,
+      "purpose": "official_constraint"
+    },
+    {
+      "pattern_id": "gc26w-infection-phd-rp-prep",
+      "program_id": "gates-cambridge",
+      "target_round_id": "2026-2027",
+      "evidence_id": "gc26w-infection-cycle",
+      "document_id": "gc26w-cam-2026-infection-17da16ba9328",
+      "source_program_id": "gates-cambridge",
+      "source_round_id": "2026-2027",
+      "case_id": null,
+      "case_document_role": null,
+      "purpose": "official_constraint"
+    },
+    {
+      "pattern_id": "gc26w-infection-phd-rp-prep",
+      "program_id": "gates-cambridge",
+      "target_round_id": "2026-2027",
+      "evidence_id": "gc26w-proposal-guide",
+      "document_id": "gc26w-cam-2026-docs-a9eb5bb58ecc",
+      "source_program_id": "gates-cambridge",
+      "source_round_id": "2026-2027",
+      "case_id": null,
+      "case_document_role": null,
+      "purpose": "official_guidance"
+    }
+  ]
+}

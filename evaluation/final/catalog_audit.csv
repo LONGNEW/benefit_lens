@@ -1,0 +1,11 @@
+opportunity_id,program_id,round_id,source_state,source_ids,eligibility_state,condition_leaves,additional_checks,requirements,experience_cases,writing_patterns,gold_status,split
+gates-cambridge-2026-2027,gates-cambridge,2026-2027,source_backed,gates-official,unstructured,0,3,1,4,5,pending,regression
+google-east-asia-2026,google-phd-fellowship,2026-east-asia,source_backed,google-official,structured,2,6,2,7,7,pending,regression
+ikef-undergraduate-2026,ikef-domestic-undergraduate,2026-undergraduate,source_backed,ikef-official,structured,4,4,2,0,0,pending,regression
+nvidia-2027-2028,nvidia-graduate-fellowship,2027-2028,source_backed,nvidia-official,structured,2,4,2,3,5,pending,regression
+postech-ax-first-semester,postech-ax-first-semester,2026-snapshot,summary_only,,structured,6,0,0,0,0,pending,regression
+postech-k-top-tier,postech-k-top-tier,2026-snapshot,summary_only,,structured,3,0,0,0,0,pending,regression
+posco-overseas-2026,posco-overseas-2026,2026-snapshot,summary_only,,structured,5,0,2,0,0,pending,regression
+hyundai-mobis-research-scholar-2026-h2,hyundai-mobis-research-scholar-2026-h2,2026-h2,summary_only,,structured,4,0,2,0,0,pending,regression
+kosaf-presidential-2026,kosaf-presidential-2026,2026-snapshot,summary_only,,structured,3,0,2,0,0,pending,regression
+kosaf-hope-ladder-2026-s2,kosaf-hope-ladder-2026-s2,2026-snapshot,summary_only,,structured,7,0,2,0,0,pending,regression

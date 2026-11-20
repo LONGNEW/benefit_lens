@@ -1,0 +1,87 @@
+{
+  "claim": [
+    {
+      "claim_id": "cern-744000159596524-enrollment",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "kind": "eligibility",
+      "field": "student_enrollment",
+      "at": "during_internship",
+      "value": {
+        "required": true,
+        "full_time_during_internship": true,
+        "levels": [
+          "bachelor",
+          "master"
+        ],
+        "minimum_completed_semesters_at_start": 6,
+        "phd_excluded": true,
+        "condition_summary": "CERN 공식 문구의 해당 인턴십 중 전일제 재학 조건"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159596524-nationality-claim",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "kind": "eligibility",
+      "field": "nationality_scope",
+      "at": "application",
+      "value": {
+        "scope": "all nationalities",
+        "additional_application_countries": []
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159596524-stipend-claim",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "kind": "benefit",
+      "field": "internship_allowance",
+      "at": "during_internship",
+      "value": {
+        "amount": 94,
+        "currency": "CHF",
+        "basis": "calendar_day"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159596524-documents",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "kind": "submission",
+      "field": "application_documents",
+      "at": "application",
+      "value": {
+        "required": [
+          "cv",
+          "academic_reference",
+          "official_academic_transcript",
+          "certificate_of_enrolment"
+        ],
+        "optional": [
+          "other_relevant_document"
+        ],
+        "scope": "공식 제출 목록에서 확인한 항목"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "claim_id": "cern-744000159596524-form-link",
+      "program_id": "cern-openlab-summer-student-programme",
+      "round_id": "2027-744000159596524",
+      "kind": "form",
+      "field": "application_link",
+      "at": "application",
+      "value": {
+        "url": "https://jobs.smartrecruiters.com/CERN/744000159596524-cern-openlab-summer-student-programme-2027?oga=true",
+        "native_posting_id": "744000159596524",
+        "private_fields_status": "unknown",
+        "source": "public posting API applyUrl"
+      },
+      "review_state": "reviewed"
+    }
+  ]
+}

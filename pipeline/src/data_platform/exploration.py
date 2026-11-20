@@ -487,6 +487,9 @@ def main():
     p.add_argument('--ingest',action='store_true')
     p.add_argument('--workers',type=int,default=6)
     a=p.parse_args()
+    if a.collect or a.sheets:
+        from .demo_scope import require_collection_enabled
+        require_collection_enabled()
     f=Frontier(a.output)
     collector_lock=None
     if a.collect:

@@ -1,0 +1,72 @@
+{
+  "scope": "inventory of the stored demonstration sample, not a population or capacity estimate",
+  "path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/data/sample/programs.json",
+  "sha256": "5cc5c69263149bb1230a3aea8faabcf5222ba8b3e243b9da110aaa84f3a90f9d",
+  "snapshot_as_of": "2026-10-15",
+  "rows": 10,
+  "unique_program_round_pairs": 10,
+  "recipient_type": {
+    "individual": 10
+  },
+  "category": {
+    "admission_funding": 1,
+    "fellowship": 3,
+    "scholarship": 6
+  },
+  "issuer_country_not_applicant_eligibility": {
+    "GB": 1,
+    "US": 2,
+    "KR": 7
+  },
+  "issuer_type": {
+    "foundation": 3,
+    "company": 3,
+    "school": 2,
+    "national": 2
+  },
+  "extraction_status": {
+    "partial": 1,
+    "reviewed_demo": 3,
+    "public_demo_subset": 6
+  },
+  "benefit_labels_occurrences_not_program_counts": {
+    "tuition": 4,
+    "living_allowance": 1,
+    "research_fund": 3,
+    "cash": 5,
+    "living_expenses": 1,
+    "mentoring": 1
+  },
+  "nvidia_handoff": {
+    "program_id": "nvidia-graduate-fellowship",
+    "round_id": "2027-2028",
+    "category": "fellowship",
+    "activity_requirement": {
+      "description": "수혜 학년도 전에 지정된 국가의 NVIDIA 연구소에서 대면 여름 인턴십을 수행해야 합니다.",
+      "evidence_ref": "N7"
+    },
+    "activity_evidence": {
+      "id": "N7",
+      "url": "https://research.nvidia.com/graduate-fellowships",
+      "anchor": "summer internship",
+      "locator": "In-person internship",
+      "source_id": "nvidia-official",
+      "content_sha256": "63c3869bae8a40d88c736f299ee3f09da432cd707ff317b4e7ba951848b05bda"
+    },
+    "research_proposal": {
+      "kind": "research_proposal",
+      "max_pages": 2,
+      "references_excluded": true
+    },
+    "proposal_evidence": {
+      "id": "N8",
+      "url": "https://research.nvidia.com/graduate-fellowships",
+      "anchor": "bibliography",
+      "locator": "How to apply",
+      "source_id": "nvidia-official",
+      "content_sha256": "63c3869bae8a40d88c736f299ee3f09da432cd707ff317b4e7ba951848b05bda"
+    },
+    "interpretation": "The fellowship remains one opportunity. The linked internship is an activity requirement and the proposal length is a submission constraint.",
+    "status": "example derived from existing structured data; no new publishing or eligibility assessment"
+  }
+}

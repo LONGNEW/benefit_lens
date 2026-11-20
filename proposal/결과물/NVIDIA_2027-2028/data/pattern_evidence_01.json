@@ -1,0 +1,160 @@
+{
+  "pattern_evidence": [
+    {
+      "pattern_id": "NV27-RP-ARC",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "OFFICIAL-FORMAT",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": "2027-2028",
+      "case_id": null,
+      "case_document_role": null,
+      "purpose": "official_constraint"
+    },
+    {
+      "pattern_id": "NV27-RP-ARC",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "OFFICIAL-VISION",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": "2027-2028",
+      "case_id": null,
+      "case_document_role": null,
+      "purpose": "official_guidance"
+    },
+    {
+      "pattern_id": "NV27-RP-ARC",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "OFFICIAL-PROGRESS",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": "2027-2028",
+      "case_id": null,
+      "case_document_role": null,
+      "purpose": "official_guidance"
+    },
+    {
+      "pattern_id": "NV27-RP-ARC",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "N1-RESEARCH-VISION",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": null,
+      "case_id": "N1",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    },
+    {
+      "pattern_id": "NV27-RP-ARC",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "N1-RESULT-COMPARE",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": null,
+      "case_id": "N1",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    },
+    {
+      "pattern_id": "NV27-RP-ARC",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "N1-NEXT-WORK",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": null,
+      "case_id": "N1",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    },
+    {
+      "pattern_id": "NV27-RP-ARC",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "N2-GOAL-TO-PROJECTS",
+      "document_id": "N2-STATEMENT-d1cc2f892c3b",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": null,
+      "case_id": "N2",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    },
+    {
+      "pattern_id": "NV27-RP-ARC",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "N3-OBSERVED-METRIC",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": null,
+      "case_id": "N3",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    },
+    {
+      "pattern_id": "NV27-RP-ARC",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "N3-NEXT-PROBE",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": null,
+      "case_id": "N3",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    },
+    {
+      "pattern_id": "NV27-RP-GPU-LINK",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "OFFICIAL-GPU-RELEVANCE",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": "2027-2028",
+      "case_id": null,
+      "case_document_role": null,
+      "purpose": "official_guidance"
+    },
+    {
+      "pattern_id": "NV27-RP-GPU-LINK",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "N1-GPU-IMPLEMENTATION",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": null,
+      "case_id": "N1",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    },
+    {
+      "pattern_id": "NV27-RP-GPU-LINK",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "N2-GPU-TEAM",
+      "document_id": "N2-STATEMENT-d1cc2f892c3b",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": null,
+      "case_id": "N2",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    },
+    {
+      "pattern_id": "NV27-RP-GPU-LINK",
+      "program_id": "nvidia-graduate-fellowship",
+      "target_round_id": "2027-2028",
+      "evidence_id": "N3-COLLAB-PROPOSAL",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "source_program_id": "nvidia-graduate-fellowship",
+      "source_round_id": null,
+      "case_id": "N3",
+      "case_document_role": "application_statement",
+      "purpose": "case_observation"
+    }
+  ]
+}

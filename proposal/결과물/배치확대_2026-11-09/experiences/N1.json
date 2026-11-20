@@ -1,0 +1,45 @@
+{
+  "notes": "공개 지원서와 공식 수상은 확인했다. 정확한 제출 회차, 최종본 및 문항 매핑은 미확인.",
+  "case_id": "N1",
+  "program_id": "nvidia-graduate-fellowship",
+  "outcome_url": "https://research.nvidia.com/graduate-fellowships/2023",
+  "outcome_basis": "official_record",
+  "outcome_quote": "Rohan Yadav",
+  "case_documents": [
+    {
+      "url": "https://rohany.github.io/",
+      "case_id": "N1",
+      "finality": "not_applicable",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_id": "N1-INDEX-abd695f019fd",
+      "capture_mode": "full_document",
+      "document_role": "application_index",
+      "binding_evidence_id": "N1-LINK"
+    },
+    {
+      "url": "https://research.nvidia.com/graduate-fellowships/2023",
+      "case_id": "N1",
+      "finality": "not_applicable",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_id": "N1-OUTCOME-23eb6b58ee64",
+      "capture_mode": "full_document",
+      "document_role": "outcome_record",
+      "binding_evidence_id": "N1-RESULT"
+    },
+    {
+      "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+      "case_id": "N1",
+      "finality": "unknown",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "capture_mode": "full_document",
+      "document_role": "application_statement",
+      "binding_evidence_id": "N1-LINK"
+    }
+  ],
+  "outcome_status": "selected",
+  "experience_round_id": null,
+  "outcome_evidence_id": "N1-RESULT",
+  "outcome_capture_mode": "full_document",
+  "experience_round_label": "2023 award cohort"
+}

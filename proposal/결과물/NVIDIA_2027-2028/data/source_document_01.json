@@ -1,0 +1,124 @@
+{
+  "source_document": [
+    {
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "title": "NVIDIA Graduate Fellowship",
+      "url": "https://research.nvidia.com/graduate-fellowships",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T16:04:50.453553+00:00",
+      "raw_sha256": "f68d3f6ccbeb84586a1da02dc24b4e67291012a0d2d0fd8c360838d076ddb80f",
+      "text_sha256": "04b9b9d2edc87d2f702e3890175d82ee8e455aafbb13567b0e3cb8d81f9d435e",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/raw/OFFICIAL.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/text/OFFICIAL.txt"
+    },
+    {
+      "document_id": "PORTAL-40c13232c5c5",
+      "title": "Submission Portal Nvidia Grad Fellow 2027",
+      "url": "https://webportalapp.com/sp/nvidia_grad_fellow_2027",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T16:04:50.453990+00:00",
+      "raw_sha256": "40c13232c5c567e3cd09cc4d8a665ca30021f0d15ff69a889672cba3de9878e2",
+      "text_sha256": "533ced40eb743d11f62517252977416f184baf5068d415921ad3f063e1ad12e2",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/raw/PORTAL.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/text/PORTAL.txt"
+    },
+    {
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "title": "Performance Accessibility Through Distributed Array Programming",
+      "url": "https://rohany.github.io/reports/nvidia-fellowship-proposal.pdf",
+      "kind": "pdf",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T16:04:50.454363+00:00",
+      "raw_sha256": "1292bfba8ff41323fbbddab2328785ecf679dec7562a7fb0fb72723168f7f374",
+      "text_sha256": "0af72ca66677c3e931e1a0e7361c993d59febb08738f80173c2c3f11b8b3b963",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/raw/N1-STATEMENT.pdf",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/text/N1-STATEMENT.txt"
+    },
+    {
+      "document_id": "N1-INDEX-abd695f019fd",
+      "title": "Rohan Yadav public application index",
+      "url": "https://rohany.github.io/",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T16:04:50.454697+00:00",
+      "raw_sha256": "abd695f019fd9a85e4b64d73e3517682233d477348acc1d0994500e3901c6990",
+      "text_sha256": "55beb47c39a778a0ebb44127e61778357c0ff60f3ed45018a0e2e287d2fef0e6",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/raw/N1-INDEX.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/text/N1-INDEX.txt"
+    },
+    {
+      "document_id": "N1-OUTCOME-23eb6b58ee64",
+      "title": "2023 NVIDIA Graduate Fellowship Recipients",
+      "url": "https://research.nvidia.com/graduate-fellowships/2023",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T16:04:50.455130+00:00",
+      "raw_sha256": "23eb6b58ee64de5ec216e694a93aba3f0e1704ed5e6d6904db8c392e6e9e0641",
+      "text_sha256": "54e7c3c98b0a590693b8b5fbbc9e649f8b62d9f56314615f3eb6144e8b7e8e5f",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/raw/N1-OUTCOME.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/text/N1-OUTCOME.txt"
+    },
+    {
+      "document_id": "N2-STATEMENT-d1cc2f892c3b",
+      "title": "Research Summary",
+      "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+      "kind": "pdf",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T16:04:50.775962+00:00",
+      "raw_sha256": "d1cc2f892c3bae3931e57e2d9c54e8e14d7d3751bce515b0b659d83184f1bdb0",
+      "text_sha256": "4bac610f3574b02c61dc64992f4947682c6bf2579eee4dfbbf0c0fc494262dc3",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/raw/N2-STATEMENT.pdf",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/text/N2-STATEMENT.txt"
+    },
+    {
+      "document_id": "N2-PANEL-651d999ce104",
+      "title": "A Panel on Fellowships, 2024",
+      "url": "https://students-at-systems.org/pages/events/fellowship-panel.html",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T16:04:50.793902+00:00",
+      "raw_sha256": "651d999ce1040b17ef510c6a17854fa8970152df922a42a844c96bba0758e6a0",
+      "text_sha256": "7cbaed9e278d0e4f31d9ddab47f6c21b7ed0fb2e0ce4ea2a9b22a7132790baa9",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/raw/N2-PANEL.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/text/N2-PANEL.txt"
+    },
+    {
+      "document_id": "N2-OUTCOME-714690c58604",
+      "title": "2022 NVIDIA Graduate Fellowship Recipients",
+      "url": "https://research.nvidia.com/graduate-fellowships/2022",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T16:04:50.972674+00:00",
+      "raw_sha256": "714690c58604307bab53e3682afca7b56c69e13892b0ddac54e2328ff68491be",
+      "text_sha256": "a7485815890006aa6a3bdb4a5cb06153b14d8268cd80d9c29f823242a01187e6",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/raw/N2-OUTCOME.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/text/N2-OUTCOME.txt"
+    },
+    {
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "title": "Interrogating, understanding, and improving deep learning",
+      "url": "https://www.ruthfong.com/files/ruth_fong_nvidia_graduate_fellowship_statement_2017.pdf",
+      "kind": "pdf",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T16:04:51.001333+00:00",
+      "raw_sha256": "25ee765293861a712877b28173d0de9c7d997ba0f90af1957fb700e08fb28d18",
+      "text_sha256": "d1ccc09b076646f0446c113a7efe32b25d1609bfef5ff413234f16a3988536ae",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/raw/N3-STATEMENT.pdf",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/text/N3-STATEMENT.txt"
+    },
+    {
+      "document_id": "N3-OUTCOME-web-b4c5d68e8618",
+      "title": "Applying to the Open Philanthropy AI Fellowship (public excerpt only)",
+      "url": "https://medium.com/@ruthfong/applying-to-the-open-philanthropy-ai-fellowship-48dafe7fe27c",
+      "kind": "text",
+      "capture_mode": "public_web_excerpt",
+      "fetched_at": "2026-11-08T16:04:51.046273+00:00",
+      "raw_sha256": null,
+      "text_sha256": "b4c5d68e8618326f52de668e6107d059d71e8866a5552cd468fa502a224b7e31",
+      "raw_path": null,
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/delivery/nvidia-2027-2028-v1/text/N3-OUTCOME.txt"
+    }
+  ]
+}

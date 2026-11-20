@@ -1,0 +1,40 @@
+{
+  "claim_evidence": [
+    {
+      "claim_id": "g26w-research-proposal",
+      "evidence_id": "g26w-rp",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia"
+    },
+    {
+      "claim_id": "g26w-research-proposal",
+      "evidence_id": "g26w-english",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia"
+    },
+    {
+      "claim_id": "g26w-research-impact",
+      "evidence_id": "g26w-impact",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia"
+    },
+    {
+      "claim_id": "g26w-research-impact",
+      "evidence_id": "g26w-english",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia"
+    },
+    {
+      "claim_id": "g26w-leadership",
+      "evidence_id": "g26w-lead",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia"
+    },
+    {
+      "claim_id": "g26w-leadership",
+      "evidence_id": "g26w-english",
+      "program_id": "google-phd-fellowship",
+      "round_id": "2026-east-asia"
+    }
+  ]
+}

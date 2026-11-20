@@ -1,0 +1,45 @@
+{
+  "notes": "PDF 및 2024 패널은 공개 자료다. 수상 회차와 PDF 제출 회차를 동일시하지 않았다.",
+  "case_id": "N2",
+  "program_id": "nvidia-graduate-fellowship",
+  "outcome_url": "https://research.nvidia.com/graduate-fellowships/2022",
+  "outcome_basis": "official_record",
+  "outcome_quote": "Yuke Wang",
+  "case_documents": [
+    {
+      "url": "https://research.nvidia.com/graduate-fellowships/2022",
+      "case_id": "N2",
+      "finality": "not_applicable",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_id": "N2-OUTCOME-714690c58604",
+      "capture_mode": "full_document",
+      "document_role": "outcome_record",
+      "binding_evidence_id": "N2-RESULT"
+    },
+    {
+      "url": "https://students-at-systems.org/pages/events/fellowship-panel.html",
+      "case_id": "N2",
+      "finality": "not_applicable",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_id": "N2-PANEL-651d999ce104",
+      "capture_mode": "full_document",
+      "document_role": "panel",
+      "binding_evidence_id": "N2-ADVICE"
+    },
+    {
+      "url": "https://students-at-systems.org/assets/uploads/fellowship-panel/ywang_research_statement.pdf",
+      "case_id": "N2",
+      "finality": "unknown",
+      "program_id": "nvidia-graduate-fellowship",
+      "document_id": "N2-STATEMENT-d1cc2f892c3b",
+      "capture_mode": "full_document",
+      "document_role": "application_statement",
+      "binding_evidence_id": "N2-LINK"
+    }
+  ],
+  "outcome_status": "selected",
+  "experience_round_id": null,
+  "outcome_evidence_id": "N2-RESULT",
+  "outcome_capture_mode": "full_document",
+  "experience_round_label": "2022 award cohort"
+}

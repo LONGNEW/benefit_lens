@@ -1,0 +1,165 @@
+{
+  "source_document": [
+    {
+      "document_id": "ikef26-f66cf3cfc76b7d",
+      "title": "2026년도 21기 국내장학생 선발(학부)",
+      "url": "https://www.ikef.or.kr/page.php?id=%2Fkj%2Fscholar_schedule_detail&page=1&wr_id=102",
+      "kind": "html",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:37:45.957436+00:00",
+      "raw_sha256": "f66cf3cfc76b7d1f4702e49b7a00f9a4feea8d8eec2c4e3348196d36ca354ebc",
+      "text_sha256": "ec9b0567eb41e8770d24c314867f66463b7d967b50c2d71be63d021408213bac",
+      "raw_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/raw/f66cf3cfc76b7d1f4702e49b7a00f9a4feea8d8eec2c4e3348196d36ca354ebc.html",
+      "text_path": "/home/longnew/Desktop/course_work/26-2 학기/데이터엔지니어링/benefit_lens/.local/batch-sources/assets/text/ec9b0567eb41e8770d24c314867f66463b7d967b50c2d71be63d021408213bac.txt"
+    }
+  ],
+  "evidence": [
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "evidence_id": "ikef26-degree-source",
+      "document_id": "ikef26-f66cf3cfc76b7d",
+      "source_role": "official_notice",
+      "locator": "L6-L6",
+      "quote": "선발(학부)"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "evidence_id": "ikef26-transfer-source",
+      "document_id": "ikef26-f66cf3cfc76b7d",
+      "source_role": "official_notice",
+      "locator": "L87-L88",
+      "quote": "편입생은 지원대상에서 제외됨"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "evidence_id": "ikef26-aid-a-source",
+      "document_id": "ikef26-f66cf3cfc76b7d",
+      "source_role": "official_notice",
+      "locator": "L92-L113",
+      "quote": "학기당 금액"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "evidence_id": "ikef26-aid-b-source",
+      "document_id": "ikef26-f66cf3cfc76b7d",
+      "source_role": "official_notice",
+      "locator": "L114-L125",
+      "quote": "400"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "evidence_id": "ikef26-statement-source",
+      "document_id": "ikef26-f66cf3cfc76b7d",
+      "source_role": "official_notice",
+      "locator": "L234-L252",
+      "quote": "스스로 작성 할 것"
+    }
+  ],
+  "claim": [
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "claim_id": "ikef26-degree",
+      "kind": "eligibility",
+      "field": "degree_level",
+      "at": "application",
+      "value": {
+        "value": "undergraduate"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "claim_id": "ikef26-transfer",
+      "kind": "eligibility",
+      "field": "transfer_student",
+      "at": "application",
+      "value": {
+        "eligible": false
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "claim_id": "ikef26-aid-a",
+      "kind": "benefit",
+      "field": "scholarship_type_a",
+      "at": "award",
+      "value": {
+        "currency": "KRW",
+        "amount": 6000000,
+        "period": "semester",
+        "recipient": "undergraduate",
+        "alternative_to": "B-undergraduate"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "claim_id": "ikef26-aid-b",
+      "kind": "benefit",
+      "field": "scholarship_type_b_undergraduate",
+      "at": "award",
+      "value": {
+        "currency": "KRW",
+        "amount": 4000000,
+        "period": "semester",
+        "recipient": "undergraduate",
+        "alternative_to": "A"
+      },
+      "review_state": "reviewed"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "claim_id": "ikef26-statement",
+      "kind": "submission",
+      "field": "personal_statement",
+      "at": "application",
+      "value": {
+        "self_written": true
+      },
+      "review_state": "reviewed"
+    }
+  ],
+  "claim_evidence": [
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "claim_id": "ikef26-degree",
+      "evidence_id": "ikef26-degree-source"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "claim_id": "ikef26-transfer",
+      "evidence_id": "ikef26-transfer-source"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "claim_id": "ikef26-aid-a",
+      "evidence_id": "ikef26-aid-a-source"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "claim_id": "ikef26-aid-b",
+      "evidence_id": "ikef26-aid-b-source"
+    },
+    {
+      "program_id": "ikef-domestic-undergraduate",
+      "round_id": "2026-undergraduate",
+      "claim_id": "ikef26-statement",
+      "evidence_id": "ikef26-statement-source"
+    }
+  ]
+}

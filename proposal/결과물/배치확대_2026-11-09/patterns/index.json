@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cha27-official-proposal-guide",
+    "program_id": "colorado-cha-summer-fellowship",
+    "result": "cha27-official-proposal-guide.json"
+  },
+  {
+    "id": "gc26w-infection-phd-rp-prep",
+    "program_id": "gates-cambridge",
+    "result": "gc26w-infection-phd-rp-prep.json"
+  },
+  {
+    "id": "g26w-impact-arc",
+    "program_id": "google-phd-fellowship",
+    "result": "g26w-impact-arc.json"
+  },
+  {
+    "id": "g26w-leadership-arc",
+    "program_id": "google-phd-fellowship",
+    "result": "g26w-leadership-arc.json"
+  },
+  {
+    "id": "NV27-RP-ARC",
+    "program_id": "nvidia-graduate-fellowship",
+    "result": "NV27-RP-ARC.json"
+  },
+  {
+    "id": "NV27-RP-GPU-LINK",
+    "program_id": "nvidia-graduate-fellowship",
+    "result": "NV27-RP-GPU-LINK.json"
+  }
+]

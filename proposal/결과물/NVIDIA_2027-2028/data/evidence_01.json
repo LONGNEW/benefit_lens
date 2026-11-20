@@ -1,0 +1,274 @@
+{
+  "evidence": [
+    {
+      "evidence_id": "OFFICIAL-DATES",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "official_notice",
+      "locator": "L108-L116",
+      "quote": "Application dates"
+    },
+    {
+      "evidence_id": "OFFICIAL-FUNDING",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "official_notice",
+      "locator": "L38-L40",
+      "quote": "$60,000"
+    },
+    {
+      "evidence_id": "OFFICIAL-ELIGIBILITY",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "official_notice",
+      "locator": "L77-L92",
+      "quote": "PhD experience"
+    },
+    {
+      "evidence_id": "OFFICIAL-EXCEPTION",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L197-L199",
+      "quote": "exceptional cases"
+    },
+    {
+      "evidence_id": "OFFICIAL-SELECTION",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L118-L129",
+      "quote": "evaluate"
+    },
+    {
+      "evidence_id": "OFFICIAL-SUBMISSIONS",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L130-L150",
+      "quote": "Resume"
+    },
+    {
+      "evidence_id": "OFFICIAL-FORMAT",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L130-L131",
+      "quote": "plus a bibliography"
+    },
+    {
+      "evidence_id": "OFFICIAL-VISION",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L153-L154",
+      "quote": "Describe your vision"
+    },
+    {
+      "evidence_id": "OFFICIAL-PROGRESS",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L157-L158",
+      "quote": "Show your progress"
+    },
+    {
+      "evidence_id": "OFFICIAL-GPU-RELEVANCE",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "official_guideline",
+      "locator": "L159-L160",
+      "quote": "Connect the work to NVIDIA"
+    },
+    {
+      "evidence_id": "OFFICIAL-URL",
+      "document_id": "OFFICIAL-f68d3f6ccbeb",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "official_notice",
+      "locator": "L117",
+      "quote": "Apply Now"
+    },
+    {
+      "evidence_id": "PORTAL-LANDING",
+      "document_id": "PORTAL-40c13232c5c5",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": "2027-2028",
+      "source_role": "application_portal",
+      "locator": "L11-L20",
+      "quote": "Sign In"
+    },
+    {
+      "evidence_id": "N1-DOC",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L1-L2",
+      "quote": "Performance Accessibility"
+    },
+    {
+      "evidence_id": "N1-LINK",
+      "document_id": "N1-INDEX-abd695f019fd",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_index",
+      "locator": "L187-L189",
+      "quote": "My application statement for the NVIDIA Graduate Fellowship"
+    },
+    {
+      "evidence_id": "N1-RESULT",
+      "document_id": "N1-OUTCOME-23eb6b58ee64",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "outcome_record",
+      "locator": "L43-L44",
+      "quote": "Rohan Yadav"
+    },
+    {
+      "evidence_id": "N2-DOC",
+      "document_id": "N2-STATEMENT-d1cc2f892c3b",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L1-L2",
+      "quote": "Research Summary"
+    },
+    {
+      "evidence_id": "N2-ADVICE",
+      "document_id": "N2-PANEL-651d999ce104",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "panel",
+      "locator": "L37",
+      "quote": "Yuke advised highlighting key insights and comparing them to existing work."
+    },
+    {
+      "evidence_id": "N2-LINK",
+      "document_id": "N2-PANEL-651d999ce104",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "panel",
+      "locator": "L65-L71",
+      "quote": "Research Statements"
+    },
+    {
+      "evidence_id": "N2-RESULT",
+      "document_id": "N2-OUTCOME-714690c58604",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "outcome_record",
+      "locator": "L53-L54",
+      "quote": "Yuke Wang"
+    },
+    {
+      "evidence_id": "N3-DOC",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L5",
+      "quote": "Interrogating, understanding, and improving deep learning"
+    },
+    {
+      "evidence_id": "N3-RESULT",
+      "document_id": "N3-OUTCOME-web-b4c5d68e8618",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "reflection",
+      "locator": "L1",
+      "quote": "which I did not receive"
+    },
+    {
+      "evidence_id": "N1-RESEARCH-VISION",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L6-L12",
+      "quote": "close this gap in performance accessibility."
+    },
+    {
+      "evidence_id": "N1-RESULT-COMPARE",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L39-L48",
+      "quote": "competitive with kernels in hand-tuned systems"
+    },
+    {
+      "evidence_id": "N1-GPU-IMPLEMENTATION",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L54-L65",
+      "quote": "I utilized\nDISTAL to implement"
+    },
+    {
+      "evidence_id": "N1-NEXT-WORK",
+      "document_id": "N1-STATEMENT-1292bfba8ff4",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L66-L84",
+      "quote": "future work to generalize"
+    },
+    {
+      "evidence_id": "N2-GOAL-TO-PROJECTS",
+      "document_id": "N2-STATEMENT-d1cc2f892c3b",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L14-L21",
+      "quote": "Below I would briefly discuss my highlighted work to achieve this goal:"
+    },
+    {
+      "evidence_id": "N2-GPU-TEAM",
+      "document_id": "N2-STATEMENT-d1cc2f892c3b",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L9-L12",
+      "quote": "I worked with a\nteam of NVIDIA’s GPU experts"
+    },
+    {
+      "evidence_id": "N3-OBSERVED-METRIC",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L33-L39",
+      "quote": "We\nalso introduced a novel metric"
+    },
+    {
+      "evidence_id": "N3-NEXT-PROBE",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L40-L47",
+      "quote": "we plan to probe"
+    },
+    {
+      "evidence_id": "N3-COLLAB-PROPOSAL",
+      "document_id": "N3-STATEMENT-25ee76529386",
+      "program_id": "nvidia-graduate-fellowship",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L79-L83",
+      "quote": "opportunity to collaboratively\napply our research"
+    }
+  ]
+}

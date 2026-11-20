@@ -1,0 +1,119 @@
+{
+  "version": "paragraph-writing-v1",
+  "language": "ko",
+  "status": "editorial_templates_require_current_prompt_review",
+  "patterns": {
+    "research_fit": {
+      "title": "연구 또는 학업계획",
+      "question": "왜 이 기관에서 무엇을 연구하며, 어떤 방법으로 검증하는가?",
+      "scope": "기관 적합성과 연구 계획을 함께 묻는 문항",
+      "references": [
+        {"kind": "official_criteria", "url": "https://www.fulbright.or.kr/grant/graduate/"},
+        {"kind": "author_advice", "url": "https://www.fulbright.or.kr/en/hye-ri-yang-3/"},
+        {"kind": "author_reflection", "url": "https://www.helsinki.fi/assets/drupal/s3fs-public/migrated-degree-programme-group-pages/files/178252-2021_student_guide_book_-_final_compressed.pdf#page=20"}
+      ],
+      "material_selection": [
+        "수상이나 경력 목록 대신 연구 질문이 생긴 이유를 보여주는 본인의 관찰을 하나 고른다.",
+        "관찰에서 확인하지 못한 조건을 연구 질문으로 좁힌다. 소개할 기관 자원은 그 질문을 검증할 때 필요한 것으로 제한한다.",
+        "기관 이름만 바꿔도 성립하는 설명은 제외한다. 자원이 실제로 제공되는지 공식 자료로 확인한다."
+      ],
+      "paragraphs": [
+        {
+          "purpose": "경험에서 연구 질문을 도출한다",
+          "opening_intent": "관찰한 문제와 범위를 첫 문장에서 명시한다",
+          "opening": "저는 {{past_context}}에서 {{observed_problem}}을 확인했습니다.",
+          "body": ["당시 제가 맡은 일은 {{personal_action}}이었고, 그 과정에서 {{observed_evidence}}를 확인했습니다."],
+          "closing_intent": "확인한 사실에서 아직 답하지 못한 질문을 넘긴다",
+          "closing": "이 경험에서 ‘{{research_focus}}가 {{outcome_question}}’를 연구 질문으로 삼았습니다.",
+          "bridge_to_next": "research_focus"
+        },
+        {
+          "purpose": "같은 연구 질문에 기관 자원이 필요한 이유를 보인다",
+          "opening_intent": "직전 질문을 받아 기관 자원의 쓰임을 설명한다",
+          "opening": "이 질문에 답하려면 {{research_focus}} 여부에 따른 차이를 비교해야 합니다.",
+          "body": ["이를 위해 {{program_resource}}를 활용해 {{resource_use}}를 진행하겠습니다."],
+          "closing_intent": "기관 자원을 구체적인 첫 검증으로 연결한다",
+          "closing": "비교의 첫 단계는 {{first_test}}을 수행하는 {{first_test_label}}입니다.",
+          "bridge_to_next": "first_test_label"
+        },
+        {
+          "purpose": "첫 검증부터 결과 공유까지 실행 계획을 제시한다",
+          "opening_intent": "직전 문단이 약속한 첫 검증의 일정과 방식을 말한다",
+          "opening": "{{period}}에는 이 {{first_test_label}}을 진행하겠습니다.",
+          "body": ["비교 결과는 {{criterion}}을 기준으로 판단하고, {{result_artifact}}에 정리하겠습니다."],
+          "closing_intent": "첫 문단의 질문에 어떤 답이나 결과물을 남길지 닫는다",
+          "closing": "이 결과를 {{beneficiary}}와 공유해 {{intended_use}}에 쓰이도록 하겠습니다.",
+          "bridge_to_next": null
+        }
+      ]
+    },
+    "execution_plan": {
+      "title": "프로젝트 실행계획",
+      "question": "과제를 어떻게 나눠 무엇을 만들고 어떻게 검증할 것인가?",
+      "scope": "구체적인 일정이나 중간 산출물이 필요한 계획 문항",
+      "references": [
+        {"kind": "official_guidance", "url": "https://www.outreachy.org/docs/applicant/"},
+        {"kind": "author_reflection", "url": "https://dev.to/linsmed/the-contribution-phase-is-over-here-is-what-i-learned-building-for-debian-2p4a"}
+      ],
+      "material_selection": [
+        "실제로 읽거나 시험한 현황과 제약을 선택한다. 직접 확인하지 않은 시스템 구조는 질문으로 남긴다.",
+        "더 어려워 보이는 일을 앞에 두기보다, 후속 작업이 의존하는 산출물을 먼저 둔다.",
+        "단계마다 독립적으로 보여주거나 리뷰받을 수 있는 산출물 하나를 둔다. 완료하지 않은 작업은 계획형으로 쓴다."
+      ],
+      "paragraphs": [
+        {
+          "purpose": "현황과 작업 순서의 이유를 밝힌다",
+          "opening_intent": "해결할 문제를 관찰한 범위에서 한정한다",
+          "opening": "{{current_context}}에서 먼저 해결할 문제는 {{concrete_problem}}입니다.",
+          "body": ["{{observed_dependency}}부터 정해야 후속 기능에서 같은 공고를 한 번만 보여 줄 수 있습니다."],
+          "closing_intent": "다음 문단의 첫 산출물을 지정한다",
+          "closing": "따라서 첫 산출물은 {{first_deliverable}}입니다.",
+          "bridge_to_next": "first_deliverable"
+        },
+        {
+          "purpose": "앞 단계와 뒤 단계의 산출물, 검증과 리뷰를 연결한다",
+          "opening_intent": "앞에서 지정한 산출물을 기간과 검증 기준에 묶는다",
+          "opening": "{{first_period}}에는 {{first_deliverable}}을 만들고 {{first_check}}을 확인하겠습니다.",
+          "body": ["그 결과를 바탕으로 {{next_period}}에 {{next_deliverable}}을 구현하겠습니다. {{review_checkpoint}}에서 결과와 남은 위험을 검토하겠습니다."],
+          "closing_intent": "완료 판단과 범위 조정 조건을 명시한다",
+          "closing": "완료 여부는 {{completion_check}}으로 판단하고, 일정이 밀리면 {{fallback_scope}}까지 마무리하겠습니다.",
+          "bridge_to_next": null
+        }
+      ]
+    },
+    "experience_evidence": {
+      "title": "본인의 기여와 검증",
+      "question": "무엇을 책임졌고, 어떻게 판단하고 검증했는가?",
+      "scope": "역량, 기여 또는 문제 해결을 실제 사례로 묻는 문항",
+      "references": [
+        {"kind": "participation_report", "url": "https://higherin.com/review/83060/hymans-robertson/summer-student"},
+        {"kind": "author_reflection", "url": "https://dev.to/linsmed/the-contribution-phase-is-over-here-is-what-i-learned-building-for-debian-2p4a"}
+      ],
+      "material_selection": [
+        "경력 중에서 본인의 판단과 결과를 함께 보여주는 경험 하나를 선택한다.",
+        "팀 전체 성과보다 본인 책임 범위와 그 사람이 바꾼 것을 골라 쓴다.",
+        "수치가 확인되지 않으면 테스트나 결과물로 확인된 범위까지만 쓰고 수치를 만들지 않는다."
+      ],
+      "paragraphs": [
+        {
+          "purpose": "문제, 내 역할, 바꾼 결정을 연결한다",
+          "opening_intent": "팀의 과제와 개인의 책임을 한 문장으로 구분한다",
+          "opening": "{{project_context}}에서 저는 {{responsibility}}을 맡았습니다.",
+          "body": ["처음에는 {{initial_approach}}을 검토했으나 {{decision_trigger}}를 확인했습니다."],
+          "closing_intent": "검증할 대상을 다음 문단의 주제로 넘긴다",
+          "closing": "그래서 제가 바꾼 것은 {{chosen_change}}입니다.",
+          "bridge_to_next": "chosen_change"
+        },
+        {
+          "purpose": "결정의 결과를 검증 가능한 범위까지 설명한다",
+          "opening_intent": "앞에서 소개한 변경을 어떤 조건에서 시험했는지 밝힌다",
+          "opening": "{{chosen_change}}을 {{test_setting}}에서 검증했습니다.",
+          "body": ["{{operational_rule}}을 적용한 뒤 {{measurement_or_artifact}}에서 {{confirmed_result}}을 확인했습니다."],
+          "closing_intent": "이번 관찰이 뒷받침하는 역량을 필요한 범위까지 닫는다",
+          "closing": "이 과정에서 제가 책임진 범위는 {{verified_contribution}}입니다.",
+          "bridge_to_next": null
+        }
+      ]
+    }
+  }
+}

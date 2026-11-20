@@ -1,0 +1,36 @@
+{
+  "version":"writing-pattern-taxonomy-v1",
+  "status":"analyst_specification_grounded_in_source_rules_and_descriptive_audit",
+  "scope":"A compositional taxonomy for application writing. Existing sources do not establish an exhaustive inventory or calibrated admissions effects.",
+  "levels":[
+    {"id":"task","name":"문항과 글의 유형","fields":["exact_question","required_points","genre","length_and_format","program_and_round"],"question":"읽는 사람이 이 글에서 무엇을 판단하려는가?"},
+    {"id":"material","name":"경험과 근거 선택","fields":["relevance_to_question","own_role","action_or_decision","observable_result","fact_provenance","limitations"],"question":"이 경험이 문항의 답을 뒷받침하며 본인의 역할을 설명하는가?"},
+    {"id":"document","name":"글 전체의 구성","fields":["paragraph_purposes","move_order","optional_moves","coverage_of_required_points"],"question":"앞 문단에서 생긴 질문을 다음 문단이 해결하는가?"},
+    {"id":"paragraph","name":"문단 내부의 전개","fields":["opening_intent","supporting_material","reasoning_link","closing_intent"],"question":"첫 문장이 연 질문을 행동과 근거로 풀고 마지막 문장에서 의미를 도출하는가?"},
+    {"id":"relation","name":"문장과 문단의 연결","fields":["support","cause","contrast","qualification","elaboration","temporal_dependency","goal_resource_fit"],"question":"두 부분의 관계가 독자에게 드러나는가?"},
+    {"id":"revision","name":"표현의 수정","fields":["clarity","coherence","fluency","style","meaning_change","fact_preservation"],"question":"수정이 정보를 보존하면서 해당 글의 목적에 도움이 되는가?"}
+  ],
+  "moves":["answer_claim","problem_or_gap","situation_constraint","own_role","action_decision","evidence_result","interpretation","program_resource_fit","future_plan","validation_risk","reflection","bridge"],
+  "patterns":[
+    {"id":"research_motivation","name":"연구 동기와 질문","opening_intent":"해결하려는 문제나 관찰의 차이를 제시한다.","moves":["problem_or_gap","evidence_result","interpretation","future_plan"],"closing_intent":"확인할 연구 질문이나 접근을 좁힌다.","material_selection":"직접 관찰한 현상, 기존 방법의 한계와 그 근거를 고른다.","bridge":"다음 문단에서 그 질문을 다룰 준비나 방법을 설명한다.","basis":["qa-187849","academic-author-jean:phd-application-2007/personal_statement.pdf"],"status":"source_grounded_editorial_pattern"},
+    {"id":"personal_contribution","name":"본인의 기여","opening_intent":"경험의 과제와 본인이 맡은 책임을 특정한다.","moves":["situation_constraint","own_role","action_decision","evidence_result","interpretation"],"closing_intent":"해당 행동과 결과가 보여 주는 역량을 설명한다.","material_selection":"팀 결과에서 본인의 선택과 수행이 분리되고 결과 기록이 있는 경험을 고른다.","bridge":"그 역량을 다음 연구나 과제에 어떻게 쓸지 연결한다.","basis":["qa-190775","academic-author-jean:phd-application-2007/personal_statement.pdf"],"status":"source_grounded_editorial_pattern"},
+    {"id":"program_fit","name":"프로그램 적합성","opening_intent":"다음 목표와 필요한 학습이나 자원을 밝힌다.","moves":["future_plan","evidence_result","situation_constraint","program_resource_fit","action_decision"],"closing_intent":"확인한 프로그램 자원으로 수행할 구체적인 일을 제시한다.","material_selection":"목표와 연결되는 준비 경험, 부족한 단계와 실제 제공 자원을 고른다.","bridge":"해당 자원을 활용할 작업과 기여를 다음 문단에서 구체화한다.","basis":["qa-125525","academic-author-jean:phd-application-2007/personal_statement.pdf"],"status":"source_grounded_editorial_pattern"},
+    {"id":"execution_plan","name":"실행 계획","opening_intent":"완성할 산출물과 핵심 제약을 밝힌다.","moves":["future_plan","situation_constraint","action_decision","validation_risk","evidence_result"],"closing_intent":"단계별 검증과 다음 단계로 넘어갈 조건을 정한다.","material_selection":"작업 의존관계, 기간, 산출물과 검증 방법을 고른다.","bridge":"예상 위험과 조정할 범위를 다음 문단에서 설명한다.","basis":["reflection-5003792","gsoc-iitbhu:Other Fellowships/LFX - 2023 - CNCF-Harbor - Paarth Agarwal.pdf"],"status":"source_grounded_editorial_pattern"},
+    {"id":"leadership_impact","name":"협업과 영향력","opening_intent":"공동 문제, 이해관계와 본인의 책임을 제시한다.","moves":["situation_constraint","own_role","action_decision","evidence_result","reflection"],"closing_intent":"관찰된 변화와 다음 협업에 적용할 배움을 설명한다.","material_selection":"직책보다 설득, 조정, 다른 사람의 행동 변화가 드러나는 사례를 고른다.","bridge":"배운 기준을 다음 공동 과제와 연결한다.","basis":["official-chevening-leadership-2023"],"status":"official_advice_grounded_editorial_pattern"},
+    {"id":"challenge_reflection","name":"어려움과 판단 수정","opening_intent":"기존 예상과 어긋난 관찰이나 제약을 밝힌다.","moves":["situation_constraint","evidence_result","interpretation","action_decision","validation_risk","reflection"],"closing_intent":"수정 후 확인한 범위와 이후의 판단 기준을 설명한다.","material_selection":"초기 가정, 수정 이유와 후속 확인이 남은 경험을 고른다.","bridge":"그 기준을 이후 경험에서 적용한 사례로 연결한다.","basis":["qa-183620","academic-author-jean:phd-application-2007/personal_statement.pdf"],"status":"source_grounded_editorial_pattern"}
+  ],
+  "composition_rules":[
+    "문항별로 필요한 패턴을 선택하고 서로 조합한다. 한 문서에 여러 패턴을 허용한다.",
+    "moves는 권장 전개다. 실제 문항이 요구하는 순서를 우선하며 모든 move를 매 문단에 넣지 않는다.",
+    "도입은 관찰이나 사례로 시작할 수 있다. opening_intent는 첫 문장의 기능을 기록하며 주장을 무조건 첫 문장에 강제하지 않는다.",
+    "마무리는 앞서 제시한 근거에서 도출하고 다음 문단의 목적과 의미로 연결한다.",
+    "반론과 재반박은 논쟁이나 대안 평가를 요구하는 문항에서 선택한다.",
+    "금전적 필요, 지원금 사용 계획과 국가별 개인 지원서 유형은 근거 확장이 필요한 범위다."
+  ],
+  "evidence_states":["source_explicit_rule","human_annotated_role","observed_source_structure","community_recommendation","model_predicted_edit_intent","analyst_editorial_adaptation"],
+  "pattern_record_requires":["pattern_id","question_intent","genre","move_order","opening_intent","closing_intent","material_selection","source_ids","verified_source_spans","counterexamples","applicability_limits","review_state"],
+  "independence_counts":["distinct_documents","known_independent_authors","programs","prompts","rounds"],
+  "unknown_author_count":null,
+  "promotion_rule":"Exact source provenance, paragraph context, genre scope and a recorded semantic review are required for an approved use case. Broad validity requires independent examples and evaluation; high occurrence alone does not approve a rule.",
+  "statistical_cluster_discovery_performed":false
+}

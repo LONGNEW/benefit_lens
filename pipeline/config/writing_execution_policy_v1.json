@@ -1,0 +1,42 @@
+{
+  "version": "writing-execution-policy-v1",
+  "status": "deterministic_plan_contract_not_validated_writing_quality",
+  "episode_identity_fields": ["subject_id", "program_id", "round_id", "experience_id"],
+  "episode_fields": ["opportunity", "motivation", "own_role", "action", "obstacle", "decision", "result", "evidence", "reflection", "future_use"],
+  "episode_rules": [
+    "사건의 인물, 프로그램과 회차를 보존하고 미상 값을 추정해 채우지 않는다.",
+    "같은 사람의 같은 사건에 대한 여러 문서는 연결하고 별도 경험으로 더하지 않는다.",
+    "공식 요구, 지원자의 작성 전략과 분석자의 의미 관찰을 각각 보존한다.",
+    "기회와 동기, 행동과 결과, 해석과 향후 활용의 관계는 근거와 확인 수준을 가진다."
+  ],
+  "accepted_fact_status": "confirmed",
+  "accepted_fact_source_kinds": ["user_confirmation", "user_document", "synthetic_confirmed_fact"],
+  "fact_rules": [
+    "문단 재료는 동일 subject_id와 experience_id의 확인 사실만 사용한다.",
+    "공개 타인 코퍼스의 사실은 사용자 사실을 대체하지 않는다.",
+    "서로 다른 확인 값이 같은 슬롯에 연결되면 추가 확인을 요청한다.",
+    "합성 사실은 실행 예제임을 표시하고 실제 제출 준비 완료로 간주하지 않는다."
+  ],
+  "meaning_bases": ["literal", "official_guidance", "inference"],
+  "official_requirement_rule": "Only an explicitly required literal item with a verified_current official source becomes mandatory; guidance and inference remain separate observations.",
+  "style_precedence": ["official_task_constraints", "genre_applicability", "user_style_preference"],
+  "reuse": {
+    "intent_policy": "pipeline/config/semantic_answer_intents_v1.json",
+    "intent_observation_schema": "pipeline/schemas/writing-intent-observation.schema.json",
+    "templates": "pipeline/config/paragraph_writing_templates_v1.json",
+    "rubric": "pipeline/config/writing_quality_rubric_v1.json",
+    "principles": "pipeline/config/writing_principles_v1.json"
+  },
+  "quality_rules": [
+    "일반 품질, 장르별 구성과 사용자 스타일 선호를 구분한다.",
+    "9개 기준은 미보정 진단 기준이며 평가 없이 점수를 채우지 않는다.",
+    "문단 계획의 계약 검증은 설득력이나 합격 가능성의 검증이 아니다."
+  ],
+  "independent_evaluation": {
+    "status": "required_not_performed_by_this_planner",
+    "human_raters": 2,
+    "requirements": ["source_blind_comparison", "author_program_round_split", "fact_fidelity", "task_coverage", "revision_time", "rater_disagreement_adjudication"],
+    "existing_persuade_test_role": "development_data_already_descriptively_analyzed",
+    "selection_outcome_role": "context_not_a_causal_writing_quality_label"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "BenefitLens writing reference (draft 0.1.0)",
-  "description": "설계 제안. 공식 문항·양식과 수기·개인 후기를 분리하고, 회차·계수 규칙·정책·권리 확인 범위·근거를 보존한다. 실제 학생 합격글은 수집하지 않는다.",
+  "description": "확장 설계 제안. 공식 문항과 양식, 공개된 제출문과 인터뷰 및 후기를 역할별로 분리하고 회차, 정책과 권리 확인 범위, 근거를 보존한다. 실제 실행 계약과 자료의 최종 제출 여부 검증은 docs/specs/team-handoff.md를 따른다.",
   "type": "object",
   "additionalProperties": false,
   "properties": {

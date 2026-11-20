@@ -1,0 +1,103 @@
+{
+  "evidence": [
+    {
+      "evidence_id": "gc26w-criteria",
+      "document_id": "gc26w-gates-official-59048ea28851",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "source_role": "official_notice",
+      "locator": "L76-L84",
+      "quote": "four criteria"
+    },
+    {
+      "evidence_id": "gc26w-portal",
+      "document_id": "gc26w-gates-official-59048ea28851",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "source_role": "official_notice",
+      "locator": "L110-L112",
+      "quote": "Additional questions in the Applicant Portal?"
+    },
+    {
+      "evidence_id": "gc26w-extra-form",
+      "document_id": "gc26w-gates-official-59048ea28851",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "source_role": "official_notice",
+      "locator": "L113-L116",
+      "quote": "Additional form"
+    },
+    {
+      "evidence_id": "gc26w-infection-rp",
+      "document_id": "gc26w-cam-2026-infection-17da16ba9328",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "source_role": "official_guideline",
+      "locator": "L102-L105",
+      "quote": "Research Proposal (PhD applicants only)"
+    },
+    {
+      "evidence_id": "gc26w-infection-cycle",
+      "document_id": "gc26w-cam-2026-infection-17da16ba9328",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "source_role": "official_guideline",
+      "locator": "L126-L141",
+      "quote": "Michaelmas 2026"
+    },
+    {
+      "evidence_id": "gc26w-proposal-guide",
+      "document_id": "gc26w-cam-2026-docs-a9eb5bb58ecc",
+      "program_id": "gates-cambridge",
+      "round_id": "2026-2027",
+      "source_role": "official_guideline",
+      "locator": "L111-L114",
+      "quote": "extends the existing literature"
+    },
+    {
+      "evidence_id": "gc26w-c1-bind",
+      "document_id": "gc26w-sampurna-review-8c7aa3064e36",
+      "program_id": "gates-cambridge",
+      "round_id": null,
+      "source_role": "reflection",
+      "locator": "L5-L6",
+      "quote": "here is a copy of my application essay"
+    },
+    {
+      "evidence_id": "gc26w-c1-result",
+      "document_id": "gc26w-sampurna-review-8c7aa3064e36",
+      "program_id": "gates-cambridge",
+      "round_id": null,
+      "source_role": "reflection",
+      "locator": "L1-L8",
+      "quote": "was chosen as a Gates Cambridge Scholar"
+    },
+    {
+      "evidence_id": "gc26w-c1-support-observed",
+      "document_id": "gc26w-sampurna-essay-3016c6cfdd33",
+      "program_id": "gates-cambridge",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L53-L66",
+      "quote": "allotting age appropriate activities"
+    },
+    {
+      "evidence_id": "gc26w-c2-result",
+      "document_id": "gc26w-naveen-review-de75834e80d8",
+      "program_id": "gates-cambridge",
+      "round_id": null,
+      "source_role": "reflection",
+      "locator": "L22-L25",
+      "quote": "Not Awarded"
+    },
+    {
+      "evidence_id": "gc26w-c2-outreach-observed",
+      "document_id": "gc26w-naveen-essay-d5cd02be08a1",
+      "program_id": "gates-cambridge",
+      "round_id": null,
+      "source_role": "application_statement",
+      "locator": "L22-L33",
+      "quote": "helped local middle and high school students"
+    }
+  ]
+}

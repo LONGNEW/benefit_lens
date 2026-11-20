@@ -1,0 +1,17 @@
+{
+  "version": "writing-material-coverage-v1",
+  "minimum_materials_per_notice": 3,
+  "counting_unit": "distinct_original_material",
+  "planning_denominator": "all_non_sample_discovery_records",
+  "planning_is_current_verified_notice_count": false,
+  "roles": ["writing_advice", "requirements_and_format", "actual_writing", "reviewer_feedback"],
+  "whole_application_required": false,
+  "known_outcome_required": false,
+  "deduplicate_by": ["canonical_url", "normalized_complete_text_sha256"],
+  "question_context_counted_as_advice": false,
+  "extracted_paragraphs_increase_material_count": false,
+  "one_author_multiple_documents": "Count distinct documents, report one author separately when identity is established.",
+  "program_coverage": "Exact program binding is separate from general transferable question advice.",
+  "completion_requires": ["reviewed_original_materials_at_least_three_times_notices", "reviewed_per_notice_relevance"],
+  "existing_experience_policy": "Retain experience_coverage_policy.json for person-program-round episodes; this policy adds a separate writing-material measure."
+}

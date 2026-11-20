@@ -1,0 +1,64 @@
+{
+  "source_document": [
+    {
+      "document_id": "cern-744000159629244-1489bcbcd78d",
+      "title": "Short Term Internship 2027 - Data Science, AI & Analytics",
+      "url": "https://api.smartrecruiters.com/v1/companies/CERN/postings/744000159629244",
+      "kind": "json",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:54:30.249679+00:00",
+      "raw_sha256": "1489bcbcd78d02dd5961d6021b672ca23086f6fd85572dafb8fa21e1338353c9",
+      "text_sha256": "822488d79d19c63c78112ccefe242924c6e05190746064900710bd7c5c8f83b1",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/scale-1k-20261109/cern-744000159629244.json",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/scale-1k-20261109/cern-744000159629244.txt"
+    },
+    {
+      "document_id": "cern-744000159634239-6a7bbc252e44",
+      "title": "Short Term Internship 2027 - Information Technologies",
+      "url": "https://api.smartrecruiters.com/v1/companies/CERN/postings/744000159634239",
+      "kind": "json",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:54:30.250221+00:00",
+      "raw_sha256": "6a7bbc252e440f43e45100ea2fe4364f59c651e2541af2bbf6c96cfbfe88b099",
+      "text_sha256": "8daae498ae98d01be049642f93b36258d030db08c4fd73691e0bce4878c4f138",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/scale-1k-20261109/cern-744000159634239.json",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/scale-1k-20261109/cern-744000159634239.txt"
+    },
+    {
+      "document_id": "cern-744000159422712-adb45c5db8e7",
+      "title": "Short Term Internship 2027 - Applied Physics",
+      "url": "https://api.smartrecruiters.com/v1/companies/CERN/postings/744000159422712",
+      "kind": "json",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:54:30.659174+00:00",
+      "raw_sha256": "adb45c5db8e731007424764fca5de6b76147cc40f4e762d5e7cc8491bc06420c",
+      "text_sha256": "74ab31e36723025ff11352a8582dae524f1d9c8579b980267c0e7c7bb727e4f4",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/scale-1k-20261109/cern-744000159422712.json",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/scale-1k-20261109/cern-744000159422712.txt"
+    },
+    {
+      "document_id": "cern-744000159603499-f67dafe97a35",
+      "title": "CERN Summer Student Programme 2027 (Member and Non-Member State)",
+      "url": "https://api.smartrecruiters.com/v1/companies/CERN/postings/744000159603499",
+      "kind": "json",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:54:30.747688+00:00",
+      "raw_sha256": "f67dafe97a356b2551d7f1c18909599ff18f000c510ae263f4c77b41e2467035",
+      "text_sha256": "0b26b20ae46dc0281946ba05c30b5b9d6008508afed475ad5aa2461058a7a9c7",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/scale-1k-20261109/cern-744000159603499.json",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/scale-1k-20261109/cern-744000159603499.txt"
+    },
+    {
+      "document_id": "cern-744000159596524-ff2edfcc2400",
+      "title": "CERN OPENLAB Summer Student Programme 2027",
+      "url": "https://api.smartrecruiters.com/v1/companies/CERN/postings/744000159596524",
+      "kind": "json",
+      "capture_mode": "full_document",
+      "fetched_at": "2026-11-08T17:54:31.061802+00:00",
+      "raw_sha256": "ff2edfcc24005dc95b7ba7d61802e3e1ff747ad0c4a97d345481cbff518f4ff3",
+      "text_sha256": "3da8f74fcef7f86bd1565d339680c28b6e01946b2baf97997a4da27d150f1003",
+      "raw_path": "/home/longnew/.cache/datasets/benefitlens/scale-1k-20261109/cern-744000159596524.json",
+      "text_path": "/home/longnew/.cache/datasets/benefitlens/scale-1k-20261109/cern-744000159596524.txt"
+    }
+  ]
+}

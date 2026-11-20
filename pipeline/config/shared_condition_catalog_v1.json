@@ -1,0 +1,310 @@
+{
+ "contract_version": "shared-condition-catalog-v1",
+ "status": "candidate_projection_contract_not_meaning_approval",
+ "condition_contract": {
+  "required": [
+   "condition_id",
+   "candidate_key",
+   "field_id",
+   "operator",
+   "value",
+   "value_type",
+   "unit",
+   "at",
+   "evidence",
+   "status",
+   "unknown_reasons"
+  ],
+  "operators": [
+   "eq",
+   "in",
+   "not_in",
+   "gte",
+   "lte",
+   "gt",
+   "lt",
+   "between",
+   "exists",
+   "unknown"
+  ],
+  "at_phases": [
+   "application",
+   "benefit_start",
+   "throughout_activity",
+   "unknown"
+  ],
+  "status_values": [
+   "candidate"
+  ],
+  "list_semantics": "unordered_mentions_not_conjunction",
+  "evidence_required": [
+   "document_id",
+   "text_sha256",
+   "char_start",
+   "char_end",
+   "exact_quote",
+   "source_url"
+  ],
+  "missing_detection_meaning": "not_detected_is_not_no_requirement",
+  "raw_mentions_are_not_eligibility_decisions": true
+ },
+ "field_stage_semantics": "UI request timing, not universally required eligibility conditions",
+ "fields": {
+  "education.degree": {
+   "value_type": "enum",
+   "applicant_input_stage": "common_profile",
+   "patterns": [
+    {
+     "regex": "\\b(?:bachelor(?:'s)?|baccalaureate|undergraduate degree)\\b|학사(?:\\s*학위)?",
+     "value": "bachelor"
+    },
+    {
+     "regex": "\\bmaster(?:'s)?(?:\\s+degree)?\\b|석사(?:\\s*학위)?",
+     "value": "master"
+    },
+    {
+     "regex": "\\b(?:Ph\\.?D\\.?|doctorate|doctoral)\\b|박사(?:\\s*학위)?",
+     "value": "doctorate"
+    },
+    {
+     "regex": "\\bassociate(?:'s)?\\s+degree\\b|전문학사",
+     "value": "associate"
+    }
+   ],
+   "allowed_values": [
+    "associate",
+    "bachelor",
+    "master",
+    "doctorate"
+   ],
+   "condition_role": "eligibility_candidate"
+  },
+  "education.status": {
+   "value_type": "enum",
+   "applicant_input_stage": "common_profile",
+   "patterns": [
+    {
+     "regex": "currently\\s+enrolled|enrolled\\s+(?:in|at)|재학\\s*중|재학생|在学",
+     "value": "enrolled"
+    },
+    {
+     "regex": "졸업\\s*예정|expected\\s+graduation|graduating\\s+(?:in|before|by)",
+     "value": "expected_graduate"
+    },
+    {
+     "regex": "휴학\\s*중|휴학생|leave\\s+of\\s+absence",
+     "value": "on_leave"
+    }
+   ],
+   "condition_role": "eligibility_candidate"
+  },
+  "education.full_time": {
+   "value_type": "boolean",
+   "applicant_input_stage": "common_profile",
+   "patterns": [
+    {
+     "regex": "full[ -]time\\s+(?:student|enrol)|(?:student|enrol)\\w*.{0,25}full[ -]time|전일제.{0,15}(?:재학|학생)",
+     "value": true
+    }
+   ],
+   "condition_role": "eligibility_candidate"
+  },
+  "education.coursework_completed": {
+   "value_type": "boolean",
+   "applicant_input_stage": "program_followup",
+   "patterns": [
+    {
+     "regex": "completed.{0,30}coursework|coursework.{0,25}complet|coursework\\s*수료|교과.{0,15}수료",
+     "value": true
+    }
+   ],
+   "condition_role": "eligibility_candidate"
+  },
+  "education.gpa": {
+   "value_type": "number",
+   "applicant_input_stage": "common_profile",
+   "patterns": [
+    {
+     "regex": "(?:GPA|grade\\s+point\\s+average|평점|학점)\\s*(?:of|:|이|은)?\\s*(?:at\\s+least|>=|≥)?\\s*(?P<value>\\d(?:\\.\\d+)?)",
+     "parser": "number"
+    }
+   ],
+   "unit": "gpa_point",
+   "condition_role": "eligibility_candidate"
+  },
+  "education.major_group": {
+   "value_type": "string",
+   "applicant_input_stage": "common_profile",
+   "patterns": [
+    {
+     "regex": "major(?:ing)?\\s+in\\s+[^.;\\n]{3,65}|(?:관련\\s*)?전공|분야.{0,12}전공",
+     "parser": "unresolved"
+    }
+   ],
+   "condition_role": "eligibility_candidate"
+  },
+  "education.institution_id": {
+   "value_type": "string",
+   "applicant_input_stage": "program_followup",
+   "patterns": [
+    {
+     "regex": "participating\\s+(?:universit|institution)|소속\\s*대학|본교\\s*(?:학생|재학)|추천\\s*대학",
+     "parser": "unresolved"
+    }
+   ],
+   "condition_role": "eligibility_candidate"
+  },
+  "person.nationalities": {
+   "value_type": "array",
+   "applicant_input_stage": "common_profile",
+   "patterns": [
+    {
+     "regex": "\\bcitizen(?:ship|s)?\\b|\\bnationalit(?:y|ies)\\b|국적|대한민국\\s*국민",
+     "parser": "unresolved"
+    }
+   ],
+   "condition_role": "eligibility_candidate"
+  },
+  "person.age": {
+   "value_type": "number",
+   "applicant_input_stage": "common_profile",
+   "patterns": [
+    {
+     "regex": "(?:만\\s*)?(?P<value>\\d{1,2})\\s*세\\s*(?:이상|이하|미만|초과)|aged?\\s+(?P<value_alt>\\d{1,2})",
+     "parser": "number"
+    }
+   ],
+   "unit": "year",
+   "condition_role": "eligibility_candidate"
+  },
+  "person.residency": {
+   "value_type": "string",
+   "applicant_input_stage": "program_followup",
+   "patterns": [
+    {
+     "regex": "\\bresiden(?:t|ce|cy)\\b|거주지|거주\\s*요건|주민등록상\\s*주소",
+     "parser": "unresolved"
+    }
+   ],
+   "condition_role": "eligibility_candidate"
+  },
+  "work.authorization": {
+   "value_type": "boolean",
+   "applicant_input_stage": "program_followup",
+   "patterns": [
+    {
+     "regex": "legally\\s+authori[sz]ed\\s+to\\s+work|work\\s+authori[sz]ation|근로\\s*자격|취업\\s*자격",
+     "parser": "unresolved"
+    }
+   ],
+   "condition_role": "eligibility_candidate"
+  },
+  "work.visa_sponsorship": {
+   "value_type": "boolean",
+   "applicant_input_stage": "program_followup",
+   "patterns": [
+    {
+     "regex": "(?:visa|immigration).{0,25}sponsor|sponsor.{0,25}(?:visa|immigration)|비자.{0,20}지원",
+     "parser": "unresolved"
+    }
+   ],
+   "condition_role": "eligibility_candidate"
+  },
+  "experience.years": {
+   "value_type": "number",
+   "applicant_input_stage": "program_followup",
+   "patterns": [
+    {
+     "regex": "(?P<value>\\d+(?:\\.\\d+)?)\\+?\\s*(?:years?\\s+(?:of\\s+)?(?:relevant\\s+|professional\\s+)?experience|년(?:\\s*이상)?(?:의)?\\s*경력)",
+     "parser": "number"
+    }
+   ],
+   "unit": "year",
+   "condition_role": "eligibility_candidate"
+  },
+  "language.proficiency": {
+   "value_type": "string",
+   "applicant_input_stage": "program_followup",
+   "patterns": [
+    {
+     "regex": "\\b(?:TOEFL|IELTS|TOEIC|TOPIK|JLPT)\\b|(?:English|영어).{0,15}(?:fluen|proficien|능력|구사)",
+     "parser": "unresolved"
+    }
+   ],
+   "condition_role": "eligibility_candidate"
+  },
+  "application.deadline": {
+   "value_type": "date",
+   "applicant_input_stage": "not_applicant_input",
+   "patterns": [
+    {
+     "regex": "\\bdeadline\\b|closing\\s+date|지원\\s*마감|접수\\s*마감|마감일",
+     "parser": "date_in_quote"
+    }
+   ],
+   "condition_role": "submission_candidate"
+  },
+  "application.nomination": {
+   "value_type": "string",
+   "applicant_input_stage": "program_followup",
+   "patterns": [
+    {
+     "regex": "\\bnomination\\b|\\bnominated\\b|기관\\s*추천|대학\\s*추천|학교\\s*추천",
+     "parser": "unresolved"
+    }
+   ],
+   "condition_role": "submission_candidate"
+  },
+  "application.document_requirement": {
+   "value_type": "string",
+   "applicant_input_stage": "program_followup",
+   "patterns": [
+    {
+     "regex": "\\btranscripts?\\b|\\brecommendation\\s+letters?\\b|\\benrollment\\s+certificate\\b|성적\\s*증명서|재학\\s*증명서|추천서|자기\\s*소개서|연구\\s*계획서",
+     "parser": "unresolved"
+    }
+   ],
+   "condition_role": "submission_candidate"
+  },
+  "benefit.amount": {
+   "value_type": "number",
+   "applicant_input_stage": "not_applicant_input",
+   "patterns": [
+    {
+     "regex": "(?P<currency>[$€£])\\s*(?P<value>\\d[\\d,]*(?:\\.\\d{1,2})?)|(?P<value_alt>\\d[\\d,]*(?:\\.\\d+)?)\\s*(?P<korean_unit>만원|천원|원)",
+     "parser": "amount"
+    }
+   ],
+   "unit": "currency",
+   "condition_role": "benefit_candidate"
+  },
+  "program_specific.requirement": {
+   "value_type": "unresolved_condition",
+   "applicant_input_stage": "program_followup",
+   "patterns": [],
+   "unit": null,
+   "condition_role": "unmapped_requirement_candidate"
+  }
+ },
+ "constraint_marker_regex": "\\b(?:must|required|minimum|at\\s+least|eligible|qualifications?|requirements?|unless|except)\\b|지원\\s*자격|신청\\s*자격|참여\\s*자격|필수|제외|이상|이하|미만|초과",
+ "logic_marker_regex": "\\b(?:and|or|not|unless|except|either|both)\\b|및|또는|제외|다만|불가|아니",
+ "preservation_rules": [
+  "Do not infer nationality from institution, employer or country metadata.",
+  "Do not treat preferred qualifications as mandatory.",
+  "Do not conjoin unordered field mentions.",
+  "Do not infer current application status from cached dates or canApply.",
+  "Unknown units, reference times, exception scope and unresolved fields remain explicit.",
+  "Program-specific requirement strings are not globally equivalent fields."
+ ],
+ "input_source": "benefitlens.support_discovery_record WHERE record_type != sample",
+ "output_schema_refs": [
+  "pipeline/schemas/common-fields.schema.json",
+  "pipeline/schemas/opportunity.schema.json#/$defs/condition"
+ ],
+ "implementation_scope": "offline all-intake projection; no source collection, canonical publication or database write",
+ "projection_defaults": {
+  "operator": "unknown",
+  "at_phase": "unknown",
+  "meaning_review_required": true
+ }
+}

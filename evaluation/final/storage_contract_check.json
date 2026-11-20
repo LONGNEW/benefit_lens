@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-11-04T07:58:47.770337+00:00",
+  "kind": "read_only_storage_contract_validation",
+  "model_calls": 0,
+  "db_writes": 0,
+  "not_semantic_accuracy": true,
+  "total": 10,
+  "passed": 10,
+  "rows": [
+    {
+      "opportunity_id": "gates-cambridge-2026-2027",
+      "passed": true,
+      "condition_leaves": 0,
+      "eligibility_available": false
+    },
+    {
+      "opportunity_id": "google-east-asia-2026",
+      "passed": true,
+      "condition_leaves": 2,
+      "eligibility_available": true
+    },
+    {
+      "opportunity_id": "ikef-undergraduate-2026",
+      "passed": true,
+      "condition_leaves": 4,
+      "eligibility_available": true
+    },
+    {
+      "opportunity_id": "nvidia-2027-2028",
+      "passed": true,
+      "condition_leaves": 2,
+      "eligibility_available": true
+    },
+    {
+      "opportunity_id": "postech-ax-first-semester",
+      "passed": true,
+      "condition_leaves": 6,
+      "eligibility_available": true
+    },
+    {
+      "opportunity_id": "postech-k-top-tier",
+      "passed": true,
+      "condition_leaves": 3,
+      "eligibility_available": true
+    },
+    {
+      "opportunity_id": "posco-overseas-2026",
+      "passed": true,
+      "condition_leaves": 5,
+      "eligibility_available": true
+    },
+    {
+      "opportunity_id": "hyundai-mobis-research-scholar-2026-h2",
+      "passed": true,
+      "condition_leaves": 4,
+      "eligibility_available": true
+    },
+    {
+      "opportunity_id": "kosaf-presidential-2026",
+      "passed": true,
+      "condition_leaves": 3,
+      "eligibility_available": true
+    },
+    {
+      "opportunity_id": "kosaf-hope-ladder-2026-s2",
+      "passed": true,
+      "condition_leaves": 7,
+      "eligibility_available": true
+    }
+  ]
+}

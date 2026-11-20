@@ -1,0 +1,278 @@
+{
+  "schema": "experience-scale-sources-v1",
+  "goal": "At least three original-backed review or process episodes per notice; global planning target grows with notice inventory, with a 50000 floor. Public application documents are counted separately.",
+  "sources": [
+    {
+      "id": "higherin",
+      "enabled": true,
+      "adapter": "higherin",
+      "allowed_hosts": [
+        "higherin.com",
+        "cdn-production.higherin.com"
+      ],
+      "detail_pattern": "https://higherin\\.com/review/[0-9]+/[^/]+/[^/]+/?$",
+      "seeds": [
+        {
+          "url": "https://higherin.com/sitemaps/reviews-sitemap-index.xml",
+          "kind": "sitemap"
+        },
+        {
+          "url": "https://higherin.com/review/19564/enterprise-mobility/intern",
+          "kind": "detail"
+        }
+      ],
+      "policy_basis": "Public sitemap and review pages; /api/ and /ajax/ are not used",
+      "rights_status": "public_access; no redistribution or training license inferred",
+      "prior_sitemap_manifest": "strategy-probe/20261115/discovery-receipts.json",
+      "supported_experience_types": [
+        "internship",
+        "student_placement",
+        "educational_apprenticeship"
+      ],
+      "funding_evidence": "Payment remains unconfirmed unless the author or an official linked notice provides evidence."
+    },
+    {
+      "id": "dev-experiences",
+      "enabled": true,
+      "adapter": "dev_api",
+      "allowed_hosts": [
+        "dev.to"
+      ],
+      "detail_pattern": "https://dev\\.to/api/articles/[0-9]+$",
+      "max_index_pages": 250,
+      "policy_basis": "Documented public GET articles API; no authentication or search-page scraping",
+      "seeds": [
+        {
+          "url": "https://dev.to/api/articles?tag=outreachy&per_page=100&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=gsoc&per_page=100&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=google-summer-of-code&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=gsoc2026&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=gsoc2025&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=gsoc2024&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=gsoc2023&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=gsoc2022&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=gsoc2021&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=gsoc2020&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=gsoc2019&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=mlh&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=mlhfellowship&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=lfx&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=lfxmentorship&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=seasonofdocs&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=summerofbitcoin&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=xros&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=xrosfellowship&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=fulbright&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=chevening&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=daad&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=erasmus&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=scholarship&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=scholarships&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=internship&per_page=1000&page=1",
+          "kind": "api_index"
+        },
+        {
+          "url": "https://dev.to/api/articles?tag=internships&per_page=1000&page=1",
+          "kind": "api_index"
+        }
+      ],
+      "api_documentation": "https://developers.forem.com/api/v1",
+      "host_interval_seconds": 5
+    },
+    {
+      "id": "gfg",
+      "enabled": false,
+      "adapter": "not_enabled",
+      "seeds": [],
+      "hold_reason": "Terms of use prohibit automated collection without written permission",
+      "policy_url": "https://www.geeksforgeeks.org/legal/terms-of-use/"
+    },
+    {
+      "id": "linkareer",
+      "enabled": false,
+      "adapter": "not_enabled",
+      "seeds": [],
+      "hold_reason": "Observed HTTP 403; no bypass or alternative authenticated endpoint attempted"
+    },
+    {
+      "id": "heidelberg-erasmus",
+      "enabled": true,
+      "adapter": "reference_documents",
+      "allowed_hosts": [
+        "www.mathinf.uni-heidelberg.de",
+        "backend.mathinf.uni-heidelberg.de"
+      ],
+      "detail_pattern": "/documents/[^/]+/download/?$",
+      "seeds": [
+        {
+          "url": "https://www.mathinf.uni-heidelberg.de/en/outreach/international-affairs/erasmus-student-reports",
+          "kind": "index"
+        }
+      ]
+    },
+    {
+      "id": "daad-rise-germany",
+      "enabled": true,
+      "adapter": "reference_documents",
+      "allowed_hosts": [
+        "www.daad.de",
+        "static.daad.de"
+      ],
+      "detail_pattern": "\\.pdf(?:$|\\?)",
+      "seeds": [
+        {
+          "url": "https://www.daad.de/rise/en/rise-germany/about-the-program/reports/",
+          "kind": "index"
+        }
+      ]
+    },
+    {
+      "id": "daad-rise-professional",
+      "enabled": true,
+      "adapter": "reference_documents",
+      "allowed_hosts": [
+        "www.daad.de",
+        "static.daad.de"
+      ],
+      "detail_pattern": "\\.pdf(?:$|\\?)",
+      "seeds": [
+        {
+          "url": "https://www.daad.de/rise/de/rise-professional/ueber-das-programm/erfahrungsberichte/",
+          "kind": "index"
+        }
+      ]
+    },
+    {
+      "id": "github-gsoc-proposals",
+      "enabled": true,
+      "adapter": "github_proposals",
+      "allowed_hosts": [
+        "api.github.com",
+        "codeload.github.com"
+      ],
+      "detail_pattern": "/git/blobs/[a-f0-9]+$",
+      "seeds": [
+        {
+          "url": "https://api.github.com/repos/COPS-IITBHU/GSoC-Accepted-Proposals/git/trees/ce5158beea123cf87af8fed71c14928b6fa611f0?recursive=1",
+          "kind": "github_index"
+        }
+      ],
+      "policy_basis": "Documented public archive API; wait for provider quota reset, validate each member against previously observed Git tree SHA1",
+      "tree_url": "https://api.github.com/repos/COPS-IITBHU/GSoC-Accepted-Proposals/git/trees/ce5158beea123cf87af8fed71c14928b6fa611f0?recursive=1",
+      "bulk_archive_url": "https://api.github.com/repos/COPS-IITBHU/GSoC-Accepted-Proposals/tarball",
+      "api_documentation": "https://docs.github.com/en/rest/repos/contents#download-a-repository-archive-tar"
+    },
+    {
+      "id": "fulbright-korea-api",
+      "enabled": true,
+      "adapter": "wordpress_api",
+      "allowed_hosts": [
+        "www.fulbright.or.kr"
+      ],
+      "detail_pattern": "/wp-json/wp/v2/posts/[0-9]+$",
+      "seeds": [
+        {
+          "url": "https://www.fulbright.or.kr/wp-json/wp/v2/posts?per_page=100&page=1",
+          "kind": "wordpress_index"
+        }
+      ],
+      "max_index_pages": 250,
+      "policy_basis": "Public WordPress API advertised by publisher; list responses contain complete rendered content, retain full batch originals and record pointers",
+      "api_documentation": "https://developer.wordpress.org/rest-api/reference/posts/",
+      "rights_status": "public_access; no redistribution or training license inferred"
+    },
+    {
+      "id": "chevening-rss",
+      "enabled": true,
+      "adapter": "rss_fulltext",
+      "allowed_hosts": [
+        "www.chevening.org"
+      ],
+      "detail_pattern": "/news/",
+      "seeds": [
+        {
+          "url": "https://www.chevening.org/news/feed/",
+          "kind": "rss_index"
+        }
+      ],
+      "policy_basis": "Publisher-advertised public RSS feed includes complete content:encoded; preserve feed original and item pointer",
+      "counting_rule": "Reference material until named participant attribution review; not an accepted episode",
+      "rights_status": "public_access; no redistribution or training license inferred"
+    }
+  ]
+}
