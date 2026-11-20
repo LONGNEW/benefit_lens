@@ -1,0 +1,105 @@
+조건 유형과 공고별 특약의 전체 목록
+기준: 기존 보관 원문과 50개 정규화 행. 신규 모집 여부 확인은 이번 편집 범위에 포함하지 않았다.
+
+공통은 재사용 가능한 항목이고 값, 지역, 기간과 예외는 조건마다 보존한다. 구체적인 값이 붙었다는 이유로 program.special로 바꾸지 않는다.
+42개는 정형 유형 40개, 특약 보관과 미해석 보관 2개다. 자격만의 목록이 아니며 초기 입력은 선택 6개다.
+
+전체 저장 유형
+education.degree = 학위와 취득 상태 / academic
+education.status = 학적 / academic
+education.institution = 소속 학교 / academic
+education.major = 전공 / academic
+education.full_time = 전일제 / academic_extra
+education.coursework = 수료 / academic_extra
+education.gpa = 성적 / academic_extra
+education.progress = 학년과 학기 / academic_extra
+education.prerequisites = 선수과목 / academic_extra
+education.accreditation = 학교와 과정 인증 / academic_extra
+person.nationality = 국적 / residency
+person.age = 연령 / residency
+person.residency = 거주 자격 / residency
+person.financial_need = 경제 조건 / residency
+person.target_group = 특정 대상 자격 / residency
+work.authorization = 근로 자격 / work
+work.sponsorship = 비자 지원 / work
+work.availability = 활동 가능 기간 / work
+work.mobility = 근무지와 이동 / work
+credential.license = 면허 / qualifications
+credential.training = 교육과 자격증 / qualifications
+credential.clearance = 신원과 보안 자격 / qualifications
+capability.task_ability = 직무 수행 조건 / qualifications
+capability.skill = 기술 역량 / qualifications
+capability.experience = 경력 / qualifications
+capability.language = 언어 / qualifications
+activity.duties = 수행할 업무 / notice_only
+activity.commitment = 참여 의무 / submission
+application.nomination = 기관 추천 / submission
+application.documents = 제출 자료 / submission
+application.history = 이전 신청 이력 / submission
+application.exclusivity = 중복 참여 / submission
+application.integrity = 지원 절차 준수 / submission
+selection.preference = 선발 우대 / qualifications
+notice.deadline = 공고 마감 / notice_only
+notice.amount = 혜택 금액 / notice_only
+notice.benefits = 혜택 설명 / notice_only
+notice.process = 모집 절차 / notice_only
+notice.organization = 기관의 조건 / notice_only
+notice.description = 공고 설명 / notice_only
+program.special = 공고 특수 조건 / special
+unresolved = 의미 확인 필요 / special
+
+현재 specific으로 저장된 8개 행
+
+n04 / NVIDIA Fellowship / 역할: eligibility
+박사 학위논문의 연구에 실제 참여해야 한다. 현재 specific이나 재학, 연구 활동의 공통 유형으로 재분류할지 검토한다.
+유형: program.special
+저장 값: true
+현재 인용: Be actively engaged in research as part of your PhD thesis.
+
+n08 / NVIDIA Fellowship / 역할: operating_constraint
+선정되면 수혜연도 시작 전에 NVIDIA 인턴을 완료해야 한다.
+유형: program.special
+저장 값: {"required":true,"activity":"completed NVIDIA internship","mode":"in_person","season":"summer"}
+현재 인용: If selected for an award, a completed internship at NVIDIA is required before the Fellowship award year can begin.
+
+n15 / NVIDIA Fellowship / 역할: evaluation
+연구의 NVIDIA 관련성과 미래 GPU의 설계, 성능, 활용 기여를 평가한다.
+유형: program.special
+저장 값: {"research_relevance":"NVIDIA primary research domains","potential_influence":["future GPU design","GPU performance","GPU use"]}
+현재 인용: Applications are evaluated on student quality, research quality, and relevance to NVIDIA.
+
+n25 / NVIDIA 시스템 소프트웨어 인턴 / 역할: eligibility
+기술 요구는 직무에 따라 달라진다. C, C++, CUDA 등을 모든 지원자의 공통 필수로 합치지 않는다. 직무별 capability.skill 분해를 검토한다.
+유형: program.special
+저장 값: {"requirements_vary_by_role":true,"potential_tracks":["Systems Software","Software Security","Graphics Systems Software","Compiler","Firmware & Embedded Software"],"example_technologies":["C","C++","CUDA","operating systems","Linux kernel","embedded systems","networking","compiler development","graphics","security"],"universal_required_skill_set":null}
+현재 인용: Depending on the internship role, prior experience or knowledge requirements could
+include the following programming skills and technologies:
+
+n43 / Google PhD Fellowship / 역할: submission
+동아시아, 캐나다, 미국은 연구 영향과 동기 및 리더십의 두 문항, 라틴아메리카는 영향과 동기 및 장기 목표 문항에 각각 350단어 이내로 답한다.
+유형: program.special
+저장 값: {"author":"student","maximum_words_each":350,"regional_essays":[{"regions":["Canada","East Asia","United States"],"prompts":["research impact on field and society, personal importance, motivating experiences","leadership example involving positive influence, dispute resolution, or sustained group contribution"]},{"regions":["Latin America"],"prompts":["research impact on field and society, personal importance, motivating experiences","long-term computing research goals and short-term contribution of Fellowship"]}],"other_regions_requirement":null}
+현재 인용: Student essay response (350-word limit) to: "Describe the desired impact your research will make on the field and society, and why this is important to you. Include any personal, educational and/or professional experiences that have motivated your research interests."
+
+n45 / Google PhD Fellowship / 역할: evaluation
+아이디어의 혁신성, Google 연구 관련성, 견고성과 잠재적 영향 등을 평가한다.
+유형: program.special
+저장 값: {"proposal_considerations":["innovation","Google research relevance","robustness","potential field impact","future direction and plans"],"google_ai_principles_alignment":true,"research_areas":["Computer Architecture","Algorithms and Optimization","Health Research","Human-Computer Interaction","Machine Learning and ML Foundations","Machine Perception","Natural Language Processing","Privacy, Safety, and Security","Quantum Computing","Software Engineering and Programming Languages","Systems, Networking, and Cloud Computing"]}
+현재 인용: Applications are evaluated on the strength of the research proposal, research impact, student academic achievements, and leadership potential.
+
+n49 / Google PhD Fellowship / 역할: operating_constraint
+지급은 관련 법과 정책 검토를 따른다. 현재 연결된 단일 인용은 대학 지급 방식이어서 직접 근거 구간을 추가 확인해야 한다.
+유형: program.special
+저장 값: {"legal_and_policy_review":true,"funding_may_be_withheld_for_compliance":true}
+현재 인용: Any monetary awards will be paid directly to the Fellow's university for distribution.
+
+n50 / Google PhD Fellowship / 역할: operating_constraint
+펠로십 자체의 지식재산 제약과 Google 인턴 참여 시의 별도 제한을 구분한다.
+유형: program.special
+저장 값: {"fellowship_ip_restrictions":false,"if_google_internship":"same IP restrictions as other Google interns"}
+현재 인용: Fellowship recipients are not subject to intellectual property restrictions unless they complete an internship at Google.
+
+구분 예시
+NVIDIA n05의 전일제 재학은 education.full_time=true라는 공통 자격이다. 수혜연도 9개월이라는 범위는 scope에 둔다. NVIDIA 인턴 선행 의무는 사업별 활동의 구체 내용을 보존하는 n08이다.
+공통에도 예외가 있다. Google의 유사 기업 장학금 제한과 정부, 비영리 지원 예외는 application.exclusivity라는 같은 항목의 범위와 예외로 표현한다.
+위 8개는 현재 저장 분류의 수이며 모두 최종 분류로 승인된 것은 아니다. 값별 직접 근거, 적용 지역과 시점의 의미 검토가 필요하다.

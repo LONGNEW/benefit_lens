@@ -1,0 +1,16 @@
+{
+  "pages": 17,
+  "authored_characters": 9293,
+  "extracted_characters": 9942,
+  "layout_checks": 94,
+  "rendered_pages": 17,
+  "visual_review_pending": false,
+  "all_pages_visually_reviewed": true,
+  "layout_overflows": 0,
+  "middle_dots": 0,
+  "visual_method": "All 17 page renders reviewed after structured text and coordinate validation; changed pages 5 and 6 also reviewed individually.",
+  "reason_for_rendered_images": "Text and geometry checks do not establish correct font painting or final visual wrapping.",
+  "report_characters": 9942,
+  "markdown_characters": 7163,
+  "new_collection_or_model_execution": false
+}
